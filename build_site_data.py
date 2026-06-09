@@ -7,7 +7,23 @@ from pathlib import Path
 
 from draft_config import DRAFTS, DEFAULT_DRAFT_YEAR, manifest_for_site, paths_for_year
 from name_utils import canonical_key
-from northstar_scoring import build_forces_faiblesses, _load_reports
+from northstar_scoring import (
+    build_forces_faiblesses,
+    _load_evaluations,
+    _load_reports,
+    _scores_from_evaluation,
+    northstar_overall,
+)
+
+PILLAR_TO_SKILL = {
+    "star_ceiling": "starCeiling",
+    "hockey_iq": "hockeyIQ",
+    "skating_engine": "skatingEngine",
+    "offensive_star_power": "offensiveStarPower",
+    "competition_proof": "competitionProof",
+    "character_compete": "characterCompete",
+    "development_arc": "developmentArc",
+}
 
 DIM_FROM_RANKING = {
     "Plafond_Etoile": "star_ceiling",
@@ -100,18 +116,103 @@ def dims_from_ranking(p: dict) -> dict[str, float]:
     return dims
 
 
+def northstar_scores_for_player(p: dict) -> dict | None:
+    """Manual eval from player_evaluations.json when done; else None (CSV fallback)."""
+    key = canonical_key(p["Nom"])
+    player_eval = (_load_evaluations().get("players") or {}).get(key)
+    if not (
+        player_eval
+        and player_eval.get("status") == "done"
+        and player_eval.get("pillars")
+    ):
+        return None
+    report = _load_reports().get(key, {})
+    return _scores_from_evaluation(
+        player_eval,
+        p["Nom"],
+        p["Position"],
+        p["Taille"],
+        str(p.get("Poids_lbs", "")),
+        report,
+    )
+
+
+def skills_from_scores(scores: dict, p: dict) -> dict[str, float]:
+    if scores:
+        return {
+            dst: float(scores.get(src, 5.0))
+            for src, dst in PILLAR_TO_SKILL.items()
+        }
+    return {
+        "starCeiling": float(p.get("Plafond_Etoile") or p.get("Plafond_Elite", 5)),
+        "hockeyIQ": float(p.get("IQ_Elite") or p.get("IQ_Realisation", 5)),
+        "skatingEngine": float(p.get("Moteur_Patinage") or p.get("Patinage_Upside", 5)),
+        "offensiveStarPower": float(p.get("Pouvoir_Offensif") or p.get("Outils_Offensifs", 5)),
+        "competitionProof": float(p.get("Preuve_Competition") or 5.0),
+        "characterCompete": float(p.get("Competitivite") or p.get("Variance_Positive", 5)),
+        "developmentArc": float(p.get("Arc_Developpement") or p.get("Trajectoire", 5)),
+    }
+
+
+def rationales_from_scores(scores: dict, p: dict) -> dict[str, str]:
+    rat = scores.get("rationales") or {} if scores else {}
+    skill_rationales: dict[str, str] = {}
+    for src, dst in PILLAR_TO_SKILL.items():
+        if src in rat:
+            skill_rationales[dst] = rat[src]
+    if skill_rationales:
+        return skill_rationales
+
+    legacy = p.get("Rationales") or {}
+    skill_key_map = {
+        "star_ceiling": "starCeiling",
+        "hockey_iq": "hockeyIQ",
+        "skating_engine": "skatingEngine",
+        "offensive_star_power": "offensiveStarPower",
+        "competition_proof": "competitionProof",
+        "character_compete": "characterCompete",
+        "development_arc": "developmentArc",
+        "plafond_elite": "starCeiling",
+        "patinage_upside": "skatingEngine",
+        "outils_offensifs": "offensiveStarPower",
+        "creation_jeu": "offensiveStarPower",
+        "iq_realisation": "hockeyIQ",
+        "trajectoire": "developmentArc",
+        "variance_positive": "characterCompete",
+    }
+    for src, dst in skill_key_map.items():
+        if src in legacy and dst not in skill_rationales:
+            skill_rationales[dst] = legacy[src]
+    return skill_rationales
+
+
 def enrich_analysis(
     analysis: dict,
     p: dict,
     reports: dict,
+    scores: dict | None = None,
 ) -> dict:
     """Complète forces/faiblesses si le markdown est incomplet."""
     forces = list(analysis.get("forces") or [])
     faiblesses = list(analysis.get("faiblesses") or [])
+    if scores:
+        for item in scores.get("forces") or []:
+            if item not in forces:
+                forces.append(item)
+        for item in scores.get("faiblesses") or []:
+            if item not in faiblesses:
+                faiblesses.append(item)
     if len(forces) >= 3 and len(faiblesses) >= 2:
-        return analysis
+        out = dict(analysis)
+        out["forces"] = forces[:5]
+        out["faiblesses"] = faiblesses[:4]
+        return out
 
-    dims = dims_from_ranking(p)
+    dims = (
+        {k: float(scores.get(k, 5.0)) for k in PILLAR_TO_SKILL}
+        if scores
+        else dims_from_ranking(p)
+    )
     report = reports.get(canonical_key(p["Nom"]), {})
     cov = p.get("Couverture_Rapport") or "none"
     synth_forces, synth_faiblesses = build_forces_faiblesses(
@@ -179,32 +280,17 @@ def build_year(year: int) -> int:
         slug = slug_from_file(p.get("Fichier_Local", p["Nom"].lower().replace(" ", "-")))
         md_path = analyses_dir / Path(p.get("Fichier_Local", "").replace("\\", "/")).name
         analysis = parse_md(md_path.read_text(encoding="utf-8")) if md_path.exists() else {}
-        analysis = enrich_analysis(analysis, p, reports)
-        note = float(p.get("Score_NORTHSTAR") or p.get("Score_APEX", 50))
+        scores = northstar_scores_for_player(p)
+        analysis = enrich_analysis(analysis, p, reports, scores)
+        note = (
+            northstar_overall(scores)
+            if scores
+            else float(p.get("Score_NORTHSTAR") or p.get("Score_APEX", 50))
+        )
         cr = p.get("Rang_Consensus")
         delta = p.get("Delta_vs_Consensus")
         delta_val = None if delta in ("N/A", None) else int(delta)
-        rat = p.get("Rationales") or {}
-        skill_key_map = {
-            "star_ceiling": "starCeiling",
-            "hockey_iq": "hockeyIQ",
-            "skating_engine": "skatingEngine",
-            "offensive_star_power": "offensiveStarPower",
-            "competition_proof": "competitionProof",
-            "character_compete": "characterCompete",
-            "development_arc": "developmentArc",
-            "plafond_elite": "starCeiling",
-            "patinage_upside": "skatingEngine",
-            "outils_offensifs": "offensiveStarPower",
-            "creation_jeu": "offensiveStarPower",
-            "iq_realisation": "hockeyIQ",
-            "trajectoire": "developmentArc",
-            "variance_positive": "characterCompete",
-        }
-        skill_rationales = {}
-        for src, dst in skill_key_map.items():
-            if src in rat and dst not in skill_rationales:
-                skill_rationales[dst] = rat[src]
+        skill_rationales = rationales_from_scores(scores, p)
         photo_entry = photos_map.get(slug, {})
         photo_url = photo_entry.get("local") or f"./images/players/{year}/{slug}.svg"
         enriched.append({
@@ -222,20 +308,12 @@ def build_year(year: int) -> int:
             "country": p["Pays"],
             "photoUrl": photo_url,
             "overall": note,
-            "starTier": p.get("Star_Tier", ""),
-            "reportCoverage": p.get("Couverture_Rapport", ""),
+            "starTier": (scores or {}).get("star_tier") or p.get("Star_Tier", ""),
+            "reportCoverage": (scores or {}).get("report_coverage") or p.get("Couverture_Rapport", ""),
             "consensusRank": cr if cr != "N/A" else None,
             "consensusDelta": delta_val,
             "tier": tier(note),
-            "skills": {
-                "starCeiling": float(p.get("Plafond_Etoile") or p.get("Plafond_Elite", 5)),
-                "hockeyIQ": float(p.get("IQ_Elite") or p.get("IQ_Realisation", 5)),
-                "skatingEngine": float(p.get("Moteur_Patinage") or p.get("Patinage_Upside", 5)),
-                "offensiveStarPower": float(p.get("Pouvoir_Offensif") or p.get("Outils_Offensifs", 5)),
-                "competitionProof": float(p.get("Preuve_Competition") or 5.0),
-                "characterCompete": float(p.get("Competitivite") or p.get("Variance_Positive", 5)),
-                "developmentArc": float(p.get("Arc_Developpement") or p.get("Trajectoire", 5)),
-            },
+            "skills": skills_from_scores(scores, p),
             "skillRationales": skill_rationales,
             "analysis": analysis,
         })
