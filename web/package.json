@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "predev": "python ../build_site_data.py",
+    "predev": "python3 ../build_site_data.py",
     "dev": "vite",
-    "prebuild": "python ../build_site_data.py",
+    "prebuild": "python3 ../build_site_data.py",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
