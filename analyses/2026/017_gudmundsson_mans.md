@@ -5,8 +5,8 @@
 | Champ | Valeur |
 |-------|--------|
 | Position | D |
-| Taille | NA |
-| Poids | NA lbs |
+| Taille | 6'3 |
+| Poids | 185 lbs |
 | Tire | ? |
 | Pays | SWE |
 | Date naissance | 2008-06-09 |

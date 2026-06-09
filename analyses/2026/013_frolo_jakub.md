@@ -5,8 +5,8 @@
 | Champ | Valeur |
 |-------|--------|
 | Position | C |
-| Taille | NA |
-| Poids | NA lbs |
+| Taille | 6'1 |
+| Poids | 194 lbs |
 | Tire | ? |
 | Pays | CZE |
 | Date naissance | 2007-12-05 |

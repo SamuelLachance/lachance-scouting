@@ -770,8 +770,10 @@ def main():
     ns_items = []
     for p in players:
         cr = find_consensus_rank(p)
+        dob_str = p.birth_date.isoformat() if p.birth_date else ""
         scores = northstar_generate(
-            p.full_name, p.pos, p.height, p.weight, p.country, cr, player_key=p.key
+            p.full_name, p.pos, p.height, p.weight, p.country, cr,
+            player_key=p.key, rankings_dob=dob_str,
         )
         overall = northstar_overall(scores)
         ns_items.append({"p": p, "cr": cr, "scores": scores, "overall": overall})
@@ -801,6 +803,9 @@ def main():
             "Tire": p.shoots,
             "Pays": p.country,
             "Date_Naissance": p.birth_date.isoformat() if p.birth_date else "",
+            "Is_Over_Age": scores.get("is_over_age", False),
+            "Over_Age_Penalty": scores.get("over_age_penalty", 0),
+            "SPI_Before_Penalty": scores.get("spi_before_penalty"),
             "Score_NORTHSTAR": overall,
             "Star_Tier": scores.get("star_tier", ""),
             "Couverture_Rapport": scores.get("report_coverage", ""),

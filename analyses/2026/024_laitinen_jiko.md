@@ -5,8 +5,8 @@
 | Champ | Valeur |
 |-------|--------|
 | Position | C |
-| Taille | NA |
-| Poids | NA lbs |
+| Taille | 6'1 |
+| Poids | 181 lbs |
 | Tire | ? |
 | Pays | FIN |
 | Date naissance | N/A |

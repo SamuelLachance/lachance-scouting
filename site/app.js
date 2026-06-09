@@ -424,6 +424,7 @@ function renderPlayer(id) {
           <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px">
             <span class="rank-gold" style="font-size:13px">#${p.rank} NORTHSTAR</span>
             <span style="font-size:12px;color:#64748b;font-family:var(--font-mono)">SPI ${p.overall.toFixed(1)}${p.consensusRank ? ` · Cons. #${p.consensusRank}` : ''}</span>
+            ${p.isOverAge ? `<span style="font-size:11px;color:#fb7185;font-family:var(--font-mono);padding:2px 8px;border:1px solid rgba(251,113,133,.35);border-radius:6px" title="Éligible 2025, non repêché">Over-age · -${(p.overAgePenalty || 0).toFixed(0)} SPI</span>` : ''}
             <span class="tier ${tierClass(p.tier)}" title="${p.eaTier || p.tier}">${p.tier}</span>
           </div>
           <h1 class="player-name">${esc(p.name)}</h1>
@@ -442,9 +443,12 @@ function renderPlayer(id) {
       <h3>Grille NORTHSTAR — notes et justifications</h3>
       <p style="font-size:13px;color:#64748b;margin:-4px 0 1.25rem">Chaque dimension explique pourquoi cette note /10 a été attribuée dans le modèle upside.</p>
       ${skillBars}
-      <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center">
-        <span style="color:#64748b;font-size:14px">Star Probability Index</span>
-        <span class="${scoreClass(p.overall)}" style="font-size:1.75rem">${p.overall.toFixed(1)}/100</span>
+      <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06)">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="color:#64748b;font-size:14px">Star Probability Index</span>
+          <span class="${scoreClass(p.overall)}" style="font-size:1.75rem">${p.overall.toFixed(1)}/100</span>
+        </div>
+        ${p.isOverAge ? `<p style="margin:10px 0 0;font-size:13px;color:#fb7185">Pénalité over-age : -${(p.overAgePenalty || 0).toFixed(1)} SPI${p.spiBeforePenalty != null ? ` (avant pénalité : ${Number(p.spiBeforePenalty).toFixed(1)})` : ''}</p>` : ''}
       </div>
     </div>
 

@@ -4,9 +4,13 @@ from __future__ import annotations
 from datetime import date
 from typing import Optional
 
-# Fenêtre principale : tous les joueurs
+# Fenêtre principale 2026 : tous les joueurs
 PRIMARY_START = date(2006, 1, 1)
 PRIMARY_END = date(2008, 9, 15)
+
+# Fenêtre principale 2025 (CBA : 18 ans au 15 sept, moins de 20 ans au 31 déc)
+DRAFT_2025_START = date(2006, 1, 1)
+DRAFT_2025_END = date(2007, 9, 15)
 
 # Re-entry 2024 : repêchés en 2024 non signés, nés après le 30 juin 2006
 REENTRY_CUTOFF = date(2006, 6, 30)
@@ -23,6 +27,39 @@ def normalize_country(country: str) -> str:
 
 def is_north_american(country: str) -> bool:
     return normalize_country(country) in NA_COUNTRIES
+
+
+def is_draft_eligible_2025(dob: Optional[date]) -> Optional[bool]:
+    """Éligible au repêchage 2025 si né entre le 1er janv. 2006 et le 15 sept. 2007."""
+    if dob is None:
+        return None
+    return DRAFT_2025_START <= dob <= DRAFT_2025_END
+
+
+def is_over_age_2026(
+    dob: Optional[date],
+    country: str,
+    *,
+    drafted_in_2025: bool = False,
+    prior_draft_year: Optional[int] = None,
+    signed_with_nhl: bool = False,
+) -> Optional[bool]:
+    """
+    Over-age pour 2026 : éligible en 2025, non repêché, toujours éligible en 2026.
+    Retourne None si DOB inconnue.
+    """
+    if dob is None:
+        return None
+    if drafted_in_2025:
+        return False
+    if not is_draft_eligible_2025(dob):
+        return False
+    return is_draft_eligible_2026(
+        dob,
+        country,
+        prior_draft_year=prior_draft_year,
+        signed_with_nhl=signed_with_nhl,
+    )
 
 
 def is_draft_eligible_2026(

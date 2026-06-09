@@ -5,8 +5,8 @@
 | Champ | Valeur |
 |-------|--------|
 | Position | LW |
-| Taille | NA |
-| Poids | NA lbs |
+| Taille | 6'2 |
+| Poids | 198 lbs |
 | Tire | ? |
 | Pays | FIN |
 | Date naissance | 2008-07-09 |

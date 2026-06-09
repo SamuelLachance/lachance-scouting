@@ -5,8 +5,8 @@
 | Champ | Valeur |
 |-------|--------|
 | Position | RW |
-| Taille | NA |
-| Poids | NA lbs |
+| Taille | 5'11 |
+| Poids | 203 lbs |
 | Tire | ? |
 | Pays | SWE |
 | Date naissance | N/A |

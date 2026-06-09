@@ -5,8 +5,8 @@
 | Champ | Valeur |
 |-------|--------|
 | Position | RW |
-| Taille | NA |
-| Poids | NA lbs |
+| Taille | 6'4 |
+| Poids | 201 lbs |
 | Tire | ? |
 | Pays | SVK |
 | Date naissance | N/A |

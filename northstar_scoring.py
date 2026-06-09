@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from draft_config import DEFAULT_DRAFT_YEAR, paths_for_year
+from over_age import apply_over_age_spi_penalty, over_age_status
 
 BASE = Path(__file__).parent
 _paths = paths_for_year(DEFAULT_DRAFT_YEAR)
@@ -1415,6 +1416,25 @@ def _merge_scores(
     }
 
 
+def _apply_over_age_to_spi(
+    spi: float,
+    full_name: str,
+    country: str,
+    *,
+    rankings_dob: str = "",
+) -> tuple[float, dict[str, Any]]:
+    """Pénalité SPI explicite pour prospects over-age (2025 éligible, non repêché)."""
+    oa = over_age_status(full_name, country, rankings_dob=rankings_dob)
+    final_spi, penalty = apply_over_age_spi_penalty(spi, oa["is_over_age"])
+    meta = {
+        "is_over_age": oa["is_over_age"],
+        "over_age_penalty": penalty,
+        "spi_before_penalty": round(spi, 2) if penalty else None,
+        "drafted_in_2025": oa["drafted_in_2025"],
+    }
+    return final_spi, meta
+
+
 def _scores_from_evaluation(
     evaluation: dict,
     full_name: str,
@@ -1422,6 +1442,9 @@ def _scores_from_evaluation(
     height: str,
     weight: str,
     report: dict,
+    *,
+    country: str = "",
+    rankings_dob: str = "",
 ) -> dict[str, Any]:
     """Applique une évaluation manuelle détaillée (pipeline evaluate_players_northstar)."""
     pillars = evaluation.get("pillars") or {}
@@ -1436,8 +1459,10 @@ def _scores_from_evaluation(
             rationales[dim] = p["rationale"]
 
     cov = evaluation.get("confidence") or evaluation.get("report_coverage") or "partial"
-    overall = northstar_overall(dims) * _confidence_multiplier(cov)
-    overall = round(min(99.9, max(0, overall)), 2)
+    raw_spi = northstar_overall(dims) * _confidence_multiplier(cov)
+    overall, oa_meta = _apply_over_age_to_spi(
+        raw_spi, full_name, country, rankings_dob=rankings_dob,
+    )
     star_tier = _star_tier(overall)
 
     forces = list(evaluation.get("forces") or [])
@@ -1467,6 +1492,7 @@ def _scores_from_evaluation(
     return {
         **dims,
         "spi": overall,
+        **oa_meta,
         "resume": resume,
         "forces": forces[:MAX_FORCES],
         "faiblesses": faiblesses[:MAX_FAIBLESSES],
@@ -1494,6 +1520,8 @@ def northstar_generate(
     consensus_rank: int | None,
     player_key: str | None = None,
     extra_text: str = "",
+    *,
+    rankings_dob: str = "",
 ) -> dict[str, Any]:
     from name_utils import canonical_key
 
@@ -1505,6 +1533,7 @@ def northstar_generate(
         report = reports.get(key, {})
         return _scores_from_evaluation(
             player_eval, full_name, pos, height, weight, report,
+            country=country, rankings_dob=rankings_dob,
         )
 
     reports = _load_reports()
@@ -1542,8 +1571,10 @@ def northstar_generate(
     if h <= 69 and "D" not in pos.upper():
         dims["star_ceiling"] = max(1, dims["star_ceiling"] - 0.3)
 
-    overall = northstar_overall(dims) * _confidence_multiplier(cov)
-    overall = round(min(99.9, max(0, overall)), 2)
+    raw_spi = northstar_overall(dims) * _confidence_multiplier(cov)
+    overall, oa_meta = _apply_over_age_to_spi(
+        raw_spi, full_name, country, rankings_dob=rankings_dob,
+    )
     star_tier = _star_tier(overall)
 
     forces, faiblesses = build_forces_faiblesses(
@@ -1559,6 +1590,7 @@ def northstar_generate(
     scores = {
         **dims,
         "spi": overall,
+        **oa_meta,
         "resume": resume,
         "forces": forces,
         "faiblesses": faiblesses,
