@@ -222,6 +222,7 @@ Lawrence, Tynan	C	6'0	168	L	CDN
 Cullen, Wyatt	C	6'1	180	L	USA
 Rudolph, Daxon	D	6'1	194	R	CDN
 Preston, Mathis	RW	5'11	168	R	CDN
+Puchner, Luke	LW	5'10	183	L	USA	2008-01-02
 Reid, Chase	D	6'2	185	R	USA
 Lin, Ryan	D	5'11	174	R	CDN
 Roobroeck, Ryan	C	6'4	190	L	CDN
@@ -846,6 +847,14 @@ def main():
         cr = r["Rang_Consensus"]
         ds = f" (consensus #{cr}, delta {r['Delta_vs_Consensus']})" if cr != "N/A" else ""
         print(f"  #{r['Rang_Final']} {r['Nom']} - SPI {r['Score_NORTHSTAR']}/100 [{r['Star_Tier']}]{ds}")
+
+    cov_counts: dict[str, int] = {}
+    for r in rows:
+        c = r.get("Couverture_Rapport") or "unknown"
+        cov_counts[c] = cov_counts.get(c, 0) + 1
+    print(f"\nCouverture rapports DPH ({len(rows)} joueurs):")
+    for k in ("full", "partial", "thin", "none"):
+        print(f"  {k}: {cov_counts.get(k, 0)}")
 
 
 if __name__ == "__main__":

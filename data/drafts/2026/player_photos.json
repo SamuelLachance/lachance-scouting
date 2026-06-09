@@ -1,0 +1,3446 @@
+{
+  "mckenna-gavin": {
+    "name": "Gavin McKenna",
+    "local": "./images/players/2026/mckenna-gavin.jpg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Gavin_McKenna_2024.11.13.jpg/960px-Gavin_McKenna_2024.11.13.jpg",
+    "generated": false
+  },
+  "reid-chase": {
+    "name": "Chase Reid",
+    "local": "./images/players/2026/reid-chase.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "verhoeff-keaton": {
+    "name": "Keaton Verhoeff",
+    "local": "./images/players/2026/verhoeff-keaton.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "stenberg-ivar": {
+    "name": "Ivar Stenberg",
+    "local": "./images/players/2026/stenberg-ivar.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "malhotra-caleb": {
+    "name": "Caleb Malhotra",
+    "local": "./images/players/2026/malhotra-caleb.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "smits-alberts": {
+    "name": "Alberts Smits",
+    "local": "./images/players/2026/smits-alberts.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bernat-lucian": {
+    "name": "Lucian Bernat",
+    "local": "./images/players/2026/bernat-lucian.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pakarinen-noel": {
+    "name": "Noel Pakarinen",
+    "local": "./images/players/2026/pakarinen-noel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "frolo-jakub": {
+    "name": "Jakub Frolo",
+    "local": "./images/players/2026/frolo-jakub.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sivertson-jonah": {
+    "name": "Jonah Sivertson",
+    "local": "./images/players/2026/sivertson-jonah.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lemire-kayden": {
+    "name": "Kayden Lemire",
+    "local": "./images/players/2026/lemire-kayden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "andersson-ludvig": {
+    "name": "Ludvig Andersson",
+    "local": "./images/players/2026/andersson-ludvig.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gudmundsson-mans": {
+    "name": "Mans Gudmundsson",
+    "local": "./images/players/2026/gudmundsson-mans.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "palme-ola": {
+    "name": "Ola Palme",
+    "local": "./images/players/2026/palme-ola.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "szongoth-doman": {
+    "name": "Doman Szongoth",
+    "local": "./images/players/2026/szongoth-doman.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hamilton-reese": {
+    "name": "Reese Hamilton",
+    "local": "./images/players/2026/hamilton-reese.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hafele-landon": {
+    "name": "Landon Hafele",
+    "local": "./images/players/2026/hafele-landon.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kurtz-jayden": {
+    "name": "Jayden Kurtz",
+    "local": "./images/players/2026/kurtz-jayden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "laitinen-jiko": {
+    "name": "Jiko Laitinen",
+    "local": "./images/players/2026/laitinen-jiko.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lefebvre-liam": {
+    "name": "Liam Lefebvre",
+    "local": "./images/players/2026/lefebvre-liam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kuehne-lincoln": {
+    "name": "Lincoln Kuehne",
+    "local": "./images/players/2026/kuehne-lincoln.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vanhanen-matias": {
+    "name": "Matias Vanhanen",
+    "local": "./images/players/2026/vanhanen-matias.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sapozhnikov-alexander": {
+    "name": "Alexander Sapozhnikov",
+    "local": "./images/players/2026/sapozhnikov-alexander.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lin-ryan": {
+    "name": "Ryan Lin",
+    "local": "./images/players/2026/lin-ryan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "klimpke-brayden": {
+    "name": "Brayden Klimpke",
+    "local": "./images/players/2026/klimpke-brayden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "floris-jakub": {
+    "name": "Jakub Floris",
+    "local": "./images/players/2026/floris-jakub.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "eriksson-samuel": {
+    "name": "Samuel Eriksson",
+    "local": "./images/players/2026/eriksson-samuel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lundqvist-william": {
+    "name": "William Lundqvist",
+    "local": "./images/players/2026/lundqvist-william.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gastrin-malcom": {
+    "name": "Malcom Gastrin",
+    "local": "./images/players/2026/gastrin-malcom.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "josbrant-mans": {
+    "name": "Mans Josbrant",
+    "local": "./images/players/2026/josbrant-mans.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kostov-alex": {
+    "name": "Alex Kostov",
+    "local": "./images/players/2026/kostov-alex.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "wooten-zach": {
+    "name": "Zach Wooten",
+    "local": "./images/players/2026/wooten-zach.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kurka-pavel": {
+    "name": "Pavel Kurka",
+    "local": "./images/players/2026/kurka-pavel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "carell-felix": {
+    "name": "Felix Carell",
+    "local": "./images/players/2026/carell-felix.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "matyev-yaroslav": {
+    "name": "Yaroslav Matyev",
+    "local": "./images/players/2026/matyev-yaroslav.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "olsen-zach": {
+    "name": "Zach Olsen",
+    "local": "./images/players/2026/olsen-zach.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "joudrey-caelan": {
+    "name": "Caelan Joudrey",
+    "local": "./images/players/2026/joudrey-caelan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sparks-tyus": {
+    "name": "Tyus Sparks",
+    "local": "./images/players/2026/sparks-tyus.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ambrosio-lucas": {
+    "name": "Lucas Ambrosio",
+    "local": "./images/players/2026/ambrosio-lucas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "wilmott-benjamin": {
+    "name": "Benjamin Wilmott",
+    "local": "./images/players/2026/wilmott-benjamin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lansard-zachary": {
+    "name": "Zachary Lansard",
+    "local": "./images/players/2026/lansard-zachary.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "piiparinen-juho": {
+    "name": "Juho Piiparinen",
+    "local": "./images/players/2026/piiparinen-juho.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tuminaro-cole": {
+    "name": "Cole Tuminaro",
+    "local": "./images/players/2026/tuminaro-cole.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nicolaysen-henry": {
+    "name": "Henry Nicolaysen",
+    "local": "./images/players/2026/nicolaysen-henry.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pantellas-giorgos": {
+    "name": "Giorgos Pantellas",
+    "local": "./images/players/2026/pantellas-giorgos.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gustafsson-malte": {
+    "name": "Malte Gustafsson",
+    "local": "./images/players/2026/gustafsson-malte.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hakansson-william": {
+    "name": "William Hakansson",
+    "local": "./images/players/2026/hakansson-william.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tarvainen-joel": {
+    "name": "Joel Tarvainen",
+    "local": "./images/players/2026/tarvainen-joel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "heger-kyle": {
+    "name": "Kyle Heger",
+    "local": "./images/players/2026/heger-kyle.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mclaughlin-will": {
+    "name": "Will McLaughlin",
+    "local": "./images/players/2026/mclaughlin-will.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ryabykin-elisei": {
+    "name": "Elisei Ryabykin",
+    "local": "./images/players/2026/ryabykin-elisei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "denisov-pavel": {
+    "name": "Pavel Denisov",
+    "local": "./images/players/2026/denisov-pavel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kotkov-matvei": {
+    "name": "Matvei Kotkov",
+    "local": "./images/players/2026/kotkov-matvei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kemps-jonas": {
+    "name": "Jonas Kemps",
+    "local": "./images/players/2026/kemps-jonas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kuhta-jasper": {
+    "name": "Jasper Kuhta",
+    "local": "./images/players/2026/kuhta-jasper.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bryzgalov-yaroslav": {
+    "name": "Yaroslav Bryzgalov",
+    "local": "./images/players/2026/bryzgalov-yaroslav.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "morozov-alexander": {
+    "name": "Alexander Morozov",
+    "local": "./images/players/2026/morozov-alexander.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "karasyov-matvey": {
+    "name": "Matvey Karasyov",
+    "local": "./images/players/2026/karasyov-matvey.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "erickson-joseph": {
+    "name": "Joseph Erickson",
+    "local": "./images/players/2026/erickson-joseph.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sauer-kent": {
+    "name": "Kent Sauer",
+    "local": "./images/players/2026/sauer-kent.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bowes-spencer": {
+    "name": "Spencer Bowes",
+    "local": "./images/players/2026/bowes-spencer.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "burick-sean": {
+    "name": "Sean Burick",
+    "local": "./images/players/2026/burick-sean.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kulebiakin-oleg": {
+    "name": "Oleg Kulebiakin",
+    "local": "./images/players/2026/kulebiakin-oleg.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "stevens-carter": {
+    "name": "Carter Stevens",
+    "local": "./images/players/2026/stevens-carter.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "carels-carson": {
+    "name": "Carson Carels",
+    "local": "./images/players/2026/carels-carson.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rudolph-daxon": {
+    "name": "Daxon Rudolph",
+    "local": "./images/players/2026/rudolph-daxon.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sorbrand-william": {
+    "name": "William Sorbrand",
+    "local": "./images/players/2026/sorbrand-william.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "brabenec-jan": {
+    "name": "Jan Brabenec",
+    "local": "./images/players/2026/brabenec-jan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vuori-atte": {
+    "name": "Atte Vuori",
+    "local": "./images/players/2026/vuori-atte.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hermansson-elton": {
+    "name": "Elton Hermansson",
+    "local": "./images/players/2026/hermansson-elton.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "trottier-parker": {
+    "name": "Parker Trottier",
+    "local": "./images/players/2026/trottier-parker.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bourque-louis-felix": {
+    "name": "Louis Felix Bourque",
+    "local": "./images/players/2026/bourque-louis-felix.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "belchetz-ethan": {
+    "name": "Ethan Belchetz",
+    "local": "./images/players/2026/belchetz-ethan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hurlbert-jp": {
+    "name": "J.P Hurlbert",
+    "local": "./images/players/2026/hurlbert-jp.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "matyuk-artyom": {
+    "name": "Artyom Matyuk",
+    "local": "./images/players/2026/matyuk-artyom.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "stengrim-kade": {
+    "name": "Kade Stengrim",
+    "local": "./images/players/2026/stengrim-kade.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "levac-adam": {
+    "name": "Adam Levac",
+    "local": "./images/players/2026/levac-adam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "royston-wesley": {
+    "name": "Wesley Royston",
+    "local": "./images/players/2026/royston-wesley.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "villeneuve-xavier": {
+    "name": "Xavier Villeneuve",
+    "local": "./images/players/2026/villeneuve-xavier.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "morozov-ilia": {
+    "name": "Ilia Morozov",
+    "local": "./images/players/2026/morozov-ilia.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rogowski-brooks": {
+    "name": "Brooks Rogowski",
+    "local": "./images/players/2026/rogowski-brooks.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ruck-liam": {
+    "name": "Liam Ruck",
+    "local": "./images/players/2026/ruck-liam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ruck-marcus": {
+    "name": "Marcus Ruck",
+    "local": "./images/players/2026/ruck-marcus.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "roobroeck-ryan": {
+    "name": "Ryan Roobroeck",
+    "local": "./images/players/2026/roobroeck-ryan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cullen-wyatt": {
+    "name": "Wyatt Cullen",
+    "local": "./images/players/2026/cullen-wyatt.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "karsay-samuel": {
+    "name": "Samuel Karsay",
+    "local": "./images/players/2026/karsay-samuel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hemming-oscar": {
+    "name": "Oscar Hemming",
+    "local": "./images/players/2026/hemming-oscar.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "suvanto-oliver": {
+    "name": "Oliver Suvanto",
+    "local": "./images/players/2026/suvanto-oliver.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "novotony-adam": {
+    "name": "Adam Novotony",
+    "local": "./images/players/2026/novotony-adam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "shilov-yegor": {
+    "name": "Yegor Shilov",
+    "local": "./images/players/2026/shilov-yegor.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "matveyev-vsevolod": {
+    "name": "Vsevolod Matveyev",
+    "local": "./images/players/2026/matveyev-vsevolod.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "klepov-nikita": {
+    "name": "Nikita Klepov",
+    "local": "./images/players/2026/klepov-nikita.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dean-dylan": {
+    "name": "Dylan Dean",
+    "local": "./images/players/2026/dean-dylan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "preston-mathis": {
+    "name": "Mathis Preston",
+    "local": "./images/players/2026/preston-mathis.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "valentini-adam": {
+    "name": "Adam Valentini",
+    "local": "./images/players/2026/valentini-adam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "jakubec-michal": {
+    "name": "Michal Jakubec",
+    "local": "./images/players/2026/jakubec-michal.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lawrence-tynan": {
+    "name": "Tynan Lawrence",
+    "local": "./images/players/2026/lawrence-tynan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bjorck-viggo": {
+    "name": "Viggo Björck",
+    "local": "./images/players/2026/bjorck-viggo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "andersson-lukas": {
+    "name": "Lukas Andersson",
+    "local": "./images/players/2026/andersson-lukas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ivanov-alexander": {
+    "name": "Alexander Ivanov",
+    "local": "./images/players/2026/ivanov-alexander.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bykov-andrei": {
+    "name": "Andrei Bykov",
+    "local": "./images/players/2026/bykov-andrei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "uronen-anttoni": {
+    "name": "Anttoni Uronen",
+    "local": "./images/players/2026/uronen-anttoni.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nilsson-douglas-lindberg": {
+    "name": "Douglas Lindberg Nilsson",
+    "local": "./images/players/2026/nilsson-douglas-lindberg.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tamm-viggo": {
+    "name": "Viggo Tamm",
+    "local": "./images/players/2026/tamm-viggo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "parsons-john": {
+    "name": "John Parsons",
+    "local": "./images/players/2026/parsons-john.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "poletin-frantisek": {
+    "name": "Frantisek Poletin",
+    "local": "./images/players/2026/poletin-frantisek.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "boettiger-harrison": {
+    "name": "Harrison Boettiger",
+    "local": "./images/players/2026/boettiger-harrison.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fetterolf-ryder": {
+    "name": "Ryder Fetterolf",
+    "local": "./images/players/2026/fetterolf-ryder.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "shurygin-stepan": {
+    "name": "Stepan Shurygin",
+    "local": "./images/players/2026/shurygin-stepan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "jovanovski-zachary": {
+    "name": "Zachary Jovanovski",
+    "local": "./images/players/2026/jovanovski-zachary.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gustafson-jake": {
+    "name": "Jake Gustafson",
+    "local": "./images/players/2026/gustafson-jake.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sokolovskii-maksim": {
+    "name": "Maksim Sokolovskii",
+    "local": "./images/players/2026/sokolovskii-maksim.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "jaswal-arvin": {
+    "name": "Arvin Jaswal",
+    "local": "./images/players/2026/jaswal-arvin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "minchak-matthew": {
+    "name": "Matthew Minchak",
+    "local": "./images/players/2026/minchak-matthew.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "yermolenko-vladislav": {
+    "name": "Vladislav Yermolenko",
+    "local": "./images/players/2026/yermolenko-vladislav.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ainasto-juuso": {
+    "name": "Juuso Ainasto",
+    "local": "./images/players/2026/ainasto-juuso.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gammals-william": {
+    "name": "William Gammals",
+    "local": "./images/players/2026/gammals-william.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sedlacek-david": {
+    "name": "David Sedlacek",
+    "local": "./images/players/2026/sedlacek-david.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "frossard-eric": {
+    "name": "Eric Frossard",
+    "local": "./images/players/2026/frossard-eric.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ivchenko-dmitri": {
+    "name": "Dmitri Ivchenko",
+    "local": "./images/players/2026/ivchenko-dmitri.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hrenak-samuel": {
+    "name": "Samuel Hrenak",
+    "local": "./images/players/2026/hrenak-samuel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cruitt-cash": {
+    "name": "Cash Cruitt",
+    "local": "./images/players/2026/cruitt-cash.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "stengard-gustav": {
+    "name": "Gustav Stengard",
+    "local": "./images/players/2026/stengard-gustav.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "carrithers-luke": {
+    "name": "Luke Carrithers",
+    "local": "./images/players/2026/carrithers-luke.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tjarnlund-milo": {
+    "name": "Milo Tjarnlund",
+    "local": "./images/players/2026/tjarnlund-milo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "henriquez-roberto": {
+    "name": "Roberto Henriquez",
+    "local": "./images/players/2026/henriquez-roberto.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cameron-ryan": {
+    "name": "Ryan Cameron",
+    "local": "./images/players/2026/cameron-ryan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "casey-carter": {
+    "name": "Carter Casey",
+    "local": "./images/players/2026/casey-carter.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "betts-gavin": {
+    "name": "Gavin Betts",
+    "local": "./images/players/2026/betts-gavin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "humphries-matthew": {
+    "name": "Matthew Humphries",
+    "local": "./images/players/2026/humphries-matthew.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "snell-parker": {
+    "name": "Parker Snell",
+    "local": "./images/players/2026/snell-parker.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "karbainov-matvey": {
+    "name": "Matvey Karbainov",
+    "local": "./images/players/2026/karbainov-matvey.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bleyl-thomas": {
+    "name": "Thomas Bleyl",
+    "local": "./images/players/2026/bleyl-thomas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "laatikainen-max": {
+    "name": "Max Laatikainen",
+    "local": "./images/players/2026/laatikainen-max.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kerkola-patrik": {
+    "name": "Patrik Kerkola",
+    "local": "./images/players/2026/kerkola-patrik.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ruzicka-filip": {
+    "name": "Filip Růžička",
+    "local": "./images/players/2026/ruzicka-filip.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sklenicka-marek": {
+    "name": "Marek Sklenicka",
+    "local": "./images/players/2026/sklenicka-marek.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tvrznik-tobias": {
+    "name": "Tobias Tvrznik",
+    "local": "./images/players/2026/tvrznik-tobias.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "francisco-aj": {
+    "name": "AJ Francisco",
+    "local": "./images/players/2026/francisco-aj.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "laylin-bode": {
+    "name": "Bode Laylin",
+    "local": "./images/players/2026/laylin-bode.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bogas-nicholas": {
+    "name": "Nicholas Bogas",
+    "local": "./images/players/2026/bogas-nicholas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vaananen-vilmeri": {
+    "name": "Vilmeri Vaananen",
+    "local": "./images/players/2026/vaananen-vilmeri.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hrebik-ben": {
+    "name": "Ben Hrebik",
+    "local": "./images/players/2026/hrebik-ben.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "schaubel-jason": {
+    "name": "Jason Schaubel",
+    "local": "./images/players/2026/schaubel-jason.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "stebetak-ondrej": {
+    "name": "Ondrej Stebetak",
+    "local": "./images/players/2026/stebetak-ondrej.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "wendt-xavier": {
+    "name": "Xavier Wendt",
+    "local": "./images/players/2026/wendt-xavier.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rusakovich-daniil": {
+    "name": "Daniil Rusakovich",
+    "local": "./images/players/2026/rusakovich-daniil.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "peshkov-gleb": {
+    "name": "Gleb Peshkov",
+    "local": "./images/players/2026/peshkov-gleb.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ivanov-yuri": {
+    "name": "Yuri Ivanov",
+    "local": "./images/players/2026/ivanov-yuri.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kelly-benett": {
+    "name": "Benett Kelly",
+    "local": "./images/players/2026/kelly-benett.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "allard-cameron": {
+    "name": "Cameron Allard",
+    "local": "./images/players/2026/allard-cameron.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rolsing-darian": {
+    "name": "Darian Rolsing",
+    "local": "./images/players/2026/rolsing-darian.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kamas-jiri": {
+    "name": "Jiri Kamas",
+    "local": "./images/players/2026/kamas-jiri.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "taamu-noa": {
+    "name": "Noa Taamu",
+    "local": "./images/players/2026/taamu-noa.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "shaiikov-danai": {
+    "name": "Danai Shaiikov",
+    "local": "./images/players/2026/shaiikov-danai.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "charvat-sebastian": {
+    "name": "Sebastian Charvat",
+    "local": "./images/players/2026/charvat-sebastian.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rybkin-yegor": {
+    "name": "Yegor Rybkin",
+    "local": "./images/players/2026/rybkin-yegor.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cilthe-hjalmar": {
+    "name": "Hjalmar Cilthe",
+    "local": "./images/players/2026/cilthe-hjalmar.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kultgen-jack": {
+    "name": "Jack Kultgen",
+    "local": "./images/players/2026/kultgen-jack.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "marthaler-jackson": {
+    "name": "Jackson Marthaler",
+    "local": "./images/players/2026/marthaler-jackson.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rieber-james": {
+    "name": "James Rieber",
+    "local": "./images/players/2026/rieber-james.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kwajah-jet": {
+    "name": "Jet Kwajah",
+    "local": "./images/players/2026/kwajah-jet.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hagglof-john": {
+    "name": "John Hagglof",
+    "local": "./images/players/2026/hagglof-john.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "krizizke-lincoln": {
+    "name": "Lincoln Krizizke",
+    "local": "./images/players/2026/krizizke-lincoln.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "soderberg-ludvig": {
+    "name": "Ludvig Soderberg",
+    "local": "./images/players/2026/soderberg-ludvig.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tideman-olle": {
+    "name": "Olle Tideman",
+    "local": "./images/players/2026/tideman-olle.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "langvardt-rocky": {
+    "name": "Rocky Langvardt",
+    "local": "./images/players/2026/langvardt-rocky.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bratt-zigge": {
+    "name": "Zigge Bratt",
+    "local": "./images/players/2026/bratt-zigge.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lennon-elliot": {
+    "name": "Elliot Lennon",
+    "local": "./images/players/2026/lennon-elliot.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "johnson-neilan": {
+    "name": "Neilan Johnson",
+    "local": "./images/players/2026/johnson-neilan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "patrikhayev-ivan": {
+    "name": "Ivan Patrikhayev",
+    "local": "./images/players/2026/patrikhayev-ivan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cossetteayotte-benjamin": {
+    "name": "Benjamin Cossette-Ayotte",
+    "local": "./images/players/2026/cossetteayotte-benjamin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sjostrom-oliwer": {
+    "name": "Oliwer Sjöström",
+    "local": "./images/players/2026/sjostrom-oliwer.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cleaves-cooper": {
+    "name": "Cooper Cleaves",
+    "local": "./images/players/2026/cleaves-cooper.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rheaumemullen-dakoda": {
+    "name": "Dakoda Rhéaume-Mullen",
+    "local": "./images/players/2026/rheaumemullen-dakoda.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "uronen-eelis": {
+    "name": "Eelis Uronen",
+    "local": "./images/players/2026/uronen-eelis.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "parkkali-jonne": {
+    "name": "Jonne Parkkali",
+    "local": "./images/players/2026/parkkali-jonne.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "radivojevic-luka": {
+    "name": "Luka Radivojevic",
+    "local": "./images/players/2026/radivojevic-luka.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hora-vojtech": {
+    "name": "Vojtech Hora",
+    "local": "./images/players/2026/hora-vojtech.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "povarov-mikhail": {
+    "name": "Mikhail Povarov",
+    "local": "./images/players/2026/povarov-mikhail.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nikulshin-nikolai": {
+    "name": "Nikolai Nikulshin",
+    "local": "./images/players/2026/nikulshin-nikolai.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "selivanov-vladimir": {
+    "name": "Vladimir Selivanov",
+    "local": "./images/players/2026/selivanov-vladimir.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "karmanov-alexander": {
+    "name": "Alexander Karmanov",
+    "local": "./images/players/2026/karmanov-alexander.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mondoux-andre": {
+    "name": "Andre Mondoux",
+    "local": "./images/players/2026/mondoux-andre.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "robinson-andrew": {
+    "name": "Andrew Robinson",
+    "local": "./images/players/2026/robinson-andrew.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "anisimov-arsenii": {
+    "name": "Arsenii Anisimov",
+    "local": "./images/players/2026/anisimov-arsenii.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "murnane-brady": {
+    "name": "Brady Murnane",
+    "local": "./images/players/2026/murnane-brady.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mcfadden-brian": {
+    "name": "Brian McFadden",
+    "local": "./images/players/2026/mcfadden-brian.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "wood-cody": {
+    "name": "Cody Wood",
+    "local": "./images/players/2026/wood-cody.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "feeley-colin": {
+    "name": "Colin Feeley",
+    "local": "./images/players/2026/feeley-colin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "allen-dryden": {
+    "name": "Dryden Allen",
+    "local": "./images/players/2026/allen-dryden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "arnett-elliot": {
+    "name": "Elliot Arnett",
+    "local": "./images/players/2026/arnett-elliot.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "spicer-grady": {
+    "name": "Grady Spicer",
+    "local": "./images/players/2026/spicer-grady.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pangretitsch-harris": {
+    "name": "Harris Pangretitsch",
+    "local": "./images/players/2026/pangretitsch-harris.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "aura-hunter": {
+    "name": "Hunter Aura",
+    "local": "./images/players/2026/aura-hunter.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vandeven-jacob": {
+    "name": "Jacob Vandeven",
+    "local": "./images/players/2026/vandeven-jacob.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "woo-jonas": {
+    "name": "Jonas Woo",
+    "local": "./images/players/2026/woo-jonas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "brown-julian": {
+    "name": "Julian Brown",
+    "local": "./images/players/2026/brown-julian.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "saari-julius": {
+    "name": "Julius Saari",
+    "local": "./images/players/2026/saari-julius.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "handsor-justin": {
+    "name": "Justin Handsor",
+    "local": "./images/players/2026/handsor-justin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "laschon-leo": {
+    "name": "Leo Laschon",
+    "local": "./images/players/2026/laschon-leo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "man-matyas": {
+    "name": "Matyas Man",
+    "local": "./images/players/2026/man-matyas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ruml-ondrej": {
+    "name": "Ondrej Ruml",
+    "local": "./images/players/2026/ruml-ondrej.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "steen-riley": {
+    "name": "Riley Steen",
+    "local": "./images/players/2026/steen-riley.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "singh-rylan": {
+    "name": "Rylan Singh",
+    "local": "./images/players/2026/singh-rylan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lechner-theodore": {
+    "name": "Theodore Lechner",
+    "local": "./images/players/2026/lechner-theodore.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "weiner-jacoby": {
+    "name": "Jacoby Weiner",
+    "local": "./images/players/2026/weiner-jacoby.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "courchesne-rafael": {
+    "name": "Rafael Courchesne",
+    "local": "./images/players/2026/courchesne-rafael.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "smith-kaenan": {
+    "name": "Kaenan Smith",
+    "local": "./images/players/2026/smith-kaenan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "taillefer-alexandre": {
+    "name": "Alexandre Taillefer",
+    "local": "./images/players/2026/taillefer-alexandre.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pufr-antonin": {
+    "name": "Antonin Pufr",
+    "local": "./images/players/2026/pufr-antonin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ustinkov-daniil": {
+    "name": "Daniil Ustinkov",
+    "local": "./images/players/2026/ustinkov-daniil.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zmrhal-david": {
+    "name": "David Zmrhal",
+    "local": "./images/players/2026/zmrhal-david.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "doyle-eddie": {
+    "name": "Eddie Doyle",
+    "local": "./images/players/2026/doyle-eddie.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zajic-lukas": {
+    "name": "Lukas Zajic",
+    "local": "./images/players/2026/zajic-lukas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "myloserdnyy-michel": {
+    "name": "Michel Myloserdnyy",
+    "local": "./images/players/2026/myloserdnyy-michel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "larsen-oliver": {
+    "name": "Oliver Larsen",
+    "local": "./images/players/2026/larsen-oliver.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "thomsson-tim": {
+    "name": "Tim Thomsson",
+    "local": "./images/players/2026/thomsson-tim.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cermak-tomas": {
+    "name": "Tomas Cermak",
+    "local": "./images/players/2026/cermak-tomas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kovalenko-aleksandr": {
+    "name": "Aleksandr Kovalenko",
+    "local": "./images/players/2026/kovalenko-aleksandr.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dolgopolov-ilya": {
+    "name": "Ilya Dolgopolov",
+    "local": "./images/players/2026/dolgopolov-ilya.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "larys-jan": {
+    "name": "Jan Larys",
+    "local": "./images/players/2026/larys-jan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "somervuori-jere": {
+    "name": "Jere Somervuori",
+    "local": "./images/players/2026/somervuori-jere.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tuuva-leo": {
+    "name": "Leo Tuuva",
+    "local": "./images/players/2026/tuuva-leo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "khabarov-mikhail": {
+    "name": "Mikhail Khabarov",
+    "local": "./images/players/2026/khabarov-mikhail.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kostilainen-sakari": {
+    "name": "Sakari Kostilainen",
+    "local": "./images/players/2026/kostilainen-sakari.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lacelle-william": {
+    "name": "William Lacelle",
+    "local": "./images/players/2026/lacelle-william.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "odonnell-aiden": {
+    "name": "Aiden O'Donnell",
+    "local": "./images/players/2026/odonnell-aiden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pepoy-brody": {
+    "name": "Brody Pepoy",
+    "local": "./images/players/2026/pepoy-brody.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "duguay-jordan": {
+    "name": "Jordan Duguay",
+    "local": "./images/players/2026/duguay-jordan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "varga-kalder": {
+    "name": "Kalder Varga",
+    "local": "./images/players/2026/varga-kalder.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nomme-adam": {
+    "name": "Adam Nomme",
+    "local": "./images/players/2026/nomme-adam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kristiansson-alex": {
+    "name": "Alex Kristiansson",
+    "local": "./images/players/2026/kristiansson-alex.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "graf-justin": {
+    "name": "Justin Graf",
+    "local": "./images/players/2026/graf-justin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "danielsson-liam": {
+    "name": "Liam Danielsson",
+    "local": "./images/players/2026/danielsson-liam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "larsson-melwin": {
+    "name": "Melwin Larsson",
+    "local": "./images/players/2026/larsson-melwin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "olsson-oscar": {
+    "name": "Oscar Olsson",
+    "local": "./images/players/2026/olsson-oscar.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "orenas-rasmus": {
+    "name": "Rasmus Orenas",
+    "local": "./images/players/2026/orenas-rasmus.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tuzin-tsimafei": {
+    "name": "Tsimafei Tuzin",
+    "local": "./images/players/2026/tuzin-tsimafei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "donia-kaiden": {
+    "name": "Kaiden Donia",
+    "local": "./images/players/2026/donia-kaiden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "simonov-semyon": {
+    "name": "Semyon Simonov",
+    "local": "./images/players/2026/simonov-semyon.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "berchild-mikey": {
+    "name": "Mikey Berchild",
+    "local": "./images/players/2026/berchild-mikey.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hedqvist-isac": {
+    "name": "Isac Hedqvist",
+    "local": "./images/players/2026/hedqvist-isac.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cowan-bobby": {
+    "name": "Bobby Cowan",
+    "local": "./images/players/2026/cowan-bobby.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vermirovsky-david": {
+    "name": "David Vermirovsky",
+    "local": "./images/players/2026/vermirovsky-david.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "melanen-jalmari": {
+    "name": "Jalmari Melanen",
+    "local": "./images/players/2026/melanen-jalmari.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "juntunen-oiva": {
+    "name": "Oiva Juntunen",
+    "local": "./images/players/2026/juntunen-oiva.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "wahlroos-olli": {
+    "name": "Olli Wahlroos",
+    "local": "./images/players/2026/wahlroos-olli.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rasanen-veeti": {
+    "name": "Veeti Rasanen",
+    "local": "./images/players/2026/rasanen-veeti.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kallio-wilmer": {
+    "name": "Wilmer Kallio",
+    "local": "./images/players/2026/kallio-wilmer.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "raymond-alexandre": {
+    "name": "Alexandre Raymond",
+    "local": "./images/players/2026/raymond-alexandre.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "celko-denis": {
+    "name": "Denis Celko",
+    "local": "./images/players/2026/celko-denis.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "corovic-maksim": {
+    "name": "Maksim Corovic",
+    "local": "./images/players/2026/corovic-maksim.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "psohlavec-martin": {
+    "name": "Martin Psohlavec",
+    "local": "./images/players/2026/psohlavec-martin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "plumins-patriks": {
+    "name": "Patriks Plumins",
+    "local": "./images/players/2026/plumins-patriks.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "juustovaara-casper": {
+    "name": "Casper Juustovaara",
+    "local": "./images/players/2026/juustovaara-casper.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "paul-douglas": {
+    "name": "Douglas Paul",
+    "local": "./images/players/2026/paul-douglas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "stuart-logan": {
+    "name": "Logan Stuart",
+    "local": "./images/players/2026/stuart-logan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zemlicka-richard": {
+    "name": "Richard Zemlicka",
+    "local": "./images/players/2026/zemlicka-richard.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fortin-alexis": {
+    "name": "Alexis Fortin",
+    "local": "./images/players/2026/fortin-alexis.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "voiaga-nikita": {
+    "name": "Nikita Voiaga",
+    "local": "./images/players/2026/voiaga-nikita.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "szarowski-ondrej": {
+    "name": "Ondrej Szarowski",
+    "local": "./images/players/2026/szarowski-ondrej.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cernak-roderik": {
+    "name": "Roderik Cernak",
+    "local": "./images/players/2026/cernak-roderik.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "langlois-tristan": {
+    "name": "Tristan Langlois",
+    "local": "./images/players/2026/langlois-tristan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cerny-vojtech": {
+    "name": "Vojtech Cerny",
+    "local": "./images/players/2026/cerny-vojtech.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "young-aiden": {
+    "name": "Aiden Young",
+    "local": "./images/players/2026/young-aiden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sarkenov-alisher": {
+    "name": "Alisher Sarkenov",
+    "local": "./images/players/2026/sarkenov-alisher.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "souch-brock": {
+    "name": "Brock Souch",
+    "local": "./images/players/2026/souch-brock.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bidgood-cohen": {
+    "name": "Cohen Bidgood",
+    "local": "./images/players/2026/bidgood-cohen.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pavao-cruz": {
+    "name": "Cruz Pavao",
+    "local": "./images/players/2026/pavao-cruz.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "anderson-darian": {
+    "name": "Darian Anderson",
+    "local": "./images/players/2026/anderson-darian.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lesiuk-gavin": {
+    "name": "Gavin Lesiuk",
+    "local": "./images/players/2026/lesiuk-gavin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "shybinskyi-illia": {
+    "name": "Illia Shybinskyi",
+    "local": "./images/players/2026/shybinskyi-illia.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "baumuller-joby": {
+    "name": "Joby Baumuller",
+    "local": "./images/players/2026/baumuller-joby.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "iginla-joe": {
+    "name": "Joe Iginla",
+    "local": "./images/players/2026/iginla-joe.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "salandra-joseph": {
+    "name": "Joseph Salandra",
+    "local": "./images/players/2026/salandra-joseph.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "evaschesen-josh": {
+    "name": "Josh Evaschesen",
+    "local": "./images/players/2026/evaschesen-josh.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "maze-julien": {
+    "name": "Julien Maze",
+    "local": "./images/players/2026/maze-julien.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kolarik-leon": {
+    "name": "Leon Kolarik",
+    "local": "./images/players/2026/kolarik-leon.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "amidovski-nathan": {
+    "name": "Nathan Amidovski",
+    "local": "./images/players/2026/amidovski-nathan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "brown-nathan": {
+    "name": "Nathan Brown",
+    "local": "./images/players/2026/brown-nathan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "stewart-nolan": {
+    "name": "Nolan Stewart",
+    "local": "./images/players/2026/stewart-nolan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "henderson-rowan": {
+    "name": "Rowan Henderson",
+    "local": "./images/players/2026/henderson-rowan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "brown-ryan": {
+    "name": "Ryan Brown",
+    "local": "./images/players/2026/brown-ryan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dingman-sawyer": {
+    "name": "Sawyer Dingman",
+    "local": "./images/players/2026/dingman-sawyer.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tomik-tobias": {
+    "name": "Tobias Tomik",
+    "local": "./images/players/2026/tomik-tobias.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cameron-weston": {
+    "name": "Weston Cameron",
+    "local": "./images/players/2026/cameron-weston.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kalimullin-adel": {
+    "name": "Adel Kalimullin",
+    "local": "./images/players/2026/kalimullin-adel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tsyplakov-gleb": {
+    "name": "Gleb Tsyplakov",
+    "local": "./images/players/2026/tsyplakov-gleb.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gromakov-nikita": {
+    "name": "Nikita Gromakov",
+    "local": "./images/players/2026/gromakov-nikita.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "melnikov-yan": {
+    "name": "Yan Melnikov",
+    "local": "./images/players/2026/melnikov-yan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kuzma-cameron": {
+    "name": "Cameron Kuzma",
+    "local": "./images/players/2026/kuzma-cameron.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "soller-cooper": {
+    "name": "Cooper Soller",
+    "local": "./images/players/2026/soller-cooper.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "torr-jack": {
+    "name": "Jack Torr",
+    "local": "./images/players/2026/torr-jack.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hemstrom-kalle": {
+    "name": "Kalle Hemstrom",
+    "local": "./images/players/2026/hemstrom-kalle.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kim-mikael": {
+    "name": "Mikael Kim",
+    "local": "./images/players/2026/kim-mikael.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "carpenhammar-milton": {
+    "name": "Milton Carpenhammar",
+    "local": "./images/players/2026/carpenhammar-milton.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "tomko-william": {
+    "name": "William Tomko",
+    "local": "./images/players/2026/tomko-william.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ilyin-arseni": {
+    "name": "Arseni Ilyin",
+    "local": "./images/players/2026/ilyin-arseni.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kulagin-artemy": {
+    "name": "Artemy Kulagin",
+    "local": "./images/players/2026/kulagin-artemy.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nikolayev-grigori": {
+    "name": "Grigori Nikolayev",
+    "local": "./images/players/2026/nikolayev-grigori.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "buzaev-kirill": {
+    "name": "Kirill Buzaev",
+    "local": "./images/players/2026/buzaev-kirill.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sidorov-pavel": {
+    "name": "Pavel Sidorov",
+    "local": "./images/players/2026/sidorov-pavel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "varosyan-rafik": {
+    "name": "Rafik Varosyan",
+    "local": "./images/players/2026/varosyan-rafik.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ivantsov-yaroslav": {
+    "name": "Yaroslav Ivantsov",
+    "local": "./images/players/2026/ivantsov-yaroslav.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ryan-caton": {
+    "name": "Caton Ryan",
+    "local": "./images/players/2026/ryan-caton.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "parssinen-jesse": {
+    "name": "Jesse Parssinen",
+    "local": "./images/players/2026/parssinen-jesse.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "galanek-john": {
+    "name": "John Galanek",
+    "local": "./images/players/2026/galanek-john.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vatjus-miko": {
+    "name": "Miko Vatjus",
+    "local": "./images/players/2026/vatjus-miko.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "keltikangas-onni": {
+    "name": "Onni Keltikangas",
+    "local": "./images/players/2026/keltikangas-onni.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dumont-dylan": {
+    "name": "Dylan Dumont",
+    "local": "./images/players/2026/dumont-dylan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "houle-florent": {
+    "name": "Florent Houle",
+    "local": "./images/players/2026/houle-florent.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "holejsovsky-josef": {
+    "name": "Josef Holejsovsky",
+    "local": "./images/players/2026/holejsovsky-josef.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kubiesa-matej": {
+    "name": "Matej Kubiesa",
+    "local": "./images/players/2026/kubiesa-matej.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ovcharov-nikita": {
+    "name": "Nikita Ovcharov",
+    "local": "./images/players/2026/ovcharov-nikita.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "litalien-romain": {
+    "name": "Romain L'Italien",
+    "local": "./images/players/2026/litalien-romain.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mclean-alex": {
+    "name": "Alex McLean",
+    "local": "./images/players/2026/mclean-alex.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "molgachev-andrei": {
+    "name": "Andrei Molgachev",
+    "local": "./images/players/2026/molgachev-andrei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "neill-andrew": {
+    "name": "Andrew Neill",
+    "local": "./images/players/2026/neill-andrew.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "olson-brett": {
+    "name": "Brett Olson",
+    "local": "./images/players/2026/olson-brett.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gillespie-brody": {
+    "name": "Brody Gillespie",
+    "local": "./images/players/2026/gillespie-brody.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "harvey-caden": {
+    "name": "Caden Harvey",
+    "local": "./images/players/2026/harvey-caden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "klassen-cohen": {
+    "name": "Cohen Klassen",
+    "local": "./images/players/2026/klassen-cohen.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "yakutsenak-dmitri": {
+    "name": "Dmitri Yakutsenak",
+    "local": "./images/players/2026/yakutsenak-dmitri.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mccann-kadon": {
+    "name": "Kadon McCann",
+    "local": "./images/players/2026/mccann-kadon.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sawchyn-lukas": {
+    "name": "Lukas Sawchyn",
+    "local": "./images/players/2026/sawchyn-lukas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "brown-reed": {
+    "name": "Reed Brown",
+    "local": "./images/players/2026/brown-reed.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kuryachenkov-stepan": {
+    "name": "Stepan Kuryachenkov",
+    "local": "./images/players/2026/kuryachenkov-stepan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sysoyev-danil": {
+    "name": "Danil Sysoyev",
+    "local": "./images/players/2026/sysoyev-danil.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "laman-roman": {
+    "name": "Roman Laman",
+    "local": "./images/players/2026/laman-roman.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sturgis-ethan": {
+    "name": "Ethan Sturgis",
+    "local": "./images/players/2026/sturgis-ethan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "munger-tim": {
+    "name": "Tim Munger",
+    "local": "./images/players/2026/munger-tim.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "manchuso-william": {
+    "name": "William Manchuso",
+    "local": "./images/players/2026/manchuso-william.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "puglisi-charlie": {
+    "name": "Charlie Puglisi",
+    "local": "./images/players/2026/puglisi-charlie.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rozzi-dylan": {
+    "name": "Dylan Rozzi",
+    "local": "./images/players/2026/rozzi-dylan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ricard-emile": {
+    "name": "Emile Ricard",
+    "local": "./images/players/2026/ricard-emile.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sutter-kimi": {
+    "name": "Kimi Sutter",
+    "local": "./images/players/2026/sutter-kimi.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "korneyev-kornei": {
+    "name": "Kornei Korneyev",
+    "local": "./images/players/2026/korneyev-kornei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ondrejcak-michal": {
+    "name": "Michal Ondrejcak",
+    "local": "./images/players/2026/ondrejcak-michal.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "carrier-shawn": {
+    "name": "Shawn Carrier",
+    "local": "./images/players/2026/carrier-shawn.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "svancar-vojtech": {
+    "name": "Vojtech Svancar",
+    "local": "./images/players/2026/svancar-vojtech.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "arkhipov-ivan": {
+    "name": "Ivan Arkhipov",
+    "local": "./images/players/2026/arkhipov-ivan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bouvard-fabrice": {
+    "name": "Fabrice Bouvard",
+    "local": "./images/players/2026/bouvard-fabrice.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "walters-daniel": {
+    "name": "Daniel Walters",
+    "local": "./images/players/2026/walters-daniel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "allie-dylan": {
+    "name": "Dylan Allie",
+    "local": "./images/players/2026/allie-dylan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rousseau-tomas": {
+    "name": "Tomas Rousseau",
+    "local": "./images/players/2026/rousseau-tomas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "borin-boris": {
+    "name": "Boris Borin",
+    "local": "./images/players/2026/borin-boris.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vlasov-alexei": {
+    "name": "Alexei Vlasov",
+    "local": "./images/players/2026/vlasov-alexei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "boychuk-riley": {
+    "name": "Riley Boychuk",
+    "local": "./images/players/2026/boychuk-riley.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "matta-ivan": {
+    "name": "Ivan Matta",
+    "local": "./images/players/2026/matta-ivan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cyr-simonxavier": {
+    "name": "Simon-Xavier Cyr",
+    "local": "./images/players/2026/cyr-simonxavier.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kubin-vojtech": {
+    "name": "Vojtech Kubin",
+    "local": "./images/players/2026/kubin-vojtech.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "yared-william": {
+    "name": "William Yared",
+    "local": "./images/players/2026/yared-william.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "veilleux-philippe": {
+    "name": "Philippe Veilleux",
+    "local": "./images/players/2026/veilleux-philippe.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bumgarner-cole": {
+    "name": "Cole Bumgarner",
+    "local": "./images/players/2026/bumgarner-cole.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "edmonstone-logan": {
+    "name": "Logan Edmonstone",
+    "local": "./images/players/2026/edmonstone-logan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vanninen-aapo": {
+    "name": "Aapo Vanninen",
+    "local": "./images/players/2026/vanninen-aapo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "obobaifo-aaron": {
+    "name": "Aaron Obobaifo",
+    "local": "./images/players/2026/obobaifo-aaron.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "andersson-adam": {
+    "name": "Adam Andersson",
+    "local": "./images/players/2026/andersson-adam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "goljer-adam": {
+    "name": "Adam Goljer",
+    "local": "./images/players/2026/goljer-adam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nemec-adam": {
+    "name": "Adam Nemec",
+    "local": "./images/players/2026/nemec-adam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "shaikhlislamov-alan": {
+    "name": "Alan Shaikhlislamov",
+    "local": "./images/players/2026/shaikhlislamov-alan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "laksonen-albin": {
+    "name": "Albin Laksonen",
+    "local": "./images/players/2026/laksonen-albin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "di-iorio-alessandro": {
+    "name": "Alessandro Di Iorio",
+    "local": "./images/players/2026/di-iorio-alessandro.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "misiak-alex": {
+    "name": "Alex Misiak",
+    "local": "./images/players/2026/misiak-alex.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zalesak-alex": {
+    "name": "Alex Zalesak",
+    "local": "./images/players/2026/zalesak-alex.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bilecki-alexander": {
+    "name": "Alexander Bilecki",
+    "local": "./images/players/2026/bilecki-alexander.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "command-alexander": {
+    "name": "Alexander Command",
+    "local": "./images/players/2026/command-alexander.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "carbonneau-alexandre": {
+    "name": "Alexandre Carbonneau",
+    "local": "./images/players/2026/carbonneau-alexandre.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gosselin-alonso": {
+    "name": "Alonso Gosselin",
+    "local": "./images/players/2026/gosselin-alonso.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ervasti-alvar": {
+    "name": "Alvar Ervasti",
+    "local": "./images/players/2026/ervasti-alvar.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "straka-andreas": {
+    "name": "Andreas Straka",
+    "local": "./images/players/2026/straka-andreas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zavadsky-andrei": {
+    "name": "Andrei Zavadsky",
+    "local": "./images/players/2026/zavadsky-andrei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "valila-arttu": {
+    "name": "Arttu Välilä",
+    "local": "./images/players/2026/valila-arttu.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vilchinsky-artyom": {
+    "name": "Artyom Vilchinsky",
+    "local": "./images/players/2026/vilchinsky-artyom.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "johansson-arvid": {
+    "name": "Arvid Johansson",
+    "local": "./images/players/2026/johansson-arvid.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sarkenov-asanali": {
+    "name": "Asanali Sarkenov",
+    "local": "./images/players/2026/sarkenov-asanali.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "brongellarsson-axel": {
+    "name": "Axel Brongel-Larsson",
+    "local": "./images/players/2026/brongellarsson-axel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "elofsson-axel": {
+    "name": "Axel Elofsson",
+    "local": "./images/players/2026/elofsson-axel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "edwards-beckham": {
+    "name": "Beckham Edwards",
+    "local": "./images/players/2026/edwards-beckham.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "arrowsmith-blake": {
+    "name": "Blake Arrowsmith",
+    "local": "./images/players/2026/arrowsmith-blake.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zielinski-blake": {
+    "name": "Blake Zielinski",
+    "local": "./images/players/2026/zielinski-blake.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pestretsov-bogdan": {
+    "name": "Bogdan Pestretsov",
+    "local": "./images/players/2026/pestretsov-bogdan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "smith-brady": {
+    "name": "Brady Smith",
+    "local": "./images/players/2026/smith-brady.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "wassilyn-braidy": {
+    "name": "Braidy Wassilyn",
+    "local": "./images/players/2026/wassilyn-braidy.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "liske-brek": {
+    "name": "Brek Liske",
+    "local": "./images/players/2026/liske-brek.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cullen-brooks": {
+    "name": "Brooks Cullen",
+    "local": "./images/players/2026/cullen-brooks.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "osmanis-bruno": {
+    "name": "Bruno Osmanis",
+    "local": "./images/players/2026/osmanis-bruno.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "taylor-caden": {
+    "name": "Caden Taylor",
+    "local": "./images/players/2026/taylor-caden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "joudrey-caelen": {
+    "name": "Caelen Joudrey",
+    "local": "./images/players/2026/joudrey-caelen.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "matthews-caleb": {
+    "name": "Caleb Matthews",
+    "local": "./images/players/2026/matthews-caleb.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "croskery-callum": {
+    "name": "Callum Croskery",
+    "local": "./images/players/2026/croskery-callum.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "aucoin-cameron": {
+    "name": "Cameron Aucoin",
+    "local": "./images/players/2026/aucoin-cameron.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "chartrand-cameron": {
+    "name": "Cameron Chartrand",
+    "local": "./images/players/2026/chartrand-cameron.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "magnusson-carl-otto": {
+    "name": "Carl Otto Magnusson",
+    "local": "./images/players/2026/magnusson-carl-otto.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cameron-carson": {
+    "name": "Carson Cameron",
+    "local": "./images/players/2026/cameron-carson.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hicks-carter": {
+    "name": "Carter Hicks",
+    "local": "./images/players/2026/hicks-carter.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mutryn-casey": {
+    "name": "Casey Mutryn",
+    "local": "./images/players/2026/mutryn-casey.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "koch-cash": {
+    "name": "Cash Koch",
+    "local": "./images/players/2026/koch-cash.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "morrison-charlie": {
+    "name": "Charlie Morrison",
+    "local": "./images/players/2026/morrison-charlie.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "harrington-chase": {
+    "name": "Chase Harrington",
+    "local": "./images/players/2026/harrington-chase.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "temple-cole": {
+    "name": "Cole Temple",
+    "local": "./images/players/2026/temple-cole.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zurawski-cole": {
+    "name": "Cole Zurawski",
+    "local": "./images/players/2026/zurawski-cole.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fitzgerald-colin": {
+    "name": "Colin Fitzgerald",
+    "local": "./images/players/2026/fitzgerald-colin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "davis-connor": {
+    "name": "Connor Davis",
+    "local": "./images/players/2026/davis-connor.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "schmidt-connor": {
+    "name": "Connor Schmidt",
+    "local": "./images/players/2026/schmidt-connor.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "williams-cooper": {
+    "name": "Cooper Williams",
+    "local": "./images/players/2026/williams-cooper.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "petrenko-daniil": {
+    "name": "Daniil Petrenko",
+    "local": "./images/players/2026/petrenko-daniil.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "skvortsov-daniil": {
+    "name": "Daniil Skvortsov",
+    "local": "./images/players/2026/skvortsov-daniil.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "klaers-danny": {
+    "name": "Danny Klaers",
+    "local": "./images/players/2026/klaers-danny.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "krcal-david": {
+    "name": "David Krcal",
+    "local": "./images/players/2026/krcal-david.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gerwing-dawson": {
+    "name": "Dawson Gerwing",
+    "local": "./images/players/2026/gerwing-dawson.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "beuker-dayne": {
+    "name": "Dayne Beuker",
+    "local": "./images/players/2026/beuker-dayne.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lindberg-dennis": {
+    "name": "Dennis Lindberg",
+    "local": "./images/players/2026/lindberg-dennis.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "thurston-derek": {
+    "name": "Derek Thurston",
+    "local": "./images/players/2026/thurston-derek.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bracco-donato": {
+    "name": "Donato Bracco",
+    "local": "./images/players/2026/bracco-donato.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "allison-drew": {
+    "name": "Drew Allison",
+    "local": "./images/players/2026/allison-drew.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ronald-dylan": {
+    "name": "Dylan Ronald",
+    "local": "./images/players/2026/ronald-dylan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bondar-eduard": {
+    "name": "Eduard Bondar",
+    "local": "./images/players/2026/bondar-eduard.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "orpana-eetu": {
+    "name": "Eetu Orpana",
+    "local": "./images/players/2026/orpana-eetu.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vahalahti-eetu": {
+    "name": "Eetu Vahalahti",
+    "local": "./images/players/2026/vahalahti-eetu.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dube-elliot": {
+    "name": "Elliot Dube",
+    "local": "./images/players/2026/dube-elliot.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mackenzie-ethan": {
+    "name": "Ethan MacKenzie",
+    "local": "./images/players/2026/mackenzie-ethan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "weber-ethan": {
+    "name": "Ethan Weber",
+    "local": "./images/players/2026/weber-ethan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "jardine-evan": {
+    "name": "Evan Jardine",
+    "local": "./images/players/2026/jardine-evan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "persson-filip-holst": {
+    "name": "Filip Holst Persson",
+    "local": "./images/players/2026/persson-filip-holst.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "novak-filip": {
+    "name": "Filip Novak",
+    "local": "./images/players/2026/novak-filip.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "suzdorf-german": {
+    "name": "German Suzdorf",
+    "local": "./images/players/2026/suzdorf-german.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pantelas-giorgos": {
+    "name": "Giorgos Pantelas",
+    "local": "./images/players/2026/pantelas-giorgos.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pugachyov-gleb": {
+    "name": "Gleb Pugachyov",
+    "local": "./images/players/2026/pugachyov-gleb.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "barch-hayden": {
+    "name": "Hayden Barch",
+    "local": "./images/players/2026/barch-hayden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hallin-hugo": {
+    "name": "Hugo Hallin",
+    "local": "./images/players/2026/hallin-hugo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "orrsten-hugo": {
+    "name": "Hugo Orrsten",
+    "local": "./images/players/2026/orrsten-hugo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "galiyanov-ivan": {
+    "name": "Ivan Galiyanov",
+    "local": "./images/players/2026/galiyanov-ivan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hextall-jack": {
+    "name": "Jack Hextall",
+    "local": "./images/players/2026/hextall-jack.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "crawford-jacob": {
+    "name": "Jacob Crawford",
+    "local": "./images/players/2026/crawford-jacob.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "reber-jamiro": {
+    "name": "Jamiro Reber",
+    "local": "./images/players/2026/reber-jamiro.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "skok-jan": {
+    "name": "Jan Skok",
+    "local": "./images/players/2026/skok-jan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mensonen-jasu": {
+    "name": "Jasu Mensonen",
+    "local": "./images/players/2026/mensonen-jasu.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fuder-jaxon": {
+    "name": "Jaxon Fuder",
+    "local": "./images/players/2026/fuder-jaxon.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "plouffe-jayden": {
+    "name": "Jayden Plouffe",
+    "local": "./images/players/2026/plouffe-jayden.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lemieux-jeancristoph": {
+    "name": "Jean-Cristoph Lemieux",
+    "local": "./images/players/2026/lemieux-jeancristoph.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "virtanen-jeremi": {
+    "name": "Jeremi Virtanen",
+    "local": "./images/players/2026/virtanen-jeremi.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mundy-jeremiah": {
+    "name": "Jeremiah Mundy",
+    "local": "./images/players/2026/mundy-jeremiah.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kotajarvi-jesper": {
+    "name": "Jesper Kotajarvi",
+    "local": "./images/players/2026/kotajarvi-jesper.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lajoie-jett": {
+    "name": "Jett Lajoie",
+    "local": "./images/players/2026/lajoie-jett.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "egan-jimmy": {
+    "name": "Jimmy Egan",
+    "local": "./images/players/2026/egan-jimmy.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "wahlund-joe": {
+    "name": "Joe Wahlund",
+    "local": "./images/players/2026/wahlund-joe.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lagerberg-hoen-jonas": {
+    "name": "Jonas Lagerberg Hoen",
+    "local": "./images/players/2026/lagerberg-hoen-jonas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "brown-jonathan": {
+    "name": "Jonathan Brown",
+    "local": "./images/players/2026/brown-jonathan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kapageridis-jonathan": {
+    "name": "Jonathan Kapageridis",
+    "local": "./images/players/2026/kapageridis-jonathan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "prud-jonathan": {
+    "name": "Jonathan Prud",
+    "local": "./images/players/2026/prud-jonathan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gavin-jordan": {
+    "name": "Jordan Gavin",
+    "local": "./images/players/2026/gavin-jordan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mcgregor-josh": {
+    "name": "Josh McGregor",
+    "local": "./images/players/2026/mcgregor-josh.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "avery-joshua": {
+    "name": "Joshua Avery",
+    "local": "./images/players/2026/avery-joshua.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "glavin-joshua": {
+    "name": "Joshua Glavin",
+    "local": "./images/players/2026/glavin-joshua.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "flugins-karlis": {
+    "name": "Karlis Flugins",
+    "local": "./images/players/2026/flugins-karlis.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bridgeman-kolten": {
+    "name": "Kolten Bridgeman",
+    "local": "./images/players/2026/bridgeman-kolten.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nycz-landon": {
+    "name": "Landon Nycz",
+    "local": "./images/players/2026/nycz-landon.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "steiner-lars": {
+    "name": "Lars Steiner",
+    "local": "./images/players/2026/steiner-lars.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sinivuori-lauri": {
+    "name": "Lauri Sinivuori",
+    "local": "./images/players/2026/sinivuori-lauri.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gashilov-lavr": {
+    "name": "Lavr Gashilov",
+    "local": "./images/players/2026/gashilov-lavr.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "beamish-liam": {
+    "name": "Liam Beamish",
+    "local": "./images/players/2026/beamish-liam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dube-liam": {
+    "name": "Liam Dube",
+    "local": "./images/players/2026/dube-liam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kilfoil-liam": {
+    "name": "Liam Kilfoil",
+    "local": "./images/players/2026/kilfoil-liam.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "loob-trygg-linus": {
+    "name": "Linus Loob Trygg",
+    "local": "./images/players/2026/loob-trygg-linus.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hawery-logan": {
+    "name": "Logan Hawery",
+    "local": "./images/players/2026/hawery-logan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lutner-logan": {
+    "name": "Logan Lutner",
+    "local": "./images/players/2026/lutner-logan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "karmiris-lucas": {
+    "name": "Lucas Karmiris",
+    "local": "./images/players/2026/karmiris-lucas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zajic-lucas": {
+    "name": "Lucas Zajic",
+    "local": "./images/players/2026/zajic-lucas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "puchner-luke": {
+    "name": "Luke Puchner",
+    "local": "./images/players/2026/puchner-luke.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "schairer-luke": {
+    "name": "Luke Schairer",
+    "local": "./images/players/2026/schairer-luke.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dagenais-maddox": {
+    "name": "Maddox Dagenais",
+    "local": "./images/players/2026/dagenais-maddox.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "labre-maddox": {
+    "name": "Maddox Labre",
+    "local": "./images/players/2026/labre-maddox.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fomin-makar": {
+    "name": "Makar Fomin",
+    "local": "./images/players/2026/fomin-makar.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nordmark-marcus": {
+    "name": "Marcus Nordmark",
+    "local": "./images/players/2026/nordmark-marcus.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "svec-martin": {
+    "name": "Martin Svec",
+    "local": "./images/players/2026/svec-martin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "klaucans-martins": {
+    "name": "Martins Klaucans",
+    "local": "./images/players/2026/klaucans-martins.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kraft-mason": {
+    "name": "Mason Kraft",
+    "local": "./images/players/2026/kraft-mason.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mikes-matej": {
+    "name": "Matej Mikes",
+    "local": "./images/players/2026/mikes-matej.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pekar-matej": {
+    "name": "Matej Pekar",
+    "local": "./images/players/2026/pekar-matej.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lisy-matus": {
+    "name": "Matus Lisy",
+    "local": "./images/players/2026/lisy-matus.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "isaksson-max": {
+    "name": "Max Isaksson",
+    "local": "./images/players/2026/isaksson-max.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "zaitsev-maxim": {
+    "name": "Maxim Zaitsev",
+    "local": "./images/players/2026/zaitsev-maxim.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "capos-michal": {
+    "name": "Michal Capos",
+    "local": "./images/players/2026/capos-michal.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "aeschlimann-mike": {
+    "name": "Mike Aeschlimann",
+    "local": "./images/players/2026/aeschlimann-mike.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "gamzakov-mikhail": {
+    "name": "Mikhail Gamzakov",
+    "local": "./images/players/2026/gamzakov-mikhail.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "katin-mikhail": {
+    "name": "Mikhail Katin",
+    "local": "./images/players/2026/katin-mikhail.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "anderberg-morgan": {
+    "name": "Morgan Anderberg",
+    "local": "./images/players/2026/anderberg-morgan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "yellowaga-nate": {
+    "name": "Nate Yellowaga",
+    "local": "./images/players/2026/yellowaga-nate.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "brisson-nathan": {
+    "name": "Nathan Brisson",
+    "local": "./images/players/2026/brisson-nathan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lecompte-nathan": {
+    "name": "Nathan Lecompte",
+    "local": "./images/players/2026/lecompte-nathan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "whitehead-nic": {
+    "name": "Nic Whitehead",
+    "local": "./images/players/2026/whitehead-nic.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "frasca-nick": {
+    "name": "Nick Frasca",
+    "local": "./images/players/2026/frasca-nick.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sykora-nicolas": {
+    "name": "Nicolas Sykora",
+    "local": "./images/players/2026/sykora-nicolas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fedotov-nikita": {
+    "name": "Nikita Fedotov",
+    "local": "./images/players/2026/fedotov-nikita.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "klyopov-nikita": {
+    "name": "Nikita Klyopov",
+    "local": "./images/players/2026/klyopov-nikita.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "poltavchuk-nikita": {
+    "name": "Nikita Poltavchuk",
+    "local": "./images/players/2026/poltavchuk-nikita.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "shcherbakov-nikita": {
+    "name": "Nikita Shcherbakov",
+    "local": "./images/players/2026/shcherbakov-nikita.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "aaramolsen-niklas": {
+    "name": "Niklas Aaram-Olsen",
+    "local": "./images/players/2026/aaramolsen-niklas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nykyri-niklas": {
+    "name": "Niklas Nykyri",
+    "local": "./images/players/2026/nykyri-niklas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "degenstein-noah": {
+    "name": "Noah Degenstein",
+    "local": "./images/players/2026/degenstein-noah.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "jenken-noah": {
+    "name": "Noah Jenken",
+    "local": "./images/players/2026/jenken-noah.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kosick-noah": {
+    "name": "Noah Kosick",
+    "local": "./images/players/2026/kosick-noah.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mckinnon-noah": {
+    "name": "Noah McKinnon",
+    "local": "./images/players/2026/mckinnon-noah.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "geerdes-nolen": {
+    "name": "Nolen Geerdes",
+    "local": "./images/players/2026/geerdes-nolen.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "turner-oliver": {
+    "name": "Oliver Turner",
+    "local": "./images/players/2026/turner-oliver.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "murnieks-olivers": {
+    "name": "Olivers Murnieks",
+    "local": "./images/players/2026/murnieks-olivers.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "groulx-olivier": {
+    "name": "Olivier Groulx",
+    "local": "./images/players/2026/groulx-olivier.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kalto-onni": {
+    "name": "Onni Kalto",
+    "local": "./images/players/2026/kalto-onni.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "holmertz-oscar": {
+    "name": "Oscar Holmertz",
+    "local": "./images/players/2026/holmertz-oscar.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "conrad-owen": {
+    "name": "Owen Conrad",
+    "local": "./images/players/2026/conrad-owen.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "schoettler-owen": {
+    "name": "Owen Schoettler",
+    "local": "./images/players/2026/schoettler-owen.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fagan-pj": {
+    "name": "PJ Fagan",
+    "local": "./images/players/2026/fagan-pj.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "snelgrove-parker": {
+    "name": "Parker Snelgrove",
+    "local": "./images/players/2026/snelgrove-parker.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vaughn-parker": {
+    "name": "Parker Vaughn",
+    "local": "./images/players/2026/vaughn-parker.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "richter-parker-von": {
+    "name": "Parker Von Richter",
+    "local": "./images/players/2026/richter-parker-von.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rusznyak-patrik": {
+    "name": "Patrik Rusznyak",
+    "local": "./images/players/2026/rusznyak-patrik.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mbuyi-pierce": {
+    "name": "Pierce Mbuyi",
+    "local": "./images/players/2026/mbuyi-pierce.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "andersen-poul": {
+    "name": "Poul Andersen",
+    "local": "./images/players/2026/andersen-poul.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "cloutier-rafael": {
+    "name": "Rafael Cloutier",
+    "local": "./images/players/2026/cloutier-rafael.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "varosyan-raflik": {
+    "name": "Raflik Varosyan",
+    "local": "./images/players/2026/varosyan-raflik.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "achermann-raphael": {
+    "name": "Raphael Achermann",
+    "local": "./images/players/2026/achermann-raphael.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rinne-rasmus": {
+    "name": "Rasmus Rinne",
+    "local": "./images/players/2026/rinne-rasmus.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "chudzinski-rian": {
+    "name": "Rian Chudzinski",
+    "local": "./images/players/2026/chudzinski-rian.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "carey-rider": {
+    "name": "Rider Carey",
+    "local": "./images/players/2026/carey-rider.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kaiser-rio": {
+    "name": "Rio Kaiser",
+    "local": "./images/players/2026/kaiser-rio.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "antenen-robin": {
+    "name": "Robin Antenen",
+    "local": "./images/players/2026/antenen-robin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "berzkalns-rudolfs": {
+    "name": "Rudolfs Berzkalns",
+    "local": "./images/players/2026/berzkalns-rudolfs.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "karimov-ruslan": {
+    "name": "Ruslan Karimov",
+    "local": "./images/players/2026/karimov-ruslan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "alalauri-samu": {
+    "name": "Samu Alalauri",
+    "local": "./images/players/2026/alalauri-samu.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "virk-savin": {
+    "name": "Savin Virk",
+    "local": "./images/players/2026/virk-savin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "mayes-sawyer": {
+    "name": "Sawyer Mayes",
+    "local": "./images/players/2026/mayes-sawyer.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "katolicky-simon": {
+    "name": "Simon Katolicky",
+    "local": "./images/players/2026/katolicky-simon.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lam-tanner": {
+    "name": "Tanner Lam",
+    "local": "./images/players/2026/lam-tanner.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vandenberg-thomas": {
+    "name": "Thomas Vandenberg",
+    "local": "./images/players/2026/vandenberg-thomas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "chrenko-tomas": {
+    "name": "Tomas Chrenko",
+    "local": "./images/players/2026/chrenko-tomas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "malinek-tomas": {
+    "name": "Tomas Malinek",
+    "local": "./images/players/2026/malinek-tomas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pobezal-tomas": {
+    "name": "Tomas Pobezal",
+    "local": "./images/players/2026/pobezal-tomas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bleyl-tommy": {
+    "name": "Tommy Bleyl",
+    "local": "./images/players/2026/bleyl-tommy.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "hynninen-topias": {
+    "name": "Topias Hynninen",
+    "local": "./images/players/2026/hynninen-topias.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "jennersjo-torkel": {
+    "name": "Torkel Jennersjo",
+    "local": "./images/players/2026/jennersjo-torkel.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "delisle-tristan": {
+    "name": "Tristan Delisle",
+    "local": "./images/players/2026/delisle-tristan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "challenger-tyler": {
+    "name": "Tyler Challenger",
+    "local": "./images/players/2026/challenger-tyler.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ruotsalainen-veeti": {
+    "name": "Veeti Ruotsalainen",
+    "local": "./images/players/2026/ruotsalainen-veeti.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "svensk-vertti": {
+    "name": "Vertti Svensk",
+    "local": "./images/players/2026/svensk-vertti.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kahkonen-viijo": {
+    "name": "Viijo Kahkonen",
+    "local": "./images/players/2026/kahkonen-viijo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fyodorov-viktor": {
+    "name": "Viktor Fyodorov",
+    "local": "./images/players/2026/fyodorov-viktor.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "pennerborn-viktor": {
+    "name": "Viktor Pennerborn",
+    "local": "./images/players/2026/pennerborn-viktor.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "vanhatalo-vilho": {
+    "name": "Vilho Vanhatalo",
+    "local": "./images/players/2026/vanhatalo-vilho.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "desjardins-vincent": {
+    "name": "Vincent Desjardins",
+    "local": "./images/players/2026/desjardins-vincent.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "macek-vit": {
+    "name": "Vit Macek",
+    "local": "./images/players/2026/macek-vit.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dravecky-vladimir": {
+    "name": "Vladimir Dravecky",
+    "local": "./images/players/2026/dravecky-vladimir.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "ukhmylov-vladislav": {
+    "name": "Vladislav Ukhmylov",
+    "local": "./images/players/2026/ukhmylov-vladislav.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bent-will": {
+    "name": "Will Bent",
+    "local": "./images/players/2026/bent-will.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "velliaris-xander": {
+    "name": "Xander Velliaris",
+    "local": "./images/players/2026/velliaris-xander.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fedoseyev-yaroslav": {
+    "name": "Yaroslav Fedoseyev",
+    "local": "./images/players/2026/fedoseyev-yaroslav.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rummo-yuri": {
+    "name": "Yuri Rummo",
+    "local": "./images/players/2026/rummo-yuri.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "morin-zachary": {
+    "name": "Zachary Morin",
+    "local": "./images/players/2026/morin-zachary.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "nyman-zachary": {
+    "name": "Zachary Nyman",
+    "local": "./images/players/2026/nyman-zachary.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "wilson-zachary": {
+    "name": "Zachary Wilson",
+    "local": "./images/players/2026/wilson-zachary.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "kuryanov-andrei": {
+    "name": "Andrei Kuryanov",
+    "local": "./images/players/2026/kuryanov-andrei.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "lygitsakos-chad": {
+    "name": "Chad Lygitsakos",
+    "local": "./images/players/2026/lygitsakos-chad.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "viita-frans": {
+    "name": "Frans Viita",
+    "local": "./images/players/2026/viita-frans.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "garland-gavin": {
+    "name": "Gavin Garland",
+    "local": "./images/players/2026/garland-gavin.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "fomin-ivan": {
+    "name": "Ivan Fomin",
+    "local": "./images/players/2026/fomin-ivan.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "rajala-joonas": {
+    "name": "Joonas Rajala",
+    "local": "./images/players/2026/rajala-joonas.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "sundqvist-leo": {
+    "name": "Leo Sundqvist",
+    "local": "./images/players/2026/sundqvist-leo.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "katzin-lev": {
+    "name": "Lev Katzin",
+    "local": "./images/players/2026/katzin-lev.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "belanger-louisfrancois": {
+    "name": "Louis-Francois Bélanger",
+    "local": "./images/players/2026/belanger-louisfrancois.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "dec-michael": {
+    "name": "Michael Dec",
+    "local": "./images/players/2026/dec-michael.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "bartholdsson-nils": {
+    "name": "Nils Bartholdsson",
+    "local": "./images/players/2026/bartholdsson-nils.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "meunier-ty": {
+    "name": "Ty Meunier",
+    "local": "./images/players/2026/meunier-ty.svg",
+    "sourceUrl": null,
+    "generated": true
+  },
+  "plante-victor": {
+    "name": "Victor Plante",
+    "local": "./images/players/2026/plante-victor.svg",
+    "sourceUrl": null,
+    "generated": true
+  }
+}

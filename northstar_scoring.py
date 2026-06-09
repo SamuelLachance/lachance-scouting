@@ -58,6 +58,7 @@ LEX: dict[str, list[tuple[str, float]]] = {
         (r"franchise defense", 2.5), (r"1st overall", 2.5), (r"#1 overall", 2.5),
         (r"best player", 2.0), (r"game.breaker", 2.2), (r"impact player", 1.5),
         (r"pp1", 1.2), (r"power play quarterback", 1.5),
+        (r"top.nine", -1.2), (r"top.four", 0.5), (r"watch.list", 0.3),
         (r"depth", -1.5), (r"bottom.six", -2.0), (r"fourth line", -2.5),
         (r"role player", -1.8), (r"organizational", -2.0), (r"backup", -2.0),
         (r"project", -0.8), (r"ceiling limited", -1.5),
@@ -71,7 +72,8 @@ LEX: dict[str, list[tuple[str, float]]] = {
         (r"panic", -1.5), (r"inconsistent effort", -1.2),
     ],
     "skating_engine": [
-        (r"skating", 2.0), (r"elite speed", 2.5), (r"acceleration", 2.0),
+        (r"skating", 2.0), (r"skater", 1.5), (r"strong skater", 2.2),
+        (r"elite speed", 2.5), (r"acceleration", 2.0),
         (r"agility", 1.8), (r"edges", 1.8), (r"quickness", 2.0),
         (r"explosive", 2.0), (r"dynamic", 1.5), (r"transition", 1.5),
         (r"shifty", 1.8), (r"evasive", 1.8), (r"mobile", 1.5),
@@ -158,18 +160,22 @@ def parse_weight(w: str) -> int:
     return int(m.group(1)) if m else 180
 
 
-def _text_blob(report: dict) -> str:
+def _scoring_text(report: dict) -> str:
+    """Texte vérifiable pour scoring — exclut faq_text (boilerplate SEO DPH)."""
     parts = [
         report.get("report", ""),
         report.get("meta_description", ""),
         report.get("projection", ""),
-        report.get("faq_text", ""),
         " ".join(report.get("strengths") or []),
         " ".join(report.get("weaknesses") or []),
         " ".join(report.get("tags") or []),
         report.get("league", ""),
     ]
     return " ".join(p for p in parts if p).lower()
+
+
+def _text_blob(report: dict) -> str:
+    return _scoring_text(report)
 
 
 def _lex_score(dim: str, text: str) -> tuple[float, list[str]]:
@@ -237,22 +243,71 @@ def _dph_rank_score(rank: int | None) -> float:
     return 4.0
 
 
-def _consensus_prior(rank: int | None) -> float:
-    if rank is None:
-        return 5.0
-    if rank <= 5:
-        return 9.5
-    if rank <= 15:
-        return 8.5
-    if rank <= 32:
-        return 7.5
-    if rank <= 64:
-        return 6.5
-    if rank <= 100:
-        return 5.8
-    if rank <= 150:
-        return 5.0
-    return 4.2
+# Phrases boilerplate DPH — pas du scouting substantiel
+DPH_TEMPLATE_MARKERS = (
+    r"watch-list",
+    r"middle-rounds",
+    r"translatable nhl tools",
+    r"developmental runway",
+    r"late-round watch-list",
+)
+
+
+def _is_dph_template(text: str) -> bool:
+    return any(re.search(p, text, re.I) for p in DPH_TEMPLATE_MARKERS)
+
+
+def _report_quality(report: dict) -> str:
+    """
+    Couverture rapport — signaux vérifiables uniquement.
+
+    Règles objectives (pas de consensus externe):
+    - none: aucune donnée DPH récupérée
+    - thin: page DPH template (texte court, pas de stats) — confiance basse
+    - partial: métadonnées ou extrait sans corps substantiel
+    - full: rapport substantiel (≥150 mots OU stats de saison)
+    """
+    if not report or (not report.get("fetched") and not report.get("report")):
+        return "none"
+    text = _scoring_text(report)
+    word_count = len(text.split())
+    stats = report.get("stats") or {}
+    has_stats = bool(stats.get("gp") or stats.get("pts"))
+    if _is_dph_template(text) and not has_stats:
+        return "thin"
+    if has_stats and word_count >= 40:
+        return "full"
+    if word_count >= 150 and (report.get("strengths") or report.get("weaknesses")):
+        return "full"
+    if word_count < 80 and not has_stats:
+        return "thin"
+    if report.get("meta_description") or report.get("report"):
+        return "partial"
+    return "none"
+
+
+def _confidence_multiplier(cov: str) -> float:
+    """Pénalité explicite quand le rapport manque ou est mince."""
+    return {"full": 1.0, "partial": 0.94, "thin": 0.86, "none": 0.76}.get(cov, 0.76)
+
+
+def _apply_coverage_penalty(dims: dict[str, float], cov: str, grade: float) -> dict[str, float]:
+    """
+    Régression vers la neutre (5.0) + plafond star quand preuve insuffisante.
+    Empêche les scores élite sur du boilerplate DPH.
+    """
+    out = dims.copy()
+    if cov == "full":
+        return out
+    pull = {"partial": 0.12, "thin": 0.28, "none": 0.42}.get(cov, 0.42)
+    for k in out:
+        out[k] = out[k] * (1 - pull) + 5.0 * pull
+    if cov in ("thin", "none"):
+        # Plafond étoile borné par la note DPH + marge modeste (pas de hype)
+        out["star_ceiling"] = min(out["star_ceiling"], grade + 1.2)
+    if cov == "none":
+        out["star_ceiling"] = min(out["star_ceiling"], 6.5)
+    return {k: round(min(10, max(1, v)), 1) for k, v in out.items()}
 
 
 def _star_tier(score: float) -> str:
@@ -312,13 +367,178 @@ def build_rationales(
         if snippet and dim == "star_ceiling":
             out[dim] += f'Extrait rapport: "{snippet[:120]}…". '
         if cov == "full":
-            out[dim] += "Source: rapport DPH complet."
+            out[dim] += "Source: rapport DPH substantiel."
         elif cov == "partial":
             out[dim] += "Source: métadonnées partielles — confiance modérée."
+        elif cov == "thin":
+            out[dim] += "Source: page DPH template (texte mince) — confiance basse."
         else:
-            out[dim] += "Source: inférence sans rapport — confiance basse."
+            out[dim] += "Source: aucun rapport DPH — inférence stats/contexte uniquement."
 
     return out
+
+
+MIN_FORCES = 3
+MAX_FORCES = 5
+MIN_FAIBLESSES = 2
+MAX_FAIBLESSES = 4
+
+
+def _unique_append(lst: list[str], item: str, max_len: int) -> bool:
+    item = item.strip()
+    if not item or item in lst or len(lst) >= max_len:
+        return False
+    lst.append(item)
+    return True
+
+
+def _strength_from_dim(dim: str, score: float, evidence: list[str]) -> str:
+    label = NORTHSTAR_LABELS[dim]
+    band, _ = _band(score)
+    if evidence:
+        ev = ", ".join(evidence[:2])
+        return f"{label} — {score}/10 ({band}) : signaux «{ev}»"
+    return f"{label} — {score}/10 ({band})"
+
+
+def _weakness_from_dim(
+    dim: str, score: float, gap: float, *, weakest: bool = False,
+) -> str | None:
+    label = NORTHSTAR_LABELS[dim]
+    if weakest:
+        return (
+            f"{label} ({score}/10) — pilier le moins élevé du profil; "
+            "marge limitée vs l'élite NHL"
+        )
+    if score >= 8.5 and gap < 1.5:
+        return None
+    if gap >= 1.5:
+        return (
+            f"{label} ({score}/10) — écart de {gap:.1f} vs le pilier dominant; "
+            "risque si ce skill ne suit pas en pro"
+        )
+    return f"{label} ({score}/10) — pilier sous la moyenne du profil; traduction NHL à prouver"
+
+
+def _physical_risks(pos: str, height: str, weight: str) -> list[str]:
+    risks: list[str] = []
+    h = parse_height(height)
+    w = parse_weight(weight)
+    pos_u = pos.upper()
+    if h <= 69 and "D" not in pos_u and "G" not in pos_u:
+        risks.append(
+            f"Cadre compact ({height}) — translation physique en NHL "
+            "à prouver vs défenseurs pro"
+        )
+    if w < 170 and "D" not in pos_u:
+        risks.append(
+            f"Poids léger ({w} lb) — tolérance au contact et batailles "
+            "de coin à surveiller"
+        )
+    if h >= 77 and "G" not in pos_u:
+        risks.append(
+            f"Grande taille ({height}) — coordination et vitesse de rotation "
+            "à valider à chaque niveau"
+        )
+    return risks
+
+
+def _coverage_risks(cov: str) -> list[str]:
+    if cov == "none":
+        return ["Aucun rapport DPH — incertitude élevée sur la traduction NHL"]
+    if cov == "thin":
+        return ["Rapport DPH template (texte mince) — peu de détail scout disponible"]
+    if cov == "partial":
+        return ["Couverture scouting partielle — confiance modérée"]
+    return []
+
+
+def build_forces_faiblesses(
+    dims: dict[str, float],
+    report: dict,
+    evidence: dict[str, list[str]],
+    pos: str,
+    height: str,
+    weight: str,
+    cov: str,
+) -> tuple[list[str], list[str]]:
+    """Construit 3-5 forces et 2-4 faiblesses à partir de DPH, signaux NORTHSTAR et profil."""
+    forces: list[str] = []
+    faiblesses: list[str] = []
+
+    for s in report.get("strengths") or []:
+        _unique_append(forces, s, MAX_FORCES)
+    for w in report.get("weaknesses") or []:
+        _unique_append(faiblesses, w, MAX_FAIBLESSES)
+
+    text = _text_blob(report)
+    if text:
+        for dim, score in sorted(dims.items(), key=lambda x: -x[1]):
+            if score < 7.0 or len(forces) >= MAX_FORCES:
+                continue
+            _, ev = _lex_score(dim, text)
+            if ev:
+                _unique_append(forces, _strength_from_dim(dim, score, ev), MAX_FORCES)
+
+    sorted_dims = sorted(dims.items(), key=lambda x: -x[1])
+    top_score = sorted_dims[0][1] if sorted_dims else 5.0
+    for dim, score in sorted_dims:
+        if len(forces) >= MAX_FORCES or score < 7.0:
+            break
+        _unique_append(forces, _strength_from_dim(dim, score, evidence.get(dim, [])), MAX_FORCES)
+
+    sorted_asc = sorted(dims.items(), key=lambda x: x[1])
+    for i, (dim, score) in enumerate(sorted_asc[:4]):
+        if len(faiblesses) >= MAX_FAIBLESSES:
+            break
+        gap = top_score - score
+        bullet = _weakness_from_dim(dim, score, gap, weakest=(i == 0))
+        if bullet:
+            _unique_append(faiblesses, bullet, MAX_FAIBLESSES)
+
+    for r in _physical_risks(pos, height, weight):
+        _unique_append(faiblesses, r, MAX_FAIBLESSES)
+    for r in _coverage_risks(cov):
+        _unique_append(faiblesses, r, MAX_FAIBLESSES)
+
+    if dims.get("star_ceiling", 5) < 7.0:
+        _unique_append(
+            faiblesses,
+            "Plafond étoile limité selon le profil NORTHSTAR — chemin star incertain",
+            MAX_FAIBLESSES,
+        )
+    if dims.get("star_ceiling", 5) >= 9.0:
+        _unique_append(
+            faiblesses,
+            "Attentes de sélection haute — très peu de marge si le développement ralentit",
+            MAX_FAIBLESSES,
+        )
+
+    while len(forces) < MIN_FORCES:
+        added = False
+        for dim, score in sorted_dims:
+            if _unique_append(
+                forces, _strength_from_dim(dim, score, evidence.get(dim, [])), MAX_FORCES,
+            ):
+                added = True
+                break
+        if not added:
+            break
+
+    while len(faiblesses) < MIN_FAIBLESSES:
+        added = False
+        for dim, score in sorted_asc:
+            if _unique_append(
+                faiblesses,
+                f"{NORTHSTAR_LABELS[dim]} ({score}/10) — à surveiller dans la montée vers la NHL",
+                MAX_FAIBLESSES,
+            ):
+                added = True
+                break
+        if not added:
+            break
+
+    return forces[:MAX_FORCES], faiblesses[:MAX_FAIBLESSES]
 
 
 def _merge_scores(
@@ -327,29 +547,26 @@ def _merge_scores(
     league: float,
     prod: float,
     dph_rank: float,
-    consensus: float,
-    has_report: bool,
     pos: str,
 ) -> dict[str, float]:
-    """Fusion bayésienne simplifiée des signaux."""
+    """
+    Fusion des signaux vérifiables uniquement: lexique rapport, grade DPH,
+    ligue, production stats, rang DPH interne. Pas de consensus externe.
+    """
     is_g = pos.upper() in ("G", "GK")
     is_d = "D" in pos.upper()
 
-    # Plafond étoile = lex + grade + rank
-    star = lex["star_ceiling"] * 0.45 + grade * 0.30 + dph_rank * 0.15 + consensus * 0.10
-    if not has_report:
-        star = star * 0.55 + consensus * 0.45
-
-    iq = lex["hockey_iq"] * 0.6 + grade * 0.2 + consensus * 0.2
-    skate = lex["skating_engine"] * 0.65 + grade * 0.2 + prod * 0.15
-    offense = lex["offensive_star_power"] * 0.5 + prod * 0.35 + lex["star_ceiling"] * 0.15
+    star = lex["star_ceiling"] * 0.50 + grade * 0.30 + dph_rank * 0.20
+    iq = lex["hockey_iq"] * 0.70 + grade * 0.30
+    skate = lex["skating_engine"] * 0.65 + grade * 0.20 + prod * 0.15
+    offense = lex["offensive_star_power"] * 0.55 + prod * 0.35 + lex["star_ceiling"] * 0.10
     if is_d:
-        offense = lex["offensive_star_power"] * 0.4 + lex["hockey_iq"] * 0.3 + prod * 0.3
+        offense = lex["offensive_star_power"] * 0.40 + lex["hockey_iq"] * 0.30 + prod * 0.30
     if is_g:
-        offense = grade * 0.5 + league * 0.3 + lex["competition_proof"] * 0.2
+        offense = grade * 0.50 + league * 0.30 + lex["competition_proof"] * 0.20
 
-    comp = lex["competition_proof"] * 0.4 + league * 0.35 + prod * 0.25
-    char = lex["character_compete"] * 0.7 + grade * 0.15 + consensus * 0.15
+    comp = lex["competition_proof"] * 0.40 + league * 0.35 + prod * 0.25
+    char = lex["character_compete"] * 0.75 + grade * 0.25
     dev = lex["development_arc"] * 0.55 + dph_rank * 0.25 + prod * 0.20
 
     return {
@@ -361,56 +578,6 @@ def _merge_scores(
         "character_compete": round(min(10, max(1, char)), 1),
         "development_arc": round(min(10, max(1, dev)), 1),
     }
-
-
-# Overrides manuels top prospects — ancrés sur rapports publics consolidés
-MANUAL: dict[str, dict[str, float]] = {
-    "Gavin McKenna": {
-        "star_ceiling": 10.0, "hockey_iq": 9.8, "skating_engine": 9.0,
-        "offensive_star_power": 9.9, "competition_proof": 9.5,
-        "character_compete": 9.5, "development_arc": 9.8,
-    },
-    "Wyatt Cullen": {
-        "star_ceiling": 9.8, "hockey_iq": 9.6, "skating_engine": 9.8,
-        "offensive_star_power": 9.4, "competition_proof": 8.8,
-        "character_compete": 8.5, "development_arc": 10.0,
-    },
-    "Ivar Stenberg": {
-        "star_ceiling": 8.8, "hockey_iq": 9.2, "skating_engine": 8.5,
-        "offensive_star_power": 8.5, "competition_proof": 9.0,
-        "character_compete": 9.0, "development_arc": 8.0,
-    },
-    "Chase Reid": {
-        "star_ceiling": 9.2, "hockey_iq": 8.8, "skating_engine": 9.2,
-        "offensive_star_power": 8.5, "competition_proof": 8.5,
-        "character_compete": 9.2, "development_arc": 8.8,
-    },
-    "Viggo Björck": {
-        "star_ceiling": 9.6, "hockey_iq": 9.5, "skating_engine": 9.0,
-        "offensive_star_power": 9.2, "competition_proof": 8.8,
-        "character_compete": 9.5, "development_arc": 9.0,
-    },
-    "Viggo Bjorck": {
-        "star_ceiling": 9.6, "hockey_iq": 9.5, "skating_engine": 9.0,
-        "offensive_star_power": 9.2, "competition_proof": 8.8,
-        "character_compete": 9.5, "development_arc": 9.0,
-    },
-    "Carson Carels": {
-        "star_ceiling": 9.4, "hockey_iq": 9.5, "skating_engine": 8.5,
-        "offensive_star_power": 8.0, "competition_proof": 8.5,
-        "character_compete": 9.0, "development_arc": 9.0,
-    },
-    "Ryan Lin": {
-        "star_ceiling": 9.5, "hockey_iq": 9.0, "skating_engine": 9.5,
-        "offensive_star_power": 9.0, "competition_proof": 8.5,
-        "character_compete": 8.8, "development_arc": 9.0,
-    },
-    "Ethan Belchetz": {
-        "star_ceiling": 9.5, "hockey_iq": 8.0, "skating_engine": 8.8,
-        "offensive_star_power": 8.8, "competition_proof": 8.5,
-        "character_compete": 9.5, "development_arc": 8.5,
-    },
-}
 
 
 def northstar_generate(
@@ -429,42 +596,26 @@ def northstar_generate(
     report = reports.get(key, {})
     evidence: dict[str, list[str]] = {}
 
-    manual_dims = None
-    for mk, mv in MANUAL.items():
-        if canonical_key(mk) == key:
-            manual_dims = mv.copy()
-            break
+    text = _scoring_text(report)
+    lex: dict[str, float] = {}
+    for dim in NORTHSTAR_WEIGHTS:
+        s, ev = _lex_score(dim, text)
+        lex[dim] = s
+        evidence[dim] = ev
 
-    if manual_dims is not None:
-        dims = manual_dims
-        cov = "manual"
-    else:
-        text = _text_blob(report)
-        evidence: dict[str, list[str]] = {}
-        lex: dict[str, float] = {}
-        for dim in NORTHSTAR_WEIGHTS:
-            if dim != "star_ceiling":
-                s, ev = _lex_score(dim, text)
-            else:
-                s, ev = _lex_score(dim, text)
-            lex[dim] = s
-            evidence[dim] = ev
+    grade = _grade_score(report.get("grade", ""))
+    for tag in report.get("tags") or []:
+        for tk, boost in TAG_BOOSTS.items():
+            if tk in tag.lower():
+                grade = min(10, grade + boost * 0.15)
 
-        grade = _grade_score(report.get("grade", ""))
-        for tag in report.get("tags") or []:
-            for tk, boost in TAG_BOOSTS.items():
-                if tk in tag.lower():
-                    grade = min(10, grade + boost * 0.15)
+    league = _league_score(report.get("league", ""), text)
+    prod = _production_score(report.get("stats") or {}, pos)
+    dph_r = _dph_rank_score(report.get("dph_rank"))
+    cov = _report_quality(report)
 
-        league = _league_score(report.get("league", ""), text)
-        prod = _production_score(report.get("stats") or {}, pos)
-        dph_r = _dph_rank_score(report.get("dph_rank"))
-        cons = _consensus_prior(consensus_rank)
-        has_report = bool(report.get("has_full_report"))
-
-        cov = "full" if has_report else ("partial" if report.get("meta_description") else "none")
-
-        dims = _merge_scores(lex, grade, league, prod, dph_r, cons, has_report, pos)
+    dims = _merge_scores(lex, grade, league, prod, dph_r, pos)
+    dims = _apply_coverage_penalty(dims, cov, grade)
 
     # Ajustements physiques légers (star path)
     h = parse_height(height)
@@ -474,25 +625,23 @@ def northstar_generate(
     if h <= 69 and "D" not in pos.upper():
         dims["star_ceiling"] = max(1, dims["star_ceiling"] - 0.3)
 
-    overall = northstar_overall(dims)
+    overall = northstar_overall(dims) * _confidence_multiplier(cov)
+    overall = round(min(99.9, max(0, overall)), 2)
     star_tier = _star_tier(overall)
 
-    forces = list(report.get("strengths") or [])[:6]
-    if not forces:
-        forces = [f"Signal {k}: {v}/10" for k, v in sorted(dims.items(), key=lambda x: -x[1])[:3]]
-
-    faiblesses = list(report.get("weaknesses") or [])[:5]
-    if not faiblesses and dims["star_ceiling"] < 7:
-        faiblesses = ["Plafond star limité selon rapport / signaux"]
+    forces, faiblesses = build_forces_faiblesses(
+        dims, report, evidence, pos, height, weight, cov,
+    )
 
     resume = report.get("report") or report.get("meta_description") or (
         f"{full_name} ({pos}) — évaluation NORTHSTAR basée sur "
-        f"{'rapport DPH' if cov == 'full' else 'signaux partiels' if cov == 'partial' else 'inférence'}. "
+        f"{'rapport DPH substantiel' if cov == 'full' else 'page DPH template' if cov == 'thin' else 'signaux partiels' if cov == 'partial' else 'inférence sans rapport'}. "
         f"Star Probability Index: {overall}/100 ({star_tier})."
     )
 
     scores = {
         **dims,
+        "spi": overall,
         "resume": resume,
         "forces": forces,
         "faiblesses": faiblesses,
@@ -515,6 +664,8 @@ def northstar_generate(
 
 
 def northstar_overall(scores: dict) -> float:
+    if "spi" in scores:
+        return float(scores["spi"])
     total = 0.0
     for k, w in NORTHSTAR_WEIGHTS.items():
         total += scores.get(k, 5.0) * w * 10

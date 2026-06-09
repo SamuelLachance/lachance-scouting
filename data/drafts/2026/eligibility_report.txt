@@ -1,0 +1,13 @@
+Liste existante: 326
+Index DPH: 354
+DPH fusionnés (déjà présents): 106
+Ajoutés depuis DPH: 248
+DOB complétées: 7
+Total unique: 574
+Pool final: 574
+  DOB validée éligible: 12
+  DOB inconnue (conservés): 562
+  Retirés (DOB hors fenêtre): 0
+
+Export: C:\Users\Admin\Projects\nhl-2026-draft\data\drafts\2026\eligible_players.tsv
+Joueurs finaux: 574

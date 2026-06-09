@@ -134,7 +134,11 @@ window.addEventListener('unhandledrejection', function (ev) {
 });
 
 function route() {
-  const parts = (location.hash.slice(1) || '').split('/').filter(Boolean);
+  const hash = location.hash.slice(1) || '';
+  const qIdx = hash.indexOf('?');
+  const pathPart = qIdx >= 0 ? hash.slice(0, qIdx) : hash;
+  const queryPart = qIdx >= 0 ? hash.slice(qIdx + 1) : '';
+  const parts = pathPart.split('/').filter(Boolean);
   let year = draftYear;
   let rest = parts;
   if (parts.length && /^\d{4}$/.test(parts[0])) {
@@ -143,8 +147,7 @@ function route() {
   }
   if (rest[0] === 'player') return { page: 'player', year, id: rest[1] };
   if (rest[0] === 'compare') {
-    const hash = location.hash;
-    const q = new URLSearchParams(hash.includes('?') ? hash.split('?')[1] : '');
+    const q = new URLSearchParams(queryPart);
     return { page: 'compare', year, a: q.get('a') || '', b: q.get('b') || '' };
   }
   return { page: 'home', year };
@@ -310,7 +313,7 @@ function renderHome() {
 
   return `${header('home')}<main class="fade-in">
     <h2 class="page-title">Classement NORTHSTAR · ${draftYear}</h2>
-    <p class="page-sub">Star Probability Index — évaluation joueur-par-joueur via rapports de scouting DPH</p>
+    <p class="page-sub">Star Probability Index — évaluation joueur-par-joueur via elite scouting vision</p>
 
     <div class="stats-grid">
       <div class="glass stat-card"><div class="stat-label">Prospects</div><div class="stat-value" style="color:var(--ice-400)">${stats.total}</div></div>
@@ -360,6 +363,11 @@ function renderHome() {
   </main>${footer()}`;
 }
 
+function portraitHtml(p) {
+  const url = p.photoUrl || `./images/players/${p.draftYear || draftYear}/${p.id}.svg`;
+  return `<img class="player-portrait" src="${esc(url)}" alt="Portrait de ${esc(p.name)}" loading="lazy" referrerpolicy="no-referrer" />`;
+}
+
 function renderPlayer(id) {
   const p = players.find(x => x.id === id);
   if (!p) return `${header('home')}<main><div class="glass" style="padding:3rem;text-align:center"><p style="color:#94a3b8;margin-bottom:1rem">Joueur introuvable.</p><a href="${draftHref('')}" class="btn-primary">Retour</a></div></main>${footer()}`;
@@ -395,6 +403,9 @@ function renderPlayer(id) {
 
     <div class="glass player-hero">
       <div class="player-header">
+        <div class="player-portrait-wrap">
+          ${portraitHtml(p)}
+        </div>
         <div class="score-ring" style="--pct:${pct}">
           ${p.rank <= 10 ? `<div class="rank-pin">${p.rank}</div>` : ''}
           <div class="score-ring-inner">
@@ -447,14 +458,21 @@ function renderPlayer(id) {
 }
 
 function renderCompare(aId, bId) {
-  const a = players.find(p => p.id === aId);
-  const b = players.find(p => p.id === bId);
+  const a = aId ? players.find(p => p.id === aId) : null;
+  const b = bId ? players.find(p => p.id === bId) : null;
   const top32 = players.filter(p => p.rank <= 32);
+  const meta = currentDraftMeta();
 
-  const opts = players.map(p => `<option value="${p.id}" ${p.id===aId||p.id===bId?'':''}>#${p.rank} ${esc(p.name)} (${p.overall.toFixed(1)})</option>`).join('');
+  const opts = players.map(p =>
+    `<option value="${p.id}">#${p.rank} ${esc(p.name)} (${p.overall.toFixed(1)})</option>`
+  ).join('');
 
   let compareSection = '<div class="glass card" style="padding:2rem;text-align:center;color:#64748b">Sélectionnez deux joueurs pour comparer.</div>';
-  if (a && b) {
+  if (meta.status === 'upcoming' || !players.length) {
+    compareSection = '<div class="glass card" style="padding:2rem;text-align:center;color:#64748b">Les données de ce repêchage ne sont pas encore disponibles.</div>';
+  } else if ((aId && !a) || (bId && !b)) {
+    compareSection = '<div class="glass card" style="padding:2rem;text-align:center;color:#64748b">Un ou plusieurs joueurs sont introuvables pour ce repêchage.</div>';
+  } else if (a && b) {
     const rows = Object.entries(SKILL_LABELS).map(([k,l]) => {
       const va = a.skills[k], vb = b.skills[k], d = va - vb;
       return `<tr><td style="color:#94a3b8">${l}</td><td style="font-family:var(--font-mono)">${va.toFixed(1)}</td><td style="font-family:var(--font-mono)">${vb.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${d>0?'#34d399':d<0?'#fb7185':'#64748b'}">${d>0?'+':''}${d.toFixed(1)}</td></tr>`;
@@ -705,7 +723,7 @@ function render() {
     if (!app) return;
 
     const meta = currentDraftMeta();
-    if (meta.status === 'upcoming') {
+    if (meta.status === 'upcoming' && r.page !== 'compare') {
       app.innerHTML = renderUpcoming();
       bindYearSelector();
       return;

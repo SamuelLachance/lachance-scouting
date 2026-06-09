@@ -3,8 +3,7 @@ cd /d "%~dp0"
 echo Generation des donnees...
 python build_site_data.py
 if errorlevel 1 pause & exit /b 1
-cd site
-echo.
+cd siteecho.
 echo ========================================
 echo  Lachance Scouting — NHL 2026 Draft
 echo  Ouvrez: http://localhost:8080

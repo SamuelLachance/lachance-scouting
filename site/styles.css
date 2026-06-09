@@ -214,6 +214,45 @@ td { padding: 12px 16px; }
 }
 .player-header { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: flex-start; position: relative; }
 
+.player-portrait-wrap { flex-shrink: 0; }
+.player-portrait {
+  width: 220px; height: 280px; object-fit: cover; object-position: top center;
+  border-radius: 14px; border: 1px solid rgba(255,255,255,.1);
+  box-shadow: 0 12px 40px rgba(0,0,0,.45), 0 0 0 1px rgba(14,165,233,.08);
+  display: block; background: var(--rink-800);
+}
+.player-portrait-placeholder {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+  background: linear-gradient(160deg, rgba(14,165,233,.18) 0%, rgba(17,24,39,.95) 45%, var(--rink-900) 100%);
+  position: relative; overflow: hidden;
+}
+.player-portrait-placeholder::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(56,189,248,.12), transparent 55%);
+}
+.player-portrait-placeholder[data-country="CAN"] { background: linear-gradient(160deg, rgba(239,68,68,.15), var(--rink-900)); }
+.player-portrait-placeholder[data-country="USA"] { background: linear-gradient(160deg, rgba(59,130,246,.15), var(--rink-900)); }
+.player-portrait-placeholder[data-country="SWE"] { background: linear-gradient(160deg, rgba(251,191,36,.12), var(--rink-900)); }
+.player-portrait-placeholder[data-country="FIN"] { background: linear-gradient(160deg, rgba(96,165,250,.12), var(--rink-900)); }
+.portrait-initials {
+  font-family: var(--font-display); font-size: 3.5rem; font-weight: 800; color: rgba(226,232,240,.9);
+  letter-spacing: .04em; position: relative; z-index: 1;
+}
+.portrait-rank {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600; color: var(--gold);
+  letter-spacing: .12em; text-transform: uppercase; position: relative; z-index: 1;
+}
+.portrait-pos {
+  font-family: var(--font-mono); font-size: 10px; color: #64748b; letter-spacing: .15em;
+  text-transform: uppercase; position: relative; z-index: 1;
+}
+.hidden { display: none !important; }
+
+@media (max-width: 640px) {
+  .player-portrait, .player-portrait-placeholder { width: 100%; max-width: 280px; height: 240px; margin: 0 auto; }
+  .player-portrait-wrap { width: 100%; display: flex; justify-content: center; }
+}
+
 .score-ring {
   width: 128px; height: 128px; border-radius: 50%; flex-shrink: 0;
   background: conic-gradient(from 180deg, var(--ice-500) var(--pct), rgba(255,255,255,.06) var(--pct));

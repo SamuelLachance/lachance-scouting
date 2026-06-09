@@ -6,6 +6,25 @@ import re
 from pathlib import Path
 
 from draft_config import DRAFTS, DEFAULT_DRAFT_YEAR, manifest_for_site, paths_for_year
+from name_utils import canonical_key
+from northstar_scoring import build_forces_faiblesses, _load_reports
+
+DIM_FROM_RANKING = {
+    "Plafond_Etoile": "star_ceiling",
+    "Plafond_Elite": "star_ceiling",
+    "IQ_Elite": "hockey_iq",
+    "IQ_Realisation": "hockey_iq",
+    "Moteur_Patinage": "skating_engine",
+    "Patinage_Upside": "skating_engine",
+    "Pouvoir_Offensif": "offensive_star_power",
+    "Outils_Offensifs": "offensive_star_power",
+    "Creation_Jeu": "offensive_star_power",
+    "Preuve_Competition": "competition_proof",
+    "Competitivite": "character_compete",
+    "Variance_Positive": "character_compete",
+    "Arc_Developpement": "development_arc",
+    "Trajectoire": "development_arc",
+}
 
 BASE = Path(__file__).parent
 SITE_DATA = BASE / "site" / "data"
@@ -38,6 +57,9 @@ def parse_md(text: str) -> dict:
         if line.startswith("## Faiblesses"):
             section = "faiblesses"
             continue
+        if section in ("forces", "faiblesses") and line.startswith("- "):
+            out[section].append(line[2:])
+            continue
         if line.startswith("## Comparable") or line.startswith("## Projection NHL"):
             section = "comparable" if "Comparable" in line else "projection"
             continue
@@ -56,16 +78,67 @@ def parse_md(text: str) -> dict:
             out["resume"] += (line + " ")
         elif section == "upsideThesis":
             out["upsideThesis"] += (line + " ")
-        elif section == "forces" and line.startswith("- "):
-            out["forces"].append(line[2:])
-        elif section == "faiblesses" and line.startswith("- "):
-            out["faiblesses"].append(line[2:])
         elif section == "comparable":
             out["comparable"] += (line + " ")
         elif section == "projection":
             out["projection"] += (line + " ")
     for k in ("resume", "comparable", "projection", "upsideThesis"):
         out[k] = out[k].strip()
+    return out
+
+
+def dims_from_ranking(p: dict) -> dict[str, float]:
+    dims: dict[str, float] = {}
+    for src, dst in DIM_FROM_RANKING.items():
+        if src in p and dst not in dims:
+            dims[dst] = float(p[src])
+    for dim in (
+        "star_ceiling", "hockey_iq", "skating_engine", "offensive_star_power",
+        "competition_proof", "character_compete", "development_arc",
+    ):
+        dims.setdefault(dim, 5.0)
+    return dims
+
+
+def enrich_analysis(
+    analysis: dict,
+    p: dict,
+    reports: dict,
+) -> dict:
+    """Complète forces/faiblesses si le markdown est incomplet."""
+    forces = list(analysis.get("forces") or [])
+    faiblesses = list(analysis.get("faiblesses") or [])
+    if len(forces) >= 3 and len(faiblesses) >= 2:
+        return analysis
+
+    dims = dims_from_ranking(p)
+    report = reports.get(canonical_key(p["Nom"]), {})
+    cov = p.get("Couverture_Rapport") or "none"
+    synth_forces, synth_faiblesses = build_forces_faiblesses(
+        dims,
+        report,
+        {},
+        p.get("Position", ""),
+        p.get("Taille", ""),
+        str(p.get("Poids_lbs", "")),
+        cov,
+    )
+
+    seen_f = set(forces)
+    for item in synth_forces:
+        if item not in seen_f and len(forces) < 5:
+            forces.append(item)
+            seen_f.add(item)
+
+    seen_w = set(faiblesses)
+    for item in synth_faiblesses:
+        if item not in seen_w and len(faiblesses) < 4:
+            faiblesses.append(item)
+            seen_w.add(item)
+
+    out = dict(analysis)
+    out["forces"] = forces[:5]
+    out["faiblesses"] = faiblesses[:4]
     return out
 
 
@@ -96,11 +169,17 @@ def build_year(year: int) -> int:
             return 0
 
     players_raw = json.loads(rankings_path.read_text(encoding="utf-8"))
+    reports = _load_reports()
+    photos_path = paths["data_dir"] / "player_photos.json"
+    photos_map: dict = {}
+    if photos_path.exists():
+        photos_map = json.loads(photos_path.read_text(encoding="utf-8"))
     enriched = []
     for p in players_raw:
         slug = slug_from_file(p.get("Fichier_Local", p["Nom"].lower().replace(" ", "-")))
         md_path = analyses_dir / Path(p.get("Fichier_Local", "").replace("\\", "/")).name
         analysis = parse_md(md_path.read_text(encoding="utf-8")) if md_path.exists() else {}
+        analysis = enrich_analysis(analysis, p, reports)
         note = float(p.get("Score_NORTHSTAR") or p.get("Score_APEX", 50))
         cr = p.get("Rang_Consensus")
         delta = p.get("Delta_vs_Consensus")
@@ -126,6 +205,8 @@ def build_year(year: int) -> int:
         for src, dst in skill_key_map.items():
             if src in rat and dst not in skill_rationales:
                 skill_rationales[dst] = rat[src]
+        photo_entry = photos_map.get(slug, {})
+        photo_url = photo_entry.get("local") or f"./images/players/{year}/{slug}.svg"
         enriched.append({
             "id": slug,
             "draftYear": year,
@@ -139,6 +220,7 @@ def build_year(year: int) -> int:
             "weight": int(p["Poids_lbs"]) if str(p.get("Poids_lbs", "")).isdigit() else p.get("Poids_lbs"),
             "shoots": p["Tire"],
             "country": p["Pays"],
+            "photoUrl": photo_url,
             "overall": note,
             "starTier": p.get("Star_Tier", ""),
             "reportCoverage": p.get("Couverture_Rapport", ""),
@@ -201,6 +283,7 @@ def build_index_html():
       <p>Chargement Lachance Scouting…</p>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
