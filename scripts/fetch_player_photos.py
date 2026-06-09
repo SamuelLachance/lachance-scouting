@@ -71,6 +71,7 @@ def main() -> None:
     with_photo = sum(1 for v in manifest.values() if v.get("local"))
     print(f"Fetch Wikimedia: {with_photo}/{len(rankings)} photos réelles ({skipped} déjà en cache)")
 
+    sys.path.insert(0, str(BASE / "scripts"))
     from generate_player_portraits import ensure_portraits
 
     stats = ensure_portraits(year)

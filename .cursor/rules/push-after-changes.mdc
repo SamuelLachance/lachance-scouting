@@ -1,0 +1,27 @@
+﻿---
+description: Commit and push to GitHub after project changes
+alwaysApply: true
+---
+
+# Push after changes
+
+After any code, data, or site change in **nhl-2026-draft** (`C:\Users\Admin\Projects\nhl-2026-draft`):
+
+1. `git add` relevant files, commit with a clear message, then `git push origin main`.
+2. Remote: `https://github.com/SamuelLachance/lachance-scouting` — site: `https://SamuelLachance.github.io/lachance-scouting/`
+
+Same workflow for **lol-coach** at `C:\Users\Admin\Projects\lol-coach` when that project is modified (push its default branch to its remote).
+
+If git identity is missing locally, use inline config:
+
+```bash
+git -c user.name="Samuel Lachance" -c user.email="SamuelLachance@users.noreply.github.com" commit -m "message"
+```
+
+If push fails on `.github/workflows` (workflow scope): tell the user to run:
+
+```bash
+gh auth refresh -h github.com -s workflow
+```
+
+Do not force-push. Do not amend unless hooks auto-modified files after a successful commit.
