@@ -766,13 +766,13 @@ def main():
         for f in OUT_DOCS.glob("*.md"):
             f.unlink()
 
-    # Étape 1 — score NORTHSTAR pur (rapports scouting)
+    # Étape 1 — SPI NORTHSTAR (évaluations / rapports scouting uniquement)
     ns_items = []
     for p in players:
-        cr = find_consensus_rank(p)
+        cr = find_consensus_rank(p)  # référence affichage seulement
         dob_str = p.birth_date.isoformat() if p.birth_date else ""
         scores = northstar_generate(
-            p.full_name, p.pos, p.height, p.weight, p.country, cr,
+            p.full_name, p.pos, p.height, p.weight, p.country, None,
             player_key=p.key, rankings_dob=dob_str,
         )
         overall = northstar_overall(scores)
@@ -781,7 +781,7 @@ def main():
     ns_items.sort(key=lambda x: (-x["overall"], x["p"].full_name))
     for i, item in enumerate(ns_items, 1):
         item["ns_rank"] = i
-        item["final_rank"] = i  # rang FINAL = rang NORTHSTAR pur
+        item["final_rank"] = i
 
     rows = []
     for item in ns_items:
@@ -821,10 +821,11 @@ def main():
             "Rationales": scores.get("rationales", {}),
             "Lien_Analyse": doc_url,
             "Fichier_Local": str(doc_path.relative_to(BASE)),
-            # compatibilité site (aliases)
+            # compatibilité site (aliases) — rang = SPI uniquement
             "Rang_APEX": nr,
             "Moyenne_Rang": float(nr),
             "Score_APEX": overall,
+            "blendRank": float(nr),
             "Plafond_Elite": scores.get("star_ceiling"),
             "Patinage_Upside": scores.get("skating_engine"),
             "Outils_Offensifs": scores.get("offensive_star_power"),

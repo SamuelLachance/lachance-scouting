@@ -293,7 +293,7 @@ def build_year(year: int) -> int:
     if photos_path.exists():
         photos_map = json.loads(photos_path.read_text(encoding="utf-8"))
     player_meta = load_player_meta(year)
-    enriched = []
+    staged = []
     for p in players_raw:
         height, weight = resolve_player_size(p, player_meta)
         slug = slug_from_file(p.get("Fichier_Local", p["Nom"].lower().replace(" ", "-")))
@@ -301,34 +301,19 @@ def build_year(year: int) -> int:
         analysis = parse_md(md_path.read_text(encoding="utf-8")) if md_path.exists() else {}
         scores = northstar_scores_for_player(p)
         analysis = enrich_analysis(analysis, p, reports, scores)
-        note = (
+        spi = (
             northstar_overall(scores)
             if scores
             else float(p.get("Score_NORTHSTAR") or p.get("Score_APEX", 50))
         )
         cr = p.get("Rang_Consensus")
-        delta = p.get("Delta_vs_Consensus")
-        delta_val = None if delta in ("N/A", None) else int(delta)
         skill_rationales = rationales_from_scores(scores, p)
         photo_entry = photos_map.get(slug, {})
         photo_url = photo_entry.get("local") or f"./images/players/{year}/{slug}.svg"
         player_eval = (_load_evaluations().get("players") or {}).get(canonical_key(p["Nom"]), {})
-        draft_rank = p.get("Rang_Final") or p.get("Rang_NORTHSTAR") or p.get("Rang_APEX")
-        ea_tier = ea_tier_for_player(note, p["Position"], draft_rank=draft_rank)
-        projection_fr = ea_projection_for_player(
-            note, p["Position"], lang="fr", draft_rank=draft_rank
-        )
-        projection_en = ea_projection_for_player(
-            note, p["Position"], lang="en", draft_rank=draft_rank
-        )
-        analysis["projection"] = projection_fr
-        enriched.append({
+        staged.append({
             "id": slug,
             "draftYear": year,
-            "rank": p["Rang_Final"],
-            "northstarRank": p.get("Rang_NORTHSTAR") or p.get("Rang_APEX"),
-            "apexRank": p.get("Rang_NORTHSTAR") or p.get("Rang_APEX"),
-            "blendRank": float(p.get("Rang_NORTHSTAR") or p.get("Moyenne_Rang", p["Rang_Final"])),
             "name": p["Nom"],
             "position": p["Position"],
             "height": height,
@@ -336,7 +321,7 @@ def build_year(year: int) -> int:
             "shoots": p["Tire"],
             "country": p["Pays"],
             "photoUrl": photo_url,
-            "overall": note,
+            "overall": spi,
             "isOverAge": bool(
                 (scores or {}).get("is_over_age")
                 or p.get("Is_Over_Age")
@@ -353,15 +338,38 @@ def build_year(year: int) -> int:
             "starTier": (scores or {}).get("star_tier") or p.get("Star_Tier", ""),
             "reportCoverage": (scores or {}).get("report_coverage") or p.get("Couverture_Rapport", ""),
             "consensusRank": cr if cr != "N/A" else None,
+            "skills": skills_from_scores(scores, p),
+            "skillRationales": skill_rationales,
+            "sourceMix": player_eval.get("source_mix") or [],
+            "analysis": analysis,
+        })
+
+    # Rank strictly by SPI descending (tie-break: name)
+    staged.sort(key=lambda x: (-x["overall"], x["name"]))
+    enriched = []
+    for spi_rank, row in enumerate(staged, 1):
+        cr = row["consensusRank"]
+        delta_val = (cr - spi_rank) if cr is not None else None
+        ea_tier = ea_tier_for_player(row["overall"], row["position"], draft_rank=spi_rank)
+        projection_fr = ea_projection_for_player(
+            row["overall"], row["position"], lang="fr", draft_rank=spi_rank
+        )
+        projection_en = ea_projection_for_player(
+            row["overall"], row["position"], lang="en", draft_rank=spi_rank
+        )
+        analysis = dict(row["analysis"])
+        analysis["projection"] = projection_fr
+        enriched.append({
+            **row,
+            "rank": spi_rank,
+            "northstarRank": spi_rank,
+            "apexRank": spi_rank,
             "consensusDelta": delta_val,
             "tier": ea_tier["tierLabel"],
             "eaTier": ea_tier["eaTier"],
             "tierGroup": ea_tier["tierGroup"],
             "projection": projection_fr,
             "projectionEn": projection_en,
-            "skills": skills_from_scores(scores, p),
-            "skillRationales": skill_rationales,
-            "sourceMix": player_eval.get("source_mix") or [],
             "analysis": analysis,
         })
 

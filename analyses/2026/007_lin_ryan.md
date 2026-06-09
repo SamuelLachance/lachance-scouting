@@ -10,66 +10,66 @@
 | Tire | R |
 | Pays | CAN |
 | Date naissance | N/A |
-| Couverture rapport | partial |
+| Couverture rapport | full |
 | **Rang FINAL (NORTHSTAR)** | **#7** |
 | Rang NORTHSTAR (score pur) | #7 |
 | Rang consensus public | 12 |
-| **Star Probability Index** | **60.39/100** |
+| **Star Probability Index** | **64.01/100** |
 | Tier étoile estimé | NHL régulier |
 
 ## Résumé exécutif
 Mobile right-shot defender with the type of puck-moving game that ages up well. Needs to fill out; the hockey sense is already there.
 
 ## Thèse star NORTHSTAR
-NORTHSTAR estime Ryan Lin à 60.39/100 pour devenir une étoile NHL (NHL régulier). Pilier dominant: plafond étoile 6.3/10.
+NORTHSTAR estime Ryan Lin à 64.01/100 pour devenir une étoile NHL (NHL régulier). Pilier dominant: plafond étoile 6.8/10.
 
 ## Grille NORTHSTAR (7 piliers — basée sur rapports scouting)
 
 | Dimension | Note /10 | Poids | Score |
 |-----------|----------|-------|-------|
-| Plafond étoile NHL ★ | 6.3 | 35% | 22.05 |
-| IQ / processing élite | 7.4 | 18% | 13.32 |
-| Moteur de patinage | 6.2 | 15% | 9.30 |
-| Pouvoir offensif star | 6.4 | 12% | 7.68 |
-| Preuve vs compétition | 6.2 | 10% | 6.20 |
-| Compétitivité / caractère | 5.6 | 5% | 2.80 |
-| Arc de développement | 5.8 | 5% | 2.90 |
+| Plafond étoile NHL ★ | 6.8 | 35% | 23.80 |
+| IQ / processing élite | 6.7 | 18% | 12.06 |
+| Moteur de patinage | 6.1 | 15% | 9.15 |
+| Pouvoir offensif star | 6.0 | 12% | 7.20 |
+| Preuve vs compétition | 5.8 | 10% | 5.80 |
+| Compétitivité / caractère | 5.9 | 5% | 2.95 |
+| Arc de développement | 6.1 | 5% | 3.05 |
 
-**STAR PROBABILITY INDEX: 60.39/100**
+**STAR PROBABILITY INDEX: 64.01/100**
 
 ## Justification détaillée des notes
 
-### Plafond étoile NHL ★ — 6.3/10
-**6.3/10 — Faible** (star path improbable). Pilier NORTHSTAR (35%). Signaux: «top four», «project». Sources: DPH grade B+; DPH #15. Extrait DPH: "Mobile right-shot defender with the type of puck-moving game that ages up well. Needs to fill out; t…". Confiance: métadonnées partielles.
+### Plafond étoile NHL ★ — 6.8/10
+**6.8/10 — Faible** (star path improbable). Pilier NORTHSTAR (35%). Signaux: «top four», «project». Sources pondérées: DPH scouting report body (17%), DPH grade & tags (16%), DPH NHL projection (15%), DPH listed strengths (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
 
-### IQ / processing élite — 7.4/10
-**7.4/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (18%). Signaux: «hockey sense», «sense». Sources: DPH grade B+; DPH #15. Confiance: métadonnées partielles.
+### IQ / processing élite — 6.7/10
+**6.7/10 — Faible** (star path improbable). Pilier NORTHSTAR (18%). Signaux: «hockey sense», «sense». Sources pondérées: DPH scouting report body (17%), DPH grade & tags (16%), DPH NHL projection (15%), DPH listed strengths (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
 
-### Moteur de patinage — 6.2/10
-**6.2/10 — Faible** (star path improbable). Pilier NORTHSTAR (15%). Signaux: «mobile». Sources: DPH grade B+; DPH #15. Confiance: métadonnées partielles.
+### Moteur de patinage — 6.1/10
+**6.1/10 — Faible** (star path improbable). Pilier NORTHSTAR (15%). Signaux: «mobile». Sources pondérées: DPH scouting report body (17%), DPH grade & tags (16%), DPH NHL projection (15%), DPH listed strengths (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
 
-### Pouvoir offensif star — 6.4/10
-**6.4/10 — Faible** (star path improbable). Pilier NORTHSTAR (12%). Signaux: «shot». Sources: DPH grade B+; DPH #15. Confiance: métadonnées partielles.
+### Pouvoir offensif star — 6.0/10
+**6.0/10 — Faible** (star path improbable). Pilier NORTHSTAR (12%). Signaux: «shot». Sources pondérées: DPH scouting report body (17%), DPH grade & tags (16%), DPH NHL projection (15%), DPH listed strengths (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
 
-### Preuve vs compétition — 6.2/10
-**6.2/10 — Faible** (star path improbable). Pilier NORTHSTAR (10%). Signaux: «whl». Sources: DPH grade B+; DPH #15. Confiance: métadonnées partielles.
+### Preuve vs compétition — 5.8/10
+**5.8/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (10%). Signaux: inférence contextuelle. Sources pondérées: DPH scouting report body (17%), DPH grade & tags (16%), DPH NHL projection (15%), DPH listed strengths (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
 
-### Compétitivité / caractère — 5.6/10
-**5.6/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources: DPH grade B+; DPH #15. Confiance: métadonnées partielles.
+### Compétitivité / caractère — 5.9/10
+**5.9/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: DPH scouting report body (17%), DPH grade & tags (16%), DPH NHL projection (15%), DPH listed strengths (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
 
-### Arc de développement — 5.8/10
-**5.8/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources: DPH grade B+; DPH #15. Confiance: métadonnées partielles.
+### Arc de développement — 6.1/10
+**6.1/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: DPH scouting report body (17%), DPH grade & tags (16%), DPH NHL projection (15%), DPH listed strengths (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
 
 ## Forces (signaux star)
 - Right-shot D
-- IQ / processing élite — 7.4/10 (modeste) : signaux «hockey sense, sense»
-- Pouvoir offensif star — 6.4/10 (faible) : signaux «shot»
+- Plafond étoile NHL ★ — 6.8/10 (faible) : signaux «top four, project»
+- IQ / processing élite — 6.7/10 (faible) : signaux «hockey sense, sense»
 
 ## Faiblesses / risques
-- Compétitivité / caractère (5.6/10) — pilier le moins élevé du profil; marge limitée vs l'élite NHL
-- Arc de développement (5.8/10) — écart de 1.6 vs le pilier dominant; risque si ce skill ne suit pas en pro
-- Moteur de patinage (6.2/10) — pilier sous la moyenne du profil; traduction NHL à prouver
-- Preuve vs compétition (6.2/10) — pilier sous la moyenne du profil; traduction NHL à prouver
+- Preuve vs compétition (5.8/10) — pilier le moins élevé du profil; marge limitée vs l'élite NHL
+- Compétitivité / caractère (5.9/10) — pilier sous la moyenne du profil; traduction NHL à prouver
+- Pouvoir offensif star (6.0/10) — pilier sous la moyenne du profil; traduction NHL à prouver
+- Moteur de patinage (6.1/10) — pilier sous la moyenne du profil; traduction NHL à prouver
 
 ## Projection NHL
 Puck-moving top-four D

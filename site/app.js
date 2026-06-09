@@ -74,6 +74,7 @@ async function loadPlayersForYear(year) {
   const res = await fetch('./data/' + year + '/players.json');
   if (!res.ok) throw new Error('Données ' + year + ' introuvables. Exécutez python build_site_data.py');
   players = await res.json();
+  players.sort((a, b) => b.overall - a.overall || a.name.localeCompare(b.name));
   playersCache[year] = players;
 }
 
@@ -236,7 +237,7 @@ function filterPlayers() {
     if (state.tier !== 'ALL' && p.tier !== state.tier) return false;
     if (p.overall < state.minScore) return false;
     return true;
-  });
+  }).sort((a, b) => b.overall - a.overall || a.name.localeCompare(b.name));
 }
 
 function getStats() {
@@ -348,7 +349,7 @@ function renderHome() {
         <thead><tr>
           <th>#</th><th>Joueur</th><th class="hidden-sm">Pos</th><th class="hidden-md">Taille</th>
           <th class="hidden-md">Pays</th><th class="hidden-sm">Projection</th>
-          <th class="hidden-md">NS</th><th class="hidden-md">Cons.</th><th style="text-align:right">SPI</th>
+          <th class="hidden-md">Cons.</th><th style="text-align:right">SPI</th>
         </tr></thead>
         <tbody>${pageItems.map(p => `
           <tr onclick="location.hash='/${draftYear}/player/${p.id}'">
@@ -358,7 +359,6 @@ function renderHome() {
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#94a3b8">${p.height} / ${p.weight}</td>
             <td class="hidden-md">${FLAGS[p.country]||'🏳️'} ${p.country}</td>
             <td class="hidden-sm"><span class="tier projection-cell ${tierClass(p.tier)}" title="${esc(p.eaTier || p.tier)}">${esc(p.projection || p.tier)}</span></td>
-            <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#64748b">#${p.apexRank || p.rank}</td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#64748b">${p.consensusRank ? '#'+p.consensusRank : '—'}</td>
             <td style="text-align:right"><span class="${scoreClass(p.overall)}">${p.overall.toFixed(1)}</span></td>
           </tr>`).join('')}
