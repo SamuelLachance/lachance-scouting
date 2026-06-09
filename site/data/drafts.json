@@ -1,0 +1,46 @@
+{
+  "defaultYear": 2026,
+  "brand": "Lachance Scouting",
+  "years": [
+    {
+      "year": 2030,
+      "label": "Repêchage 2030",
+      "status": "upcoming",
+      "subtitle": "À venir",
+      "model": "northstar",
+      "playerCount": 0
+    },
+    {
+      "year": 2029,
+      "label": "Repêchage 2029",
+      "status": "upcoming",
+      "subtitle": "À venir",
+      "model": "northstar",
+      "playerCount": 0
+    },
+    {
+      "year": 2028,
+      "label": "Repêchage 2028",
+      "status": "upcoming",
+      "subtitle": "À venir",
+      "model": "northstar",
+      "playerCount": 0
+    },
+    {
+      "year": 2027,
+      "label": "Repêchage 2027",
+      "status": "upcoming",
+      "subtitle": "À venir",
+      "model": "northstar",
+      "playerCount": 0
+    },
+    {
+      "year": 2026,
+      "label": "Repêchage 2026",
+      "status": "active",
+      "subtitle": "Buffalo · 26–27 juin 2026",
+      "model": "northstar",
+      "playerCount": 573
+    }
+  ]
+}

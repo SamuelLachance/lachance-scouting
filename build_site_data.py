@@ -1,0 +1,223 @@
+#!/usr/bin/env python3
+"""Fusionne rankings + analyses → site/data/{year}/players.json + manifest multi-repêchages."""
+
+import json
+import re
+from pathlib import Path
+
+from draft_config import DRAFTS, DEFAULT_DRAFT_YEAR, manifest_for_site, paths_for_year
+
+BASE = Path(__file__).parent
+SITE_DATA = BASE / "site" / "data"
+WEB_DATA = BASE / "web" / "public" / "data"
+
+
+def slug_from_file(path: str) -> str:
+    name = Path(path.replace("\\", "/")).stem
+    name = re.sub(r"^\d+_", "", name)
+    return name.replace("_", "-")
+
+
+def parse_md(text: str) -> dict:
+    out = {
+        "resume": "", "forces": [], "faiblesses": [], "comparable": "",
+        "projection": "", "upsideThesis": "",
+    }
+    section = None
+    for line in text.splitlines():
+        line = line.strip()
+        if line.startswith("## Résumé exécutif"):
+            section = "resume"
+            continue
+        if line.startswith("## Thèse star") or line.startswith("## Thèse upside"):
+            section = "upsideThesis"
+            continue
+        if line.startswith("## Forces"):
+            section = "forces"
+            continue
+        if line.startswith("## Faiblesses"):
+            section = "faiblesses"
+            continue
+        if line.startswith("## Comparable") or line.startswith("## Projection NHL"):
+            section = "comparable" if "Comparable" in line else "projection"
+            continue
+        if line.startswith("## Projection"):
+            section = "projection"
+            continue
+        if line.startswith("## ") and section:
+            section = None
+            continue
+        if not line or line.startswith("|") or line.startswith("---") or line.startswith("#"):
+            continue
+        if line.startswith("**SCORE") or line.startswith("**STAR") or line.startswith("**TOTAL"):
+            section = None
+            continue
+        if section == "resume":
+            out["resume"] += (line + " ")
+        elif section == "upsideThesis":
+            out["upsideThesis"] += (line + " ")
+        elif section == "forces" and line.startswith("- "):
+            out["forces"].append(line[2:])
+        elif section == "faiblesses" and line.startswith("- "):
+            out["faiblesses"].append(line[2:])
+        elif section == "comparable":
+            out["comparable"] += (line + " ")
+        elif section == "projection":
+            out["projection"] += (line + " ")
+    for k in ("resume", "comparable", "projection", "upsideThesis"):
+        out[k] = out[k].strip()
+    return out
+
+
+def tier(note: float) -> str:
+    if note >= 88:
+        return "Upside Élite"
+    if note >= 75:
+        return "Upside 1er tour"
+    if note >= 62:
+        return "Upside 2e-3e tour"
+    if note >= 48:
+        return "Upside milieu"
+    return "Upside limité"
+
+
+def build_year(year: int) -> int:
+    paths = paths_for_year(year)
+    rankings_path = paths["rankings"]
+    analyses_dir = paths["analyses"]
+
+    if not rankings_path.exists():
+        legacy = BASE / "data" / "rankings.json"
+        if legacy.exists():
+            rankings_path = legacy
+            analyses_dir = BASE / "analyses_joueurs"
+        else:
+            print(f"  skip {year}: pas de rankings.json")
+            return 0
+
+    players_raw = json.loads(rankings_path.read_text(encoding="utf-8"))
+    enriched = []
+    for p in players_raw:
+        slug = slug_from_file(p.get("Fichier_Local", p["Nom"].lower().replace(" ", "-")))
+        md_path = analyses_dir / Path(p.get("Fichier_Local", "").replace("\\", "/")).name
+        analysis = parse_md(md_path.read_text(encoding="utf-8")) if md_path.exists() else {}
+        note = float(p.get("Score_NORTHSTAR") or p.get("Score_APEX", 50))
+        cr = p.get("Rang_Consensus")
+        delta = p.get("Delta_vs_Consensus")
+        delta_val = None if delta in ("N/A", None) else int(delta)
+        rat = p.get("Rationales") or {}
+        skill_key_map = {
+            "star_ceiling": "starCeiling",
+            "hockey_iq": "hockeyIQ",
+            "skating_engine": "skatingEngine",
+            "offensive_star_power": "offensiveStarPower",
+            "competition_proof": "competitionProof",
+            "character_compete": "characterCompete",
+            "development_arc": "developmentArc",
+            "plafond_elite": "starCeiling",
+            "patinage_upside": "skatingEngine",
+            "outils_offensifs": "offensiveStarPower",
+            "creation_jeu": "offensiveStarPower",
+            "iq_realisation": "hockeyIQ",
+            "trajectoire": "developmentArc",
+            "variance_positive": "characterCompete",
+        }
+        skill_rationales = {}
+        for src, dst in skill_key_map.items():
+            if src in rat and dst not in skill_rationales:
+                skill_rationales[dst] = rat[src]
+        enriched.append({
+            "id": slug,
+            "draftYear": year,
+            "rank": p["Rang_Final"],
+            "northstarRank": p.get("Rang_NORTHSTAR") or p.get("Rang_APEX"),
+            "apexRank": p.get("Rang_NORTHSTAR") or p.get("Rang_APEX"),
+            "blendRank": float(p.get("Rang_NORTHSTAR") or p.get("Moyenne_Rang", p["Rang_Final"])),
+            "name": p["Nom"],
+            "position": p["Position"],
+            "height": p["Taille"],
+            "weight": int(p["Poids_lbs"]) if str(p.get("Poids_lbs", "")).isdigit() else p.get("Poids_lbs"),
+            "shoots": p["Tire"],
+            "country": p["Pays"],
+            "overall": note,
+            "starTier": p.get("Star_Tier", ""),
+            "reportCoverage": p.get("Couverture_Rapport", ""),
+            "consensusRank": cr if cr != "N/A" else None,
+            "consensusDelta": delta_val,
+            "tier": tier(note),
+            "skills": {
+                "starCeiling": float(p.get("Plafond_Etoile") or p.get("Plafond_Elite", 5)),
+                "hockeyIQ": float(p.get("IQ_Elite") or p.get("IQ_Realisation", 5)),
+                "skatingEngine": float(p.get("Moteur_Patinage") or p.get("Patinage_Upside", 5)),
+                "offensiveStarPower": float(p.get("Pouvoir_Offensif") or p.get("Outils_Offensifs", 5)),
+                "competitionProof": float(p.get("Preuve_Competition") or 5.0),
+                "characterCompete": float(p.get("Competitivite") or p.get("Variance_Positive", 5)),
+                "developmentArc": float(p.get("Arc_Developpement") or p.get("Trajectoire", 5)),
+            },
+            "skillRationales": skill_rationales,
+            "analysis": analysis,
+        })
+
+    out_dir = SITE_DATA / str(year)
+    web_dir = WEB_DATA / str(year)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    web_dir.mkdir(parents=True, exist_ok=True)
+    content = json.dumps(enriched, ensure_ascii=False, indent=2)
+    out_file = out_dir / "players.json"
+    out_file.write_text(content, encoding="utf-8")
+    (web_dir / "players.json").write_text(content, encoding="utf-8")
+    print(f"OK {year}: {len(enriched)} joueurs -> {out_file.relative_to(BASE)}")
+    return len(enriched)
+
+
+def write_manifest() -> None:
+    manifest = manifest_for_site()
+    text = json.dumps(manifest, ensure_ascii=False, indent=2)
+    (SITE_DATA / "drafts.json").write_text(text, encoding="utf-8")
+    (WEB_DATA / "drafts.json").write_text(text, encoding="utf-8")
+    print(f"OK manifest -> site/data/drafts.json ({len(manifest['years'])} repêchages)")
+
+
+def build_index_html():
+    css = (BASE / "site" / "styles.css").read_text(encoding="utf-8")
+    html = f"""<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lachance Scouting — Repêchages NHL</title>
+  <meta name="description" content="Lachance Scouting — repêchages NHL année par année, Star Probability NORTHSTAR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&family=JetBrains+Mono:wght@500&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+{css}
+  </style>
+</head>
+<body style="background:#030712;color:#e2e8f0;margin:0;min-height:100vh">
+  <noscript><div style="padding:2rem;text-align:center">JavaScript requis.</div></noscript>
+  <div id="app">
+    <div class="loader">
+      <div class="loader-ring"></div>
+      <p>Chargement Lachance Scouting…</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+"""
+    (BASE / "site" / "index.html").write_text(html, encoding="utf-8")
+    print("OK index.html regenere")
+
+
+def main() -> int:
+    total = 0
+    for year in sorted(DRAFTS.keys()):
+        if DRAFTS[year]["status"] == "active":
+            total = max(total, build_year(year))
+    write_manifest()
+    return total
+
+
+if __name__ == "__main__":
+    n = main()
+    build_index_html()

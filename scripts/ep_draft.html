@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+            <!-- Inmobi Choice. Consent Manager Tag v2.2 (for TCF 2.2) -->
+<script>
+(function() {
+  var host = 'eliteprospects.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.inmobi.com'
+    .concat('/choice/', 's0LwrxA-Fd5Rm', '/', host, '/choice.js?tag_version=V3');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+         if(args[0] === 'init' && typeof args[3] === 'object') {
+           args[3] = Object.assign(args[3], { tag_version: 'V2' });
+         }
+         queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  function makeGppStub() {
+    var CMP_ID = 10;
+    var SUPPORTED_APIS = [
+      '2:tcfeuv2',
+      '6:uspv1',
+      '7:usnatv1',
+      '8:usca',
+      '9:usvav1',
+      '10:uscov1',
+      '11:usutv1',
+      '12:usctv1'
+    ];
+
+    window.__gpp_addFrame = function (n) {
+      if (!window.frames[n]) {
+        if (document.body) {
+          var i = document.createElement("iframe");
+          i.style.cssText = "display:none";
+          i.name = n;
+          document.body.appendChild(i);
+        } else {
+          window.setTimeout(window.__gpp_addFrame, 10, n);
+        }
+      }
+    };
+    window.__gpp_stub = function () {
+      var b = arguments;
+      __gpp.queue = __gpp.queue || [];
+      __gpp.events = __gpp.events || [];
+
+      if (!b.length || (b.length == 1 && b[0] == "queue")) {
+        return __gpp.queue;
+      }
+
+      if (b.length == 1 && b[0] == "events") {
+        return __gpp.events;
+      }
+
+      var cmd = b[0];
+      var clb = b.length > 1 ? b[1] : null;
+      var par = b.length > 2 ? b[2] : null;
+      if (cmd === "ping") {
+        clb(
+          {
+            gppVersion: "1.1", // must be "Version.Subversion", current: "1.1"
+            cmpStatus: "stub", // possible values: stub, loading, loaded, error
+            cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+            signalStatus: "not ready", // possible values: not ready, ready
+            supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+            cmpId: CMP_ID, // IAB assigned CMP ID, may be 0 during stub/loading
+            sectionList: [],
+            applicableSections: [-1],
+            gppString: "",
+            parsedSections: {},
+          },
+          true
+        );
+      } else if (cmd === "addEventListener") {
+        if (!("lastId" in __gpp)) {
+          __gpp.lastId = 0;
+        }
+        __gpp.lastId++;
+        var lnr = __gpp.lastId;
+        __gpp.events.push({
+          id: lnr,
+          callback: clb,
+          parameter: par,
+        });
+        clb(
+          {
+            eventName: "listenerRegistered",
+            listenerId: lnr, // Registered ID of the listener
+            data: true, // positive signal
+            pingData: {
+              gppVersion: "1.1", // must be "Version.Subversion", current: "1.1"
+              cmpStatus: "stub", // possible values: stub, loading, loaded, error
+              cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+              signalStatus: "not ready", // possible values: not ready, ready
+              supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+              cmpId: CMP_ID, // list of supported APIs
+              sectionList: [],
+              applicableSections: [-1],
+              gppString: "",
+              parsedSections: {},
+            },
+          },
+          true
+        );
+      } else if (cmd === "removeEventListener") {
+        var success = false;
+        for (var i = 0; i < __gpp.events.length; i++) {
+          if (__gpp.events[i].id == par) {
+            __gpp.events.splice(i, 1);
+            success = true;
+            break;
+          }
+        }
+        clb(
+          {
+            eventName: "listenerRemoved",
+            listenerId: par, // Registered ID of the listener
+            data: success, // status info
+            pingData: {
+              gppVersion: "1.1", // must be "Version.Subversion", current: "1.1"
+              cmpStatus: "stub", // possible values: stub, loading, loaded, error
+              cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+              signalStatus: "not ready", // possible values: not ready, ready
+              supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+              cmpId: CMP_ID, // CMP ID
+              sectionList: [],
+              applicableSections: [-1],
+              gppString: "",
+              parsedSections: {},
+            },
+          },
+          true
+        );
+      } else if (cmd === "hasSection") {
+        clb(false, true);
+      } else if (cmd === "getSection" || cmd === "getField") {
+        clb(null, true);
+      }
+      //queue all other commands
+      else {
+        __gpp.queue.push([].slice.apply(b));
+      }
+    };
+    window.__gpp_msghandler = function (event) {
+      var msgIsString = typeof event.data === "string";
+      try {
+        var json = msgIsString ? JSON.parse(event.data) : event.data;
+      } catch (e) {
+        var json = null;
+      }
+      if (typeof json === "object" && json !== null && "__gppCall" in json) {
+        var i = json.__gppCall;
+        window.__gpp(
+          i.command,
+          function (retValue, success) {
+            var returnMsg = {
+              __gppReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: i.callId,
+              },
+            };
+            event.source.postMessage(msgIsString ? JSON.stringify(returnMsg) : returnMsg, "*");
+          },
+          "parameter" in i ? i.parameter : null,
+          "version" in i ? i.version : "1.1"
+        );
+      }
+    };
+    if (!("__gpp" in window) || typeof window.__gpp !== "function") {
+      window.__gpp = window.__gpp_stub;
+      window.addEventListener("message", window.__gpp_msghandler, false);
+      window.__gpp_addFrame("__gppLocator");
+    }
+  }
+
+  makeGppStub();
+
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+
+<!-- DataLayer Push & CCPA Support -->
+<script>
+(function() {
+  //URLs need to be externalized based on environments, during build update.
+  var get_iab_vendors_url = 'https://cmp.inmobi.com/GVL-v3/vendor-list.json';
+  var get_google_atp_url = "https://cmp.inmobi.com/tcfv2/google-atp-list.json";
+  var iab_vendors, iab_vendor_ids, iab_vendor_names;
+  var google_vendors, google_vendor_ids, google_vendor_names;
+  var google_vendors_arr = [], google_vendor_ids_arr = [], google_vendor_names_arr = [];
+  var iab_vendors_arr = [], iab_vendor_ids_arr = [], iab_vendor_names_arr = [];
+  var non_iab_vendors, non_iab_vendor_ids, non_iab_vendor_names;
+  var non_iab_vendors_arr = [], non_iab_vendor_ids_arr = [], non_iab_vendor_names_arr = [];
+  var publisher_consents, publisher_legitimate_interests;
+  var purpose_consents, purpose_legitimate_interests;
+
+  function resultToList(a) {b = ','; for (var i in a){if (a[i]){b+=i+','}} return b;}
+
+  /**
+   * Get a full list of Non-IAB Vendors, specific to the Quantcast Universal Tag ID, using tcfapi
+   */
+  function vendors_getNonIABVendorList() {
+    window.__tcfapi('getConfig', 2, function(retObj) {
+      if(retObj.hasOwnProperty('nonIabVendorsInfo')){
+        if(retObj.nonIabVendorsInfo.hasOwnProperty('nonIabVendorList')) {
+          non_iab_vendors = retObj.nonIabVendorsInfo.nonIabVendorList;
+          // Dont assume array key = vendor id, set key as vendor id with iab_vendors[i].id
+          Object.keys(non_iab_vendors).forEach(function (i) {
+            non_iab_vendors_arr[non_iab_vendors[i].vendorId] = non_iab_vendors[i].name;
+          });
+        }
+      }
+    });
+  }
+
+
+  /**
+   * Get a full list of IAB Vendors.
+   */
+  function vendors_getIABVendorList() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var res = JSON.parse(this.responseText);
+        if(res.hasOwnProperty('vendors')) {
+          iab_vendors = res.vendors;
+
+          // Dont assume array key = vendor id, set key as vendor id with iab_vendors[i].id
+          Object.keys(iab_vendors).forEach(function (i) {
+            iab_vendors_arr[iab_vendors[i].id] = iab_vendors[i].name;
+          });
+        }
+      }
+    };
+    xhttp.open("GET", get_iab_vendors_url, true);
+    xhttp.send();
+  }
+
+    /**
+   * Get a full list of google atp list
+   */
+     function vendors_getGoogleVendorList() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          google_vendors = JSON.parse(this.responseText);
+          google_vendors.forEach(function (vendor)  {
+            google_vendors_arr[vendor.provider_id] = vendor.provider_name;
+          });
+        }
+      };
+      xhttp.open("GET", get_google_atp_url, true);
+      xhttp.send();
+    }
+
+  /**
+   * CMP Loaded.
+   *
+   * Push __cmpLoaded event to the data layer.
+   */
+  function dlSend_tcLoaded(tcData) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': '__cmpLoaded',
+      '__cmpLoaded': true,
+      'gdpr': tcData.gdprApplies,
+    });
+  }
+
+
+  /**
+   * IAB Vendors.
+   *
+   * Push __cmpIABConsents event to the datalayer, along with iab vendor consent ids.
+   */
+  function dlSend_consentData(tcData) {
+    window.dataLayer = window.dataLayer || [];
+
+    iab_vendor_names_arr = [];
+    iab_vendor_ids_arr = [];
+    non_iab_vendor_names_arr = [];
+    non_iab_vendor_ids_arr = [];
+    google_vendor_names_arr = [];
+    google_vendor_ids_arr = [];
+
+    if(tcData.hasOwnProperty('publisher')) {
+      publisher_consents = resultToList(tcData.publisher.consents);
+      publisher_legitimate_interests = resultToList(tcData.publisher.legitimateInterests);
+    }
+
+    if(tcData.hasOwnProperty('purpose')) {
+      purpose_consents = resultToList(tcData.purpose.consents);
+      purpose_legitimate_interests = resultToList(tcData.purpose.legitimateInterests);
+    }
+
+    // Run this in an interval (every 0.1s) just in case we are still waiting
+    // on the return with our iab_vendors list calls, bail after 10 seconds
+    var cnt = 0;
+    var interval = setInterval(function(){
+      cnt += 1;
+
+      if(cnt === 100){
+        clearInterval(interval);
+      }
+
+      if(iab_vendors) {
+        clearInterval(interval);
+
+        if(tcData.gdprApplies) {
+          // Create name & id arrays of iab vendors with consent.
+          if(tcData.hasOwnProperty('vendor')) {
+            Object.keys(tcData.vendor.consents).forEach(function(vendorId) {
+              if(tcData.vendor.consents[vendorId] || ! tcData.gdprApplies) {
+                iab_vendor_names_arr[vendorId] = iab_vendors_arr[vendorId];
+                iab_vendor_ids_arr[vendorId] = vendorId;
+              }
+            });
+          }
+        }
+        else {
+          // GDPR does not apply, add all vendor names/ids
+          iab_vendor_names_arr = iab_vendors_arr;
+          iab_vendors_arr.forEach(function(vendorName, vendorId) {
+            iab_vendor_ids_arr[vendorId] = vendorId;
+          });
+        }
+
+        if(tcData.addtlConsent && google_vendors_arr) {
+          // Create name and id arrays of google vendors with consent.
+          // addtlConsent: "1~39.43.46.55.61.
+          // 1~ is the version and the rest are the decoded ids
+          google_vendor_ids_arr = tcData.addtlConsent.split('1~')[1].split('.');
+          google_vendor_ids_arr && google_vendor_ids_arr.forEach(function(google_id) {
+              google_vendor_names_arr.push(google_vendors_arr[google_id]);
+          });
+        }
+
+        // Non IAB Vendors
+        window.__tcfapi('getNonIABVendorConsents',2, function(nonIabConsent, nonIabSuccess) {
+          if (nonIabSuccess) {
+            if(nonIabConsent.gdprApplies) {
+              // Create name & id arrays of non iab vendors with consent.
+              nonIabConsent.nonIabVendorConsents && Object.keys(nonIabConsent.nonIabVendorConsents).forEach(function(vendorId) {
+                if(nonIabConsent.nonIabVendorConsents[vendorId] || ! nonIabConsent.gdprApplies) {
+                  non_iab_vendor_names_arr[vendorId] = non_iab_vendors_arr[vendorId];
+                  non_iab_vendor_ids_arr[vendorId] = vendorId;
+                }
+              });
+            }
+            else {
+              // GDPR does not apply, add all non iab vendor names/ids
+              non_iab_vendor_names_arr = non_iab_vendors_arr;
+              non_iab_vendors_arr.forEach(function(vendorName, vendorId) {
+                non_iab_vendor_ids_arr[vendorId] = vendorId;
+              });
+            }
+          }
+
+          // Join our array values, skipping empty items and joing them with a delimiter
+          iab_vendor_names = iab_vendor_names_arr.filter(Boolean).join('|');
+          iab_vendor_ids = iab_vendor_ids_arr.filter(Boolean).join(',');
+          google_vendor_names = google_vendor_names_arr.filter(Boolean).join('|');
+          google_vendor_ids = google_vendor_ids_arr.filter(Boolean).join('|');
+          non_iab_vendor_names = non_iab_vendor_names_arr.filter(Boolean).join('|');
+          non_iab_vendor_ids = non_iab_vendor_ids_arr.filter(Boolean).join(',');
+
+          // Push __cmpIABConsents signals to the data layer.
+          window.dataLayer.push({
+            'event': '__cmpConsents',
+            '__cmpConsents': {
+              'iabVendorConsentIds': iab_vendor_ids,
+              'iabVendorsWithConsent': iab_vendor_names,
+              'nonIABVendorConsentIds': non_iab_vendor_ids,
+              'nonIABVendorsWithConsent': non_iab_vendor_names,
+              'googleVendorConsentIds': google_vendor_ids,
+              'googleVendorsWithConsent': google_vendor_names,
+              'gdpr': tcData.gdprApplies,
+              'publisherConsents': publisher_consents,
+              'publisherLegitimateInterests': publisher_legitimate_interests,
+              'purposeConsents': purpose_consents,
+              'purposeLegitimateInterests': purpose_legitimate_interests,
+            }
+          });
+
+        });
+      }
+
+    }, 100);
+
+  }
+
+  // Only get the IAB and Non-IAB vendor lists if the the Data layer push functionality
+  // is enabled, otherwise we do not need the vendor lists.
+  window.__tcfapi('addEventListener', 2, function(getConfig, listenerSuccess) {
+    vendors_getIABVendorList(); // Get global IAB vendor list
+    vendors_getGoogleVendorList(); // Get google vendor list
+    vendors_getNonIABVendorList(); // Get UTID specific Non-IAB vendors
+  });
+
+  // Add our main listener.
+  window.__tcfapi('addEventListener', 2, function(tcData,listenerSuccess) {
+    if (listenerSuccess) {
+      /**
+      * User Visits:
+      * 1st visit/no cookie = 'cmpuishown' called and then 'useractioncomplete' after user make their selection
+      * Repeat visit/has cookie = only 'tcloaded' is called as the UI does not show unless the user clicks to show
+      */
+
+      switch (tcData.eventStatus) {
+        case 'cmpuishown':
+          // Data Layer
+          dlSend_tcLoaded(tcData);
+        break;
+
+        case 'tcloaded':
+          // Data Layer
+          if(tcData && tcData.gdprApplies) {
+            dlSend_tcLoaded(tcData);
+            dlSend_consentData(tcData);
+          }
+        break;
+
+        case 'useractioncomplete':
+          // Data Layer
+          dlSend_consentData(tcData)
+        break;
+      }
+    }
+  });
+
+})();
+</script>
+        <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="csrf-token" content="eoT8Ej00uWfZ9WepiGrMWl20Tqk2qSKEKtC8mEei">
+    <script type="text/javascript" src="https://db760ecce1e9.edge.sdk.awswaf.com/db760ecce1e9/97a55d8e55c5/challenge.js" defer></script>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <script type="text/javascript">
+        var baseUrl = 'https://www.eliteprospects.com';
+        var dataLayer = [{
+    event: 'esmg_datalayer',
+    location: 'US',
+    displayAds: 'true',
+    }];
+
+var globalData = {
+    monthlyPremiumSubscriptionPrice: "$15/month",
+};
+       var toggleWidgetEndpoint = "";
+    </script>
+    <script>
+        var frequencyWallPrice = "9USD"
+    </script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" src="//js-eu1.hs-scripts.com/139512533.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <script src="https://www.googleoptimize.com/optimize.js?id=GTM-WCNPX59"></script>
+            <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=aPuTfJ1OxgdcZWbUh2S9mA&gtm_preview=env-259&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WCNPX59');</script>
+        <!-- End Google Tag Manager -->
+            <title>Elite Prospects - NHL Entry Draft 2026</title>
+            <meta name="description" content="Ice Hockey Player Database and Transaction Portal"/>
+                <meta name="keywords" content="hockey, NHL, Sweden, NHL Entry Draft, SHL, HockeyAllsvenskan, Rosters, Transfers, Transactions, Stats, Awards"/>
+                        <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://www.eliteprospects.com">
+    <meta property="twitter:url" content="https://www.eliteprospects.com/nhl-entry-draft-coverage">
+                        <link rel="canonical" href="https://www.eliteprospects.com/nhl-entry-draft-coverage" />
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://static.eliteprospects.com/images/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://static.eliteprospects.com/images/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://static.eliteprospects.com/images/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://static.eliteprospects.com/images/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://static.eliteprospects.com/images/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://static.eliteprospects.com/images/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://static.eliteprospects.com/images/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://static.eliteprospects.com/images/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="https://static.eliteprospects.com/images/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="https://static.eliteprospects.com/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://static.eliteprospects.com/images/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://static.eliteprospects.com/images/favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="https://static.eliteprospects.com/images/favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="https://static.eliteprospects.com/images/favicon/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="https://static.eliteprospects.com/images/favicon/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="https://static.eliteprospects.com/images/favicon/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="https://static.eliteprospects.com/images/favicon/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="https://static.eliteprospects.com/images/favicon/mstile-310x310.png" />    <meta name="theme-color" content="#0b3548">
+    <meta name="msapplication-navbutton-color" content="#0b3548">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+    <base href="https://www.eliteprospects.com">
+        <link rel="manifest" href="https://static.eliteprospects.com/manifest.json?v=6239">
+
+            <link href="https://static.eliteprospects.com/css/bootstrap.min.css?v=6239" rel="stylesheet">
+        <link href="https://static.eliteprospects.com/css/custom_style.css?v=6239" rel="stylesheet">
+        <link href="https://static.eliteprospects.com/css/bootstrap-select.css?v=6239" rel="stylesheet">
+        <link href="https://static.eliteprospects.com/css/bootstrap-multiselect.css?v=6239" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.css" integrity="sha256-Wneaso/SLW7HI/mW+HYAoQSSF9f/71Cdalqk5UiD3Fs=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous" />
+        <link href="https://static.eliteprospects.com/css/prem.css?v=6239" rel="stylesheet">
+        <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.1/cropper.min.css" integrity="sha256-SyWqODkStAbrafgJ9K8twjULP7yL6yTRZKoFGjDYybI=" crossorigin="anonymous" />
+        <link href="https://static.eliteprospects.com/css/font-awesome.css?v=6239" rel="stylesheet">
+        <link href="https://static.eliteprospects.com/css/responsive.css?v=6239" rel="stylesheet">
+        <link href="https://static.eliteprospects.com/css/fix.css?v=6239" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css">
+            <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        window.frequencyWallSettingsForCurrentPage = {
+            countPageView: true,
+            loggedIn: false,
+            reached: false
+        };
+    </script>
+        <script>
+        window.email = "";
+
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+            analytics.load("XlsHqqgMrErxgO4TdztytnOA5BuSlCkL");
+            analytics.page(   );
+                                }}();
+    </script>
+                    <!-- Header Tag Code -->
+                <script data-cfasync='false' type="text/javascript">/*<![CDATA[*/(function (a, c, s, u){'Insticator'in a || (a.Insticator={ad:{loadAd: function (b){Insticator.ad.q.push(b)}, q: []}, helper:{}, embed:{}, version: "3.0", q: [], load: function (t, o){Insticator.q.push({t: t, o: o})}}); var b=c.createElement(s); b.src=u; b.async=!0; var d=c.getElementsByTagName(s)[0]; d.parentNode.insertBefore(b, d)})(window, document, 'script', '//d2na2p72vtqyok.cloudfront.net/client-embed/cd65ebe7-b051-422b-a193-8cb3796914c4.js');/*]]>*/</script>
+                <!-- End Header Tag Code -->
+            
+                                    
+                        <script async='async' src='https://static.eliteprospects.com/js/sticky.min.js?v=6239'></script>
+
+    <!-- AdThrive Head Tag Manual -->
+<script data-no-optimize="1" data-cfasync="false">(function(w, d) {
+    w.adthrive = w.adthrive || {};
+    w.adthrive.cmd = w.adthrive.cmd || [];
+    w.adthrive.plugin = 'adthrive-ads-manual';
+    w.adthrive.host = 'ads.adthrive.com';var s = d.createElement('script');
+    s.async = true;
+    s.referrerpolicy='no-referrer-when-downgrade';
+    s.src = 'https://' + w.adthrive.host + '/sites/67fd59fd66a5f256d0d8483b/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href) + '&cb=' + (Math.floor(Math.random() * 100) + 1);
+    var n = d.getElementsByTagName('script')[0];
+    n.parentNode.insertBefore(s, n);
+})(window, document);
+</script><!-- End of AdThrive Head Tag -->
+
+
+<script src="https://btloader.com/tag?o=5698917485248512&upapi=true&domain=eliteprospects.com" async></script><script >    !function(){"use strict";var e;e=document,function(){var t,n;function r(){var t=e.createElement("script");t.src="https://cafemedia-com.videoplayerhub.com/galleryplayer.js",e.head.appendChild(t)}function a(){var t=e.cookie.match("(^|[^;]+)\s*__adblocker\s*=\s*([^;]+)");return t&&t.pop()}function c(){clearInterval(n)}return{init:function(){var e;"true"===(t=a())?r():(e=0,n=setInterval((function(){100!==e&&"false" !== t || c(), "true" === t && (r(), c()), t = a(), e++}), 50))}}}().init()}();
+</script>            <script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "263b63f4-b290-4c41-be78-9bdb52f95f91", shorten: false, doNotHash: false, doNotCopy: false, popup: true, hashAddressBar: false});</script>
+    <script src="https://static.eliteprospects.com/js/epr-widget.js?v=6239" defer></script>
+<script>
+    if (!document.cookie.match('(^|;)\\s*ep_referrer\\s*=\\s*([^;]+)')?.pop() || '') {
+        const setReferrerUrl = "https://www.eliteprospects.com/set-ref";
+
+        fetch(setReferrerUrl + '?value=' + encodeURI(document.referrer));
+    }
+</script>
+</head>
+
+<body class="draft-coverage desktop country-us">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCNPX59&gtm_auth=aPuTfJ1OxgdcZWbUh2S9mA&gtm_preview=env-259&gtm_cookies_win=x"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+                                <script>
+    var atsScript = document.createElement('script');
+    atsScript.onload = function() {
+        window.ats.start({
+            "placementID": 1331,
+            "storageType": "localStorage",
+            "detectionType": "scrape",
+            "cssSelectors": [
+                "input[type=text]",
+                "input[type=email]"
+            ],
+            "logging": "error"
+        });
+    };
+    atsScript.src = 'https://ats.rlcdn.com/ats.js';
+    document.body.appendChild(atsScript);
+</script>            <div id="dialog" title="Information">
+        <p></p>
+    </div>
+            <header id="menu-container" class="ep-header">
+    <nav>
+        <div class="ep-header__bar-top">
+            <div class="ep-container ep-container--header-top-bar">
+                                <a class="ep-header__bar-top-link" href="https://www.ticketsmarter.com/?utm_source=eliteprospects&utm_medium=dropdownlink&utm_campaign=partners" title="TicketSmarter" target="_blank">
+                    Tickets
+                </a> |
+                                <a class="ep-header__bar-top-link" href="https://help.eliteprospects.com" title="EP Help Center" target="_blank" rel="noopener">
+                    Help
+                </a> |
+                                                            <a class="ep-header__bar-top-link" href="https://www.verbero.com/eliteprospects" title="EP Shop" target="_blank" rel="noopener">
+                            EP Shop
+                        </a> |
+                                                </div>
+        </div>
+        <div class="ep-header__bar-menu">
+            <div class="ep-container ep-container--header-menu-bar">
+                <a class="ep-header__site-logo" href="https://www.eliteprospects.com" title="Eliteprospects.com">
+                    <img src="https://static.eliteprospects.com/images/ep-logo.png" srcset="https://static.eliteprospects.com/images/ep-logo.svg">
+                </a>
+                <div class="ep-header__user-controls">
+                                            <a class="ep-button signup" href="/pricing" title="Sign up">
+                            Sign up
+                        </a>
+                        <a class="ep-button signin" href="https://www.eliteprospects.com/login?previous=https://www.eliteprospects.com/nhl-entry-draft-coverage" title="Sign in">
+                            Sign in
+                        </a>
+                                        <vue-click-emitter event-name="autoSearch" class="hidden-lg">
+                        <button class="ep-header__search" aria-label="Open seach input">
+                            <img src="https://static.eliteprospects.com/images/search.svg" alt="open search input" class="icon magnify" />
+                        </button>
+                    </vue-click-emitter>
+                    <vue-dropdown-menu-wrapper listen-event="autoSearch" class="hidden-lg" wrapper-id="search">
+                        <div id="combo-search-mobile" class="hidden menu-modal-dropdown-wrapper">
+    <vue-click-emitter event-name="autoSearch" class="button-modal-menu-close">
+        <vue-button-close aria-label="close search"></vue-button-close>
+    </vue-click-emitter>
+    <div class="menu-wrapper-container menu-modal-content">
+        <div class="menu-modal-title">
+            Search
+        </div>
+        <form action="https://www.eliteprospects.com/search/player" autocomplete="off" method="get" id="search-all-form-mobile" onsubmit="return disableEmptyFields($('#search-all-form'));" class="ep-input-with-button">
+            <div class="ep-input-with-icon">
+                <vue-input-auto-search placeholder="Search players, teams and leagues" :use-teleport="true"></vue-input-auto-search>
+                <img src="https://static.eliteprospects.com/images/search.svg" alt="Search icon" class="icon magnify" aria-hidden="true" />
+                <!-- <input type="image" src="https://static.eliteprospects.com/images/search.svg" alt="Run search" class="icon magnify icon-white" /> -->
+            </div>
+        </form>
+        <div class="search-links mt-4">
+            <a href="https://www.eliteprospects.com/player/random" class="ux-link-text">Visit random profile</a>
+            <a href="https://www.eliteprospects.com/search/player" class="ux-link-text">Advanced search</a>
+        </div>
+        <div id="search-result"></div>
+        <nav aria-labelledby="featured-searches">
+            <ul id="featured-searches" class="list-unstyled">
+
+    <li>
+                    </li>
+<li>
+   <a href="https://www.eliteprospects.com/player-tracker/5-points-or-more" class="search-link-label">
+       Today's Top Scorers Globally
+   </a>
+</li>
+<li>
+   <a href="https://www.eliteprospects.com/search/player?q=*&view=views" class="search-link-label">
+       Most Viewed Players on eliteprospects.com
+   </a>
+</li>
+<li>
+   <a href="https://www.eliteprospects.com/draft-center/consolidated-ranking" class="search-link-label">
+       2026 NHL Draft Top Prospects
+   </a>
+</li>
+<li>
+<a href="https://www.eliteprospects.com/premium" class="search-link-label">
+Learn more about EP Premium
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+                    </vue-dropdown-menu-wrapper>
+                </div>
+                <vue-click-emitter
+                    event-name="mainMenu"
+                    class="hamburger-button hidden-lg"
+                    v-slot="slotProp"
+                    width="48"
+                    height="48"
+                >
+                    <button
+                        class="ep-hamburger white"
+                        aria-label="open main menu"
+                        aria-expanded="false"
+                        aria-controls="menu-items-general"
+                        :aria-hidden="!slotProp.isTruthy"
+                    >
+                        <div class="line one" aria-hidden="true"></div>
+                        <div class="line two" aria-hidden="true"></div>
+                        <div class="line three" aria-hidden="true"></div>
+                    </button>
+                </vue-click-emitter>
+                <vue-modal-menu-wrapper listen-event="mainMenu" class="ep-header__menu menu-modal-wrapper hidden-lg">
+                    <div id="menu-items-general" class="menu-modal-content">
+                        <div>
+		<div class="menu-modal-title">
+		Features
+	</div>
+
+	<nav class="hidden-lg">
+		<ul class="menu-premium-wrapper">
+								<li class="menu-premium-item-wrapper">
+								<a
+					data-key="feed"
+					
+					class="menu-premium-item
+						 is-new 						 stretch"
+					href="https://www.eliteprospects.com/feed">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-cards-three.svg" alt="" aria-hidden="true" class="menu-premium-icon feed" />
+					Feed
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<vue-click-emitter
+					event-name="noAccessMenu"
+					class="stretch "
+					data-to-wrapper="FREEMIUM"
+				>
+					<button
+						class="menu-premium-item stretch menu-button"
+						aria-label="Watchlists is a freemium feature"
+					>
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-bookmark.svg" alt="" aria-hidden="true" class="menu-premium-icon watchlists" />
+					Watchlists
+									</button>
+				</vue-click-emitter>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="player-tracker"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/player-tracker">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-eye.svg" alt="" aria-hidden="true" class="menu-premium-icon player tracker" />
+					Player Tracker
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="Compare Players"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/compare-players">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-compare-players.svg" alt="" aria-hidden="true" class="menu-premium-icon compare players" />
+					Compare Players
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="agent-portal"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/agent-portal">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-briefcase.svg" alt="" aria-hidden="true" class="menu-premium-icon agent portal" />
+					Agent Portal
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="verified"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/verified">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-verified-badge.svg" alt="" aria-hidden="true" class="menu-premium-icon verify profile" />
+					Verify Profile
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="messages"
+					
+					class="menu-premium-item
+												 stretch"
+					href="/messages">
+									<img src="https://static.eliteprospects.com/images/general/messages.svg" alt="" aria-hidden="true" class="menu-premium-icon messages" />
+					Messages
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="contact-book"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/contact-book">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-contact-book.svg" alt="" aria-hidden="true" class="menu-premium-icon ep contact book" />
+					EP Contact Book
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="free-agents"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/free-agent-pool/nhl">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-transfer.svg" alt="" aria-hidden="true" class="menu-premium-icon free agents" />
+					Free Agents
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<vue-click-emitter
+					event-name="noAccessMenu"
+					class="stretch "
+					data-to-wrapper="PREMIUM"
+				>
+					<button
+						class="menu-premium-item stretch menu-button"
+						aria-label="Add Player is a premium feature"
+					>
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-person-add.svg" alt="" aria-hidden="true" class="menu-premium-icon add player" />
+					Add Player
+									</button>
+				</vue-click-emitter>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<vue-click-emitter
+					event-name="noAccessMenu"
+					class="stretch "
+					data-to-wrapper="PREMIUM"
+				>
+					<button
+						class="menu-premium-item stretch menu-button"
+						aria-label="Add Roster/Stats is a premium feature"
+					>
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-add-team-roster-stats.svg" alt="" aria-hidden="true" class="menu-premium-icon add roster/stats" />
+					Add Roster/Stats
+									</button>
+				</vue-click-emitter>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<vue-click-emitter
+					event-name="noAccessMenu"
+					class="stretch "
+					data-to-wrapper="PREMIUM"
+				>
+					<button
+						class="menu-premium-item stretch menu-button"
+						aria-label="Add Staff is a premium feature"
+					>
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-person-add.svg" alt="" aria-hidden="true" class="menu-premium-icon add staff" />
+					Add Staff
+									</button>
+				</vue-click-emitter>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="ranking-portal"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/ranking-portal">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-ranking-portal.svg" alt="" aria-hidden="true" class="menu-premium-icon ranking portal" />
+					Ranking Portal
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="nhl-draft-guide"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/nhl-draft-guide">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-sheet.svg" alt="" aria-hidden="true" class="menu-premium-icon nhl draft guide" />
+					NHL Draft Guide
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<a
+					data-key="nhl-fantasy-guide"
+					
+					class="menu-premium-item
+												 stretch"
+					href="https://www.eliteprospects.com/nhl-fantasy-hockey-guide">
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-sheet.svg" alt="" aria-hidden="true" class="menu-premium-icon fantasy guide" />
+					Fantasy Guide
+								</a>
+							</li>
+											<li class="menu-premium-item-wrapper">
+								<vue-click-emitter
+					event-name="noAccessMenu"
+					class="stretch "
+					data-to-wrapper="PREMIUM"
+				>
+					<button
+						class="menu-premium-item stretch menu-button"
+						aria-label="Contact EP is a premium feature"
+					>
+									<img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-mail.svg" alt="" aria-hidden="true" class="menu-premium-icon contact ep" />
+					Contact EP
+									</button>
+				</vue-click-emitter>
+							</li>
+							</ul>
+	</nav>
+	</div>
+<aside>
+	<div class="card dark">
+	<header class="header">
+		<div class="title">Discover our plans</div>
+		<p class="description">With an EP subscriptions, you do have access to over 30 tools, features and benefits.</p>
+	</header>
+	<vue-button href="/pricing" type="link" level="custom" class="card-link">
+		Explore features
+	</vue-button>
+</div>
+</aside>
+                        <div class="menu-modal-title hidden-lg">
+    Menu
+</div>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/stats" title="Stats">
+    Stats
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/teams" title="Teams">
+    Teams
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/leagues" title="Leagues">
+    Leagues
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/draft-center" title="Draft Center">
+    Draft Center
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/draft/nhl-entry-draft" title="Drafts">
+    Drafts
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="/news" title="Stories">
+    Stories
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/awards" title="Hockey Awards">
+    Awards
+</a>
+<a class="menu-item-general icon-link-right arrow icon-remove-on-lg" href="/pricing" title="Premium">
+    Pricing
+</a>
+                    </div>
+                </vue-modal-menu-wrapper>
+                <vue-modal-menu-wrapper listen-event="noAccessMenu" class="ep-header__menu message menu-modal-wrapper hidden-lg" v-slot="slotProp">
+                </vue-modal-menu-wrapper>
+                <div class="ep-header__menu only-desktop">
+                    <div class="menu-modal-title hidden-lg">
+    Menu
+</div>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/stats" title="Stats">
+    Stats
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/teams" title="Teams">
+    Teams
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/leagues" title="Leagues">
+    Leagues
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/draft-center" title="Draft Center">
+    Draft Center
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/draft/nhl-entry-draft" title="Drafts">
+    Drafts
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="/news" title="Stories">
+    Stories
+</a>
+<a class="menu-item-general menu-item-separator--b icon-link-right arrow icon-remove-on-lg" href="https://www.eliteprospects.com/awards" title="Hockey Awards">
+    Awards
+</a>
+<a class="menu-item-general icon-link-right arrow icon-remove-on-lg" href="/pricing" title="Premium">
+    Pricing
+</a>
+                </div>
+            </div>
+        </div>
+                <vue-modal-menu-wrapper listen-event="noAccessMenu" class="only-desktop">
+            <div class="ep-header__bar-premium">
+  <ul class="ep-container menu-premium-wrapper">
+                    <li class="menu-premium-item-wrapper">
+                  <a
+            data-key="feed"
+            
+            class="menu-premium-item  is-new   "
+            href="https://www.eliteprospects.com/feed"
+          >
+          <img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-cards-three.svg" alt="" aria-hidden="true" class="menu-premium-icon feed" />
+          Feed
+          </a>
+              </li>
+                      <li class="menu-premium-item-wrapper">
+                <vue-click-emitter
+          event-name="noAccessMenu"
+          class="stretch"
+          data-to-wrapper="FREEMIUM"
+        >
+          <button
+            data-key="watchlists"
+            
+            class="menu-premium-item menu-button stretch   "
+            aria-label="Watchlists is a freemium feature"
+          >
+            <img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-bookmark.svg" alt="" aria-hidden="true" class="menu-premium-icon watchlists" />
+            Watchlists
+          </button>
+        </vue-click-emitter>
+              </li>
+                      <li class="menu-premium-item-wrapper">
+                  <a
+            data-key="player-tracker"
+            
+            class="menu-premium-item   "
+            href="https://www.eliteprospects.com/player-tracker"
+          >
+          <img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-eye.svg" alt="" aria-hidden="true" class="menu-premium-icon player tracker" />
+          Player Tracker
+          </a>
+              </li>
+                      <li class="menu-premium-item-wrapper">
+                  <a
+            data-key="Compare Players"
+            
+            class="menu-premium-item   "
+            href="https://www.eliteprospects.com/compare-players"
+          >
+          <img src="https://static.eliteprospects.com/images/premium-menu-icons/ico-compare-p

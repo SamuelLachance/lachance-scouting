@@ -1,0 +1,505 @@
+DPH: 354
+Ours: 325
+Missing in ours: 263
+Extra in ours (not DPH): 234
+
+=== MISSING ===
+# 16 J.P. Hurlbert | C | Canada | Kamloops Blazers
+# 17 Adam Novotný | LW | Czechia | Peterborough Petes
+# 18 Ilya Morozov | C | Russia | Miami University
+# 20 Giorgos Pantellas | RD | Canada | Oshawa Generals
+# 27 Markus Ruck | C | Canada | Medicine Hat Tigers
+# 33 Thomas Bleyl | D | Canada | Moncton
+# 34 Mans Gudmundsson | D | Sweden | Färjestad J20
+# 35 Beckett Hamilton | C | Canada | Red Deer Rebels
+# 36 Zach Olsen | RW | Canada | Saskatoon
+# 37 Vsevolod Matveyev | D | Russia | Spartak Moscow Jr.
+# 39 Noel Pakarinen | LW | Finland | Finland U20
+# 40 Liam Lefebvre | C | Canada | Chicoutimi Sagueneens
+# 41 Maksim Sokolovskii | D | Russia | London
+# 42 Samuel Eriksson | D | Sweden | Färjestad J20
+# 43 Jakub Frolo | C | Czechia | Ilves J20
+# 46 Pavel Kurka | D | Czechia | Karlovy Vary U20
+# 47 Jake Gustafson | C | Canada | Portland
+# 48 Jonah Sivertson | C | Canada | Prince Albert Raiders
+# 51 Marek Sklenicka | G | Czechia | Seattle
+# 52 Lucian Bernat | RW | Slovakia | Tappara Jr. (Liiga
+# 53 Doman Szongoth | C |  | Kookoo Jr. (Liiga
+# 54 Will McLaughlin | D | USA | Portland
+# 56 Kayden Lemire | RW | Canada | Prince George
+# 58 Ludvig Andersson | RW | Sweden | Orebro Jr. (SHL
+# 59 Caelan Joudrey | C | Canada | Wenatchee
+# 60 David Sedlacek | LW | Czechia | Karlovy Vary Jr.
+# 61 Jayden Kurtz | D | USA | Rogers
+# 62 William Lundqvist | D | Sweden | Leksand Jr. (SHL
+# 63 Tobias Tvrznik | G | Czechia | Wenatchee
+# 64 Yegor Rybkin | G | Russia | Nizhny Novgorod Jr.
+# 67 Jiko Laitinen | C | Finland | Ilves Jr. (Liiga
+# 68 Kyle Heger | D | USA | Lethbridge
+# 72 Eric Frossard | D | Canada | Guelph
+# 73 David Vermirovsky | G | Czechia | Czech Republic U20
+# 74 Jakub Floris | D | Finland | Lukko U20
+# 75 Zachary Lansard | C | Canada | Regina Pats
+# 77 Alexander Sapozhnikov | D | Russia | Kapitan Stupino
+# 78 Benjamin Wilmott | C | Canada | Barrie Colts
+# 79 Jan Brabenec | C | Czechia | Czech Republic U20
+# 81 Alex Kostov | RW | Canada | Flint Firebirds
+# 83 Ryder Fetterolf | G | Canada | Ottawa 67's
+# 84 Dmitri Ivchenko | G | Russia | Omsk Jr.
+# 85 Matvey Karasyov | D | Russia | Russia
+# 86 Spencer Bowes | C | Canada | Ottawa 67's
+# 87 Anttoni Uronen | C | Finland | HIFK
+# 88 Michael Berchild | LW | USA | Usa U-18
+# 89 William Sorbrand | C | Sweden | Timrå IK J20
+# 90 Zachary Jovanovski | G | Canada | Guelph
+# 91 Alexander Morozov | D | Russia | Togliatti Jr.
+# 95 Douglas Lindberg Nilsson | G | Sweden | Färjestad J20
+# 96 Artyom Matyuk | C | Russia | Torpedo Nizhny Novgorod
+# 97 Stepan Shurygin | G | Russia | Saginaw Spirit
+# 98 Louis Felix Bourque | RW | Canada | Drummondville
+# 99 Malcom Gastrin | LW | Sweden | MoDo J20
+#101 Elisei Ryabykin | D | Russia | Dynamo Moscow Jr.
+#102 Danai Shaiikov | G | Russia | Gatineau Olympiques
+#104 Felix Carell | D | Sweden | Malmö Redhawks
+#105 Oleg Kulebiakin | RW | Russia | Halifax Mooseheads
+#106 Dylan Dean | C | Canada | Edmonton Oil Kings
+#107 Samuel Karsay | RW | Slovakia | HK Trenčín J20
+#108 Joel Tarvainen | D | Finland | KalPa J20
+#109 Yaroslav Bryzgalov | C | Russia | Medicine Hat Tigers
+#110 Matthew Minchak | G | USA | Kingston Frontenacs
+#111 Lucas Ambrosio | D | Canada | Erie Otters
+#112 Pavel Denisov | D | Russia | Avangard Omsk Jr.
+#113 Kent Sauer | C | USA | Andover High School
+#114 Matvey Karbainov | G | Russia | SKA-1946 St. Petersburg
+#115 Michal Jakubec | C | Slovakia | HK Trenčín J20
+#116 Kade Stengrim | LW | Canada | Medicine Hat Tigers
+#117 Atte Vuori | C | Finland | K-Espoo J20
+#118 Zach Wooten | LW | USA | Green Bay Gamblers
+#119 John Parsons | G | USA | Providence
+#121 Henry Nicolaysen | D | Sweden | Södertälje J20
+#122 Cole Tuminaro | D | USA | Chicago Steel
+#123 Andrei Bykov | C | Russia | Spartak Moscow Jr.
+#124 Adam Levac | C | Canada | Peterborough Petes
+#125 Vladislav Yermolenko | G | Russia | Niagara IceDogs
+#126 Lukas Andersson | C | Sweden | Färjestad J20
+#127 Viggo Tamm | G | Sweden | Leksand J20
+#128 Sean Burick | D | Canada | Penticton Vees
+#129 Joseph Erickson | C | USA | Blake School
+#130 Isac Hedqvist | C | Sweden | Lulea
+#131 Aleksei Vlasov | LW | Canada | Victoriaville
+#132 Arvin Jaswal | G | Canada | Barrie
+#133 Fabrice Bouvard | C | Switzerland | Gck Zurich Jr.
+#135 William Manchuso | C | USA | St. Mark's School
+#136 Sebastian Charvat | G | Czechia | Liberec Jr.
+#138 Benjamin Cossette Ayotte | D | Canada | Val-D'Or
+#139 Parker Snell | G | Canada | Edmonton
+#140 Daniil Ustinkov | D |  | Gck Zurich
+#141 Benett Kelly | D | Canada | Prince Albert
+#142 Leo Tuuva | RW | Finland | Lukko
+#143 Eddy Doyle | D | Canada | Halifax
+#144 Alofa Tunoa Ta'Amu | D | Canada | Edmonton
+#145 Antonin Pufr | D | Czechia | Liberec Jr.
+#146 Jacoby Weiner | G | Canada | Moncton
+#147 Yuri Ivanov | G | Russia | Spartak Jr.
+#148 Nikita Gromakov | RW | Russia | Dynamo St. Petersburg Jr.
+#149 Alexandre Taillefer | D | Canada | Quebec
+#150 Charlie Puglisi | C | USA | Winchendon
+#151 Sakari Kostilainen | LW | Finland | Assat
+#152 Michel Myloserdnyy | D | Canada | Gatineau
+#153 Danil Sysoyev | C | Russia | Magnitogorsk Jr.
+#154 Daniel Walters | C | Canada | Halifax
+#155 Neilan Johnson | G | USA | Hotchkiss School
+#156 Tomas Cermak | D | Czechia | Mlada Boleslav Jr.
+#157 Brian McFadden | D | USA | Thayer Academy
+#158 Cameron Kuzma | C | Canada | Red Deer
+#159 Gleb Peshkov | G | Russia | Vladivostok Jr.
+#160 Tim Thomsson | D |  | Mora
+#161 Dylan Dumont | RW | Canada | Drummondville
+#163 Elliot Lennon | G | USA | Deerfield
+#164 David Zmrhal | D | Czechia | Jihlava Jr.
+#165 Richard Zemlicka | C | USA | Youngstown
+#166 Nicholas Bogas | D | USA | Usa U-18
+#168 Matthew Humphries | G | Canada | Oshawa
+#169 William Gammals | G | Finland | Tappara Jr. (Liiga
+#170 Jordan Duguay | LW | Canada | Portland
+#171 Matej Kubiesa | RW | Czechia | Trinec
+#172 Brody Pepoy | RW | Canada | Saginaw
+#173 Roman Laman | C | Russia | Omsk Jr.
+#175 Lukas Zajic | RW | USA | Usa U-18
+#176 Gavin Betts | G | Canada | Kingston
+#179 Oliver Larsen | LW | Sweden | Rogle Jr. (SHL
+#180 Daniil Rusakovich | G | Russia | Dinamo-Shinnik Jr.
+#181 Josef Holejsovsky | RW | Czechia | Slavia Jr.
+#182 Dylan Allie | C | Canada | Gatineau
+#183 Cameron Allard | D | Canada | Brandon
+#184 Rafael Courchesne | G | Canada | Saint John
+#187 Casper Juustovaara | C | Sweden | Lulea
+#189 Thomas Rousseau | C | Canada | Sherbrooke
+#190 Adel Kalimullin | RW | Russia | Irbis Kazan
+#191 Jiri Kamas | D | Canada | Red Deer
+#192 Carter Casey | G | Canada | Medicine Hat
+#193 Juuso Ainasto | G | Finland | Jokerit Jr. (Liiga
+#194 Gleb Tsyplakov | RW | Russia | Khanty-Mansiysk Jr.
+#195 Romain Litalien | RW | Canada | Cape Breton
+#196 Vilmeri Vaananen | D | Finland | Jokerit Jr. (Liiga
+#197 Theodore Lechner | D | USA | Holy Angels
+#199 Douglas Paul | C | Sweden | Linkoping Jr. (SHL
+#200 Darian Rolsing | D | Canada | Wenatchee
+#201 Alexandre Raymond | G | Canada | Rouyn-Noranda
+#202 Wilmer Kallio | RW | Finland | Tps Jr. (Liiga
+#203 Justin Graf | LW | USA | Cedar Rapids
+#204 Cooper Soller | C | USA | Sioux Falls
+#205 Ivan Matta | C | Slovakia | Michalovce
+#206 Milo Tjarnlund | G | Sweden | Rogle Jr. (SHL
+#207 Brady Murnane | D | Canada | Oshawa
+#208 Veeti Rasanen | LW | Finland | Jokerit Jr. (Liiga
+#209 Andre Mondoux | D | Canada | Kingston
+#210 Luke Carrithers | G | USA | Usa U-18
+#211 Vojtech Hora | D | Finland | Saipa Jr. (Liiga
+#212 Cohen Bidgood | RW | Canada | London
+#213 Nikita Voiaga | D | Canada | Charlottetown
+#214 Vojtech Kubin | C | Czechia | Brno Jr.
+#215 Sawyer Dingman | LW | Canada | Swift Current
+#216 Jonne Parkkali | D | Finland | Hifk Jr. (Liiga
+#217 Riley Steen | D | Canada | Medicine Hat
+#218 Xavier Wendt | G | Canada | Tri-City
+#219 Vladimir Selivanov | G | Russia | Dynamo Moscow Jr.
+#220 Andrei Molgachev | C | Canada | Calgary
+#221 Vojtech Svancar | LW | Czechia | Slavia Jr.
+#224 Alisher Sarkenov | RW | Canada | Prince Albert
+#226 Andrew O'Neill | C | Canada | Edmonton
+#227 Cash Cruitt | G | USA | Madison
+#229 Kimi Sutter | RW | Switzerland | Gck Zurich Jr.
+#230 Joseph Salandra | RW | Canada | Barrie
+#231 Martin Psohlavec | G | Czechia | Karlovy Vary Jr.
+#232 John Hagglof | D | Sweden | Modo Jr. (SHL
+#233 Dmitri Yakutsenak | C | Canada | Prince George
+#234 Reed Brown | C | Canada | Portland
+#235 Ben Hrebik | G | Canada | Barrie
+#236 Semyon Simonov | RW | Russia | Barys Astana
+#237 Roderik Cernak | D | Slovakia | Bratislava Jr.
+#239 Ivan Patrikhayev | D | Russia | Cska
+#240 Ondrej Ruml | D | Canada | Ottawa
+#241 Brock Souch | LW | Canada | Prince George
+#242 Maksim Corovic | G |  | Collingwood
+#243 Patriks Plumins | G |  | Zemgale
+#244 Rasmus Orenas | LW | Sweden | Leksand Jr. (SHL
+#245 Harris Pangretitsch | D | Canada | Sault Ste. Marie
+#247 Alexis Fortin | D | Canada | Val-D'Or
+#248 Lincoln Krizizke | D | USA | Dubuque
+#249 Michal Ondrejcak | LW | Slovakia | Banska Bystrica Jr.
+#251 Ryan Cameron | G | USA | Cedar Rapids
+#252 Melwin Larsson | LW | Sweden | Brynas Jr. (SHL
+#253 Brody Gillespie | C | Canada | Spokane
+#254 Zigge Bratt | D | Sweden | Frolunda Jr. (SHL
+#255 Tristan Langlois | D | Canada | Rouyn-Noranda
+#256 Patrik Kerkola | G | Finland | Kalpa
+#258 Rafik Varosyan | LW | Russia | Vladivostok Jr.
+#259 Cooper Cleaves | D | USA | Dartmouth
+#260 Roberto Henriquez | G | USA | Green Bay
+#261 Ondrej Szarowski | D | Czechia | Vitkovice Jr.
+#262 Jackson Marthaler | D | USA | Usa U-18
+#264 Hjalmar Cilthe | D | Sweden | Frolunda Jr. (SHL
+#265 Julian Brown | D | Canada | Owen Sound
+#266 Oiva Juntunen | LW | Finland | Kookoo Jr. (Liiga
+#267 Arsenii Anisimov | D | Canada | Prince George
+#268 Ondrej Stebetak | G | Canada | Portland
+#269 Mikhail Povarov | G | Russia | Ufa Jr.
+#270 Kirill Buzaev | LW | Russia | Irbis Kazan
+#273 Vojtech Cerny | D | Czechia | Sparta Jr.
+#276 Simon-Xavier Cyr | C | Canada | Gatineau
+#277 Jason Schaubel | G | Canada | Kitchener
+#278 Leo Laschon | D | Canada | Oshawa
+#279 Ludvig Soderberg | D | Sweden | Sodertalje Jr. (SHL
+#280 Matyas Man | D | Canada | Prince Albert
+#281 Nikolai Nikulshin | G | Russia | Yaroslavl Jr.
+#282 Pavel Sidorov | RW | Russia | Cska Jr.
+#283 Caton Ryan | C | USA | Cornell
+#284 Mikhail Khabarov | D | Russia | Khanty-Mansiysk Jr.
+#286 Kaenan Smith | G |  | Janesville
+#288 Mikael Kim | C | Sweden | Rogle Jr. (SHL
+#290 Miko Vatjus | C | Finland | Lukko Jr. (Liiga
+#291 Illia Shybinskyi | LW | Canada | Guelph
+#293 Tsimafei Tuzin | LW | Sweden | Lulea Jr. (SHL
+#294 Gustav Stengard | G | Sweden | Vasteras Jr. (SHL
+#295 Julien Maze | LW | Canada | Calgary
+#296 Ivan Arkhipov | C | Russia | Dynamo Moscow Jr.
+#298 Kalle Hemstrom | C | Sweden | Malmo
+#300 Darian Anderson | RW | Canada | Flint
+#301 Aleksandr Kovalenko | D | Russia | Chelyabinsk Jr.
+#302 Josh Evaschesen | LW | Canada | Kamloops
+#303 Oscar Olsson | LW | Sweden | Orebro Jr. (SHL
+#304 Caden Harvey | C | Canada | Windsor
+#305 Denis Celko | G | Czechia | Trinec Jr.
+#306 Gavin Lesiuk | LW | Canada | Lethbridge
+#308 Jacob Vandeven | D | Canada | Komoka
+#309 Liam Danielsson | RW | Sweden | Orebro
+#310 Jack Kultgen | D | USA | Green Bay
+#311 Artemy Kulagin | RW | Russia | Chelyabinsk Jr.
+#312 Kaiden Donia | D | USA | Groton
+#314 Alex Kristiansson | LW | Sweden | Timra Jr. (SHL
+#315 Rowan Henderson | LW | Canada | Sudbury
+#316 Onni Keltikangas | C | Finland | Jyp Jr. (Liiga
+#318 Weston Cameron | LW | Canada | Kitchener
+#319 Tim Munger | LW |  | Taby U18
+#320 Robert Cowan | RW | USA | Western Michigan
+#321 Yaroslav Ivantsov | RW | Russia | Dynamo Moscow Jr.
+#323 Adam Nomme | RW | Sweden | Frolunda Jr. (SHL
+#324 Nolan Stewart | RW | Canada | Victoria
+#326 Olle Tideman | D | Sweden | Vaxjo Jr. (SHL
+#328 Milton Carpenhammar | C | Sweden | Linkoping Jr. (SHL
+#329 Colin Feeley | D | Canada | Oshawa
+#330 John Galanek | C | USA | Umass
+#331 Jalmari Melanen | LW | Finland | Ilves Jr. (Liiga
+#332 Jack Torr | C | USA | Fargo
+#333 Rocky Langvardt | D | Sweden | Leksand Jr. (SHL
+#334 Andrew Robinson | D | Canada | Windsor
+#335 Grigori Nikolayev | RW | Russia | Ska-Academy St. Petersburg
+#337 Justin Handsor | D | Canada | Barrie
+#338 James Rieber | D | USA | Waterloo
+#339 Ethan Sturgis | RW | USA | Minnetonka
+#340 Boris Borin | C |  | Chilliwack
+#341 Cohen Klassen | C | Canada | Regina
+#342 Grady Spicer | D | Canada | Lasalle
+#346 Korney Korneyev | LW | Canada | Victoriaville
+#349 Cody Wood | D | Canada | London
+#350 Elliot Arnett | D | Canada | Owen Sound
+#351 Stepan Kuryachenkov | C | Canada | Swift Current
+#352 Hunter Aura | D | Canada | Calgary
+#354 Nathan Brown | LW | Canada | Portland
+
+=== EXTRA (ours only) ===
+Aapo Vanninen | C | FIN
+Aaron Obobaifo | C | CAN
+Adam Andersson | C | SWE
+Adam Goljer | D | SVK
+Adam Nemec | LW | SVK
+Adam Novotony | LW | CZE
+Alan Shaikhlislamov | LW | RUS
+Albin Laksonen | LW | SWE
+Alessandro Di Iorio | RW | CAN
+Alex Misiak | LW | SVK
+Alex Zalesak | RW | SVK
+Alexander Bilecki | D | CAN
+Alexander Command | C | SWE
+Alexandre Carbonneau | D | CAN
+Alexei Vlasov | LW | RUS
+Alonso Gosselin | C | CAN
+Alvar Ervasti | D | FIN
+Andreas Straka | LW | SVK
+Andrei Kuryanov | C | RUS
+Andrei Zavadsky | D | RUS
+Andrew Neill | C | USA
+Arttu Välilä | D | FIN
+Artyom Vilchinsky | D | RUS
+Arvid Johansson | D | SWE
+Asanali Sarkenov | RW | KAZ
+Axel Brongel-Larsson | D | NOR
+Axel Elofsson | D | SWE
+Beckham Edwards | C | CAN
+Benjamin Cossette-Ayotte | D | CAN
+Blake Arrowsmith | C | USA
+Blake Zielinski | LW | USA
+Bobby Cowan | C | USA
+Bogdan Pestretsov | D | RUS
+Brady Smith | RW | CAN
+Braidy Wassilyn | LW | CAN
+Brek Liske | D | CAN
+Brooks Cullen | C | USA
+Bruno Osmanis | RW | LAT
+Caden Taylor | LW | CAN
+Caelen Joudrey | F | CAN
+Caleb Matthews | C | CAN
+Callum Croskery | D | CAN
+Cameron Aucoin | D | USA
+Cameron Chartrand | D | CAN
+Carl Otto Magnusson | D | SWE
+Carson Cameron | D | CAN
+Carter Hicks | D | CAN
+Casey Mutryn | RW | USA
+Cash Koch | LW | CAN
+Chad Lygitsakos | C | CAN
+Charlie Morrison | D | CAN
+Chase Harrington | LW | CAN
+Cole Bumgarner | G | USA
+Cole Temple | LW | CAN
+Cole Zurawski | RW | CAN
+Colin Fitzgerald | C | CAN
+Connor Davis | RW | CAN
+Connor Schmidt | LW | CAN
+Cooper Williams | LW | CAN
+Daniil Petrenko | LW | RUS
+Daniil Skvortsov | D | RUS
+Danny Klaers | C | USA
+David Krcal | LW | CZE
+Dawson Gerwing | C | CAN
+Dayne Beuker | C | USA
+Dennis Lindberg | D | SWE
+Derek Thurston | D | CAN
+Donato Bracco | D | USA
+Drew Allison | D | CAN
+Dylan Ronald | D | CAN
+Eddie Doyle | D | CAN
+Eduard Bondar | D | RUS
+Eetu Orpana | C | FIN
+Eetu Vahalahti | D | FIN
+Elliot Dube | C | CAN
+Ethan MacKenzie | D | CAN
+Ethan Weber | D | USA
+Evan Jardine | LW | USA
+Filip Holst Persson | RW | SWE
+Filip Novak | LW | CZE
+Frans Viita | C | FIN
+Gavin Garland | C | USA
+German Suzdorf | C | RUS
+Giorgos Pantelas | D | CAN
+Gleb Pugachyov | LW | CAN
+Hayden Barch | D | USA
+Hugo Hallin | D | SWE
+Hugo Orrsten | C | SWE
+Ilia Morozov | LW | RUS
+Ivan Fomin | LW | RUS
+Ivan Galiyanov | LW | CAN
+J.P Hurlbert | RW | USA
+Jack Hextall | C | USA
+Jacob Crawford | C | CAN
+Jamiro Reber | C | SUI
+Jan Skok | D | CZE
+Jasu Mensonen | C | FIN
+Jaxon Fuder | LW | CAN
+Jayden Plouffe | LW | CAN
+Jean-Cristoph Lemieux | C | CAN
+Jeremi Virtanen | RW | FIN
+Jeremiah Mundy | LW | SUI
+Jesper Kotajarvi | D | FIN
+Jett Lajoie | C | CAN
+Jimmy Egan | C | USA
+Joe Wahlund | D | SWE
+Jonas Lagerberg Hoen | RW | SWE
+Jonathan Brown | D | GER
+Jonathan Kapageridis | D | CAN
+Jonathan Prud | D | CAN
+Joonas Rajala | LW | FIN
+Jordan Gavin | D | CAN
+Josh McGregor | D | CAN
+Joshua Avery | C | CAN
+Joshua Glavin | D | CAN
+Karlis Flugins | RW | LAT
+Kolten Bridgeman | D | CAN
+Kornei Korneyev | RW | KAZ
+Landon Nycz | D | USA
+Lars Steiner | RW | SUI
+Lauri Sinivuori | LW | FIN
+Lavr Gashilov | C | RUS
+Leo Sundqvist | RW | SWE
+Lev Katzin | C | CAN
+Liam Beamish | C | CAN
+Liam Dube | C | SUI
+Liam Kilfoil | C | CAN
+Linus Loob Trygg | RW | NOR
+Logan Edmonstone | G | CAN
+Logan Hawery | LW | CAN
+Logan Lutner | D | USA
+Louis-Francois Bélanger | LW | CAN
+Lucas Karmiris | C | CAN
+Lucas Zajic | RW | USA
+Luke Schairer | D | USA
+Maddox Dagenais | C | CAN
+Maddox Labre | D | CAN
+Makar Fomin | D | RUS
+Marcus Nordmark | RW | SWE
+Marcus Ruck | LW | CAN
+Martin Svec | C | CZE
+Martins Klaucans | LW | LAT
+Mason Kraft | LW | USA
+Matej Mikes | C | CZE
+Matej Pekar | C | CZE
+Matus Lisy | D | SVK
+Max Isaksson | C | SWE
+Maxim Zaitsev | LW | RUS
+Michael Dec | C | CAN
+Michal Capos | D | SVK
+Mike Aeschlimann | C | SUI
+Mikey Berchild | LW | USA
+Mikhail Gamzakov | D | RUS
+Mikhail Katin | D | RUS
+Morgan Anderberg | C | SWE
+Nate Yellowaga | D | CAN
+Nathan Brisson | LW | CAN
+Nathan Lecompte | C | CAN
+Nic Whitehead | C | USA
+Nick Frasca | D | CAN
+Nicolas Sykora | C | USA
+Nikita Fedotov | D | RUS
+Nikita Klyopov | LW | RUS
+Nikita Poltavchuk | D | RUS
+Nikita Shcherbakov | C | RUS
+Niklas Aaram-Olsen | LW | SWE
+Niklas Nykyri | D | FIN
+Nils Bartholdsson | RW | SWE
+Noa Taamu | D | USA
+Noah Degenstein | C | CAN
+Noah Jenken | D | CAN
+Noah Kosick | C | CAN
+Noah McKinnon | D | CAN
+Nolen Geerdes | D | USA
+Oliver Turner | D | CAN
+Olivers Murnieks | C | LAT
+Olivier Groulx | LW | CAN
+Onni Kalto | LW | FIN
+Oscar Holmertz | C | SWE
+Owen Conrad | D | CAN
+Owen Schoettler | C | CAN
+PJ Fagan | C | CAN
+Parker Snelgrove | C | CAN
+Parker Vaughn | RW | CAN
+Parker Von Richter | D | CAN
+Patrik Rusznyak | D | SVK
+Pierce Mbuyi | LW | CAN
+Poul Andersen | C | USA
+Rafael Cloutier | C | CAN
+Raflik Varosyan | LW | RUS
+Raphael Achermann | LW | SUI
+Rasmus Rinne | LW | FIN
+Reese Hamilton | D | CAN
+Rian Chudzinski | RW | USA
+Rider Carey | C | CAN
+Rio Kaiser | D | GER
+Robin Antenen | LW | SUI
+Romain L'Italien | C | CAN
+Rudolfs Berzkalns | LW | LAT
+Ruslan Karimov | RW | RUS
+Samu Alalauri | D | FIN
+Savin Virk | C | CAN
+Sawyer Mayes | C | CAN
+Simon Katolicky | LW | CAN
+Tanner Lam | RW | CAN
+Thomas Vandenberg | C | CAN
+Tomas Chrenko | C | SVK
+Tomas Malinek | D | CZE
+Tomas Pobezal | C | SVK
+Tomas Rousseau | RW | CAN
+Tommy Bleyl | D | CAN
+Topias Hynninen | C | FIN
+Torkel Jennersjo | C | SWE
+Tristan Delisle | C | CAN
+Ty Meunier | LW | CAN
+Tyler Challenger | LW | CAN
+Veeti Ruotsalainen | D | FIN
+Vertti Svensk | D | FIN
+Victor Plante | LW | USA
+Viijo Kahkonen | RW | FIN
+Viktor Fyodorov | C | RUS
+Viktor Pennerborn | D | SWE
+Vilho Vanhatalo | LW | FIN
+Vincent Desjardins | C | CAN
+Vit Macek | LW | CZE
+Vladimir Dravecky | D | CZE
+Vladislav Ukhmylov | D | RUS
+Will Bent | RW | CAN
+Xander Velliaris | D | CAN
+Yaroslav Fedoseyev | D | RUS
+Yuri Rummo | C | BLR
+Zachary Morin | LW | CAN
+Zachary Nyman | D | CAN
+Zachary Wilson | D | CAN

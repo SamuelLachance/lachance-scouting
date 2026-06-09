@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.log
+.DS_Thumbs.db
+
+# Données régénérables (le CI reconstruit le site)
+data/pipeline_log.txt
+site/data/players.js
+
+# Frontend React (optionnel, non utilisé pour le site public)
+web/node_modules/
+web/dist/

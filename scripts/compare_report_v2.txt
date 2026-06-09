@@ -1,0 +1,252 @@
+DPH: 354
+Ours: 325
+Matched: 109
+Missing in ours: 245
+Extra in ours: 216
+
+=== MISSING (truly absent) ===
+# 20 Giorgos Pantellas | RD | Canada
+# 33 Thomas Bleyl | D | Canada
+# 34 Mans Gudmundsson | D | Sweden
+# 36 Zach Olsen | RW | Canada
+# 37 Vsevolod Matveyev | D | Russia
+# 39 Noel Pakarinen | LW | Finland
+# 40 Liam Lefebvre | C | Canada
+# 41 Maksim Sokolovskii | D | Russia
+# 42 Samuel Eriksson | D | Sweden
+# 43 Jakub Frolo | C | Czechia
+# 46 Pavel Kurka | D | Czechia
+# 47 Jake Gustafson | C | Canada
+# 48 Jonah Sivertson | C | Canada
+# 51 Marek Sklenicka | G | Czechia
+# 52 Lucian Bernat | RW | Slovakia
+# 53 Doman Szongoth | C | 
+# 54 Will McLaughlin | D | USA
+# 56 Kayden Lemire | RW | Canada
+# 58 Ludvig Andersson | RW | Sweden
+# 60 David Sedlacek | LW | Czechia
+# 61 Jayden Kurtz | D | USA
+# 62 William Lundqvist | D | Sweden
+# 63 Tobias Tvrznik | G | Czechia
+# 64 Yegor Rybkin | G | Russia
+# 67 Jiko Laitinen | C | Finland
+# 68 Kyle Heger | D | USA
+# 72 Eric Frossard | D | Canada
+# 73 David Vermirovsky | G | Czechia
+# 74 Jakub Floris | D | Finland
+# 75 Zachary Lansard | C | Canada
+# 77 Alexander Sapozhnikov | D | Russia
+# 78 Benjamin Wilmott | C | Canada
+# 79 Jan Brabenec | C | Czechia
+# 81 Alex Kostov | RW | Canada
+# 83 Ryder Fetterolf | G | Canada
+# 84 Dmitri Ivchenko | G | Russia
+# 85 Matvey Karasyov | D | Russia
+# 86 Spencer Bowes | C | Canada
+# 87 Anttoni Uronen | C | Finland
+# 89 William Sorbrand | C | Sweden
+# 90 Zachary Jovanovski | G | Canada
+# 91 Alexander Morozov | D | Russia
+# 95 Douglas Lindberg Nilsson | G | Sweden
+# 96 Artyom Matyuk | C | Russia
+# 97 Stepan Shurygin | G | Russia
+# 98 Louis Felix Bourque | RW | Canada
+# 99 Malcom Gastrin | LW | Sweden
+#101 Elisei Ryabykin | D | Russia
+#102 Danai Shaiikov | G | Russia
+#104 Felix Carell | D | Sweden
+#105 Oleg Kulebiakin | RW | Russia
+#106 Dylan Dean | C | Canada
+#107 Samuel Karsay | RW | Slovakia
+#108 Joel Tarvainen | D | Finland
+#109 Yaroslav Bryzgalov | C | Russia
+#110 Matthew Minchak | G | USA
+#111 Lucas Ambrosio | D | Canada
+#112 Pavel Denisov | D | Russia
+#113 Kent Sauer | C | USA
+#114 Matvey Karbainov | G | Russia
+#115 Michal Jakubec | C | Slovakia
+#116 Kade Stengrim | LW | Canada
+#117 Atte Vuori | C | Finland
+#118 Zach Wooten | LW | USA
+#119 John Parsons | G | USA
+#121 Henry Nicolaysen | D | Sweden
+#122 Cole Tuminaro | D | USA
+#123 Andrei Bykov | C | Russia
+#124 Adam Levac | C | Canada
+#125 Vladislav Yermolenko | G | Russia
+#126 Lukas Andersson | C | Sweden
+#127 Viggo Tamm | G | Sweden
+#128 Sean Burick | D | Canada
+#129 Joseph Erickson | C | USA
+#130 Isac Hedqvist | C | Sweden
+#132 Arvin Jaswal | G | Canada
+#133 Fabrice Bouvard | C | Switzerland
+#135 William Manchuso | C | USA
+#136 Sebastian Charvat | G | Czechia
+#139 Parker Snell | G | Canada
+#140 Daniil Ustinkov | D | 
+#141 Benett Kelly | D | Canada
+#142 Leo Tuuva | RW | Finland
+#145 Antonin Pufr | D | Czechia
+#146 Jacoby Weiner | G | Canada
+#147 Yuri Ivanov | G | Russia
+#148 Nikita Gromakov | RW | Russia
+#149 Alexandre Taillefer | D | Canada
+#150 Charlie Puglisi | C | USA
+#151 Sakari Kostilainen | LW | Finland
+#152 Michel Myloserdnyy | D | Canada
+#153 Danil Sysoyev | C | Russia
+#154 Daniel Walters | C | Canada
+#155 Neilan Johnson | G | USA
+#156 Tomas Cermak | D | Czechia
+#157 Brian McFadden | D | USA
+#158 Cameron Kuzma | C | Canada
+#159 Gleb Peshkov | G | Russia
+#160 Tim Thomsson | D | 
+#161 Dylan Dumont | RW | Canada
+#163 Elliot Lennon | G | USA
+#164 David Zmrhal | D | Czechia
+#165 Richard Zemlicka | C | USA
+#166 Nicholas Bogas | D | USA
+#168 Matthew Humphries | G | Canada
+#169 William Gammals | G | Finland
+#170 Jordan Duguay | LW | Canada
+#171 Matej Kubiesa | RW | Czechia
+#172 Brody Pepoy | RW | Canada
+#173 Roman Laman | C | Russia
+#176 Gavin Betts | G | Canada
+#179 Oliver Larsen | LW | Sweden
+#180 Daniil Rusakovich | G | Russia
+#181 Josef Holejsovsky | RW | Czechia
+#182 Dylan Allie | C | Canada
+#183 Cameron Allard | D | Canada
+#184 Rafael Courchesne | G | Canada
+#187 Casper Juustovaara | C | Sweden
+#190 Adel Kalimullin | RW | Russia
+#191 Jiri Kamas | D | Canada
+#192 Carter Casey | G | Canada
+#193 Juuso Ainasto | G | Finland
+#194 Gleb Tsyplakov | RW | Russia
+#196 Vilmeri Vaananen | D | Finland
+#197 Theodore Lechner | D | USA
+#199 Douglas Paul | C | Sweden
+#200 Darian Rolsing | D | Canada
+#201 Alexandre Raymond | G | Canada
+#202 Wilmer Kallio | RW | Finland
+#203 Justin Graf | LW | USA
+#204 Cooper Soller | C | USA
+#205 Ivan Matta | C | Slovakia
+#206 Milo Tjarnlund | G | Sweden
+#207 Brady Murnane | D | Canada
+#208 Veeti Rasanen | LW | Finland
+#209 Andre Mondoux | D | Canada
+#210 Luke Carrithers | G | USA
+#211 Vojtech Hora | D | Finland
+#212 Cohen Bidgood | RW | Canada
+#213 Nikita Voiaga | D | Canada
+#214 Vojtech Kubin | C | Czechia
+#215 Sawyer Dingman | LW | Canada
+#216 Jonne Parkkali | D | Finland
+#217 Riley Steen | D | Canada
+#218 Xavier Wendt | G | Canada
+#219 Vladimir Selivanov | G | Russia
+#220 Andrei Molgachev | C | Canada
+#221 Vojtech Svancar | LW | Czechia
+#224 Alisher Sarkenov | RW | Canada
+#227 Cash Cruitt | G | USA
+#229 Kimi Sutter | RW | Switzerland
+#230 Joseph Salandra | RW | Canada
+#231 Martin Psohlavec | G | Czechia
+#232 John Hagglof | D | Sweden
+#233 Dmitri Yakutsenak | C | Canada
+#234 Reed Brown | C | Canada
+#235 Ben Hrebik | G | Canada
+#236 Semyon Simonov | RW | Russia
+#237 Roderik Cernak | D | Slovakia
+#239 Ivan Patrikhayev | D | Russia
+#240 Ondrej Ruml | D | Canada
+#241 Brock Souch | LW | Canada
+#242 Maksim Corovic | G | 
+#243 Patriks Plumins | G | 
+#244 Rasmus Orenas | LW | Sweden
+#245 Harris Pangretitsch | D | Canada
+#247 Alexis Fortin | D | Canada
+#248 Lincoln Krizizke | D | USA
+#249 Michal Ondrejcak | LW | Slovakia
+#251 Ryan Cameron | G | USA
+#252 Melwin Larsson | LW | Sweden
+#253 Brody Gillespie | C | Canada
+#254 Zigge Bratt | D | Sweden
+#255 Tristan Langlois | D | Canada
+#256 Patrik Kerkola | G | Finland
+#259 Cooper Cleaves | D | USA
+#260 Roberto Henriquez | G | USA
+#261 Ondrej Szarowski | D | Czechia
+#262 Jackson Marthaler | D | USA
+#264 Hjalmar Cilthe | D | Sweden
+#265 Julian Brown | D | Canada
+#266 Oiva Juntunen | LW | Finland
+#267 Arsenii Anisimov | D | Canada
+#268 Ondrej Stebetak | G | Canada
+#269 Mikhail Povarov | G | Russia
+#270 Kirill Buzaev | LW | Russia
+#273 Vojtech Cerny | D | Czechia
+#276 Simon-Xavier Cyr | C | Canada
+#277 Jason Schaubel | G | Canada
+#278 Leo Laschon | D | Canada
+#279 Ludvig Soderberg | D | Sweden
+#280 Matyas Man | D | Canada
+#281 Nikolai Nikulshin | G | Russia
+#282 Pavel Sidorov | RW | Russia
+#283 Caton Ryan | C | USA
+#284 Mikhail Khabarov | D | Russia
+#286 Kaenan Smith | G | 
+#288 Mikael Kim | C | Sweden
+#290 Miko Vatjus | C | Finland
+#291 Illia Shybinskyi | LW | Canada
+#293 Tsimafei Tuzin | LW | Sweden
+#294 Gustav Stengard | G | Sweden
+#295 Julien Maze | LW | Canada
+#296 Ivan Arkhipov | C | Russia
+#298 Kalle Hemstrom | C | Sweden
+#300 Darian Anderson | RW | Canada
+#301 Aleksandr Kovalenko | D | Russia
+#302 Josh Evaschesen | LW | Canada
+#303 Oscar Olsson | LW | Sweden
+#304 Caden Harvey | C | Canada
+#305 Denis Celko | G | Czechia
+#306 Gavin Lesiuk | LW | Canada
+#308 Jacob Vandeven | D | Canada
+#309 Liam Danielsson | RW | Sweden
+#310 Jack Kultgen | D | USA
+#311 Artemy Kulagin | RW | Russia
+#312 Kaiden Donia | D | USA
+#314 Alex Kristiansson | LW | Sweden
+#315 Rowan Henderson | LW | Canada
+#316 Onni Keltikangas | C | Finland
+#318 Weston Cameron | LW | Canada
+#319 Tim Munger | LW | 
+#321 Yaroslav Ivantsov | RW | Russia
+#323 Adam Nomme | RW | Sweden
+#324 Nolan Stewart | RW | Canada
+#326 Olle Tideman | D | Sweden
+#328 Milton Carpenhammar | C | Sweden
+#329 Colin Feeley | D | Canada
+#330 John Galanek | C | USA
+#331 Jalmari Melanen | LW | Finland
+#332 Jack Torr | C | USA
+#333 Rocky Langvardt | D | Sweden
+#334 Andrew Robinson | D | Canada
+#335 Grigori Nikolayev | RW | Russia
+#337 Justin Handsor | D | Canada
+#338 James Rieber | D | USA
+#339 Ethan Sturgis | RW | USA
+#340 Boris Borin | C | 
+#341 Cohen Klassen | C | Canada
+#342 Grady Spicer | D | Canada
+#349 Cody Wood | D | Canada
+#350 Elliot Arnett | D | Canada
+#351 Stepan Kuryachenkov | C | Canada
+#352 Hunter Aura | D | Canada
+#354 Nathan Brown | LW | Canada
