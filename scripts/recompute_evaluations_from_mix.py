@@ -112,10 +112,10 @@ def main() -> None:
         data["players"][key] = recompute_player(ev, player, reports.get(key, {}))
         updated += 1
 
-    data["meta"]["version"] = 5
-    data["meta"]["weighting"] = "reliability_redistributed"
+    data["meta"]["version"] = 6
+    data["meta"]["weighting"] = "truth_bayesian_v6"
     data["meta"]["weight_formula"] = (
-        "reliability_effective × quality; missing catalog weight redistributed equally"
+        "TRUTH: Bayesian shrinkage + attribution verification + reliability redistribution"
     )
     data["meta"]["min_source_attempts"] = MIN_SOURCE_ATTEMPTS
     data["meta"]["recomputed_at"] = datetime.now(timezone.utc).isoformat()

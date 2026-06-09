@@ -51,17 +51,23 @@ export function getDiscoverySignal(player: Player): DiscoverySignal {
     (skills.offensiveStarPower ?? 5) * 1.6 +
     (skills.developmentArc ?? 5) * 1.2 +
     (skills.competitionProof ?? 5) * 0.8;
-  const marketGap = player.consensusRank == null ? null : player.consensusRank - player.rank;
-  const marketBoost = marketGap == null ? 8 : Math.max(-10, Math.min(22, marketGap * 0.45));
+  const baseRank = player.baseNorthstarRank ?? player.rank;
+  const marketGap = player.consensusRank == null ? null : player.consensusRank - baseRank;
+  const spiFactor = Math.max(0, Math.min(1, (baseScore - 48) / 28));
+  const marketBoost =
+    marketGap == null
+      ? 0
+      : marketGap > 0
+        ? Math.min(8, Math.log1p(marketGap) * 1.85 * spiFactor)
+        : Math.max(-6, marketGap * 0.08);
   const rareToolCount = Object.values(skills).filter((value) => value >= 8.5).length;
   const peakTool = Object.entries(skills).reduce(
     (best, [label, score]) => (score > best.score ? { label, score } : best),
     { label: "profil", score: 0 }
   );
-  const score = Math.max(
-    0,
-    Math.min(99, baseScore * 0.62 + upsideCore * 0.38 + marketBoost + rareToolCount * 2)
-  );
+  const maxPremium = baseScore >= 68 ? 12 : baseScore >= 62 ? 8 : baseScore >= 56 ? 5 : 2.5;
+  const raw = baseScore + marketBoost + rareToolCount * 0.9;
+  const score = Math.max(baseScore - 3, Math.min(baseScore + maxPremium, raw));
 
   return {
     score: Number(score.toFixed(1)),

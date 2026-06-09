@@ -294,7 +294,6 @@ def deduplicate_contributions(
         url = c.get("url", "")
         attr = verify_source_attribution(c["source_id"], url)
         if attr < 0.5:
-            c = {**c, "quality": float(c.get("quality", 1.0)) * attr}
             c["attribution_penalty"] = True
         kept.append(c)
     return kept
@@ -433,12 +432,18 @@ def bayesian_merge_pillars(
     position: str,
 ) -> tuple[dict[str, float], dict[str, float]]:
     """
-    Bayesian shrinkage merge: posterior = (prior*strength + weighted_obs) / (strength + weight_sum).
-    Higher total evidence → less shrinkage toward position prior.
+    Reliability-weighted merge with adaptive Bayesian shrinkage.
+
+    Many substantive sources → trust the weighted observation (minimal shrinkage).
+    Thin evidence → regress modestly toward position prior.
     """
     priors = position_priors(position)
     total_w = sum(raw_weights) or 1.0
-    evidence_strength = min(12.0, total_w * 8.0)
+    n_sources = len(contributions)
+    substantive = sum(
+        1 for c in contributions if c.get("snippet") or c.get("evidence")
+    )
+    shrinkage = max(0.04, min(0.30, 0.55 / (1.0 + n_sources * 0.12 + substantive * 0.08)))
     merged: dict[str, float] = {}
     uncertainty: dict[str, float] = {}
 
@@ -448,11 +453,9 @@ def bayesian_merge_pillars(
             for c, w in zip(contributions, raw_weights)
         ) / total_w
         prior = priors[dim]
-        posterior = (prior * evidence_strength + weighted_obs * total_w) / (
-            evidence_strength + total_w
-        )
+        posterior = weighted_obs * (1.0 - shrinkage) + prior * shrinkage
         merged[dim] = round(_clamp(posterior), 1)
-        uncertainty[dim] = round(max(0.05, 1.0 - min(1.0, total_w / 2.5)), 3)
+        uncertainty[dim] = round(shrinkage, 3)
 
     return merged, uncertainty
 
@@ -628,26 +631,21 @@ def truth_discovery_rating(
         market_status = "Consensus aligné avec TRUTH"
         info_bonus = 0.0
 
-    convex_bonus = upside_convexity(pillars, "F") * 1.5
-    rare_bonus = rare_count * 1.2
+    convex_bonus = upside_convexity(pillars, "F") * 0.8
+    rare_bonus = rare_count * 0.9
+    dev_bonus = max(0, pillars.get("development_arc", 5) - 7.5) * 0.6
 
-    raw = (
-        spi * 0.70
-        + upside_core * 0.15
-        + market_alpha
-        + info_bonus
-        + convex_bonus
-        + rare_bonus
-        + max(0, pillars.get("development_arc", 5) - 7.5) * 1.2
-    )
+    # Talent (SPI) is the anchor; discovery layers bounded alpha on top.
+    raw = spi + market_alpha + info_bonus + convex_bonus + rare_bonus + dev_bonus
     if is_over_age:
         raw -= 5.0
 
-    conf_mult = 0.90 + confidence * 0.10
+    conf_mult = 0.94 + confidence * 0.06
     score = round(max(0.0, min(99.0, raw * conf_mult)), 1)
 
     max_premium = 12.0 if spi >= 68 else 8.0 if spi >= 62 else 5.0 if spi >= 56 else 2.5
     score = min(score, spi + max_premium)
+    score = max(score, spi - 3.0)  # discovery never punishes more than 3 pts vs talent
 
     reasons: list[str] = []
     if market_gap and market_gap >= 15 and market_alpha > 2:
