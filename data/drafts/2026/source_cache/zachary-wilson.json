@@ -1,0 +1,10 @@
+{
+  "player": "Zachary Wilson",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:57:06.701180+00:00"
+}

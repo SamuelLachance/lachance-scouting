@@ -1,0 +1,9 @@
+{
+  "player": "Niklas Nykyri",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:45:33.146941+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "player": "Elliot Dube",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:29:32.268016+00:00"
+}

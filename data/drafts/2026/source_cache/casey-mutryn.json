@@ -1,0 +1,11 @@
+{
+  "player": "Casey Mutryn",
+  "source_ids": [
+    "hockeydb",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:24:56.782183+00:00"
+}

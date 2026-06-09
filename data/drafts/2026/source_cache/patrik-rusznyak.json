@@ -1,0 +1,11 @@
+{
+  "player": "Patrik Rusznyak",
+  "source_ids": [
+    "wikipedia",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:48:12.327707+00:00"
+}

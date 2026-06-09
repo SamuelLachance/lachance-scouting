@@ -1,0 +1,12 @@
+{
+  "player": "Maddox Dagenais",
+  "source_ids": [
+    "the_athletic",
+    "hockeydb",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:41:00.873291+00:00"
+}

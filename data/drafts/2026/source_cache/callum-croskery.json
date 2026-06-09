@@ -1,0 +1,9 @@
+{
+  "player": "Callum Croskery",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:23:50.322890+00:00"
+}

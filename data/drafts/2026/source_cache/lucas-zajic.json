@@ -1,0 +1,10 @@
+{
+  "player": "Lucas Zajic",
+  "source_ids": [
+    "wikipedia",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:40:16.556068+00:00"
+}

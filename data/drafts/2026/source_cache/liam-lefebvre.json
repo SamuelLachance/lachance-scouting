@@ -1,0 +1,14 @@
+{
+  "player": "Liam Lefebvre",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "hockeydb",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:39:26.663687+00:00"
+}

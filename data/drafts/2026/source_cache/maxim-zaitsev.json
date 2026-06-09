@@ -1,0 +1,9 @@
+{
+  "player": "Maxim Zaitsev",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:43:09.382352+00:00"
+}

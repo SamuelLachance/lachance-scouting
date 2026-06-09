@@ -1,0 +1,9 @@
+{
+  "player": "Carter Hicks",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:24:50.227345+00:00"
+}

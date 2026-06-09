@@ -1,0 +1,9 @@
+{
+  "player": "Max Isaksson",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:43:04.161875+00:00"
+}

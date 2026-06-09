@@ -1,0 +1,9 @@
+{
+  "player": "Filip Novak",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:30:23.192094+00:00"
+}

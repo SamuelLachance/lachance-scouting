@@ -1,0 +1,11 @@
+{
+  "player": "Adam Nemec",
+  "source_ids": [
+    "hockeydb",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:18:09.877216+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "player": "Andrew Neill",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:20:37.702434+00:00"
+}

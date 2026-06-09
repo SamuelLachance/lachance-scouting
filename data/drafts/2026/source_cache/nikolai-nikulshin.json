@@ -1,0 +1,13 @@
+{
+  "player": "Nikolai Nikulshin",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:45:37.818848+00:00"
+}

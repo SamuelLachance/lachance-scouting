@@ -1,0 +1,11 @@
+{
+  "player": "Sawyer Mayes",
+  "source_ids": [
+    "wikipedia",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:51:16.593107+00:00"
+}

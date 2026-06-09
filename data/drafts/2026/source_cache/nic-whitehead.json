@@ -1,0 +1,10 @@
+{
+  "player": "Nic Whitehead",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:44:42.072371+00:00"
+}

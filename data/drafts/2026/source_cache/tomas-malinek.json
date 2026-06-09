@@ -1,0 +1,9 @@
+{
+  "player": "Tomas Malinek",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:52:37.776840+00:00"
+}

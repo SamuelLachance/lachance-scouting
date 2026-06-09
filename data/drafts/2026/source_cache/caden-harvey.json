@@ -1,0 +1,14 @@
+{
+  "player": "Caden Harvey",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "hockeydb",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:23:47.302837+00:00"
+}

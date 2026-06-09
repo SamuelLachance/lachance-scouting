@@ -1,0 +1,9 @@
+{
+  "player": "Maddox Labre",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:41:05.534008+00:00"
+}

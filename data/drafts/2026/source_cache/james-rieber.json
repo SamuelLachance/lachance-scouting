@@ -1,0 +1,13 @@
+{
+  "player": "James Rieber",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:33:46.671960+00:00"
+}

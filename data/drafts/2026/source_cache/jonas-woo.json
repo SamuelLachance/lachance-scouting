@@ -1,0 +1,32 @@
+{
+  "player": "Jonas Woo",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "puckpedia",
+    "sportsnet",
+    "tsn",
+    "nhl_com",
+    "espn",
+    "flohockey",
+    "daily_faceoff",
+    "pronman",
+    "smaht_scouting",
+    "scott_wheeler",
+    "mckeens",
+    "the_athletic",
+    "reddit",
+    "hfboards",
+    "youtube",
+    "hockeydb",
+    "twitter",
+    "wikipedia",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:35:54.779487+00:00"
+}

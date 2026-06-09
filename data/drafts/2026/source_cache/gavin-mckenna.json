@@ -1,0 +1,222 @@
+{
+  "player": "Gavin McKenna",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "puckpedia",
+    "tsn",
+    "nhl_com",
+    "espn",
+    "flohockey",
+    "sportsnet",
+    "pronman",
+    "daily_faceoff",
+    "mckeens",
+    "scott_wheeler",
+    "the_athletic",
+    "smaht_scouting",
+    "hfboards",
+    "hockeydb",
+    "twitter",
+    "youtube",
+    "reddit",
+    "wikipedia",
+    "team_blog",
+    "web_scouting",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:30:52.756350+00:00",
+  "general_scouting": {
+    "by_source": [
+      {
+        "source_id": "wikipedia",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "count": 1
+      },
+      {
+        "source_id": "team_blog",
+        "text": "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://theleafsnation.com/news/toronto-maple-leafs-john-chayka-gavin-mckenna-really-nice-young-man-visit-whitehorse",
+        "count": 1
+      },
+      {
+        "source_id": "sportsnet",
+        "text": "Why this certain Gavin McKenna trait stands out for the Maple Leafs. The Maple Leafs like a lot of aspects about not only Gavin McKenna, but other top prospects as well, including Swedish winger Ivar Stenberg.",
+        "url": "https://torontosun.com/sports/hockey/nhl/toronto-maple-leafs/why-this-certain-gavin-mckenna-trait-stands-out-for-the-maple-leafs",
+        "count": 1
+      },
+      {
+        "source_id": "web_scouting",
+        "text": "Northern trailblazer: How the Yukon shaped top NHL prospect Gavin McKenna. “Gavin is a magician,” Scott Wheeler, a journalist who covers the NHL draft and prospects for The Athletic, said in an interview. “I think that’s the simplest way to describe him. Gavin’s game... Gavin McKenna, Canucks make decision that Maple Leafs, Sharks don't .... The Toronto Maple Leafs, San Jose Sharks and Vancouver Canucks hold the top-three picks in the 2026 NHL Draft, in that order. Only one of those teams has scheduled a dinner with Canadian phenom ... Maple Leafs GM John Chayka reveals takeaways from Gavin McKenna .... The Maple Leafs are expected to select Gavin McKenna with the first overall selection in the 2026 NHL Draft. Gavin McKenna opens up about his projected No. 1 pick for the Toronto .... As the Toronto Maple Leafs are planning to decide on the 2026 NHL Draft, projected top prospect Gavin McKenna has spoken about his possibilities and continues to dominate discussions surrounding ... Gavin McKenna – 2026 NHL Draft Prospect Profile - The Hockey Writers. Is Gavin McKenna a generational talent destined for first overall, or has he been under the spotlight too long to ignore his flaws?",
+        "url": "https://www.cbc.ca/sports/longform/features/how-the-yukon-shaped-top-nhl-draft-prospect-gavin-mckenna",
+        "count": 5
+      }
+    ],
+    "raw_count": 8,
+    "fetched_at": "2026-06-09T15:29:49.101120+00:00"
+  },
+  "targeted": {
+    "results": [
+      {
+        "source_id": "puckpedia",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "tsn",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "nhl_com",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "espn",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "flohockey",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "sportsnet",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "pronman",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "daily_faceoff",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "mckeens",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "scott_wheeler",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "the_athletic",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "smaht_scouting",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "hfboards",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "hockeydb",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Gavin McKenna Hockey Stats and Profile at hockeydb.com. Statistics of Gavin McKenna, a hockey player from Whitehorse, YT born Dec 20 2007 who was active from 2022 to 2026.",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Gavin McKenna Hockey Stats and Profile at hockeydb.com. Statistics of Gavin McKenna, a hockey player from Whitehorse, YT born Dec 20 2007 who was active from 2022 to 2026."
+        ]
+      },
+      {
+        "source_id": "twitter",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "youtube",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      },
+      {
+        "source_id": "reddit",
+        "text": "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers. Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ...",
+        "url": "https://en.wikipedia.org/wiki/Gavin_McKenna",
+        "snippets": [
+          "Gavin McKenna - Wikipedia. Gavin McKenna (born December 20, 2007) is a Canadian college ice hockey player who is a forward for Penn State University of the National Collegiate Athletic Association (NCAA). He previously played three seasons, from 2022 to 2025, in the Western Hockey League (WHL) with the Medicine Hat Tigers.",
+          "Maple Leafs GM John Chayka calls Gavin McKenna ‘a really nice young man .... Toronto Maple Leafs GM John Chayka touched on how things went during a recent visit to Whitehorse, Yukon, to meet with highly touted prospect Gavin McKenna and his family. With the 2026 NHL Draft fast approaching, the Leafs will select first overall and have the right to add McKenna to their ranks ..."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T15:29:51.118421+00:00"
+  }
+}

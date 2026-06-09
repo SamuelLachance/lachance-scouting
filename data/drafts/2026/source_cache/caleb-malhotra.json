@@ -1,0 +1,32 @@
+{
+  "player": "Caleb Malhotra",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "flohockey",
+    "puckpedia",
+    "sportsnet",
+    "espn",
+    "tsn",
+    "nhl_com",
+    "mckeens",
+    "smaht_scouting",
+    "the_athletic",
+    "scott_wheeler",
+    "pronman",
+    "daily_faceoff",
+    "hockeydb",
+    "reddit",
+    "youtube",
+    "twitter",
+    "hfboards",
+    "web_scouting",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:23:49.317833+00:00"
+}

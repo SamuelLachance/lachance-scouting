@@ -2,11 +2,9 @@
 """
 Évaluation NORTHSTAR multi-sources — 574 prospects 2026.
 
-Sources pondérées par tier de fiabilité (voir northstar_scoring.SOURCE_TIER_WEIGHTS):
-  Tier 1: DPH full, analyses locales
-  Tier 2: EP, web scouting (TSN/ESPN/etc.)
-  Tier 3: DPH template, Wikipedia
-  Tier 4: consensus CSV, heuristiques stats
+Agrégation égale/near-égale de TOUTES les sources internet disponibles.
+Aucune source > 25% (MAX_SOURCE_SHARE) sauf si 1–2 sources seulement.
+Cache par joueur: data/drafts/2026/source_cache/{player_key}.json
 
 Usage:
   python scripts/evaluate_players_northstar.py --force
@@ -19,6 +17,7 @@ import argparse
 import json
 import re
 import sys
+import xml.etree.ElementTree as ET
 import threading
 import time
 import urllib.error
@@ -38,6 +37,8 @@ from generate_draft_board import Player, load_players
 from name_utils import canonical_key
 from scripts.fetch_scouting_reports import parse_dph_html, slug_from_name
 from northstar_scoring import (
+    MAX_SOURCE_SHARE,
+    MIN_SOURCE_ATTEMPTS,
     NORTHSTAR_LABELS,
     NORTHSTAR_WEIGHTS,
     SOURCE_TIER_WEIGHTS,
@@ -47,14 +48,13 @@ from northstar_scoring import (
     _scoring_text,
     apply_physical_adjustments,
     build_forces_faiblesses,
-    build_rationales,
+    compute_text_quality,
     dph_source_id,
     northstar_overall,
     pillars_from_consensus_rank,
     pillars_from_stats_heuristic,
     pillars_from_text_blob,
-    source_label,
-    source_tier,
+    source_count_confidence_multiplier,
     weighted_merge_sources,
 )
 
@@ -64,6 +64,59 @@ REPORTS = _paths["scouting_reports"]
 RANKINGS = _paths["rankings"]
 ANALYSES = _paths["analyses"]
 EP_CACHE = _paths["data_dir"] / "ep_cache.json"
+SOURCE_CACHE_DIR = _paths["data_dir"] / "source_cache"
+
+DOMAIN_SOURCE_MAP: dict[str, str] = {
+    "draftprospectshockey.com": "dph_full",
+    "eliteprospects.com": "elite_prospects",
+    "tsn.ca": "tsn",
+    "espn.com": "espn",
+    "nhl.com": "nhl_com",
+    "sportsnet.ca": "sportsnet",
+    "flocountry.tv": "flohockey",
+    "flohockey.tv": "flohockey",
+    "puckpedia.com": "puckpedia",
+    "dailyfaceoff.com": "daily_faceoff",
+    "mckeenshockey.com": "mckeens",
+    "theathletic.com": "the_athletic",
+    "reddit.com": "reddit",
+    "hfboards.com": "hfboards",
+    "twitter.com": "twitter",
+    "x.com": "twitter",
+    "youtube.com": "youtube",
+    "hockeydb.com": "hockeydb",
+    "en.wikipedia.org": "wikipedia",
+    "smahtscouting.com": "smaht_scouting",
+    "smahtscouting.wordpress.com": "smaht_scouting",
+    "theleafsnation.com": "team_blog",
+    "torontosun.com": "sportsnet",
+    "cbc.ca": "web_scouting",
+    "thehockeywriters.com": "web_scouting",
+    "dobberprospects.com": "mckeens",
+    "neutralzone.com": "web_scouting",
+    "ushl.com": "team_blog",
+    "chl.ca": "team_blog",
+}
+
+TARGETED_QUERIES: list[tuple[str, str]] = [
+    ("tsn", 'site:tsn.ca "{name}" 2026 NHL draft'),
+    ("espn", 'site:espn.com "{name}" NHL draft 2026'),
+    ("nhl_com", 'site:nhl.com "{name}" draft prospect'),
+    ("sportsnet", 'site:sportsnet.ca "{name}" 2026 draft'),
+    ("flohockey", 'site:flohockey.tv "{name}" draft prospect'),
+    ("puckpedia", 'site:puckpedia.com "{name}" draft'),
+    ("daily_faceoff", 'site:dailyfaceoff.com "{name}" prospect'),
+    ("mckeens", 'site:mckeenshockey.com "{name}" scouting'),
+    ("the_athletic", 'site:theathletic.com "{name}" NHL draft'),
+    ("smaht_scouting", 'site:smahtscouting.com "{name}" 2026'),
+    ("pronman", '"{name}" Corey Pronman 2026 draft'),
+    ("scott_wheeler", '"{name}" Scott Wheeler TSN draft'),
+    ("reddit", 'site:reddit.com/r/hockey "{name}" 2026 draft'),
+    ("hfboards", 'site:hfboards.com "{name}" 2026 draft'),
+    ("twitter", 'site:twitter.com "{name}" NHL draft 2026'),
+    ("youtube", 'site:youtube.com "{name}" scouting report 2026'),
+    ("hockeydb", 'site:hockeydb.com "{name}"'),
+]
 
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -81,6 +134,7 @@ MAX_RETRIES = 3
 
 _checkpoint_lock = threading.Lock()
 _ep_cache_lock = threading.Lock()
+_source_cache_lock = threading.Lock()
 
 
 class HostRateLimitedFetcher:
@@ -129,8 +183,10 @@ def load_checkpoint() -> dict:
 def save_checkpoint(data: dict) -> None:
     with _checkpoint_lock:
         data["meta"]["last_updated"] = datetime.now(timezone.utc).isoformat()
-        data["meta"]["version"] = 2
-        data["meta"]["source_tier_weights"] = SOURCE_TIER_WEIGHTS
+        data["meta"]["version"] = 3
+        data["meta"]["weighting"] = "equal_blend_capped"
+        data["meta"]["max_source_share"] = MAX_SOURCE_SHARE
+        data["meta"]["min_source_attempts"] = MIN_SOURCE_ATTEMPTS
         data["meta"]["done"] = sum(
             1 for p in data.get("players", {}).values() if p.get("status") == "done"
         )
@@ -158,6 +214,95 @@ def load_consensus_map() -> dict[str, int | None]:
     return out
 
 
+def load_rankings_index() -> dict[str, dict]:
+    if not RANKINGS.exists():
+        return {}
+    rows = json.loads(RANKINGS.read_text(encoding="utf-8"))
+    return {canonical_key(row["Nom"]): row for row in rows}
+
+
+_RANKING_DIM_MAP = {
+    "star_ceiling": ("Plafond_Etoile", "Plafond_Elite"),
+    "hockey_iq": ("IQ_Elite", "IQ_Realisation"),
+    "skating_engine": ("Moteur_Patinage", "Patinage_Upside"),
+    "offensive_star_power": ("Pouvoir_Offensif", "Outils_Offensifs", "Creation_Jeu"),
+    "competition_proof": ("Preuve_Competition",),
+    "character_compete": ("Competitivite", "Variance_Positive"),
+    "development_arc": ("Arc_Developpement", "Trajectoire"),
+}
+
+
+def pillars_from_rankings_row(row: dict) -> dict[str, float]:
+    dims: dict[str, float] = {}
+    for dim, keys in _RANKING_DIM_MAP.items():
+        val = None
+        for k in keys:
+            if row.get(k) not in (None, "", "N/A"):
+                val = float(row[k])
+                break
+        dims[dim] = round(min(10, max(1, val if val is not None else 5.0)), 1)
+    return dims
+
+
+def gather_dph_sources(
+    report: dict,
+    player: Player,
+) -> list[dict[str, Any]]:
+    """Split DPH cache into granular sources — no single DPH blob dominance."""
+    out: list[dict[str, Any]] = []
+    url = report.get("href", "")
+
+    if report.get("report"):
+        c = contribution_from_text("dph_report", report["report"], player=player, report=report, url=url)
+        if c:
+            out.append(c)
+    if report.get("strengths"):
+        c = contribution_from_text(
+            "dph_strengths", " ".join(report["strengths"]),
+            player=player, report=report, url=url,
+        )
+        if c:
+            out.append(c)
+    if report.get("weaknesses"):
+        c = contribution_from_text(
+            "dph_weaknesses", " ".join(report["weaknesses"]),
+            player=player, report=report, url=url,
+        )
+        if c:
+            out.append(c)
+    if report.get("projection"):
+        c = contribution_from_text(
+            "dph_projection", report["projection"],
+            player=player, report=report, url=url,
+        )
+        if c:
+            out.append(c)
+    tag_parts = []
+    if report.get("grade"):
+        tag_parts.append(f"grade {report['grade']}")
+    for t in report.get("tags") or []:
+        tag_parts.append(t)
+    if report.get("meta_description") and not report.get("report"):
+        tag_parts.append(report["meta_description"])
+    if tag_parts:
+        c = contribution_from_text(
+            "dph_tags", " ".join(tag_parts),
+            player=player, report=report, url=url,
+        )
+        if c:
+            out.append(c)
+    if not out and (_scoring_text(report).strip() or report.get("grade")):
+        sid = dph_source_id(report, _report_quality(report))
+        c = contribution_from_text(
+            sid,
+            _scoring_text(report) or f"grade {report.get('grade')}",
+            player=player, report=report, url=url,
+        )
+        if c:
+            out.append(c)
+    return out
+
+
 def load_analysis_index() -> dict[str, Path]:
     if not ANALYSES.exists():
         return {}
@@ -179,6 +324,190 @@ def save_ep_cache(cache: dict) -> None:
     with _ep_cache_lock:
         EP_CACHE.parent.mkdir(parents=True, exist_ok=True)
         EP_CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def _cache_key(player_key: str) -> str:
+    return re.sub(r"[^\w\-]", "-", player_key.replace(" ", "-").lower())
+
+
+def load_source_cache(player_key: str) -> dict:
+    path = SOURCE_CACHE_DIR / f"{_cache_key(player_key)}.json"
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
+
+
+def save_source_cache(player_key: str, data: dict) -> None:
+    with _source_cache_lock:
+        SOURCE_CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        path = SOURCE_CACHE_DIR / f"{_cache_key(player_key)}.json"
+        data["cached_at"] = datetime.now(timezone.utc).isoformat()
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def domain_to_source_id(domain: str) -> str:
+    d = domain.lower().removeprefix("www.")
+    for key, sid in DOMAIN_SOURCE_MAP.items():
+        if key in d:
+            return sid
+    if any(x in d for x in (".ca", ".com", ".org", ".net")):
+        if any(x in d for x in ("nittany", "pennstate", "gophers", "badgers", "huskies")):
+            return "team_blog"
+        return "web_scouting"
+    return "web_scouting"
+
+
+def _parse_bing_rss(xml_text: str, name: str) -> list[dict]:
+    """Bing RSS feed — reliable when HTML SERP is captcha-blocked."""
+    results: list[dict] = []
+    last_name = name.split()[-1].lower()
+    first = name.split()[0].lower() if name.split() else ""
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError:
+        return results
+    for item in root.findall(".//item"):
+        title = unescape(item.findtext("title", "") or "")
+        desc = unescape(item.findtext("description", "") or "")
+        link = item.findtext("link", "") or ""
+        blob = f"{title}. {desc}".strip()
+        if len(blob) < 20:
+            continue
+        if last_name not in blob.lower() and last_name not in link.lower():
+            continue
+        if first and first not in blob.lower() and first not in link.lower():
+            continue
+        domain = urllib.parse.urlparse(link).netloc if link else "bing_rss"
+        results.append({
+            "url": link,
+            "snippet": blob[:500],
+            "domain": domain,
+            "title": title[:120],
+        })
+    return results
+
+
+def _parse_bing_results(html: str, name: str) -> list[dict]:
+    results: list[dict] = []
+    last_name = name.split()[-1].lower()
+    for m in re.finditer(
+        r'<li[^>]*class="b_algo"[^>]*>(.*?)</li>',
+        html, re.DOTALL | re.I,
+    ):
+        block = m.group(1)
+        url_m = re.search(r'<a[^>]+href="(https?://[^"]+)"', block, re.I)
+        snip_m = re.search(r'<p[^>]*>(.*?)</p>', block, re.DOTALL | re.I)
+        if not url_m:
+            continue
+        url = url_m.group(1)
+        snippet = ""
+        if snip_m:
+            snippet = unescape(re.sub(r"<[^>]+>", " ", snip_m.group(1)))
+            snippet = re.sub(r"\s+", " ", snippet).strip()
+        if len(snippet) < 25:
+            continue
+        if last_name not in snippet.lower() and last_name not in url.lower():
+            continue
+        domain = urllib.parse.urlparse(url).netloc
+        results.append({"url": url, "snippet": snippet[:500], "domain": domain})
+    return results
+
+
+def _parse_ddg_results(html: str, name: str) -> list[dict]:
+    results: list[dict] = []
+    last_name = name.split()[-1].lower()
+    for m in re.finditer(
+        r'class="result__a"[^>]*href="([^"]+)"[^>]*>.*?</a>.*?'
+        r'class="result__snippet"[^>]*>(.*?)</(?:a|td|div|span)>',
+        html, re.DOTALL | re.I,
+    ):
+        url = m.group(1)
+        snippet = unescape(re.sub(r"<[^>]+>", " ", m.group(2)))
+        snippet = re.sub(r"\s+", " ", snippet).strip()
+        if len(snippet) < 25:
+            continue
+        if last_name not in snippet.lower():
+            continue
+        domain = urllib.parse.urlparse(url).netloc
+        results.append({"url": url, "snippet": snippet[:500], "domain": domain})
+    if not results:
+        for m in re.finditer(
+            r'class="result__snippet"[^>]*>(.*?)</(?:a|td|div|span)>',
+            html, re.DOTALL | re.I,
+        ):
+            t = unescape(re.sub(r"<[^>]+>", " ", m.group(1)))
+            t = re.sub(r"\s+", " ", t).strip()
+            if len(t) > 30:
+                results.append({"url": "", "snippet": t[:500], "domain": "ddg"})
+    return results
+
+
+def search_web_results(
+    fetcher: HostRateLimitedFetcher,
+    query: str,
+    *,
+    name: str = "",
+    max_results: int = 15,
+    use_ddg_fallback: bool = True,
+) -> list[dict]:
+    q = urllib.parse.quote(query)
+    results: list[dict] = []
+    rss = fetcher.fetch(f"https://www.bing.com/search?format=rss&q={q}", timeout=15)
+    if rss:
+        results.extend(_parse_bing_rss(rss, name or query))
+    if len(results) < max(2, max_results // 3):
+        html = fetcher.fetch(f"https://www.bing.com/search?q={q}", timeout=12)
+        if html:
+            results.extend(_parse_bing_results(html, name or query))
+    if use_ddg_fallback and len(results) < max(2, max_results // 3):
+        html = fetcher.fetch(f"https://html.duckduckgo.com/html/?q={q}", timeout=12)
+        if html:
+            results.extend(_parse_ddg_results(html, name or query))
+    seen: set[str] = set()
+    out: list[dict] = []
+    for r in results:
+        key = r.get("url") or r.get("snippet", "")[:80]
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(r)
+        if len(out) >= max_results:
+            break
+    return out
+
+
+def contribution_from_text(
+    source_id: str,
+    text: str,
+    *,
+    player: Player,
+    report: dict,
+    stats: dict | None = None,
+    url: str = "",
+    fetched_at: str | None = None,
+) -> dict[str, Any] | None:
+    if not text or not str(text).strip():
+        return None
+    text_q = compute_text_quality(text, fetched_at=fetched_at)
+    dims, ev = pillars_from_text_blob(
+        text,
+        pos=player.pos,
+        report=report,
+        stats=stats,
+        apply_coverage=False,
+    )
+    return {
+        "source_id": source_id,
+        "pillars": dims,
+        "evidence": ev,
+        "quality": text_q,
+        "text_quality": text_q,
+        "snippet": str(text)[:200],
+        "url": url,
+    }
 
 
 def parse_analysis_md(text: str) -> str:
@@ -214,16 +543,53 @@ def find_ep_id(fetcher: HostRateLimitedFetcher, name: str, cache: dict) -> str |
     key = canonical_key(name)
     if key in cache and cache[key].get("ep_id"):
         return cache[key]["ep_id"]
-    q = urllib.parse.quote(f"site:eliteprospects.com/player {name} 2026")
-    html = fetcher.fetch(f"https://html.duckduckgo.com/html/?q={q}")
+    q = urllib.parse.quote(name)
+    html = fetcher.fetch(
+        f"https://www.eliteprospects.com/search/player?q={q}",
+        timeout=25,
+    )
+    if html:
+        m = re.search(
+            r'<script id="__NEXT_DATA__" type="application/json">(.+?)</script>',
+            html, re.DOTALL,
+        )
+        if m:
+            try:
+                data = json.loads(m.group(1))
+                players = (
+                    data.get("props", {})
+                    .get("pageProps", {})
+                    .get("players", [])
+                )
+                last = name.split()[-1].lower()
+                for p in players:
+                    pname = (p.get("name") or "").lower()
+                    if last in pname and name.split()[0].lower() in pname:
+                        ep_id = str(p.get("id", ""))
+                        if ep_id:
+                            cache[key] = {
+                                "ep_id": ep_id,
+                                "found_at": datetime.now(timezone.utc).isoformat(),
+                            }
+                            return ep_id
+                if players and players[0].get("id"):
+                    ep_id = str(players[0]["id"])
+                    cache[key] = {
+                        "ep_id": ep_id,
+                        "found_at": datetime.now(timezone.utc).isoformat(),
+                    }
+                    return ep_id
+            except (json.JSONDecodeError, KeyError, TypeError):
+                pass
+    q2 = urllib.parse.quote(f"site:eliteprospects.com/player {name} 2026")
+    html = fetcher.fetch(f"https://html.duckduckgo.com/html/?q={q2}")
     if not html:
-        html = fetcher.fetch(f"https://www.bing.com/search?q={q}")
-    if not html:
-        return None
-    m = re.search(r"eliteprospects\.com/player/(\d+)/", html)
-    if m:
-        cache[key] = {"ep_id": m.group(1), "found_at": datetime.now(timezone.utc).isoformat()}
-        return m.group(1)
+        html = fetcher.fetch(f"https://www.bing.com/search?q={q2}")
+    if html:
+        m = re.search(r"eliteprospects\.com/player/(\d+)/", html)
+        if m:
+            cache[key] = {"ep_id": m.group(1), "found_at": datetime.now(timezone.utc).isoformat()}
+            return m.group(1)
     return None
 
 
@@ -331,28 +697,103 @@ def wikipedia_snippet(fetcher: HostRateLimitedFetcher, name: str) -> tuple[str, 
     return "", ""
 
 
-def web_search_snippets(fetcher: HostRateLimitedFetcher, name: str, draft_year: int = 2026) -> list[str]:
-    q = urllib.parse.quote(f'"{name}" NHL draft {draft_year} scouting')
-    html = fetcher.fetch(f"https://www.bing.com/search?q={q}")
-    snippets: list[str] = []
-    if html:
-        for m in re.finditer(r'class="b_caption"[^>]*>.*?<p>(.*?)</p>', html, re.DOTALL | re.I):
-            t = unescape(re.sub(r"<[^>]+>", " ", m.group(1)))
-            t = re.sub(r"\s+", " ", t).strip()
-            if len(t) > 30 and name.split()[-1].lower() in t.lower():
-                snippets.append(t[:400])
+def _fetch_one_targeted(
+    fetcher: HostRateLimitedFetcher,
+    source_id: str,
+    query: str,
+    name: str,
+) -> dict | None:
+    results = search_web_results(
+        fetcher, query, name=name, max_results=2, use_ddg_fallback=False,
+    )
+    snippets = [r["snippet"] for r in results if r.get("snippet")]
     if not snippets:
-        html = fetcher.fetch(f"https://html.duckduckgo.com/html/?q={q}")
-        if html:
-            for m in re.finditer(
-                r'class="result__snippet"[^>]*>(.*?)</(?:a|td|div|span)>',
-                html, re.DOTALL | re.I,
-            ):
-                t = unescape(re.sub(r"<[^>]+>", " ", m.group(1)))
-                t = re.sub(r"\s+", " ", t).strip()
-                if len(t) > 30:
-                    snippets.append(t[:400])
-    return list(dict.fromkeys(snippets))[:4]
+        return None
+    return {
+        "source_id": source_id,
+        "text": " ".join(snippets),
+        "url": results[0].get("url", ""),
+        "snippets": snippets,
+    }
+
+
+def gather_targeted_sources(
+    fetcher: HostRateLimitedFetcher,
+    name: str,
+    *,
+    cache: dict | None = None,
+    skip_web: bool = False,
+) -> list[dict]:
+    """Run site-specific scouting queries in parallel — one contribution per hit."""
+    if skip_web:
+        return []
+    cache = cache or {}
+    cached = cache.get("targeted") or {}
+    if cached.get("results"):
+        return cached["results"]
+    contributions: list[dict] = []
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        futures = {
+            pool.submit(
+                _fetch_one_targeted,
+                fetcher, source_id, query_tpl.format(name=name), name,
+            ): source_id
+            for source_id, query_tpl in TARGETED_QUERIES
+        }
+        for fut in as_completed(futures):
+            try:
+                item = fut.result(timeout=30)
+            except Exception:
+                item = None
+            if item:
+                contributions.append(item)
+    cache["targeted"] = {
+        "results": contributions,
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+    }
+    return contributions
+
+
+def gather_general_scouting(
+    fetcher: HostRateLimitedFetcher,
+    name: str,
+    *,
+    draft_year: int = 2026,
+    cache: dict | None = None,
+    skip_web: bool = False,
+) -> list[dict]:
+    """Bing/DDG scouting search — split by domain into separate sources."""
+    if skip_web:
+        return []
+    cache = cache or {}
+    cached = cache.get("general_scouting")
+    if cached and cached.get("by_source"):
+        return cached["by_source"]
+    query = f'"{name}" {draft_year} draft scouting report'
+    results = search_web_results(fetcher, query, name=name, max_results=15)
+    by_source: dict[str, list[dict]] = {}
+    for r in results:
+        domain = r.get("domain") or "web"
+        sid = domain_to_source_id(domain)
+        if sid.startswith("dph"):
+            sid = "web_scouting"
+        by_source.setdefault(sid, []).append(r)
+    grouped: list[dict] = []
+    for sid, items in by_source.items():
+        text = " ".join(i["snippet"] for i in items if i.get("snippet"))
+        if text.strip():
+            grouped.append({
+                "source_id": sid,
+                "text": text,
+                "url": items[0].get("url", ""),
+                "count": len(items),
+            })
+    cache["general_scouting"] = {
+        "by_source": grouped,
+        "raw_count": len(results),
+        "fetched_at": datetime.now(timezone.utc).isoformat(),
+    }
+    return grouped
 
 
 def merge_stats(dph_stats: dict, ep_data: dict) -> dict:
@@ -372,9 +813,9 @@ def build_pillar_rationales(
     player_name: str,
 ) -> dict[str, dict]:
     pillars: dict[str, dict] = {}
-    top_sources = sorted(source_mix, key=lambda x: -x.get("weight_share", 0))[:3]
+    top_sources = sorted(source_mix, key=lambda x: -x.get("weight_share", 0))[:5]
     src_txt = ", ".join(
-        f"{s['label']} (T{s['tier']}, {s['weight_share']*100:.0f}%)"
+        f"{s['label']} ({s['weight_share']*100:.0f}%)"
         for s in top_sources
     ) or "heuristique"
 
@@ -406,6 +847,7 @@ def evaluate_player(
     fetcher: HostRateLimitedFetcher,
     *,
     consensus_rank: int | None,
+    rankings_row: dict | None,
     analysis_text: str,
     ep_cache: dict,
     skip_web: bool = False,
@@ -414,146 +856,163 @@ def evaluate_player(
 ) -> dict:
     contributions: list[dict[str, Any]] = []
     source_ids: list[str] = []
+    attempts = 0
+    player_cache = load_source_cache(player.key)
 
     if refresh_dph:
         report = fetch_dph_live(player, report, fetcher)
 
     merged_report = dict(report or {})
-    cov_dph = _report_quality(merged_report) if merged_report else "none"
 
-    # --- Tier 1/2/3: DPH (any cached metadata) ---
-    dph_text = _scoring_text(merged_report) if merged_report else ""
-    if dph_text.strip() or merged_report.get("grade") or merged_report.get("dph_rank"):
-        sid = dph_source_id(merged_report, cov_dph) if dph_text.strip() else "dph_partial"
-        dims, ev = pillars_from_text_blob(
-            dph_text or f"grade {merged_report.get('grade')} rank {merged_report.get('dph_rank')}",
-            pos=player.pos,
-            report=merged_report,
-            apply_coverage=(sid == "dph_full"),
-        )
-        quality = {"dph_full": 1.0, "dph_partial": 0.75, "dph_thin": 0.5}.get(sid, 0.5)
-        contributions.append({
-            "source_id": sid,
-            "pillars": dims,
-            "evidence": ev,
-            "quality": quality,
-            "snippet": (dph_text or str(merged_report.get("grade", "")))[:200],
-            "url": merged_report.get("href", ""),
-        })
-        source_ids.append(sid)
+    # --- DPH granular sources (report, strengths, weaknesses, projection, tags) ---
+    attempts += 1
+    for c in gather_dph_sources(merged_report, player):
+        sid = c["source_id"]
+        if sid not in source_ids:
+            contributions.append(c)
+            source_ids.append(sid)
 
-    # --- Tier 1: local analysis markdown ---
+    # --- Local analysis ---
+    attempts += 1
     if analysis_text.strip():
-        dims, ev = pillars_from_text_blob(
-            analysis_text, pos=player.pos, report=merged_report, apply_coverage=False,
+        c = contribution_from_text(
+            "local_analysis", analysis_text,
+            player=player, report=merged_report,
         )
-        contributions.append({
-            "source_id": "local_analysis",
-            "pillars": dims,
-            "evidence": ev,
-            "quality": 0.95,
-            "snippet": analysis_text[:200],
-        })
-        source_ids.append("local_analysis")
+        if c:
+            contributions.append(c)
+            source_ids.append("local_analysis")
 
-    # Parallel fetch: EP, web, wiki
     ep_data: dict = {}
-    web_snippets: list[str] = []
     wiki_text, wiki_url = "", ""
+    targeted_raw: list[dict] = []
+    general_raw: list[dict] = []
 
     tasks: dict[str, Any] = {}
-    with ThreadPoolExecutor(max_workers=3) as pool:
+    with ThreadPoolExecutor(max_workers=6) as pool:
         if not skip_ep:
             tasks["ep"] = pool.submit(fetch_ep_data, fetcher, player.full_name, ep_cache)
+            attempts += 1
         if not skip_web:
-            tasks["web"] = pool.submit(web_search_snippets, fetcher, player.full_name)
             tasks["wiki"] = pool.submit(wikipedia_snippet, fetcher, player.full_name)
+            attempts += 1
+            tasks["targeted"] = pool.submit(
+                gather_targeted_sources, fetcher, player.full_name,
+                cache=player_cache, skip_web=skip_web,
+            )
+            attempts += len(TARGETED_QUERIES)
+            tasks["general"] = pool.submit(
+                gather_general_scouting, fetcher, player.full_name,
+                cache=player_cache, skip_web=skip_web,
+            )
+            attempts += 1
 
         for key, fut in tasks.items():
             try:
-                result = fut.result(timeout=50)
+                result = fut.result(timeout=120)
             except Exception:
                 result = None
             if key == "ep" and result:
                 ep_data = result
-            elif key == "web" and result:
-                web_snippets = result
             elif key == "wiki" and result:
                 wiki_text, wiki_url = result
+            elif key == "targeted" and result:
+                targeted_raw = result
+            elif key == "general" and result:
+                general_raw = result
 
     merged_stats = merge_stats(merged_report.get("stats") or {}, ep_data)
     if merged_stats:
         merged_report["stats"] = merged_stats
 
-    # --- Tier 2: Elite Prospects ---
+    # --- Elite Prospects ---
     if ep_data:
         ep_parts = list(ep_data.get("snippets") or [])
         bio = ep_data.get("bio") or {}
         if bio.get("team"):
             ep_parts.append(f"plays for {bio['team']}")
-        ep_text = " ".join(ep_parts)
-        if ep_text.strip() or merged_stats:
-            dims, ev = pillars_from_text_blob(
-                ep_text or f"elite prospects {player.full_name}",
-                pos=player.pos,
-                report={**merged_report, "stats": merged_stats},
-                stats=merged_stats,
-                apply_coverage=False,
-            )
-            contributions.append({
-                "source_id": "elite_prospects",
-                "pillars": dims,
-                "evidence": ev,
-                "quality": 0.85 if ep_text else 0.6,
-                "snippet": ep_text[:200] if ep_text else f"stats GP={merged_stats.get('gp')}",
-                "url": f"https://www.eliteprospects.com/player/{ep_data.get('ep_id')}/",
-            })
+        ep_text = " ".join(ep_parts) or f"elite prospects {player.full_name}"
+        c = contribution_from_text(
+            "elite_prospects", ep_text,
+            player=player,
+            report={**merged_report, "stats": merged_stats},
+            stats=merged_stats,
+            url=f"https://www.eliteprospects.com/player/{ep_data.get('ep_id')}/",
+            fetched_at=ep_data.get("fetched_at"),
+        )
+        if c:
+            contributions.append(c)
             source_ids.append("elite_prospects")
 
-    # --- Tier 2: web scouting ---
-    extra_web = list(web_snippets)
+    # --- Wikipedia ---
     if wiki_text:
-        extra_web.insert(0, wiki_text[:400])
-    if extra_web:
-        web_text = " ".join(extra_web)
-        dims, ev = pillars_from_text_blob(
-            web_text, pos=player.pos, report=merged_report, apply_coverage=False,
+        c = contribution_from_text(
+            "wikipedia", wiki_text,
+            player=player, report=merged_report,
+            url=wiki_url,
         )
-        contributions.append({
-            "source_id": "web_scouting",
-            "pillars": dims,
-            "evidence": ev,
-            "quality": min(1.0, 0.5 + len(extra_web) * 0.12),
-            "snippet": extra_web[0][:200],
-        })
-        source_ids.append("web_scouting")
+        if c:
+            contributions.append(c)
+            source_ids.append("wikipedia")
 
-    # --- Tier 3: Wikipedia (standalone if not merged into web) ---
-    if wiki_text and "wikipedia" not in source_ids:
-        dims, ev = pillars_from_text_blob(wiki_text, pos=player.pos, apply_coverage=False)
-        contributions.append({
-            "source_id": "wikipedia",
-            "pillars": dims,
-            "evidence": ev,
-            "quality": 0.7,
-            "snippet": wiki_text[:200],
-            "url": wiki_url,
-        })
-        source_ids.append("wikipedia")
+    # --- Targeted site searches (each source separate) ---
+    for item in targeted_raw:
+        sid = item["source_id"]
+        if sid in source_ids:
+            continue
+        c = contribution_from_text(
+            sid, item["text"],
+            player=player, report=merged_report,
+            url=item.get("url", ""),
+            fetched_at=player_cache.get("targeted", {}).get("fetched_at"),
+        )
+        if c:
+            contributions.append(c)
+            source_ids.append(sid)
 
-    # --- Tier 4: consensus rank ---
+    # --- General scouting by domain ---
+    for item in general_raw:
+        sid = item["source_id"]
+        if sid in source_ids:
+            continue
+        c = contribution_from_text(
+            sid, item["text"],
+            player=player, report=merged_report,
+            url=item.get("url", ""),
+            fetched_at=player_cache.get("general_scouting", {}).get("fetched_at"),
+        )
+        if c:
+            contributions.append(c)
+            source_ids.append(sid)
+
+    # --- Rankings CSV dimension profile ---
+    attempts += 1
+    if rankings_row:
+        dims = pillars_from_rankings_row(rankings_row)
+        contributions.append({
+            "source_id": "rankings_csv",
+            "pillars": dims,
+            "evidence": {},
+            "quality": 0.82,
+            "snippet": f"rankings profile rank #{rankings_row.get('Rang_Final')}",
+        })
+        source_ids.append("rankings_csv")
+
+    # --- Consensus rank ---
+    attempts += 1
     if consensus_rank is not None:
         dims = pillars_from_consensus_rank(consensus_rank, player.pos)
         contributions.append({
             "source_id": "consensus_rank",
             "pillars": dims,
             "evidence": {},
-            "quality": 0.9,
+            "quality": 0.85,
             "snippet": f"consensus rank #{consensus_rank}",
         })
         source_ids.append("consensus_rank")
 
-    # --- Tier 4: stats heuristic (always — low-weight anchor) ---
+    # --- Stats heuristic anchor ---
+    attempts += 1
     dims = pillars_from_stats_heuristic(
         merged_stats,
         merged_report.get("league", ""),
@@ -565,7 +1024,7 @@ def evaluate_player(
         "source_id": "stats_heuristic",
         "pillars": dims,
         "evidence": {},
-        "quality": 0.8 if merged_stats.get("gp") else 0.35,
+        "quality": 0.75 if merged_stats.get("gp") else 0.40,
         "snippet": f"production GP={merged_stats.get('gp')} PTS={merged_stats.get('pts')}",
     })
     source_ids.append("stats_heuristic")
@@ -575,10 +1034,17 @@ def evaluate_player(
             "source_id": "stats_heuristic",
             "pillars": {k: 5.0 for k in NORTHSTAR_WEIGHTS},
             "evidence": {},
-            "quality": 0.3,
+            "quality": 0.30,
             "snippet": "neutral fallback — no external evidence",
         })
         source_ids.append("stats_heuristic")
+
+    save_source_cache(player.key, {
+        **player_cache,
+        "player": player.full_name,
+        "source_ids": source_ids,
+        "attempts": attempts,
+    })
 
     dims, evidence, source_mix, cov = weighted_merge_sources(contributions)
     dims = apply_physical_adjustments(dims, player.pos, player.height, player.weight)
@@ -590,7 +1056,12 @@ def evaluate_player(
         dims, merged_report, evidence, player.pos, player.height, player.weight, cov,
     )
 
-    spi = northstar_overall(dims) * _confidence_multiplier(cov)
+    n_sources = len(source_mix)
+    spi = (
+        northstar_overall(dims)
+        * _confidence_multiplier(cov)
+        * source_count_confidence_multiplier(n_sources)
+    )
     spi = round(min(99.9, max(0, spi)), 2)
 
     return {
@@ -615,9 +1086,12 @@ def evaluate_player(
             "consensus_rank": consensus_rank,
             "stats": merged_stats,
             "ep": {k: v for k, v in ep_data.items() if k != "parsed"} if ep_data else {},
-            "web_snippets": web_snippets,
+            "targeted_hits": len(targeted_raw),
+            "general_domains": len(general_raw),
             "wiki_words": len(wiki_text.split()) if wiki_text else 0,
             "contributions": len(contributions),
+            "source_attempts": attempts,
+            "max_source_share": max((s.get("weight_share", 0) for s in source_mix), default=0),
         },
     }
 
@@ -634,6 +1108,7 @@ def evaluate_one(
     report: dict,
     fetcher: HostRateLimitedFetcher,
     consensus_map: dict,
+    rankings_index: dict,
     analysis_index: dict,
     ep_cache: dict,
     args: argparse.Namespace,
@@ -647,6 +1122,7 @@ def evaluate_one(
         report,
         fetcher,
         consensus_rank=consensus_map.get(player.key),
+        rankings_row=rankings_index.get(player.key),
         analysis_text=analysis_text,
         ep_cache=ep_cache,
         skip_web=args.skip_web,
@@ -674,12 +1150,13 @@ def main() -> None:
     reports = load_reports()
     checkpoint = load_checkpoint()
     consensus_map = load_consensus_map()
+    rankings_index = load_rankings_index()
     analysis_index = load_analysis_index()
     ep_cache = load_ep_cache()
     fetcher = HostRateLimitedFetcher()
 
     checkpoint.setdefault("meta", {})["total"] = len(players)
-    checkpoint.setdefault("meta", {})["source_tier_weights"] = SOURCE_TIER_WEIGHTS
+    checkpoint.setdefault("meta", {})["max_source_share"] = MAX_SOURCE_SHARE
     checkpoint.setdefault("players", {})
 
     if args.player:
@@ -705,15 +1182,15 @@ def main() -> None:
     workers = max(1, min(args.workers, 20))
 
     _safe_print(
-        f"NORTHSTAR multi-source: {len(pending)} à traiter, {skipped} ignorés, "
-        f"{workers} workers, tiers={SOURCE_TIER_WEIGHTS}",
+        f"NORTHSTAR multi-source: {len(pending)} a traiter, {skipped} ignores, "
+        f"{workers} workers, max_share={MAX_SOURCE_SHARE}",
     )
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futures = {
             pool.submit(
                 evaluate_one, p, reports.get(p.key, {}), fetcher,
-                consensus_map, analysis_index, ep_cache, args,
+                consensus_map, rankings_index, analysis_index, ep_cache, args,
             ): p
             for p in pending
         }
@@ -725,10 +1202,12 @@ def main() -> None:
                 if ev.get("status") == "done":
                     processed += 1
                     mix = ev.get("source_mix") or []
+                    n_src = len(mix)
+                    max_sh = max((s.get("weight_share", 0) for s in mix), default=0)
                     top = mix[0]["label"] if mix else "?"
                     _safe_print(
                         f"[{i}/{len(pending)}] {player.full_name} SPI={ev['spi']} "
-                        f"cov={ev['confidence']} src={len(ev.get('sources', []))} top={top}",
+                        f"cov={ev['confidence']} src={n_src} max={max_sh:.0%} top={top}",
                     )
                 else:
                     errors += 1

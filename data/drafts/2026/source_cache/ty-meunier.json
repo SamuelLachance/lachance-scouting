@@ -1,0 +1,10 @@
+{
+  "player": "Ty Meunier",
+  "source_ids": [
+    "wikipedia",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:53:13.915560+00:00"
+}

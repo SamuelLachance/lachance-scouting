@@ -1,0 +1,9 @@
+{
+  "player": "Raphael Achermann",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:49:00.770554+00:00"
+}

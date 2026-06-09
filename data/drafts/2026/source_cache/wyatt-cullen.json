@@ -1,0 +1,15 @@
+{
+  "player": "Wyatt Cullen",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "hockeydb",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:55:54.368393+00:00"
+}

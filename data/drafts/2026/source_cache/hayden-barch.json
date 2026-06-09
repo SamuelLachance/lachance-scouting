@@ -1,0 +1,10 @@
+{
+  "player": "Hayden Barch",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:31:54.370247+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "player": "Ivan Patrikhayev",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:32:51.948002+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "player": "Charlie Morrison",
+  "source_ids": [
+    "hockeydb",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:24:59.792236+00:00"
+}

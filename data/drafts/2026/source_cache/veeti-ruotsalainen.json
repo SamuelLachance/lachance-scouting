@@ -1,0 +1,9 @@
+{
+  "player": "Veeti Ruotsalainen",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:53:35.389250+00:00"
+}

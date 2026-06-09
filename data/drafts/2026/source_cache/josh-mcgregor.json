@@ -1,0 +1,9 @@
+{
+  "player": "Josh McGregor",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:36:48.421094+00:00"
+}

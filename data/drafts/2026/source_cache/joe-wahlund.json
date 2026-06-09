@@ -1,0 +1,9 @@
+{
+  "player": "Joe Wahlund",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:35:16.954969+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "player": "Jimmy Egan",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:35:10.232871+00:00"
+}

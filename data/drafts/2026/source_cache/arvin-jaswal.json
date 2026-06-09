@@ -1,0 +1,30 @@
+{
+  "player": "Arvin Jaswal",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "tsn",
+    "puckpedia",
+    "espn",
+    "flohockey",
+    "nhl_com",
+    "sportsnet",
+    "daily_faceoff",
+    "pronman",
+    "the_athletic",
+    "smaht_scouting",
+    "scott_wheeler",
+    "mckeens",
+    "reddit",
+    "twitter",
+    "hockeydb",
+    "hfboards",
+    "youtube",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:21:37.363803+00:00"
+}

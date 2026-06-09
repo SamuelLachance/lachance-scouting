@@ -1,0 +1,10 @@
+{
+  "player": "Axel Elofsson",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:21:40.401099+00:00"
+}

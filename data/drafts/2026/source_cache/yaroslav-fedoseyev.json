@@ -1,0 +1,10 @@
+{
+  "player": "Yaroslav Fedoseyev",
+  "source_ids": [
+    "wikipedia",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:56:18.354434+00:00"
+}

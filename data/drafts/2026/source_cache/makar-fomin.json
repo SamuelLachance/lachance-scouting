@@ -1,0 +1,9 @@
+{
+  "player": "Makar Fomin",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:41:07.040710+00:00"
+}

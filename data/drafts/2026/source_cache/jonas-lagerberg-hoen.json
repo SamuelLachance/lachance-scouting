@@ -1,0 +1,10 @@
+{
+  "player": "Jonas Lagerberg Hoen",
+  "source_ids": [
+    "hockeydb",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:35:48.577167+00:00"
+}

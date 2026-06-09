@@ -1,0 +1,9 @@
+{
+  "player": "Jonathan Kapageridis",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:36:04.853282+00:00"
+}

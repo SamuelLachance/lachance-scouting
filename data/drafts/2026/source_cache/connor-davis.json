@@ -1,0 +1,27 @@
+{
+  "player": "Connor Davis",
+  "source_ids": [
+    "espn",
+    "nhl_com",
+    "sportsnet",
+    "puckpedia",
+    "tsn",
+    "flohockey",
+    "mckeens",
+    "smaht_scouting",
+    "the_athletic",
+    "scott_wheeler",
+    "pronman",
+    "daily_faceoff",
+    "twitter",
+    "reddit",
+    "youtube",
+    "hfboards",
+    "web_scouting",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:26:08.257423+00:00"
+}

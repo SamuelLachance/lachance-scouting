@@ -1,0 +1,10 @@
+{
+  "player": "Adam Andersson",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:18:09.346485+00:00"
+}

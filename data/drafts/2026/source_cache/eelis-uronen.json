@@ -1,0 +1,31 @@
+{
+  "player": "Eelis Uronen",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "wikipedia",
+    "flohockey",
+    "nhl_com",
+    "puckpedia",
+    "tsn",
+    "espn",
+    "sportsnet",
+    "daily_faceoff",
+    "mckeens",
+    "pronman",
+    "scott_wheeler",
+    "smaht_scouting",
+    "the_athletic",
+    "reddit",
+    "hfboards",
+    "hockeydb",
+    "youtube",
+    "twitter",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:29:13.652176+00:00"
+}

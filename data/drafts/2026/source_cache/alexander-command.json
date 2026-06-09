@@ -1,0 +1,11 @@
+{
+  "player": "Alexander Command",
+  "source_ids": [
+    "hockeydb",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:19:16.916977+00:00"
+}

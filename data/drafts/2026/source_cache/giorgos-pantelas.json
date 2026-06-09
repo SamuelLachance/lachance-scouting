@@ -1,0 +1,10 @@
+{
+  "player": "Giorgos Pantelas",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:31:06.491358+00:00"
+}

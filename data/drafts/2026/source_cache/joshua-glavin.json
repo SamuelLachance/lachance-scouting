@@ -1,0 +1,10 @@
+{
+  "player": "Joshua Glavin",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:36:58.425763+00:00"
+}

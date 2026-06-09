@@ -1,0 +1,10 @@
+{
+  "player": "Marcus Nordmark",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:41:40.004267+00:00"
+}

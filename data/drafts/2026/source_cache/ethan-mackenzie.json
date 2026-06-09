@@ -1,0 +1,10 @@
+{
+  "player": "Ethan MacKenzie",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:30:01.790817+00:00"
+}

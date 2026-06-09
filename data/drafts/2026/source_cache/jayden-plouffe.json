@@ -1,0 +1,9 @@
+{
+  "player": "Jayden Plouffe",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:34:25.675957+00:00"
+}

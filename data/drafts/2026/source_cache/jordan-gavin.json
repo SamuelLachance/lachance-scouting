@@ -1,0 +1,10 @@
+{
+  "player": "Jordan Gavin",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:36:25.031964+00:00"
+}

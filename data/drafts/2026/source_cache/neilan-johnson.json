@@ -1,0 +1,13 @@
+{
+  "player": "Neilan Johnson",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:44:36.897182+00:00"
+}

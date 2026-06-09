@@ -1,0 +1,9 @@
+{
+  "player": "Lauri Sinivuori",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:38:44.132645+00:00"
+}

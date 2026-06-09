@@ -1,0 +1,10 @@
+{
+  "player": "Noah Jenken",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:45:56.072953+00:00"
+}

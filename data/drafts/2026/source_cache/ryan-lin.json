@@ -1,0 +1,32 @@
+{
+  "player": "Ryan Lin",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "flohockey",
+    "tsn",
+    "puckpedia",
+    "sportsnet",
+    "nhl_com",
+    "espn",
+    "daily_faceoff",
+    "pronman",
+    "the_athletic",
+    "mckeens",
+    "smaht_scouting",
+    "scott_wheeler",
+    "reddit",
+    "hockeydb",
+    "twitter",
+    "youtube",
+    "hfboards",
+    "web_scouting",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:50:32.942791+00:00"
+}

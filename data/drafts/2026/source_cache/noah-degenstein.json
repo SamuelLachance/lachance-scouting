@@ -1,0 +1,10 @@
+{
+  "player": "Noah Degenstein",
+  "source_ids": [
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:45:50.864107+00:00"
+}

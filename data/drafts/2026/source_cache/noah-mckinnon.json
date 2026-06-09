@@ -1,0 +1,9 @@
+{
+  "player": "Noah McKinnon",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:46:02.250627+00:00"
+}

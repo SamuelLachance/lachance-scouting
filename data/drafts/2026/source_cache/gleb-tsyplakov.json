@@ -1,0 +1,14 @@
+{
+  "player": "Gleb Tsyplakov",
+  "source_ids": [
+    "dph_report",
+    "dph_strengths",
+    "dph_projection",
+    "dph_tags",
+    "wikipedia",
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:31:20.750135+00:00"
+}

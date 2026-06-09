@@ -1,0 +1,11 @@
+{
+  "player": "Jacob Crawford",
+  "source_ids": [
+    "wikipedia",
+    "rankings_csv",
+    "consensus_rank",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:33:18.584321+00:00"
+}

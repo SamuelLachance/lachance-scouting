@@ -1,0 +1,9 @@
+{
+  "player": "Logan Lutner",
+  "source_ids": [
+    "rankings_csv",
+    "stats_heuristic"
+  ],
+  "attempts": 25,
+  "cached_at": "2026-06-09T15:39:51.346919+00:00"
+}
