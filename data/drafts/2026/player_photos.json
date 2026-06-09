@@ -2,3445 +2,4030 @@
   "mckenna-gavin": {
     "name": "Gavin McKenna",
     "local": "./images/players/2026/mckenna-gavin.jpg",
-    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Gavin_McKenna_2024.11.13.jpg/960px-Gavin_McKenna_2024.11.13.jpg",
-    "generated": false
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/mckenna,-gavin.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 576982
   },
   "reid-chase": {
     "name": "Chase Reid",
-    "local": "./images/players/2026/reid-chase.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/reid-chase.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n25-reid,-chase-(105)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 576955
   },
   "verhoeff-keaton": {
     "name": "Keaton Verhoeff",
-    "local": "./images/players/2026/verhoeff-keaton.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/verhoeff-keaton.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/verhoeff,-keaton.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 878326
   },
   "stenberg-ivar": {
     "name": "Ivar Stenberg",
-    "local": "./images/players/2026/stenberg-ivar.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/stenberg-ivar.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/img_7909.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 689912
   },
   "malhotra-caleb": {
     "name": "Caleb Malhotra",
-    "local": "./images/players/2026/malhotra-caleb.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/malhotra-caleb.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/27-malhotra,-caleb-(84)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628108
   },
   "smits-alberts": {
     "name": "Alberts Smits",
-    "local": "./images/players/2026/smits-alberts.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/smits-alberts.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/albert_smits_jukurit.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876994
   },
   "bernat-lucian": {
     "name": "Lucian Bernat",
-    "local": "./images/players/2026/bernat-lucian.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bernat-lucian.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/e7af9-9764d894-91db-469c-a0e1-2ecada387a8e.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 874079
   },
   "pakarinen-noel": {
     "name": "Noel Pakarinen",
-    "local": "./images/players/2026/pakarinen-noel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/pakarinen-noel.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/fdb7d-9f8af505-c705-4e13-809e-9f94692e6080.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1003492
   },
   "frolo-jakub": {
     "name": "Jakub Frolo",
-    "local": "./images/players/2026/frolo-jakub.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/frolo-jakub.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/b75904c32505e0a0892cc58b9c3c7af4-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 872540
   },
   "sivertson-jonah": {
     "name": "Jonah Sivertson",
-    "local": "./images/players/2026/sivertson-jonah.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sivertson-jonah.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/28---jonah-sivertson-pa-101924-(14).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 883678
   },
   "lemire-kayden": {
     "name": "Kayden Lemire",
-    "local": "./images/players/2026/lemire-kayden.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lemire-kayden.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/20-lemire,-kayden-(44)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 878316
   },
   "andersson-ludvig": {
     "name": "Ludvig Andersson",
-    "local": "./images/players/2026/andersson-ludvig.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/andersson-ludvig.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/311b0-img-3526.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 903911
   },
   "gudmundsson-mans": {
     "name": "Mans Gudmundsson",
-    "local": "./images/players/2026/gudmundsson-mans.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/gudmundsson-mans.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22b57-47d05f0e-b9e6-41b3-a656-66c50c3a7860.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 921852
   },
   "palme-ola": {
     "name": "Ola Palme",
-    "local": "./images/players/2026/palme-ola.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/palme-ola.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/ola_palme.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 925620
   },
   "szongoth-doman": {
     "name": "Doman Szongoth",
-    "local": "./images/players/2026/szongoth-doman.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/szongoth-doman.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/43f97-2d0b522e-42a4-4df8-919e-efbe0864dac3.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 960749
   },
   "hamilton-reese": {
     "name": "Reese Hamilton",
-    "local": "./images/players/2026/hamilton-reese.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "hafele-landon": {
     "name": "Landon Hafele",
-    "local": "./images/players/2026/hafele-landon.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hafele-landon.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/10-hafele,-landon-(75)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 747970
   },
   "kurtz-jayden": {
     "name": "Jayden Kurtz",
-    "local": "./images/players/2026/kurtz-jayden.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kurtz-jayden.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/febaa-0e0703f8-728e-4d2e-8062-c525a348c1ba.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 577149
   },
   "laitinen-jiko": {
     "name": "Jiko Laitinen",
-    "local": "./images/players/2026/laitinen-jiko.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/laitinen-jiko.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/b9345-0881bb3a-5c37-4a8c-a035-c720da93cb54.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 907654
   },
   "lefebvre-liam": {
     "name": "Liam Lefebvre",
-    "local": "./images/players/2026/lefebvre-liam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lefebvre-liam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/2e91c-aae238e9-ba21-4e8c-ad17-cbc3e8bbf06e.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 819472
   },
   "kuehne-lincoln": {
     "name": "Lincoln Kuehne",
-    "local": "./images/players/2026/kuehne-lincoln.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kuehne-lincoln.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/5-kuehne,-lincoln-(33)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 863700
   },
   "vanhanen-matias": {
     "name": "Matias Vanhanen",
-    "local": "./images/players/2026/vanhanen-matias.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vanhanen-matias.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/37-vanhanen,-matias-(47)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 865769
   },
   "sapozhnikov-alexander": {
     "name": "Alexander Sapozhnikov",
-    "local": "./images/players/2026/sapozhnikov-alexander.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sapozhnikov-alexander.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/c1fec-e3049e3b-f3b8-479c-b777-17023be79d5d.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 679565
   },
   "lin-ryan": {
     "name": "Ryan Lin",
-    "local": "./images/players/2026/lin-ryan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lin-ryan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4-lin,-ryan-(82)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628112
   },
   "klimpke-brayden": {
     "name": "Brayden Klimpke",
-    "local": "./images/players/2026/klimpke-brayden.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/klimpke-brayden.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4-klimpke,-brayden-(21)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 795984
   },
   "floris-jakub": {
     "name": "Jakub Floris",
-    "local": "./images/players/2026/floris-jakub.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/floris-jakub.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/42dd1-cea957c1-e882-4f61-8b9b-4b9594fb5fc5.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 873343
   },
   "eriksson-samuel": {
     "name": "Samuel Eriksson",
-    "local": "./images/players/2026/eriksson-samuel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/eriksson-samuel.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8cfb4-1eeda2ad-edc4-451b-8199-b2ac715cb5d4.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 806192
   },
   "lundqvist-william": {
     "name": "William Lundqvist",
-    "local": "./images/players/2026/lundqvist-william.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 862644
   },
   "gastrin-malcom": {
     "name": "Malcom Gastrin",
-    "local": "./images/players/2026/gastrin-malcom.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/gastrin-malcom.png",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/bdc5e-00e3696b-77a5-4d1c-8cf6-9a570ce86d1f.png",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876026
   },
   "josbrant-mans": {
     "name": "Mans Josbrant",
-    "local": "./images/players/2026/josbrant-mans.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/josbrant-mans.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9391d-c96d26bc-37ea-48e3-9222-b5516b4c0e69.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 967828
   },
   "kostov-alex": {
     "name": "Alex Kostov",
-    "local": "./images/players/2026/kostov-alex.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kostov-alex.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n47-kostov,-alex-(21)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 738749
   },
   "wooten-zach": {
     "name": "Zach Wooten",
-    "local": "./images/players/2026/wooten-zach.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/wooten-zach.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n14-wooten,-zach-(32)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 807925
   },
   "kurka-pavel": {
     "name": "Pavel Kurka",
-    "local": "./images/players/2026/kurka-pavel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 975263
   },
   "carell-felix": {
     "name": "Felix Carell",
-    "local": "./images/players/2026/carell-felix.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/carell-felix.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8-carell,-felix-(1)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 756647
   },
   "matyev-yaroslav": {
     "name": "Yaroslav Matyev",
-    "local": "./images/players/2026/matyev-yaroslav.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 836731
   },
   "olsen-zach": {
     "name": "Zach Olsen",
-    "local": "./images/players/2026/olsen-zach.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/olsen-zach.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9-olsen,-zach-(21)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628073
   },
   "joudrey-caelan": {
     "name": "Caelan Joudrey",
-    "local": "./images/players/2026/joudrey-caelan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/joudrey-caelan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/28-joudrey,-caelan-(92)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 880389
   },
   "sparks-tyus": {
     "name": "Tyus Sparks",
-    "local": "./images/players/2026/sparks-tyus.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sparks-tyus.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/5-sparks,-tyus-(4)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628104
   },
   "ambrosio-lucas": {
     "name": "Lucas Ambrosio",
-    "local": "./images/players/2026/ambrosio-lucas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ambrosio-lucas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/73-ambrosio,-lucas-(2)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897478
   },
   "wilmott-benjamin": {
     "name": "Benjamin Wilmott",
-    "local": "./images/players/2026/wilmott-benjamin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/wilmott-benjamin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/ecf37-f2f7c2cf-c24a-42bd-8d03-ce6685a0cc34.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 597776
   },
   "lansard-zachary": {
     "name": "Zachary Lansard",
-    "local": "./images/players/2026/lansard-zachary.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lansard-zachary.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/57---zachary-lansard-reg-120424-(118).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628065
   },
   "piiparinen-juho": {
     "name": "Juho Piiparinen",
-    "local": "./images/players/2026/piiparinen-juho.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/piiparinen-juho.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/juho_piiparinen_tappara.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 925157
   },
   "tuminaro-cole": {
     "name": "Cole Tuminaro",
-    "local": "./images/players/2026/tuminaro-cole.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tuminaro-cole.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n25-tuminaro,-cole-(12)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 785530
   },
   "nicolaysen-henry": {
     "name": "Henry Nicolaysen",
-    "local": "./images/players/2026/nicolaysen-henry.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/nicolaysen-henry.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/b9f79-3d22f78d-6a64-44c3-b927-244b65e1d932.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1010883
   },
   "pantellas-giorgos": {
     "name": "Giorgos Pantellas",
-    "local": "./images/players/2026/pantellas-giorgos.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "gustafsson-malte": {
     "name": "Malte Gustafsson",
-    "local": "./images/players/2026/gustafsson-malte.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/gustafsson-malte.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/malte_gustavsson.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 886275
   },
   "hakansson-william": {
     "name": "William Hakansson",
-    "local": "./images/players/2026/hakansson-william.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hakansson-william.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/19-hakansson,-william--(2)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 689901
   },
   "tarvainen-joel": {
     "name": "Joel Tarvainen",
-    "local": "./images/players/2026/tarvainen-joel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tarvainen-joel.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/1c9c0-e1cd08af-ccee-408c-a8f4-651a26369b93.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1032260
   },
   "heger-kyle": {
     "name": "Kyle Heger",
-    "local": "./images/players/2026/heger-kyle.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/heger-kyle.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_6---kyle-heger-mh-101925-(76).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 855986
   },
   "mclaughlin-will": {
     "name": "Will McLaughlin",
-    "local": "./images/players/2026/mclaughlin-will.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mclaughlin-will.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/24-mclaughlin,-will-(16)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628070
   },
   "ryabykin-elisei": {
     "name": "Elisei Ryabykin",
-    "local": "./images/players/2026/ryabykin-elisei.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "denisov-pavel": {
     "name": "Pavel Denisov",
-    "local": "./images/players/2026/denisov-pavel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/denisov-pavel.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/d477c-40d6ed73-d67f-4bc0-9402-c24d5e4bdb18.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 895811
   },
   "kotkov-matvei": {
     "name": "Matvei Kotkov",
-    "local": "./images/players/2026/kotkov-matvei.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 895862
   },
   "kemps-jonas": {
     "name": "Jonas Kemps",
-    "local": "./images/players/2026/kemps-jonas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kemps-jonas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/10-kemps,-jonas-(59)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 888525
   },
   "kuhta-jasper": {
     "name": "Jasper Kuhta",
-    "local": "./images/players/2026/kuhta-jasper.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kuhta-jasper.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22-kuhta,-jasper-(16)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 872109
   },
   "bryzgalov-yaroslav": {
     "name": "Yaroslav Bryzgalov",
-    "local": "./images/players/2026/bryzgalov-yaroslav.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bryzgalov-yaroslav.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_10---yaroslav-bryzgalov-mh-101925-(46).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 620138
   },
   "morozov-alexander": {
     "name": "Alexander Morozov",
-    "local": "./images/players/2026/morozov-alexander.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/morozov-alexander.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/78188-ab697500-5f50-4dce-9d00-9cec389d0e6d.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 896168
   },
   "karasyov-matvey": {
     "name": "Matvey Karasyov",
-    "local": "./images/players/2026/karasyov-matvey.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 1059738
   },
   "erickson-joseph": {
     "name": "Joseph Erickson",
-    "local": "./images/players/2026/erickson-joseph.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "sauer-kent": {
     "name": "Kent Sauer",
-    "local": "./images/players/2026/sauer-kent.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "bowes-spencer": {
     "name": "Spencer Bowes",
-    "local": "./images/players/2026/bowes-spencer.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bowes-spencer.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/12-bowes,-spencer-(13)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876207
   },
   "burick-sean": {
     "name": "Sean Burick",
-    "local": "./images/players/2026/burick-sean.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/burick-sean.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_4---sean-burick-pen-092025-(20).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617646
   },
   "kulebiakin-oleg": {
     "name": "Oleg Kulebiakin",
-    "local": "./images/players/2026/kulebiakin-oleg.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "stevens-carter": {
     "name": "Carter Stevens",
-    "local": "./images/players/2026/stevens-carter.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/stevens-carter.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/96-stevens,-carter-(111)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876675
   },
   "carels-carson": {
     "name": "Carson Carels",
-    "local": "./images/players/2026/carels-carson.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/carels-carson.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/d2b6f-25b80754-35f4-423b-b4db-c920eeb0bb67.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 878533
   },
   "rudolph-daxon": {
     "name": "Daxon Rudolph",
-    "local": "./images/players/2026/rudolph-daxon.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rudolph-daxon.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/10---daxon-rudolph-pa-101924-(18).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628069
   },
   "sorbrand-william": {
     "name": "William Sorbrand",
-    "local": "./images/players/2026/sorbrand-william.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sorbrand-william.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4322c-ff3d3d92-9e73-451e-8dc4-20b020a1ac7c.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 902079
   },
   "brabenec-jan": {
     "name": "Jan Brabenec",
-    "local": "./images/players/2026/brabenec-jan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/brabenec-jan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/01340-0609a316-d1e6-4a38-8d78-5f460b726d6c.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 902022
   },
   "vuori-atte": {
     "name": "Atte Vuori",
-    "local": "./images/players/2026/vuori-atte.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vuori-atte.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/7052e-168fbb6d-7455-4272-8f89-ba432a9f6b36.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1003493
   },
   "hermansson-elton": {
     "name": "Elton Hermansson",
-    "local": "./images/players/2026/hermansson-elton.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hermansson-elton.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/eltonhermanssonmodo.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 859984
   },
   "trottier-parker": {
     "name": "Parker Trottier",
-    "local": "./images/players/2026/trottier-parker.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/trottier-parker.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dbc46-1877f43b-1d96-4b5a-9cab-2e65084f35be.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 884281
   },
   "bourque-louis-felix": {
     "name": "Louis Felix Bourque",
-    "local": "./images/players/2026/bourque-louis-felix.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bourque-louis-felix.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/91-bourque,-louis-felix-(8)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 619710
   },
   "belchetz-ethan": {
     "name": "Ethan Belchetz",
-    "local": "./images/players/2026/belchetz-ethan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/belchetz-ethan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n61-belchetz,-ethan-(18)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 887868
   },
   "hurlbert-jp": {
     "name": "J.P Hurlbert",
-    "local": "./images/players/2026/hurlbert-jp.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hurlbert-jp.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/hurlnew.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 804140
   },
   "matyuk-artyom": {
     "name": "Artyom Matyuk",
-    "local": "./images/players/2026/matyuk-artyom.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 995534
   },
   "stengrim-kade": {
     "name": "Kade Stengrim",
-    "local": "./images/players/2026/stengrim-kade.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/stengrim-kade.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_21---kade-stengrim-mh-101925-(90).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 962466
   },
   "levac-adam": {
     "name": "Adam Levac",
-    "local": "./images/players/2026/levac-adam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/levac-adam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/10-levac,-adam-(161)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876731
   },
   "royston-wesley": {
     "name": "Wesley Royston",
-    "local": "./images/players/2026/royston-wesley.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/royston-wesley.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/19-royston,-wesley-(93)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 814956
   },
   "villeneuve-xavier": {
     "name": "Xavier Villeneuve",
-    "local": "./images/players/2026/villeneuve-xavier.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/villeneuve-xavier.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/72-villeneuve,-xavier-(36)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 746649
   },
   "morozov-ilia": {
     "name": "Ilia Morozov",
-    "local": "./images/players/2026/morozov-ilia.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/morozov-ilia.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/18-morozov,-ilya-(48)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 895817
   },
   "rogowski-brooks": {
     "name": "Brooks Rogowski",
-    "local": "./images/players/2026/rogowski-brooks.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rogowski-brooks.png",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/42e95-2eacb704-eb77-48f0-8edf-684c895bec64.png",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 915961
   },
   "ruck-liam": {
     "name": "Liam Ruck",
-    "local": "./images/players/2026/ruck-liam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ruck-liam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_12---liam-ruck-mh-101925-(75).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628116
   },
   "ruck-marcus": {
     "name": "Marcus Ruck",
-    "local": "./images/players/2026/ruck-marcus.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ruck-marcus.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_26---markus-ruck-mh-101925-(92).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628113
   },
   "roobroeck-ryan": {
     "name": "Ryan Roobroeck",
-    "local": "./images/players/2026/roobroeck-ryan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/roobroeck-ryan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/25-roobroeck,-ryan-(194)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 577185
   },
   "cullen-wyatt": {
     "name": "Wyatt Cullen",
-    "local": "./images/players/2026/cullen-wyatt.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cullen-wyatt.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/50eda-6e05aae2-84b8-4447-a545-33953452f91a.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 863799
   },
   "karsay-samuel": {
     "name": "Samuel Karsay",
-    "local": "./images/players/2026/karsay-samuel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/karsay-samuel.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/14098-29258c96-ee7f-4be1-bbaa-d5648dd33927.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897794
   },
   "hemming-oscar": {
     "name": "Oscar Hemming",
-    "local": "./images/players/2026/hemming-oscar.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hemming-oscar.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/a93d6-72c1a0cd-ccf1-4e02-890e-e62187d703d2.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 927671
   },
   "suvanto-oliver": {
     "name": "Oliver Suvanto",
-    "local": "./images/players/2026/suvanto-oliver.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/suvanto-oliver.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/38-suvanto,-oliver-(33)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 925061
   },
   "novotony-adam": {
     "name": "Adam Novotony",
-    "local": "./images/players/2026/novotony-adam.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "shilov-yegor": {
     "name": "Yegor Shilov",
-    "local": "./images/players/2026/shilov-yegor.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/shilov-yegor.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22-shilov,-egor-(17)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 985433
   },
   "matveyev-vsevolod": {
     "name": "Vsevolod Matveyev",
-    "local": "./images/players/2026/matveyev-vsevolod.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/matveyev-vsevolod.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/vsevolod-matveyev-2025.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1040199
   },
   "klepov-nikita": {
     "name": "Nikita Klepov",
-    "local": "./images/players/2026/klepov-nikita.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/klepov-nikita.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/98-klepov,-nikita-(58)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 895869
   },
   "dean-dylan": {
     "name": "Dylan Dean",
-    "local": "./images/players/2026/dean-dylan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/dean-dylan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8-dean,-dylan-(8)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 629356
   },
   "preston-mathis": {
     "name": "Mathis Preston",
-    "local": "./images/players/2026/preston-mathis.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/preston-mathis.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/96-preston,-mathis-(58)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628115
   },
   "valentini-adam": {
     "name": "Adam Valentini",
-    "local": "./images/players/2026/valentini-adam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/valentini-adam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/368a7-a1597a0f-1395-47f8-8671-f12e9ba5532a.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628138
   },
   "jakubec-michal": {
     "name": "Michal Jakubec",
-    "local": "./images/players/2026/jakubec-michal.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/jakubec-michal.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/b837f-img-5386.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 958730
   },
   "lawrence-tynan": {
     "name": "Tynan Lawrence",
-    "local": "./images/players/2026/lawrence-tynan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lawrence-tynan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/11-lawrence,-tynan-(22)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617461
   },
   "bjorck-viggo": {
     "name": "Viggo Björck",
-    "local": "./images/players/2026/bjorck-viggo.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bjorck-viggo.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/viggobjorck.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 954359
   },
   "andersson-lukas": {
     "name": "Lukas Andersson",
-    "local": "./images/players/2026/andersson-lukas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/andersson-lukas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/lukas_andersson3.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 881901
   },
   "ivanov-alexander": {
     "name": "Alexander Ivanov",
-    "local": "./images/players/2026/ivanov-alexander.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ivanov-alexander.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/89b9e-c14cfb4a-c903-41f2-948c-128024dcfa64.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 895845
   },
   "bykov-andrei": {
     "name": "Andrei Bykov",
-    "local": "./images/players/2026/bykov-andrei.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 1031314
   },
   "uronen-anttoni": {
     "name": "Anttoni Uronen",
-    "local": "./images/players/2026/uronen-anttoni.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/uronen-anttoni.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9daa8-769ae3e6-581a-4b08-b571-715d858f354a.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 959439
   },
   "nilsson-douglas-lindberg": {
     "name": "Douglas Lindberg Nilsson",
-    "local": "./images/players/2026/nilsson-douglas-lindberg.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/nilsson-douglas-lindberg.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/douglas_nilsson.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 905354
   },
   "tamm-viggo": {
     "name": "Viggo Tamm",
-    "local": "./images/players/2026/tamm-viggo.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tamm-viggo.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/36dbc-c17195d1-56d7-4589-96e5-97d6fd8303e8.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 964660
   },
   "parsons-john": {
     "name": "John Parsons",
-    "local": "./images/players/2026/parsons-john.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/parsons-john.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/30-parsons,-jack-(193)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 722935
   },
   "poletin-frantisek": {
     "name": "Frantisek Poletin",
-    "local": "./images/players/2026/poletin-frantisek.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/poletin-frantisek.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9ab97-4e1f643d-ca11-4c0a-8309-8d6a1b7f2b63.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 956270
   },
   "boettiger-harrison": {
     "name": "Harrison Boettiger",
-    "local": "./images/players/2026/boettiger-harrison.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/boettiger-harrison.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/94ebe-4ad1ced0-84db-48e4-97da-3daa34958871.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 752399
   },
   "fetterolf-ryder": {
     "name": "Ryder Fetterolf",
-    "local": "./images/players/2026/fetterolf-ryder.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/fetterolf-ryder.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/1-fetterolf,-ryder-(87)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617434
   },
   "shurygin-stepan": {
     "name": "Stepan Shurygin",
-    "local": "./images/players/2026/shurygin-stepan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/shurygin-stepan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n63-shurygin,-stepan-(47)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1026865
   },
   "jovanovski-zachary": {
     "name": "Zachary Jovanovski",
-    "local": "./images/players/2026/jovanovski-zachary.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/jovanovski-zachary.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n30-jovanovski,-zachary-(75)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 881931
   },
   "gustafson-jake": {
     "name": "Jake Gustafson",
-    "local": "./images/players/2026/gustafson-jake.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/gustafson-jake.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/27-gustafson,-jake-(80)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 888345
   },
   "sokolovskii-maksim": {
     "name": "Maksim Sokolovskii",
-    "local": "./images/players/2026/sokolovskii-maksim.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sokolovskii-maksim.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n17-sokolovskii,-maksim-(29)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 896007
   },
   "jaswal-arvin": {
     "name": "Arvin Jaswal",
-    "local": "./images/players/2026/jaswal-arvin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/jaswal-arvin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/e32ac-592a4398-6889-4397-b979-fc41919a559f.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897792
   },
   "minchak-matthew": {
     "name": "Matthew Minchak",
-    "local": "./images/players/2026/minchak-matthew.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/minchak-matthew.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8044a-4791cc8d-4cc8-4044-9cb4-98efd2278a1d.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 751459
   },
   "yermolenko-vladislav": {
     "name": "Vladislav Yermolenko",
-    "local": "./images/players/2026/yermolenko-vladislav.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/yermolenko-vladislav.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/2367c-b6436ed5-0b26-4d78-a2c6-417433f50caa.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 995643
   },
   "ainasto-juuso": {
     "name": "Juuso Ainasto",
-    "local": "./images/players/2026/ainasto-juuso.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 925170
   },
   "gammals-william": {
     "name": "William Gammals",
-    "local": "./images/players/2026/gammals-william.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/gammals-william.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/a787a-7894af69-5a5d-4e27-9b1e-9b7db068d3d1.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 892430
   },
   "sedlacek-david": {
     "name": "David Sedlacek",
-    "local": "./images/players/2026/sedlacek-david.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sedlacek-david.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4f162-c1dff6dd-50db-465c-ad23-19996bd0cb25.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 977034
   },
   "frossard-eric": {
     "name": "Eric Frossard",
-    "local": "./images/players/2026/frossard-eric.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/frossard-eric.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/3-frossard,-eric-(52)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897392
   },
   "ivchenko-dmitri": {
     "name": "Dmitri Ivchenko",
-    "local": "./images/players/2026/ivchenko-dmitri.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 896136
   },
   "hrenak-samuel": {
     "name": "Samuel Hrenak",
-    "local": "./images/players/2026/hrenak-samuel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 873736
   },
   "cruitt-cash": {
     "name": "Cash Cruitt",
-    "local": "./images/players/2026/cruitt-cash.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cruitt-cash.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n1-cruitt,-cash-(38)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 629369
   },
   "stengard-gustav": {
     "name": "Gustav Stengard",
-    "local": "./images/players/2026/stengard-gustav.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/stengard-gustav.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9881e-bcb716a9-922c-4ff3-8985-1b18369a4829.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1011384
   },
   "carrithers-luke": {
     "name": "Luke Carrithers",
-    "local": "./images/players/2026/carrithers-luke.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/carrithers-luke.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/1-carrithers,-luke-(95)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 863813
   },
   "tjarnlund-milo": {
     "name": "Milo Tjarnlund",
-    "local": "./images/players/2026/tjarnlund-milo.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tjarnlund-milo.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dacc6-a9f60fca-dcd3-48b5-8a83-7b53cc535825.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 795291
   },
   "henriquez-roberto": {
     "name": "Roberto Henriquez",
-    "local": "./images/players/2026/henriquez-roberto.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/henriquez-roberto.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/6609c-e1979ebe-b877-49bb-8cf0-faadd8e79982.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 873341
   },
   "cameron-ryan": {
     "name": "Ryan Cameron",
-    "local": "./images/players/2026/cameron-ryan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cameron-ryan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n31-cameron,-ryan-(33)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 577161
   },
   "casey-carter": {
     "name": "Carter Casey",
-    "local": "./images/players/2026/casey-carter.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/casey-carter.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_30---carter-casey-mh-101925-(86).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 856651
   },
   "betts-gavin": {
     "name": "Gavin Betts",
-    "local": "./images/players/2026/betts-gavin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/betts-gavin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n43-betts,-gavin-(93)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 890461
   },
   "humphries-matthew": {
     "name": "Matthew Humphries",
-    "local": "./images/players/2026/humphries-matthew.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/humphries-matthew.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/6eeee-359cc9b7-05a1-41db-b605-45ba3dd1c2ce.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628102
   },
   "snell-parker": {
     "name": "Parker Snell",
-    "local": "./images/players/2026/snell-parker.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/snell-parker.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/01f52-3f57a1d2-22c8-43aa-989b-f8c36a708963.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 879195
   },
   "karbainov-matvey": {
     "name": "Matvey Karbainov",
-    "local": "./images/players/2026/karbainov-matvey.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 901294
   },
   "bleyl-thomas": {
     "name": "Thomas Bleyl",
-    "local": "./images/players/2026/bleyl-thomas.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "laatikainen-max": {
     "name": "Max Laatikainen",
-    "local": "./images/players/2026/laatikainen-max.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/laatikainen-max.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/max_laatikainen_kiekko-espoo.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1008854
   },
   "kerkola-patrik": {
     "name": "Patrik Kerkola",
-    "local": "./images/players/2026/kerkola-patrik.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kerkola-patrik.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/31-kerkola,-patrik-(56)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 873019
   },
   "ruzicka-filip": {
     "name": "Filip Růžička",
-    "local": "./images/players/2026/ruzicka-filip.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ruzicka-filip.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/780aa-c6e2dbb2-48b5-47d4-beae-5b513d92a7b6.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 982428
   },
   "sklenicka-marek": {
     "name": "Marek Sklenicka",
-    "local": "./images/players/2026/sklenicka-marek.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sklenicka-marek.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/20157-80e36b17-24cb-4a69-a088-76d449301b01.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 918049
   },
   "tvrznik-tobias": {
     "name": "Tobias Tvrznik",
-    "local": "./images/players/2026/tvrznik-tobias.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tvrznik-tobias.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n31-tvrznik,-tobias-(26)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 690451
   },
   "francisco-aj": {
     "name": "AJ Francisco",
-    "local": "./images/players/2026/francisco-aj.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/francisco-aj.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4-francisco,-a.j-(77)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 629358
   },
   "laylin-bode": {
     "name": "Bode Laylin",
-    "local": "./images/players/2026/laylin-bode.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/laylin-bode.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n4-laylin,-bode-(54)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 796876
   },
   "bogas-nicholas": {
     "name": "Nicholas Bogas",
-    "local": "./images/players/2026/bogas-nicholas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bogas-nicholas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22-bogas,-nick-(10)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 914134
   },
   "vaananen-vilmeri": {
     "name": "Vilmeri Vaananen",
-    "local": "./images/players/2026/vaananen-vilmeri.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vaananen-vilmeri.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/32eca-967c5ff6-4ea0-44d6-9b8a-02b2b305c305.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 977022
   },
   "hrebik-ben": {
     "name": "Ben Hrebik",
-    "local": "./images/players/2026/hrebik-ben.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hrebik-ben.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/60-hrebik,-ben-(57)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 800154
   },
   "schaubel-jason": {
     "name": "Jason Schaubel",
-    "local": "./images/players/2026/schaubel-jason.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/schaubel-jason.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/39-schaubel,-jason-(27)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 947639
   },
   "stebetak-ondrej": {
     "name": "Ondrej Stebetak",
-    "local": "./images/players/2026/stebetak-ondrej.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/stebetak-ondrej.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/stebetak,-ondrej-(2).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 892136
   },
   "wendt-xavier": {
     "name": "Xavier Wendt",
-    "local": "./images/players/2026/wendt-xavier.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/wendt-xavier.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_30---xavier-wendt-tri-112225-(63).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 866524
   },
   "rusakovich-daniil": {
     "name": "Daniil Rusakovich",
-    "local": "./images/players/2026/rusakovich-daniil.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 983798
   },
   "peshkov-gleb": {
     "name": "Gleb Peshkov",
-    "local": "./images/players/2026/peshkov-gleb.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 1052472
   },
   "ivanov-yuri": {
     "name": "Yuri Ivanov",
-    "local": "./images/players/2026/ivanov-yuri.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 1065643
   },
   "kelly-benett": {
     "name": "Benett Kelly",
-    "local": "./images/players/2026/kelly-benett.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kelly-benett.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4-kelly,-bennett-(39)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 879768
   },
   "allard-cameron": {
     "name": "Cameron Allard",
-    "local": "./images/players/2026/allard-cameron.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 883541
   },
   "rolsing-darian": {
     "name": "Darian Rolsing",
-    "local": "./images/players/2026/rolsing-darian.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rolsing-darian.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/60867-2a4110fc-7c96-4ace-97b5-5f20f66ad399.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 810648
   },
   "kamas-jiri": {
     "name": "Jiri Kamas",
-    "local": "./images/players/2026/kamas-jiri.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kamas-jiri.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9d9e5-afcbf80b-1f4c-4d0d-b531-d09aa2ccebba.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 905934
   },
   "taamu-noa": {
     "name": "Noa Taamu",
-    "local": "./images/players/2026/taamu-noa.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/taamu-noa.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/6-ta-amu,-alofa-tunoa-(55)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 746977
   },
   "shaiikov-danai": {
     "name": "Danai Shaiikov",
-    "local": "./images/players/2026/shaiikov-danai.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 896458
   },
   "charvat-sebastian": {
     "name": "Sebastian Charvat",
-    "local": "./images/players/2026/charvat-sebastian.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/charvat-sebastian.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/97328-f515ca39-121c-4d10-9f50-ecd0c80ea268.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 937110
   },
   "rybkin-yegor": {
     "name": "Yegor Rybkin",
-    "local": "./images/players/2026/rybkin-yegor.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rybkin-yegor.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/7f6e6-1169c79d-16b7-49c2-89fe-72e7dbea0d9f.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 836548
   },
   "cilthe-hjalmar": {
     "name": "Hjalmar Cilthe",
-    "local": "./images/players/2026/cilthe-hjalmar.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cilthe-hjalmar.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/18824-e56aa594-f748-45df-855e-8cba91eae4c4.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 907208
   },
   "kultgen-jack": {
     "name": "Jack Kultgen",
-    "local": "./images/players/2026/kultgen-jack.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kultgen-jack.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/13-kultgen,-jack-(18)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 855974
   },
   "marthaler-jackson": {
     "name": "Jackson Marthaler",
-    "local": "./images/players/2026/marthaler-jackson.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/marthaler-jackson.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/5-marthaler,-jackson-(36)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 889475
   },
   "rieber-james": {
     "name": "James Rieber",
-    "local": "./images/players/2026/rieber-james.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "kwajah-jet": {
     "name": "Jet Kwajah",
-    "local": "./images/players/2026/kwajah-jet.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kwajah-jet.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/26-kwajah,-jet-(40)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628097
   },
   "hagglof-john": {
     "name": "John Hagglof",
-    "local": "./images/players/2026/hagglof-john.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hagglof-john.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/07749-8ba77746-de3b-4110-bd94-c5596e9a04d5.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 926710
   },
   "krizizke-lincoln": {
     "name": "Lincoln Krizizke",
-    "local": "./images/players/2026/krizizke-lincoln.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/krizizke-lincoln.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/21-krizizike,-lincoln-(59)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617475
   },
   "soderberg-ludvig": {
     "name": "Ludvig Soderberg",
-    "local": "./images/players/2026/soderberg-ludvig.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/soderberg-ludvig.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/1f3ce-2ffbd8b8-9dee-4876-8cf7-bac1adf1c2da.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 867108
   },
   "tideman-olle": {
     "name": "Olle Tideman",
-    "local": "./images/players/2026/tideman-olle.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tideman-olle.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/cf546-8d97ce27-9a07-4a3d-8afc-094ca63ddcbd.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 922623
   },
   "langvardt-rocky": {
     "name": "Rocky Langvardt",
-    "local": "./images/players/2026/langvardt-rocky.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/langvardt-rocky.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/bb251009bb638.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 871063
   },
   "bratt-zigge": {
     "name": "Zigge Bratt",
-    "local": "./images/players/2026/bratt-zigge.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bratt-zigge.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/zigge_bratt.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 920831
   },
   "lennon-elliot": {
     "name": "Elliot Lennon",
-    "local": "./images/players/2026/lennon-elliot.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lennon-elliot.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/30-lennon,-elliot-(2)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617451
   },
   "johnson-neilan": {
     "name": "Neilan Johnson",
-    "local": "./images/players/2026/johnson-neilan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/johnson-neilan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/33-johnsont,-neilan-(38)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 905957
   },
   "patrikhayev-ivan": {
     "name": "Ivan Patrikhayev",
-    "local": "./images/players/2026/patrikhayev-ivan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 835563
   },
   "cossetteayotte-benjamin": {
     "name": "Benjamin Cossette-Ayotte",
-    "local": "./images/players/2026/cossetteayotte-benjamin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cossetteayotte-benjamin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/vdo_cossetteayottebenjamin_20252026_action_2.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 870116
   },
   "sjostrom-oliwer": {
     "name": "Oliwer Sjöström",
-    "local": "./images/players/2026/sjostrom-oliwer.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sjostrom-oliwer.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/bb250919zz008.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 689899
   },
   "cleaves-cooper": {
     "name": "Cooper Cleaves",
-    "local": "./images/players/2026/cleaves-cooper.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cleaves-cooper.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22-cleaves,-cooper-(35)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 597758
   },
   "rheaumemullen-dakoda": {
     "name": "Dakoda Rhéaume-Mullen",
-    "local": "./images/players/2026/rheaumemullen-dakoda.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rheaumemullen-dakoda.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8106c-6a7e92fe-649d-4d1c-a75a-3df64f8276c8.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 597856
   },
   "uronen-eelis": {
     "name": "Eelis Uronen",
-    "local": "./images/players/2026/uronen-eelis.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/uronen-eelis.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/57fe3-39b4bb0a-e6af-4b87-88f0-6605d2e85ba1.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 959433
   },
   "parkkali-jonne": {
     "name": "Jonne Parkkali",
-    "local": "./images/players/2026/parkkali-jonne.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/parkkali-jonne.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/eff1f-img-3241-(1).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 962887
   },
   "radivojevic-luka": {
     "name": "Luka Radivojevic",
-    "local": "./images/players/2026/radivojevic-luka.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/radivojevic-luka.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/7e633-51e5e603-5a4a-4c8f-93f9-f833358d8fde.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 690461
   },
   "hora-vojtech": {
     "name": "Vojtech Hora",
-    "local": "./images/players/2026/hora-vojtech.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hora-vojtech.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/df7bb-1475e0ff-e4ad-4029-b674-014970f1e1cb.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 918034
   },
   "povarov-mikhail": {
     "name": "Mikhail Povarov",
-    "local": "./images/players/2026/povarov-mikhail.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/povarov-mikhail.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/50-povarov,-mikhail-(53)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 896002
   },
   "nikulshin-nikolai": {
     "name": "Nikolai Nikulshin",
-    "local": "./images/players/2026/nikulshin-nikolai.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 691437
   },
   "selivanov-vladimir": {
     "name": "Vladimir Selivanov",
-    "local": "./images/players/2026/selivanov-vladimir.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 895797
   },
   "karmanov-alexander": {
     "name": "Alexander Karmanov",
-    "local": "./images/players/2026/karmanov-alexander.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/karmanov-alexander.png",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/00448-afe0fe3f-d371-42fb-bd1e-e917c51c2dfc.png",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1077286
   },
   "mondoux-andre": {
     "name": "Andre Mondoux",
-    "local": "./images/players/2026/mondoux-andre.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mondoux-andre.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/25-mondoux,-andre-(19)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 890383
   },
   "robinson-andrew": {
     "name": "Andrew Robinson",
-    "local": "./images/players/2026/robinson-andrew.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/robinson-andrew.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n27-robinson,-andrew-(37)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 906007
   },
   "anisimov-arsenii": {
     "name": "Arsenii Anisimov",
-    "local": "./images/players/2026/anisimov-arsenii.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/anisimov-arsenii.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/24c42-173e838c-6234-494d-b37a-4952ed3ad161.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1071112
   },
   "murnane-brady": {
     "name": "Brady Murnane",
-    "local": "./images/players/2026/murnane-brady.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/murnane-brady.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/3-murnane,-brady-(25)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1004154
   },
   "mcfadden-brian": {
     "name": "Brian McFadden",
-    "local": "./images/players/2026/mcfadden-brian.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mcfadden-brian.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/19-mcfadden,-brian-(18)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1011188
   },
   "wood-cody": {
     "name": "Cody Wood",
-    "local": "./images/players/2026/wood-cody.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/wood-cody.png",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/baef8-a28b82b8-f10c-4dfd-a765-09e20f055964.png",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 978862
   },
   "feeley-colin": {
     "name": "Colin Feeley",
-    "local": "./images/players/2026/feeley-colin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/feeley-colin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n26-feeley,-colin-(70)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 961410
   },
   "allen-dryden": {
     "name": "Dryden Allen",
-    "local": "./images/players/2026/allen-dryden.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/allen-dryden.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n19-allen,-dryden-(4)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 577174
   },
   "arnett-elliot": {
     "name": "Elliot Arnett",
-    "local": "./images/players/2026/arnett-elliot.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/arnett-elliot.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n4-arnett,-elliot-(30)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897523
   },
   "spicer-grady": {
     "name": "Grady Spicer",
-    "local": "./images/players/2026/spicer-grady.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/spicer-grady.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/fb244-e78a1a94-337b-4d97-966b-84dde08ef454.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876666
   },
   "pangretitsch-harris": {
     "name": "Harris Pangretitsch",
-    "local": "./images/players/2026/pangretitsch-harris.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/pangretitsch-harris.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/038fc-0bb4a3d8-cc42-4225-9a67-e37d6de709bb.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 976483
   },
   "aura-hunter": {
     "name": "Hunter Aura",
-    "local": "./images/players/2026/aura-hunter.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/aura-hunter.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/7-aura,-hunter-(1)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 878966
   },
   "vandeven-jacob": {
     "name": "Jacob Vandeven",
-    "local": "./images/players/2026/vandeven-jacob.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vandeven-jacob.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/16-vandeven,-jacob-(51)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897709
   },
   "woo-jonas": {
     "name": "Jonas Woo",
-    "local": "./images/players/2026/woo-jonas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/woo-jonas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/18-woo,-jonas-(13)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 597734
   },
   "brown-julian": {
     "name": "Julian Brown",
-    "local": "./images/players/2026/brown-julian.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/brown-julian.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/5-brown,-julian-(7)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 679515
   },
   "saari-julius": {
     "name": "Julius Saari",
-    "local": "./images/players/2026/saari-julius.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/saari-julius.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n6-saari,-julius-(22)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 864166
   },
   "handsor-justin": {
     "name": "Justin Handsor",
-    "local": "./images/players/2026/handsor-justin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/handsor-justin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/24-handsor,-justin-(17)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 750967
   },
   "laschon-leo": {
     "name": "Leo Laschon",
-    "local": "./images/players/2026/laschon-leo.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/laschon-leo.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/86-laschon,-leo-(64)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 862024
   },
   "man-matyas": {
     "name": "Matyas Man",
-    "local": "./images/players/2026/man-matyas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/man-matyas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8-man,-matyas-(32)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 854386
   },
   "ruml-ondrej": {
     "name": "Ondrej Ruml",
-    "local": "./images/players/2026/ruml-ondrej.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ruml-ondrej.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/13-rumi,-ondrej-(12)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 917727
   },
   "steen-riley": {
     "name": "Riley Steen",
-    "local": "./images/players/2026/steen-riley.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/steen-riley.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_3---riley-steen-mh-101925-(62).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 825455
   },
   "singh-rylan": {
     "name": "Rylan Singh",
-    "local": "./images/players/2026/singh-rylan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/singh-rylan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4-singh,-rylan-(32)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 577218
   },
   "lechner-theodore": {
     "name": "Theodore Lechner",
-    "local": "./images/players/2026/lechner-theodore.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "weiner-jacoby": {
     "name": "Jacoby Weiner",
-    "local": "./images/players/2026/weiner-jacoby.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/weiner-jacoby.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/30-weiner,-jacoby-(28)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617418
   },
   "courchesne-rafael": {
     "name": "Rafael Courchesne",
-    "local": "./images/players/2026/courchesne-rafael.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/courchesne-rafael.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/37-courchesne,-rafael-(58)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 747942
   },
   "smith-kaenan": {
     "name": "Kaenan Smith",
-    "local": "./images/players/2026/smith-kaenan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/smith-kaenan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/39-smith,-kaenan-(23)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 866761
   },
   "taillefer-alexandre": {
     "name": "Alexandre Taillefer",
-    "local": "./images/players/2026/taillefer-alexandre.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/taillefer-alexandre.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/11c17-45872d80-c00f-46a3-819f-84aca994dcaa.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 747957
   },
   "pufr-antonin": {
     "name": "Antonin Pufr",
-    "local": "./images/players/2026/pufr-antonin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/pufr-antonin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/43313-4dc5b36a-b712-4a33-9fdd-cc1781702a76.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 979938
   },
   "ustinkov-daniil": {
     "name": "Daniil Ustinkov",
-    "local": "./images/players/2026/ustinkov-daniil.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ustinkov-daniil.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/28-ustinkov,-danill-(15)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 800542
   },
   "zmrhal-david": {
     "name": "David Zmrhal",
-    "local": "./images/players/2026/zmrhal-david.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 917754
   },
   "doyle-eddie": {
     "name": "Eddie Doyle",
-    "local": "./images/players/2026/doyle-eddie.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/doyle-eddie.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/51-doyle,-eddy-(83)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 806442
   },
   "zajic-lukas": {
     "name": "Lukas Zajic",
-    "local": "./images/players/2026/zajic-lukas.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "myloserdnyy-michel": {
     "name": "Michel Myloserdnyy",
-    "local": "./images/players/2026/myloserdnyy-michel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/myloserdnyy-michel.png",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/e7f6a-1c3139d4-6ff8-4288-b524-50d0a9bc467c.png",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 888967
   },
   "larsen-oliver": {
     "name": "Oliver Larsen",
-    "local": "./images/players/2026/larsen-oliver.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/larsen-oliver.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/13-larsen,-oliver-(13)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 795432
   },
   "thomsson-tim": {
     "name": "Tim Thomsson",
-    "local": "./images/players/2026/thomsson-tim.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/thomsson-tim.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/fc265-c7afa1d1-26be-4ab2-a587-7382ae792516.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 811069
   },
   "cermak-tomas": {
     "name": "Tomas Cermak",
-    "local": "./images/players/2026/cermak-tomas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cermak-tomas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/c2a8a-7d3ffc92-7d9c-4624-b6ca-f172778416aa.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 937102
   },
   "kovalenko-aleksandr": {
     "name": "Aleksandr Kovalenko",
-    "local": "./images/players/2026/kovalenko-aleksandr.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 896554
   },
   "dolgopolov-ilya": {
     "name": "Ilya Dolgopolov",
-    "local": "./images/players/2026/dolgopolov-ilya.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 996498
   },
   "larys-jan": {
     "name": "Jan Larys",
-    "local": "./images/players/2026/larys-jan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/larys-jan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/65-larys,-jan-(34)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 961453
   },
   "somervuori-jere": {
     "name": "Jere Somervuori",
-    "local": "./images/players/2026/somervuori-jere.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/somervuori-jere.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/18-somervuori,-jere-(59)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 872107
   },
   "tuuva-leo": {
     "name": "Leo Tuuva",
-    "local": "./images/players/2026/tuuva-leo.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tuuva-leo.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/23-tuuva,-leo-(10)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 796107
   },
   "khabarov-mikhail": {
     "name": "Mikhail Khabarov",
-    "local": "./images/players/2026/khabarov-mikhail.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 836661
   },
   "kostilainen-sakari": {
     "name": "Sakari Kostilainen",
-    "local": "./images/players/2026/kostilainen-sakari.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kostilainen-sakari.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/sakari_kostilainen_assat.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 618951
   },
   "lacelle-william": {
     "name": "William Lacelle",
-    "local": "./images/players/2026/lacelle-william.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lacelle-william.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/35-lacelle,-william-(165)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 760875
   },
   "odonnell-aiden": {
     "name": "Aiden O'Donnell",
-    "local": "./images/players/2026/odonnell-aiden.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/odonnell-aiden.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22-o-donnell,-aiden-(2)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876318
   },
   "pepoy-brody": {
     "name": "Brody Pepoy",
-    "local": "./images/players/2026/pepoy-brody.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/pepoy-brody.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/62-pepoy,-brody-(7)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 914141
   },
   "duguay-jordan": {
     "name": "Jordan Duguay",
-    "local": "./images/players/2026/duguay-jordan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/duguay-jordan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/6b2ee-dd4d4540-154c-416c-87f9-6b987235a2c5.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 879183
   },
   "varga-kalder": {
     "name": "Kalder Varga",
-    "local": "./images/players/2026/varga-kalder.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/varga-kalder.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_14---kalder-varga-kel-032325-(108).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 914114
   },
   "nomme-adam": {
     "name": "Adam Nomme",
-    "local": "./images/players/2026/nomme-adam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/nomme-adam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/adam_nomme.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 800522
   },
   "kristiansson-alex": {
     "name": "Alex Kristiansson",
-    "local": "./images/players/2026/kristiansson-alex.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kristiansson-alex.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/6b2e6-6e0aa4c9-72b3-4868-bb76-e96fc1e02fe5.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 892432
   },
   "graf-justin": {
     "name": "Justin Graf",
-    "local": "./images/players/2026/graf-justin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/graf-justin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n22-graf,-justin-(22)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 576992
   },
   "danielsson-liam": {
     "name": "Liam Danielsson",
-    "local": "./images/players/2026/danielsson-liam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/danielsson-liam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/23-danielsson,-liam-(4)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 781295
   },
   "larsson-melwin": {
     "name": "Melwin Larsson",
-    "local": "./images/players/2026/larsson-melwin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/larsson-melwin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/bc3e2-2038a6e6-9af3-4f81-b664-63cdd67aeac8.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 869573
   },
   "olsson-oscar": {
     "name": "Oscar Olsson",
-    "local": "./images/players/2026/olsson-oscar.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/olsson-oscar.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/bb_oscarolsson.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 925621
   },
   "orenas-rasmus": {
     "name": "Rasmus Orenas",
-    "local": "./images/players/2026/orenas-rasmus.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/orenas-rasmus.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/e6c75b8b78d11e103521766c546e78b4-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 872217
   },
   "tuzin-tsimafei": {
     "name": "Tsimafei Tuzin",
-    "local": "./images/players/2026/tuzin-tsimafei.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "donia-kaiden": {
     "name": "Kaiden Donia",
-    "local": "./images/players/2026/donia-kaiden.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/donia-kaiden.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/19-donia,-kaiden-(3)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617457
   },
   "simonov-semyon": {
     "name": "Semyon Simonov",
-    "local": "./images/players/2026/simonov-semyon.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 725378
   },
   "berchild-mikey": {
     "name": "Mikey Berchild",
-    "local": "./images/players/2026/berchild-mikey.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/berchild-mikey.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/0a9b6-824f9e39-031e-4a10-9ab4-aefedd1550e8.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 629354
   },
   "hedqvist-isac": {
     "name": "Isac Hedqvist",
-    "local": "./images/players/2026/hedqvist-isac.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hedqvist-isac.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/94a0b-2d1d173c-40d2-4ac1-b446-ea4fc7c570e5.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 534827
   },
   "cowan-bobby": {
     "name": "Bobby Cowan",
-    "local": "./images/players/2026/cowan-bobby.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cowan-bobby.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/c8d86-94b0503b-6b2c-4bc9-afdd-16fa1f47796c.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 720059
   },
   "vermirovsky-david": {
     "name": "David Vermirovsky",
-    "local": "./images/players/2026/vermirovsky-david.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vermirovsky-david.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/ed428-b76c826a-9b70-44b8-bdd2-0da388ddef86.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 982457
   },
   "melanen-jalmari": {
     "name": "Jalmari Melanen",
-    "local": "./images/players/2026/melanen-jalmari.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/melanen-jalmari.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/737c1-df0eea41-19a7-4781-b07e-422af5823e08.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 907664
   },
   "juntunen-oiva": {
     "name": "Oiva Juntunen",
-    "local": "./images/players/2026/juntunen-oiva.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/juntunen-oiva.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/aa266-cee39df2-ceca-43f8-9471-96d6d80c218e.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 924653
   },
   "wahlroos-olli": {
     "name": "Olli Wahlroos",
-    "local": "./images/players/2026/wahlroos-olli.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/wahlroos-olli.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/olli_wahlroos.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 944589
   },
   "rasanen-veeti": {
     "name": "Veeti Rasanen",
-    "local": "./images/players/2026/rasanen-veeti.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rasanen-veeti.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/29-rasanen,-veeti-(7)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 689035
   },
   "kallio-wilmer": {
     "name": "Wilmer Kallio",
-    "local": "./images/players/2026/kallio-wilmer.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kallio-wilmer.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/wilmer_kallio.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 944586
   },
   "raymond-alexandre": {
     "name": "Alexandre Raymond",
-    "local": "./images/players/2026/raymond-alexandre.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/raymond-alexandre.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/33-raymond,-alexandre-(16)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 694743
   },
   "celko-denis": {
     "name": "Denis Celko",
-    "local": "./images/players/2026/celko-denis.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 988441
   },
   "corovic-maksim": {
     "name": "Maksim Corovic",
-    "local": "./images/players/2026/corovic-maksim.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/corovic-maksim.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/35-corovic,-maksim-(24)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 888129
   },
   "psohlavec-martin": {
     "name": "Martin Psohlavec",
-    "local": "./images/players/2026/psohlavec-martin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/psohlavec-martin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/68a388d219b73cac63999070b971ac9c-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 878982
   },
   "plumins-patriks": {
     "name": "Patriks Plumins",
-    "local": "./images/players/2026/plumins-patriks.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/plumins-patriks.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/1abe1-3e6a5456-fa79-4145-aba9-671de9c1b3d0.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 999861
   },
   "juustovaara-casper": {
     "name": "Casper Juustovaara",
-    "local": "./images/players/2026/juustovaara-casper.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "paul-douglas": {
     "name": "Douglas Paul",
-    "local": "./images/players/2026/paul-douglas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/paul-douglas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/03d44-2fabb45c-e6d2-4bc8-92f1-c344d299c6b8.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 919780
   },
   "stuart-logan": {
     "name": "Logan Stuart",
-    "local": "./images/players/2026/stuart-logan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/stuart-logan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/27-stuart,-logan-(43)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617642
   },
   "zemlicka-richard": {
     "name": "Richard Zemlicka",
-    "local": "./images/players/2026/zemlicka-richard.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/zemlicka-richard.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/16-zemlicka,-richard-(30)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 864704
   },
   "fortin-alexis": {
     "name": "Alexis Fortin",
-    "local": "./images/players/2026/fortin-alexis.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/fortin-alexis.webp",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/ae928-24655e1c-9874-4faf-b916-36f6835a029a.webp",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 772967
   },
   "voiaga-nikita": {
     "name": "Nikita Voiaga",
-    "local": "./images/players/2026/voiaga-nikita.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "szarowski-ondrej": {
     "name": "Ondrej Szarowski",
-    "local": "./images/players/2026/szarowski-ondrej.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/szarowski-ondrej.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/1067f-04f45257-58bc-4ee5-aecf-80f03f33d4cc.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 945024
   },
   "cernak-roderik": {
     "name": "Roderik Cernak",
-    "local": "./images/players/2026/cernak-roderik.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cernak-roderik.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/c7d1b-img-0131.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 958706
   },
   "langlois-tristan": {
     "name": "Tristan Langlois",
-    "local": "./images/players/2026/langlois-tristan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/langlois-tristan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/98-langlois,-tristan-(25)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 755216
   },
   "cerny-vojtech": {
     "name": "Vojtech Cerny",
-    "local": "./images/players/2026/cerny-vojtech.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cerny-vojtech.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/08c3e-img-6816.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 980642
   },
   "young-aiden": {
     "name": "Aiden Young",
-    "local": "./images/players/2026/young-aiden.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/young-aiden.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n26-young,-aidan-(118)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 881073
   },
   "sarkenov-alisher": {
     "name": "Alisher Sarkenov",
-    "local": "./images/players/2026/sarkenov-alisher.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sarkenov-alisher.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/screenshot_20260125_122531_samsung-internet.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1014823
   },
   "souch-brock": {
     "name": "Brock Souch",
-    "local": "./images/players/2026/souch-brock.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/souch-brock.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/44-souch,-brock-(6)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 597833
   },
   "bidgood-cohen": {
     "name": "Cohen Bidgood",
-    "local": "./images/players/2026/bidgood-cohen.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bidgood-cohen.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/34-bidgood,-cohen-(75)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 752678
   },
   "pavao-cruz": {
     "name": "Cruz Pavao",
-    "local": "./images/players/2026/pavao-cruz.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/pavao-cruz.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9-pavao,-cruz-(39)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 879129
   },
   "anderson-darian": {
     "name": "Darian Anderson",
-    "local": "./images/players/2026/anderson-darian.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/anderson-darian.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22-anderson,-darian-(70)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 807163
   },
   "lesiuk-gavin": {
     "name": "Gavin Lesiuk",
-    "local": "./images/players/2026/lesiuk-gavin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lesiuk-gavin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_27---gavin-lesiuk-let-111925-(12).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628114
   },
   "shybinskyi-illia": {
     "name": "Illia Shybinskyi",
-    "local": "./images/players/2026/shybinskyi-illia.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/shybinskyi-illia.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n81-shybinskyi,-ilya-(24)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1047567
   },
   "baumuller-joby": {
     "name": "Joby Baumuller",
-    "local": "./images/players/2026/baumuller-joby.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/baumuller-joby.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/17---joby-baumuller-bwk-011925-(33).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 820042
   },
   "iginla-joe": {
     "name": "Joe Iginla",
-    "local": "./images/players/2026/iginla-joe.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/iginla-joe.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/7f99c-85bd90a0-5f77-4396-98b0-e8129ae23b1b.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 875968
   },
   "salandra-joseph": {
     "name": "Joseph Salandra",
-    "local": "./images/players/2026/salandra-joseph.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/salandra-joseph.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/18-salandra,-joseph-(26)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617407
   },
   "evaschesen-josh": {
     "name": "Josh Evaschesen",
-    "local": "./images/players/2026/evaschesen-josh.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/evaschesen-josh.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/kamloops_23.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 725365
   },
   "maze-julien": {
     "name": "Julien Maze",
-    "local": "./images/players/2026/maze-julien.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/maze-julien.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/21---julien-maze-reg-120424-(47).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 742508
   },
   "kolarik-leon": {
     "name": "Leon Kolarik",
-    "local": "./images/players/2026/kolarik-leon.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kolarik-leon.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/12-kolarik,-leon-(81)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 745961
   },
   "amidovski-nathan": {
     "name": "Nathan Amidovski",
-    "local": "./images/players/2026/amidovski-nathan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/amidovski-nathan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n26-amidovski,-nathan-(39)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 942118
   },
   "brown-nathan": {
     "name": "Nathan Brown",
-    "local": "./images/players/2026/brown-nathan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/brown-nathan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n28-brown,-nathan-(60)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 724534
   },
   "stewart-nolan": {
     "name": "Nolan Stewart",
-    "local": "./images/players/2026/stewart-nolan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/stewart-nolan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/17-stewart,-nolan-(14)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 881357
   },
   "henderson-rowan": {
     "name": "Rowan Henderson",
-    "local": "./images/players/2026/henderson-rowan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/henderson-rowan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/77-henderson,-rowan-(143)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 881032
   },
   "brown-ryan": {
     "name": "Ryan Brown",
-    "local": "./images/players/2026/brown-ryan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/brown-ryan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n43-brown,-ryan-(11)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897588
   },
   "dingman-sawyer": {
     "name": "Sawyer Dingman",
-    "local": "./images/players/2026/dingman-sawyer.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/dingman-sawyer.png",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/image-(4).png",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 879184
   },
   "tomik-tobias": {
     "name": "Tobias Tomik",
-    "local": "./images/players/2026/tomik-tobias.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tomik-tobias.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/13-tomik,-tobias-(7)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 873403
   },
   "cameron-weston": {
     "name": "Weston Cameron",
-    "local": "./images/players/2026/cameron-weston.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cameron-weston.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/17-cameron,-weston-(37)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628090
   },
   "kalimullin-adel": {
     "name": "Adel Kalimullin",
-    "local": "./images/players/2026/kalimullin-adel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 896183
   },
   "tsyplakov-gleb": {
     "name": "Gleb Tsyplakov",
-    "local": "./images/players/2026/tsyplakov-gleb.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 1051640
   },
   "gromakov-nikita": {
     "name": "Nikita Gromakov",
-    "local": "./images/players/2026/gromakov-nikita.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 895820
   },
   "melnikov-yan": {
     "name": "Yan Melnikov",
-    "local": "./images/players/2026/melnikov-yan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/melnikov-yan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/52-melnikov,-ian-(13)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 836676
   },
   "kuzma-cameron": {
     "name": "Cameron Kuzma",
-    "local": "./images/players/2026/kuzma-cameron.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kuzma-cameron.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n40-kuzma,-cameron-(46)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 891524
   },
   "soller-cooper": {
     "name": "Cooper Soller",
-    "local": "./images/players/2026/soller-cooper.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/soller-cooper.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/14-soller,-cooper-(68)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617640
   },
   "torr-jack": {
     "name": "Jack Torr",
-    "local": "./images/players/2026/torr-jack.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/torr-jack.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/28-torr,-jack-(27)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 763039
   },
   "hemstrom-kalle": {
     "name": "Kalle Hemstrom",
-    "local": "./images/players/2026/hemstrom-kalle.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hemstrom-kalle.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/b80fb-ac83e6b8-171a-4ec7-b702-13967202d183.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 856708
   },
   "kim-mikael": {
     "name": "Mikael Kim",
-    "local": "./images/players/2026/kim-mikael.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kim-mikael.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dbe8f-d8acfde2-3e07-4993-891a-a2d086232aa0.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 946883
   },
   "carpenhammar-milton": {
     "name": "Milton Carpenhammar",
-    "local": "./images/players/2026/carpenhammar-milton.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/carpenhammar-milton.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4a524-79adc535-02ba-4e06-829a-41f9e9edd50e.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 799224
   },
   "tomko-william": {
     "name": "William Tomko",
-    "local": "./images/players/2026/tomko-william.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/tomko-william.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n28-tomko,-william-(12)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 764509
   },
   "ilyin-arseni": {
     "name": "Arseni Ilyin",
-    "local": "./images/players/2026/ilyin-arseni.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 836583
   },
   "kulagin-artemy": {
     "name": "Artemy Kulagin",
-    "local": "./images/players/2026/kulagin-artemy.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 985432
   },
   "nikolayev-grigori": {
     "name": "Grigori Nikolayev",
-    "local": "./images/players/2026/nikolayev-grigori.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 895953
   },
   "buzaev-kirill": {
     "name": "Kirill Buzaev",
-    "local": "./images/players/2026/buzaev-kirill.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "sidorov-pavel": {
     "name": "Pavel Sidorov",
-    "local": "./images/players/2026/sidorov-pavel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 1076775
   },
   "varosyan-rafik": {
     "name": "Rafik Varosyan",
-    "local": "./images/players/2026/varosyan-rafik.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/varosyan-rafik.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/65665062abb84430d0f61f80f58b0f63-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 901409
   },
   "ivantsov-yaroslav": {
     "name": "Yaroslav Ivantsov",
-    "local": "./images/players/2026/ivantsov-yaroslav.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 1017867
   },
   "ryan-caton": {
     "name": "Caton Ryan",
-    "local": "./images/players/2026/ryan-caton.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ryan-caton.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/12-ryan,-caton-(37)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 716342
   },
   "parssinen-jesse": {
     "name": "Jesse Parssinen",
-    "local": "./images/players/2026/parssinen-jesse.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/parssinen-jesse.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/jesse_parssinen_tps-2.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 925310
   },
   "galanek-john": {
     "name": "John Galanek",
-    "local": "./images/players/2026/galanek-john.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "vatjus-miko": {
     "name": "Miko Vatjus",
-    "local": "./images/players/2026/vatjus-miko.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vatjus-miko.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8a54b-img-9683.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 962238
   },
   "keltikangas-onni": {
     "name": "Onni Keltikangas",
-    "local": "./images/players/2026/keltikangas-onni.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/keltikangas-onni.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/e0c5c-2bea494d-3b02-4787-bc29-880429fdf935.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 689930
   },
   "dumont-dylan": {
     "name": "Dylan Dumont",
-    "local": "./images/players/2026/dumont-dylan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/dumont-dylan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/10-dumont,-dylan-(52)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 702284
   },
   "houle-florent": {
     "name": "Florent Houle",
-    "local": "./images/players/2026/houle-florent.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/houle-florent.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/26-houle,-florent-(59)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 763056
   },
   "holejsovsky-josef": {
     "name": "Josef Holejsovsky",
-    "local": "./images/players/2026/holejsovsky-josef.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/holejsovsky-josef.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/a6b07-img-2974.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 927841
   },
   "kubiesa-matej": {
     "name": "Matej Kubiesa",
-    "local": "./images/players/2026/kubiesa-matej.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kubiesa-matej.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/11-kubiesa,-matej-(16)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 619071
   },
   "ovcharov-nikita": {
     "name": "Nikita Ovcharov",
-    "local": "./images/players/2026/ovcharov-nikita.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ovcharov-nikita.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n25-ovcharov,-nikita-(279)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 895819
   },
   "litalien-romain": {
     "name": "Romain L'Italien",
-    "local": "./images/players/2026/litalien-romain.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/litalien-romain.webp",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/c1ec9-57977267-9e10-418c-947a-f71d8d9d3b64.webp",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 874832
   },
   "mclean-alex": {
     "name": "Alex McLean",
-    "local": "./images/players/2026/mclean-alex.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mclean-alex.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n19-mclean,-alex-(297)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628100
   },
   "molgachev-andrei": {
     "name": "Andrei Molgachev",
-    "local": "./images/players/2026/molgachev-andrei.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "neill-andrew": {
     "name": "Andrew Neill",
-    "local": "./images/players/2026/neill-andrew.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "olson-brett": {
     "name": "Brett Olson",
-    "local": "./images/players/2026/olson-brett.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/olson-brett.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/23-olson,-brett-(9)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628074
   },
   "gillespie-brody": {
     "name": "Brody Gillespie",
-    "local": "./images/players/2026/gillespie-brody.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/gillespie-brody.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dddf7-e15d6a02-0813-41ff-b0d7-ac7c43e07d27.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 881399
   },
   "harvey-caden": {
     "name": "Caden Harvey",
-    "local": "./images/players/2026/harvey-caden.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/harvey-caden.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n11-harvey,-caden-(25)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617422
   },
   "klassen-cohen": {
     "name": "Cohen Klassen",
-    "local": "./images/players/2026/klassen-cohen.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/klassen-cohen.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/37---cohen-klassen-reg-120424-(10).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 880384
   },
   "yakutsenak-dmitri": {
     "name": "Dmitri Yakutsenak",
-    "local": "./images/players/2026/yakutsenak-dmitri.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/yakutsenak-dmitri.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/ccb1d-10f4249b-54e9-4582-b658-33546fb12893.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 836560
   },
   "mccann-kadon": {
     "name": "Kadon McCann",
-    "local": "./images/players/2026/mccann-kadon.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mccann-kadon.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dw_5---kadon-mccann-mh-101925-(45).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 799967
   },
   "sawchyn-lukas": {
     "name": "Lukas Sawchyn",
-    "local": "./images/players/2026/sawchyn-lukas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sawchyn-lukas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/ee5e0-d383fa7d-40d6-4dc4-8cc4-72f169df1cac.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 785511
   },
   "brown-reed": {
     "name": "Reed Brown",
-    "local": "./images/players/2026/brown-reed.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/brown-reed.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/27-brown,-reed-(2)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 898661
   },
   "kuryachenkov-stepan": {
     "name": "Stepan Kuryachenkov",
-    "local": "./images/players/2026/kuryachenkov-stepan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kuryachenkov-stepan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/29eb2-de4d0449-0aa9-487a-953a-175b239d49c8.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 983973
   },
   "sysoyev-danil": {
     "name": "Danil Sysoyev",
-    "local": "./images/players/2026/sysoyev-danil.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 901363
   },
   "laman-roman": {
     "name": "Roman Laman",
-    "local": "./images/players/2026/laman-roman.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/laman-roman.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/d789a-2544628c-b1f4-4060-9d1b-b0bc8f9b4996.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 983923
   },
   "sturgis-ethan": {
     "name": "Ethan Sturgis",
-    "local": "./images/players/2026/sturgis-ethan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sturgis-ethan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/12-sturgis,-ethan-(37)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 882603
   },
   "munger-tim": {
     "name": "Tim Munger",
-    "local": "./images/players/2026/munger-tim.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/munger-tim.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8c8f2-5670d1f8-1110-4185-b9a2-3231ec9df97b.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1031659
   },
   "manchuso-william": {
     "name": "William Manchuso",
-    "local": "./images/players/2026/manchuso-william.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/manchuso-william.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/14-manchuso,-william-(21)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1050343
   },
   "puglisi-charlie": {
     "name": "Charlie Puglisi",
-    "local": "./images/players/2026/puglisi-charlie.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/puglisi-charlie.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/charliep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617416
   },
   "rozzi-dylan": {
     "name": "Dylan Rozzi",
-    "local": "./images/players/2026/rozzi-dylan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rozzi-dylan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8-rozzi,-dylan-(42)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 760882
   },
   "ricard-emile": {
     "name": "Emile Ricard",
-    "local": "./images/players/2026/ricard-emile.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ricard-emile.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/11-ricard,-emile-(33)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 825913
   },
   "sutter-kimi": {
     "name": "Kimi Sutter",
-    "local": "./images/players/2026/sutter-kimi.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sutter-kimi.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/61d75-b1351cf0-d442-4ca2-87d4-8d2240612d5b.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 937151
   },
   "korneyev-kornei": {
     "name": "Kornei Korneyev",
-    "local": "./images/players/2026/korneyev-kornei.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/korneyev-kornei.webp",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/f25f4-dccfb0e1-de69-42aa-a128-7c65eea4c8ac.webp",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 1051652
   },
   "ondrejcak-michal": {
     "name": "Michal Ondrejcak",
-    "local": "./images/players/2026/ondrejcak-michal.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/ondrejcak-michal.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/2b73a-95addc2c-5aee-46b5-9481-016695559d34.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876844
   },
   "carrier-shawn": {
     "name": "Shawn Carrier",
-    "local": "./images/players/2026/carrier-shawn.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/carrier-shawn.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/4df69-ac653cf1-eed1-41e1-a1ed-a61a9414debe.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 733444
   },
   "svancar-vojtech": {
     "name": "Vojtech Svancar",
-    "local": "./images/players/2026/svancar-vojtech.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/svancar-vojtech.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/a43de91193c85d5be598719461376639-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 977170
   },
   "arkhipov-ivan": {
     "name": "Ivan Arkhipov",
-    "local": "./images/players/2026/arkhipov-ivan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 901271
   },
   "bouvard-fabrice": {
     "name": "Fabrice Bouvard",
-    "local": "./images/players/2026/bouvard-fabrice.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bouvard-fabrice.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/0fd54-a7a975eb-dca7-460a-90b5-29afca353af4.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 956919
   },
   "walters-daniel": {
     "name": "Daniel Walters",
-    "local": "./images/players/2026/walters-daniel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/walters-daniel.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/20-walters,-daniel-(4)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876330
   },
   "allie-dylan": {
     "name": "Dylan Allie",
-    "local": "./images/players/2026/allie-dylan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/allie-dylan.png",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9ded6-d1a03781-e45c-4e67-94d9-c36eb9140541.png",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 806153
   },
   "rousseau-tomas": {
     "name": "Tomas Rousseau",
-    "local": "./images/players/2026/rousseau-tomas.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "borin-boris": {
     "name": "Boris Borin",
-    "local": "./images/players/2026/borin-boris.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 983692
   },
   "vlasov-alexei": {
     "name": "Alexei Vlasov",
-    "local": "./images/players/2026/vlasov-alexei.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vlasov-alexei.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/17-vlasov,-aleksei-(14)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 896017
   },
   "boychuk-riley": {
     "name": "Riley Boychuk",
-    "local": "./images/players/2026/boychuk-riley.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/boychuk-riley.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/23---riley-boychuk-pa-101924-(14).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 880390
   },
   "matta-ivan": {
     "name": "Ivan Matta",
-    "local": "./images/players/2026/matta-ivan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/matta-ivan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/b507ed5d062eb07632d33931b9afe4df-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 875244
   },
   "cyr-simonxavier": {
     "name": "Simon-Xavier Cyr",
-    "local": "./images/players/2026/cyr-simonxavier.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/cyr-simonxavier.png",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/5f0bc-e07174c1-85f3-4dce-9c6b-4cc8df703a0d.png",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 886092
   },
   "kubin-vojtech": {
     "name": "Vojtech Kubin",
-    "local": "./images/players/2026/kubin-vojtech.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kubin-vojtech.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/0158027c738fe28517283f0ab1c3aa30-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 917730
   },
   "yared-william": {
     "name": "William Yared",
-    "local": "./images/players/2026/yared-william.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/yared-william.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n22-yared,-william-(52)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 760881
   },
   "veilleux-philippe": {
     "name": "Philippe Veilleux",
-    "local": "./images/players/2026/veilleux-philippe.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/veilleux-philippe.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/c5a15-4f2b6171-9f23-406b-8b6d-957efed076c5.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 805224
   },
   "bumgarner-cole": {
     "name": "Cole Bumgarner",
-    "local": "./images/players/2026/bumgarner-cole.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "edmonstone-logan": {
     "name": "Logan Edmonstone",
-    "local": "./images/players/2026/edmonstone-logan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "vanninen-aapo": {
     "name": "Aapo Vanninen",
-    "local": "./images/players/2026/vanninen-aapo.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "obobaifo-aaron": {
     "name": "Aaron Obobaifo",
-    "local": "./images/players/2026/obobaifo-aaron.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "andersson-adam": {
     "name": "Adam Andersson",
-    "local": "./images/players/2026/andersson-adam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/andersson-adam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/77924-20948e20-a89f-40cb-8497-9eda811a399e.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 879786
   },
   "goljer-adam": {
     "name": "Adam Goljer",
-    "local": "./images/players/2026/goljer-adam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/goljer-adam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/21-goljer,-adam-(26)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 879380
   },
   "nemec-adam": {
     "name": "Adam Nemec",
-    "local": "./images/players/2026/nemec-adam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/nemec-adam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22-nemec,-adam-(115)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 752383
   },
   "shaikhlislamov-alan": {
     "name": "Alan Shaikhlislamov",
-    "local": "./images/players/2026/shaikhlislamov-alan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 896181
   },
   "laksonen-albin": {
     "name": "Albin Laksonen",
-    "local": "./images/players/2026/laksonen-albin.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "di-iorio-alessandro": {
     "name": "Alessandro Di Iorio",
-    "local": "./images/players/2026/di-iorio-alessandro.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/di-iorio-alessandro.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/6441e-d22e5f0f-847f-42b9-9c89-e031511ebaf2.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628142
   },
   "misiak-alex": {
     "name": "Alex Misiak",
-    "local": "./images/players/2026/misiak-alex.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "zalesak-alex": {
     "name": "Alex Zalesak",
-    "local": "./images/players/2026/zalesak-alex.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "bilecki-alexander": {
     "name": "Alexander Bilecki",
-    "local": "./images/players/2026/bilecki-alexander.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bilecki-alexander.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/89-bilecki,-alexander-(110)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897430
   },
   "command-alexander": {
     "name": "Alexander Command",
-    "local": "./images/players/2026/command-alexander.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/command-alexander.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/1374f-1b6acc18-a17c-4d2e-9fa8-23ab8d28d346.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617634
   },
   "carbonneau-alexandre": {
     "name": "Alexandre Carbonneau",
-    "local": "./images/players/2026/carbonneau-alexandre.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "gosselin-alonso": {
     "name": "Alonso Gosselin",
-    "local": "./images/players/2026/gosselin-alonso.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "ervasti-alvar": {
     "name": "Alvar Ervasti",
-    "local": "./images/players/2026/ervasti-alvar.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "straka-andreas": {
     "name": "Andreas Straka",
-    "local": "./images/players/2026/straka-andreas.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "zavadsky-andrei": {
     "name": "Andrei Zavadsky",
-    "local": "./images/players/2026/zavadsky-andrei.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "valila-arttu": {
     "name": "Arttu Välilä",
-    "local": "./images/players/2026/valila-arttu.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "vilchinsky-artyom": {
     "name": "Artyom Vilchinsky",
-    "local": "./images/players/2026/vilchinsky-artyom.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "johansson-arvid": {
     "name": "Arvid Johansson",
-    "local": "./images/players/2026/johansson-arvid.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "sarkenov-asanali": {
     "name": "Asanali Sarkenov",
-    "local": "./images/players/2026/sarkenov-asanali.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "brongellarsson-axel": {
     "name": "Axel Brongel-Larsson",
-    "local": "./images/players/2026/brongellarsson-axel.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "elofsson-axel": {
     "name": "Axel Elofsson",
-    "local": "./images/players/2026/elofsson-axel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/elofsson-axel.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8a2c1-2b41d265-4c4d-4dba-b2be-fd8a885b789d.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876777
   },
   "edwards-beckham": {
     "name": "Beckham Edwards",
-    "local": "./images/players/2026/edwards-beckham.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/edwards-beckham.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/18-edwards,-beckham-(20)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628089
   },
   "arrowsmith-blake": {
     "name": "Blake Arrowsmith",
-    "local": "./images/players/2026/arrowsmith-blake.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "zielinski-blake": {
     "name": "Blake Zielinski",
-    "local": "./images/players/2026/zielinski-blake.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/zielinski-blake.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/10-zielinski,-blake-(7)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 783135
   },
   "pestretsov-bogdan": {
     "name": "Bogdan Pestretsov",
-    "local": "./images/players/2026/pestretsov-bogdan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "smith-brady": {
     "name": "Brady Smith",
-    "local": "./images/players/2026/smith-brady.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/smith-brady.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n77-smith,-brady-(11)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 916558
   },
   "wassilyn-braidy": {
     "name": "Braidy Wassilyn",
-    "local": "./images/players/2026/wassilyn-braidy.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/wassilyn-braidy.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n66-wassilyn,-braidy-(12)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 916546
   },
   "liske-brek": {
     "name": "Brek Liske",
-    "local": "./images/players/2026/liske-brek.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/liske-brek.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n42-liske,-brek-(109)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 577135
   },
   "cullen-brooks": {
     "name": "Brooks Cullen",
-    "local": "./images/players/2026/cullen-brooks.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "osmanis-bruno": {
     "name": "Bruno Osmanis",
-    "local": "./images/players/2026/osmanis-bruno.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/osmanis-bruno.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/2d5a480c28f5ea70ee753cea38e46cbc.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 695039
   },
   "taylor-caden": {
     "name": "Caden Taylor",
-    "local": "./images/players/2026/taylor-caden.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "joudrey-caelen": {
     "name": "Caelen Joudrey",
-    "local": "./images/players/2026/joudrey-caelen.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/joudrey-caelen.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/28-joudrey,-caelan-(92)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 880389
   },
   "matthews-caleb": {
     "name": "Caleb Matthews",
-    "local": "./images/players/2026/matthews-caleb.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "croskery-callum": {
     "name": "Callum Croskery",
-    "local": "./images/players/2026/croskery-callum.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/croskery-callum.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n14-croskery,-callum-(287)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628088
   },
   "aucoin-cameron": {
     "name": "Cameron Aucoin",
-    "local": "./images/players/2026/aucoin-cameron.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "chartrand-cameron": {
     "name": "Cameron Chartrand",
-    "local": "./images/players/2026/chartrand-cameron.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/chartrand-cameron.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/ed2f6-7f6dc3d4-5a85-4ef6-80b9-c58879728b8d.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 877117
   },
   "magnusson-carl-otto": {
     "name": "Carl Otto Magnusson",
-    "local": "./images/players/2026/magnusson-carl-otto.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/magnusson-carl-otto.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/6-magnusson,-carl-otto-(82)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 723525
   },
   "cameron-carson": {
     "name": "Carson Cameron",
-    "local": "./images/players/2026/cameron-carson.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "hicks-carter": {
     "name": "Carter Hicks",
-    "local": "./images/players/2026/hicks-carter.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hicks-carter.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n58-hicks,-carter-(78)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 897401
   },
   "mutryn-casey": {
     "name": "Casey Mutryn",
-    "local": "./images/players/2026/mutryn-casey.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mutryn-casey.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/12-mutryn,-casey-(24)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 893597
   },
   "koch-cash": {
     "name": "Cash Koch",
-    "local": "./images/players/2026/koch-cash.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "morrison-charlie": {
     "name": "Charlie Morrison",
-    "local": "./images/players/2026/morrison-charlie.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/morrison-charlie.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n27-morrison,-charlie-(228)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 745779
   },
   "harrington-chase": {
     "name": "Chase Harrington",
-    "local": "./images/players/2026/harrington-chase.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/harrington-chase.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/26-harrington,-chase-(87)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 804748
   },
   "temple-cole": {
     "name": "Cole Temple",
-    "local": "./images/players/2026/temple-cole.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "zurawski-cole": {
     "name": "Cole Zurawski",
-    "local": "./images/players/2026/zurawski-cole.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/zurawski-cole.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n17-zurawski,-cole-(2)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628087
   },
   "fitzgerald-colin": {
     "name": "Colin Fitzgerald",
-    "local": "./images/players/2026/fitzgerald-colin.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/fitzgerald-colin.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n77-fitzgerald,-colin-(60)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628141
   },
   "davis-connor": {
     "name": "Connor Davis",
-    "local": "./images/players/2026/davis-connor.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "schmidt-connor": {
     "name": "Connor Schmidt",
-    "local": "./images/players/2026/schmidt-connor.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "williams-cooper": {
     "name": "Cooper Williams",
-    "local": "./images/players/2026/williams-cooper.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/williams-cooper.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/16-williams,-cooper-(5)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 884684
   },
   "petrenko-daniil": {
     "name": "Daniil Petrenko",
-    "local": "./images/players/2026/petrenko-daniil.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "skvortsov-daniil": {
     "name": "Daniil Skvortsov",
-    "local": "./images/players/2026/skvortsov-daniil.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "klaers-danny": {
     "name": "Danny Klaers",
-    "local": "./images/players/2026/klaers-danny.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "krcal-david": {
     "name": "David Krcal",
-    "local": "./images/players/2026/krcal-david.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "gerwing-dawson": {
     "name": "Dawson Gerwing",
-    "local": "./images/players/2026/gerwing-dawson.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "beuker-dayne": {
     "name": "Dayne Beuker",
-    "local": "./images/players/2026/beuker-dayne.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/beuker-dayne.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/8-beuker,-dayne-(67)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628121
   },
   "lindberg-dennis": {
     "name": "Dennis Lindberg",
-    "local": "./images/players/2026/lindberg-dennis.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "thurston-derek": {
     "name": "Derek Thurston",
-    "local": "./images/players/2026/thurston-derek.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "bracco-donato": {
     "name": "Donato Bracco",
-    "local": "./images/players/2026/bracco-donato.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "allison-drew": {
     "name": "Drew Allison",
-    "local": "./images/players/2026/allison-drew.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "ronald-dylan": {
     "name": "Dylan Ronald",
-    "local": "./images/players/2026/ronald-dylan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "bondar-eduard": {
     "name": "Eduard Bondar",
-    "local": "./images/players/2026/bondar-eduard.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "orpana-eetu": {
     "name": "Eetu Orpana",
-    "local": "./images/players/2026/orpana-eetu.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "vahalahti-eetu": {
     "name": "Eetu Vahalahti",
-    "local": "./images/players/2026/vahalahti-eetu.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "dube-elliot": {
     "name": "Elliot Dube",
-    "local": "./images/players/2026/dube-elliot.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "mackenzie-ethan": {
     "name": "Ethan MacKenzie",
-    "local": "./images/players/2026/mackenzie-ethan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mackenzie-ethan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/13-mackenzie,-ethan-(19)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 618968
   },
   "weber-ethan": {
     "name": "Ethan Weber",
-    "local": "./images/players/2026/weber-ethan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "jardine-evan": {
     "name": "Evan Jardine",
-    "local": "./images/players/2026/jardine-evan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/jardine-evan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/10-jardine,-evan-(22)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 576958
   },
   "persson-filip-holst": {
     "name": "Filip Holst Persson",
-    "local": "./images/players/2026/persson-filip-holst.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "novak-filip": {
     "name": "Filip Novak",
-    "local": "./images/players/2026/novak-filip.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/novak-filip.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/adf89-8622dcc6-3c68-44fe-8382-1db86fc16195.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 919533
   },
   "suzdorf-german": {
     "name": "German Suzdorf",
-    "local": "./images/players/2026/suzdorf-german.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "pantelas-giorgos": {
     "name": "Giorgos Pantelas",
-    "local": "./images/players/2026/pantelas-giorgos.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/pantelas-giorgos.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/84---giorgos-pantelas-bwk-011925-(11).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 619705
   },
   "pugachyov-gleb": {
     "name": "Gleb Pugachyov",
-    "local": "./images/players/2026/pugachyov-gleb.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 895866
   },
   "barch-hayden": {
     "name": "Hayden Barch",
-    "local": "./images/players/2026/barch-hayden.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "hallin-hugo": {
     "name": "Hugo Hallin",
-    "local": "./images/players/2026/hallin-hugo.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "orrsten-hugo": {
     "name": "Hugo Orrsten",
-    "local": "./images/players/2026/orrsten-hugo.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "galiyanov-ivan": {
     "name": "Ivan Galiyanov",
-    "local": "./images/players/2026/galiyanov-ivan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/galiyanov-ivan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/92-galiyanov,-ivan-(55)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 577208
   },
   "hextall-jack": {
     "name": "Jack Hextall",
-    "local": "./images/players/2026/hextall-jack.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/hextall-jack.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/17-hextall,-jack-(62)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 914118
   },
   "crawford-jacob": {
     "name": "Jacob Crawford",
-    "local": "./images/players/2026/crawford-jacob.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "reber-jamiro": {
     "name": "Jamiro Reber",
-    "local": "./images/players/2026/reber-jamiro.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "skok-jan": {
     "name": "Jan Skok",
-    "local": "./images/players/2026/skok-jan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "mensonen-jasu": {
     "name": "Jasu Mensonen",
-    "local": "./images/players/2026/mensonen-jasu.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "fuder-jaxon": {
     "name": "Jaxon Fuder",
-    "local": "./images/players/2026/fuder-jaxon.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "plouffe-jayden": {
     "name": "Jayden Plouffe",
-    "local": "./images/players/2026/plouffe-jayden.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "lemieux-jeancristoph": {
     "name": "Jean-Cristoph Lemieux",
-    "local": "./images/players/2026/lemieux-jeancristoph.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lemieux-jeancristoph.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22-lemieux,-j.c-(36)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 890529
   },
   "virtanen-jeremi": {
     "name": "Jeremi Virtanen",
-    "local": "./images/players/2026/virtanen-jeremi.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "mundy-jeremiah": {
     "name": "Jeremiah Mundy",
-    "local": "./images/players/2026/mundy-jeremiah.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "kotajarvi-jesper": {
     "name": "Jesper Kotajarvi",
-    "local": "./images/players/2026/kotajarvi-jesper.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "lajoie-jett": {
     "name": "Jett Lajoie",
-    "local": "./images/players/2026/lajoie-jett.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "egan-jimmy": {
     "name": "Jimmy Egan",
-    "local": "./images/players/2026/egan-jimmy.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "wahlund-joe": {
     "name": "Joe Wahlund",
-    "local": "./images/players/2026/wahlund-joe.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "lagerberg-hoen-jonas": {
     "name": "Jonas Lagerberg Hoen",
-    "local": "./images/players/2026/lagerberg-hoen-jonas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lagerberg-hoen-jonas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/7853b-1cfaf53e-70eb-40ff-9182-fb2a1b7461f4.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876082
   },
   "brown-jonathan": {
     "name": "Jonathan Brown",
-    "local": "./images/players/2026/brown-jonathan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "kapageridis-jonathan": {
     "name": "Jonathan Kapageridis",
-    "local": "./images/players/2026/kapageridis-jonathan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "prud-jonathan": {
     "name": "Jonathan Prud",
-    "local": "./images/players/2026/prud-jonathan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "gavin-jordan": {
     "name": "Jordan Gavin",
-    "local": "./images/players/2026/gavin-jordan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "mcgregor-josh": {
     "name": "Josh McGregor",
-    "local": "./images/players/2026/mcgregor-josh.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "avery-joshua": {
     "name": "Joshua Avery",
-    "local": "./images/players/2026/avery-joshua.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "glavin-joshua": {
     "name": "Joshua Glavin",
-    "local": "./images/players/2026/glavin-joshua.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "flugins-karlis": {
     "name": "Karlis Flugins",
-    "local": "./images/players/2026/flugins-karlis.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/flugins-karlis.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/77-flugins,-karlis-(35)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 792092
   },
   "bridgeman-kolten": {
     "name": "Kolten Bridgeman",
-    "local": "./images/players/2026/bridgeman-kolten.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "nycz-landon": {
     "name": "Landon Nycz",
-    "local": "./images/players/2026/nycz-landon.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/nycz-landon.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/0cf03-img-3088.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 822279
   },
   "steiner-lars": {
     "name": "Lars Steiner",
-    "local": "./images/players/2026/steiner-lars.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/steiner-lars.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/15-steiner,-lars-(50)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 889131
   },
   "sinivuori-lauri": {
     "name": "Lauri Sinivuori",
-    "local": "./images/players/2026/sinivuori-lauri.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "gashilov-lavr": {
     "name": "Lavr Gashilov",
-    "local": "./images/players/2026/gashilov-lavr.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/gashilov-lavr.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/e8c8c-7cf73ad4-bb29-4c7e-8930-2b15f9fe6d21.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 901382
   },
   "beamish-liam": {
     "name": "Liam Beamish",
-    "local": "./images/players/2026/beamish-liam.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "dube-liam": {
     "name": "Liam Dube",
-    "local": "./images/players/2026/dube-liam.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/dube-liam.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/16-dube,-liam-(19)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 935172
   },
   "kilfoil-liam": {
     "name": "Liam Kilfoil",
-    "local": "./images/players/2026/kilfoil-liam.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "loob-trygg-linus": {
     "name": "Linus Loob Trygg",
-    "local": "./images/players/2026/loob-trygg-linus.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/loob-trygg-linus.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/7ce69-c69f9457-5eaa-47ee-b476-5c8fcfe80a03.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 879431
   },
   "hawery-logan": {
     "name": "Logan Hawery",
-    "local": "./images/players/2026/hawery-logan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "lutner-logan": {
     "name": "Logan Lutner",
-    "local": "./images/players/2026/lutner-logan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "karmiris-lucas": {
     "name": "Lucas Karmiris",
-    "local": "./images/players/2026/karmiris-lucas.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "zajic-lucas": {
     "name": "Lucas Zajic",
-    "local": "./images/players/2026/zajic-lucas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/zajic-lucas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/19-zajic,-lukas-(37)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 617482
   },
   "puchner-luke": {
     "name": "Luke Puchner",
-    "local": "./images/players/2026/puchner-luke.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/puchner-luke.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/9-puchner,-luke-(10)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 863808
   },
   "schairer-luke": {
     "name": "Luke Schairer",
-    "local": "./images/players/2026/schairer-luke.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/schairer-luke.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/10-schairer,-luke-(28)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 912153
   },
   "dagenais-maddox": {
     "name": "Maddox Dagenais",
-    "local": "./images/players/2026/dagenais-maddox.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/dagenais-maddox.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/26-dagenais,-maddox-(136)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 886811
   },
   "labre-maddox": {
     "name": "Maddox Labre",
-    "local": "./images/players/2026/labre-maddox.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "fomin-makar": {
     "name": "Makar Fomin",
-    "local": "./images/players/2026/fomin-makar.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "nordmark-marcus": {
     "name": "Marcus Nordmark",
-    "local": "./images/players/2026/nordmark-marcus.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/nordmark-marcus.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/marcus_nordmark.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 937086
   },
   "svec-martin": {
     "name": "Martin Svec",
-    "local": "./images/players/2026/svec-martin.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "klaucans-martins": {
     "name": "Martins Klaucans",
-    "local": "./images/players/2026/klaucans-martins.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/klaucans-martins.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/5ca732ee534d653c46dd3d981fbe4242-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 928875
   },
   "kraft-mason": {
     "name": "Mason Kraft",
-    "local": "./images/players/2026/kraft-mason.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "mikes-matej": {
     "name": "Matej Mikes",
-    "local": "./images/players/2026/mikes-matej.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "pekar-matej": {
     "name": "Matej Pekar",
-    "local": "./images/players/2026/pekar-matej.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "lisy-matus": {
     "name": "Matus Lisy",
-    "local": "./images/players/2026/lisy-matus.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "isaksson-max": {
     "name": "Max Isaksson",
-    "local": "./images/players/2026/isaksson-max.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/isaksson-max.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/max_isaksson2.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 885789
   },
   "zaitsev-maxim": {
     "name": "Maxim Zaitsev",
-    "local": "./images/players/2026/zaitsev-maxim.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "capos-michal": {
     "name": "Michal Capos",
-    "local": "./images/players/2026/capos-michal.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "aeschlimann-mike": {
     "name": "Mike Aeschlimann",
-    "local": "./images/players/2026/aeschlimann-mike.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "gamzakov-mikhail": {
     "name": "Mikhail Gamzakov",
-    "local": "./images/players/2026/gamzakov-mikhail.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "katin-mikhail": {
     "name": "Mikhail Katin",
-    "local": "./images/players/2026/katin-mikhail.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "anderberg-morgan": {
     "name": "Morgan Anderberg",
-    "local": "./images/players/2026/anderberg-morgan.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/anderberg-morgan.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/bb250925jo077.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 855448
   },
   "yellowaga-nate": {
     "name": "Nate Yellowaga",
-    "local": "./images/players/2026/yellowaga-nate.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "brisson-nathan": {
     "name": "Nathan Brisson",
-    "local": "./images/players/2026/brisson-nathan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "lecompte-nathan": {
     "name": "Nathan Lecompte",
-    "local": "./images/players/2026/lecompte-nathan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "whitehead-nic": {
     "name": "Nic Whitehead",
-    "local": "./images/players/2026/whitehead-nic.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "frasca-nick": {
     "name": "Nick Frasca",
-    "local": "./images/players/2026/frasca-nick.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "sykora-nicolas": {
     "name": "Nicolas Sykora",
-    "local": "./images/players/2026/sykora-nicolas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/sykora-nicolas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/24-sykora,-nicholas-(54)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 737985
   },
   "fedotov-nikita": {
     "name": "Nikita Fedotov",
-    "local": "./images/players/2026/fedotov-nikita.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "klyopov-nikita": {
     "name": "Nikita Klyopov",
-    "local": "./images/players/2026/klyopov-nikita.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "poltavchuk-nikita": {
     "name": "Nikita Poltavchuk",
-    "local": "./images/players/2026/poltavchuk-nikita.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "shcherbakov-nikita": {
     "name": "Nikita Shcherbakov",
-    "local": "./images/players/2026/shcherbakov-nikita.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 836638
   },
   "aaramolsen-niklas": {
     "name": "Niklas Aaram-Olsen",
-    "local": "./images/players/2026/aaramolsen-niklas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/aaramolsen-niklas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/22c46-75876825-60a0-4764-b913-b17cf35c693f.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 886269
   },
   "nykyri-niklas": {
     "name": "Niklas Nykyri",
-    "local": "./images/players/2026/nykyri-niklas.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "degenstein-noah": {
     "name": "Noah Degenstein",
-    "local": "./images/players/2026/degenstein-noah.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "jenken-noah": {
     "name": "Noah Jenken",
-    "local": "./images/players/2026/jenken-noah.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "kosick-noah": {
     "name": "Noah Kosick",
-    "local": "./images/players/2026/kosick-noah.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/kosick-noah.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/6265d-0ae71a03-8c18-4ed7-aa6a-bf07287078ac.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 825443
   },
   "mckinnon-noah": {
     "name": "Noah McKinnon",
-    "local": "./images/players/2026/mckinnon-noah.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mckinnon-noah.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/13-mckinnon,-noah-(21)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 759417
   },
   "geerdes-nolen": {
     "name": "Nolen Geerdes",
-    "local": "./images/players/2026/geerdes-nolen.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/geerdes-nolen.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n3-geerdes,-nolen-(36)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 805452
   },
   "turner-oliver": {
     "name": "Oliver Turner",
-    "local": "./images/players/2026/turner-oliver.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "murnieks-olivers": {
     "name": "Olivers Murnieks",
-    "local": "./images/players/2026/murnieks-olivers.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/murnieks-olivers.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/14-murnieks,-olivers-(18)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876997
   },
   "groulx-olivier": {
     "name": "Olivier Groulx",
-    "local": "./images/players/2026/groulx-olivier.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "kalto-onni": {
     "name": "Onni Kalto",
-    "local": "./images/players/2026/kalto-onni.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "holmertz-oscar": {
     "name": "Oscar Holmertz",
-    "local": "./images/players/2026/holmertz-oscar.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/holmertz-oscar.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/oscarholmertzlinkoping.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 874176
   },
   "conrad-owen": {
     "name": "Owen Conrad",
-    "local": "./images/players/2026/conrad-owen.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "schoettler-owen": {
     "name": "Owen Schoettler",
-    "local": "./images/players/2026/schoettler-owen.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "fagan-pj": {
     "name": "PJ Fagan",
-    "local": "./images/players/2026/fagan-pj.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "snelgrove-parker": {
     "name": "Parker Snelgrove",
-    "local": "./images/players/2026/snelgrove-parker.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "vaughn-parker": {
     "name": "Parker Vaughn",
-    "local": "./images/players/2026/vaughn-parker.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "richter-parker-von": {
     "name": "Parker Von Richter",
-    "local": "./images/players/2026/richter-parker-von.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "rusznyak-patrik": {
     "name": "Patrik Rusznyak",
-    "local": "./images/players/2026/rusznyak-patrik.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "mbuyi-pierce": {
     "name": "Pierce Mbuyi",
-    "local": "./images/players/2026/mbuyi-pierce.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/mbuyi-pierce.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n21-mbuyi,-pierce-(110)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 916542
   },
   "andersen-poul": {
     "name": "Poul Andersen",
-    "local": "./images/players/2026/andersen-poul.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "cloutier-rafael": {
     "name": "Rafael Cloutier",
-    "local": "./images/players/2026/cloutier-rafael.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "varosyan-raflik": {
     "name": "Raflik Varosyan",
-    "local": "./images/players/2026/varosyan-raflik.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/varosyan-raflik.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/65665062abb84430d0f61f80f58b0f63-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 901409
   },
   "achermann-raphael": {
     "name": "Raphael Achermann",
-    "local": "./images/players/2026/achermann-raphael.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 937148
   },
   "rinne-rasmus": {
     "name": "Rasmus Rinne",
-    "local": "./images/players/2026/rinne-rasmus.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rinne-rasmus.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/35e44f999ef512c199e0fea2863596df-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 872284
   },
   "chudzinski-rian": {
     "name": "Rian Chudzinski",
-    "local": "./images/players/2026/chudzinski-rian.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/chudzinski-rian.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/36-chudzinski,-rian-(3)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 893554
   },
   "carey-rider": {
     "name": "Rider Carey",
-    "local": "./images/players/2026/carey-rider.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "kaiser-rio": {
     "name": "Rio Kaiser",
-    "local": "./images/players/2026/kaiser-rio.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "antenen-robin": {
     "name": "Robin Antenen",
-    "local": "./images/players/2026/antenen-robin.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "berzkalns-rudolfs": {
     "name": "Rudolfs Berzkalns",
-    "local": "./images/players/2026/berzkalns-rudolfs.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/berzkalns-rudolfs.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/17-berkalns,-rudolfs-(28)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 941638
   },
   "karimov-ruslan": {
     "name": "Ruslan Karimov",
-    "local": "./images/players/2026/karimov-ruslan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "alalauri-samu": {
     "name": "Samu Alalauri",
-    "local": "./images/players/2026/alalauri-samu.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/alalauri-samu.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/ff613-09d32df8-814f-4493-b167-6d78f7681bd7.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 959462
   },
   "virk-savin": {
     "name": "Savin Virk",
-    "local": "./images/players/2026/virk-savin.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "mayes-sawyer": {
     "name": "Sawyer Mayes",
-    "local": "./images/players/2026/mayes-sawyer.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "katolicky-simon": {
     "name": "Simon Katolicky",
-    "local": "./images/players/2026/katolicky-simon.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/katolicky-simon.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/d1f36d6ca77dfb662457fec3cd7d06d8-cropped.jpeg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 917747
   },
   "lam-tanner": {
     "name": "Tanner Lam",
-    "local": "./images/players/2026/lam-tanner.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "vandenberg-thomas": {
     "name": "Thomas Vandenberg",
-    "local": "./images/players/2026/vandenberg-thomas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vandenberg-thomas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/n37-vandenberg,-thomas-(100)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 876707
   },
   "chrenko-tomas": {
     "name": "Tomas Chrenko",
-    "local": "./images/players/2026/chrenko-tomas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/chrenko-tomas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/1afff-e9725c1b-1ac7-4dc3-963c-fb8d96fa7814.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 752381
   },
   "malinek-tomas": {
     "name": "Tomas Malinek",
-    "local": "./images/players/2026/malinek-tomas.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "pobezal-tomas": {
     "name": "Tomas Pobezal",
-    "local": "./images/players/2026/pobezal-tomas.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "bleyl-tommy": {
     "name": "Tommy Bleyl",
-    "local": "./images/players/2026/bleyl-tommy.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bleyl-tommy.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/3-bleyl,-tommy-(52)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 577026
   },
   "hynninen-topias": {
     "name": "Topias Hynninen",
-    "local": "./images/players/2026/hynninen-topias.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "jennersjo-torkel": {
     "name": "Torkel Jennersjo",
-    "local": "./images/players/2026/jennersjo-torkel.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/jennersjo-torkel.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/17-jennersjo,-torkel-(38)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 890126
   },
   "delisle-tristan": {
     "name": "Tristan Delisle",
-    "local": "./images/players/2026/delisle-tristan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "challenger-tyler": {
     "name": "Tyler Challenger",
-    "local": "./images/players/2026/challenger-tyler.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "ruotsalainen-veeti": {
     "name": "Veeti Ruotsalainen",
-    "local": "./images/players/2026/ruotsalainen-veeti.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "svensk-vertti": {
     "name": "Vertti Svensk",
-    "local": "./images/players/2026/svensk-vertti.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 872901
   },
   "kahkonen-viijo": {
     "name": "Viijo Kahkonen",
-    "local": "./images/players/2026/kahkonen-viijo.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "fyodorov-viktor": {
     "name": "Viktor Fyodorov",
-    "local": "./images/players/2026/fyodorov-viktor.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 895867
   },
   "pennerborn-viktor": {
     "name": "Viktor Pennerborn",
-    "local": "./images/players/2026/pennerborn-viktor.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "vanhatalo-vilho": {
     "name": "Vilho Vanhatalo",
-    "local": "./images/players/2026/vanhatalo-vilho.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/vanhatalo-vilho.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/vilho_vanhatalo_tappara.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 958289
   },
   "desjardins-vincent": {
     "name": "Vincent Desjardins",
-    "local": "./images/players/2026/desjardins-vincent.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "macek-vit": {
     "name": "Vit Macek",
-    "local": "./images/players/2026/macek-vit.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "dravecky-vladimir": {
     "name": "Vladimir Dravecky",
-    "local": "./images/players/2026/dravecky-vladimir.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/dravecky-vladimir.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/29-dravecky,-vladimir-(24)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 899355
   },
   "ukhmylov-vladislav": {
     "name": "Vladislav Ukhmylov",
-    "local": "./images/players/2026/ukhmylov-vladislav.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "bent-will": {
     "name": "Will Bent",
-    "local": "./images/players/2026/bent-will.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "velliaris-xander": {
     "name": "Xander Velliaris",
-    "local": "./images/players/2026/velliaris-xander.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "fedoseyev-yaroslav": {
     "name": "Yaroslav Fedoseyev",
-    "local": "./images/players/2026/fedoseyev-yaroslav.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": null,
+    "generated": true,
+    "epId": 1031327
   },
   "rummo-yuri": {
     "name": "Yuri Rummo",
-    "local": "./images/players/2026/rummo-yuri.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "morin-zachary": {
     "name": "Zachary Morin",
-    "local": "./images/players/2026/morin-zachary.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "nyman-zachary": {
     "name": "Zachary Nyman",
-    "local": "./images/players/2026/nyman-zachary.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "wilson-zachary": {
     "name": "Zachary Wilson",
-    "local": "./images/players/2026/wilson-zachary.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "kuryanov-andrei": {
     "name": "Andrei Kuryanov",
-    "local": "./images/players/2026/kuryanov-andrei.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "lygitsakos-chad": {
     "name": "Chad Lygitsakos",
-    "local": "./images/players/2026/lygitsakos-chad.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/lygitsakos-chad.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/dec2d-e96d50d3-6df5-4674-9ddd-63fb51b73908.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 870109
   },
   "viita-frans": {
     "name": "Frans Viita",
-    "local": "./images/players/2026/viita-frans.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "garland-gavin": {
     "name": "Gavin Garland",
-    "local": "./images/players/2026/garland-gavin.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "fomin-ivan": {
     "name": "Ivan Fomin",
-    "local": "./images/players/2026/fomin-ivan.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "rajala-joonas": {
     "name": "Joonas Rajala",
-    "local": "./images/players/2026/rajala-joonas.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/rajala-joonas.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/17-rajala,-joonas-(10)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 924495
   },
   "sundqvist-leo": {
     "name": "Leo Sundqvist",
-    "local": "./images/players/2026/sundqvist-leo.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "katzin-lev": {
     "name": "Lev Katzin",
-    "local": "./images/players/2026/katzin-lev.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "belanger-louisfrancois": {
     "name": "Louis-Francois Bélanger",
-    "local": "./images/players/2026/belanger-louisfrancois.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/belanger-louisfrancois.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/18-belanger,-louis-francois-(34)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 729448
   },
   "dec-michael": {
     "name": "Michael Dec",
-    "local": "./images/players/2026/dec-michael.svg",
-    "sourceUrl": null,
+    "local": null,
     "generated": true
   },
   "bartholdsson-nils": {
     "name": "Nils Bartholdsson",
-    "local": "./images/players/2026/bartholdsson-nils.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/bartholdsson-nils.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/nilsbartholdssonrogle.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 800342
   },
   "meunier-ty": {
     "name": "Ty Meunier",
-    "local": "./images/players/2026/meunier-ty.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/meunier-ty.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/25---ty-meunier-pa-101924-(17).jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 628082
   },
   "plante-victor": {
     "name": "Victor Plante",
-    "local": "./images/players/2026/plante-victor.svg",
-    "sourceUrl": null,
-    "generated": true
+    "local": "./images/players/2026/plante-victor.jpg",
+    "sourceUrl": "https://files.eliteprospects.com/layout/players/26-plante,-victor-(85)-ep.jpg",
+    "source": "eliteprospects",
+    "generated": false,
+    "epId": 629357
   }
 }

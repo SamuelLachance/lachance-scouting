@@ -49,8 +49,11 @@ def ensure_portraits(year: int = DEFAULT_DRAFT_YEAR) -> dict[str, int]:
                 "name": name,
                 "local": rel,
                 "sourceUrl": entry.get("sourceUrl"),
+                "source": entry.get("source"),
                 "generated": False,
             }
+            if entry.get("epId"):
+                manifest[slug]["epId"] = entry["epId"]
             stats["real"] += 1
             stats["skipped_real"] += 1
             continue
@@ -64,8 +67,11 @@ def ensure_portraits(year: int = DEFAULT_DRAFT_YEAR) -> dict[str, int]:
                     "name": name,
                     "local": rel,
                     "sourceUrl": source_url,
+                    "source": entry.get("source"),
                     "generated": False,
                 }
+                if entry.get("epId"):
+                    manifest[slug]["epId"] = entry["epId"]
                 stats["real"] += 1
                 stats["downloaded"] += 1
                 continue
