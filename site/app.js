@@ -173,8 +173,9 @@ function tierClass(t) {
   if (s.includes('génération') || s.includes('generational')) return 'tier-generational';
   if (s.includes('franchise')) return 'tier-franchise';
   if (s.includes('élite') || s.includes('elite')) return 'tier-elite';
-  if (s.includes('top 6') || s.includes('top 4') || s === 'titulaire') return 'tier-top';
-  if (s.includes('top 9') || s.includes('7e') || s.includes('partiel')) return 'tier-mid';
+  if (s.includes('premier trio') || s.includes('première paire') || s.includes('top-line') || s.includes('top-pair')) return 'tier-top';
+  if (s.includes('top 6') || s.includes('top 4') || s.includes('top six') || s === 'titulaire') return 'tier-top';
+  if (s.includes('top 9') || s.includes('7e') || s.includes('partiel') || s.includes('troisième trio') || s.includes('troisième paire')) return 'tier-mid';
   if (s.includes('quatrième') || s.includes('remplaçant') || s.includes('lha')) return 'tier-depth';
   return 'tier-low';
 }

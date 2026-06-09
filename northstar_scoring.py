@@ -343,47 +343,45 @@ def _star_tier(score: float) -> str:
 # EA Sports NHL franchise-mode potential tiers (NHL 22–26 / Puck Drop reference)
 # Mapped from SPI (0–100) → position-specific label (French UI).
 #
-# Top bands (all positions): Générationnel ≥90, Franchise ≥85, Élite ≥78
-# Lower bands follow EA nomenclature per role group (F / D / G).
-# OVR reference (Puck Drop): Franchise 90+, Elite 88+, Top6/Top4/Starter 86+, …
-# SPI thresholds are calibrated for draft-prospect star probability, not OVR.
+# SPI thresholds are recalibrated for draft-prospect upside (not pro OVR).
+# Draft-rank floors ensure top picks never project as depth roles.
 # ---------------------------------------------------------------------------
 EA_TIER_BANDS: dict[str, list[tuple[float, str, str]]] = {
     # (min_spi_inclusive, label_fr, label_en) — sorted high → low
     "F": [
-        (90.0, "Générationnel", "Generational"),
-        (85.0, "Franchise", "Franchise"),
-        (78.0, "Élite", "Elite"),
-        (74.0, "Top 6", "Top 6 F"),
-        (70.0, "Top 9", "Top 9 F"),
-        (66.0, "Quatrième trio", "Bottom 6 F"),
-        (62.0, "LHA Top 6", "AHL Top 6 F"),
-        (58.0, "LHA Quatrième trio", "AHL Bottom 6 F"),
-        (54.0, "Profondeur mineure", "Minor Depth F"),
+        (88.0, "Générationnel", "Generational"),
+        (82.0, "Franchise", "Franchise"),
+        (75.0, "Élite", "Elite"),
+        (68.0, "Top 6", "Top 6 F"),
+        (62.0, "Top 9", "Top 9 F"),
+        (58.0, "Quatrième trio", "Bottom 6 F"),
+        (54.0, "LHA Top 6", "AHL Top 6 F"),
+        (50.0, "LHA Quatrième trio", "AHL Bottom 6 F"),
+        (46.0, "Profondeur mineure", "Minor Depth F"),
         (0.0, "Profondeur LHA", "AHL Depth F"),
     ],
     "D": [
-        (90.0, "Générationnel", "Generational"),
-        (85.0, "Franchise", "Franchise"),
-        (78.0, "Élite", "Elite"),
-        (74.0, "Top 4", "Top 4 D"),
-        (70.0, "Top 6", "Top 6 D"),
-        (66.0, "7e D", "7th D"),
-        (62.0, "LHA Top 6", "AHL Top 6 D"),
-        (58.0, "LHA Quatrième trio", "AHL Bottom 6 D"),
-        (54.0, "Profondeur mineure", "Minor Depth D"),
+        (88.0, "Générationnel", "Generational"),
+        (82.0, "Franchise", "Franchise"),
+        (75.0, "Élite", "Elite"),
+        (68.0, "Top 4", "Top 4 D"),
+        (62.0, "Top 6", "Top 6 D"),
+        (58.0, "7e D", "7th D"),
+        (54.0, "LHA Top 6", "AHL Top 6 D"),
+        (50.0, "LHA Quatrième trio", "AHL Bottom 6 D"),
+        (46.0, "Profondeur mineure", "Minor Depth D"),
         (0.0, "Profondeur LHA", "AHL Depth D"),
     ],
     "G": [
-        (90.0, "Générationnel", "Generational"),
-        (85.0, "Franchise", "Franchise"),
-        (78.0, "Élite", "Elite"),
-        (74.0, "Titulaire", "Starter"),
-        (70.0, "Titulaire partiel", "Fringe Starter"),
-        (66.0, "Remplaçant", "Backup"),
-        (62.0, "LHA Titulaire", "AHL Starter"),
-        (58.0, "LHA Remplaçant", "AHL Backup G"),
-        (54.0, "Profondeur mineure", "Minor Backup G"),
+        (88.0, "Générationnel", "Generational"),
+        (82.0, "Franchise", "Franchise"),
+        (75.0, "Élite", "Elite"),
+        (68.0, "Titulaire", "Starter"),
+        (62.0, "Titulaire partiel", "Fringe Starter"),
+        (58.0, "Remplaçant", "Backup"),
+        (54.0, "LHA Titulaire", "AHL Starter"),
+        (50.0, "LHA Remplaçant", "AHL Backup G"),
+        (46.0, "Profondeur mineure", "Minor Backup G"),
         (0.0, "Profondeur LHA", "AHL Depth G"),
     ],
 }
@@ -402,42 +400,142 @@ def ea_position_group(position: str) -> str:
 # Role depth labels for EA-style NHL projection text (FR, EN) by position group + SPI.
 EA_ROLE_DEPTH: dict[str, list[tuple[float, str, str]]] = {
     "F": [
-        (78.0, "Premier trio", "Top-line"),
-        (74.0, "Top six", "Top-six"),
-        (70.0, "Troisième trio", "Top-nine"),
-        (66.0, "Quatrième trio", "Bottom-six"),
-        (62.0, "Top six LHA", "AHL top-six"),
-        (58.0, "Quatrième trio LHA", "AHL bottom-six"),
-        (54.0, "Profondeur mineure", "Depth"),
+        (75.0, "Premier trio", "Top-line"),
+        (68.0, "Top six", "Top-six"),
+        (62.0, "Troisième trio", "Top-nine"),
+        (58.0, "Quatrième trio", "Bottom-six"),
+        (54.0, "Top six LHA", "AHL top-six"),
+        (50.0, "Quatrième trio LHA", "AHL bottom-six"),
+        (46.0, "Profondeur mineure", "Depth"),
         (0.0, "Profondeur LHA", "AHL depth"),
     ],
     "D": [
-        (78.0, "Première paire", "Top-pair"),
-        (74.0, "Première paire", "Top-pair"),
-        (70.0, "Top six", "Top-six"),
-        (66.0, "Troisième paire", "Third-pair"),
-        (62.0, "Top six LHA", "AHL top-six"),
-        (58.0, "Quatrième trio LHA", "AHL bottom-six"),
-        (54.0, "Profondeur mineure", "Minor depth"),
+        (75.0, "Première paire", "Top-pair"),
+        (68.0, "Top six", "Top-six"),
+        (62.0, "Troisième paire", "Third-pair"),
+        (58.0, "7e D", "Seventh D"),
+        (54.0, "Top six LHA", "AHL top-six"),
+        (50.0, "Quatrième trio LHA", "AHL bottom-six"),
+        (46.0, "Profondeur mineure", "Minor depth"),
         (0.0, "Profondeur LHA", "AHL depth"),
     ],
     "G": [
-        (78.0, "Titulaire", "Starter"),
-        (74.0, "Titulaire", "Starter"),
-        (70.0, "Titulaire partiel", "Fringe starter"),
-        (66.0, "Remplaçant", "Backup"),
-        (62.0, "Titulaire LHA", "AHL starter"),
-        (58.0, "Remplaçant LHA", "AHL backup"),
-        (54.0, "Profondeur mineure", "Minor backup"),
+        (75.0, "Titulaire", "Starter"),
+        (68.0, "Titulaire partiel", "Fringe starter"),
+        (62.0, "Remplaçant", "Backup"),
+        (58.0, "Titulaire LHA", "AHL starter"),
+        (54.0, "Remplaçant LHA", "AHL backup"),
+        (50.0, "Profondeur mineure", "Minor backup"),
         (0.0, "Profondeur LHA", "AHL depth"),
     ],
 }
 
 EA_TIER_ADJECTIVES: list[tuple[float, str, str]] = [
-    (90.0, "générationnel", "generational"),
-    (85.0, "franchise", "franchise"),
-    (78.0, "élite", "elite"),
+    (88.0, "générationnel", "generational"),
+    (82.0, "franchise", "franchise"),
+    (68.0, "élite", "elite"),
 ]
+
+# Draft-rank floors: (min_rank, max_rank, min_role, min_adj_fr, min_adj_en, min_tier)
+# Roles/tiers keyed by position group (F/D/G). Lists sorted best → worst.
+EA_DRAFT_RANK_FLOORS: list[
+    tuple[
+        int,
+        int,
+        dict[str, tuple[str, str]],
+        str,
+        str,
+        dict[str, tuple[str, str]],
+    ]
+] = [
+    (
+        1,
+        5,
+        {
+            "F": ("Premier trio", "Top-line"),
+            "D": ("Première paire", "Top-pair"),
+            "G": ("Titulaire", "Starter"),
+        },
+        "élite",
+        "elite",
+        {
+            "F": ("Élite", "Elite"),
+            "D": ("Élite", "Elite"),
+            "G": ("Élite", "Elite"),
+        },
+    ),
+    (
+        6,
+        15,
+        {
+            "F": ("Top six", "Top-six"),
+            "D": ("Première paire", "Top-pair"),
+            "G": ("Titulaire", "Starter"),
+        },
+        "élite",
+        "elite",
+        {
+            "F": ("Top 6", "Top 6 F"),
+            "D": ("Top 4", "Top 4 D"),
+            "G": ("Titulaire", "Starter"),
+        },
+    ),
+    (
+        16,
+        31,
+        {
+            "F": ("Top six", "Top-six"),
+            "D": ("Première paire", "Top-pair"),
+            "G": ("Titulaire partiel", "Fringe starter"),
+        },
+        "",
+        "",
+        {
+            "F": ("Top 6", "Top 6 F"),
+            "D": ("Top 4", "Top 4 D"),
+            "G": ("Titulaire partiel", "Fringe Starter"),
+        },
+    ),
+    (
+        32,
+        62,
+        {
+            "F": ("Troisième trio", "Top-nine"),
+            "D": ("Top six", "Top-six"),
+            "G": ("Remplaçant", "Backup"),
+        },
+        "",
+        "",
+        {
+            "F": ("Top 9", "Top 9 F"),
+            "D": ("Top 6", "Top 6 D"),
+            "G": ("Remplaçant", "Backup"),
+        },
+    ),
+    (
+        63,
+        120,
+        {
+            "F": ("Quatrième trio", "Bottom-six"),
+            "D": ("Troisième paire", "Third-pair"),
+            "G": ("Remplaçant LHA", "AHL backup"),
+        },
+        "",
+        "",
+        {
+            "F": ("Quatrième trio", "Bottom 6 F"),
+            "D": ("7e D", "7th D"),
+            "G": ("Remplaçant LHA", "AHL Backup G"),
+        },
+    ),
+]
+
+EA_ADJECTIVE_RANK: dict[str, int] = {
+    "générationnel": 0,
+    "franchise": 1,
+    "élite": 2,
+    "": 3,
+}
 
 EA_POSITION_NAMES: dict[str, dict[str, tuple[str, str]]] = {
     "F": {
@@ -460,6 +558,15 @@ def _ea_role_depth(spi: float, group: str) -> tuple[str, str]:
     return fallback[1], fallback[2]
 
 
+def _ea_tier_from_spi(spi: float, group: str) -> tuple[str, str]:
+    spi_clamped = max(0.0, min(100.0, float(spi)))
+    for min_spi, label_fr, label_en in EA_TIER_BANDS[group]:
+        if spi_clamped >= min_spi:
+            return label_fr, label_en
+    fallback = EA_TIER_BANDS[group][-1]
+    return fallback[1], fallback[2]
+
+
 def _ea_tier_adjective(spi: float) -> tuple[str, str]:
     spi_clamped = max(0.0, min(100.0, float(spi)))
     for min_spi, adj_fr, adj_en in EA_TIER_ADJECTIVES:
@@ -476,27 +583,108 @@ def _ea_position_name(position: str, group: str) -> tuple[str, str]:
     return names["default"]
 
 
+def _ea_label_index(labels: list[tuple[float, str, str]], label_fr: str) -> int:
+    for i, (_, fr, _) in enumerate(labels):
+        if fr == label_fr:
+            return i
+    return len(labels) - 1
+
+
+def _ea_better_label(
+    current_fr: str,
+    current_en: str,
+    floor_fr: str,
+    floor_en: str,
+    labels: list[tuple[float, str, str]],
+) -> tuple[str, str]:
+    """Return the better (higher) label; lower index in *labels* = better."""
+    if _ea_label_index(labels, floor_fr) < _ea_label_index(labels, current_fr):
+        return floor_fr, floor_en
+    return current_fr, current_en
+
+
+def _ea_better_adjective(
+    current_fr: str,
+    current_en: str,
+    floor_fr: str,
+    floor_en: str,
+) -> tuple[str, str]:
+    if not floor_fr:
+        return current_fr, current_en
+    current_rank = EA_ADJECTIVE_RANK.get(current_fr, 3)
+    floor_rank = EA_ADJECTIVE_RANK.get(floor_fr, 2)
+    if floor_rank < current_rank:
+        return floor_fr, floor_en
+    return current_fr, current_en
+
+
+def _ea_draft_rank_floor(draft_rank: int | float | None) -> tuple | None:
+    if draft_rank is None:
+        return None
+    try:
+        rank = int(round(float(draft_rank)))
+    except (TypeError, ValueError):
+        return None
+    if rank < 1:
+        return None
+    for entry in EA_DRAFT_RANK_FLOORS:
+        if entry[0] <= rank <= entry[1]:
+            return entry
+    return None
+
+
+def _ea_apply_draft_floors(
+    group: str,
+    role_fr: str,
+    role_en: str,
+    tier_fr: str,
+    tier_en: str,
+    adj_fr: str,
+    adj_en: str,
+    draft_rank: int | float | None,
+) -> tuple[str, str, str, str, str, str]:
+    floor = _ea_draft_rank_floor(draft_rank)
+    if not floor:
+        return role_fr, role_en, tier_fr, tier_en, adj_fr, adj_en
+
+    _, _, min_roles, min_adj_fr, min_adj_en, min_tiers = floor
+    floor_role_fr, floor_role_en = min_roles[group]
+    role_fr, role_en = _ea_better_label(
+        role_fr, role_en, floor_role_fr, floor_role_en, EA_ROLE_DEPTH[group]
+    )
+    floor_tier_fr, floor_tier_en = min_tiers[group]
+    tier_fr, tier_en = _ea_better_label(
+        tier_fr, tier_en, floor_tier_fr, floor_tier_en, EA_TIER_BANDS[group]
+    )
+    adj_fr, adj_en = _ea_better_adjective(adj_fr, adj_en, min_adj_fr, min_adj_en)
+    return role_fr, role_en, tier_fr, tier_en, adj_fr, adj_en
+
+
 def ea_projection_for_player(
     spi: float,
     position: str,
     *,
     lang: str = "fr",
+    draft_rank: int | float | None = None,
 ) -> str:
     """
-    NHL role projection from SPI and position.
+    NHL role projection from SPI, position, and optional draft rank floor.
 
     Format EN: ``{role_depth} {tier_adjective} {position_name}``
-    (tier adjective omitted below Élite / 78 SPI).
+    (tier adjective omitted below Élite / 68 SPI unless raised by rank floor).
 
     Examples:
       LW 90+ → "Top-line generational winger"
-      D 72   → "Top-six defenseman"
-      G 74   → "Starter goalie"
-      G 86   → "Starter franchise goalie"
+      LW rank 4, SPI 72 → "Top-six elite winger"
+      C rank 6, SPI 67 → "Top-six center"
     """
     group = ea_position_group(position)
     role_fr, role_en = _ea_role_depth(spi, group)
+    tier_fr, tier_en = _ea_tier_from_spi(spi, group)
     adj_fr, adj_en = _ea_tier_adjective(spi)
+    role_fr, role_en, tier_fr, tier_en, adj_fr, adj_en = _ea_apply_draft_floors(
+        group, role_fr, role_en, tier_fr, tier_en, adj_fr, adj_en, draft_rank
+    )
     pos_fr, pos_en = _ea_position_name(position, group)
 
     if lang.lower().startswith("en"):
@@ -511,25 +699,27 @@ def ea_projection_for_player(
     return f"{role_fr} · {pos_fr}"
 
 
-def ea_tier_for_player(spi: float, position: str) -> dict[str, str]:
+def ea_tier_for_player(
+    spi: float,
+    position: str,
+    *,
+    draft_rank: int | float | None = None,
+) -> dict[str, str]:
     """
-    Return EA-style potential tier for a player from SPI and position.
+    Return EA-style potential tier for a player from SPI, position, and draft rank.
 
     Keys: tierLabel (French), eaTier (English canonical), tierGroup (F/D/G).
     """
     group = ea_position_group(position)
-    spi_clamped = max(0.0, min(100.0, float(spi)))
-    for min_spi, label_fr, label_en in EA_TIER_BANDS[group]:
-        if spi_clamped >= min_spi:
-            return {
-                "tierLabel": label_fr,
-                "eaTier": label_en,
-                "tierGroup": group,
-            }
-    fallback = EA_TIER_BANDS[group][-1]
+    tier_fr, tier_en = _ea_tier_from_spi(spi, group)
+    role_fr, role_en = _ea_role_depth(spi, group)
+    adj_fr, adj_en = _ea_tier_adjective(spi)
+    _, _, tier_fr, tier_en, _, _ = _ea_apply_draft_floors(
+        group, role_fr, role_en, tier_fr, tier_en, adj_fr, adj_en, draft_rank
+    )
     return {
-        "tierLabel": fallback[1],
-        "eaTier": fallback[2],
+        "tierLabel": tier_fr,
+        "eaTier": tier_en,
         "tierGroup": group,
     }
 

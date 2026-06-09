@@ -284,9 +284,14 @@ def build_year(year: int) -> int:
         photo_entry = photos_map.get(slug, {})
         photo_url = photo_entry.get("local") or f"./images/players/{year}/{slug}.svg"
         player_eval = (_load_evaluations().get("players") or {}).get(canonical_key(p["Nom"]), {})
-        ea_tier = ea_tier_for_player(note, p["Position"])
-        projection_fr = ea_projection_for_player(note, p["Position"], lang="fr")
-        projection_en = ea_projection_for_player(note, p["Position"], lang="en")
+        draft_rank = p.get("Rang_Final") or p.get("Rang_NORTHSTAR") or p.get("Rang_APEX")
+        ea_tier = ea_tier_for_player(note, p["Position"], draft_rank=draft_rank)
+        projection_fr = ea_projection_for_player(
+            note, p["Position"], lang="fr", draft_rank=draft_rank
+        )
+        projection_en = ea_projection_for_player(
+            note, p["Position"], lang="en", draft_rank=draft_rank
+        )
         analysis["projection"] = projection_fr
         enriched.append({
             "id": slug,
