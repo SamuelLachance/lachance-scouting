@@ -66,6 +66,7 @@ def paths_for_year(year: int) -> dict[str, Path]:
         "rankings": d / "rankings.json",
         "eligible_tsv": d / "eligible_players.tsv",
         "scouting_reports": d / "scouting_reports.json",
+        "player_evaluations": d / "player_evaluations.json",
         "birthdates": d / "birthdates.json",
         "analyses": analyses_dir(year),
         "csv": e / f"NHL_{year}_Classement_Complet.csv",

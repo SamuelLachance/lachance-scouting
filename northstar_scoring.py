@@ -17,7 +17,9 @@ from typing import Any
 from draft_config import DEFAULT_DRAFT_YEAR, paths_for_year
 
 BASE = Path(__file__).parent
-REPORTS_PATH = paths_for_year(DEFAULT_DRAFT_YEAR)["scouting_reports"]
+_paths = paths_for_year(DEFAULT_DRAFT_YEAR)
+REPORTS_PATH = _paths["scouting_reports"]
+EVALUATIONS_PATH = _paths["player_evaluations"]
 
 # Pondérations — optimisées pour prédire le plafond ÉTOILE (pas le floor)
 NORTHSTAR_WEIGHTS = {
@@ -129,6 +131,17 @@ TAG_BOOSTS = {
 }
 
 _reports_cache: dict | None = None
+_evaluations_cache: dict | None = None
+
+
+def _load_evaluations() -> dict:
+    global _evaluations_cache
+    if _evaluations_cache is None:
+        if EVALUATIONS_PATH.exists():
+            _evaluations_cache = json.loads(EVALUATIONS_PATH.read_text(encoding="utf-8"))
+        else:
+            _evaluations_cache = {"meta": {}, "players": {}}
+    return _evaluations_cache
 
 
 def _load_reports() -> dict:
@@ -580,6 +593,75 @@ def _merge_scores(
     }
 
 
+def _scores_from_evaluation(
+    evaluation: dict,
+    full_name: str,
+    pos: str,
+    height: str,
+    weight: str,
+    report: dict,
+) -> dict[str, Any]:
+    """Applique une évaluation manuelle détaillée (pipeline evaluate_players_northstar)."""
+    pillars = evaluation.get("pillars") or {}
+    dims: dict[str, float] = {}
+    evidence: dict[str, list[str]] = {}
+    rationales: dict[str, str] = {}
+    for dim in NORTHSTAR_WEIGHTS:
+        p = pillars.get(dim) or {}
+        dims[dim] = float(p.get("score", 5.0))
+        evidence[dim] = list(p.get("evidence") or [])
+        if p.get("rationale"):
+            rationales[dim] = p["rationale"]
+
+    cov = evaluation.get("confidence") or evaluation.get("report_coverage") or "partial"
+    overall = northstar_overall(dims) * _confidence_multiplier(cov)
+    overall = round(min(99.9, max(0, overall)), 2)
+    star_tier = _star_tier(overall)
+
+    forces = list(evaluation.get("forces") or [])
+    faiblesses = list(evaluation.get("faiblesses") or [])
+    if len(forces) < MIN_FORCES or len(faiblesses) < MIN_FAIBLESSES:
+        auto_f, auto_w = build_forces_faiblesses(
+            dims, report, evidence, pos, height, weight, cov,
+        )
+        for f in auto_f:
+            if f not in forces and len(forces) < MAX_FORCES:
+                forces.append(f)
+        for w in auto_w:
+            if w not in faiblesses and len(faiblesses) < MAX_FAIBLESSES:
+                faiblesses.append(w)
+
+    if not rationales:
+        rationales = build_rationales(
+            {**dims, "report_coverage": cov},
+            full_name=full_name, pos=pos, report=report, evidence=evidence,
+        )
+
+    resume = evaluation.get("notes") or report.get("report") or (
+        f"{full_name} ({pos}) — évaluation NORTHSTAR détaillée "
+        f"(confiance: {cov}). SPI: {overall}/100 ({star_tier})."
+    )
+
+    return {
+        **dims,
+        "spi": overall,
+        "resume": resume,
+        "forces": forces[:MAX_FORCES],
+        "faiblesses": faiblesses[:MAX_FAIBLESSES],
+        "comparable": report.get("projection") or evaluation.get("projection") or "N/A",
+        "projection": report.get("projection") or evaluation.get("projection") or star_tier,
+        "star_thesis": (
+            f"NORTHSTAR estime {full_name} à {overall}/100 pour devenir une étoile NHL "
+            f"({star_tier}). Pilier dominant: plafond étoile {dims['star_ceiling']}/10."
+        ),
+        "report_coverage": cov,
+        "star_tier": star_tier,
+        "evidence": evidence,
+        "rationales": rationales,
+        "evaluation_sources": evaluation.get("sources") or [],
+    }
+
+
 def northstar_generate(
     full_name: str,
     pos: str,
@@ -588,15 +670,27 @@ def northstar_generate(
     country: str,
     consensus_rank: int | None,
     player_key: str | None = None,
+    extra_text: str = "",
 ) -> dict[str, Any]:
     from name_utils import canonical_key
 
     key = player_key or canonical_key(full_name)
+    evals = _load_evaluations()
+    player_eval = (evals.get("players") or {}).get(key)
+    if player_eval and player_eval.get("status") == "done" and player_eval.get("pillars"):
+        reports = _load_reports()
+        report = reports.get(key, {})
+        return _scores_from_evaluation(
+            player_eval, full_name, pos, height, weight, report,
+        )
+
     reports = _load_reports()
     report = reports.get(key, {})
     evidence: dict[str, list[str]] = {}
 
     text = _scoring_text(report)
+    if extra_text:
+        text = f"{text} {extra_text.lower()}"
     lex: dict[str, float] = {}
     for dim in NORTHSTAR_WEIGHTS:
         s, ev = _lex_score(dim, text)
