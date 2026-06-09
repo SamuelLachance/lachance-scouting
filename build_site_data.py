@@ -272,6 +272,130 @@ def enrich_analysis(
     return out
 
 
+def clamp(value: float, low: float, high: float) -> float:
+    return max(low, min(high, value))
+
+
+def discovery_label(score: float) -> str:
+    if score >= 85:
+        return "Alerte star cachée"
+    if score >= 75:
+        return "Diamant sous-évalué"
+    if score >= 65:
+        return "Upside à surveiller"
+    if score >= 55:
+        return "Signal latent"
+    return "Prix du marché"
+
+
+def discovery_confidence(row: dict) -> tuple[float, str]:
+    coverage = (row.get("reportCoverage") or "").lower()
+    coverage_score = {
+        "manual": 0.95,
+        "full": 0.9,
+        "partial": 0.74,
+        "thin": 0.58,
+        "none": 0.42,
+    }.get(coverage, 0.55)
+    source_count = len(row.get("sourceMix") or [])
+    source_score = clamp(0.35 + source_count * 0.12, 0.35, 0.95)
+    score = round(coverage_score * 0.65 + source_score * 0.35, 2)
+    if score >= 0.78:
+        label = "Confiance élevée"
+    elif score >= 0.58:
+        label = "Confiance moyenne"
+    else:
+        label = "Confiance basse"
+    return score, label
+
+
+def build_discovery_signal(row: dict, northstar_rank: int) -> dict:
+    """Detecte les prospects dont le profil star depasse le prix du marche."""
+    skills = row.get("skills") or {}
+    star_ceiling = float(skills.get("starCeiling", 5.0))
+    hockey_iq = float(skills.get("hockeyIQ", 5.0))
+    skating = float(skills.get("skatingEngine", 5.0))
+    offense = float(skills.get("offensiveStarPower", 5.0))
+    competition = float(skills.get("competitionProof", 5.0))
+    development = float(skills.get("developmentArc", 5.0))
+
+    upside_core = (
+        star_ceiling * 0.30
+        + hockey_iq * 0.18
+        + skating * 0.16
+        + offense * 0.16
+        + development * 0.12
+        + competition * 0.08
+    )
+    rare_tools = [
+        ("plafond étoile", star_ceiling),
+        ("processing", hockey_iq),
+        ("moteur de patinage", skating),
+        ("pouvoir offensif", offense),
+        ("arc de développement", development),
+    ]
+    rare_tool_count = sum(1 for _, value in rare_tools if value >= 8.5)
+    peak_tool = max(rare_tools, key=lambda item: item[1])
+
+    consensus_rank = row.get("consensusRank")
+    market_gap = (consensus_rank - northstar_rank) if consensus_rank is not None else None
+    if market_gap is None:
+        market_component = 10 if row["overall"] >= 68 else 4
+        market_status = "Aucun consensus public fiable"
+    elif market_gap > 0:
+        market_component = clamp(market_gap * 0.45, 0, 22)
+        market_status = f"Consensus {market_gap} rangs plus bas que NORTHSTAR"
+    elif market_gap < 0:
+        market_component = clamp(market_gap * 0.25, -12, 0)
+        market_status = f"Consensus {abs(market_gap)} rangs plus haut que NORTHSTAR"
+    else:
+        market_component = 0
+        market_status = "Consensus aligne avec NORTHSTAR"
+
+    confidence_score, confidence_label = discovery_confidence(row)
+    raw_score = (
+        row["overall"] * 0.42
+        + upside_core * 10 * 0.34
+        + market_component
+        + rare_tool_count * 2.2
+        + max(0, development - 7.0) * 1.7
+    )
+    if row.get("isOverAge"):
+        raw_score -= 4.5
+    score = round(clamp(raw_score * (0.86 + confidence_score * 0.14), 0, 99), 1)
+
+    reasons = []
+    if market_gap is None:
+        reasons.append("Pas de consensus public solide: opportunité de marché")
+    elif market_gap >= 12:
+        reasons.append(f"NORTHSTAR le place {market_gap} rangs avant le consensus")
+    elif market_gap >= 5:
+        reasons.append(f"Ecart positif vs consensus: +{market_gap} rangs")
+    if rare_tool_count:
+        reasons.append(f"{rare_tool_count} outil(s) rares à 8.5+/10")
+    if peak_tool[1] >= 8.8:
+        reasons.append(f"Trait signature: {peak_tool[0]} {peak_tool[1]:.1f}/10")
+    if development >= 8.3:
+        reasons.append(f"Arc de développement explosif: {development:.1f}/10")
+    if competition >= 8.3:
+        reasons.append(f"Preuve vs competition forte: {competition:.1f}/10")
+    if not reasons:
+        reasons.append("Profil calibre par le marche actuel")
+
+    return {
+        "score": score,
+        "label": discovery_label(score),
+        "marketGap": market_gap,
+        "marketStatus": market_status,
+        "upsideCore": round(upside_core * 10, 1),
+        "rareToolCount": rare_tool_count,
+        "peakTool": {"label": peak_tool[0], "score": round(peak_tool[1], 1)},
+        "confidence": confidence_score,
+        "confidenceLabel": confidence_label,
+        "reasons": reasons[:4],
+    }
+
+
 def build_year(year: int) -> int:
     paths = paths_for_year(year)
     rankings_path = paths["rankings"]
@@ -359,6 +483,7 @@ def build_year(year: int) -> int:
         )
         analysis = dict(row["analysis"])
         analysis["projection"] = projection_fr
+        discovery_signal = build_discovery_signal(row, spi_rank)
         enriched.append({
             **row,
             "rank": spi_rank,
@@ -370,6 +495,7 @@ def build_year(year: int) -> int:
             "tierGroup": ea_tier["tierGroup"],
             "projection": projection_fr,
             "projectionEn": projection_en,
+            "discoverySignal": discovery_signal,
             "analysis": analysis,
         })
 
@@ -381,6 +507,9 @@ def build_year(year: int) -> int:
     out_file = out_dir / "players.json"
     out_file.write_text(content, encoding="utf-8")
     (web_dir / "players.json").write_text(content, encoding="utf-8")
+    if year == DEFAULT_DRAFT_YEAR:
+        (SITE_DATA / "players.json").write_text(content, encoding="utf-8")
+        (WEB_DATA / "players.json").write_text(content, encoding="utf-8")
     print(f"OK {year}: {len(enriched)} joueurs -> {out_file.relative_to(BASE)}")
     return len(enriched)
 

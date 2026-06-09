@@ -1,14 +1,27 @@
 export interface PlayerSkills {
-  skating: number;
-  puckSkills: number;
-  shot: number;
+  starCeiling: number;
   hockeyIQ: number;
-  defense: number;
-  compete: number;
-  physical: number;
-  production: number;
-  ceiling: number;
-  nhlProbability: number;
+  skatingEngine: number;
+  offensiveStarPower: number;
+  competitionProof: number;
+  characterCompete: number;
+  developmentArc: number;
+}
+
+export interface DiscoverySignal {
+  score: number;
+  label: string;
+  marketGap: number | null;
+  marketStatus: string;
+  upsideCore: number;
+  rareToolCount: number;
+  peakTool: {
+    label: string;
+    score: number;
+  };
+  confidence: number;
+  confidenceLabel: string;
+  reasons: string[];
 }
 
 export interface PlayerAnalysis {
@@ -17,35 +30,50 @@ export interface PlayerAnalysis {
   faiblesses: string[];
   comparable: string;
   projection: string;
+  upsideThesis?: string;
 }
 
 export interface Player {
   id: string;
+  draftYear?: number;
   rank: number;
+  northstarRank?: number;
+  apexRank?: number;
   name: string;
   position: string;
   height: string;
   weight: number | string;
   shoots: string;
   country: string;
+  photoUrl?: string;
   overall: number;
+  starTier?: string;
+  reportCoverage?: string;
   consensusRank: number | null;
+  consensusDelta?: number | null;
   tier: string;
+  eaTier?: string;
+  tierGroup?: string;
+  projection?: string;
+  projectionEn?: string;
+  isOverAge?: boolean;
+  overAgePenalty?: number;
+  spiBeforePenalty?: number | string | null;
   skills: PlayerSkills;
+  skillRationales?: Partial<Record<keyof PlayerSkills, string>>;
+  sourceMix?: string[];
+  discoverySignal?: DiscoverySignal;
   analysis: PlayerAnalysis;
 }
 
 export const SKILL_LABELS: Record<keyof PlayerSkills, { label: string; weight: number }> = {
-  skating: { label: "Patinage", weight: 12 },
-  puckSkills: { label: "Habiletés rondelle", weight: 14 },
-  shot: { label: "Tir", weight: 10 },
-  hockeyIQ: { label: "Vision / IQ", weight: 14 },
-  defense: { label: "Jeu défensif", weight: 12 },
-  compete: { label: "Compétitivité", weight: 10 },
-  physical: { label: "Outils physiques", weight: 8 },
-  production: { label: "Production", weight: 10 },
-  ceiling: { label: "Potentiel", weight: 6 },
-  nhlProbability: { label: "Prob. NHL", weight: 4 },
+  starCeiling: { label: "Plafond étoile NHL", weight: 35 },
+  hockeyIQ: { label: "IQ / processing élite", weight: 18 },
+  skatingEngine: { label: "Moteur de patinage", weight: 15 },
+  offensiveStarPower: { label: "Pouvoir offensif star", weight: 12 },
+  competitionProof: { label: "Preuve vs compétition", weight: 10 },
+  characterCompete: { label: "Compétitivité / caractère", weight: 5 },
+  developmentArc: { label: "Arc de développement", weight: 5 },
 };
 
 export const COUNTRY_FLAGS: Record<string, string> = {

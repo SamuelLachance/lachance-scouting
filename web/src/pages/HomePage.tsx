@@ -13,14 +13,16 @@ export default function HomePage() {
   const [country, setCountry] = useState("ALL");
   const [tier, setTier] = useState("ALL");
   const [minScore, setMinScore] = useState(0);
+  const [minDiscovery, setMinDiscovery] = useState(0);
+  const [hiddenOnly, setHiddenOnly] = useState(false);
 
   const positions = useMemo(() => [...new Set(players.map((p) => p.position))].sort(), [players]);
   const countries = useMemo(() => [...new Set(players.map((p) => p.country))].sort(), [players]);
   const tiers = useMemo(() => [...new Set(players.map((p) => p.tier))], [players]);
 
   const filtered = useMemo(
-    () => filterPlayers(players, query, position, country, tier, minScore),
-    [players, query, position, country, tier, minScore]
+    () => filterPlayers(players, query, position, country, tier, minScore, minDiscovery, hiddenOnly),
+    [players, query, position, country, tier, minScore, minDiscovery, hiddenOnly]
   );
 
   const stats = useMemo(() => getStats(players), [players]);
@@ -46,10 +48,10 @@ export default function HomePage() {
     <>
       <div className="mb-6">
         <h2 className="font-display font-bold text-2xl sm:text-3xl mb-1">
-          Classement BPA
+          Classement NORTHSTAR Discovery
         </h2>
         <p className="text-slate-500 text-sm">
-          Best Player Available — {players.length} prospects classés sans favoritisme de position
+          Star Probability Index + marché inefficace — {players.length} prospects analysés sans dépendre du consensus public
         </p>
       </div>
 
@@ -66,6 +68,10 @@ export default function HomePage() {
         onTierChange={setTier}
         minScore={minScore}
         onMinScoreChange={setMinScore}
+        minDiscovery={minDiscovery}
+        onMinDiscoveryChange={setMinDiscovery}
+        hiddenOnly={hiddenOnly}
+        onHiddenOnlyChange={setHiddenOnly}
         positions={positions}
         countries={countries}
         tiers={tiers}

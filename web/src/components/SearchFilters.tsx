@@ -11,6 +11,10 @@ interface SearchFiltersProps {
   onTierChange: (v: string) => void;
   minScore: number;
   onMinScoreChange: (v: number) => void;
+  minDiscovery: number;
+  onMinDiscoveryChange: (v: number) => void;
+  hiddenOnly: boolean;
+  onHiddenOnlyChange: (v: boolean) => void;
   positions: string[];
   countries: string[];
   tiers: string[];
@@ -23,7 +27,9 @@ export default function SearchFilters(props: SearchFiltersProps) {
     props.position !== "ALL" ||
     props.country !== "ALL" ||
     props.tier !== "ALL" ||
-    props.minScore > 0;
+    props.minScore > 0 ||
+    props.minDiscovery > 0 ||
+    props.hiddenOnly;
 
   const reset = () => {
     props.onQueryChange("");
@@ -31,6 +37,8 @@ export default function SearchFilters(props: SearchFiltersProps) {
     props.onCountryChange("ALL");
     props.onTierChange("ALL");
     props.onMinScoreChange(0);
+    props.onMinDiscoveryChange(0);
+    props.onHiddenOnlyChange(false);
   };
 
   return (
@@ -63,13 +71,13 @@ export default function SearchFilters(props: SearchFiltersProps) {
         <span className="ml-auto font-mono text-ice-400">{props.resultCount} résultats</span>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 lg:grid-cols-6 gap-2">
         <Select label="Position" value={props.position} onChange={props.onPositionChange} options={["ALL", ...props.positions]} />
         <Select label="Pays" value={props.country} onChange={props.onCountryChange} options={["ALL", ...props.countries]} />
         <Select label="Tier" value={props.tier} onChange={props.onTierChange} options={["ALL", ...props.tiers]} />
         <div>
           <label className="block text-[10px] uppercase tracking-wide text-slate-500 mb-1">
-            Note min: {props.minScore}
+            SPI min: {props.minScore}
           </label>
           <input
             type="range"
@@ -81,6 +89,29 @@ export default function SearchFilters(props: SearchFiltersProps) {
             className="w-full accent-ice-500"
           />
         </div>
+        <div>
+          <label className="block text-[10px] uppercase tracking-wide text-slate-500 mb-1">
+            Discovery min: {props.minDiscovery}
+          </label>
+          <input
+            type="range"
+            min={0}
+            max={95}
+            step={5}
+            value={props.minDiscovery}
+            onChange={(e) => props.onMinDiscoveryChange(Number(e.target.value))}
+            className="w-full accent-fuchsia-400"
+          />
+        </div>
+        <label className="flex items-center gap-2 px-3 py-2 rounded-lg bg-rink-800/80 border border-white/5 text-xs text-slate-300">
+          <input
+            type="checkbox"
+            checked={props.hiddenOnly}
+            onChange={(e) => props.onHiddenOnlyChange(e.target.checked)}
+            className="accent-fuchsia-400"
+          />
+          Marché inefficace
+        </label>
       </div>
     </div>
   );

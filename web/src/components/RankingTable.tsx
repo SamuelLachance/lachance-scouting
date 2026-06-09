@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 import { Player, COUNTRY_FLAGS } from "../types/player";
-import { scoreColor, positionColor, tierColor } from "../utils/playerUtils";
+import { discoveryColor, getDiscoverySignal, scoreColor, positionColor, tierColor } from "../utils/playerUtils";
 
 interface RankingTableProps {
   players: Player[];
@@ -21,72 +21,82 @@ export default function RankingTable({ players }: RankingTableProps) {
               <th className="px-4 py-3 font-medium hidden md:table-cell">Taille</th>
               <th className="px-4 py-3 font-medium hidden lg:table-cell">Pays</th>
               <th className="px-4 py-3 font-medium hidden md:table-cell">Tier</th>
-              <th className="px-4 py-3 font-medium text-right">Note</th>
+              <th className="px-4 py-3 font-medium hidden lg:table-cell">Signal caché</th>
+              <th className="px-4 py-3 font-medium text-right">SPI</th>
               <th className="w-10" />
             </tr>
           </thead>
           <tbody>
-            {players.map((p, i) => (
-              <motion.tr
-                key={p.id}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: Math.min(i * 0.015, 0.5) }}
-                className="border-b border-white/[0.03] hover:bg-white/[0.02] group transition-colors"
-              >
-                <td className="px-4 py-3">
-                  <span
-                    className={`font-mono font-semibold ${p.rank <= 10 ? "text-gold" : p.rank <= 32 ? "text-ice-400" : "text-slate-500"}`}
-                  >
-                    {p.rank}
-                  </span>
-                </td>
-                <td className="px-4 py-3">
-                  <Link to={`/player/${p.id}`} className="flex items-center gap-3 group/link">
-                    <RankBadge rank={p.rank} />
-                    <div>
-                      <p className="font-semibold text-slate-100 group-hover/link:text-ice-300 transition-colors">
-                        {p.name}
-                      </p>
-                      <p className="text-xs text-slate-500 sm:hidden">
-                        {p.position} · {p.height}
-                      </p>
+            {players.map((p, i) => {
+              const discovery = getDiscoverySignal(p);
+              return (
+                <motion.tr
+                  key={p.id}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: Math.min(i * 0.015, 0.5) }}
+                  className="border-b border-white/[0.03] hover:bg-white/[0.02] group transition-colors"
+                >
+                  <td className="px-4 py-3">
+                    <span
+                      className={`font-mono font-semibold ${p.rank <= 10 ? "text-gold" : p.rank <= 32 ? "text-ice-400" : "text-slate-500"}`}
+                    >
+                      {p.rank}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3">
+                    <Link to={`/player/${p.id}`} className="flex items-center gap-3 group/link">
+                      <RankBadge rank={p.rank} />
+                      <div>
+                        <p className="font-semibold text-slate-100 group-hover/link:text-ice-300 transition-colors">
+                          {p.name}
+                        </p>
+                        <p className="text-xs text-slate-500 sm:hidden">
+                          {p.position} · {p.height} · Discovery {discovery.score.toFixed(1)}
+                        </p>
+                      </div>
+                    </Link>
+                  </td>
+                  <td className="px-4 py-3 hidden sm:table-cell">
+                    <span className={`inline-flex px-2 py-0.5 rounded border text-xs font-mono ${positionColor(p.position)}`}>
+                      {p.position}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 hidden md:table-cell font-mono text-slate-400 text-xs">
+                    {p.height} / {p.weight}
+                  </td>
+                  <td className="px-4 py-3 hidden lg:table-cell">
+                    <span title={p.country}>
+                      {COUNTRY_FLAGS[p.country] ?? "🏳️"} {p.country}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 hidden md:table-cell">
+                    <span className={`inline-flex px-2 py-0.5 rounded-full border text-[10px] font-medium bg-gradient-to-r ${tierColor(p.tier)}`}>
+                      {p.tier}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 hidden lg:table-cell">
+                    <div className={`inline-flex flex-col px-2 py-1 rounded-lg border ${discoveryColor(discovery.score)}`}>
+                      <span className="font-mono text-xs font-bold">{discovery.score.toFixed(1)}</span>
+                      <span className="text-[10px] opacity-80">{discovery.label}</span>
                     </div>
-                  </Link>
-                </td>
-                <td className="px-4 py-3 hidden sm:table-cell">
-                  <span className={`inline-flex px-2 py-0.5 rounded border text-xs font-mono ${positionColor(p.position)}`}>
-                    {p.position}
-                  </span>
-                </td>
-                <td className="px-4 py-3 hidden md:table-cell font-mono text-slate-400 text-xs">
-                  {p.height} / {p.weight}
-                </td>
-                <td className="px-4 py-3 hidden lg:table-cell">
-                  <span title={p.country}>
-                    {COUNTRY_FLAGS[p.country] ?? "🏳️"} {p.country}
-                  </span>
-                </td>
-                <td className="px-4 py-3 hidden md:table-cell">
-                  <span className={`inline-flex px-2 py-0.5 rounded-full border text-[10px] font-medium bg-gradient-to-r ${tierColor(p.tier)}`}>
-                    {p.tier}
-                  </span>
-                </td>
-                <td className="px-4 py-3 text-right">
-                  <span className={`font-display font-bold text-lg ${scoreColor(p.overall)}`}>
-                    {p.overall.toFixed(1)}
-                  </span>
-                </td>
-                <td className="px-2 py-3">
-                  <Link
-                    to={`/player/${p.id}`}
-                    className="p-1.5 rounded-lg opacity-0 group-hover:opacity-100 hover:bg-ice-500/10 text-ice-400 transition-all"
-                  >
-                    <ChevronRight className="w-4 h-4" />
-                  </Link>
-                </td>
-              </motion.tr>
-            ))}
+                  </td>
+                  <td className="px-4 py-3 text-right">
+                    <span className={`font-display font-bold text-lg ${scoreColor(p.overall)}`}>
+                      {p.overall.toFixed(1)}
+                    </span>
+                  </td>
+                  <td className="px-2 py-3">
+                    <Link
+                      to={`/player/${p.id}`}
+                      className="p-1.5 rounded-lg opacity-0 group-hover:opacity-100 hover:bg-ice-500/10 text-ice-400 transition-all"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </Link>
+                  </td>
+                </motion.tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

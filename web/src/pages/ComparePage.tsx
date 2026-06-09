@@ -3,8 +3,8 @@ import { useSearchParams, Link } from "react-router-dom";
 import { GitCompareArrows } from "lucide-react";
 import { usePlayers } from "../context/PlayersContext";
 import SkillRadar from "../components/SkillRadar";
-import { scoreColor, positionColor } from "../utils/playerUtils";
-import { COUNTRY_FLAGS } from "../types/player";
+import { discoveryColor, getDiscoverySignal } from "../utils/playerUtils";
+import { COUNTRY_FLAGS, Player, SKILL_LABELS } from "../types/player";
 
 export default function ComparePage() {
   const { players, loading } = usePlayers();
@@ -105,7 +105,7 @@ function PlayerSelect({
   label: string;
   value: string;
   onChange: (v: string) => void;
-  players: { id: string; rank: number; name: string; overall: number }[];
+  players: Player[];
 }) {
   return (
     <div className="glass rounded-xl p-4">
@@ -118,7 +118,7 @@ function PlayerSelect({
         <option value="">— Choisir —</option>
         {players.map((p) => (
           <option key={p.id} value={p.id}>
-            #{p.rank} {p.name} ({p.overall.toFixed(1)})
+            #{p.rank} {p.name} ({p.overall.toFixed(1)} · D {getDiscoverySignal(p).score.toFixed(1)})
           </option>
         ))}
       </select>
@@ -130,28 +130,27 @@ function CompareTable({
   a,
   b,
 }: {
-  a: {
-    id: string;
-    name: string;
-    rank: number;
-    position: string;
-    country: string;
-    overall: number;
-    skills: Record<string, number>;
-  };
-  b: typeof a;
+  a: Player;
+  b: Player;
 }) {
+  const discoveryA = getDiscoverySignal(a);
+  const discoveryB = getDiscoverySignal(b);
   const rows = [
-    { label: "Rang BPA", a: `#${a.rank}`, b: `#${b.rank}`, diff: a.rank - b.rank },
-    { label: "Note globale", a: a.overall.toFixed(1), b: b.overall.toFixed(1), diff: a.overall - b.overall },
+    { label: "Rang NORTHSTAR", a: `#${a.rank}`, b: `#${b.rank}`, diff: a.rank - b.rank },
+    { label: "SPI", a: a.overall.toFixed(1), b: b.overall.toFixed(1), diff: a.overall - b.overall },
+    { label: "Discovery", a: discoveryA.score.toFixed(1), b: discoveryB.score.toFixed(1), diff: discoveryA.score - discoveryB.score },
     { label: "Position", a: a.position, b: b.position, diff: null },
     { label: "Pays", a: `${COUNTRY_FLAGS[a.country] ?? ""} ${a.country}`, b: `${COUNTRY_FLAGS[b.country] ?? ""} ${b.country}`, diff: null },
+    { label: "Consensus", a: a.consensusRank ? `#${a.consensusRank}` : "—", b: b.consensusRank ? `#${b.consensusRank}` : "—", diff: null },
   ];
 
-  const skillRows = Object.entries(a.skills).map(([key, valA]) => {
-    const valB = (b.skills as Record<string, number>)[key];
-    return { label: key, a: valA.toFixed(1), b: valB.toFixed(1), diff: valA - valB };
-  });
+  const skillRows = (Object.entries(SKILL_LABELS) as [keyof Player["skills"], { label: string }][]).map(
+    ([key, meta]) => {
+      const valA = a.skills[key];
+      const valB = b.skills[key];
+      return { label: meta.label, a: valA.toFixed(1), b: valB.toFixed(1), diff: valA - valB };
+    }
+  );
 
   return (
     <div className="glass rounded-xl overflow-hidden">
@@ -173,11 +172,11 @@ function CompareTable({
           </tr>
         </thead>
         <tbody>
-          {[...rows, ...skillRows.slice(0, 6)].map((row) => (
+          {[...rows, ...skillRows].map((row) => (
             <tr key={row.label} className="border-b border-white/[0.03]">
               <td className="px-4 py-2.5 text-slate-400 capitalize">{row.label}</td>
-              <td className="px-4 py-2.5 font-mono">{row.a}</td>
-              <td className="px-4 py-2.5 font-mono">{row.b}</td>
+              <td className={`px-4 py-2.5 font-mono ${row.label === "Discovery" ? discoveryColor(discoveryA.score).split(" ")[0] : ""}`}>{row.a}</td>
+              <td className={`px-4 py-2.5 font-mono ${row.label === "Discovery" ? discoveryColor(discoveryB.score).split(" ")[0] : ""}`}>{row.b}</td>
               <td className="px-4 py-2.5 text-right font-mono">
                 {row.diff !== null && typeof row.diff === "number" ? (
                   <span className={row.diff > 0 ? "text-emerald-400" : row.diff < 0 ? "text-rose-400" : "text-slate-500"}>

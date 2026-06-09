@@ -1,30 +1,38 @@
 import { motion } from "framer-motion";
-import { TrendingUp, Users, Globe, Star } from "lucide-react";
+import { Gem, TrendingUp, Users, Globe, Star } from "lucide-react";
 
 interface StatsBarProps {
   total: number;
   elite: number;
   firstRound: number;
   avgScore: number;
+  avgDiscovery: number;
+  hiddenStars: number;
   countries: number;
 }
 
-export default function StatsBar({ total, elite, firstRound, avgScore, countries }: StatsBarProps) {
+export default function StatsBar({ total, elite, firstRound, avgScore, avgDiscovery, hiddenStars, countries }: StatsBarProps) {
   const stats = [
     { icon: Users, label: "Prospects", value: total, color: "text-ice-400" },
-    { icon: Star, label: "Tier Élite", value: elite, color: "text-gold" },
-    { icon: TrendingUp, label: "1er tour", value: firstRound, color: "text-emerald-400" },
+    { icon: Gem, label: "Diamants", value: hiddenStars, color: "text-fuchsia-300" },
+    { icon: Star, label: "Upside élite", value: elite || firstRound, color: "text-gold" },
     { icon: Globe, label: "Pays", value: countries, color: "text-purple-400" },
     {
       icon: TrendingUp,
-      label: "Note moy.",
+      label: "SPI moy.",
       value: avgScore.toFixed(1),
       color: "text-ice-300",
+    },
+    {
+      icon: TrendingUp,
+      label: "Discovery moy.",
+      value: avgDiscovery.toFixed(1),
+      color: "text-emerald-300",
     },
   ];
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
       {stats.map((s, i) => (
         <motion.div
           key={s.label}

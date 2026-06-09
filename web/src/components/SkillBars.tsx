@@ -3,9 +3,10 @@ import { PlayerSkills, SKILL_LABELS } from "../types/player";
 
 interface SkillBarsProps {
   skills: PlayerSkills;
+  rationales?: Partial<Record<keyof PlayerSkills, string>>;
 }
 
-export default function SkillBars({ skills }: SkillBarsProps) {
+export default function SkillBars({ skills, rationales }: SkillBarsProps) {
   const entries = Object.entries(SKILL_LABELS) as [keyof PlayerSkills, { label: string; weight: number }][];
 
   return (
@@ -32,11 +33,20 @@ export default function SkillBars({ skills }: SkillBarsProps) {
                 className={`h-full rounded-full ${barBg(value)}`}
               />
             </div>
+            {rationales?.[key] && (
+              <p className="mt-1.5 text-xs leading-relaxed text-slate-500">
+                {stripMarkdown(rationales[key])}
+              </p>
+            )}
           </div>
         );
       })}
     </div>
   );
+}
+
+function stripMarkdown(value: string | undefined) {
+  return (value ?? "").replace(/\*\*/g, "");
 }
 
 function barColor(v: number) {

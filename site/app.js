@@ -26,7 +26,7 @@ let players = [];
 let playersCache = {};
 let chartInstance = null;
 let state = {
-  query: '', position: 'ALL', country: 'ALL', tier: 'ALL', minScore: 0,
+  query: '', position: 'ALL', country: 'ALL', tier: 'ALL', minScore: 0, minDiscovery: 0, hiddenOnly: false,
   compareA: '', compareB: '', listPage: 0,
   headerSearch: '', searchHighlight: 0,
 };
@@ -201,6 +201,50 @@ function barClass(v) {
   return 'bar-low';
 }
 
+function discoveryClass(s) {
+  if (s >= 85) return 'discovery-alert';
+  if (s >= 75) return 'discovery-diamond';
+  if (s >= 65) return 'discovery-watch';
+  if (s >= 55) return 'discovery-latent';
+  return 'discovery-market';
+}
+
+function discoverySignal(p) {
+  if (p.discoverySignal) return p.discoverySignal;
+  const sk = p.skills || {};
+  const upsideCore =
+    (sk.starCeiling || 5) * 3 +
+    (sk.hockeyIQ || 5) * 1.8 +
+    (sk.skatingEngine || 5) * 1.6 +
+    (sk.offensiveStarPower || 5) * 1.6 +
+    (sk.developmentArc || 5) * 1.2 +
+    (sk.competitionProof || 5) * 0.8;
+  const marketGap = p.consensusRank ? p.consensusRank - p.rank : null;
+  const marketBoost = marketGap == null ? 8 : Math.max(-10, Math.min(22, marketGap * 0.45));
+  const rareToolCount = Object.values(sk).filter(v => v >= 8.5).length;
+  const score = Math.max(0, Math.min(99, p.overall * 0.42 + upsideCore * 0.34 + marketBoost + rareToolCount * 2));
+  return {
+    score: Number(score.toFixed(1)),
+    label: score >= 75 ? 'Diamant sous-évalué' : score >= 65 ? 'Upside à surveiller' : 'Signal latent',
+    marketGap,
+    marketStatus: marketGap == null ? 'Aucun consensus public fiable' : marketGap > 0 ? `Consensus ${marketGap} rangs plus bas que NORTHSTAR` : marketGap < 0 ? `Consensus ${Math.abs(marketGap)} rangs plus haut que NORTHSTAR` : 'Consensus aligné avec NORTHSTAR',
+    upsideCore: Number(upsideCore.toFixed(1)),
+    rareToolCount,
+    peakTool: { label: 'profil', score: Math.max(...Object.values(sk).map(Number)) || 0 },
+    confidenceLabel: 'Confiance moyenne',
+    reasons: ['Signal généré côté interface en attente des données Discovery.'],
+  };
+}
+
+function discoveryPill(d) {
+  return `<span class="discovery-pill ${discoveryClass(d.score)}" title="${esc(d.marketStatus || d.label)}"><strong>${d.score.toFixed(1)}</strong><small>${esc(d.label)}</small></span>`;
+}
+
+function isHiddenOpportunity(p) {
+  const d = discoverySignal(p);
+  return d.score >= 65 && (d.marketGap == null || d.marketGap >= 8);
+}
+
 function normalizeName(s) {
   return String(s).normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 }
@@ -231,22 +275,30 @@ function matchPlayersByName(q, limit) {
 function filterPlayers() {
   const q = normalizeName(state.query);
   return players.filter(p => {
+    const d = discoverySignal(p);
     if (q && !normalizeName(p.name).includes(q)) return false;
     if (state.position !== 'ALL' && p.position !== state.position) return false;
     if (state.country !== 'ALL' && p.country !== state.country) return false;
     if (state.tier !== 'ALL' && p.tier !== state.tier) return false;
     if (p.overall < state.minScore) return false;
+    if (d.score < state.minDiscovery) return false;
+    if (state.hiddenOnly && !isHiddenOpportunity(p)) return false;
     return true;
   }).sort((a, b) => b.overall - a.overall || a.name.localeCompare(b.name));
 }
 
 function getStats() {
+  if (!players.length) {
+    return { total: 0, generational: 0, franchise: 0, elite: 0, avg: '0.0', avgDiscovery: '0.0', hiddenStars: 0, countries: 0 };
+  }
   return {
     total: players.length,
     generational: players.filter(p => tierClass(p.tier) === 'tier-generational').length,
     franchise: players.filter(p => tierClass(p.tier) === 'tier-franchise').length,
     elite: players.filter(p => tierClass(p.tier) === 'tier-elite').length,
     avg: (players.reduce((s,p) => s + p.overall, 0) / players.length).toFixed(1),
+    avgDiscovery: (players.reduce((s,p) => s + discoverySignal(p).score, 0) / players.length).toFixed(1),
+    hiddenStars: players.filter(p => discoverySignal(p).score >= 75 && isHiddenOpportunity(p)).length,
     countries: new Set(players.map(p => p.country)).size
   };
 }
@@ -319,16 +371,17 @@ function renderHome() {
     </div>` : '';
 
   return `${header('home')}<main class="fade-in">
-    <h2 class="page-title">Classement NORTHSTAR · ${draftYear}</h2>
-    <p class="page-sub">Star Probability Index — évaluation joueur-par-joueur via elite scouting vision</p>
+    <h2 class="page-title">Classement NORTHSTAR Discovery · ${draftYear}</h2>
+    <p class="page-sub">Star Probability Index + marché inefficace — détecter les futurs joueurs d'impact avant le consensus public</p>
 
     <div class="stats-grid">
       <div class="glass stat-card"><div class="stat-label">Prospects</div><div class="stat-value" style="color:var(--ice-400)">${stats.total}</div></div>
-      <div class="glass stat-card"><div class="stat-label">Générationnel</div><div class="stat-value" style="color:#f472b6">${stats.generational}</div></div>
+      <div class="glass stat-card"><div class="stat-label">Diamants</div><div class="stat-value" style="color:#f0abfc">${stats.hiddenStars}</div></div>
       <div class="glass stat-card"><div class="stat-label">Franchise</div><div class="stat-value" style="color:var(--gold)">${stats.franchise}</div></div>
       <div class="glass stat-card"><div class="stat-label">Élite</div><div class="stat-value" style="color:#34d399">${stats.elite}</div></div>
       <div class="glass stat-card"><div class="stat-label">Pays</div><div class="stat-value" style="color:#a78bfa">${stats.countries}</div></div>
       <div class="glass stat-card"><div class="stat-label">SPI moyen</div><div class="stat-value" style="color:var(--ice-400)">${stats.avg}</div></div>
+      <div class="glass stat-card"><div class="stat-label">Discovery moy.</div><div class="stat-value" style="color:#34d399">${stats.avgDiscovery}</div></div>
     </div>
 
     <div class="glass filters">
@@ -340,6 +393,14 @@ function renderHome() {
           <label style="font-size:10px;color:#64748b;text-transform:uppercase">SPI min: <span id="min-label">${state.minScore}</span></label>
           <input type="range" id="f-min" min="0" max="95" step="5" value="${state.minScore}" style="width:100%;accent-color:var(--ice-500)" />
         </div>
+        <div style="flex:1;min-width:150px">
+          <label style="font-size:10px;color:#64748b;text-transform:uppercase">Discovery min: <span id="discovery-label">${state.minDiscovery}</span></label>
+          <input type="range" id="f-discovery" min="0" max="95" step="5" value="${state.minDiscovery}" style="width:100%;accent-color:#e879f9" />
+        </div>
+        <label class="toggle-filter">
+          <input type="checkbox" id="f-hidden" ${state.hiddenOnly ? 'checked' : ''} />
+          Marché inefficace
+        </label>
       </div>
       <div class="filter-meta"><span>Filtres actifs${state.query ? ' · nom: « ' + esc(state.query) + ' »' : ''}</span><span>${filtered.length} résultats</span></div>
     </div>
@@ -349,7 +410,7 @@ function renderHome() {
         <thead><tr>
           <th>#</th><th>Joueur</th><th class="hidden-sm">Pos</th><th class="hidden-md">Taille</th>
           <th class="hidden-md">Pays</th><th class="hidden-sm">Projection</th>
-          <th class="hidden-md">Cons.</th><th style="text-align:right">SPI</th>
+          <th class="hidden-md">Signal caché</th><th style="text-align:right">SPI</th>
         </tr></thead>
         <tbody>${pageItems.map(p => `
           <tr onclick="location.hash='/${draftYear}/player/${p.id}'">
@@ -359,7 +420,7 @@ function renderHome() {
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#94a3b8">${p.height} / ${p.weight}</td>
             <td class="hidden-md">${FLAGS[p.country]||'🏳️'} ${p.country}</td>
             <td class="hidden-sm"><span class="tier projection-cell ${tierClass(p.tier)}" title="${esc(p.eaTier || p.tier)}">${esc(p.projection || p.tier)}</span></td>
-            <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#64748b">${p.consensusRank ? '#'+p.consensusRank : '—'}</td>
+            <td class="hidden-md">${discoveryPill(discoverySignal(p))}</td>
             <td style="text-align:right"><span class="${scoreClass(p.overall)}">${p.overall.toFixed(1)}</span></td>
           </tr>`).join('')}
         </tbody>
@@ -383,6 +444,7 @@ function renderPlayer(id) {
   const next = players.find(x => x.rank === p.rank + 1);
   const a = p.analysis;
   const pct = `${p.overall}%`;
+  const d = discoverySignal(p);
 
   const rationales = p.skillRationales || {};
   const skillBars = SKILL_KEYS.map(key => {
@@ -426,6 +488,7 @@ function renderPlayer(id) {
             <span style="font-size:12px;color:#64748b;font-family:var(--font-mono)">SPI ${p.overall.toFixed(1)}${p.consensusRank ? ` · Cons. #${p.consensusRank}` : ''}</span>
             ${p.isOverAge ? `<span style="font-size:11px;color:#fb7185;font-family:var(--font-mono);padding:2px 8px;border:1px solid rgba(251,113,133,.35);border-radius:6px" title="Éligible 2025, non repêché">Over-age · -${(p.overAgePenalty || 0).toFixed(0)} SPI</span>` : ''}
             <span class="tier ${tierClass(p.tier)}" title="${p.eaTier || p.tier}">${p.tier}</span>
+            ${discoveryPill(d)}
           </div>
           <h1 class="player-name">${esc(p.name)}</h1>
           <div class="player-meta">
@@ -435,6 +498,25 @@ function renderPlayer(id) {
           </div>
           ${a.resume ? `<p class="player-resume">${esc(a.resume)}</p>` : ''}
           ${a.upsideThesis ? `<p class="player-resume" style="margin-top:8px;border-left:3px solid var(--gold);padding-left:12px;color:#cbd5e1"><strong style="color:var(--gold);font-size:11px;text-transform:uppercase">Thèse upside</strong><br>${esc(a.upsideThesis)}</p>` : ''}
+        </div>
+      </div>
+    </div>
+
+    <div class="glass card discovery-card">
+      <div class="discovery-score ${discoveryClass(d.score)}">
+        <strong>${d.score.toFixed(1)}</strong>
+        <span>Discovery</span>
+      </div>
+      <div class="discovery-main">
+        <h3>${esc(d.label)}</h3>
+        <p>${esc(d.marketStatus || '')}</p>
+        <div class="discovery-metrics">
+          <span><small>Upside pur</small>${Number(d.upsideCore || 0).toFixed(1)}/100</span>
+          <span><small>Outil signature</small>${esc((d.peakTool && d.peakTool.label) || 'profil')} ${Number((d.peakTool && d.peakTool.score) || 0).toFixed(1)}</span>
+          <span><small>Confiance</small>${esc(d.confidenceLabel || 'Confiance moyenne')}</span>
+        </div>
+        <div class="discovery-reasons">
+          ${(d.reasons || []).map(r => `<span>${esc(r)}</span>`).join('')}
         </div>
       </div>
     </div>
@@ -475,7 +557,7 @@ function renderCompare(aId, bId) {
   const meta = currentDraftMeta();
 
   const opts = players.map(p =>
-    `<option value="${p.id}">#${p.rank} ${esc(p.name)} (${p.overall.toFixed(1)})</option>`
+    `<option value="${p.id}">#${p.rank} ${esc(p.name)} (${p.overall.toFixed(1)} · D ${discoverySignal(p).score.toFixed(1)})</option>`
   ).join('');
 
   let compareSection = '<div class="glass card" style="padding:2rem;text-align:center;color:#64748b">Sélectionnez deux joueurs pour comparer.</div>';
@@ -484,6 +566,8 @@ function renderCompare(aId, bId) {
   } else if ((aId && !a) || (bId && !b)) {
     compareSection = '<div class="glass card" style="padding:2rem;text-align:center;color:#64748b">Un ou plusieurs joueurs sont introuvables pour ce repêchage.</div>';
   } else if (a && b) {
+    const da = discoverySignal(a);
+    const db = discoverySignal(b);
     const rows = Object.entries(SKILL_LABELS).map(([k,l]) => {
       const va = a.skills[k], vb = b.skills[k], d = va - vb;
       return `<tr><td style="color:#94a3b8">${l}</td><td style="font-family:var(--font-mono)">${va.toFixed(1)}</td><td style="font-family:var(--font-mono)">${vb.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${d>0?'#34d399':d<0?'#fb7185':'#64748b'}">${d>0?'+':''}${d.toFixed(1)}</td></tr>`;
@@ -504,6 +588,7 @@ function renderCompare(aId, bId) {
           <tr><td style="color:#94a3b8">Projection</td><td>${esc(a.projection || a.tier || '—')}</td><td>${esc(b.projection || b.tier || '—')}</td><td></td></tr>
           <tr><td style="color:#94a3b8">Consensus</td><td>${a.consensusRank?'#'+a.consensusRank:'—'}</td><td>${b.consensusRank?'#'+b.consensusRank:'—'}</td><td></td></tr>
           <tr><td style="color:#94a3b8">SPI</td><td>${a.overall.toFixed(1)}</td><td>${b.overall.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.overall>b.overall?'#34d399':'#fb7185'}">${(a.overall-b.overall).toFixed(1)}</td></tr>
+          <tr><td style="color:#94a3b8">Discovery</td><td>${discoveryPill(da)}</td><td>${discoveryPill(db)}</td><td style="text-align:right;font-family:var(--font-mono);color:${da.score>db.score?'#34d399':'#fb7185'}">${(da.score-db.score).toFixed(1)}</td></tr>
           ${rows}
         </tbody></table>
       </div>`;
@@ -536,7 +621,7 @@ function drawRadar(skills, compareSkills) {
   if (!canvas || !window.Chart) return;
   if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
 
-  const labels = ['Plafond','Patinage','Off.','Création','IQ','Traject.','Variance'];
+  const labels = ['Plafond','IQ','Patinage','Offensif','Preuve','Compete','Arc'];
   const keys = SKILL_KEYS;
   const data = keys.map(k => skills[k] ?? 5);
 
@@ -699,6 +784,20 @@ function bindHomeEvents() {
     state.listPage = 0;
     const lbl = document.getElementById('min-label');
     if (lbl) lbl.textContent = state.minScore;
+    render();
+  };
+  const discovery = document.getElementById('f-discovery');
+  if (discovery) discovery.oninput = e => {
+    state.minDiscovery = +e.target.value;
+    state.listPage = 0;
+    const lbl = document.getElementById('discovery-label');
+    if (lbl) lbl.textContent = state.minDiscovery;
+    render();
+  };
+  const hidden = document.getElementById('f-hidden');
+  if (hidden) hidden.onchange = e => {
+    state.hiddenOnly = e.target.checked;
+    state.listPage = 0;
     render();
   };
   const prev = document.getElementById('pg-prev');
