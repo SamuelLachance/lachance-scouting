@@ -49,13 +49,13 @@ from northstar_scoring import (
     build_forces_faiblesses,
     compute_text_quality,
     dph_source_id,
-    northstar_overall,
     pillars_from_consensus_rank,
     pillars_from_stats_heuristic,
     pillars_from_text_blob,
     source_count_confidence_multiplier,
     weighted_merge_sources,
 )
+from truth_engine import compute_evidence_confidence, truth_spi
 
 _paths = paths_for_year(DEFAULT_DRAFT_YEAR)
 OUT = _paths["player_evaluations"]
@@ -1047,7 +1047,9 @@ def evaluate_player(
         "attempts": attempts,
     })
 
-    dims, evidence, source_mix, cov = weighted_merge_sources(contributions)
+    dims, evidence, source_mix, cov = weighted_merge_sources(
+        contributions, position=player.pos,
+    )
     dims = apply_physical_adjustments(dims, player.pos, player.height, player.weight)
 
     pillars = build_pillar_rationales(
@@ -1058,8 +1060,12 @@ def evaluate_player(
     )
 
     n_sources = len(source_mix)
+    avg_attr = sum(s.get("attribution", 1.0) for s in source_mix) / max(n_sources, 1)
+    conf_score, _ = compute_evidence_confidence(
+        n_sources, max(1, n_sources // 2), cov, avg_attr, 0.65,
+    )
     spi = (
-        northstar_overall(dims)
+        truth_spi(dims, player.pos, confidence=conf_score, agreement=0.65)
         * _confidence_multiplier(cov)
         * source_count_confidence_multiplier(n_sources)
     )

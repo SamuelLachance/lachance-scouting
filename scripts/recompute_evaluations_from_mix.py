@@ -18,10 +18,10 @@ from northstar_scoring import (
     NORTHSTAR_WEIGHTS,
     _confidence_multiplier,
     apply_physical_adjustments,
-    northstar_overall,
     source_count_confidence_multiplier,
     weighted_merge_sources,
 )
+from truth_engine import compute_evidence_confidence, truth_spi
 from scripts.evaluate_players_northstar import (
     OUT,
     build_pillar_rationales,
@@ -58,7 +58,9 @@ def recompute_player(ev: dict, player, report: dict) -> dict:
     if not contributions:
         return ev
 
-    dims, evidence, source_mix, cov = weighted_merge_sources(contributions)
+    dims, evidence, source_mix, cov = weighted_merge_sources(
+        contributions, position=player.pos,
+    )
     dims = apply_physical_adjustments(dims, player.pos, player.height, player.weight)
     pillars = build_pillar_rationales(
         dims, evidence, report, cov, source_mix, player.full_name,
@@ -67,8 +69,12 @@ def recompute_player(ev: dict, player, report: dict) -> dict:
         dims, report, evidence, player.pos, player.height, player.weight, cov,
     )
     n_sources = len(source_mix)
+    avg_attr = sum(s.get("attribution", 1.0) for s in source_mix) / max(n_sources, 1)
+    conf_score, _ = compute_evidence_confidence(
+        n_sources, max(1, n_sources // 2), cov, avg_attr, 0.65,
+    )
     spi = (
-        northstar_overall(dims)
+        truth_spi(dims, player.pos, confidence=conf_score, agreement=0.65)
         * _confidence_multiplier(cov)
         * source_count_confidence_multiplier(n_sources)
     )

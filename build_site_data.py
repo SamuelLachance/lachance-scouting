@@ -17,6 +17,7 @@ from northstar_scoring import (
     ea_tier_for_player,
     northstar_overall,
 )
+from truth_engine import compute_evidence_confidence, truth_discovery_rating
 
 PILLAR_TO_SKILL = {
     "star_ceiling": "starCeiling",
@@ -310,91 +311,38 @@ def discovery_confidence(row: dict) -> tuple[float, str]:
 
 
 def build_discovery_signal(row: dict, northstar_rank: int) -> dict:
-    """Detecte les prospects dont le profil star depasse le prix du marche."""
+    """TRUTH Discovery — détecte l'upside sous-évalué avec bornes scientifiques."""
     skills = row.get("skills") or {}
     base_score = float(row.get("baseNorthstarScore", row.get("overall", 50.0)))
-    star_ceiling = float(skills.get("starCeiling", 5.0))
-    hockey_iq = float(skills.get("hockeyIQ", 5.0))
-    skating = float(skills.get("skatingEngine", 5.0))
-    offense = float(skills.get("offensiveStarPower", 5.0))
-    competition = float(skills.get("competitionProof", 5.0))
-    development = float(skills.get("developmentArc", 5.0))
-
-    upside_core = (
-        star_ceiling * 0.30
-        + hockey_iq * 0.18
-        + skating * 0.16
-        + offense * 0.16
-        + development * 0.12
-        + competition * 0.08
-    )
-    rare_tools = [
-        ("plafond étoile", star_ceiling),
-        ("processing", hockey_iq),
-        ("moteur de patinage", skating),
-        ("pouvoir offensif", offense),
-        ("arc de développement", development),
-    ]
-    rare_tool_count = sum(1 for _, value in rare_tools if value >= 8.5)
-    peak_tool = max(rare_tools, key=lambda item: item[1])
-
-    consensus_rank = row.get("consensusRank")
-    market_gap = (consensus_rank - northstar_rank) if consensus_rank is not None else None
-    if market_gap is None:
-        market_component = 6 if base_score >= 68 else 2
-        market_status = "Aucun consensus public fiable"
-    elif market_gap > 0:
-        market_component = clamp(market_gap * 0.18, 0, 10)
-        market_status = f"Consensus {market_gap} rangs plus bas que NORTHSTAR"
-    elif market_gap < 0:
-        market_component = clamp(market_gap * 0.12, -6, 0)
-        market_status = f"Consensus {abs(market_gap)} rangs plus haut que NORTHSTAR"
-    else:
-        market_component = 0
-        market_status = "Consensus aligné avec NORTHSTAR"
-
-    confidence_score, confidence_label = discovery_confidence(row)
-    raw_score = (
-        base_score * 0.62
-        + upside_core * 10 * 0.38
-        + market_component
-        + rare_tool_count * 2.2
-        + max(0, development - 7.0) * 1.7
-    )
-    if row.get("isOverAge"):
-        raw_score -= 4.5
-    score = round(clamp(raw_score * (0.88 + confidence_score * 0.12), 0, 99), 1)
-
-    reasons = []
-    if market_gap is None:
-        reasons.append("Pas de consensus public solide: opportunité de marché")
-    elif market_gap >= 12:
-        reasons.append(f"NORTHSTAR le place {market_gap} rangs avant le consensus")
-    elif market_gap >= 5:
-        reasons.append(f"Écart positif vs consensus: +{market_gap} rangs")
-    if rare_tool_count:
-        reasons.append(f"{rare_tool_count} outil(s) rares à 8.5+/10")
-    if peak_tool[1] >= 8.8:
-        reasons.append(f"Trait signature: {peak_tool[0]} {peak_tool[1]:.1f}/10")
-    if development >= 8.3:
-        reasons.append(f"Arc de développement explosif: {development:.1f}/10")
-    if competition >= 8.3:
-        reasons.append(f"Preuve vs compétition forte: {competition:.1f}/10")
-    if not reasons:
-        reasons.append("Profil calibré par le marché actuel")
-
-    return {
-        "score": score,
-        "label": discovery_label(score),
-        "marketGap": market_gap,
-        "marketStatus": market_status,
-        "upsideCore": round(upside_core * 10, 1),
-        "rareToolCount": rare_tool_count,
-        "peakTool": {"label": peak_tool[0], "score": round(peak_tool[1], 1)},
-        "confidence": confidence_score,
-        "confidenceLabel": confidence_label,
-        "reasons": reasons[:4],
+    pillars = {
+        "star_ceiling": float(skills.get("starCeiling", 5.0)),
+        "hockey_iq": float(skills.get("hockeyIQ", 5.0)),
+        "skating_engine": float(skills.get("skatingEngine", 5.0)),
+        "offensive_star_power": float(skills.get("offensiveStarPower", 5.0)),
+        "competition_proof": float(skills.get("competitionProof", 5.0)),
+        "character_compete": float(skills.get("characterCompete", 5.0)),
+        "development_arc": float(skills.get("developmentArc", 5.0)),
     }
+    coverage = (row.get("reportCoverage") or "partial").lower()
+    source_count = len(row.get("sourceMix") or [])
+    conf_score, conf_label = compute_evidence_confidence(
+        source_count,
+        max(1, source_count // 2),
+        coverage,
+        0.85,
+        0.60,
+    )
+    signal = truth_discovery_rating(
+        spi=base_score,
+        spi_rank=northstar_rank,
+        pillars=pillars,
+        consensus_rank=row.get("consensusRank"),
+        confidence=conf_score,
+        coverage=coverage,
+        is_over_age=bool(row.get("isOverAge")),
+    )
+    signal["confidenceLabel"] = conf_label
+    return signal
 
 
 def build_year(year: int) -> int:
@@ -427,7 +375,7 @@ def build_year(year: int) -> int:
         scores = northstar_scores_for_player(p)
         analysis = enrich_analysis(analysis, p, reports, scores)
         spi = (
-            northstar_overall(scores)
+            northstar_overall(scores, position=p["Position"])
             if scores
             else float(p.get("Score_NORTHSTAR") or p.get("Score_APEX", 50))
         )
