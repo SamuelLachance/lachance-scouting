@@ -411,16 +411,17 @@ function renderHome() {
         <thead><tr>
           <th>#</th><th>Joueur</th><th class="hidden-sm">Pos</th><th class="hidden-md">Taille</th>
           <th class="hidden-md">Pays</th><th class="hidden-sm">Projection</th>
-          <th class="hidden-md">Signal caché</th><th style="text-align:right">Rating</th>
+          <th class="hidden-md">NORTHSTAR</th><th class="hidden-md">Signal caché</th><th style="text-align:right">Score</th>
         </tr></thead>
         <tbody>${pageItems.map(p => `
           <tr onclick="location.hash='/${draftYear}/player/${p.id}'">
             <td><span class="${rankClass(p.rank)}">${p.rank}</span></td>
-            <td><strong>${esc(p.name)}</strong><div class="hidden-sm" style="font-size:11px;color:#64748b">${p.position} · ${p.height}</div></td>
+            <td><strong>${esc(p.name)}</strong><div class="hidden-sm" style="font-size:11px;color:#64748b">${p.position} · ${p.height} · Score ${p.overall.toFixed(1)}</div></td>
             <td class="hidden-sm"><span class="badge ${posBadge(p.position)}">${p.position}</span></td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#94a3b8">${p.height} / ${p.weight}</td>
             <td class="hidden-md">${FLAGS[p.country]||'🏳️'} ${p.country}</td>
             <td class="hidden-sm"><span class="tier projection-cell ${tierClass(p.tier)}" title="${esc(p.eaTier || p.tier)}">${esc(p.projection || p.tier)}</span></td>
+            <td class="hidden-md" style="text-align:right;font-family:var(--font-mono)"><span class="${scoreClass(p.baseNorthstarScore || p.overall)}">${Number(p.baseNorthstarScore || p.overall).toFixed(1)}</span></td>
             <td class="hidden-md">${discoveryPill(discoverySignal(p))}</td>
             <td style="text-align:right"><span class="${scoreClass(p.overall)}">${p.overall.toFixed(1)}</span></td>
           </tr>`).join('')}
