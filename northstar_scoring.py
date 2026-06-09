@@ -339,6 +339,110 @@ def _star_tier(score: float) -> str:
     return "Long shot"
 
 
+# ---------------------------------------------------------------------------
+# EA Sports NHL franchise-mode potential tiers (NHL 22–26 / Puck Drop reference)
+# Mapped from SPI (0–100) → position-specific label (French UI).
+#
+# Top bands (all positions): Générationnel ≥90, Franchise ≥85, Élite ≥78
+# Lower bands follow EA nomenclature per role group (F / D / G).
+# OVR reference (Puck Drop): Franchise 90+, Elite 88+, Top6/Top4/Starter 86+, …
+# SPI thresholds are calibrated for draft-prospect star probability, not OVR.
+# ---------------------------------------------------------------------------
+EA_TIER_BANDS: dict[str, list[tuple[float, str, str]]] = {
+    # (min_spi_inclusive, label_fr, label_en) — sorted high → low
+    "F": [
+        (90.0, "Générationnel", "Generational"),
+        (85.0, "Franchise", "Franchise"),
+        (78.0, "Élite", "Elite"),
+        (74.0, "Top 6", "Top 6 F"),
+        (70.0, "Top 9", "Top 9 F"),
+        (66.0, "Quatrième trio", "Bottom 6 F"),
+        (62.0, "LHA Top 6", "AHL Top 6 F"),
+        (58.0, "LHA Quatrième trio", "AHL Bottom 6 F"),
+        (54.0, "Profondeur mineure", "Minor Depth F"),
+        (0.0, "Profondeur LHA", "AHL Depth F"),
+    ],
+    "D": [
+        (90.0, "Générationnel", "Generational"),
+        (85.0, "Franchise", "Franchise"),
+        (78.0, "Élite", "Elite"),
+        (74.0, "Top 4", "Top 4 D"),
+        (70.0, "Top 6", "Top 6 D"),
+        (66.0, "7e D", "7th D"),
+        (62.0, "LHA Top 6", "AHL Top 6 D"),
+        (58.0, "LHA Quatrième trio", "AHL Bottom 6 D"),
+        (54.0, "Profondeur mineure", "Minor Depth D"),
+        (0.0, "Profondeur LHA", "AHL Depth D"),
+    ],
+    "G": [
+        (90.0, "Générationnel", "Generational"),
+        (85.0, "Franchise", "Franchise"),
+        (78.0, "Élite", "Elite"),
+        (74.0, "Titulaire", "Starter"),
+        (70.0, "Titulaire partiel", "Fringe Starter"),
+        (66.0, "Remplaçant", "Backup"),
+        (62.0, "LHA Titulaire", "AHL Starter"),
+        (58.0, "LHA Remplaçant", "AHL Backup G"),
+        (54.0, "Profondeur mineure", "Minor Backup G"),
+        (0.0, "Profondeur LHA", "AHL Depth G"),
+    ],
+}
+
+
+def ea_position_group(position: str) -> str:
+    """Map C/LW/RW → F, D → D, G → G."""
+    p = (position or "").upper().strip()
+    if p in ("G", "GK", "GOALIE", "GOALTENDER"):
+        return "G"
+    if "D" in p:
+        return "D"
+    return "F"
+
+
+def ea_tier_for_player(spi: float, position: str) -> dict[str, str]:
+    """
+    Return EA-style potential tier for a player from SPI and position.
+
+    Keys: tierLabel (French), eaTier (English canonical), tierGroup (F/D/G).
+    """
+    group = ea_position_group(position)
+    spi_clamped = max(0.0, min(100.0, float(spi)))
+    for min_spi, label_fr, label_en in EA_TIER_BANDS[group]:
+        if spi_clamped >= min_spi:
+            return {
+                "tierLabel": label_fr,
+                "eaTier": label_en,
+                "tierGroup": group,
+            }
+    fallback = EA_TIER_BANDS[group][-1]
+    return {
+        "tierLabel": fallback[1],
+        "eaTier": fallback[2],
+        "tierGroup": group,
+    }
+
+
+def ea_tier_table(position_group: str | None = None) -> dict[str, list[dict]]:
+    """Documented tier table for a position group or all groups."""
+    groups = [position_group] if position_group else list(EA_TIER_BANDS)
+    out: dict[str, list[dict]] = {}
+    for g in groups:
+        if g not in EA_TIER_BANDS:
+            continue
+        bands = EA_TIER_BANDS[g]
+        rows: list[dict] = []
+        for i, (min_spi, label_fr, label_en) in enumerate(bands):
+            max_spi = 100.0 if i == 0 else bands[i - 1][0] - 0.01
+            rows.append({
+                "spi_min": min_spi,
+                "spi_max": round(max_spi, 2),
+                "tierLabel": label_fr,
+                "eaTier": label_en,
+            })
+        out[g] = rows
+    return out
+
+
 def _band(v: float) -> tuple[str, str]:
     if v >= 9.5:
         return "élite", "signal star maximal"

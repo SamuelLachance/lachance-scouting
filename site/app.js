@@ -169,9 +169,13 @@ function posBadge(p) {
 }
 
 function tierClass(t) {
-  if (t === 'Upside Élite') return 'tier-elite';
-  if (t === 'Upside 1er tour') return 'tier-first';
-  if (t.includes('2e') || t.includes('3e')) return 'tier-mid';
+  const s = (t || '').toLowerCase();
+  if (s.includes('génération') || s.includes('generational')) return 'tier-generational';
+  if (s.includes('franchise')) return 'tier-franchise';
+  if (s.includes('élite') || s.includes('elite')) return 'tier-elite';
+  if (s.includes('top 6') || s.includes('top 4') || s === 'titulaire') return 'tier-top';
+  if (s.includes('top 9') || s.includes('7e') || s.includes('partiel')) return 'tier-mid';
+  if (s.includes('quatrième') || s.includes('remplaçant') || s.includes('lha')) return 'tier-depth';
   return 'tier-low';
 }
 
@@ -237,8 +241,9 @@ function filterPlayers() {
 function getStats() {
   return {
     total: players.length,
-    elite: players.filter(p => p.tier === 'Upside Élite').length,
-    firstRound: players.filter(p => p.tier === 'Upside 1er tour').length,
+    generational: players.filter(p => tierClass(p.tier) === 'tier-generational').length,
+    franchise: players.filter(p => tierClass(p.tier) === 'tier-franchise').length,
+    elite: players.filter(p => tierClass(p.tier) === 'tier-elite').length,
     avg: (players.reduce((s,p) => s + p.overall, 0) / players.length).toFixed(1),
     countries: new Set(players.map(p => p.country)).size
   };
@@ -317,8 +322,9 @@ function renderHome() {
 
     <div class="stats-grid">
       <div class="glass stat-card"><div class="stat-label">Prospects</div><div class="stat-value" style="color:var(--ice-400)">${stats.total}</div></div>
-      <div class="glass stat-card"><div class="stat-label">Upside Élite</div><div class="stat-value" style="color:var(--gold)">${stats.elite}</div></div>
-      <div class="glass stat-card"><div class="stat-label">Upside 1er tour</div><div class="stat-value" style="color:#34d399">${stats.firstRound}</div></div>
+      <div class="glass stat-card"><div class="stat-label">Générationnel</div><div class="stat-value" style="color:#f472b6">${stats.generational}</div></div>
+      <div class="glass stat-card"><div class="stat-label">Franchise</div><div class="stat-value" style="color:var(--gold)">${stats.franchise}</div></div>
+      <div class="glass stat-card"><div class="stat-label">Élite</div><div class="stat-value" style="color:#34d399">${stats.elite}</div></div>
       <div class="glass stat-card"><div class="stat-label">Pays</div><div class="stat-value" style="color:#a78bfa">${stats.countries}</div></div>
       <div class="glass stat-card"><div class="stat-label">SPI moyen</div><div class="stat-value" style="color:var(--ice-400)">${stats.avg}</div></div>
     </div>
@@ -350,7 +356,7 @@ function renderHome() {
             <td class="hidden-sm"><span class="badge ${posBadge(p.position)}">${p.position}</span></td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#94a3b8">${p.height} / ${p.weight}</td>
             <td class="hidden-md">${FLAGS[p.country]||'🏳️'} ${p.country}</td>
-            <td class="hidden-sm"><span class="tier ${tierClass(p.tier)}">${p.tier.replace('Upside ','')}</span></td>
+            <td class="hidden-sm"><span class="tier ${tierClass(p.tier)}">${p.tier}</span></td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#64748b">#${p.apexRank || p.rank}</td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#64748b">${p.consensusRank ? '#'+p.consensusRank : '—'}</td>
             <td style="text-align:right"><span class="${scoreClass(p.overall)}">${p.overall.toFixed(1)}</span></td>
@@ -416,8 +422,8 @@ function renderPlayer(id) {
         <div>
           <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px">
             <span class="rank-gold" style="font-size:13px">#${p.rank} NORTHSTAR</span>
-            <span style="font-size:12px;color:#64748b;font-family:var(--font-mono)">SPI ${p.overall.toFixed(1)}${p.starTier ? ` · ${p.starTier}` : ''}${p.consensusRank ? ` · Cons. #${p.consensusRank}` : ''}</span>
-            <span class="tier ${tierClass(p.tier)}">${p.tier}</span>
+            <span style="font-size:12px;color:#64748b;font-family:var(--font-mono)">SPI ${p.overall.toFixed(1)}${p.consensusRank ? ` · Cons. #${p.consensusRank}` : ''}</span>
+            <span class="tier ${tierClass(p.tier)}" title="${p.eaTier || p.tier}">${p.tier}</span>
           </div>
           <h1 class="player-name">${esc(p.name)}</h1>
           <div class="player-meta">
@@ -489,6 +495,7 @@ function renderCompare(aId, bId) {
         <table><thead><tr><th>Métrique</th><th>${esc(a.name)}</th><th>${esc(b.name)}</th><th style="text-align:right">Δ A−B</th></tr></thead>
         <tbody>
           <tr><td style="color:#94a3b8">Rang NORTHSTAR</td><td>#${a.rank}</td><td>#${b.rank}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.rank<b.rank?'#34d399':'#fb7185'}">${a.rank - b.rank}</td></tr>
+          <tr><td style="color:#94a3b8">Tier EA</td><td><span class="tier ${tierClass(a.tier)}">${a.tier}</span></td><td><span class="tier ${tierClass(b.tier)}">${b.tier}</span></td><td></td></tr>
           <tr><td style="color:#94a3b8">Consensus</td><td>${a.consensusRank?'#'+a.consensusRank:'—'}</td><td>${b.consensusRank?'#'+b.consensusRank:'—'}</td><td></td></tr>
           <tr><td style="color:#94a3b8">SPI</td><td>${a.overall.toFixed(1)}</td><td>${b.overall.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.overall>b.overall?'#34d399':'#fb7185'}">${(a.overall-b.overall).toFixed(1)}</td></tr>
           ${rows}

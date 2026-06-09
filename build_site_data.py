@@ -12,6 +12,7 @@ from northstar_scoring import (
     _load_evaluations,
     _load_reports,
     _scores_from_evaluation,
+    ea_tier_for_player,
     northstar_overall,
 )
 
@@ -243,18 +244,6 @@ def enrich_analysis(
     return out
 
 
-def tier(note: float) -> str:
-    if note >= 88:
-        return "Upside Élite"
-    if note >= 75:
-        return "Upside 1er tour"
-    if note >= 62:
-        return "Upside 2e-3e tour"
-    if note >= 48:
-        return "Upside milieu"
-    return "Upside limité"
-
-
 def build_year(year: int) -> int:
     paths = paths_for_year(year)
     rankings_path = paths["rankings"]
@@ -294,6 +283,7 @@ def build_year(year: int) -> int:
         photo_entry = photos_map.get(slug, {})
         photo_url = photo_entry.get("local") or f"./images/players/{year}/{slug}.svg"
         player_eval = (_load_evaluations().get("players") or {}).get(canonical_key(p["Nom"]), {})
+        ea_tier = ea_tier_for_player(note, p["Position"])
         enriched.append({
             "id": slug,
             "draftYear": year,
@@ -313,7 +303,9 @@ def build_year(year: int) -> int:
             "reportCoverage": (scores or {}).get("report_coverage") or p.get("Couverture_Rapport", ""),
             "consensusRank": cr if cr != "N/A" else None,
             "consensusDelta": delta_val,
-            "tier": tier(note),
+            "tier": ea_tier["tierLabel"],
+            "eaTier": ea_tier["eaTier"],
+            "tierGroup": ea_tier["tierGroup"],
             "skills": skills_from_scores(scores, p),
             "skillRationales": skill_rationales,
             "sourceMix": player_eval.get("source_mix") or [],
