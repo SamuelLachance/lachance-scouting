@@ -12,6 +12,7 @@ from northstar_scoring import (
     _load_evaluations,
     _load_reports,
     _scores_from_evaluation,
+    ea_projection_for_player,
     ea_tier_for_player,
     northstar_overall,
 )
@@ -284,6 +285,9 @@ def build_year(year: int) -> int:
         photo_url = photo_entry.get("local") or f"./images/players/{year}/{slug}.svg"
         player_eval = (_load_evaluations().get("players") or {}).get(canonical_key(p["Nom"]), {})
         ea_tier = ea_tier_for_player(note, p["Position"])
+        projection_fr = ea_projection_for_player(note, p["Position"], lang="fr")
+        projection_en = ea_projection_for_player(note, p["Position"], lang="en")
+        analysis["projection"] = projection_fr
         enriched.append({
             "id": slug,
             "draftYear": year,
@@ -306,6 +310,8 @@ def build_year(year: int) -> int:
             "tier": ea_tier["tierLabel"],
             "eaTier": ea_tier["eaTier"],
             "tierGroup": ea_tier["tierGroup"],
+            "projection": projection_fr,
+            "projectionEn": projection_en,
             "skills": skills_from_scores(scores, p),
             "skillRationales": skill_rationales,
             "sourceMix": player_eval.get("source_mix") or [],

@@ -346,7 +346,7 @@ function renderHome() {
       <table>
         <thead><tr>
           <th>#</th><th>Joueur</th><th class="hidden-sm">Pos</th><th class="hidden-md">Taille</th>
-          <th class="hidden-md">Pays</th><th class="hidden-sm">Tier</th>
+          <th class="hidden-md">Pays</th><th class="hidden-sm">Projection</th>
           <th class="hidden-md">NS</th><th class="hidden-md">Cons.</th><th style="text-align:right">SPI</th>
         </tr></thead>
         <tbody>${pageItems.map(p => `
@@ -356,7 +356,7 @@ function renderHome() {
             <td class="hidden-sm"><span class="badge ${posBadge(p.position)}">${p.position}</span></td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#94a3b8">${p.height} / ${p.weight}</td>
             <td class="hidden-md">${FLAGS[p.country]||'🏳️'} ${p.country}</td>
-            <td class="hidden-sm"><span class="tier ${tierClass(p.tier)}">${p.tier}</span></td>
+            <td class="hidden-sm"><span class="tier projection-cell ${tierClass(p.tier)}" title="${esc(p.eaTier || p.tier)}">${esc(p.projection || p.tier)}</span></td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#64748b">#${p.apexRank || p.rank}</td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#64748b">${p.consensusRank ? '#'+p.consensusRank : '—'}</td>
             <td style="text-align:right"><span class="${scoreClass(p.overall)}">${p.overall.toFixed(1)}</span></td>
@@ -454,7 +454,7 @@ function renderPlayer(id) {
 
     <div class="grid-2">
       <div class="glass card"><h3 style="font-size:11px;text-transform:uppercase;color:#64748b;font-weight:400;margin-bottom:8px">Comparable NHL</h3><p>${esc(a.comparable||'—')}</p></div>
-      <div class="glass card"><h3 style="font-size:11px;text-transform:uppercase;color:#64748b;font-weight:400;margin-bottom:8px">Projection</h3><p>${esc(a.projection||'—')}</p></div>
+      <div class="glass card"><h3 style="font-size:11px;text-transform:uppercase;color:#64748b;font-weight:400;margin-bottom:8px">Projection</h3><p>${esc(p.projection || a.projection || p.tier || '—')}</p></div>
     </div>
 
     <div style="text-align:center;margin-top:1.5rem">
@@ -495,7 +495,8 @@ function renderCompare(aId, bId) {
         <table><thead><tr><th>Métrique</th><th>${esc(a.name)}</th><th>${esc(b.name)}</th><th style="text-align:right">Δ A−B</th></tr></thead>
         <tbody>
           <tr><td style="color:#94a3b8">Rang NORTHSTAR</td><td>#${a.rank}</td><td>#${b.rank}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.rank<b.rank?'#34d399':'#fb7185'}">${a.rank - b.rank}</td></tr>
-          <tr><td style="color:#94a3b8">Tier EA</td><td><span class="tier ${tierClass(a.tier)}">${a.tier}</span></td><td><span class="tier ${tierClass(b.tier)}">${b.tier}</span></td><td></td></tr>
+          <tr><td style="color:#94a3b8">Tier EA</td><td><span class="tier ${tierClass(a.tier)}" title="${esc(a.eaTier || a.tier)}">${esc(a.tier)}</span></td><td><span class="tier ${tierClass(b.tier)}" title="${esc(b.eaTier || b.tier)}">${esc(b.tier)}</span></td><td></td></tr>
+          <tr><td style="color:#94a3b8">Projection</td><td>${esc(a.projection || a.tier || '—')}</td><td>${esc(b.projection || b.tier || '—')}</td><td></td></tr>
           <tr><td style="color:#94a3b8">Consensus</td><td>${a.consensusRank?'#'+a.consensusRank:'—'}</td><td>${b.consensusRank?'#'+b.consensusRank:'—'}</td><td></td></tr>
           <tr><td style="color:#94a3b8">SPI</td><td>${a.overall.toFixed(1)}</td><td>${b.overall.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.overall>b.overall?'#34d399':'#fb7185'}">${(a.overall-b.overall).toFixed(1)}</td></tr>
           ${rows}

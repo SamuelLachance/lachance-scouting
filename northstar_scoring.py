@@ -399,6 +399,118 @@ def ea_position_group(position: str) -> str:
     return "F"
 
 
+# Role depth labels for EA-style NHL projection text (FR, EN) by position group + SPI.
+EA_ROLE_DEPTH: dict[str, list[tuple[float, str, str]]] = {
+    "F": [
+        (78.0, "Premier trio", "Top-line"),
+        (74.0, "Top six", "Top-six"),
+        (70.0, "Troisième trio", "Top-nine"),
+        (66.0, "Quatrième trio", "Bottom-six"),
+        (62.0, "Top six LHA", "AHL top-six"),
+        (58.0, "Quatrième trio LHA", "AHL bottom-six"),
+        (54.0, "Profondeur mineure", "Depth"),
+        (0.0, "Profondeur LHA", "AHL depth"),
+    ],
+    "D": [
+        (78.0, "Première paire", "Top-pair"),
+        (74.0, "Première paire", "Top-pair"),
+        (70.0, "Top six", "Top-six"),
+        (66.0, "Troisième paire", "Third-pair"),
+        (62.0, "Top six LHA", "AHL top-six"),
+        (58.0, "Quatrième trio LHA", "AHL bottom-six"),
+        (54.0, "Profondeur mineure", "Minor depth"),
+        (0.0, "Profondeur LHA", "AHL depth"),
+    ],
+    "G": [
+        (78.0, "Titulaire", "Starter"),
+        (74.0, "Titulaire", "Starter"),
+        (70.0, "Titulaire partiel", "Fringe starter"),
+        (66.0, "Remplaçant", "Backup"),
+        (62.0, "Titulaire LHA", "AHL starter"),
+        (58.0, "Remplaçant LHA", "AHL backup"),
+        (54.0, "Profondeur mineure", "Minor backup"),
+        (0.0, "Profondeur LHA", "AHL depth"),
+    ],
+}
+
+EA_TIER_ADJECTIVES: list[tuple[float, str, str]] = [
+    (90.0, "générationnel", "generational"),
+    (85.0, "franchise", "franchise"),
+    (78.0, "élite", "elite"),
+]
+
+EA_POSITION_NAMES: dict[str, dict[str, tuple[str, str]]] = {
+    "F": {
+        "C": ("centre", "center"),
+        "LW": ("ailier", "winger"),
+        "RW": ("ailier", "winger"),
+        "default": ("attaquant", "forward"),
+    },
+    "D": {"default": ("défenseur", "defenseman")},
+    "G": {"default": ("gardien", "goalie")},
+}
+
+
+def _ea_role_depth(spi: float, group: str) -> tuple[str, str]:
+    spi_clamped = max(0.0, min(100.0, float(spi)))
+    for min_spi, label_fr, label_en in EA_ROLE_DEPTH[group]:
+        if spi_clamped >= min_spi:
+            return label_fr, label_en
+    fallback = EA_ROLE_DEPTH[group][-1]
+    return fallback[1], fallback[2]
+
+
+def _ea_tier_adjective(spi: float) -> tuple[str, str]:
+    spi_clamped = max(0.0, min(100.0, float(spi)))
+    for min_spi, adj_fr, adj_en in EA_TIER_ADJECTIVES:
+        if spi_clamped >= min_spi:
+            return adj_fr, adj_en
+    return "", ""
+
+
+def _ea_position_name(position: str, group: str) -> tuple[str, str]:
+    pos = (position or "").upper().strip()
+    names = EA_POSITION_NAMES[group]
+    if pos in names:
+        return names[pos]
+    return names["default"]
+
+
+def ea_projection_for_player(
+    spi: float,
+    position: str,
+    *,
+    lang: str = "fr",
+) -> str:
+    """
+    NHL role projection from SPI and position.
+
+    Format EN: ``{role_depth} {tier_adjective} {position_name}``
+    (tier adjective omitted below Élite / 78 SPI).
+
+    Examples:
+      LW 90+ → "Top-line generational winger"
+      D 72   → "Top-six defenseman"
+      G 74   → "Starter goalie"
+      G 86   → "Starter franchise goalie"
+    """
+    group = ea_position_group(position)
+    role_fr, role_en = _ea_role_depth(spi, group)
+    adj_fr, adj_en = _ea_tier_adjective(spi)
+    pos_fr, pos_en = _ea_position_name(position, group)
+
+    if lang.lower().startswith("en"):
+        parts = [role_en]
+        if adj_en:
+            parts.append(adj_en)
+        parts.append(pos_en)
+        return " ".join(parts)
+
+    if adj_fr:
+        return f"{role_fr} · {pos_fr} {adj_fr}"
+    return f"{role_fr} · {pos_fr}"
+
+
 def ea_tier_for_player(spi: float, position: str) -> dict[str, str]:
     """
     Return EA-style potential tier for a player from SPI and position.
