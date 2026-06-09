@@ -95,7 +95,7 @@ export default function PlayerPage() {
                 {player.tier}
               </span>
               <span className={`px-2 py-0.5 rounded-full border text-[10px] ${discoveryColor(discovery.score)}`}>
-                Discovery {discovery.score.toFixed(1)}
+                Upside {discovery.score.toFixed(1)}
               </span>
             </div>
             <h1 className="font-display font-bold text-3xl sm:text-4xl mb-3">{player.name}</h1>
@@ -137,7 +137,7 @@ export default function PlayerPage() {
           <div className="flex items-center gap-4 lg:w-72">
             <div className={`w-20 h-20 rounded-2xl border flex flex-col items-center justify-center ${discoveryColor(discovery.score)}`}>
               <span className="font-display font-bold text-2xl">{discovery.score.toFixed(1)}</span>
-              <span className="text-[10px] uppercase tracking-wide">Discovery</span>
+              <span className="text-[10px] uppercase tracking-wide">Upside caché</span>
             </div>
             <div>
               <h3 className="font-display font-semibold flex items-center gap-2">
@@ -152,7 +152,7 @@ export default function PlayerPage() {
             <SignalStat label="Outil signature" value={`${discovery.peakTool.label} ${discovery.peakTool.score.toFixed(1)}`} />
             <SignalStat label="Confiance" value={discovery.confidenceLabel} />
             {player.baseNorthstarScore && (
-              <SignalStat label="Talent pur ancien modèle" value={`${player.baseNorthstarScore.toFixed(1)}/100`} />
+              <SignalStat label="NORTHSTAR" value={`${player.baseNorthstarScore.toFixed(1)}/100`} />
             )}
           </div>
         </div>
@@ -191,7 +191,7 @@ export default function PlayerPage() {
           <h3 className="font-display font-semibold mb-4">Grille NORTHSTAR détaillée</h3>
           <SkillBars skills={player.skills} rationales={player.skillRationales} />
           <div className="mt-4 pt-4 border-t border-white/5 flex justify-between items-center">
-            <span className="text-sm text-slate-500">NORTHSTAR Discovery Rating</span>
+            <span className="text-sm text-slate-500">Rating (NORTHSTAR + upside caché)</span>
             <span className={`font-display font-bold text-2xl ${scoreColor(player.overall)}`}>
               {player.overall.toFixed(1)}/100
             </span>
