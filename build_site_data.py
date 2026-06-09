@@ -7,6 +7,7 @@ from pathlib import Path
 
 from draft_config import DRAFTS, DEFAULT_DRAFT_YEAR, manifest_for_site, paths_for_year
 from name_utils import canonical_key
+from player_sizes import is_missing_size, normalize_weight_lbs
 from northstar_scoring import (
     build_forces_faiblesses,
     _load_evaluations,
@@ -47,6 +48,30 @@ DIM_FROM_RANKING = {
 BASE = Path(__file__).parent
 SITE_DATA = BASE / "site" / "data"
 WEB_DATA = BASE / "web" / "public" / "data"
+
+
+def load_player_meta(year: int) -> dict:
+    path = paths_for_year(year)["data_dir"] / "player_meta.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return {}
+
+
+def resolve_player_size(p: dict, meta: dict) -> tuple[str, int | str]:
+    key = canonical_key(p["Nom"])
+    height = p.get("Taille", "")
+    weight = p.get("Poids_lbs", "")
+    entry = meta.get(key, {})
+    if is_missing_size(height) and not is_missing_size(entry.get("height")):
+        height = entry["height"]
+    if is_missing_size(weight) and not is_missing_size(entry.get("weight")):
+        weight = entry["weight"]
+    if str(weight).isdigit():
+        weight = int(weight)
+    elif not is_missing_size(weight):
+        parsed = normalize_weight_lbs(weight)
+        weight = parsed if parsed is not None else weight
+    return height, weight
 
 
 def slug_from_file(path: str) -> str:
@@ -136,6 +161,8 @@ def northstar_scores_for_player(p: dict) -> dict | None:
         p["Taille"],
         str(p.get("Poids_lbs", "")),
         report,
+        country=p.get("Pays", ""),
+        rankings_dob=p.get("Date_Naissance", ""),
     )
 
 
@@ -265,8 +292,10 @@ def build_year(year: int) -> int:
     photos_map: dict = {}
     if photos_path.exists():
         photos_map = json.loads(photos_path.read_text(encoding="utf-8"))
+    player_meta = load_player_meta(year)
     enriched = []
     for p in players_raw:
+        height, weight = resolve_player_size(p, player_meta)
         slug = slug_from_file(p.get("Fichier_Local", p["Nom"].lower().replace(" ", "-")))
         md_path = analyses_dir / Path(p.get("Fichier_Local", "").replace("\\", "/")).name
         analysis = parse_md(md_path.read_text(encoding="utf-8")) if md_path.exists() else {}
@@ -302,12 +331,25 @@ def build_year(year: int) -> int:
             "blendRank": float(p.get("Rang_NORTHSTAR") or p.get("Moyenne_Rang", p["Rang_Final"])),
             "name": p["Nom"],
             "position": p["Position"],
-            "height": p["Taille"],
-            "weight": int(p["Poids_lbs"]) if str(p.get("Poids_lbs", "")).isdigit() else p.get("Poids_lbs"),
+            "height": height,
+            "weight": weight,
             "shoots": p["Tire"],
             "country": p["Pays"],
             "photoUrl": photo_url,
             "overall": note,
+            "isOverAge": bool(
+                (scores or {}).get("is_over_age")
+                or p.get("Is_Over_Age")
+            ),
+            "overAgePenalty": float(
+                (scores or {}).get("over_age_penalty")
+                or p.get("Over_Age_Penalty")
+                or 0
+            ),
+            "spiBeforePenalty": (
+                (scores or {}).get("spi_before_penalty")
+                or p.get("SPI_Before_Penalty")
+            ),
             "starTier": (scores or {}).get("star_tier") or p.get("Star_Tier", ""),
             "reportCoverage": (scores or {}).get("report_coverage") or p.get("Couverture_Rapport", ""),
             "consensusRank": cr if cr != "N/A" else None,

@@ -11,5 +11,4985 @@
       "ep_id": "718623"
     },
     "fetched_at": "2026-06-09T14:37:58.187385+00:00"
+  },
+  "lucian bernat": {
+    "ep_id": "874079",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "F"
+      },
+      "ep_id": "874079"
+    },
+    "fetched_at": "2026-06-09T19:59:08.711842+00:00"
+  },
+  "jakub frolo": {
+    "ep_id": "872540",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "F"
+      },
+      "ep_id": "872540"
+    },
+    "fetched_at": "2026-06-09T19:59:10.797503+00:00"
+  },
+  "noel pakarinen": {
+    "ep_id": "1003492",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "F"
+      },
+      "ep_id": "1003492"
+    },
+    "fetched_at": "2026-06-09T19:59:11.208256+00:00"
+  },
+  "kayden lemire": {
+    "ep_id": "878316",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "F"
+      },
+      "ep_id": "878316"
+    },
+    "fetched_at": "2026-06-09T19:59:12.780873+00:00"
+  },
+  "jonah sivertson": {
+    "ep_id": "883678",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "F"
+      },
+      "ep_id": "883678"
+    },
+    "fetched_at": "2026-06-09T19:59:12.827616+00:00"
+  },
+  "ludvig andersson": {
+    "ep_id": "903911",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "F"
+      },
+      "ep_id": "903911"
+    },
+    "fetched_at": "2026-06-09T19:59:14.239275+00:00"
+  },
+  "mans gudmundsson": {
+    "ep_id": "921852",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "D"
+      },
+      "ep_id": "921852"
+    },
+    "fetched_at": "2026-06-09T19:59:15.433039+00:00"
+  },
+  "jayden kurtz": {
+    "ep_id": "577149",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "577149"
+    },
+    "fetched_at": "2026-06-09T19:59:15.550521+00:00"
+  },
+  "doman szongoth": {
+    "ep_id": "960749",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "F"
+      },
+      "ep_id": "960749"
+    },
+    "fetched_at": "2026-06-09T19:59:15.952896+00:00"
+  },
+  "jiko laitinen": {
+    "ep_id": "907654",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "F"
+      },
+      "ep_id": "907654"
+    },
+    "fetched_at": "2026-06-09T19:59:18.205859+00:00"
+  },
+  "liam lefebvre": {
+    "ep_id": "819472",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "F"
+      },
+      "ep_id": "819472"
+    },
+    "fetched_at": "2026-06-09T19:59:18.421957+00:00"
+  },
+  "alexander sapozhnikov": {
+    "ep_id": "679565",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'6\"",
+          "metrics": 198
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 209,
+          "metrics": 95
+        },
+        "position": "D"
+      },
+      "ep_id": "679565"
+    },
+    "fetched_at": "2026-06-09T19:59:18.885101+00:00"
+  },
+  "jakub floris": {
+    "ep_id": "873343",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "873343"
+    },
+    "fetched_at": "2026-06-09T19:59:19.659029+00:00"
+  },
+  "samuel eriksson": {
+    "ep_id": "806192",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 212,
+          "metrics": 96
+        },
+        "position": "D"
+      },
+      "ep_id": "806192"
+    },
+    "fetched_at": "2026-06-09T19:59:21.077926+00:00"
+  },
+  "william lundqvist": {
+    "ep_id": "862644",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 194
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 214,
+          "metrics": 97
+        },
+        "position": "D"
+      },
+      "ep_id": "862644"
+    },
+    "fetched_at": "2026-06-09T19:59:21.991743+00:00"
+  },
+  "malcom gastrin": {
+    "ep_id": "876026",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 184
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 174,
+          "metrics": 79
+        },
+        "position": "F"
+      },
+      "ep_id": "876026"
+    },
+    "fetched_at": "2026-06-09T19:59:23.268830+00:00"
+  },
+  "pavel kurka": {
+    "ep_id": "975263",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "D"
+      },
+      "ep_id": "975263"
+    },
+    "fetched_at": "2026-06-09T19:59:24.670718+00:00"
+  },
+  "zach wooten": {
+    "ep_id": "807925",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 205,
+          "metrics": 93
+        },
+        "position": "F"
+      },
+      "ep_id": "807925"
+    },
+    "fetched_at": "2026-06-09T19:59:25.507325+00:00"
+  },
+  "alex kostov": {
+    "ep_id": "738749",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 207,
+          "metrics": 94
+        },
+        "position": "F"
+      },
+      "ep_id": "738749"
+    },
+    "fetched_at": "2026-06-09T19:59:25.572451+00:00"
+  },
+  "felix carell": {
+    "ep_id": "756647",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "D"
+      },
+      "ep_id": "756647"
+    },
+    "fetched_at": "2026-06-09T19:59:26.189110+00:00"
+  },
+  "john parsons": {
+    "ep_id": "722935",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "G"
+      },
+      "ep_id": "722935"
+    },
+    "fetched_at": "2026-06-09T19:59:26.402264+00:00"
+  },
+  "viggo tamm": {
+    "ep_id": "964660",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 195
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "G"
+      },
+      "ep_id": "964660"
+    },
+    "fetched_at": "2026-06-09T19:59:27.699287+00:00"
+  },
+  "brock souch": {
+    "ep_id": "597833",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "F"
+      },
+      "ep_id": "597833"
+    },
+    "fetched_at": "2026-06-09T19:59:28.639389+00:00"
+  },
+  "caelan joudrey": {
+    "ep_id": "880389",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 194
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "F"
+      },
+      "ep_id": "880389"
+    },
+    "fetched_at": "2026-06-09T19:59:29.296423+00:00"
+  },
+  "zach olsen": {
+    "ep_id": "628073",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "F"
+      },
+      "ep_id": "628073"
+    },
+    "fetched_at": "2026-06-09T19:59:30.514021+00:00"
+  },
+  "lucas ambrosio": {
+    "ep_id": "897478",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "897478"
+    },
+    "fetched_at": "2026-06-09T19:59:31.109527+00:00"
+  },
+  "benjamin wilmott": {
+    "ep_id": "597776",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "F"
+      },
+      "ep_id": "597776"
+    },
+    "fetched_at": "2026-06-09T19:59:32.519231+00:00"
+  },
+  "zachary lansard": {
+    "ep_id": "628065",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 174,
+          "metrics": 79
+        },
+        "position": "F"
+      },
+      "ep_id": "628065"
+    },
+    "fetched_at": "2026-06-09T19:59:32.774705+00:00"
+  },
+  "cole tuminaro": {
+    "ep_id": "785530",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 225,
+          "metrics": 102
+        },
+        "position": "D"
+      },
+      "ep_id": "785530"
+    },
+    "fetched_at": "2026-06-09T19:59:33.717685+00:00"
+  },
+  "patrik kerkola": {
+    "ep_id": "873019",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "G"
+      },
+      "ep_id": "873019"
+    },
+    "fetched_at": "2026-06-09T19:59:33.887449+00:00"
+  },
+  "henry nicolaysen": {
+    "ep_id": "1010883",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 189
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 196,
+          "metrics": 89
+        },
+        "position": "D"
+      },
+      "ep_id": "1010883"
+    },
+    "fetched_at": "2026-06-09T19:59:35.334511+00:00"
+  },
+  "ondrej stebetak": {
+    "ep_id": "892136",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "G"
+      },
+      "ep_id": "892136"
+    },
+    "fetched_at": "2026-06-09T19:59:35.818037+00:00"
+  },
+  "joel tarvainen": {
+    "ep_id": "1032260",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'6\"",
+          "metrics": 198
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 220,
+          "metrics": 100
+        },
+        "position": "D"
+      },
+      "ep_id": "1032260"
+    },
+    "fetched_at": "2026-06-09T19:59:37.273022+00:00"
+  },
+  "kyle heger": {
+    "ep_id": "855986",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 196,
+          "metrics": 89
+        },
+        "position": "D"
+      },
+      "ep_id": "855986"
+    },
+    "fetched_at": "2026-06-09T19:59:38.249505+00:00"
+  },
+  "andrei bykov": {
+    "ep_id": "1031314",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 192,
+          "metrics": 87
+        },
+        "position": "F"
+      },
+      "ep_id": "1031314"
+    },
+    "fetched_at": "2026-06-09T19:59:38.677027+00:00"
+  },
+  "will mclaughlin": {
+    "ep_id": "628070",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 168,
+          "metrics": 76
+        },
+        "position": "D"
+      },
+      "ep_id": "628070"
+    },
+    "fetched_at": "2026-06-09T19:59:39.674297+00:00"
+  },
+  "pavel denisov": {
+    "ep_id": "895811",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "D"
+      },
+      "ep_id": "895811"
+    },
+    "fetched_at": "2026-06-09T19:59:39.897032+00:00"
+  },
+  "yaroslav bryzgalov": {
+    "ep_id": "620138",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 220,
+          "metrics": 100
+        },
+        "position": "F"
+      },
+      "ep_id": "620138"
+    },
+    "fetched_at": "2026-06-09T19:59:40.936836+00:00"
+  },
+  "alexander morozov": {
+    "ep_id": "896168",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "D"
+      },
+      "ep_id": "896168"
+    },
+    "fetched_at": "2026-06-09T19:59:42.202366+00:00"
+  },
+  "luke carrithers": {
+    "ep_id": "863813",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "G"
+      },
+      "ep_id": "863813"
+    },
+    "fetched_at": "2026-06-09T19:59:42.955579+00:00"
+  },
+  "matvey karasyov": {
+    "ep_id": "1059738",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "D"
+      },
+      "ep_id": "1059738"
+    },
+    "fetched_at": "2026-06-09T19:59:43.162750+00:00"
+  },
+  "spencer bowes": {
+    "ep_id": "876207",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 174,
+          "metrics": 79
+        },
+        "position": "F"
+      },
+      "ep_id": "876207"
+    },
+    "fetched_at": "2026-06-09T19:59:44.390174+00:00"
+  },
+  "sean burick": {
+    "ep_id": "617646",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'8\"",
+          "metrics": 203
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 214,
+          "metrics": 97
+        },
+        "position": "D"
+      },
+      "ep_id": "617646"
+    },
+    "fetched_at": "2026-06-09T19:59:46.004977+00:00"
+  },
+  "nolan stewart": {
+    "ep_id": "881357",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 178
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "881357"
+    },
+    "fetched_at": "2026-06-09T19:59:46.546813+00:00"
+  },
+  "william sorbrand": {
+    "ep_id": "902079",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "F"
+      },
+      "ep_id": "902079"
+    },
+    "fetched_at": "2026-06-09T19:59:47.373436+00:00"
+  },
+  "jan brabenec": {
+    "ep_id": "902022",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "F"
+      },
+      "ep_id": "902022"
+    },
+    "fetched_at": "2026-06-09T19:59:47.680724+00:00"
+  },
+  "atte vuori": {
+    "ep_id": "1003493",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 179
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 163,
+          "metrics": 74
+        },
+        "position": "F"
+      },
+      "ep_id": "1003493"
+    },
+    "fetched_at": "2026-06-09T19:59:48.450480+00:00"
+  },
+  "louis felix bourque": {
+    "ep_id": "619710",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 216,
+          "metrics": 98
+        },
+        "position": "F"
+      },
+      "ep_id": "619710"
+    },
+    "fetched_at": "2026-06-09T19:59:50.121152+00:00"
+  },
+  "artyom matyuk": {
+    "ep_id": "995534",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "F"
+      },
+      "ep_id": "995534"
+    },
+    "fetched_at": "2026-06-09T19:59:50.578732+00:00"
+  },
+  "kade stengrim": {
+    "ep_id": "962466",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 207,
+          "metrics": 94
+        },
+        "position": "F"
+      },
+      "ep_id": "962466"
+    },
+    "fetched_at": "2026-06-09T19:59:50.622883+00:00"
+  },
+  "adam levac": {
+    "ep_id": "876731",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "876731"
+    },
+    "fetched_at": "2026-06-09T19:59:52.332717+00:00"
+  },
+  "stepan shurygin": {
+    "ep_id": "1026865",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 207,
+          "metrics": 94
+        },
+        "position": "G"
+      },
+      "ep_id": "1026865"
+    },
+    "fetched_at": "2026-06-09T19:59:52.787139+00:00"
+  },
+  "vladislav yermolenko": {
+    "ep_id": "995643",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "G"
+      },
+      "ep_id": "995643"
+    },
+    "fetched_at": "2026-06-09T19:59:53.617635+00:00"
+  },
+  "brian mcfadden": {
+    "ep_id": "1011188",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "D"
+      },
+      "ep_id": "1011188"
+    },
+    "fetched_at": "2026-06-09T19:59:54.873262+00:00"
+  },
+  "zachary jovanovski": {
+    "ep_id": "881931",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "G"
+      },
+      "ep_id": "881931"
+    },
+    "fetched_at": "2026-06-09T19:59:55.005559+00:00"
+  },
+  "samuel karsay": {
+    "ep_id": "897794",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 179,
+          "metrics": 81
+        },
+        "position": "F"
+      },
+      "ep_id": "897794"
+    },
+    "fetched_at": "2026-06-09T19:59:56.214592+00:00"
+  },
+  "rafik varosyan": {
+    "ep_id": "901409",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 179,
+          "metrics": 81
+        },
+        "position": "F"
+      },
+      "ep_id": "901409"
+    },
+    "fetched_at": "2026-06-09T19:59:57.291579+00:00"
+  },
+  "william gammals": {
+    "ep_id": "892430",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 192,
+          "metrics": 87
+        },
+        "position": "G"
+      },
+      "ep_id": "892430"
+    },
+    "fetched_at": "2026-06-09T19:59:58.634197+00:00"
+  },
+  "vsevolod matveyev": {
+    "ep_id": "1040199",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "D"
+      },
+      "ep_id": "1040199"
+    },
+    "fetched_at": "2026-06-09T19:59:59.270906+00:00"
+  },
+  "dylan dean": {
+    "ep_id": "629356",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "F"
+      },
+      "ep_id": "629356"
+    },
+    "fetched_at": "2026-06-09T20:00:00.648440+00:00"
+  },
+  "matthew humphries": {
+    "ep_id": "628102",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 205,
+          "metrics": 93
+        },
+        "position": "G"
+      },
+      "ep_id": "628102"
+    },
+    "fetched_at": "2026-06-09T20:00:00.872137+00:00"
+  },
+  "ryan cameron": {
+    "ep_id": "577161",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 184
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 168,
+          "metrics": 76
+        },
+        "position": "G"
+      },
+      "ep_id": "577161"
+    },
+    "fetched_at": "2026-06-09T20:00:02.138650+00:00"
+  },
+  "carter casey": {
+    "ep_id": "856651",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "G"
+      },
+      "ep_id": "856651"
+    },
+    "fetched_at": "2026-06-09T20:00:02.548537+00:00"
+  },
+  "parker snell": {
+    "ep_id": "879195",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "G"
+      },
+      "ep_id": "879195"
+    },
+    "fetched_at": "2026-06-09T20:00:03.505030+00:00"
+  },
+  "patriks plumins": {
+    "ep_id": "999861",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 216,
+          "metrics": 98
+        },
+        "position": "G"
+      },
+      "ep_id": "999861"
+    },
+    "fetched_at": "2026-06-09T20:00:03.924854+00:00"
+  },
+  "michal jakubec": {
+    "ep_id": "958730",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "F"
+      },
+      "ep_id": "958730"
+    },
+    "fetched_at": "2026-06-09T20:00:05.453809+00:00"
+  },
+  "yuri ivanov": {
+    "ep_id": "1065643",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 189
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "G"
+      },
+      "ep_id": "1065643"
+    },
+    "fetched_at": "2026-06-09T20:00:05.806162+00:00"
+  },
+  "rafael courchesne": {
+    "ep_id": "747942",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 189
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "G"
+      },
+      "ep_id": "747942"
+    },
+    "fetched_at": "2026-06-09T20:00:06.039549+00:00"
+  },
+  "caton ryan": {
+    "ep_id": "716342",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "F"
+      },
+      "ep_id": "716342"
+    },
+    "fetched_at": "2026-06-09T20:00:07.425214+00:00"
+  },
+  "weston cameron": {
+    "ep_id": "628090",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 194
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "F"
+      },
+      "ep_id": "628090"
+    },
+    "fetched_at": "2026-06-09T20:00:08.334237+00:00"
+  },
+  "xavier wendt": {
+    "ep_id": "866524",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 179,
+          "metrics": 81
+        },
+        "position": "G"
+      },
+      "ep_id": "866524"
+    },
+    "fetched_at": "2026-06-09T20:00:08.542066+00:00"
+  },
+  "kaenan smith": {
+    "ep_id": "866761",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "G"
+      },
+      "ep_id": "866761"
+    },
+    "fetched_at": "2026-06-09T20:00:10.562451+00:00"
+  },
+  "lukas andersson": {
+    "ep_id": "881901",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 184
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "F"
+      },
+      "ep_id": "881901"
+    },
+    "fetched_at": "2026-06-09T20:00:11.477691+00:00"
+  },
+  "ondrej ruml": {
+    "ep_id": "917727",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "D"
+      },
+      "ep_id": "917727"
+    },
+    "fetched_at": "2026-06-09T20:00:11.699304+00:00"
+  },
+  "ludvig soderberg": {
+    "ep_id": "867108",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "D"
+      },
+      "ep_id": "867108"
+    },
+    "fetched_at": "2026-06-09T20:00:14.159587+00:00"
+  },
+  "yegor rybkin": {
+    "ep_id": "836548",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'7\"",
+          "metrics": 201
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 207,
+          "metrics": 94
+        },
+        "position": "G"
+      },
+      "ep_id": "836548"
+    },
+    "fetched_at": "2026-06-09T20:00:14.300243+00:00"
+  },
+  "riley steen": {
+    "ep_id": "825455",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "D"
+      },
+      "ep_id": "825455"
+    },
+    "fetched_at": "2026-06-09T20:00:15.919125+00:00"
+  },
+  "oliver larsen": {
+    "ep_id": "795432",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 181
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 168,
+          "metrics": 76
+        },
+        "position": "F"
+      },
+      "ep_id": "795432"
+    },
+    "fetched_at": "2026-06-09T20:00:15.926700+00:00"
+  },
+  "alexander karmanov": {
+    "ep_id": "1077286",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "7'1\"",
+          "metrics": 216
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 280,
+          "metrics": 127
+        },
+        "position": "D"
+      },
+      "ep_id": "1077286"
+    },
+    "fetched_at": "2026-06-09T20:00:16.066701+00:00"
+  },
+  "cody wood": {
+    "ep_id": "978862",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "D"
+      },
+      "ep_id": "978862"
+    },
+    "fetched_at": "2026-06-09T20:00:16.558090+00:00"
+  },
+  "colin feeley": {
+    "ep_id": "961410",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'7\"",
+          "metrics": 201
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "D"
+      },
+      "ep_id": "961410"
+    },
+    "fetched_at": "2026-06-09T20:00:18.280916+00:00"
+  },
+  "julian brown": {
+    "ep_id": "679515",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 229,
+          "metrics": 104
+        },
+        "position": "D"
+      },
+      "ep_id": "679515"
+    },
+    "fetched_at": "2026-06-09T20:00:18.908550+00:00"
+  },
+  "tomas cermak": {
+    "ep_id": "937102",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "937102"
+    },
+    "fetched_at": "2026-06-09T20:00:19.501437+00:00"
+  },
+  "adam nomme": {
+    "ep_id": "800522",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 168,
+          "metrics": 76
+        },
+        "position": "F"
+      },
+      "ep_id": "800522"
+    },
+    "fetched_at": "2026-06-09T20:00:20.241906+00:00"
+  },
+  "aleksandr kovalenko": {
+    "ep_id": "896554",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "D"
+      },
+      "ep_id": "896554"
+    },
+    "fetched_at": "2026-06-09T20:00:21.913413+00:00"
+  },
+  "sakari kostilainen": {
+    "ep_id": "618951",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "618951"
+    },
+    "fetched_at": "2026-06-09T20:00:22.586829+00:00"
+  },
+  "oscar olsson": {
+    "ep_id": "925621",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 194
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "F"
+      },
+      "ep_id": "925621"
+    },
+    "fetched_at": "2026-06-09T20:00:22.739365+00:00"
+  },
+  "alex kristiansson": {
+    "ep_id": "892432",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "F"
+      },
+      "ep_id": "892432"
+    },
+    "fetched_at": "2026-06-09T20:00:23.999924+00:00"
+  },
+  "douglas lindberg nilsson": {
+    "ep_id": "905354",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "G"
+      },
+      "ep_id": "905354"
+    },
+    "fetched_at": "2026-06-09T20:00:26.334814+00:00"
+  },
+  "gavin lesiuk": {
+    "ep_id": "628114",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 220,
+          "metrics": 100
+        },
+        "position": "F"
+      },
+      "ep_id": "628114"
+    },
+    "fetched_at": "2026-06-09T20:00:26.420224+00:00"
+  },
+  "veeti rasanen": {
+    "ep_id": "689035",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "F"
+      },
+      "ep_id": "689035"
+    },
+    "fetched_at": "2026-06-09T20:00:27.223803+00:00"
+  },
+  "wilmer kallio": {
+    "ep_id": "944586",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 168,
+          "metrics": 76
+        },
+        "position": "F"
+      },
+      "ep_id": "944586"
+    },
+    "fetched_at": "2026-06-09T20:00:27.683276+00:00"
+  },
+  "anttoni uronen": {
+    "ep_id": "959439",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "F"
+      },
+      "ep_id": "959439"
+    },
+    "fetched_at": "2026-06-09T20:00:28.204951+00:00"
+  },
+  "alexandre raymond": {
+    "ep_id": "694743",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "G"
+      },
+      "ep_id": "694743"
+    },
+    "fetched_at": "2026-06-09T20:00:29.129417+00:00"
+  },
+  "richard zemlicka": {
+    "ep_id": "864704",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "F"
+      },
+      "ep_id": "864704"
+    },
+    "fetched_at": "2026-06-09T20:00:30.281866+00:00"
+  },
+  "alexis fortin": {
+    "ep_id": "772967",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 223,
+          "metrics": 101
+        },
+        "position": "D"
+      },
+      "ep_id": "772967"
+    },
+    "fetched_at": "2026-06-09T20:00:30.592800+00:00"
+  },
+  "pavel sidorov": {
+    "ep_id": "1076775",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "F"
+      },
+      "ep_id": "1076775"
+    },
+    "fetched_at": "2026-06-09T20:00:31.487313+00:00"
+  },
+  "tim munger": {
+    "ep_id": "1031659",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "F"
+      },
+      "ep_id": "1031659"
+    },
+    "fetched_at": "2026-06-09T20:00:32.281898+00:00"
+  },
+  "tristan langlois": {
+    "ep_id": "755216",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'7\"",
+          "metrics": 201
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 223,
+          "metrics": 101
+        },
+        "position": "D"
+      },
+      "ep_id": "755216"
+    },
+    "fetched_at": "2026-06-09T20:00:33.378896+00:00"
+  },
+  "vojtech cerny": {
+    "ep_id": "980642",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "D"
+      },
+      "ep_id": "980642"
+    },
+    "fetched_at": "2026-06-09T20:00:34.091424+00:00"
+  },
+  "sawyer dingman": {
+    "ep_id": "879184",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 225,
+          "metrics": 102
+        },
+        "position": "F"
+      },
+      "ep_id": "879184"
+    },
+    "fetched_at": "2026-06-09T20:00:35.534517+00:00"
+  },
+  "gleb tsyplakov": {
+    "ep_id": "1051640",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 184
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "F"
+      },
+      "ep_id": "1051640"
+    },
+    "fetched_at": "2026-06-09T20:00:36.190264+00:00"
+  },
+  "vojtech svancar": {
+    "ep_id": "977170",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 177
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "F"
+      },
+      "ep_id": "977170"
+    },
+    "fetched_at": "2026-06-09T20:00:36.611654+00:00"
+  },
+  "cooper soller": {
+    "ep_id": "617640",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 178
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "F"
+      },
+      "ep_id": "617640"
+    },
+    "fetched_at": "2026-06-09T20:00:37.074020+00:00"
+  },
+  "ryder fetterolf": {
+    "ep_id": "617434",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "G"
+      },
+      "ep_id": "617434"
+    },
+    "fetched_at": "2026-06-09T20:00:38.360921+00:00"
+  },
+  "fabrice bouvard": {
+    "ep_id": "956919",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "F"
+      },
+      "ep_id": "956919"
+    },
+    "fetched_at": "2026-06-09T20:00:39.379371+00:00"
+  },
+  "arvin jaswal": {
+    "ep_id": "897792",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 179,
+          "metrics": 81
+        },
+        "position": "G"
+      },
+      "ep_id": "897792"
+    },
+    "fetched_at": "2026-06-09T20:00:40.522673+00:00"
+  },
+  "dylan dumont": {
+    "ep_id": "702284",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 168,
+          "metrics": 76
+        },
+        "position": "F"
+      },
+      "ep_id": "702284"
+    },
+    "fetched_at": "2026-06-09T20:00:40.785405+00:00"
+  },
+  "matthew minchak": {
+    "ep_id": "751459",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "G"
+      },
+      "ep_id": "751459"
+    },
+    "fetched_at": "2026-06-09T20:00:41.683176+00:00"
+  },
+  "jake gustafson": {
+    "ep_id": "888345",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "F"
+      },
+      "ep_id": "888345"
+    },
+    "fetched_at": "2026-06-09T20:00:42.484465+00:00"
+  },
+  "caden harvey": {
+    "ep_id": "617422",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "F"
+      },
+      "ep_id": "617422"
+    },
+    "fetched_at": "2026-06-09T20:00:42.607940+00:00"
+  },
+  "juuso ainasto": {
+    "ep_id": "925170",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 194
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "G"
+      },
+      "ep_id": "925170"
+    },
+    "fetched_at": "2026-06-09T20:00:44.991907+00:00"
+  },
+  "maksim sokolovskii": {
+    "ep_id": "896007",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'8\"",
+          "metrics": 203
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 238,
+          "metrics": 108
+        },
+        "position": "D"
+      },
+      "ep_id": "896007"
+    },
+    "fetched_at": "2026-06-09T20:00:45.113773+00:00"
+  },
+  "dmitri ivchenko": {
+    "ep_id": "896136",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 179,
+          "metrics": 81
+        },
+        "position": "G"
+      },
+      "ep_id": "896136"
+    },
+    "fetched_at": "2026-06-09T20:00:46.820519+00:00"
+  },
+  "david sedlacek": {
+    "ep_id": "977034",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 189
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "F"
+      },
+      "ep_id": "977034"
+    },
+    "fetched_at": "2026-06-09T20:00:47.600859+00:00"
+  },
+  "ivan arkhipov": {
+    "ep_id": "901271",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 181
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 161,
+          "metrics": 73
+        },
+        "position": "F"
+      },
+      "ep_id": "901271"
+    },
+    "fetched_at": "2026-06-09T20:00:48.208819+00:00"
+  },
+  "eric frossard": {
+    "ep_id": "897392",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 205,
+          "metrics": 93
+        },
+        "position": "D"
+      },
+      "ep_id": "897392"
+    },
+    "fetched_at": "2026-06-09T20:00:48.720772+00:00"
+  },
+  "daniel walters": {
+    "ep_id": "876330",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "F"
+      },
+      "ep_id": "876330"
+    },
+    "fetched_at": "2026-06-09T20:00:49.193247+00:00"
+  },
+  "gustav stengard": {
+    "ep_id": "1011384",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 196,
+          "metrics": 89
+        },
+        "position": "G"
+      },
+      "ep_id": "1011384"
+    },
+    "fetched_at": "2026-06-09T20:00:50.945161+00:00"
+  },
+  "cash cruitt": {
+    "ep_id": "629369",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "G"
+      },
+      "ep_id": "629369"
+    },
+    "fetched_at": "2026-06-09T20:00:51.757264+00:00"
+  },
+  "roberto henriquez": {
+    "ep_id": "873341",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "G"
+      },
+      "ep_id": "873341"
+    },
+    "fetched_at": "2026-06-09T20:00:52.595556+00:00"
+  },
+  "milo tjarnlund": {
+    "ep_id": "795291",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "G"
+      },
+      "ep_id": "795291"
+    },
+    "fetched_at": "2026-06-09T20:00:53.310164+00:00"
+  },
+  "matvey karbainov": {
+    "ep_id": "901294",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "G"
+      },
+      "ep_id": "901294"
+    },
+    "fetched_at": "2026-06-09T20:00:54.590284+00:00"
+  },
+  "simon-xavier cyr": {
+    "ep_id": "886092",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "F"
+      },
+      "ep_id": "886092"
+    },
+    "fetched_at": "2026-06-09T20:00:55.808375+00:00"
+  },
+  "gavin betts": {
+    "ep_id": "890461",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 182
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "G"
+      },
+      "ep_id": "890461"
+    },
+    "fetched_at": "2026-06-09T20:00:56.013703+00:00"
+  },
+  "vojtech kubin": {
+    "ep_id": "917730",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 184
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "F"
+      },
+      "ep_id": "917730"
+    },
+    "fetched_at": "2026-06-09T20:00:56.679529+00:00"
+  },
+  "marek sklenicka": {
+    "ep_id": "918049",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 192
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "G"
+      },
+      "ep_id": "918049"
+    },
+    "fetched_at": "2026-06-09T20:00:57.211315+00:00"
+  },
+  "tobias tvrznik": {
+    "ep_id": "690451",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 192
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "G"
+      },
+      "ep_id": "690451"
+    },
+    "fetched_at": "2026-06-09T20:00:57.843655+00:00"
+  },
+  "nicholas bogas": {
+    "ep_id": "914134",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "D"
+      },
+      "ep_id": "914134"
+    },
+    "fetched_at": "2026-06-09T20:00:59.216671+00:00"
+  },
+  "daniil rusakovich": {
+    "ep_id": "983798",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "G"
+      },
+      "ep_id": "983798"
+    },
+    "fetched_at": "2026-06-09T20:00:59.618923+00:00"
+  },
+  "gleb peshkov": {
+    "ep_id": "1052472",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "G"
+      },
+      "ep_id": "1052472"
+    },
+    "fetched_at": "2026-06-09T20:01:01.479864+00:00"
+  },
+  "ben hrebik": {
+    "ep_id": "800154",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 209,
+          "metrics": 95
+        },
+        "position": "G"
+      },
+      "ep_id": "800154"
+    },
+    "fetched_at": "2026-06-09T20:01:02.522544+00:00"
+  },
+  "vilmeri vaananen": {
+    "ep_id": "977022",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 192
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "D"
+      },
+      "ep_id": "977022"
+    },
+    "fetched_at": "2026-06-09T20:01:03.079639+00:00"
+  },
+  "benett kelly": {
+    "ep_id": "879768",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "D"
+      },
+      "ep_id": "879768"
+    },
+    "fetched_at": "2026-06-09T20:01:04.347877+00:00"
+  },
+  "jason schaubel": {
+    "ep_id": "947639",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 174,
+          "metrics": 79
+        },
+        "position": "G"
+      },
+      "ep_id": "947639"
+    },
+    "fetched_at": "2026-06-09T20:01:04.773179+00:00"
+  },
+  "darian rolsing": {
+    "ep_id": "810648",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "D"
+      },
+      "ep_id": "810648"
+    },
+    "fetched_at": "2026-06-09T20:01:06.507674+00:00"
+  },
+  "danai shaiikov": {
+    "ep_id": "896458",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 192,
+          "metrics": 87
+        },
+        "position": "G"
+      },
+      "ep_id": "896458"
+    },
+    "fetched_at": "2026-06-09T20:01:07.213422+00:00"
+  },
+  "jiri kamas": {
+    "ep_id": "905934",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "905934"
+    },
+    "fetched_at": "2026-06-09T20:01:07.258573+00:00"
+  },
+  "cameron allard": {
+    "ep_id": "883541",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 196,
+          "metrics": 89
+        },
+        "position": "D"
+      },
+      "ep_id": "883541"
+    },
+    "fetched_at": "2026-06-09T20:01:08.108094+00:00"
+  },
+  "hjalmar cilthe": {
+    "ep_id": "907208",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "D"
+      },
+      "ep_id": "907208"
+    },
+    "fetched_at": "2026-06-09T20:01:08.841663+00:00"
+  },
+  "sebastian charvat": {
+    "ep_id": "937110",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 195
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "G"
+      },
+      "ep_id": "937110"
+    },
+    "fetched_at": "2026-06-09T20:01:08.936324+00:00"
+  },
+  "jack kultgen": {
+    "ep_id": "855974",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 196,
+          "metrics": 89
+        },
+        "position": "D"
+      },
+      "ep_id": "855974"
+    },
+    "fetched_at": "2026-06-09T20:01:10.229565+00:00"
+  },
+  "jackson marthaler": {
+    "ep_id": "889475",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "D"
+      },
+      "ep_id": "889475"
+    },
+    "fetched_at": "2026-06-09T20:01:11.488020+00:00"
+  },
+  "lincoln krizizke": {
+    "ep_id": "617475",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "D"
+      },
+      "ep_id": "617475"
+    },
+    "fetched_at": "2026-06-09T20:01:12.296361+00:00"
+  },
+  "john hagglof": {
+    "ep_id": "926710",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 214,
+          "metrics": 97
+        },
+        "position": "D"
+      },
+      "ep_id": "926710"
+    },
+    "fetched_at": "2026-06-09T20:01:13.394503+00:00"
+  },
+  "olle tideman": {
+    "ep_id": "922623",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 181
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 170,
+          "metrics": 77
+        },
+        "position": "D"
+      },
+      "ep_id": "922623"
+    },
+    "fetched_at": "2026-06-09T20:01:14.050548+00:00"
+  },
+  "rocky langvardt": {
+    "ep_id": "871063",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 179
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 192,
+          "metrics": 87
+        },
+        "position": "D"
+      },
+      "ep_id": "871063"
+    },
+    "fetched_at": "2026-06-09T20:01:15.487178+00:00"
+  },
+  "neilan johnson": {
+    "ep_id": "905957",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "G"
+      },
+      "ep_id": "905957"
+    },
+    "fetched_at": "2026-06-09T20:01:15.738115+00:00"
+  },
+  "zigge bratt": {
+    "ep_id": "920831",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 182
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "D"
+      },
+      "ep_id": "920831"
+    },
+    "fetched_at": "2026-06-09T20:01:16.106176+00:00"
+  },
+  "elliot lennon": {
+    "ep_id": "617451",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'6\"",
+          "metrics": 198
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "G"
+      },
+      "ep_id": "617451"
+    },
+    "fetched_at": "2026-06-09T20:01:16.194647+00:00"
+  },
+  "ivan patrikhayev": {
+    "ep_id": "835563",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "D"
+      },
+      "ep_id": "835563"
+    },
+    "fetched_at": "2026-06-09T20:01:17.795079+00:00"
+  },
+  "mikhail povarov": {
+    "ep_id": "896002",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "G"
+      },
+      "ep_id": "896002"
+    },
+    "fetched_at": "2026-06-09T20:01:18.129172+00:00"
+  },
+  "nikolai nikulshin": {
+    "ep_id": "691437",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "G"
+      },
+      "ep_id": "691437"
+    },
+    "fetched_at": "2026-06-09T20:01:19.325671+00:00"
+  },
+  "vladimir selivanov": {
+    "ep_id": "895797",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 181
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "G"
+      },
+      "ep_id": "895797"
+    },
+    "fetched_at": "2026-06-09T20:01:19.851199+00:00"
+  },
+  "cooper cleaves": {
+    "ep_id": "597758",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 205,
+          "metrics": 93
+        },
+        "position": "D"
+      },
+      "ep_id": "597758"
+    },
+    "fetched_at": "2026-06-09T20:01:21.084086+00:00"
+  },
+  "jonne parkkali": {
+    "ep_id": "962887",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 196,
+          "metrics": 89
+        },
+        "position": "D"
+      },
+      "ep_id": "962887"
+    },
+    "fetched_at": "2026-06-09T20:01:21.419117+00:00"
+  },
+  "andre mondoux": {
+    "ep_id": "890383",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "D"
+      },
+      "ep_id": "890383"
+    },
+    "fetched_at": "2026-06-09T20:01:22.467556+00:00"
+  },
+  "vojtech hora": {
+    "ep_id": "918034",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "D"
+      },
+      "ep_id": "918034"
+    },
+    "fetched_at": "2026-06-09T20:01:22.906963+00:00"
+  },
+  "andrew robinson": {
+    "ep_id": "906007",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 184
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "D"
+      },
+      "ep_id": "906007"
+    },
+    "fetched_at": "2026-06-09T20:01:24.061297+00:00"
+  },
+  "arsenii anisimov": {
+    "ep_id": "1071112",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 182
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "D"
+      },
+      "ep_id": "1071112"
+    },
+    "fetched_at": "2026-06-09T20:01:24.943143+00:00"
+  },
+  "brady murnane": {
+    "ep_id": "1004154",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "D"
+      },
+      "ep_id": "1004154"
+    },
+    "fetched_at": "2026-06-09T20:01:26.233632+00:00"
+  },
+  "elliot arnett": {
+    "ep_id": "897523",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "897523"
+    },
+    "fetched_at": "2026-06-09T20:01:26.852494+00:00"
+  },
+  "grady spicer": {
+    "ep_id": "876666",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 209,
+          "metrics": 95
+        },
+        "position": "D"
+      },
+      "ep_id": "876666"
+    },
+    "fetched_at": "2026-06-09T20:01:27.455219+00:00"
+  },
+  "harris pangretitsch": {
+    "ep_id": "976483",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 218,
+          "metrics": 99
+        },
+        "position": "D"
+      },
+      "ep_id": "976483"
+    },
+    "fetched_at": "2026-06-09T20:01:28.218678+00:00"
+  },
+  "hunter aura": {
+    "ep_id": "878966",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "D"
+      },
+      "ep_id": "878966"
+    },
+    "fetched_at": "2026-06-09T20:01:29.326358+00:00"
+  },
+  "justin handsor": {
+    "ep_id": "750967",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "D"
+      },
+      "ep_id": "750967"
+    },
+    "fetched_at": "2026-06-09T20:01:31.070854+00:00"
+  },
+  "jacob vandeven": {
+    "ep_id": "897709",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'6\"",
+          "metrics": 198
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 207,
+          "metrics": 94
+        },
+        "position": "D"
+      },
+      "ep_id": "897709"
+    },
+    "fetched_at": "2026-06-09T20:01:31.323027+00:00"
+  },
+  "leo laschon": {
+    "ep_id": "862024",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "862024"
+    },
+    "fetched_at": "2026-06-09T20:01:32.313631+00:00"
+  },
+  "matyas man": {
+    "ep_id": "854386",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "D"
+      },
+      "ep_id": "854386"
+    },
+    "fetched_at": "2026-06-09T20:01:33.145410+00:00"
+  },
+  "jacoby weiner": {
+    "ep_id": "617418",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 227,
+          "metrics": 103
+        },
+        "position": "G"
+      },
+      "ep_id": "617418"
+    },
+    "fetched_at": "2026-06-09T20:01:33.715208+00:00"
+  },
+  "alexandre taillefer": {
+    "ep_id": "747957",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "D"
+      },
+      "ep_id": "747957"
+    },
+    "fetched_at": "2026-06-09T20:01:34.795145+00:00"
+  },
+  "antonin pufr": {
+    "ep_id": "979938",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 189
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "979938"
+    },
+    "fetched_at": "2026-06-09T20:01:35.266092+00:00"
+  },
+  "david zmrhal": {
+    "ep_id": "917754",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "D"
+      },
+      "ep_id": "917754"
+    },
+    "fetched_at": "2026-06-09T20:01:36.130614+00:00"
+  },
+  "daniil ustinkov": {
+    "ep_id": "800542",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "D"
+      },
+      "ep_id": "800542"
+    },
+    "fetched_at": "2026-06-09T20:01:36.387423+00:00"
+  },
+  "michel myloserdnyy": {
+    "ep_id": "888967",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'7\"",
+          "metrics": 201
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 225,
+          "metrics": 102
+        },
+        "position": "D"
+      },
+      "ep_id": "888967"
+    },
+    "fetched_at": "2026-06-09T20:01:37.964051+00:00"
+  },
+  "tim thomsson": {
+    "ep_id": "811069",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "D"
+      },
+      "ep_id": "811069"
+    },
+    "fetched_at": "2026-06-09T20:01:38.885079+00:00"
+  },
+  "leo tuuva": {
+    "ep_id": "796107",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 186
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "F"
+      },
+      "ep_id": "796107"
+    },
+    "fetched_at": "2026-06-09T20:01:39.473683+00:00"
+  },
+  "mikhail khabarov": {
+    "ep_id": "836661",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "D"
+      },
+      "ep_id": "836661"
+    },
+    "fetched_at": "2026-06-09T20:01:40.560066+00:00"
+  },
+  "brody pepoy": {
+    "ep_id": "914141",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "F"
+      },
+      "ep_id": "914141"
+    },
+    "fetched_at": "2026-06-09T20:01:41.112020+00:00"
+  },
+  "justin graf": {
+    "ep_id": "576992",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 174,
+          "metrics": 79
+        },
+        "position": "F"
+      },
+      "ep_id": "576992"
+    },
+    "fetched_at": "2026-06-09T20:01:42.259055+00:00"
+  },
+  "jordan duguay": {
+    "ep_id": "879183",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 179,
+          "metrics": 81
+        },
+        "position": "F"
+      },
+      "ep_id": "879183"
+    },
+    "fetched_at": "2026-06-09T20:01:42.375523+00:00"
+  },
+  "liam danielsson": {
+    "ep_id": "781295",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 182
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 174,
+          "metrics": 79
+        },
+        "position": "F"
+      },
+      "ep_id": "781295"
+    },
+    "fetched_at": "2026-06-09T20:01:42.924461+00:00"
+  },
+  "melwin larsson": {
+    "ep_id": "869573",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "F"
+      },
+      "ep_id": "869573"
+    },
+    "fetched_at": "2026-06-09T20:01:43.944426+00:00"
+  },
+  "rasmus orenas": {
+    "ep_id": "872217",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 196,
+          "metrics": 89
+        },
+        "position": "F"
+      },
+      "ep_id": "872217"
+    },
+    "fetched_at": "2026-06-09T20:01:45.507412+00:00"
+  },
+  "semyon simonov": {
+    "ep_id": "725378",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "725378"
+    },
+    "fetched_at": "2026-06-09T20:01:47.379076+00:00"
+  },
+  "david vermirovsky": {
+    "ep_id": "982457",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 195
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "G"
+      },
+      "ep_id": "982457"
+    },
+    "fetched_at": "2026-06-09T20:01:48.181748+00:00"
+  },
+  "isac hedqvist": {
+    "ep_id": "534827",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "F"
+      },
+      "ep_id": "534827"
+    },
+    "fetched_at": "2026-06-09T20:01:49.282355+00:00"
+  },
+  "jalmari melanen": {
+    "ep_id": "907664",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 181
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "907664"
+    },
+    "fetched_at": "2026-06-09T20:01:50.164886+00:00"
+  },
+  "oiva juntunen": {
+    "ep_id": "924653",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 207,
+          "metrics": 94
+        },
+        "position": "F"
+      },
+      "ep_id": "924653"
+    },
+    "fetched_at": "2026-06-09T20:01:50.860394+00:00"
+  },
+  "denis celko": {
+    "ep_id": "988441",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "G"
+      },
+      "ep_id": "988441"
+    },
+    "fetched_at": "2026-06-09T20:01:52.125176+00:00"
+  },
+  "maksim corovic": {
+    "ep_id": "888129",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 196,
+          "metrics": 89
+        },
+        "position": "G"
+      },
+      "ep_id": "888129"
+    },
+    "fetched_at": "2026-06-09T20:01:52.281311+00:00"
+  },
+  "martin psohlavec": {
+    "ep_id": "878982",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "G"
+      },
+      "ep_id": "878982"
+    },
+    "fetched_at": "2026-06-09T20:01:53.248957+00:00"
+  },
+  "douglas paul": {
+    "ep_id": "919780",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 182
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "919780"
+    },
+    "fetched_at": "2026-06-09T20:01:54.382801+00:00"
+  },
+  "ondrej szarowski": {
+    "ep_id": "945024",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "D"
+      },
+      "ep_id": "945024"
+    },
+    "fetched_at": "2026-06-09T20:01:54.774837+00:00"
+  },
+  "roderik cernak": {
+    "ep_id": "958706",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 214,
+          "metrics": 97
+        },
+        "position": "D"
+      },
+      "ep_id": "958706"
+    },
+    "fetched_at": "2026-06-09T20:01:55.154057+00:00"
+  },
+  "alisher sarkenov": {
+    "ep_id": "1014823",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 192,
+          "metrics": 87
+        },
+        "position": "F"
+      },
+      "ep_id": "1014823"
+    },
+    "fetched_at": "2026-06-09T20:01:56.962348+00:00"
+  },
+  "cohen bidgood": {
+    "ep_id": "752678",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "F"
+      },
+      "ep_id": "752678"
+    },
+    "fetched_at": "2026-06-09T20:01:57.369613+00:00"
+  },
+  "darian anderson": {
+    "ep_id": "807163",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "F"
+      },
+      "ep_id": "807163"
+    },
+    "fetched_at": "2026-06-09T20:01:58.899245+00:00"
+  },
+  "illia shybinskyi": {
+    "ep_id": "1047567",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 179
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "1047567"
+    },
+    "fetched_at": "2026-06-09T20:01:59.031992+00:00"
+  },
+  "joseph salandra": {
+    "ep_id": "617407",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 179
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "F"
+      },
+      "ep_id": "617407"
+    },
+    "fetched_at": "2026-06-09T20:02:00.133489+00:00"
+  },
+  "kaiden donia": {
+    "ep_id": "617457",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "D"
+      },
+      "ep_id": "617457"
+    },
+    "fetched_at": "2026-06-09T20:02:00.294409+00:00"
+  },
+  "josh evaschesen": {
+    "ep_id": "725365",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 194,
+          "metrics": 88
+        },
+        "position": "F"
+      },
+      "ep_id": "725365"
+    },
+    "fetched_at": "2026-06-09T20:02:00.923271+00:00"
+  },
+  "julien maze": {
+    "ep_id": "742508",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'9\"",
+          "metrics": 175
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "F"
+      },
+      "ep_id": "742508"
+    },
+    "fetched_at": "2026-06-09T20:02:01.857780+00:00"
+  },
+  "rowan henderson": {
+    "ep_id": "881032",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "F"
+      },
+      "ep_id": "881032"
+    },
+    "fetched_at": "2026-06-09T20:02:02.517111+00:00"
+  },
+  "nathan brown": {
+    "ep_id": "724534",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 182
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 174,
+          "metrics": 79
+        },
+        "position": "F"
+      },
+      "ep_id": "724534"
+    },
+    "fetched_at": "2026-06-09T20:02:02.786644+00:00"
+  },
+  "adel kalimullin": {
+    "ep_id": "896183",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "896183"
+    },
+    "fetched_at": "2026-06-09T20:02:04.399696+00:00"
+  },
+  "nikita gromakov": {
+    "ep_id": "895820",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 182
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "F"
+      },
+      "ep_id": "895820"
+    },
+    "fetched_at": "2026-06-09T20:02:05.169246+00:00"
+  },
+  "cameron kuzma": {
+    "ep_id": "891524",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 190,
+          "metrics": 86
+        },
+        "position": "F"
+      },
+      "ep_id": "891524"
+    },
+    "fetched_at": "2026-06-09T20:02:05.933430+00:00"
+  },
+  "jack torr": {
+    "ep_id": "763039",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "F"
+      },
+      "ep_id": "763039"
+    },
+    "fetched_at": "2026-06-09T20:02:06.865672+00:00"
+  },
+  "kalle hemstrom": {
+    "ep_id": "856708",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 192
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 207,
+          "metrics": 94
+        },
+        "position": "F"
+      },
+      "ep_id": "856708"
+    },
+    "fetched_at": "2026-06-09T20:02:07.204503+00:00"
+  },
+  "mikael kim": {
+    "ep_id": "946883",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 181
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 183,
+          "metrics": 83
+        },
+        "position": "F"
+      },
+      "ep_id": "946883"
+    },
+    "fetched_at": "2026-06-09T20:02:08.650149+00:00"
+  },
+  "milton carpenhammar": {
+    "ep_id": "799224",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "F"
+      },
+      "ep_id": "799224"
+    },
+    "fetched_at": "2026-06-09T20:02:09.149333+00:00"
+  },
+  "artemy kulagin": {
+    "ep_id": "985432",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 178
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 152,
+          "metrics": 69
+        },
+        "position": "F"
+      },
+      "ep_id": "985432"
+    },
+    "fetched_at": "2026-06-09T20:02:10.441487+00:00"
+  },
+  "grigori nikolayev": {
+    "ep_id": "895953",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "F"
+      },
+      "ep_id": "895953"
+    },
+    "fetched_at": "2026-06-09T20:02:11.342718+00:00"
+  },
+  "yaroslav ivantsov": {
+    "ep_id": "1017867",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 184
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "1017867"
+    },
+    "fetched_at": "2026-06-09T20:02:12.244728+00:00"
+  },
+  "miko vatjus": {
+    "ep_id": "962238",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 189
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "962238"
+    },
+    "fetched_at": "2026-06-09T20:02:13.849183+00:00"
+  },
+  "onni keltikangas": {
+    "ep_id": "689930",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "F"
+      },
+      "ep_id": "689930"
+    },
+    "fetched_at": "2026-06-09T20:02:14.038094+00:00"
+  },
+  "josef holejsovsky": {
+    "ep_id": "927841",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "927841"
+    },
+    "fetched_at": "2026-06-09T20:02:14.552222+00:00"
+  },
+  "matej kubiesa": {
+    "ep_id": "619071",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 182
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 172,
+          "metrics": 78
+        },
+        "position": "F"
+      },
+      "ep_id": "619071"
+    },
+    "fetched_at": "2026-06-09T20:02:15.210592+00:00"
+  },
+  "brody gillespie": {
+    "ep_id": "881399",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "F"
+      },
+      "ep_id": "881399"
+    },
+    "fetched_at": "2026-06-09T20:02:16.585266+00:00"
+  },
+  "cohen klassen": {
+    "ep_id": "880384",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "880384"
+    },
+    "fetched_at": "2026-06-09T20:02:17.272973+00:00"
+  },
+  "dmitri yakutsenak": {
+    "ep_id": "836560",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 209,
+          "metrics": 95
+        },
+        "position": "F"
+      },
+      "ep_id": "836560"
+    },
+    "fetched_at": "2026-06-09T20:02:18.546563+00:00"
+  },
+  "reed brown": {
+    "ep_id": "898661",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 161,
+          "metrics": 73
+        },
+        "position": "F"
+      },
+      "ep_id": "898661"
+    },
+    "fetched_at": "2026-06-09T20:02:18.866008+00:00"
+  },
+  "stepan kuryachenkov": {
+    "ep_id": "983973",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 170,
+          "metrics": 77
+        },
+        "position": "F"
+      },
+      "ep_id": "983973"
+    },
+    "fetched_at": "2026-06-09T20:02:20.683996+00:00"
+  },
+  "danil sysoyev": {
+    "ep_id": "901363",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 170,
+          "metrics": 77
+        },
+        "position": "F"
+      },
+      "ep_id": "901363"
+    },
+    "fetched_at": "2026-06-09T20:02:20.776397+00:00"
+  },
+  "roman laman": {
+    "ep_id": "983923",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 181
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 176,
+          "metrics": 80
+        },
+        "position": "F"
+      },
+      "ep_id": "983923"
+    },
+    "fetched_at": "2026-06-09T20:02:21.389451+00:00"
+  },
+  "william manchuso": {
+    "ep_id": "1050343",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 192,
+          "metrics": 87
+        },
+        "position": "F"
+      },
+      "ep_id": "1050343"
+    },
+    "fetched_at": "2026-06-09T20:02:22.069309+00:00"
+  },
+  "ethan sturgis": {
+    "ep_id": "882603",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "F"
+      },
+      "ep_id": "882603"
+    },
+    "fetched_at": "2026-06-09T20:02:22.396988+00:00"
+  },
+  "charlie puglisi": {
+    "ep_id": "617416",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'9\"",
+          "metrics": 176
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 159,
+          "metrics": 72
+        },
+        "position": "F"
+      },
+      "ep_id": "617416"
+    },
+    "fetched_at": "2026-06-09T20:02:23.951149+00:00"
+  },
+  "kimi sutter": {
+    "ep_id": "937151",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "F"
+      },
+      "ep_id": "937151"
+    },
+    "fetched_at": "2026-06-09T20:02:24.275173+00:00"
+  },
+  "michal ondrejcak": {
+    "ep_id": "876844",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 187
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 192,
+          "metrics": 87
+        },
+        "position": "F"
+      },
+      "ep_id": "876844"
+    },
+    "fetched_at": "2026-06-09T20:02:25.992568+00:00"
+  },
+  "dylan allie": {
+    "ep_id": "806153",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'4\"",
+          "metrics": 193
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "F"
+      },
+      "ep_id": "806153"
+    },
+    "fetched_at": "2026-06-09T20:02:26.644777+00:00"
+  },
+  "boris borin": {
+    "ep_id": "983692",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 178
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 161,
+          "metrics": 73
+        },
+        "position": "F"
+      },
+      "ep_id": "983692"
+    },
+    "fetched_at": "2026-06-09T20:02:27.441820+00:00"
+  },
+  "ivan matta": {
+    "ep_id": "875244",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 181
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 179,
+          "metrics": 81
+        },
+        "position": "F"
+      },
+      "ep_id": "875244"
+    },
+    "fetched_at": "2026-06-09T20:02:28.166897+00:00"
+  },
+  "giorgos pantellas": {
+    "ep_id": "619705",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 214,
+          "metrics": 97
+        },
+        "position": "D"
+      },
+      "ep_id": "619705"
+    },
+    "fetched_at": "2026-06-09T20:03:22.620873+00:00"
+  },
+  "elisei ryabykin": {
+    "ep_id": "895805",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 181,
+          "metrics": 82
+        },
+        "position": "D"
+      },
+      "ep_id": "895805"
+    },
+    "fetched_at": "2026-06-09T20:03:23.332348+00:00"
+  },
+  "kent sauer": {
+    "ep_id": "856623",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 203,
+          "metrics": 92
+        },
+        "position": "F"
+      },
+      "ep_id": "856623"
+    },
+    "fetched_at": "2026-06-09T20:03:24.487971+00:00"
+  },
+  "joseph erickson": {
+    "ep_id": "866523",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'5\"",
+          "metrics": 196
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 201,
+          "metrics": 91
+        },
+        "position": "F"
+      },
+      "ep_id": "866523"
+    },
+    "fetched_at": "2026-06-09T20:03:25.021356+00:00"
+  },
+  "oleg kulebiakin": {
+    "ep_id": "896020",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 178
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 179,
+          "metrics": 81
+        },
+        "position": "F"
+      },
+      "ep_id": "896020"
+    },
+    "fetched_at": "2026-06-09T20:03:25.546680+00:00"
+  },
+  "thomas bleyl": {
+    "ep_id": "577026",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 170,
+          "metrics": 77
+        },
+        "position": "D"
+      },
+      "ep_id": "577026"
+    },
+    "fetched_at": "2026-06-09T20:03:25.682875+00:00"
+  },
+  "james rieber": {
+    "ep_id": "617479",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "D"
+      },
+      "ep_id": "617479"
+    },
+    "fetched_at": "2026-06-09T20:03:27.453606+00:00"
+  },
+  "theodore lechner": {
+    "ep_id": "940927",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'2\"",
+          "metrics": 188
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 170,
+          "metrics": 77
+        },
+        "position": "D"
+      },
+      "ep_id": "940927"
+    },
+    "fetched_at": "2026-06-09T20:03:28.883993+00:00"
+  },
+  "tsimafei tuzin": {
+    "ep_id": "885802",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 190
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 198,
+          "metrics": 90
+        },
+        "position": "F"
+      },
+      "ep_id": "885802"
+    },
+    "fetched_at": "2026-06-09T20:03:29.990093+00:00"
+  },
+  "lukas zajic": {
+    "ep_id": "617482",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'11\"",
+          "metrics": 180
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "F"
+      },
+      "ep_id": "617482"
+    },
+    "fetched_at": "2026-06-09T20:03:29.997764+00:00"
+  },
+  "nikita voiaga": {
+    "ep_id": "689984",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'3\"",
+          "metrics": 191
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 209,
+          "metrics": 95
+        },
+        "position": "D"
+      },
+      "ep_id": "689984"
+    },
+    "fetched_at": "2026-06-09T20:03:30.952192+00:00"
+  },
+  "casper juustovaara": {
+    "ep_id": "874949",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'9\"",
+          "metrics": 176
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 168,
+          "metrics": 76
+        },
+        "position": "F"
+      },
+      "ep_id": "874949"
+    },
+    "fetched_at": "2026-06-09T20:03:31.438929+00:00"
+  },
+  "kirill buzaev": {
+    "ep_id": "1017843",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'1\"",
+          "metrics": 185
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 165,
+          "metrics": 75
+        },
+        "position": "F"
+      },
+      "ep_id": "1017843"
+    },
+    "fetched_at": "2026-06-09T20:03:33.294542+00:00"
+  },
+  "john galanek": {
+    "ep_id": "597643",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "6'0\"",
+          "metrics": 183
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 187,
+          "metrics": 85
+        },
+        "position": "F"
+      },
+      "ep_id": "597643"
+    },
+    "fetched_at": "2026-06-09T20:03:33.663342+00:00"
+  },
+  "andrei molgachev": {
+    "ep_id": "896025",
+    "parsed": {
+      "bio": {
+        "height": {
+          "__typename": "Height",
+          "imperial": "5'10\"",
+          "metrics": 178
+        },
+        "weight": {
+          "__typename": "Weight",
+          "imperial": 185,
+          "metrics": 84
+        },
+        "position": "F"
+      },
+      "ep_id": "896025"
+    },
+    "fetched_at": "2026-06-09T20:03:34.317792+00:00"
   }
 }

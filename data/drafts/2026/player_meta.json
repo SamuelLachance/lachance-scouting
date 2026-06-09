@@ -1,0 +1,1745 @@
+{
+  "lucian bernat": {
+    "name": "Lucian Bernat",
+    "height": "6'4",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:08.711850+00:00"
+  },
+  "jakub frolo": {
+    "name": "Jakub Frolo",
+    "height": "6'1",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:10.797512+00:00"
+  },
+  "noel pakarinen": {
+    "name": "Noel Pakarinen",
+    "height": "6'2",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:11.208264+00:00"
+  },
+  "kayden lemire": {
+    "name": "Kayden Lemire",
+    "height": "6'4",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:12.780882+00:00"
+  },
+  "jonah sivertson": {
+    "name": "Jonah Sivertson",
+    "height": "6'3",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:12.827625+00:00"
+  },
+  "ludvig andersson": {
+    "name": "Ludvig Andersson",
+    "height": "5'11",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:14.239285+00:00"
+  },
+  "mans gudmundsson": {
+    "name": "Mans Gudmundsson",
+    "height": "6'3",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:15.433048+00:00"
+  },
+  "jayden kurtz": {
+    "name": "Jayden Kurtz",
+    "height": "6'3",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:15.550530+00:00"
+  },
+  "doman szongoth": {
+    "name": "Doman Szongoth",
+    "height": "6'1",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:15.952906+00:00"
+  },
+  "jiko laitinen": {
+    "name": "Jiko Laitinen",
+    "height": "6'1",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:18.205869+00:00"
+  },
+  "liam lefebvre": {
+    "name": "Liam Lefebvre",
+    "height": "6'3",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:18.421966+00:00"
+  },
+  "alexander sapozhnikov": {
+    "name": "Alexander Sapozhnikov",
+    "height": "6'6",
+    "weight": 209,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:18.885110+00:00"
+  },
+  "jakub floris": {
+    "name": "Jakub Floris",
+    "height": "6'3",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:19.659041+00:00"
+  },
+  "samuel eriksson": {
+    "name": "Samuel Eriksson",
+    "height": "6'5",
+    "weight": 212,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:21.077935+00:00"
+  },
+  "william lundqvist": {
+    "name": "William Lundqvist",
+    "height": "6'4",
+    "weight": 214,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:21.991752+00:00"
+  },
+  "malcom gastrin": {
+    "name": "Malcom Gastrin",
+    "height": "6'0",
+    "weight": 174,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:23.268839+00:00"
+  },
+  "pavel kurka": {
+    "name": "Pavel Kurka",
+    "height": "6'1",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:24.670727+00:00"
+  },
+  "zach wooten": {
+    "name": "Zach Wooten",
+    "height": "6'2",
+    "weight": 205,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:25.507334+00:00"
+  },
+  "alex kostov": {
+    "name": "Alex Kostov",
+    "height": "6'4",
+    "weight": 207,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:25.572460+00:00"
+  },
+  "felix carell": {
+    "name": "Felix Carell",
+    "height": "6'1",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:26.189119+00:00"
+  },
+  "john parsons": {
+    "name": "John Parsons",
+    "height": "6'3",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:26.402274+00:00"
+  },
+  "viggo tamm": {
+    "name": "Viggo Tamm",
+    "height": "6'5",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:27.699296+00:00"
+  },
+  "brock souch": {
+    "name": "Brock Souch",
+    "height": "6'0",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:28.639398+00:00"
+  },
+  "caelan joudrey": {
+    "name": "Caelan Joudrey",
+    "height": "6'4",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:29.296432+00:00"
+  },
+  "zach olsen": {
+    "name": "Zach Olsen",
+    "height": "6'1",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:30.514030+00:00"
+  },
+  "lucas ambrosio": {
+    "name": "Lucas Ambrosio",
+    "height": "6'4",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:31.109535+00:00"
+  },
+  "benjamin wilmott": {
+    "name": "Benjamin Wilmott",
+    "height": "6'1",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:32.519239+00:00"
+  },
+  "zachary lansard": {
+    "name": "Zachary Lansard",
+    "height": "6'0",
+    "weight": 174,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:32.774715+00:00"
+  },
+  "giorgos pantellas": {
+    "name": "Giorgos Pantellas",
+    "height": "6'2",
+    "weight": 214,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:22.620883+00:00"
+  },
+  "cole tuminaro": {
+    "name": "Cole Tuminaro",
+    "height": "6'4",
+    "weight": 225,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:33.717693+00:00"
+  },
+  "patrik kerkola": {
+    "name": "Patrik Kerkola",
+    "height": "6'3",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:33.887458+00:00"
+  },
+  "henry nicolaysen": {
+    "name": "Henry Nicolaysen",
+    "height": "6'2",
+    "weight": 196,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:35.334522+00:00"
+  },
+  "ondrej stebetak": {
+    "name": "Ondrej Stebetak",
+    "height": "6'1",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:35.818046+00:00"
+  },
+  "joel tarvainen": {
+    "name": "Joel Tarvainen",
+    "height": "6'6",
+    "weight": 220,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:37.273031+00:00"
+  },
+  "elisei ryabykin": {
+    "name": "Elisei Ryabykin",
+    "height": "6'1",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:23.332358+00:00"
+  },
+  "kyle heger": {
+    "name": "Kyle Heger",
+    "height": "6'1",
+    "weight": 196,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:38.249514+00:00"
+  },
+  "andrei bykov": {
+    "name": "Andrei Bykov",
+    "height": "6'3",
+    "weight": 192,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:38.677036+00:00"
+  },
+  "will mclaughlin": {
+    "name": "Will McLaughlin",
+    "height": "6'2",
+    "weight": 168,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:39.674306+00:00"
+  },
+  "pavel denisov": {
+    "name": "Pavel Denisov",
+    "height": "6'2",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:39.897041+00:00"
+  },
+  "yaroslav bryzgalov": {
+    "name": "Yaroslav Bryzgalov",
+    "height": "6'4",
+    "weight": 220,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:40.936845+00:00"
+  },
+  "joseph erickson": {
+    "name": "Joseph Erickson",
+    "height": "6'5",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:25.021364+00:00"
+  },
+  "kent sauer": {
+    "name": "Kent Sauer",
+    "height": "6'3",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:24.487979+00:00"
+  },
+  "alexander morozov": {
+    "name": "Alexander Morozov",
+    "height": "6'3",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:42.202374+00:00"
+  },
+  "luke carrithers": {
+    "name": "Luke Carrithers",
+    "height": "6'1",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:42.955589+00:00"
+  },
+  "matvey karasyov": {
+    "name": "Matvey Karasyov",
+    "height": "6'1",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:43.162760+00:00"
+  },
+  "oleg kulebiakin": {
+    "name": "Oleg Kulebiakin",
+    "height": "5'10",
+    "weight": 179,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:25.546689+00:00"
+  },
+  "spencer bowes": {
+    "name": "Spencer Bowes",
+    "height": "6'0",
+    "weight": 174,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:44.390184+00:00"
+  },
+  "sean burick": {
+    "name": "Sean Burick",
+    "height": "6'8",
+    "weight": 214,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:46.004985+00:00"
+  },
+  "nolan stewart": {
+    "name": "Nolan Stewart",
+    "height": "5'10",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:46.546821+00:00"
+  },
+  "william sorbrand": {
+    "name": "William Sorbrand",
+    "height": "6'3",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:47.373447+00:00"
+  },
+  "jan brabenec": {
+    "name": "Jan Brabenec",
+    "height": "6'4",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:47.680733+00:00"
+  },
+  "atte vuori": {
+    "name": "Atte Vuori",
+    "height": "5'10",
+    "weight": 163,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:48.450488+00:00"
+  },
+  "louis felix bourque": {
+    "name": "Louis Felix Bourque",
+    "height": "6'2",
+    "weight": 216,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:50.121161+00:00"
+  },
+  "artyom matyuk": {
+    "name": "Artyom Matyuk",
+    "height": "6'0",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:50.578741+00:00"
+  },
+  "kade stengrim": {
+    "name": "Kade Stengrim",
+    "height": "6'4",
+    "weight": 207,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:50.622893+00:00"
+  },
+  "adam levac": {
+    "name": "Adam Levac",
+    "height": "6'0",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:52.332726+00:00"
+  },
+  "stepan shurygin": {
+    "name": "Stepan Shurygin",
+    "height": "6'3",
+    "weight": 207,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:52.787148+00:00"
+  },
+  "vladislav yermolenko": {
+    "name": "Vladislav Yermolenko",
+    "height": "6'1",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:53.617644+00:00"
+  },
+  "brian mcfadden": {
+    "name": "Brian McFadden",
+    "height": "6'5",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:54.873272+00:00"
+  },
+  "zachary jovanovski": {
+    "name": "Zachary Jovanovski",
+    "height": "6'3",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:55.005569+00:00"
+  },
+  "samuel karsay": {
+    "name": "Samuel Karsay",
+    "height": "6'1",
+    "weight": 179,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:56.214601+00:00"
+  },
+  "rafik varosyan": {
+    "name": "Rafik Varosyan",
+    "height": "6'0",
+    "weight": 179,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:57.291587+00:00"
+  },
+  "william gammals": {
+    "name": "William Gammals",
+    "height": "6'1",
+    "weight": 192,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:58.634206+00:00"
+  },
+  "vsevolod matveyev": {
+    "name": "Vsevolod Matveyev",
+    "height": "6'2",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T19:59:59.270915+00:00"
+  },
+  "dylan dean": {
+    "name": "Dylan Dean",
+    "height": "6'1",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:00.648449+00:00"
+  },
+  "matthew humphries": {
+    "name": "Matthew Humphries",
+    "height": "6'4",
+    "weight": 205,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:00.872145+00:00"
+  },
+  "ryan cameron": {
+    "name": "Ryan Cameron",
+    "height": "6'0",
+    "weight": 168,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:02.138659+00:00"
+  },
+  "carter casey": {
+    "name": "Carter Casey",
+    "height": "6'2",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:02.548546+00:00"
+  },
+  "parker snell": {
+    "name": "Parker Snell",
+    "height": "6'2",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:03.505039+00:00"
+  },
+  "patriks plumins": {
+    "name": "Patriks Plumins",
+    "height": "6'3",
+    "weight": 216,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:03.924863+00:00"
+  },
+  "michal jakubec": {
+    "name": "Michal Jakubec",
+    "height": "6'1",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:05.453818+00:00"
+  },
+  "yuri ivanov": {
+    "name": "Yuri Ivanov",
+    "height": "6'2",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:05.806171+00:00"
+  },
+  "rafael courchesne": {
+    "name": "Rafael Courchesne",
+    "height": "6'2",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:06.039557+00:00"
+  },
+  "caton ryan": {
+    "name": "Caton Ryan",
+    "height": "6'1",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:07.425223+00:00"
+  },
+  "weston cameron": {
+    "name": "Weston Cameron",
+    "height": "6'4",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:08.334246+00:00"
+  },
+  "xavier wendt": {
+    "name": "Xavier Wendt",
+    "height": "6'0",
+    "weight": 179,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:08.542082+00:00"
+  },
+  "kaenan smith": {
+    "name": "Kaenan Smith",
+    "height": "6'2",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:10.562460+00:00"
+  },
+  "lukas andersson": {
+    "name": "Lukas Andersson",
+    "height": "6'0",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:11.477700+00:00"
+  },
+  "ondrej ruml": {
+    "name": "Ondrej Ruml",
+    "height": "6'0",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:11.699314+00:00"
+  },
+  "ludvig soderberg": {
+    "name": "Ludvig Soderberg",
+    "height": "5'11",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:14.159596+00:00"
+  },
+  "yegor rybkin": {
+    "name": "Yegor Rybkin",
+    "height": "6'7",
+    "weight": 207,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:14.300252+00:00"
+  },
+  "riley steen": {
+    "name": "Riley Steen",
+    "height": "6'1",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:15.919133+00:00"
+  },
+  "oliver larsen": {
+    "name": "Oliver Larsen",
+    "height": "5'11",
+    "weight": 168,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:15.926707+00:00"
+  },
+  "alexander karmanov": {
+    "name": "Alexander Karmanov",
+    "height": "7'1",
+    "weight": 280,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:16.066710+00:00"
+  },
+  "cody wood": {
+    "name": "Cody Wood",
+    "height": "6'2",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:16.558099+00:00"
+  },
+  "colin feeley": {
+    "name": "Colin Feeley",
+    "height": "6'7",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:18.280926+00:00"
+  },
+  "julian brown": {
+    "name": "Julian Brown",
+    "height": "6'4",
+    "weight": 229,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:18.908559+00:00"
+  },
+  "tomas cermak": {
+    "name": "Tomas Cermak",
+    "height": "6'3",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:19.501447+00:00"
+  },
+  "adam nomme": {
+    "name": "Adam Nomme",
+    "height": "5'11",
+    "weight": 168,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:20.241914+00:00"
+  },
+  "aleksandr kovalenko": {
+    "name": "Aleksandr Kovalenko",
+    "height": "6'3",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:21.913423+00:00"
+  },
+  "sakari kostilainen": {
+    "name": "Sakari Kostilainen",
+    "height": "5'11",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:22.586838+00:00"
+  },
+  "oscar olsson": {
+    "name": "Oscar Olsson",
+    "height": "6'4",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:22.739374+00:00"
+  },
+  "alex kristiansson": {
+    "name": "Alex Kristiansson",
+    "height": "6'1",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:23.999933+00:00"
+  },
+  "douglas lindberg nilsson": {
+    "name": "Douglas Lindberg Nilsson",
+    "height": "6'4",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:26.334823+00:00"
+  },
+  "gavin lesiuk": {
+    "name": "Gavin Lesiuk",
+    "height": "6'5",
+    "weight": 220,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:26.420233+00:00"
+  },
+  "veeti rasanen": {
+    "name": "Veeti Rasanen",
+    "height": "6'3",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:27.223811+00:00"
+  },
+  "wilmer kallio": {
+    "name": "Wilmer Kallio",
+    "height": "5'11",
+    "weight": 168,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:27.683288+00:00"
+  },
+  "anttoni uronen": {
+    "name": "Anttoni Uronen",
+    "height": "6'1",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:28.204959+00:00"
+  },
+  "alexandre raymond": {
+    "name": "Alexandre Raymond",
+    "height": "6'3",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:29.129426+00:00"
+  },
+  "richard zemlicka": {
+    "name": "Richard Zemlicka",
+    "height": "6'3",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:30.281874+00:00"
+  },
+  "alexis fortin": {
+    "name": "Alexis Fortin",
+    "height": "6'3",
+    "weight": 223,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:30.592810+00:00"
+  },
+  "pavel sidorov": {
+    "name": "Pavel Sidorov",
+    "height": "6'1",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:31.487323+00:00"
+  },
+  "tim munger": {
+    "name": "Tim Munger",
+    "height": "6'1",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:32.281906+00:00"
+  },
+  "tristan langlois": {
+    "name": "Tristan Langlois",
+    "height": "6'7",
+    "weight": 223,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:33.378904+00:00"
+  },
+  "vojtech cerny": {
+    "name": "Vojtech Cerny",
+    "height": "6'3",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:34.091434+00:00"
+  },
+  "sawyer dingman": {
+    "name": "Sawyer Dingman",
+    "height": "6'4",
+    "weight": 225,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:35.534526+00:00"
+  },
+  "gleb tsyplakov": {
+    "name": "Gleb Tsyplakov",
+    "height": "6'0",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:36.190274+00:00"
+  },
+  "vojtech svancar": {
+    "name": "Vojtech Svancar",
+    "height": "5'10",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:36.611663+00:00"
+  },
+  "cooper soller": {
+    "name": "Cooper Soller",
+    "height": "5'10",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:37.074030+00:00"
+  },
+  "ryder fetterolf": {
+    "name": "Ryder Fetterolf",
+    "height": "6'0",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:38.360930+00:00"
+  },
+  "fabrice bouvard": {
+    "name": "Fabrice Bouvard",
+    "height": "6'1",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:39.379381+00:00"
+  },
+  "arvin jaswal": {
+    "name": "Arvin Jaswal",
+    "height": "6'2",
+    "weight": 179,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:40.522682+00:00"
+  },
+  "dylan dumont": {
+    "name": "Dylan Dumont",
+    "height": "6'0",
+    "weight": 168,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:40.785414+00:00"
+  },
+  "matthew minchak": {
+    "name": "Matthew Minchak",
+    "height": "6'5",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:41.683185+00:00"
+  },
+  "jake gustafson": {
+    "name": "Jake Gustafson",
+    "height": "6'4",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:42.484475+00:00"
+  },
+  "caden harvey": {
+    "name": "Caden Harvey",
+    "height": "6'1",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:42.607950+00:00"
+  },
+  "juuso ainasto": {
+    "name": "Juuso Ainasto",
+    "height": "6'4",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:44.991917+00:00"
+  },
+  "maksim sokolovskii": {
+    "name": "Maksim Sokolovskii",
+    "height": "6'8",
+    "weight": 238,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:45.113783+00:00"
+  },
+  "dmitri ivchenko": {
+    "name": "Dmitri Ivchenko",
+    "height": "6'3",
+    "weight": 179,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:46.820530+00:00"
+  },
+  "david sedlacek": {
+    "name": "David Sedlacek",
+    "height": "6'2",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:47.600868+00:00"
+  },
+  "ivan arkhipov": {
+    "name": "Ivan Arkhipov",
+    "height": "5'11",
+    "weight": 161,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:48.208828+00:00"
+  },
+  "eric frossard": {
+    "name": "Eric Frossard",
+    "height": "6'5",
+    "weight": 205,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:48.720781+00:00"
+  },
+  "daniel walters": {
+    "name": "Daniel Walters",
+    "height": "6'0",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:49.193256+00:00"
+  },
+  "gustav stengard": {
+    "name": "Gustav Stengard",
+    "height": "6'3",
+    "weight": 196,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:50.945169+00:00"
+  },
+  "cash cruitt": {
+    "name": "Cash Cruitt",
+    "height": "6'5",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:51.757273+00:00"
+  },
+  "roberto henriquez": {
+    "name": "Roberto Henriquez",
+    "height": "6'2",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:52.595566+00:00"
+  },
+  "thomas bleyl": {
+    "name": "Thomas Bleyl",
+    "height": "6'0",
+    "weight": 170,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:25.682884+00:00"
+  },
+  "milo tjarnlund": {
+    "name": "Milo Tjarnlund",
+    "height": "6'2",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:53.310177+00:00"
+  },
+  "matvey karbainov": {
+    "name": "Matvey Karbainov",
+    "height": "6'1",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:54.590293+00:00"
+  },
+  "simon-xavier cyr": {
+    "name": "Simon-Xavier Cyr",
+    "height": "6'2",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:55.808384+00:00"
+  },
+  "gavin betts": {
+    "name": "Gavin Betts",
+    "height": "6'0",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:56.013712+00:00"
+  },
+  "vojtech kubin": {
+    "name": "Vojtech Kubin",
+    "height": "6'0",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:56.679547+00:00"
+  },
+  "marek sklenicka": {
+    "name": "Marek Sklenicka",
+    "height": "6'4",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:57.211324+00:00"
+  },
+  "tobias tvrznik": {
+    "name": "Tobias Tvrznik",
+    "height": "6'4",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:57.843665+00:00"
+  },
+  "nicholas bogas": {
+    "name": "Nicholas Bogas",
+    "height": "6'0",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:59.216680+00:00"
+  },
+  "daniil rusakovich": {
+    "name": "Daniil Rusakovich",
+    "height": "6'4",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:00:59.618933+00:00"
+  },
+  "gleb peshkov": {
+    "name": "Gleb Peshkov",
+    "height": "6'2",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:01.479873+00:00"
+  },
+  "ben hrebik": {
+    "name": "Ben Hrebik",
+    "height": "6'2",
+    "weight": 209,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:02.522553+00:00"
+  },
+  "vilmeri vaananen": {
+    "name": "Vilmeri Vaananen",
+    "height": "6'4",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:03.079649+00:00"
+  },
+  "benett kelly": {
+    "name": "Benett Kelly",
+    "height": "6'1",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:04.347887+00:00"
+  },
+  "jason schaubel": {
+    "name": "Jason Schaubel",
+    "height": "5'11",
+    "weight": 174,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:04.773192+00:00"
+  },
+  "darian rolsing": {
+    "name": "Darian Rolsing",
+    "height": "6'5",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:06.507683+00:00"
+  },
+  "danai shaiikov": {
+    "name": "Danai Shaiikov",
+    "height": "6'2",
+    "weight": 192,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:07.213431+00:00"
+  },
+  "jiri kamas": {
+    "name": "Jiri Kamas",
+    "height": "6'2",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:07.258584+00:00"
+  },
+  "cameron allard": {
+    "name": "Cameron Allard",
+    "height": "6'3",
+    "weight": 196,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:08.108103+00:00"
+  },
+  "hjalmar cilthe": {
+    "name": "Hjalmar Cilthe",
+    "height": "6'1",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:08.841673+00:00"
+  },
+  "james rieber": {
+    "name": "James Rieber",
+    "height": "6'1",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:27.453615+00:00"
+  },
+  "sebastian charvat": {
+    "name": "Sebastian Charvat",
+    "height": "6'5",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:08.936332+00:00"
+  },
+  "jack kultgen": {
+    "name": "Jack Kultgen",
+    "height": "6'2",
+    "weight": 196,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:10.229576+00:00"
+  },
+  "jackson marthaler": {
+    "name": "Jackson Marthaler",
+    "height": "6'2",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:11.488031+00:00"
+  },
+  "lincoln krizizke": {
+    "name": "Lincoln Krizizke",
+    "height": "6'1",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:12.296370+00:00"
+  },
+  "john hagglof": {
+    "name": "John Hagglof",
+    "height": "6'3",
+    "weight": 214,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:13.394511+00:00"
+  },
+  "olle tideman": {
+    "name": "Olle Tideman",
+    "height": "5'11",
+    "weight": 170,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:14.050559+00:00"
+  },
+  "rocky langvardt": {
+    "name": "Rocky Langvardt",
+    "height": "5'10",
+    "weight": 192,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:15.487189+00:00"
+  },
+  "neilan johnson": {
+    "name": "Neilan Johnson",
+    "height": "6'3",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:15.738124+00:00"
+  },
+  "zigge bratt": {
+    "name": "Zigge Bratt",
+    "height": "6'0",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:16.106185+00:00"
+  },
+  "elliot lennon": {
+    "name": "Elliot Lennon",
+    "height": "6'6",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:16.194656+00:00"
+  },
+  "ivan patrikhayev": {
+    "name": "Ivan Patrikhayev",
+    "height": "6'0",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:17.795088+00:00"
+  },
+  "mikhail povarov": {
+    "name": "Mikhail Povarov",
+    "height": "6'2",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:18.129181+00:00"
+  },
+  "nikolai nikulshin": {
+    "name": "Nikolai Nikulshin",
+    "height": "6'2",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:19.325680+00:00"
+  },
+  "vladimir selivanov": {
+    "name": "Vladimir Selivanov",
+    "height": "5'11",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:19.851208+00:00"
+  },
+  "cooper cleaves": {
+    "name": "Cooper Cleaves",
+    "height": "6'3",
+    "weight": 205,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:21.084095+00:00"
+  },
+  "jonne parkkali": {
+    "name": "Jonne Parkkali",
+    "height": "6'0",
+    "weight": 196,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:21.419127+00:00"
+  },
+  "andre mondoux": {
+    "name": "Andre Mondoux",
+    "height": "6'4",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:22.467565+00:00"
+  },
+  "vojtech hora": {
+    "name": "Vojtech Hora",
+    "height": "6'3",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:22.906972+00:00"
+  },
+  "andrew robinson": {
+    "name": "Andrew Robinson",
+    "height": "6'0",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:24.061306+00:00"
+  },
+  "arsenii anisimov": {
+    "name": "Arsenii Anisimov",
+    "height": "6'0",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:24.943152+00:00"
+  },
+  "brady murnane": {
+    "name": "Brady Murnane",
+    "height": "6'3",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:26.233640+00:00"
+  },
+  "elliot arnett": {
+    "name": "Elliot Arnett",
+    "height": "6'2",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:26.852503+00:00"
+  },
+  "grady spicer": {
+    "name": "Grady Spicer",
+    "height": "6'4",
+    "weight": 209,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:27.455228+00:00"
+  },
+  "harris pangretitsch": {
+    "name": "Harris Pangretitsch",
+    "height": "6'4",
+    "weight": 218,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:28.218687+00:00"
+  },
+  "hunter aura": {
+    "name": "Hunter Aura",
+    "height": "5'11",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:29.326367+00:00"
+  },
+  "justin handsor": {
+    "name": "Justin Handsor",
+    "height": "6'1",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:31.070863+00:00"
+  },
+  "theodore lechner": {
+    "name": "Theodore Lechner",
+    "height": "6'2",
+    "weight": 170,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:28.884002+00:00"
+  },
+  "jacob vandeven": {
+    "name": "Jacob Vandeven",
+    "height": "6'6",
+    "weight": 207,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:31.323037+00:00"
+  },
+  "leo laschon": {
+    "name": "Leo Laschon",
+    "height": "6'2",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:32.313640+00:00"
+  },
+  "matyas man": {
+    "name": "Matyas Man",
+    "height": "6'5",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:33.145419+00:00"
+  },
+  "jacoby weiner": {
+    "name": "Jacoby Weiner",
+    "height": "6'4",
+    "weight": 227,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:33.715220+00:00"
+  },
+  "alexandre taillefer": {
+    "name": "Alexandre Taillefer",
+    "height": "6'0",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:34.795156+00:00"
+  },
+  "lukas zajic": {
+    "name": "Lukas Zajic",
+    "height": "5'11",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:29.997771+00:00"
+  },
+  "antonin pufr": {
+    "name": "Antonin Pufr",
+    "height": "6'2",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:35.266102+00:00"
+  },
+  "david zmrhal": {
+    "name": "David Zmrhal",
+    "height": "6'2",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:36.130623+00:00"
+  },
+  "daniil ustinkov": {
+    "name": "Daniil Ustinkov",
+    "height": "6'1",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:36.387432+00:00"
+  },
+  "michel myloserdnyy": {
+    "name": "Michel Myloserdnyy",
+    "height": "6'7",
+    "weight": 225,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:37.964062+00:00"
+  },
+  "tim thomsson": {
+    "name": "Tim Thomsson",
+    "height": "6'2",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:38.885088+00:00"
+  },
+  "leo tuuva": {
+    "name": "Leo Tuuva",
+    "height": "6'1",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:39.473692+00:00"
+  },
+  "mikhail khabarov": {
+    "name": "Mikhail Khabarov",
+    "height": "6'1",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:40.560074+00:00"
+  },
+  "brody pepoy": {
+    "name": "Brody Pepoy",
+    "height": "6'2",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:41.112029+00:00"
+  },
+  "justin graf": {
+    "name": "Justin Graf",
+    "height": "6'1",
+    "weight": 174,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:42.259064+00:00"
+  },
+  "jordan duguay": {
+    "name": "Jordan Duguay",
+    "height": "5'11",
+    "weight": 179,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:42.375536+00:00"
+  },
+  "tsimafei tuzin": {
+    "name": "Tsimafei Tuzin",
+    "height": "6'3",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:29.990101+00:00"
+  },
+  "liam danielsson": {
+    "name": "Liam Danielsson",
+    "height": "6'0",
+    "weight": 174,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:42.924470+00:00"
+  },
+  "melwin larsson": {
+    "name": "Melwin Larsson",
+    "height": "6'3",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:43.944436+00:00"
+  },
+  "rasmus orenas": {
+    "name": "Rasmus Orenas",
+    "height": "6'2",
+    "weight": 196,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:45.507420+00:00"
+  },
+  "semyon simonov": {
+    "name": "Semyon Simonov",
+    "height": "6'3",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:47.379085+00:00"
+  },
+  "david vermirovsky": {
+    "name": "David Vermirovsky",
+    "height": "6'5",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:48.181757+00:00"
+  },
+  "isac hedqvist": {
+    "name": "Isac Hedqvist",
+    "height": "5'11",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:49.282363+00:00"
+  },
+  "jalmari melanen": {
+    "name": "Jalmari Melanen",
+    "height": "5'11",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:50.164895+00:00"
+  },
+  "oiva juntunen": {
+    "name": "Oiva Juntunen",
+    "height": "6'1",
+    "weight": 207,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:50.860403+00:00"
+  },
+  "denis celko": {
+    "name": "Denis Celko",
+    "height": "6'0",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:52.125184+00:00"
+  },
+  "casper juustovaara": {
+    "name": "Casper Juustovaara",
+    "height": "5'9",
+    "weight": 168,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:31.438940+00:00"
+  },
+  "maksim corovic": {
+    "name": "Maksim Corovic",
+    "height": "6'3",
+    "weight": 196,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:52.281320+00:00"
+  },
+  "nikita voiaga": {
+    "name": "Nikita Voiaga",
+    "height": "6'3",
+    "weight": 209,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:30.952202+00:00"
+  },
+  "martin psohlavec": {
+    "name": "Martin Psohlavec",
+    "height": "6'5",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:53.248966+00:00"
+  },
+  "douglas paul": {
+    "name": "Douglas Paul",
+    "height": "6'0",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:54.382817+00:00"
+  },
+  "ondrej szarowski": {
+    "name": "Ondrej Szarowski",
+    "height": "6'2",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:54.774846+00:00"
+  },
+  "roderik cernak": {
+    "name": "Roderik Cernak",
+    "height": "6'3",
+    "weight": 214,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:55.154066+00:00"
+  },
+  "alisher sarkenov": {
+    "name": "Alisher Sarkenov",
+    "height": "6'0",
+    "weight": 192,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:56.962356+00:00"
+  },
+  "cohen bidgood": {
+    "name": "Cohen Bidgood",
+    "height": "6'0",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:57.369623+00:00"
+  },
+  "darian anderson": {
+    "name": "Darian Anderson",
+    "height": "6'3",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:58.899254+00:00"
+  },
+  "illia shybinskyi": {
+    "name": "Illia Shybinskyi",
+    "height": "5'10",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:01:59.032001+00:00"
+  },
+  "joseph salandra": {
+    "name": "Joseph Salandra",
+    "height": "5'10",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:00.133498+00:00"
+  },
+  "kaiden donia": {
+    "name": "Kaiden Donia",
+    "height": "6'5",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:00.294418+00:00"
+  },
+  "josh evaschesen": {
+    "name": "Josh Evaschesen",
+    "height": "6'2",
+    "weight": 194,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:00.923281+00:00"
+  },
+  "julien maze": {
+    "name": "Julien Maze",
+    "height": "5'9",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:01.857791+00:00"
+  },
+  "rowan henderson": {
+    "name": "Rowan Henderson",
+    "height": "6'0",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:02.517120+00:00"
+  },
+  "nathan brown": {
+    "name": "Nathan Brown",
+    "height": "6'0",
+    "weight": 174,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:02.786654+00:00"
+  },
+  "adel kalimullin": {
+    "name": "Adel Kalimullin",
+    "height": "6'0",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:04.399706+00:00"
+  },
+  "nikita gromakov": {
+    "name": "Nikita Gromakov",
+    "height": "6'0",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:05.169257+00:00"
+  },
+  "cameron kuzma": {
+    "name": "Cameron Kuzma",
+    "height": "6'2",
+    "weight": 190,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:05.933440+00:00"
+  },
+  "jack torr": {
+    "name": "Jack Torr",
+    "height": "6'2",
+    "weight": 201,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:06.865681+00:00"
+  },
+  "kalle hemstrom": {
+    "name": "Kalle Hemstrom",
+    "height": "6'4",
+    "weight": 207,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:07.204512+00:00"
+  },
+  "mikael kim": {
+    "name": "Mikael Kim",
+    "height": "5'11",
+    "weight": 183,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:08.650158+00:00"
+  },
+  "kirill buzaev": {
+    "name": "Kirill Buzaev",
+    "height": "6'1",
+    "weight": 165,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:33.294551+00:00"
+  },
+  "milton carpenhammar": {
+    "name": "Milton Carpenhammar",
+    "height": "6'3",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:09.149342+00:00"
+  },
+  "john galanek": {
+    "name": "John Galanek",
+    "height": "6'0",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:33.663351+00:00"
+  },
+  "artemy kulagin": {
+    "name": "Artemy Kulagin",
+    "height": "5'10",
+    "weight": 152,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:10.441497+00:00"
+  },
+  "grigori nikolayev": {
+    "name": "Grigori Nikolayev",
+    "height": "6'3",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:11.342730+00:00"
+  },
+  "yaroslav ivantsov": {
+    "name": "Yaroslav Ivantsov",
+    "height": "6'0",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:12.244737+00:00"
+  },
+  "miko vatjus": {
+    "name": "Miko Vatjus",
+    "height": "6'2",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:13.849192+00:00"
+  },
+  "andrei molgachev": {
+    "name": "Andrei Molgachev",
+    "height": "5'10",
+    "weight": 185,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:03:34.317802+00:00"
+  },
+  "onni keltikangas": {
+    "name": "Onni Keltikangas",
+    "height": "6'5",
+    "weight": 198,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:14.038106+00:00"
+  },
+  "josef holejsovsky": {
+    "name": "Josef Holejsovsky",
+    "height": "5'11",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:14.552231+00:00"
+  },
+  "matej kubiesa": {
+    "name": "Matej Kubiesa",
+    "height": "6'0",
+    "weight": 172,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:15.210602+00:00"
+  },
+  "brody gillespie": {
+    "name": "Brody Gillespie",
+    "height": "6'1",
+    "weight": 187,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:16.585275+00:00"
+  },
+  "cohen klassen": {
+    "name": "Cohen Klassen",
+    "height": "6'0",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:17.272982+00:00"
+  },
+  "dmitri yakutsenak": {
+    "name": "Dmitri Yakutsenak",
+    "height": "6'0",
+    "weight": 209,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:18.546573+00:00"
+  },
+  "reed brown": {
+    "name": "Reed Brown",
+    "height": "5'11",
+    "weight": 161,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:18.866017+00:00"
+  },
+  "stepan kuryachenkov": {
+    "name": "Stepan Kuryachenkov",
+    "height": "6'0",
+    "weight": 170,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:20.684005+00:00"
+  },
+  "danil sysoyev": {
+    "name": "Danil Sysoyev",
+    "height": "6'0",
+    "weight": 170,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:20.776406+00:00"
+  },
+  "roman laman": {
+    "name": "Roman Laman",
+    "height": "5'11",
+    "weight": 176,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:21.389460+00:00"
+  },
+  "william manchuso": {
+    "name": "William Manchuso",
+    "height": "6'0",
+    "weight": 192,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:22.069318+00:00"
+  },
+  "ethan sturgis": {
+    "name": "Ethan Sturgis",
+    "height": "6'2",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:22.396997+00:00"
+  },
+  "charlie puglisi": {
+    "name": "Charlie Puglisi",
+    "height": "5'9",
+    "weight": 159,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:23.951158+00:00"
+  },
+  "kimi sutter": {
+    "name": "Kimi Sutter",
+    "height": "6'1",
+    "weight": 203,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:24.275185+00:00"
+  },
+  "michal ondrejcak": {
+    "name": "Michal Ondrejcak",
+    "height": "6'2",
+    "weight": 192,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:25.992577+00:00"
+  },
+  "dylan allie": {
+    "name": "Dylan Allie",
+    "height": "6'4",
+    "weight": 181,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:26.644787+00:00"
+  },
+  "boris borin": {
+    "name": "Boris Borin",
+    "height": "5'10",
+    "weight": 161,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:27.441830+00:00"
+  },
+  "ivan matta": {
+    "name": "Ivan Matta",
+    "height": "5'11",
+    "weight": 179,
+    "source": "eliteprospects",
+    "updated_at": "2026-06-09T20:02:28.166906+00:00"
+  }
+}
