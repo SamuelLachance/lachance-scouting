@@ -293,6 +293,7 @@ def build_year(year: int) -> int:
         skill_rationales = rationales_from_scores(scores, p)
         photo_entry = photos_map.get(slug, {})
         photo_url = photo_entry.get("local") or f"./images/players/{year}/{slug}.svg"
+        player_eval = (_load_evaluations().get("players") or {}).get(canonical_key(p["Nom"]), {})
         enriched.append({
             "id": slug,
             "draftYear": year,
@@ -315,6 +316,7 @@ def build_year(year: int) -> int:
             "tier": tier(note),
             "skills": skills_from_scores(scores, p),
             "skillRationales": skill_rationales,
+            "sourceMix": player_eval.get("source_mix") or [],
             "analysis": analysis,
         })
 

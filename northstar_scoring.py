@@ -554,6 +554,233 @@ def build_forces_faiblesses(
     return forces[:MAX_FORCES], faiblesses[:MAX_FAIBLESSES]
 
 
+# ---------------------------------------------------------------------------
+# Multi-source reliability tiers — contribution weights for NORTHSTAR pillars
+# Tier 1 (1.00): primary scouting (DPH full, local analysis, NHL Central)
+# Tier 2 (0.65): EP analytics, major outlets (TSN/ESPN/web scouting)
+# Tier 3 (0.35): stats-only pages, Wikipedia, DPH template
+# Tier 4 (0.15): consensus CSV / production heuristics (fallback)
+# ---------------------------------------------------------------------------
+SOURCE_TIER_WEIGHTS: dict[int, float] = {
+    1: 1.00,
+    2: 0.65,
+    3: 0.35,
+    4: 0.15,
+}
+
+SOURCE_CATALOG: dict[str, tuple[int, str]] = {
+    "dph_full": (1, "DPH scouting report (substantial)"),
+    "local_analysis": (1, "Local NORTHSTAR scouting analysis"),
+    "dph_partial": (2, "DPH metadata / partial report"),
+    "elite_prospects": (2, "Elite Prospects stats & bio"),
+    "web_scouting": (2, "Web scouting snippets (TSN, ESPN, McKeen's, etc.)"),
+    "dph_thin": (3, "DPH template page"),
+    "wikipedia": (3, "Wikipedia profile"),
+    "consensus_rank": (4, "Public consensus rankings (CSV fallback)"),
+    "stats_heuristic": (4, "Production / physical heuristic"),
+}
+
+
+def source_tier(source_id: str) -> int:
+    return SOURCE_CATALOG.get(source_id, (4, ""))[0]
+
+
+def source_label(source_id: str) -> str:
+    return SOURCE_CATALOG.get(source_id, (4, source_id))[1]
+
+
+def source_weight(source_id: str, *, quality: float = 1.0) -> float:
+    """Effective weight = tier weight × quality multiplier (0–1)."""
+    tier = source_tier(source_id)
+    return SOURCE_TIER_WEIGHTS[tier] * max(0.1, min(1.0, quality))
+
+
+def dph_source_id(report: dict, cov: str | None = None) -> str:
+    cov = cov or _report_quality(report)
+    if cov == "full":
+        return "dph_full"
+    if cov == "thin":
+        return "dph_thin"
+    if cov in ("partial", "none") and report.get("grade"):
+        return "dph_partial"
+    return "dph_thin" if cov == "thin" else "dph_partial"
+
+
+def pillars_from_text_blob(
+    text: str,
+    *,
+    pos: str,
+    report: dict | None = None,
+    stats: dict | None = None,
+    apply_coverage: bool = True,
+) -> tuple[dict[str, float], dict[str, list[str]]]:
+    """Score 7 pillars from free text + optional DPH metadata/stats."""
+    report = report or {}
+    stats = stats or report.get("stats") or {}
+    blob = text.lower()
+    lex: dict[str, float] = {}
+    evidence: dict[str, list[str]] = {}
+    for dim in NORTHSTAR_WEIGHTS:
+        s, ev = _lex_score(dim, blob)
+        lex[dim] = s
+        evidence[dim] = ev
+
+    grade = _grade_score(report.get("grade", ""))
+    for tag in report.get("tags") or []:
+        for tk, boost in TAG_BOOSTS.items():
+            if tk in tag.lower():
+                grade = min(10, grade + boost * 0.15)
+
+    league = _league_score(report.get("league", ""), blob)
+    prod = _production_score(stats, pos)
+    dph_r = _dph_rank_score(report.get("dph_rank"))
+    dims = _merge_scores(lex, grade, league, prod, dph_r, pos)
+    if apply_coverage and report:
+        cov = _report_quality(report)
+        dims = _apply_coverage_penalty(dims, cov, grade)
+    return dims, evidence
+
+
+def pillars_from_consensus_rank(rank: int | None, pos: str) -> dict[str, float]:
+    """Tier-4 fallback from public consensus rank only."""
+    base = _dph_rank_score(rank)
+    is_d = "D" in pos.upper()
+    is_g = pos.upper() in ("G", "GK")
+    dims = {
+        "star_ceiling": base,
+        "hockey_iq": round(base * 0.92, 1),
+        "skating_engine": round(base * 0.88, 1),
+        "offensive_star_power": round(base * (0.85 if is_d else 0.95), 1),
+        "competition_proof": round(base * 0.90, 1),
+        "character_compete": round(base * 0.85, 1),
+        "development_arc": round(base * 0.88, 1),
+    }
+    if is_g:
+        dims["offensive_star_power"] = round(base * 0.80, 1)
+    return {k: round(min(10, max(1, v)), 1) for k, v in dims.items()}
+
+
+def pillars_from_stats_heuristic(
+    stats: dict,
+    league: str,
+    pos: str,
+    height: str,
+    weight: str,
+) -> dict[str, float]:
+    """Tier-4 production / physical signals when scouting text is absent."""
+    prod = _production_score(stats, pos)
+    league_s = _league_score(league, league)
+    dims = pillars_from_consensus_rank(None, pos)
+    dims["offensive_star_power"] = round(prod * 0.6 + dims["offensive_star_power"] * 0.4, 1)
+    dims["competition_proof"] = round(league_s * 0.55 + prod * 0.45, 1)
+    dims["skating_engine"] = round(dims["skating_engine"] * 0.7 + prod * 0.3, 1)
+    h = parse_height(height)
+    if h >= 76:
+        dims["star_ceiling"] = min(10, dims["star_ceiling"] + 0.15)
+    if h <= 69 and "D" not in pos.upper():
+        dims["star_ceiling"] = max(1, dims["star_ceiling"] - 0.2)
+    return {k: round(min(10, max(1, v)), 1) for k, v in dims.items()}
+
+
+def apply_physical_adjustments(
+    dims: dict[str, float],
+    pos: str,
+    height: str,
+    weight: str,
+) -> dict[str, float]:
+    out = dims.copy()
+    h = parse_height(height)
+    if h >= 76 and out["star_ceiling"] >= 7.5:
+        out["star_ceiling"] = min(10, out["star_ceiling"] + 0.2)
+    if h <= 69 and "D" not in pos.upper():
+        out["star_ceiling"] = max(1, out["star_ceiling"] - 0.3)
+    return {k: round(min(10, max(1, v)), 1) for k, v in out.items()}
+
+
+def weighted_merge_sources(
+    contributions: list[dict[str, Any]],
+) -> tuple[dict[str, float], dict[str, list[str]], list[dict], str]:
+    """
+    Merge per-source pillar scores by reliability tier weight.
+
+    Each contribution dict:
+      source_id, pillars, evidence?, quality?, snippet?
+    Returns: final_dims, merged_evidence, source_mix, confidence_coverage
+    """
+    if not contributions:
+        neutral = {k: 5.0 for k in NORTHSTAR_WEIGHTS}
+        return neutral, {}, [], "none"
+
+    final: dict[str, float] = {}
+    merged_ev: dict[str, list[str]] = {k: [] for k in NORTHSTAR_WEIGHTS}
+    source_mix: list[dict] = []
+    total_w = 0.0
+    tier1_present = False
+    substantive = 0
+
+    for c in contributions:
+        sid = c["source_id"]
+        w = source_weight(sid, quality=float(c.get("quality", 1.0)))
+        total_w += w
+        tier = source_tier(sid)
+        if tier == 1:
+            tier1_present = True
+        if c.get("snippet") or c.get("evidence"):
+            substantive += 1
+
+        mix_entry = {
+            "source": sid,
+            "label": source_label(sid),
+            "tier": tier,
+            "tier_weight": SOURCE_TIER_WEIGHTS[tier],
+            "quality": round(float(c.get("quality", 1.0)), 2),
+            "effective_weight": round(w, 3),
+            "pillars": {k: c["pillars"].get(k, 5.0) for k in NORTHSTAR_WEIGHTS},
+        }
+        if c.get("url"):
+            mix_entry["url"] = c["url"]
+        if c.get("snippet"):
+            mix_entry["snippet"] = c["snippet"][:200]
+        source_mix.append(mix_entry)
+
+        for dim in NORTHSTAR_WEIGHTS:
+            merged_ev[dim].extend((c.get("evidence") or {}).get(dim, [])[:3])
+
+    for dim in NORTHSTAR_WEIGHTS:
+        num = sum(
+            c["pillars"].get(dim, 5.0) * source_weight(c["source_id"], quality=float(c.get("quality", 1.0)))
+            for c in contributions
+        )
+        final[dim] = round(min(10, max(1, num / total_w)), 1)
+
+    # Normalize effective_weight share in source_mix
+    for entry in source_mix:
+        entry["weight_share"] = round(entry["effective_weight"] / total_w, 4)
+
+    # Per-pillar weighted contribution breakdown
+    for entry in source_mix:
+        entry["pillar_contribution"] = {
+            dim: round(entry["pillars"][dim] * entry["weight_share"], 3)
+            for dim in NORTHSTAR_WEIGHTS
+        }
+
+    if tier1_present and substantive >= 2:
+        cov = "full"
+    elif tier1_present or substantive >= 1:
+        cov = "partial"
+    elif any(source_tier(c["source_id"]) <= 2 for c in contributions):
+        cov = "partial"
+    elif contributions:
+        cov = "thin"
+    else:
+        cov = "none"
+
+    for dim in merged_ev:
+        merged_ev[dim] = list(dict.fromkeys(merged_ev[dim]))[:5]
+
+    return final, merged_ev, source_mix, cov
+
+
 def _merge_scores(
     lex: dict[str, float],
     grade: float,
@@ -659,6 +886,7 @@ def _scores_from_evaluation(
         "evidence": evidence,
         "rationales": rationales,
         "evaluation_sources": evaluation.get("sources") or [],
+        "source_mix": evaluation.get("source_mix") or [],
     }
 
 
