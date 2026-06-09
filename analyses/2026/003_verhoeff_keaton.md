@@ -14,63 +14,63 @@
 | **Rang FINAL (NORTHSTAR)** | **#3** |
 | Rang NORTHSTAR (score pur) | #3 |
 | Rang consensus public | 4 |
-| **Star Probability Index** | **72.86/100** |
+| **Star Probability Index** | **71.86/100** |
 | Tier étoile estimé | Top-6 / top-pair |
 
 ## Résumé exécutif
 A workhorse running 20+ minutes against NCAA men at 17. Big, smart, right-shot - a coveted archetype. Some question his skating; everything else projects.
 
 ## Thèse star NORTHSTAR
-NORTHSTAR estime Keaton Verhoeff à 72.86/100 pour devenir une étoile NHL (Top-6 / top-pair). Pilier dominant: plafond étoile 7.9/10.
+NORTHSTAR estime Keaton Verhoeff à 71.86/100 pour devenir une étoile NHL (Top-6 / top-pair). Pilier dominant: plafond étoile 7.8/10.
 
 ## Grille NORTHSTAR (7 piliers — basée sur rapports scouting)
 
 | Dimension | Note /10 | Poids | Score |
 |-----------|----------|-------|-------|
-| Plafond étoile NHL ★ | 7.9 | 35% | 27.65 |
-| IQ / processing élite | 6.6 | 18% | 11.88 |
-| Moteur de patinage | 7.4 | 15% | 11.10 |
-| Pouvoir offensif star | 6.4 | 12% | 7.68 |
-| Preuve vs compétition | 8.1 | 10% | 8.10 |
-| Compétitivité / caractère | 6.3 | 5% | 3.15 |
-| Arc de développement | 6.6 | 5% | 3.30 |
+| Plafond étoile NHL ★ | 7.8 | 35% | 27.30 |
+| IQ / processing élite | 6.4 | 18% | 11.52 |
+| Moteur de patinage | 7.5 | 15% | 11.25 |
+| Pouvoir offensif star | 6.2 | 12% | 7.44 |
+| Preuve vs compétition | 8.0 | 10% | 8.00 |
+| Compétitivité / caractère | 6.2 | 5% | 3.10 |
+| Arc de développement | 6.5 | 5% | 3.25 |
 
-**STAR PROBABILITY INDEX: 72.86/100**
+**STAR PROBABILITY INDEX: 71.86/100**
 
 ## Justification détaillée des notes
 
-### Plafond étoile NHL ★ — 7.9/10
-**7.9/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (35%). Signaux: «elite», «project». Sources pondérées: DPH scouting report (substantial) (T1, 80%), Public consensus rankings (CSV fallback) (T4, 11%), Production / physical heuristic (T4, 10%). Confiance: multi-sources substantielles.
+### Plafond étoile NHL ★ — 7.8/10
+**7.8/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (35%). Signaux: «elite», «project». Sources: DPH grade A+; DPH #3. Extrait DPH: "A workhorse running 20+ minutes against NCAA men at 17. Big, smart, right-shot - a coveted archetype…". Confiance: rapport DPH substantiel.
 
-### IQ / processing élite — 6.6/10
-**6.6/10 — Faible** (star path improbable). Pilier NORTHSTAR (18%). Signaux: inférence contextuelle. Sources pondérées: DPH scouting report (substantial) (T1, 80%), Public consensus rankings (CSV fallback) (T4, 11%), Production / physical heuristic (T4, 10%). Confiance: multi-sources substantielles.
+### IQ / processing élite — 6.4/10
+**6.4/10 — Faible** (star path improbable). Pilier NORTHSTAR (18%). Signaux: inférence contextuelle. Sources: DPH grade A+; DPH #3. Confiance: rapport DPH substantiel.
 
-### Moteur de patinage — 7.4/10
-**7.4/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (15%). Signaux: «skating». Sources pondérées: DPH scouting report (substantial) (T1, 80%), Public consensus rankings (CSV fallback) (T4, 11%), Production / physical heuristic (T4, 10%). Confiance: multi-sources substantielles.
+### Moteur de patinage — 7.5/10
+**7.5/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (15%). Signaux: «skating». Sources: DPH grade A+; DPH #3. Confiance: rapport DPH substantiel.
 
-### Pouvoir offensif star — 6.4/10
-**6.4/10 — Faible** (star path improbable). Pilier NORTHSTAR (12%). Signaux: «shot». Sources pondérées: DPH scouting report (substantial) (T1, 80%), Public consensus rankings (CSV fallback) (T4, 11%), Production / physical heuristic (T4, 10%). Confiance: multi-sources substantielles.
+### Pouvoir offensif star — 6.2/10
+**6.2/10 — Faible** (star path improbable). Pilier NORTHSTAR (12%). Signaux: «shot». Sources: DPH grade A+; DPH #3. Confiance: rapport DPH substantiel.
 
-### Preuve vs compétition — 8.1/10
-**8.1/10 — Solide** (chemin star possible). Pilier NORTHSTAR (10%). Signaux: «ncaa», «men». Sources pondérées: DPH scouting report (substantial) (T1, 80%), Public consensus rankings (CSV fallback) (T4, 11%), Production / physical heuristic (T4, 10%). Confiance: multi-sources substantielles.
+### Preuve vs compétition — 8.0/10
+**8.0/10 — Solide** (chemin star possible). Pilier NORTHSTAR (10%). Signaux: «ncaa», «men». Sources: DPH grade A+; DPH #3. Confiance: rapport DPH substantiel.
 
-### Compétitivité / caractère — 6.3/10
-**6.3/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: DPH scouting report (substantial) (T1, 80%), Public consensus rankings (CSV fallback) (T4, 11%), Production / physical heuristic (T4, 10%). Confiance: multi-sources substantielles.
+### Compétitivité / caractère — 6.2/10
+**6.2/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources: DPH grade A+; DPH #3. Confiance: rapport DPH substantiel.
 
-### Arc de développement — 6.6/10
-**6.6/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: DPH scouting report (substantial) (T1, 80%), Public consensus rankings (CSV fallback) (T4, 11%), Production / physical heuristic (T4, 10%). Confiance: multi-sources substantielles.
+### Arc de développement — 6.5/10
+**6.5/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources: DPH grade A+; DPH #3. Confiance: rapport DPH substantiel.
 
 ## Forces (signaux star)
 - Size + range
-- Preuve vs compétition — 8.1/10 (solide) : signaux «ncaa, men»
-- Plafond étoile NHL ★ — 7.9/10 (modeste) : signaux «elite, project»
-- Moteur de patinage — 7.4/10 (modeste) : signaux «skating»
+- Preuve vs compétition — 8.0/10 (solide) : signaux «ncaa, men»
+- Plafond étoile NHL ★ — 7.8/10 (modeste) : signaux «elite, project»
+- Moteur de patinage — 7.5/10 (modeste) : signaux «skating»
 
 ## Faiblesses / risques
-- Compétitivité / caractère (6.3/10) — pilier le moins élevé du profil; marge limitée vs l'élite NHL
-- Pouvoir offensif star (6.4/10) — écart de 1.7 vs le pilier dominant; risque si ce skill ne suit pas en pro
-- IQ / processing élite (6.6/10) — écart de 1.5 vs le pilier dominant; risque si ce skill ne suit pas en pro
-- Arc de développement (6.6/10) — écart de 1.5 vs le pilier dominant; risque si ce skill ne suit pas en pro
+- Pouvoir offensif star (6.2/10) — pilier le moins élevé du profil; marge limitée vs l'élite NHL
+- Compétitivité / caractère (6.2/10) — écart de 1.8 vs le pilier dominant; risque si ce skill ne suit pas en pro
+- IQ / processing élite (6.4/10) — écart de 1.6 vs le pilier dominant; risque si ce skill ne suit pas en pro
+- Arc de développement (6.5/10) — écart de 1.5 vs le pilier dominant; risque si ce skill ne suit pas en pro
 
 ## Projection NHL
 Minutes-eating #1 RD
