@@ -5,10 +5,30 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
+    "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:42:21.460342+00:00"
+  "cached_at": "2026-06-09T20:22:28.289422+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Matias Vanhanen - Stats, Contract, Salary & More - Elite Prospects. Complete player biography and stats. Matias Vanhanen Hockey Stats and Profile at hockeydb.com. Statistics of Matias Vanhanen, a hockey player from Nokia, Finland born Sep 11 2007 who was active from 2024 to 2026.",
+        "url": "https://www.eliteprospects.com/player/865769/matias-vanhanen",
+        "snippets": [
+          "Matias Vanhanen - Stats, Contract, Salary & More - Elite Prospects. Complete player biography and stats.",
+          "Matias Vanhanen Hockey Stats and Profile at hockeydb.com. Statistics of Matias Vanhanen, a hockey player from Nokia, Finland born Sep 11 2007 who was active from 2024 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:21:28.942859+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:22:03.129460+00:00"
+  }
 }

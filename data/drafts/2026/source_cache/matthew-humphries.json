@@ -9,6 +9,25 @@
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:42:26.628253+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:22:14.896933+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Matthew Humphries - Stats, Contract, Salary & More. Most recently in the OHL with Oshawa Generals. Complete player biography and stats. Matthew Humphries Hockey Stats and Profile at hockeydb.com. Statistics of Matthew Humphries, a hockey player from Newmarket, ONT born Jul 28 2008 who was active from 2024 to 2026.",
+        "url": "https://www.eliteprospects.com/player/628102/matthew-humphries",
+        "snippets": [
+          "Matthew Humphries - Stats, Contract, Salary & More. Most recently in the OHL with Oshawa Generals. Complete player biography and stats.",
+          "Matthew Humphries Hockey Stats and Profile at hockeydb.com. Statistics of Matthew Humphries, a hockey player from Newmarket, ONT born Jul 28 2008 who was active from 2024 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:21:41.916348+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:22:14.896382+00:00"
+  }
 }

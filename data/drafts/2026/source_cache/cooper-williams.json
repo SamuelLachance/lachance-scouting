@@ -4,6 +4,15 @@
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:26:11.267932+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:12:11.582566+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:11:37.145765+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:12:11.581839+00:00"
+  }
 }

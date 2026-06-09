@@ -1,11 +1,19 @@
 {
   "player": "Liam Kilfoil",
   "source_ids": [
-    "wikipedia",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:39:22.490939+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:20:19.983574+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:19:45.489598+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:20:19.982457+00:00"
+  }
 }

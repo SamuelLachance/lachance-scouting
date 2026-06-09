@@ -1,10 +1,29 @@
 {
   "player": "Yaroslav Fedoseyev",
   "source_ids": [
-    "wikipedia",
+    "hockeydb",
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:56:18.354434+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:31:27.031907+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Yaroslav Fedoseyev - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Yaroslav Fedoseyev, 2007-11-05 Chelyabinsk, RUS Russia. Most recently in the KHL with Traktor Chelyabinsk. Complete player biography and stats. Yaroslav Fedoseyev - Stats, Contract, Salary & More. Complete player biography and stats.",
+        "url": "https://www.eliteprospects.com/player/1031327/yaroslav-fedoseyev",
+        "snippets": [
+          "Yaroslav Fedoseyev - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Yaroslav Fedoseyev, 2007-11-05 Chelyabinsk, RUS Russia. Most recently in the KHL with Traktor Chelyabinsk. Complete player biography and stats.",
+          "Yaroslav Fedoseyev - Stats, Contract, Salary & More. Complete player biography and stats."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:30:52.665658+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:31:27.031306+00:00"
+  }
 }

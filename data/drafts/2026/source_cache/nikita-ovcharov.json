@@ -11,5 +11,24 @@
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:45:20.109982+00:00"
+  "cached_at": "2026-06-09T20:24:42.153043+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Nikita Ovcharov - Stats, Contract, Salary & More. Most recently in the QMJHL with Québec Remparts. Complete player biography and stats. Nikita Ovcharov Hockey Stats and Profile at hockeydb.com. Statistics of Nikita Ovcharov, a hockey player from Lipetsk, Russia born Feb 17 2008 who was active from 2024 to 2026.",
+        "url": "https://www.eliteprospects.com/player/895819/nikita-ovcharov",
+        "snippets": [
+          "Nikita Ovcharov - Stats, Contract, Salary & More. Most recently in the QMJHL with Québec Remparts. Complete player biography and stats.",
+          "Nikita Ovcharov Hockey Stats and Profile at hockeydb.com. Statistics of Nikita Ovcharov, a hockey player from Lipetsk, Russia born Feb 17 2008 who was active from 2024 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:23:45.112944+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:24:19.578422+00:00"
+  }
 }

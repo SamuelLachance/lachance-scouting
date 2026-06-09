@@ -1,10 +1,18 @@
 {
   "player": "Liam Dube",
   "source_ids": [
-    "wikipedia",
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:39:17.679396+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:20:14.160823+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:19:40.452069+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:20:14.160539+00:00"
+  }
 }

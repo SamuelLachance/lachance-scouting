@@ -10,6 +10,25 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:55:54.368393+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:31:19.478369+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Wyatt Cullen - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Wyatt Cullen, 2008-09-08 Moorhead, MN, USA USA. Most recently in the USHL with USNTDP Juniors. Complete player biography and stats. Wyatt Cullen – 2026 NHL Draft Prospect Profile - The Hockey Writers. Wyatt Cullen has been one of the bigger risers for the 2026 NHL Draft. His sample size for the 2025–26 season was partially limited due to injury, but he showcased a dynamic play style and led...",
+        "url": "https://www.eliteprospects.com/player/863799/wyatt-cullen",
+        "snippets": [
+          "Wyatt Cullen - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Wyatt Cullen, 2008-09-08 Moorhead, MN, USA USA. Most recently in the USHL with USNTDP Juniors. Complete player biography and stats.",
+          "Wyatt Cullen – 2026 NHL Draft Prospect Profile - The Hockey Writers. Wyatt Cullen has been one of the bigger risers for the 2026 NHL Draft. His sample size for the 2025–26 season was partially limited due to injury, but he showcased a dynamic play style and led..."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:30:45.483277+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:31:19.476019+00:00"
+  }
 }

@@ -5,11 +5,29 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "wikipedia",
     "hockeydb",
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:28:16.701566+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:13:25.868400+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Domán Kristóf Szongoth - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Domán Kristóf Szongoth, 2008-06-08 Budapest, HUN Hungary. Most recently in the U20 SM-sarja with KooKoo U20. Complete player biography and stats. Domán Kristóf Szongoth – 2026 NHL Draft Prospect Profile. 2026 NHL Draft prospect profile for Hungarian center Domán Kristóf Szongoth, featuring scouting report, rankings, quotables and stats.",
+        "url": "https://www.eliteprospects.com/player/960749/doman-kristof-szongoth",
+        "snippets": [
+          "Domán Kristóf Szongoth - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Domán Kristóf Szongoth, 2008-06-08 Budapest, HUN Hungary. Most recently in the U20 SM-sarja with KooKoo U20. Complete player biography and stats.",
+          "Domán Kristóf Szongoth – 2026 NHL Draft Prospect Profile. 2026 NHL Draft prospect profile for Hungarian center Domán Kristóf Szongoth, featuring scouting report, rankings, quotables and stats."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:09:55.816097+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:13:25.867516+00:00"
+  }
 }

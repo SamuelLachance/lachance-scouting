@@ -5,10 +5,30 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
+    "elite_prospects",
     "hockeydb",
     "rankings_csv",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:51:56.193256+00:00"
+  "cached_at": "2026-06-09T20:30:09.349110+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Stepan Shurygin - Stats, Contract, Salary & More. Shurygin is a big goaltender at 6-foot-4, and he plays massive, coming out to the top of the crease to cut down on angles. When combined with his good read of releases, it’s not a surprise that he’s difficult to beat cleanly. Stepan Shurygin Hockey Stats and Profile at hockeydb.com. Statistics of Stepan Shurygin, a hockey player from Samara, Russia born Aug 26 2007 who was active from 2024 to 2026.",
+        "url": "https://www.eliteprospects.com/player/1026865/stepan-shurygin",
+        "snippets": [
+          "Stepan Shurygin - Stats, Contract, Salary & More. Shurygin is a big goaltender at 6-foot-4, and he plays massive, coming out to the top of the crease to cut down on angles. When combined with his good read of releases, it’s not a surprise that he’s difficult to beat cleanly.",
+          "Stepan Shurygin Hockey Stats and Profile at hockeydb.com. Statistics of Stepan Shurygin, a hockey player from Samara, Russia born Aug 26 2007 who was active from 2024 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:28:01.846806+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:30:09.347890+00:00"
+  }
 }

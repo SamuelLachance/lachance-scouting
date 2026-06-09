@@ -1,11 +1,31 @@
 {
   "player": "Tommy Bleyl",
   "source_ids": [
+    "wikipedia",
     "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:52:50.199926+00:00"
+  "cached_at": "2026-06-09T20:31:14.776599+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Tommy Bleyl - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Tommy Bleyl, 2007-12-01 Schenectady, NY, USA USA. Most recently in the QMJHL with Moncton Wildcats. Complete player biography and stats. Tommy Bleyl – 2026 NHL Draft Prospect Profile - The Hockey Writers. 2026 NHL Draft prospect profile for defenceman Tommy Bleyl, who plays for the Moncton Wildcats in the QMJHL.",
+        "url": "https://www.eliteprospects.com/player/577026/tommy-bleyl",
+        "snippets": [
+          "Tommy Bleyl - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Tommy Bleyl, 2007-12-01 Schenectady, NY, USA USA. Most recently in the QMJHL with Moncton Wildcats. Complete player biography and stats.",
+          "Tommy Bleyl – 2026 NHL Draft Prospect Profile - The Hockey Writers. 2026 NHL Draft prospect profile for defenceman Tommy Bleyl, who plays for the Moncton Wildcats in the QMJHL."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:28:46.897766+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:30:51.771519+00:00"
+  }
 }

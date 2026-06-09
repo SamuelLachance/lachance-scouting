@@ -1,9 +1,29 @@
 {
   "player": "Maddox Labre",
   "source_ids": [
+    "hockeydb",
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:41:05.534008+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:21:27.272791+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Maddox Labre - Stats, Contract, Salary & More - Elite Prospects. A puck carrier, Labre loves to take off in the defensive zone and fly through the neutral zone forechecks, attracting pressure, faking one way, attacking the other way, and evading pokechecks. Maddox Labre Hockey Stats and Profile at hockeydb.com. Statistics of Maddox Labre, a hockey player from Coteau-du-Lac, PQ born Jun 15 2007 who was active from 2023 to 2026.",
+        "url": "https://www.eliteprospects.com/player/747936/maddox-labre",
+        "snippets": [
+          "Maddox Labre - Stats, Contract, Salary & More - Elite Prospects. A puck carrier, Labre loves to take off in the defensive zone and fly through the neutral zone forechecks, attracting pressure, faking one way, attacking the other way, and evading pokechecks.",
+          "Maddox Labre Hockey Stats and Profile at hockeydb.com. Statistics of Maddox Labre, a hockey player from Coteau-du-Lac, PQ born Jun 15 2007 who was active from 2023 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:20:53.275838+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:21:27.272046+00:00"
+  }
 }

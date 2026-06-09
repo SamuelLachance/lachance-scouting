@@ -1,10 +1,30 @@
 {
   "player": "Samu Alalauri",
   "source_ids": [
+    "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:50:51.665674+00:00"
+  "cached_at": "2026-06-09T20:29:39.909962+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Samu Alalauri - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Samu Alalauri, 2008-05-31 Lahti, FIN Finland. Most recently in the U20 SM-sarja with Pelicans U20. Complete player biography and stats. Samu Alalauri – 2026 NHL Draft Prospect Profile - The Hockey Writers. 2026 NHL Draft prospect profile for Finnish defenseman Samu Alalauri, featuring scouting report, rankings, quotables and stats.",
+        "url": "https://www.eliteprospects.com/player/959462/samu-alalauri",
+        "snippets": [
+          "Samu Alalauri - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Samu Alalauri, 2008-05-31 Lahti, FIN Finland. Most recently in the U20 SM-sarja with Pelicans U20. Complete player biography and stats.",
+          "Samu Alalauri – 2026 NHL Draft Prospect Profile - The Hockey Writers. 2026 NHL Draft prospect profile for Finnish defenseman Samu Alalauri, featuring scouting report, rankings, quotables and stats."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:27:35.955133+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:29:15.930972+00:00"
+  }
 }

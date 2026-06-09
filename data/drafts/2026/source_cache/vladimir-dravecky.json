@@ -1,12 +1,30 @@
 {
   "player": "Vladimir Dravecky",
   "source_ids": [
-    "wikipedia",
     "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:54:22.529539+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:30:20.770238+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Vladimír Dravecký – 2026 NHL Draft Prospect Profile. Brantford Bulldogs defenseman Vladimír Dravecký has accomplished a lot in his hockey career even before becoming draft eligible for the first time. He’s already played competitively in multiple... Vladimír Dravecký - Stats, Contract, Salary & More. Most recently in the OHL with Brantford Bulldogs. Complete player biography and stats.",
+        "url": "https://thehockeywriters.com/vladimir-dravecky-2026-nhl-draft-prospect-profile/",
+        "snippets": [
+          "Vladimír Dravecký – 2026 NHL Draft Prospect Profile. Brantford Bulldogs defenseman Vladimír Dravecký has accomplished a lot in his hockey career even before becoming draft eligible for the first time. He’s already played competitively in multiple...",
+          "Vladimír Dravecký - Stats, Contract, Salary & More. Most recently in the OHL with Brantford Bulldogs. Complete player biography and stats."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:29:46.423689+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:30:20.768981+00:00"
+  }
 }

@@ -6,6 +6,25 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:22:45.102744+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:10:06.430869+00:00",
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:10:06.428548+00:00"
+  },
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Braidy Wassilyn - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Braidy Wassilyn, 2008-05-28 Puslinch, ON, CAN Canada. Most recently in the NCAA with Boston Univ.. Complete player biography and stats. Braidy Wassilyn Hockey Stats and Profile at hockeydb.com. Statistics of Braidy Wassilyn, a hockey player from Campbellville, ONT born May 28 2008 who was active from 2023 to 2026.",
+        "url": "https://www.eliteprospects.com/player/916546/braidy-wassilyn",
+        "snippets": [
+          "Braidy Wassilyn - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Braidy Wassilyn, 2008-05-28 Puslinch, ON, CAN Canada. Most recently in the NCAA with Boston Univ.. Complete player biography and stats.",
+          "Braidy Wassilyn Hockey Stats and Profile at hockeydb.com. Statistics of Braidy Wassilyn, a hockey player from Campbellville, ONT born May 28 2008 who was active from 2023 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:06:16.836445+00:00"
+  }
 }

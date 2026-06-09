@@ -6,6 +6,25 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:26:07.753473+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:12:06.395761+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Colin Fitzgerald - Stats, Contract, Salary & More - Elite Prospects. Most recently in the OHL with Soo Greyhounds. Complete player biography and stats. Colin Fitzgerald Hockey Stats and Profile at hockeydb.com. Statistics of Colin Fitzgerald, a hockey player from Peterborough, ONT born Apr 1 2008 who was active from 2024 to 2026.",
+        "url": "https://www.eliteprospects.com/player/628141/colin-fitzgerald",
+        "snippets": [
+          "Colin Fitzgerald - Stats, Contract, Salary & More - Elite Prospects. Most recently in the OHL with Soo Greyhounds. Complete player biography and stats.",
+          "Colin Fitzgerald Hockey Stats and Profile at hockeydb.com. Statistics of Colin Fitzgerald, a hockey player from Peterborough, ONT born Apr 1 2008 who was active from 2024 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:08:14.399860+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:12:06.394907+00:00"
+  }
 }

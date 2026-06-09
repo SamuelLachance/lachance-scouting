@@ -5,10 +5,30 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
+    "elite_prospects",
     "hockeydb",
     "rankings_csv",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:47:34.518139+00:00"
+  "cached_at": "2026-06-09T20:26:25.582537+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Oscar Olsson - Stats, Contract, Salary & More - Elite Prospects. Most recently in the U20 Nationell with Örebro HK U20. Complete player biography and stats. Oscar Olsson (b.2008) Hockey Stats and Profile at hockeydb.com. Statistics of Oscar Olsson, a hockey player born Apr 9 2008 who was active from 2024 to 2026.",
+        "url": "https://www.eliteprospects.com/player/925621/oscar-olsson",
+        "snippets": [
+          "Oscar Olsson - Stats, Contract, Salary & More - Elite Prospects. Most recently in the U20 Nationell with Örebro HK U20. Complete player biography and stats.",
+          "Oscar Olsson (b.2008) Hockey Stats and Profile at hockeydb.com. Statistics of Oscar Olsson, a hockey player born Apr 9 2008 who was active from 2024 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:24:51.729255+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:26:25.581424+00:00"
+  }
 }

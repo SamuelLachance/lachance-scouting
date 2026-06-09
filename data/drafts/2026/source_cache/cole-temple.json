@@ -1,9 +1,19 @@
 {
   "player": "Cole Temple",
   "source_ids": [
+    "wikipedia",
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:25:53.908905+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:12:01.851785+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:11:27.363105+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:12:01.848938+00:00"
+  }
 }

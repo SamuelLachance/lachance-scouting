@@ -1,12 +1,30 @@
 {
   "player": "Gleb Pugachyov",
   "source_ids": [
-    "wikipedia",
     "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:31:14.413803+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:14:59.399515+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Gleb Pugachyov - Stats, Contract, Salary & More - Elite Prospects. Throwing soul-crushing hits on the regular and violently fighting for inside positioning every chance he gets, Pugachyov projects to bring a significant intimidation factor at the NHL level. Gleb Pugachyov – 2026 NHL Draft Prospect Profile - The Hockey Writers. NHL Entry Draft profile for Russian forward Gleb Pugachyov with report, quotables and stats.",
+        "url": "https://www.eliteprospects.com/player/895866/gleb-pugachyov",
+        "snippets": [
+          "Gleb Pugachyov - Stats, Contract, Salary & More - Elite Prospects. Throwing soul-crushing hits on the regular and violently fighting for inside positioning every chance he gets, Pugachyov projects to bring a significant intimidation factor at the NHL level.",
+          "Gleb Pugachyov – 2026 NHL Draft Prospect Profile - The Hockey Writers. NHL Entry Draft profile for Russian forward Gleb Pugachyov with report, quotables and stats."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:12:27.481913+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:14:59.397121+00:00"
+  }
 }

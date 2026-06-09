@@ -10,6 +10,25 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:32:55.297644+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:16:08.563386+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Ivar Stenberg Hockey Stats and Profile at hockeydb.com. Statistics of Ivar Stenberg, a hockey player born Sep 30 2007 who was active from 2023 to 2026. Ivar Stenberg - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Ivar Stenberg, 2007-09-30 Stenungsund, SWE Sweden. Most recently in the SHL with Frölunda HC. Complete player biography and stats.",
+        "url": "https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=273059",
+        "snippets": [
+          "Ivar Stenberg Hockey Stats and Profile at hockeydb.com. Statistics of Ivar Stenberg, a hockey player born Sep 30 2007 who was active from 2023 to 2026.",
+          "Ivar Stenberg - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Ivar Stenberg, 2007-09-30 Stenungsund, SWE Sweden. Most recently in the SHL with Frölunda HC. Complete player biography and stats."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:13:30.571505+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:16:08.562530+00:00"
+  }
 }

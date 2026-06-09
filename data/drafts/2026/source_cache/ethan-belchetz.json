@@ -10,6 +10,25 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:29:48.082336+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:14:16.357391+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Ethan Belchetz - Stats, Contract, Salary & More - Elite Prospects. Playmaking is at the centre of his game. Belchetz builds plays with a collection of short passes, taking pucks off the wall in the defensive zone, bumping them to accelerating teammates, and then drawing give-and-goes and tic-tac-toe plays in transition. Ethan Belchetz Hockey Stats and Profile at hockeydb.com. Statistics of Ethan Belchetz, a hockey player from Oakville, ONT born Mar 30 2008 who was active from 2023 to 2026.",
+        "url": "https://www.eliteprospects.com/player/887868/ethan-belchetz",
+        "snippets": [
+          "Ethan Belchetz - Stats, Contract, Salary & More - Elite Prospects. Playmaking is at the centre of his game. Belchetz builds plays with a collection of short passes, taking pucks off the wall in the defensive zone, bumping them to accelerating teammates, and then drawing give-and-goes and tic-tac-toe plays in transition.",
+          "Ethan Belchetz Hockey Stats and Profile at hockeydb.com. Statistics of Ethan Belchetz, a hockey player from Oakville, ONT born Mar 30 2008 who was active from 2023 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:11:13.253427+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:14:16.354955+00:00"
+  }
 }

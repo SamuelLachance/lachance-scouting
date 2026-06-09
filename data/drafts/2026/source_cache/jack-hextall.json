@@ -6,6 +6,25 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:32:58.812583+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:16:14.303247+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Jack Hextall – 2026 NHL Draft Prospect Profile - The Hockey Writers. Jack Hextall is a highly competitive center out of Rolling Meadows, Illinois. He put up 58 points in 59 regular-season games with the Youngstown Phantoms of the United States Hockey League... Jack Hextall - Stats, Contract, Salary & More - Elite Prospects. A versatile player, Hextall presents himself as an option below the goal line, at the half-wall, and high in the zone. Teammates can bounce passes off of him, and when the play breaks down, Hextall has enough of a shot to finish on his own.",
+        "url": "https://thehockeywriters.com/jack-hextall-2026-nhl-draft-prospect-profile/",
+        "snippets": [
+          "Jack Hextall – 2026 NHL Draft Prospect Profile - The Hockey Writers. Jack Hextall is a highly competitive center out of Rolling Meadows, Illinois. He put up 58 points in 59 regular-season games with the Youngstown Phantoms of the United States Hockey League...",
+          "Jack Hextall - Stats, Contract, Salary & More - Elite Prospects. A versatile player, Hextall presents himself as an option below the goal line, at the half-wall, and high in the zone. Teammates can bounce passes off of him, and when the play breaks down, Hextall has enough of a shot to finish on his own."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:13:42.886126+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:16:14.301966+00:00"
+  }
 }

@@ -9,6 +9,25 @@
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:33:30.971446+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:16:39.040635+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Jakub Frolo - Stats, Contract, Salary & More - Elite Prospects. Most recently in the Liiga with Ilves. Complete player biography and stats. Jakub Frolo – 2026 NHL Draft Prospect Profile - The Hockey Writers. Jakub Frolo is not one of them. He is not flashy, does not generate viral highlight clips, and has spent his draft year playing in Finland’s U20 SM-sarja, a league that draws little attention...",
+        "url": "https://www.eliteprospects.com/player/872540/jakub-frolo",
+        "snippets": [
+          "Jakub Frolo - Stats, Contract, Salary & More - Elite Prospects. Most recently in the Liiga with Ilves. Complete player biography and stats.",
+          "Jakub Frolo – 2026 NHL Draft Prospect Profile - The Hockey Writers. Jakub Frolo is not one of them. He is not flashy, does not generate viral highlight clips, and has spent his draft year playing in Finland’s U20 SM-sarja, a league that draws little attention..."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:14:09.561195+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:16:39.039508+00:00"
+  }
 }

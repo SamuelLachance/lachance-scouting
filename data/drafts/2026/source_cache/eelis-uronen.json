@@ -6,26 +6,179 @@
     "dph_projection",
     "dph_tags",
     "wikipedia",
-    "flohockey",
-    "nhl_com",
-    "puckpedia",
     "tsn",
     "espn",
+    "nhl_com",
+    "puckpedia",
+    "flohockey",
     "sportsnet",
-    "daily_faceoff",
     "mckeens",
-    "pronman",
     "scott_wheeler",
     "smaht_scouting",
+    "pronman",
+    "daily_faceoff",
     "the_athletic",
-    "reddit",
     "hfboards",
+    "reddit",
     "hockeydb",
     "youtube",
     "twitter",
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:29:13.652176+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:13:16.493678+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "tsn",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "espn",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "nhl_com",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "puckpedia",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "flohockey",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "sportsnet",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "mckeens",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "scott_wheeler",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "smaht_scouting",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "pronman",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "daily_faceoff",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "the_athletic",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "hfboards",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "reddit",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "hockeydb",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "youtube",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      },
+      {
+        "source_id": "twitter",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "snippets": [
+          "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:10:37.677751+00:00"
+  },
+  "general_scouting": {
+    "by_source": [
+      {
+        "source_id": "hfboards",
+        "text": "Top 2026 draft D prospects? - HFBoards. Finland has five interesting defensemen for this draft, with three of them being right shot. Juho Piiparinen and Samu Alalauri are very potential first round picks with their combination of size, skill and defensive awareness. Max Laatikainen, Vertti Svensk and Eelis Uronen should be middle round picks.",
+        "url": "https://forums.hfboards.com/threads/top-2026-draft-d-prospects.3005744/",
+        "count": 1
+      }
+    ],
+    "raw_count": 1,
+    "fetched_at": "2026-06-09T20:11:12.112711+00:00"
+  }
 }

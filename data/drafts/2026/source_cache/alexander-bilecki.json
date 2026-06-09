@@ -6,6 +6,25 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:19:16.915478+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:07:58.860069+00:00",
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:07:58.845388+00:00"
+  },
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Alexander Bilecki - Stats, Contract, Salary & More. Bilecki attacks defences, beating the first forechecker with a fake and an explosive change of direction, before piercing right through neutral zone coverages. He creates high-danger scoring chances regularly off the rush, often with a give-and-go followed by a backhand slot pass. Alexander Bilecki – 2026 NHL Draft Prospect Profile. Despite boasting a lot of quality talent, Alexander Bilecki made a lot of noise and turned a lot of heads and impressed even though he was a third pairing defender. He finished with 29 points...",
+        "url": "https://www.eliteprospects.com/player/897430/alexander-bilecki",
+        "snippets": [
+          "Alexander Bilecki - Stats, Contract, Salary & More. Bilecki attacks defences, beating the first forechecker with a fake and an explosive change of direction, before piercing right through neutral zone coverages. He creates high-danger scoring chances regularly off the rush, often with a give-and-go followed by a backhand slot pass.",
+          "Alexander Bilecki – 2026 NHL Draft Prospect Profile. Despite boasting a lot of quality talent, Alexander Bilecki made a lot of noise and turned a lot of heads and impressed even though he was a third pairing defender. He finished with 29 points..."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:05:26.625765+00:00"
+  }
 }

@@ -5,28 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "puckpedia",
-    "sportsnet",
-    "tsn",
-    "nhl_com",
-    "espn",
-    "flohockey",
-    "daily_faceoff",
-    "pronman",
-    "smaht_scouting",
-    "scott_wheeler",
-    "mckeens",
-    "the_athletic",
-    "reddit",
-    "hfboards",
-    "youtube",
-    "hockeydb",
-    "twitter",
-    "wikipedia",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:35:54.779487+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:18:04.589137+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:17:30.232332+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:18:04.588685+00:00"
+  }
 }

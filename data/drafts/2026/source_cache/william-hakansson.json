@@ -5,11 +5,30 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "wikipedia",
+    "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:55:20.020198+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:30:57.940333+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "William Håkansson - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of William Håkansson, 2007-10-08 Solna, SWE Sweden. Most recently in the SHL with Luleå HF. Complete player biography and stats. William Håkansson- 2026 NHL Draft Prospect Profile. William Håkansson may not be the flashiest defenseman in the 2026 NHL Draft, but has the potential to be one of the better shutdown prospects.",
+        "url": "https://www.eliteprospects.com/player/689901/william-hakansson",
+        "snippets": [
+          "William Håkansson - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of William Håkansson, 2007-10-08 Solna, SWE Sweden. Most recently in the SHL with Luleå HF. Complete player biography and stats.",
+          "William Håkansson- 2026 NHL Draft Prospect Profile. William Håkansson may not be the flashiest defenseman in the 2026 NHL Draft, but has the potential to be one of the better shutdown prospects."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:30:23.466460+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:30:57.939163+00:00"
+  }
 }

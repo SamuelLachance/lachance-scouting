@@ -5,10 +5,30 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
+    "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:50:35.947536+00:00"
+  "cached_at": "2026-06-09T20:29:31.334263+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Ryan Roobroeck - Stats, Contract, Salary & More - Elite Prospects. An instinctual player, Roobroeck puts the finishing touches on plays. He fires off passes in a catch-and-release motion or with hard one-timers, his shot hitting the back of the net before goalies can react. Ryan Roobroeck- 2026 NHL Draft Prospect Profile. 2026 NHL Draft prospect Ryan Roobroeck brings tons of skill and an elite shot to his game but can be unengaged which leads to mistakes.",
+        "url": "https://www.eliteprospects.com/player/577185/ryan-roobroeck",
+        "snippets": [
+          "Ryan Roobroeck - Stats, Contract, Salary & More - Elite Prospects. An instinctual player, Roobroeck puts the finishing touches on plays. He fires off passes in a catch-and-release motion or with hard one-timers, his shot hitting the back of the net before goalies can react.",
+          "Ryan Roobroeck- 2026 NHL Draft Prospect Profile. 2026 NHL Draft prospect Ryan Roobroeck brings tons of skill and an elite shot to his game but can be unengaged which leads to mistakes."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:27:26.901462+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:29:07.068984+00:00"
+  }
 }

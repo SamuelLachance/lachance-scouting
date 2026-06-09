@@ -5,5 +5,14 @@
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:44:53.547187+00:00"
+  "cached_at": "2026-06-09T20:24:37.103826+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:23:40.043148+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:24:13.006474+00:00"
+  }
 }

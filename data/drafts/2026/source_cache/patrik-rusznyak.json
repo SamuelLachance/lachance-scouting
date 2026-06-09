@@ -1,11 +1,19 @@
 {
   "player": "Patrik Rusznyak",
   "source_ids": [
-    "wikipedia",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:48:12.327707+00:00"
+  "cached_at": "2026-06-09T20:27:32.833718+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:26:40.762816+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:27:10.221801+00:00"
+  }
 }

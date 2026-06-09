@@ -962,16 +962,75 @@ def build_forces_faiblesses(
 
 
 # ---------------------------------------------------------------------------
-# Multi-source aggregation — equal/near-equal weighting across ALL sources
-# No single source may exceed MAX_SOURCE_SHARE (default 25%).
-# Quality adjustment only (word count, scouting keywords, recency) — not tier monopoly.
+# Multi-source aggregation — reliability-weighted blend with redistribution.
+# Each catalog source has a fixed reliability weight (sum = 1.0 across catalog).
+# Missing sources for a player: their weight splits equally among available ones.
+# Text quality is a secondary multiplier on top of reliability effective weight.
 # ---------------------------------------------------------------------------
-MAX_SOURCE_SHARE = 0.25
-BASE_SOURCE_WEIGHT = 1.0
 MIN_SOURCE_ATTEMPTS = 5
 
-# Legacy tier field kept for metadata only (all sources share equal base weight).
-SOURCE_TIER_WEIGHTS: dict[int, float] = {1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0}
+# Relative reliability tiers (scouting-industry trust). Normalized to sum 1.0 below.
+_RELIABILITY_TIER_RAW: dict[str, float] = {
+    "high": 10.0,
+    "medium_high": 6.0,
+    "medium": 3.5,
+    "low_medium": 2.0,
+    "low": 1.0,
+}
+
+_SOURCE_RELIABILITY_TIER: dict[str, str] = {
+    # High — franchise scouting outlets
+    "dph_full": "high",
+    "local_analysis": "high",
+    "mckeens": "high",
+    "tsn": "high",
+    "scott_wheeler": "high",
+    "pronman": "high",
+    # Medium-high — major outlets / DPH components
+    "dph_partial": "medium_high",
+    "dph_report": "medium_high",
+    "dph_strengths": "medium_high",
+    "dph_weaknesses": "medium_high",
+    "dph_projection": "medium_high",
+    "dph_tags": "medium_high",
+    "elite_prospects": "medium_high",
+    "espn": "medium_high",
+    "nhl_com": "medium_high",
+    "the_athletic": "medium_high",
+    "smaht_scouting": "medium_high",
+    # Medium — web / regional scouting
+    "dph_thin": "medium",
+    "web_scouting": "medium",
+    "bing_scouting": "medium",
+    "ddg_scouting": "medium",
+    "sportsnet": "medium",
+    "flohockey": "medium",
+    "puckpedia": "medium",
+    "daily_faceoff": "medium",
+    "team_blog": "medium",
+    # Low-medium — reference / heuristics
+    "wikipedia": "low_medium",
+    "hockeydb": "low_medium",
+    "stats_heuristic": "low_medium",
+    "consensus_rank": "low_medium",
+    "rankings_csv": "low_medium",
+    # Low — social / forums
+    "reddit": "low",
+    "hfboards": "low",
+    "twitter": "low",
+    "youtube": "low",
+}
+
+# Catalog tier metadata (1 = highest trust group for UI).
+SOURCE_TIER_WEIGHTS: dict[int, float] = {1: 1.0, 2: 0.75, 3: 0.5, 4: 0.25}
+
+_TIER_TO_CATALOG_TIER: dict[str, int] = {
+    "high": 1,
+    "medium_high": 2,
+    "medium": 3,
+    "low_medium": 4,
+    "low": 4,
+}
 
 SOURCE_CATALOG: dict[str, tuple[int, str]] = {
     # Major scouting outlets
@@ -1016,44 +1075,22 @@ SOURCE_CATALOG: dict[str, tuple[int, str]] = {
     "stats_heuristic": (2, "Production / stats heuristic"),
 }
 
-# Subtle quality priors — never more than ~15% spread vs peers.
-SOURCE_QUALITY_PRIORS: dict[str, float] = {
-    "dph_full": 1.00,
-    "dph_report": 0.96,
-    "dph_strengths": 0.94,
-    "dph_weaknesses": 0.94,
-    "dph_projection": 0.93,
-    "dph_tags": 0.90,
-    "rankings_csv": 0.86,
-    "local_analysis": 0.98,
-    "elite_prospects": 0.97,
-    "tsn": 0.96,
-    "espn": 0.96,
-    "nhl_com": 0.96,
-    "the_athletic": 0.96,
-    "mckeens": 0.95,
-    "scott_wheeler": 0.95,
-    "pronman": 0.95,
-    "smaht_scouting": 0.94,
-    "sportsnet": 0.94,
-    "flohockey": 0.93,
-    "puckpedia": 0.92,
-    "daily_faceoff": 0.92,
-    "hockeydb": 0.90,
-    "wikipedia": 0.88,
-    "dph_partial": 0.87,
-    "team_blog": 0.85,
-    "web_scouting": 0.84,
-    "bing_scouting": 0.83,
-    "ddg_scouting": 0.83,
-    "youtube": 0.82,
-    "twitter": 0.80,
-    "reddit": 0.78,
-    "hfboards": 0.78,
-    "dph_thin": 0.75,
-    "consensus_rank": 0.82,
-    "stats_heuristic": 0.72,
-}
+_DEFAULT_RELIABILITY_TIER = "medium"
+
+def _build_source_reliability_weights() -> dict[str, float]:
+    """Normalize per-source reliability weights so catalog sources sum to 1.0."""
+    raw: dict[str, float] = {}
+    for sid in SOURCE_CATALOG:
+        tier = _SOURCE_RELIABILITY_TIER.get(sid, _DEFAULT_RELIABILITY_TIER)
+        raw[sid] = _RELIABILITY_TIER_RAW[tier]
+    total = sum(raw.values()) or 1.0
+    return {sid: w / total for sid, w in raw.items()}
+
+
+SOURCE_RELIABILITY_WEIGHTS: dict[str, float] = _build_source_reliability_weights()
+
+# Legacy alias — reliability weights replace equal priors.
+SOURCE_QUALITY_PRIORS: dict[str, float] = dict(SOURCE_RELIABILITY_WEIGHTS)
 
 _SCOUTING_KW = re.compile(
     r"\b(scout|scouting|prospect|skating|ceiling|upside|projection|elite|"
@@ -1064,7 +1101,8 @@ _SCOUTING_KW = re.compile(
 
 
 def source_tier(source_id: str) -> int:
-    return SOURCE_CATALOG.get(source_id, (2, ""))[0]
+    rel_tier = _SOURCE_RELIABILITY_TIER.get(source_id, _DEFAULT_RELIABILITY_TIER)
+    return _TIER_TO_CATALOG_TIER.get(rel_tier, SOURCE_CATALOG.get(source_id, (2, ""))[0])
 
 
 def source_label(source_id: str) -> str:
@@ -1103,47 +1141,51 @@ def compute_text_quality(
     return round(max(0.30, min(1.0, (word_factor + kw_factor) / 2 * recency_factor)), 3)
 
 
-def source_weight(source_id: str, *, quality: float = 1.0) -> float:
-    """Effective weight = base × quality prior × text quality (capped downstream)."""
-    prior = SOURCE_QUALITY_PRIORS.get(source_id, 0.84)
+def compute_reliability_redistribution(
+    available_source_ids: list[str],
+) -> tuple[dict[str, float], float]:
+    """
+    Redistribute missing catalog reliability weight equally among available sources.
+
+    Returns (effective_reliability_weights summing to 1.0, redistributed_share_per_source).
+    """
+    pool = SOURCE_RELIABILITY_WEIGHTS
+    available = list(dict.fromkeys(available_source_ids))
+    if not available:
+        return {}, 0.0
+
+    fallback = pool.get("web_scouting", 1.0 / max(len(pool), 1))
+    missing_weight = sum(
+        pool.get(sid, fallback)
+        for sid in pool
+        if sid not in available
+    )
+    redist = missing_weight / len(available)
+
+    effective: dict[str, float] = {}
+    for sid in available:
+        base = pool.get(sid, fallback)
+        effective[sid] = base + redist
+
+    total = sum(effective.values()) or 1.0
+    return {sid: w / total for sid, w in effective.items()}, redist
+
+
+def source_weight(
+    source_id: str,
+    *,
+    quality: float = 1.0,
+    reliability_effective: float | None = None,
+) -> float:
+    """Effective weight = reliability (post-redistribution) × text quality."""
+    rel = reliability_effective
+    if rel is None:
+        rel = SOURCE_RELIABILITY_WEIGHTS.get(
+            source_id,
+            SOURCE_RELIABILITY_WEIGHTS.get("web_scouting", 0.01),
+        )
     q = max(0.30, min(1.0, float(quality)))
-    return BASE_SOURCE_WEIGHT * prior * q
-
-
-def _cap_source_weights(raw_weights: list[float], max_share: float) -> list[float]:
-    """Iteratively cap so no source exceeds *max_share* of the blend."""
-    if not raw_weights:
-        return []
-    weights = [float(w) for w in raw_weights]
-    for _ in range(24):
-        total = sum(weights)
-        if total <= 0:
-            return weights
-        capped_any = False
-        new_weights = list(weights)
-        overflow = [(i, w) for i, w in enumerate(weights) if w / total > max_share]
-        if not overflow:
-            break
-        cap_total = 0.0
-        free: list[int] = []
-        for i, w in enumerate(weights):
-            if w / total > max_share:
-                new_weights[i] = total * max_share
-                cap_total += new_weights[i]
-                capped_any = True
-            else:
-                free.append(i)
-        if not capped_any:
-            break
-        remainder = total - cap_total
-        free_sum = sum(weights[i] for i in free)
-        if free_sum <= 0 or not free:
-            weights = new_weights
-            break
-        for i in free:
-            new_weights[i] = weights[i] / free_sum * remainder
-        weights = new_weights
-    return weights
+    return rel * q
 
 
 def confidence_from_source_count(
@@ -1285,14 +1327,14 @@ def apply_physical_adjustments(
 
 def weighted_merge_sources(
     contributions: list[dict[str, Any]],
-    *,
-    max_share: float = MAX_SOURCE_SHARE,
 ) -> tuple[dict[str, float], dict[str, list[str]], list[dict], str]:
     """
-    Merge per-source pillar scores — equal/near-equal blend with share cap.
+    Merge per-source pillar scores with reliability weights + redistribution.
 
-    final_pillar = sum(effective_weight_i × pillar_i) / sum(effective_weights)
-    No single source > max_share unless only 1–2 sources exist.
+    effective_reliability[s] = reliability[s] + (missing_pool / |available|)
+    raw_weight[s] = effective_reliability[s] × text_quality[s]
+    weight_share[s] = raw_weight[s] / sum(raw_weights)
+    final_pillar = sum(weight_share[s] × pillar[s])
 
     Each contribution dict:
       source_id, pillars, evidence?, quality?, snippet?, text_quality?
@@ -1311,42 +1353,56 @@ def weighted_merge_sources(
             best[sid] = c
     merged_contribs = list(best.values())
 
+    pool = SOURCE_RELIABILITY_WEIGHTS
+    fallback = pool.get("web_scouting", 1.0 / max(len(pool), 1))
+    available_ids = [c["source_id"] for c in merged_contribs]
+    reliability_effective, redist_per_source = compute_reliability_redistribution(
+        available_ids,
+    )
+
     raw_weights: list[float] = []
     substantive = 0
     for c in merged_contribs:
+        sid = c["source_id"]
         text_q = c.get("text_quality")
         if text_q is None and c.get("snippet"):
             text_q = compute_text_quality(c["snippet"])
         elif text_q is None:
             text_q = float(c.get("quality", 1.0))
-        combined_q = float(c.get("quality", 1.0)) * float(text_q)
-        w = source_weight(c["source_id"], quality=combined_q)
+        combined_q = max(0.30, min(1.0, float(text_q)))
+        rel_eff = reliability_effective.get(sid, fallback)
+        w = source_weight(sid, quality=combined_q, reliability_effective=rel_eff)
         raw_weights.append(w)
-        c["_effective_weight"] = w
         c["_combined_quality"] = round(combined_q, 3)
+        c["_reliability_weight"] = round(pool.get(sid, fallback), 6)
+        c["_redistributed_share"] = round(redist_per_source, 6)
+        c["_reliability_effective"] = round(rel_eff, 6)
+        c["_effective_weight"] = round(w, 6)
         if c.get("snippet") or c.get("evidence"):
             substantive += 1
 
-    # Only cap when 3+ sources — allow natural dominance with 1–2 sources
-    effective_cap = max_share if len(merged_contribs) >= 3 else 1.0
-    capped_weights = _cap_source_weights(raw_weights, effective_cap)
-    total_w = sum(capped_weights) or 1.0
+    total_w = sum(raw_weights) or 1.0
+    n_sources = len(merged_contribs)
 
     final: dict[str, float] = {}
     merged_ev: dict[str, list[str]] = {k: [] for k in NORTHSTAR_WEIGHTS}
     source_mix: list[dict] = []
 
-    for c, w in zip(merged_contribs, capped_weights):
+    for c, w in zip(merged_contribs, raw_weights):
         sid = c["source_id"]
         tier = source_tier(sid)
+        share = w / total_w
         mix_entry = {
             "source": sid,
             "label": source_label(sid),
             "tier": tier,
-            "tier_weight": SOURCE_TIER_WEIGHTS[tier],
+            "tier_weight": SOURCE_TIER_WEIGHTS.get(tier, 0.5),
+            "reliability_weight": c["_reliability_weight"],
+            "redistributed_share": c["_redistributed_share"],
+            "reliability_effective": c["_reliability_effective"],
             "quality": c.get("_combined_quality", round(float(c.get("quality", 1.0)), 2)),
-            "effective_weight": round(w, 3),
-            "weight_share": round(w / total_w, 4),
+            "effective_weight": c["_effective_weight"],
+            "weight_share": round(share, 4),
             "pillars": {k: c["pillars"].get(k, 5.0) for k in NORTHSTAR_WEIGHTS},
         }
         if c.get("url"):
@@ -1354,7 +1410,7 @@ def weighted_merge_sources(
         if c.get("snippet"):
             mix_entry["snippet"] = c["snippet"][:200]
         mix_entry["pillar_contribution"] = {
-            dim: round(mix_entry["pillars"][dim] * mix_entry["weight_share"], 3)
+            dim: round(mix_entry["pillars"][dim] * share, 3)
             for dim in NORTHSTAR_WEIGHTS
         }
         source_mix.append(mix_entry)
@@ -1364,12 +1420,12 @@ def weighted_merge_sources(
     for dim in NORTHSTAR_WEIGHTS:
         num = sum(
             c["pillars"].get(dim, 5.0) * w
-            for c, w in zip(merged_contribs, capped_weights)
+            for c, w in zip(merged_contribs, raw_weights)
         )
         final[dim] = round(min(10, max(1, num / total_w)), 1)
 
     source_mix.sort(key=lambda x: -x["weight_share"])
-    cov = confidence_from_source_count(len(merged_contribs), substantive)
+    cov = confidence_from_source_count(n_sources, substantive)
 
     for dim in merged_ev:
         merged_ev[dim] = list(dict.fromkeys(merged_ev[dim]))[:5]

@@ -10,6 +10,25 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:56:01.398513+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:31:19.480747+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Xavier Villeneuve Hockey Stats and Profile at hockeydb.com. Statistics of Xavier Villeneuve, a hockey player from Les Cedres, PQ born Sep 29 2007 who was active from 2023 to 2026. Xavier Villeneuve - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Xavier Villeneuve, 2007-09-29 Laval, QC, CAN Canada. Most recently in the NCAA with Boston Univ.. Complete player biography and stats.",
+        "url": "https://www.hockeydb.com/ihdb/stats/pdisplay.php?pid=270454",
+        "snippets": [
+          "Xavier Villeneuve Hockey Stats and Profile at hockeydb.com. Statistics of Xavier Villeneuve, a hockey player from Les Cedres, PQ born Sep 29 2007 who was active from 2023 to 2026.",
+          "Xavier Villeneuve - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Xavier Villeneuve, 2007-09-29 Laval, QC, CAN Canada. Most recently in the NCAA with Boston Univ.. Complete player biography and stats."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:30:45.483160+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:31:19.476120+00:00"
+  }
 }

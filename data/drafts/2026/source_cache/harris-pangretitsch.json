@@ -9,6 +9,25 @@
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:31:45.077824+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:15:26.365695+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Harris Pangretitsch - Stats, Contract, Salary & More. Most recently in the OHL with Soo Greyhounds. Complete player biography and stats. Harris Pangretitsch Hockey Stats and Profile at hockeydb.com. Statistics of Harris Pangretitsch, a hockey player from Toronto, ONT born Mar 29 2008 who was active from 2025 to 2026.",
+        "url": "https://www.eliteprospects.com/player/976483/harris-pangretitsch",
+        "snippets": [
+          "Harris Pangretitsch - Stats, Contract, Salary & More. Most recently in the OHL with Soo Greyhounds. Complete player biography and stats.",
+          "Harris Pangretitsch Hockey Stats and Profile at hockeydb.com. Statistics of Harris Pangretitsch, a hockey player from Toronto, ONT born Mar 29 2008 who was active from 2025 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:12:47.957699+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:15:26.364729+00:00"
+  }
 }

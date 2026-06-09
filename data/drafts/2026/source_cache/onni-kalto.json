@@ -1,11 +1,19 @@
 {
   "player": "Onni Kalto",
   "source_ids": [
-    "wikipedia",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:47:19.090618+00:00"
+  "cached_at": "2026-06-09T20:26:36.691112+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:25:39.085020+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:26:12.060698+00:00"
+  }
 }

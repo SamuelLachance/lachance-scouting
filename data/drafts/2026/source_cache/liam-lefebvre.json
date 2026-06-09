@@ -9,6 +9,25 @@
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:39:26.663687+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:20:19.987544+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Liam Lefebvre - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Liam Lefebvre, 2007-05-15 Montréal, QC, CAN Canada. Most recently in the NCAA with Univ. of Vermont. Complete player biography and stats. Liam Lefebvre Hockey Stats and Profile at hockeydb.com. Statistics of Liam Lefebvre, a hockey player from Montreal, PQ born May 15 2007 who was active from 2025 to 2026.",
+        "url": "https://www.eliteprospects.com/player/819472/liam-lefebvre",
+        "snippets": [
+          "Liam Lefebvre - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Liam Lefebvre, 2007-05-15 Montréal, QC, CAN Canada. Most recently in the NCAA with Univ. of Vermont. Complete player biography and stats.",
+          "Liam Lefebvre Hockey Stats and Profile at hockeydb.com. Statistics of Liam Lefebvre, a hockey player from Montreal, PQ born May 15 2007 who was active from 2025 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:19:45.488930+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:20:19.982386+00:00"
+  }
 }

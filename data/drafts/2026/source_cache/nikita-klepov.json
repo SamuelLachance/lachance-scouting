@@ -11,5 +11,24 @@
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:45:08.421774+00:00"
+  "cached_at": "2026-06-09T20:24:38.621270+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Nikita Klepov - Stats, Contract, Salary & More - Elite Prospects. Klepov’s physical skills, defensive ability, and motor add other dimensions to his projection. Possessing a bottomless tank of energy, he works to get the puck back, hunting it deep in the opposition’s zone, establishing body positioning on pucks, and turning steals into more offence. Nikita Klepov - Wikipedia. Nikita Klepov (born June 27, 2008) is an American junior ice hockey player who is a forward for the Saginaw Spirit of the Ontario Hockey League (OHL). He is considered a top prospect for the 2026 NHL entry draft.",
+        "url": "https://www.eliteprospects.com/player/895869/nikita-klepov",
+        "snippets": [
+          "Nikita Klepov - Stats, Contract, Salary & More - Elite Prospects. Klepov’s physical skills, defensive ability, and motor add other dimensions to his projection. Possessing a bottomless tank of energy, he works to get the puck back, hunting it deep in the opposition’s zone, establishing body positioning on pucks, and turning steals into more offence.",
+          "Nikita Klepov - Wikipedia. Nikita Klepov (born June 27, 2008) is an American junior ice hockey player who is a forward for the Saginaw Spirit of the Ontario Hockey League (OHL). He is considered a top prospect for the 2026 NHL entry draft."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:23:42.553143+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:24:14.523763+00:00"
+  }
 }

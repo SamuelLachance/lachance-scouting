@@ -5,9 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
+    "elite_prospects",
     "rankings_csv",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:52:16.775854+00:00"
+  "cached_at": "2026-06-09T20:30:26.148588+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:29:51.963180+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:30:26.148058+00:00"
+  }
 }

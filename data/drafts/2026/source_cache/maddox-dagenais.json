@@ -8,5 +8,33 @@
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:41:00.873291+00:00"
+  "cached_at": "2026-06-09T20:21:22.589052+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "the_athletic",
+        "text": "Maddox Dagenais – 2026 NHL Draft Prospect Profile - The Hockey Writers. Quebec Remparts forward, Maddox Dagenais is built to wreak havoc offensively any chance he can get with his power forward game. 2026 NHL Draft Prospect Report – Maddox Dagenais (C). Dagenais is a poised, detail-oriented forward who plays a simple but very effective game built around strong puck control and smart, calculated decisions. He consistently slows the play down, especially on zone entries, showing patience and awareness to let plays develop instead of forcing anything, while still having the ability to slip passes ...",
+        "url": "https://thehockeywriters.com/maddox-dagenais-2026-nhl-draft-prospect-profile/",
+        "snippets": [
+          "Maddox Dagenais – 2026 NHL Draft Prospect Profile - The Hockey Writers. Quebec Remparts forward, Maddox Dagenais is built to wreak havoc offensively any chance he can get with his power forward game.",
+          "2026 NHL Draft Prospect Report – Maddox Dagenais (C). Dagenais is a poised, detail-oriented forward who plays a simple but very effective game built around strong puck control and smart, calculated decisions. He consistently slows the play down, especially on zone entries, showing patience and awareness to let plays develop instead of forcing anything, while still having the ability to slip passes ..."
+        ]
+      },
+      {
+        "source_id": "hockeydb",
+        "text": "Maddox Dagenais - Stats, Contract, Salary & More - Elite Prospects. With powerful linear crossovers and a sky-high activity rate, Dagenais looks like he’s been shot out of a cannon in transition. He uses that speed to initiate chip-and-chase plays, hit the goal line before defenders can react, and work through backpressure to access advanced plays. Maddox Dagenais Hockey Stats and Profile at hockeydb.com. Statistics of Maddox Dagenais, a hockey player from Montreal, PQ born Mar 27 2008 who was active from 2024 to 2026.",
+        "url": "https://www.eliteprospects.com/player/886811/maddox-dagenais",
+        "snippets": [
+          "Maddox Dagenais - Stats, Contract, Salary & More - Elite Prospects. With powerful linear crossovers and a sky-high activity rate, Dagenais looks like he’s been shot out of a cannon in transition. He uses that speed to initiate chip-and-chase plays, hit the goal line before defenders can react, and work through backpressure to access advanced plays.",
+          "Maddox Dagenais Hockey Stats and Profile at hockeydb.com. Statistics of Maddox Dagenais, a hockey player from Montreal, PQ born Mar 27 2008 who was active from 2024 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:20:25.891034+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:20:58.369794+00:00"
+  }
 }

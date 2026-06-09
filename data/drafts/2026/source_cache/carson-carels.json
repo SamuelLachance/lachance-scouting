@@ -5,11 +5,31 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
+    "wikipedia",
     "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:24:36.792658+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:10:52.904674+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Carson Carels - Wikipedia. Carson Carels (born June 23, 2008) is a Canadian ice hockey player who is a defenceman for the North Dakota Fighting Hawks of the NCAA. He is considered a top prospect eligible for the 2026 NHL entry draft. Carson Carels joins Univ. of North Dakota - Elite Prospects. Carson Carels joins Univ. of North Dakota from Prince George Cougars in a confirmed transaction on 2026-05-18. View stats and history on Elite Prospects.",
+        "url": "https://en.wikipedia.org/wiki/Carson_Carels",
+        "snippets": [
+          "Carson Carels - Wikipedia. Carson Carels (born June 23, 2008) is a Canadian ice hockey player who is a defenceman for the North Dakota Fighting Hawks of the NCAA. He is considered a top prospect eligible for the 2026 NHL entry draft.",
+          "Carson Carels joins Univ. of North Dakota - Elite Prospects. Carson Carels joins Univ. of North Dakota from Prince George Cougars in a confirmed transaction on 2026-05-18. View stats and history on Elite Prospects."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:07:05.220371+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:10:52.903867+00:00"
+  }
 }

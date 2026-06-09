@@ -1,27 +1,19 @@
 {
   "player": "Mikhail Katin",
   "source_ids": [
-    "tsn",
-    "nhl_com",
-    "espn",
-    "flohockey",
-    "sportsnet",
-    "puckpedia",
-    "the_athletic",
-    "daily_faceoff",
-    "mckeens",
-    "smaht_scouting",
-    "pronman",
-    "reddit",
-    "youtube",
-    "hfboards",
-    "twitter",
-    "hockeydb",
-    "web_scouting",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:43:49.171715+00:00"
+  "cached_at": "2026-06-09T20:23:33.954476+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:22:35.147567+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:23:09.853707+00:00"
+  }
 }

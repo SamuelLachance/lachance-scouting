@@ -1,9 +1,29 @@
 {
   "player": "Rian Chudzinski",
   "source_ids": [
+    "hockeydb",
     "rankings_csv",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:49:22.137281+00:00"
+  "cached_at": "2026-06-09T20:28:26.533878+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Rian Chudzinski - Stats, Contract, Salary & More - Elite Prospects. Most recently in the QMJHL with Moncton Wildcats. Complete player biography and stats. Rian Chudzinski – DobberProspects. QMJHL Top Prospects Game- Rian stood out with his relentless pace and work ethic. His north-south game paired with his impressive speed and strength made him difficult to stop off the rush.",
+        "url": "https://www.eliteprospects.com/player/893554/rian-chudzinski",
+        "snippets": [
+          "Rian Chudzinski - Stats, Contract, Salary & More - Elite Prospects. Most recently in the QMJHL with Moncton Wildcats. Complete player biography and stats.",
+          "Rian Chudzinski – DobberProspects. QMJHL Top Prospects Game- Rian stood out with his relentless pace and work ethic. His north-south game paired with his impressive speed and strength made him difficult to stop off the rush."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:26:22.515692+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:28:04.868220+00:00"
+  }
 }

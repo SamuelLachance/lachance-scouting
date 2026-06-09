@@ -7,5 +7,24 @@
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:52:32.622091+00:00"
+  "cached_at": "2026-06-09T20:31:01.850048+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Tomas Chrenko - Stats, Contract, Salary & More - Elite Prospects. Chrenko is a quick skater and puck handler. He loves to challenge opponents one-on-one, deking through triangles, faking inside before going around the outside, or using his strong edges to turn for space. Tomas Chrenko – 2026 NHL Draft Prospect Profile - The Hockey Writers. A fringe first-round prospect, Tomas Chrenko is a smallish forward with a lot of offensive upside drawing attention in the 2026 NHL Draft.",
+        "url": "https://www.eliteprospects.com/player/752381/tomas-chrenko",
+        "snippets": [
+          "Tomas Chrenko - Stats, Contract, Salary & More - Elite Prospects. Chrenko is a quick skater and puck handler. He loves to challenge opponents one-on-one, deking through triangles, faking inside before going around the outside, or using his strong edges to turn for space.",
+          "Tomas Chrenko – 2026 NHL Draft Prospect Profile - The Hockey Writers. A fringe first-round prospect, Tomas Chrenko is a smallish forward with a lot of offensive upside drawing attention in the 2026 NHL Draft."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:28:43.848852+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:30:39.846802+00:00"
+  }
 }

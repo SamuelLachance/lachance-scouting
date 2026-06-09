@@ -10,5 +10,24 @@
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:48:35.499868+00:00"
+  "cached_at": "2026-06-09T20:27:46.942724+00:00",
+  "targeted": {
+    "results": [
+      {
+        "source_id": "hockeydb",
+        "text": "Philippe Veilleux - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Philippe Veilleux, 2007-03-26 St-Jean-sur-Richelieu, QC, CAN Canada. Most recently in the QMJHL with Val-d'Or Foreurs. Complete player biography and stats. Philippe Veilleux Hockey Stats and Profile at hockeydb.com. Statistics of Philippe Veilleux, a hockey player from St-Bruno de Mortarvi, PQ born Mar 26 2007 who was active from 2023 to 2026.",
+        "url": "https://www.eliteprospects.com/player/805224/philippe-veilleux",
+        "snippets": [
+          "Philippe Veilleux - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Philippe Veilleux, 2007-03-26 St-Jean-sur-Richelieu, QC, CAN Canada. Most recently in the QMJHL with Val-d'Or Foreurs. Complete player biography and stats.",
+          "Philippe Veilleux Hockey Stats and Profile at hockeydb.com. Statistics of Philippe Veilleux, a hockey player from St-Bruno de Mortarvi, PQ born Mar 26 2007 who was active from 2023 to 2026."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-09T20:25:51.884432+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:27:22.295844+00:00"
+  }
 }

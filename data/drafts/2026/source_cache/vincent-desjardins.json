@@ -1,10 +1,18 @@
 {
   "player": "Vincent Desjardins",
   "source_ids": [
-    "wikipedia",
     "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:54:14.636767+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:30:17.730560+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:29:43.232899+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:30:17.730285+00:00"
+  }
 }

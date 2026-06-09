@@ -5,11 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "hockeydb",
     "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
   "attempts": 25,
-  "cached_at": "2026-06-09T15:47:29.956663+00:00"
+  "cached_at": "2026-06-09T20:26:42.267837+00:00",
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:25:44.040579+00:00"
+  },
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:26:17.601914+00:00"
+  }
 }

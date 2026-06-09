@@ -5,6 +5,15 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:20:33.664252+00:00"
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:08:39.564344+00:00",
+  "general_scouting": {
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T20:08:39.552549+00:00"
+  },
+  "targeted": {
+    "results": [],
+    "fetched_at": "2026-06-09T20:08:05.430500+00:00"
+  }
 }

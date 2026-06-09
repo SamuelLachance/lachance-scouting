@@ -29,8 +29,8 @@
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T15:30:52.756350+00:00",
+  "attempts": 24,
+  "cached_at": "2026-06-09T20:14:23.052838+00:00",
   "general_scouting": {
     "by_source": [
       {

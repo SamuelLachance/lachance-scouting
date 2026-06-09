@@ -2,8 +2,8 @@
 """
 Évaluation NORTHSTAR multi-sources — 574 prospects 2026.
 
-Agrégation égale/near-égale de TOUTES les sources internet disponibles.
-Aucune source > 25% (MAX_SOURCE_SHARE) sauf si 1–2 sources seulement.
+Agrégation par fiabilité source: poids fixes par type, redistribution égale
+des sources absentes vers les sources disponibles, qualité texte en multiplicateur.
 Cache par joueur: data/drafts/2026/source_cache/{player_key}.json
 
 Usage:
@@ -37,7 +37,6 @@ from generate_draft_board import Player, load_players
 from name_utils import canonical_key
 from scripts.fetch_scouting_reports import parse_dph_html, slug_from_name
 from northstar_scoring import (
-    MAX_SOURCE_SHARE,
     MIN_SOURCE_ATTEMPTS,
     NORTHSTAR_LABELS,
     NORTHSTAR_WEIGHTS,
@@ -183,9 +182,11 @@ def load_checkpoint() -> dict:
 def save_checkpoint(data: dict) -> None:
     with _checkpoint_lock:
         data["meta"]["last_updated"] = datetime.now(timezone.utc).isoformat()
-        data["meta"]["version"] = 3
-        data["meta"]["weighting"] = "equal_blend_capped"
-        data["meta"]["max_source_share"] = MAX_SOURCE_SHARE
+        data["meta"]["version"] = 5
+        data["meta"]["weighting"] = "reliability_redistributed"
+        data["meta"]["weight_formula"] = (
+            "reliability_effective × quality; missing catalog weight redistributed equally"
+        )
         data["meta"]["min_source_attempts"] = MIN_SOURCE_ATTEMPTS
         data["meta"]["done"] = sum(
             1 for p in data.get("players", {}).values() if p.get("status") == "done"
@@ -725,12 +726,12 @@ def gather_targeted_sources(
     skip_web: bool = False,
 ) -> list[dict]:
     """Run site-specific scouting queries in parallel — one contribution per hit."""
-    if skip_web:
-        return []
     cache = cache or {}
     cached = cache.get("targeted") or {}
     if cached.get("results"):
         return cached["results"]
+    if skip_web:
+        return []
     contributions: list[dict] = []
     with ThreadPoolExecutor(max_workers=6) as pool:
         futures = {
@@ -763,12 +764,12 @@ def gather_general_scouting(
     skip_web: bool = False,
 ) -> list[dict]:
     """Bing/DDG scouting search — split by domain into separate sources."""
-    if skip_web:
-        return []
     cache = cache or {}
     cached = cache.get("general_scouting")
     if cached and cached.get("by_source"):
         return cached["by_source"]
+    if skip_web:
+        return []
     query = f'"{name}" {draft_year} draft scouting report'
     results = search_web_results(fetcher, query, name=name, max_results=15)
     by_source: dict[str, list[dict]] = {}
@@ -1091,7 +1092,7 @@ def evaluate_player(
             "wiki_words": len(wiki_text.split()) if wiki_text else 0,
             "contributions": len(contributions),
             "source_attempts": attempts,
-            "max_source_share": max((s.get("weight_share", 0) for s in source_mix), default=0),
+            "top_source_share": max((s.get("weight_share", 0) for s in source_mix), default=0),
         },
     }
 
@@ -1156,7 +1157,10 @@ def main() -> None:
     fetcher = HostRateLimitedFetcher()
 
     checkpoint.setdefault("meta", {})["total"] = len(players)
-    checkpoint.setdefault("meta", {})["max_source_share"] = MAX_SOURCE_SHARE
+    checkpoint.setdefault("meta", {})["weighting"] = "reliability_redistributed"
+    checkpoint.setdefault("meta", {})["weight_formula"] = (
+        "reliability_effective × quality; missing catalog weight redistributed equally"
+    )
     checkpoint.setdefault("players", {})
 
     if args.player:
@@ -1183,7 +1187,7 @@ def main() -> None:
 
     _safe_print(
         f"NORTHSTAR multi-source: {len(pending)} a traiter, {skipped} ignores, "
-        f"{workers} workers, max_share={MAX_SOURCE_SHARE}",
+        f"{workers} workers, weighting=reliability_redistributed",
     )
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
