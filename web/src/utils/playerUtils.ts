@@ -43,6 +43,7 @@ export function getDiscoverySignal(player: Player): DiscoverySignal {
   if (player.discoverySignal) return player.discoverySignal;
 
   const skills = player.skills;
+  const baseScore = player.baseNorthstarScore ?? player.overall;
   const upsideCore =
     (skills.starCeiling ?? 5) * 3 +
     (skills.hockeyIQ ?? 5) * 1.8 +
@@ -59,7 +60,7 @@ export function getDiscoverySignal(player: Player): DiscoverySignal {
   );
   const score = Math.max(
     0,
-    Math.min(99, player.overall * 0.42 + upsideCore * 0.34 + marketBoost + rareToolCount * 2)
+    Math.min(99, baseScore * 0.62 + upsideCore * 0.38 + marketBoost + rareToolCount * 2)
   );
 
   return {

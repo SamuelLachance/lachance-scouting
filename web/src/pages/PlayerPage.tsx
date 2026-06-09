@@ -151,6 +151,9 @@ export default function PlayerPage() {
             <SignalStat label="Upside pur" value={`${discovery.upsideCore.toFixed(1)}/100`} />
             <SignalStat label="Outil signature" value={`${discovery.peakTool.label} ${discovery.peakTool.score.toFixed(1)}`} />
             <SignalStat label="Confiance" value={discovery.confidenceLabel} />
+            {player.baseNorthstarScore && (
+              <SignalStat label="Talent pur ancien modèle" value={`${player.baseNorthstarScore.toFixed(1)}/100`} />
+            )}
           </div>
         </div>
         <div className="mt-4 grid sm:grid-cols-2 gap-2">
@@ -188,7 +191,7 @@ export default function PlayerPage() {
           <h3 className="font-display font-semibold mb-4">Grille NORTHSTAR détaillée</h3>
           <SkillBars skills={player.skills} rationales={player.skillRationales} />
           <div className="mt-4 pt-4 border-t border-white/5 flex justify-between items-center">
-            <span className="text-sm text-slate-500">Star Probability Index</span>
+            <span className="text-sm text-slate-500">NORTHSTAR Discovery Rating</span>
             <span className={`font-display font-bold text-2xl ${scoreColor(player.overall)}`}>
               {player.overall.toFixed(1)}/100
             </span>

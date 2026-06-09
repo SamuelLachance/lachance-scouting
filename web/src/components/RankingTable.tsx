@@ -22,7 +22,7 @@ export default function RankingTable({ players }: RankingTableProps) {
               <th className="px-4 py-3 font-medium hidden lg:table-cell">Pays</th>
               <th className="px-4 py-3 font-medium hidden md:table-cell">Tier</th>
               <th className="px-4 py-3 font-medium hidden lg:table-cell">Signal caché</th>
-              <th className="px-4 py-3 font-medium text-right">SPI</th>
+              <th className="px-4 py-3 font-medium text-right">NDR</th>
               <th className="w-10" />
             </tr>
           </thead>

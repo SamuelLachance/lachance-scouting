@@ -312,6 +312,7 @@ def discovery_confidence(row: dict) -> tuple[float, str]:
 def build_discovery_signal(row: dict, northstar_rank: int) -> dict:
     """Detecte les prospects dont le profil star depasse le prix du marche."""
     skills = row.get("skills") or {}
+    base_score = float(row.get("baseNorthstarScore", row.get("overall", 50.0)))
     star_ceiling = float(skills.get("starCeiling", 5.0))
     hockey_iq = float(skills.get("hockeyIQ", 5.0))
     skating = float(skills.get("skatingEngine", 5.0))
@@ -340,29 +341,29 @@ def build_discovery_signal(row: dict, northstar_rank: int) -> dict:
     consensus_rank = row.get("consensusRank")
     market_gap = (consensus_rank - northstar_rank) if consensus_rank is not None else None
     if market_gap is None:
-        market_component = 10 if row["overall"] >= 68 else 4
+        market_component = 6 if base_score >= 68 else 2
         market_status = "Aucun consensus public fiable"
     elif market_gap > 0:
-        market_component = clamp(market_gap * 0.45, 0, 22)
+        market_component = clamp(market_gap * 0.18, 0, 10)
         market_status = f"Consensus {market_gap} rangs plus bas que NORTHSTAR"
     elif market_gap < 0:
-        market_component = clamp(market_gap * 0.25, -12, 0)
+        market_component = clamp(market_gap * 0.12, -6, 0)
         market_status = f"Consensus {abs(market_gap)} rangs plus haut que NORTHSTAR"
     else:
         market_component = 0
-        market_status = "Consensus aligne avec NORTHSTAR"
+        market_status = "Consensus aligné avec NORTHSTAR"
 
     confidence_score, confidence_label = discovery_confidence(row)
     raw_score = (
-        row["overall"] * 0.42
-        + upside_core * 10 * 0.34
+        base_score * 0.62
+        + upside_core * 10 * 0.38
         + market_component
         + rare_tool_count * 2.2
         + max(0, development - 7.0) * 1.7
     )
     if row.get("isOverAge"):
         raw_score -= 4.5
-    score = round(clamp(raw_score * (0.86 + confidence_score * 0.14), 0, 99), 1)
+    score = round(clamp(raw_score * (0.88 + confidence_score * 0.12), 0, 99), 1)
 
     reasons = []
     if market_gap is None:
@@ -370,7 +371,7 @@ def build_discovery_signal(row: dict, northstar_rank: int) -> dict:
     elif market_gap >= 12:
         reasons.append(f"NORTHSTAR le place {market_gap} rangs avant le consensus")
     elif market_gap >= 5:
-        reasons.append(f"Ecart positif vs consensus: +{market_gap} rangs")
+        reasons.append(f"Écart positif vs consensus: +{market_gap} rangs")
     if rare_tool_count:
         reasons.append(f"{rare_tool_count} outil(s) rares à 8.5+/10")
     if peak_tool[1] >= 8.8:
@@ -378,9 +379,9 @@ def build_discovery_signal(row: dict, northstar_rank: int) -> dict:
     if development >= 8.3:
         reasons.append(f"Arc de développement explosif: {development:.1f}/10")
     if competition >= 8.3:
-        reasons.append(f"Preuve vs competition forte: {competition:.1f}/10")
+        reasons.append(f"Preuve vs compétition forte: {competition:.1f}/10")
     if not reasons:
-        reasons.append("Profil calibre par le marche actuel")
+        reasons.append("Profil calibré par le marché actuel")
 
     return {
         "score": score,
@@ -435,6 +436,7 @@ def build_year(year: int) -> int:
         photo_entry = photos_map.get(slug, {})
         photo_url = photo_entry.get("local") or f"./images/players/{year}/{slug}.svg"
         player_eval = (_load_evaluations().get("players") or {}).get(canonical_key(p["Nom"]), {})
+        base_score = round(spi, 2)
         staged.append({
             "id": slug,
             "draftYear": year,
@@ -445,7 +447,8 @@ def build_year(year: int) -> int:
             "shoots": p["Tire"],
             "country": p["Pays"],
             "photoUrl": photo_url,
-            "overall": spi,
+            "overall": base_score,
+            "baseNorthstarScore": base_score,
             "isOverAge": bool(
                 (scores or {}).get("is_over_age")
                 or p.get("Is_Over_Age")
@@ -468,27 +471,42 @@ def build_year(year: int) -> int:
             "analysis": analysis,
         })
 
-    # Rank strictly by SPI descending (tie-break: name)
-    staged.sort(key=lambda x: (-x["overall"], x["name"]))
+    # First pass: rank the pure talent model, then re-score everyone with
+    # NORTHSTAR Discovery Rating (NDR), which rewards star tools the market may miss.
+    staged.sort(key=lambda x: (-x["baseNorthstarScore"], x["name"]))
+    for base_rank, row in enumerate(staged, 1):
+        row["baseNorthstarRank"] = base_rank
+        row["rank"] = base_rank
+
+    for row in staged:
+        discovery_signal = build_discovery_signal(row, row["baseNorthstarRank"])
+        row["discoverySignal"] = discovery_signal
+        row["overall"] = discovery_signal["score"]
+    staged.sort(key=lambda x: (-x["overall"], -x["baseNorthstarScore"], x["name"]))
+    for discovery_rank, row in enumerate(staged, 1):
+        row["rank"] = discovery_rank
+
     enriched = []
-    for spi_rank, row in enumerate(staged, 1):
+    for discovery_rank, row in enumerate(staged, 1):
         cr = row["consensusRank"]
-        delta_val = (cr - spi_rank) if cr is not None else None
-        ea_tier = ea_tier_for_player(row["overall"], row["position"], draft_rank=spi_rank)
+        delta_val = (cr - discovery_rank) if cr is not None else None
+        discovery_signal = build_discovery_signal(row, row["baseNorthstarRank"])
+        row["overall"] = discovery_signal["score"]
+        ea_tier = ea_tier_for_player(row["overall"], row["position"], draft_rank=discovery_rank)
         projection_fr = ea_projection_for_player(
-            row["overall"], row["position"], lang="fr", draft_rank=spi_rank
+            row["overall"], row["position"], lang="fr", draft_rank=discovery_rank
         )
         projection_en = ea_projection_for_player(
-            row["overall"], row["position"], lang="en", draft_rank=spi_rank
+            row["overall"], row["position"], lang="en", draft_rank=discovery_rank
         )
         analysis = dict(row["analysis"])
         analysis["projection"] = projection_fr
-        discovery_signal = build_discovery_signal(row, spi_rank)
         enriched.append({
             **row,
-            "rank": spi_rank,
-            "northstarRank": spi_rank,
-            "apexRank": spi_rank,
+            "rank": discovery_rank,
+            "northstarRank": discovery_rank,
+            "apexRank": discovery_rank,
+            "baseNorthstarRank": row["baseNorthstarRank"],
             "consensusDelta": delta_val,
             "tier": ea_tier["tierLabel"],
             "eaTier": ea_tier["eaTier"],

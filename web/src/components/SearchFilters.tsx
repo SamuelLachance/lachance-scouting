@@ -77,7 +77,7 @@ export default function SearchFilters(props: SearchFiltersProps) {
         <Select label="Tier" value={props.tier} onChange={props.onTierChange} options={["ALL", ...props.tiers]} />
         <div>
           <label className="block text-[10px] uppercase tracking-wide text-slate-500 mb-1">
-            SPI min: {props.minScore}
+            NDR min: {props.minScore}
           </label>
           <input
             type="range"

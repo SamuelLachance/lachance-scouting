@@ -137,7 +137,7 @@ function CompareTable({
   const discoveryB = getDiscoverySignal(b);
   const rows = [
     { label: "Rang NORTHSTAR", a: `#${a.rank}`, b: `#${b.rank}`, diff: a.rank - b.rank },
-    { label: "SPI", a: a.overall.toFixed(1), b: b.overall.toFixed(1), diff: a.overall - b.overall },
+    { label: "NDR", a: a.overall.toFixed(1), b: b.overall.toFixed(1), diff: a.overall - b.overall },
     { label: "Discovery", a: discoveryA.score.toFixed(1), b: discoveryB.score.toFixed(1), diff: discoveryA.score - discoveryB.score },
     { label: "Position", a: a.position, b: b.position, diff: null },
     { label: "Pays", a: `${COUNTRY_FLAGS[a.country] ?? ""} ${a.country}`, b: `${COUNTRY_FLAGS[b.country] ?? ""} ${b.country}`, diff: null },

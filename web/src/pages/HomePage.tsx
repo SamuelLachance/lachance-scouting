@@ -51,7 +51,7 @@ export default function HomePage() {
           Classement NORTHSTAR Discovery
         </h2>
         <p className="text-slate-500 text-sm">
-          Star Probability Index + marché inefficace — {players.length} prospects analysés sans dépendre du consensus public
+          NORTHSTAR Discovery Rating — {players.length} prospects reclassés pour détecter les futures étoiles avant le consensus public
         </p>
       </div>
 

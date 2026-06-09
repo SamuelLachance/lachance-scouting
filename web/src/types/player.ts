@@ -47,6 +47,8 @@ export interface Player {
   country: string;
   photoUrl?: string;
   overall: number;
+  baseNorthstarScore?: number;
+  baseNorthstarRank?: number;
   starTier?: string;
   reportCoverage?: string;
   consensusRank: number | null;

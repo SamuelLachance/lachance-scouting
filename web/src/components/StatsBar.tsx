@@ -19,7 +19,7 @@ export default function StatsBar({ total, elite, firstRound, avgScore, avgDiscov
     { icon: Globe, label: "Pays", value: countries, color: "text-purple-400" },
     {
       icon: TrendingUp,
-      label: "SPI moy.",
+      label: "NDR moy.",
       value: avgScore.toFixed(1),
       color: "text-ice-300",
     },

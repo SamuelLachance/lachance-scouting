@@ -212,6 +212,7 @@ function discoveryClass(s) {
 function discoverySignal(p) {
   if (p.discoverySignal) return p.discoverySignal;
   const sk = p.skills || {};
+  const baseScore = p.baseNorthstarScore || p.overall;
   const upsideCore =
     (sk.starCeiling || 5) * 3 +
     (sk.hockeyIQ || 5) * 1.8 +
@@ -222,7 +223,7 @@ function discoverySignal(p) {
   const marketGap = p.consensusRank ? p.consensusRank - p.rank : null;
   const marketBoost = marketGap == null ? 8 : Math.max(-10, Math.min(22, marketGap * 0.45));
   const rareToolCount = Object.values(sk).filter(v => v >= 8.5).length;
-  const score = Math.max(0, Math.min(99, p.overall * 0.42 + upsideCore * 0.34 + marketBoost + rareToolCount * 2));
+  const score = Math.max(0, Math.min(99, baseScore * 0.62 + upsideCore * 0.38 + marketBoost + rareToolCount * 2));
   return {
     score: Number(score.toFixed(1)),
     label: score >= 75 ? 'Diamant sous-évalué' : score >= 65 ? 'Upside à surveiller' : 'Signal latent',
@@ -372,7 +373,7 @@ function renderHome() {
 
   return `${header('home')}<main class="fade-in">
     <h2 class="page-title">Classement NORTHSTAR Discovery · ${draftYear}</h2>
-    <p class="page-sub">Star Probability Index + marché inefficace — détecter les futurs joueurs d'impact avant le consensus public</p>
+    <p class="page-sub">NORTHSTAR Discovery Rating — tous les prospects reclassés pour détecter les futures étoiles avant le consensus public</p>
 
     <div class="stats-grid">
       <div class="glass stat-card"><div class="stat-label">Prospects</div><div class="stat-value" style="color:var(--ice-400)">${stats.total}</div></div>
@@ -380,7 +381,7 @@ function renderHome() {
       <div class="glass stat-card"><div class="stat-label">Franchise</div><div class="stat-value" style="color:var(--gold)">${stats.franchise}</div></div>
       <div class="glass stat-card"><div class="stat-label">Élite</div><div class="stat-value" style="color:#34d399">${stats.elite}</div></div>
       <div class="glass stat-card"><div class="stat-label">Pays</div><div class="stat-value" style="color:#a78bfa">${stats.countries}</div></div>
-      <div class="glass stat-card"><div class="stat-label">SPI moyen</div><div class="stat-value" style="color:var(--ice-400)">${stats.avg}</div></div>
+      <div class="glass stat-card"><div class="stat-label">NDR moyen</div><div class="stat-value" style="color:var(--ice-400)">${stats.avg}</div></div>
       <div class="glass stat-card"><div class="stat-label">Discovery moy.</div><div class="stat-value" style="color:#34d399">${stats.avgDiscovery}</div></div>
     </div>
 
@@ -390,7 +391,7 @@ function renderHome() {
         <select id="f-country"><option value="ALL">Tous pays</option>${countries.map(c => `<option value="${c}" ${state.country===c?'selected':''}>${FLAGS[c]||''} ${c}</option>`).join('')}</select>
         <select id="f-tier"><option value="ALL">Tous tiers</option>${tiers.map(t => `<option value="${t}" ${state.tier===t?'selected':''}>${t}</option>`).join('')}</select>
         <div style="flex:1;min-width:140px">
-          <label style="font-size:10px;color:#64748b;text-transform:uppercase">SPI min: <span id="min-label">${state.minScore}</span></label>
+          <label style="font-size:10px;color:#64748b;text-transform:uppercase">NDR min: <span id="min-label">${state.minScore}</span></label>
           <input type="range" id="f-min" min="0" max="95" step="5" value="${state.minScore}" style="width:100%;accent-color:var(--ice-500)" />
         </div>
         <div style="flex:1;min-width:150px">
@@ -410,7 +411,7 @@ function renderHome() {
         <thead><tr>
           <th>#</th><th>Joueur</th><th class="hidden-sm">Pos</th><th class="hidden-md">Taille</th>
           <th class="hidden-md">Pays</th><th class="hidden-sm">Projection</th>
-          <th class="hidden-md">Signal caché</th><th style="text-align:right">SPI</th>
+          <th class="hidden-md">Signal caché</th><th style="text-align:right">NDR</th>
         </tr></thead>
         <tbody>${pageItems.map(p => `
           <tr onclick="location.hash='/${draftYear}/player/${p.id}'">
@@ -485,7 +486,7 @@ function renderPlayer(id) {
         <div>
           <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px">
             <span class="rank-gold" style="font-size:13px">#${p.rank} NORTHSTAR</span>
-            <span style="font-size:12px;color:#64748b;font-family:var(--font-mono)">SPI ${p.overall.toFixed(1)}${p.consensusRank ? ` · Cons. #${p.consensusRank}` : ''}</span>
+            <span style="font-size:12px;color:#64748b;font-family:var(--font-mono)">NDR ${p.overall.toFixed(1)}${p.baseNorthstarScore ? ` · Talent ${Number(p.baseNorthstarScore).toFixed(1)}` : ''}${p.consensusRank ? ` · Cons. #${p.consensusRank}` : ''}</span>
             ${p.isOverAge ? `<span style="font-size:11px;color:#fb7185;font-family:var(--font-mono);padding:2px 8px;border:1px solid rgba(251,113,133,.35);border-radius:6px" title="Éligible 2025, non repêché">Over-age · -${(p.overAgePenalty || 0).toFixed(0)} SPI</span>` : ''}
             <span class="tier ${tierClass(p.tier)}" title="${p.eaTier || p.tier}">${p.tier}</span>
             ${discoveryPill(d)}
@@ -527,7 +528,7 @@ function renderPlayer(id) {
       ${skillBars}
       <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06)">
         <div style="display:flex;justify-content:space-between;align-items:center">
-          <span style="color:#64748b;font-size:14px">Star Probability Index</span>
+          <span style="color:#64748b;font-size:14px">NORTHSTAR Discovery Rating</span>
           <span class="${scoreClass(p.overall)}" style="font-size:1.75rem">${p.overall.toFixed(1)}/100</span>
         </div>
         ${p.isOverAge ? `<p style="margin:10px 0 0;font-size:13px;color:#fb7185">Pénalité over-age : -${(p.overAgePenalty || 0).toFixed(1)} SPI${p.spiBeforePenalty != null ? ` (avant pénalité : ${Number(p.spiBeforePenalty).toFixed(1)})` : ''}</p>` : ''}
@@ -587,7 +588,7 @@ function renderCompare(aId, bId) {
           <tr><td style="color:#94a3b8">Tier EA</td><td><span class="tier ${tierClass(a.tier)}" title="${esc(a.eaTier || a.tier)}">${esc(a.tier)}</span></td><td><span class="tier ${tierClass(b.tier)}" title="${esc(b.eaTier || b.tier)}">${esc(b.tier)}</span></td><td></td></tr>
           <tr><td style="color:#94a3b8">Projection</td><td>${esc(a.projection || a.tier || '—')}</td><td>${esc(b.projection || b.tier || '—')}</td><td></td></tr>
           <tr><td style="color:#94a3b8">Consensus</td><td>${a.consensusRank?'#'+a.consensusRank:'—'}</td><td>${b.consensusRank?'#'+b.consensusRank:'—'}</td><td></td></tr>
-          <tr><td style="color:#94a3b8">SPI</td><td>${a.overall.toFixed(1)}</td><td>${b.overall.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.overall>b.overall?'#34d399':'#fb7185'}">${(a.overall-b.overall).toFixed(1)}</td></tr>
+          <tr><td style="color:#94a3b8">NDR</td><td>${a.overall.toFixed(1)}</td><td>${b.overall.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.overall>b.overall?'#34d399':'#fb7185'}">${(a.overall-b.overall).toFixed(1)}</td></tr>
           <tr><td style="color:#94a3b8">Discovery</td><td>${discoveryPill(da)}</td><td>${discoveryPill(db)}</td><td style="text-align:right;font-family:var(--font-mono);color:${da.score>db.score?'#34d399':'#fb7185'}">${(da.score-db.score).toFixed(1)}</td></tr>
           ${rows}
         </tbody></table>
@@ -668,7 +669,7 @@ function renderSearchDropdown(matches, highlight) {
     '<span class="search-result-rank">#' + p.rank + '</span>' +
     '<span class="search-result-body">' +
     '<span class="search-result-name">' + esc(p.name) + '</span>' +
-    '<span class="search-result-meta">' + p.position + ' · ' + (FLAGS[p.country] || '') + ' ' + p.country + ' · SPI ' + p.overall.toFixed(1) + '</span>' +
+    '<span class="search-result-meta">' + p.position + ' · ' + (FLAGS[p.country] || '') + ' ' + p.country + ' · NDR ' + p.overall.toFixed(1) + '</span>' +
     '</span></button>'
   ).join('');
   dropdown.classList.add('open');
