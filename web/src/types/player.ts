@@ -22,6 +22,8 @@ export interface DiscoverySignal {
   confidence: number;
   confidenceLabel: string;
   reasons: string[];
+  marketAlpha?: number;
+  spiPremiumCap?: number;
 }
 
 export interface PlayerAnalysis {

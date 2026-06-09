@@ -775,7 +775,7 @@ def main():
             p.full_name, p.pos, p.height, p.weight, p.country, None,
             player_key=p.key, rankings_dob=dob_str,
         )
-        overall = northstar_overall(scores)
+        overall = northstar_overall(scores, position=p.pos)
         ns_items.append({"p": p, "cr": cr, "scores": scores, "overall": overall})
 
     ns_items.sort(key=lambda x: (-x["overall"], x["p"].full_name))

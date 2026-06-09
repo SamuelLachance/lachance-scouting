@@ -373,7 +373,7 @@ function renderHome() {
 
   return `${header('home')}<main class="fade-in">
     <h2 class="page-title">Classement NORTHSTAR Discovery · ${draftYear}</h2>
-    <p class="page-sub">NORTHSTAR Discovery Rating — tous les prospects reclassés pour détecter les futures étoiles avant le consensus public</p>
+    <p class="page-sub">NORTHSTAR TRUTH — évaluation scientifique multi-sources avec détection d'upside sous-évalué (bornes SPI)</p>
 
     <div class="stats-grid">
       <div class="glass stat-card"><div class="stat-label">Prospects</div><div class="stat-value" style="color:var(--ice-400)">${stats.total}</div></div>

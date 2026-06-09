@@ -1,10 +1,10 @@
 """
-NORTHSTAR — NHL Outcome Rating Through Scouting Heuristics And Report Text
+NORTHSTAR TRUTH — NHL Outcome Rating Through Scouting Heuristics And Report Text
 
-Modèle refondu de zéro : chaque joueur est évalué à partir de son rapport
-de scouting (DPH) + signaux contextuels. Objectif : probabilité d'étoile NHL.
+Scientific prospect valuation: Bayesian multi-source fusion, age-adjusted
+production, source attribution verification, and risk-adjusted discovery.
 
-7 piliers /10 → score NORTHSTAR /100 (Star Probability Index)
+7 piliers /10 → score TRUTH SPI /100 (Star Probability Index)
 """
 from __future__ import annotations
 
@@ -16,6 +16,17 @@ from typing import Any
 
 from draft_config import DEFAULT_DRAFT_YEAR, paths_for_year
 from over_age import apply_over_age_spi_penalty, over_age_status
+from truth_engine import (
+    age_adjusted_production_score,
+    bayesian_merge_pillars,
+    compute_cross_source_agreement,
+    compute_evidence_confidence,
+    deduplicate_contributions,
+    pillar_weights_for_position,
+    truth_lex_score,
+    truth_spi,
+    verify_source_attribution,
+)
 
 BASE = Path(__file__).parent
 _paths = paths_for_year(DEFAULT_DRAFT_YEAR)
@@ -194,14 +205,18 @@ def _text_blob(report: dict) -> str:
 
 def _lex_score(dim: str, text: str) -> tuple[float, list[str]]:
     """Score 0-10 from keyword hits + evidence snippets."""
-    hits: list[str] = []
-    raw = 5.0
-    for pattern, weight in LEX.get(dim, []):
-        if re.search(pattern, text, re.I):
-            raw += weight
-            hits.append(pattern.replace(".", " ").replace("\\", ""))
-    raw = max(1.0, min(10.0, raw))
-    return raw, hits[:5]
+
+    def _base_lex(d: str, t: str) -> tuple[float, list[str]]:
+        hits: list[str] = []
+        raw = 5.0
+        for pattern, weight in LEX.get(d, []):
+            if re.search(pattern, t, re.I):
+                raw += weight
+                hits.append(pattern.replace(".", " ").replace("\\", ""))
+        raw = max(1.0, min(10.0, raw))
+        return raw, hits[:5]
+
+    return truth_lex_score(dim, text, _base_lex)
 
 
 def _grade_score(grade: str) -> float:
@@ -217,26 +232,16 @@ def _league_score(league: str, text: str) -> float:
     return best
 
 
-def _production_score(stats: dict, pos: str) -> float:
-    gp = stats.get("gp")
-    pts = stats.get("pts")
-    if not gp or not pts or gp <= 0:
-        return 5.5
-    rate = pts / gp
-    is_g = pos.upper() in ("G", "GK")
-    if is_g:
-        return 5.5
-    if rate >= 1.3:
-        return 9.5
-    if rate >= 1.0:
-        return 8.5
-    if rate >= 0.7:
-        return 7.5
-    if rate >= 0.5:
-        return 6.5
-    if rate >= 0.3:
-        return 5.5
-    return 4.5
+def _production_score(
+    stats: dict,
+    pos: str,
+    *,
+    league: str = "",
+    dob: str = "",
+) -> float:
+    return age_adjusted_production_score(
+        stats, league, pos, dob=dob, draft_year=DEFAULT_DRAFT_YEAR,
+    )
 
 
 def _dph_rank_score(rank: int | None) -> float:
@@ -1260,7 +1265,9 @@ def pillars_from_text_blob(
                 grade = min(10, grade + boost * 0.15)
 
     league = _league_score(report.get("league", ""), blob)
-    prod = _production_score(stats, pos)
+    prod = _production_score(
+        stats, pos, league=report.get("league", ""), dob=report.get("dob", ""),
+    )
     dph_r = _dph_rank_score(report.get("dph_rank"))
     dims = _merge_scores(lex, grade, league, prod, dph_r, pos)
     if apply_coverage and report:
@@ -1296,7 +1303,7 @@ def pillars_from_stats_heuristic(
     weight: str,
 ) -> dict[str, float]:
     """Tier-4 production / physical signals when scouting text is absent."""
-    prod = _production_score(stats, pos)
+    prod = _production_score(stats, pos, league=league)
     league_s = _league_score(league, league)
     dims = pillars_from_consensus_rank(None, pos)
     dims["offensive_star_power"] = round(prod * 0.6 + dims["offensive_star_power"] * 0.4, 1)
@@ -1327,6 +1334,8 @@ def apply_physical_adjustments(
 
 def weighted_merge_sources(
     contributions: list[dict[str, Any]],
+    *,
+    position: str = "F",
 ) -> tuple[dict[str, float], dict[str, list[str]], list[dict], str]:
     """
     Merge per-source pillar scores with reliability weights + redistribution.
@@ -1344,14 +1353,7 @@ def weighted_merge_sources(
         neutral = {k: 5.0 for k in NORTHSTAR_WEIGHTS}
         return neutral, {}, [], "none"
 
-    # Deduplicate by source_id — keep highest-quality contribution per source
-    best: dict[str, dict[str, Any]] = {}
-    for c in contributions:
-        sid = c["source_id"]
-        q = float(c.get("quality", 1.0))
-        if sid not in best or q > float(best[sid].get("quality", 0)):
-            best[sid] = c
-    merged_contribs = list(best.values())
+    merged_contribs = deduplicate_contributions(contributions)
 
     pool = SOURCE_RELIABILITY_WEIGHTS
     fallback = pool.get("web_scouting", 1.0 / max(len(pool), 1))
@@ -1362,6 +1364,7 @@ def weighted_merge_sources(
 
     raw_weights: list[float] = []
     substantive = 0
+    attributions: list[float] = []
     for c in merged_contribs:
         sid = c["source_id"]
         text_q = c.get("text_quality")
@@ -1370,7 +1373,9 @@ def weighted_merge_sources(
         elif text_q is None:
             text_q = float(c.get("quality", 1.0))
         combined_q = max(0.30, min(1.0, float(text_q)))
-        rel_eff = reliability_effective.get(sid, fallback)
+        attr = verify_source_attribution(sid, c.get("url", ""))
+        attributions.append(attr)
+        rel_eff = reliability_effective.get(sid, fallback) * max(0.40, attr)
         w = source_weight(sid, quality=combined_q, reliability_effective=rel_eff)
         raw_weights.append(w)
         c["_combined_quality"] = round(combined_q, 3)
@@ -1378,13 +1383,15 @@ def weighted_merge_sources(
         c["_redistributed_share"] = round(redist_per_source, 6)
         c["_reliability_effective"] = round(rel_eff, 6)
         c["_effective_weight"] = round(w, 6)
+        c["_attribution"] = round(attr, 3)
         if c.get("snippet") or c.get("evidence"):
             substantive += 1
 
     total_w = sum(raw_weights) or 1.0
     n_sources = len(merged_contribs)
+    pos = merged_contribs[0].get("position", position) if merged_contribs else position
+    final, _uncertainty = bayesian_merge_pillars(merged_contribs, raw_weights, pos)
 
-    final: dict[str, float] = {}
     merged_ev: dict[str, list[str]] = {k: [] for k in NORTHSTAR_WEIGHTS}
     source_mix: list[dict] = []
 
@@ -1403,12 +1410,17 @@ def weighted_merge_sources(
             "quality": c.get("_combined_quality", round(float(c.get("quality", 1.0)), 2)),
             "effective_weight": c["_effective_weight"],
             "weight_share": round(share, 4),
+            "attribution": c.get("_attribution", 1.0),
             "pillars": {k: c["pillars"].get(k, 5.0) for k in NORTHSTAR_WEIGHTS},
         }
         if c.get("url"):
             mix_entry["url"] = c["url"]
         if c.get("snippet"):
             mix_entry["snippet"] = c["snippet"][:200]
+        if c.get("duplicate_penalty"):
+            mix_entry["duplicate_penalty"] = True
+        if c.get("attribution_penalty"):
+            mix_entry["attribution_penalty"] = True
         mix_entry["pillar_contribution"] = {
             dim: round(mix_entry["pillars"][dim] * share, 3)
             for dim in NORTHSTAR_WEIGHTS
@@ -1416,13 +1428,6 @@ def weighted_merge_sources(
         source_mix.append(mix_entry)
         for dim in NORTHSTAR_WEIGHTS:
             merged_ev[dim].extend((c.get("evidence") or {}).get(dim, [])[:3])
-
-    for dim in NORTHSTAR_WEIGHTS:
-        num = sum(
-            c["pillars"].get(dim, 5.0) * w
-            for c, w in zip(merged_contribs, raw_weights)
-        )
-        final[dim] = round(min(10, max(1, num / total_w)), 1)
 
     source_mix.sort(key=lambda x: -x["weight_share"])
     cov = confidence_from_source_count(n_sources, substantive)
@@ -1515,7 +1520,12 @@ def _scores_from_evaluation(
             rationales[dim] = p["rationale"]
 
     cov = evaluation.get("confidence") or evaluation.get("report_coverage") or "partial"
-    raw_spi = northstar_overall(dims) * _confidence_multiplier(cov)
+    n_src = len(evaluation.get("source_mix") or [])
+    conf_score, _ = compute_evidence_confidence(
+        n_src, max(1, n_src // 2), cov, 0.85, 0.65,
+    )
+    raw_spi = truth_spi(dims, pos, confidence=conf_score, agreement=0.65)
+    raw_spi *= _confidence_multiplier(cov)
     overall, oa_meta = _apply_over_age_to_spi(
         raw_spi, full_name, country, rankings_dob=rankings_dob,
     )
@@ -1627,7 +1637,9 @@ def northstar_generate(
     if h <= 69 and "D" not in pos.upper():
         dims["star_ceiling"] = max(1, dims["star_ceiling"] - 0.3)
 
-    raw_spi = northstar_overall(dims) * _confidence_multiplier(cov)
+    conf_score, _ = compute_evidence_confidence(1, 1 if cov == "full" else 0, cov, 1.0, 0.5)
+    raw_spi = truth_spi(dims, pos, confidence=conf_score, agreement=0.5)
+    raw_spi *= _confidence_multiplier(cov)
     overall, oa_meta = _apply_over_age_to_spi(
         raw_spi, full_name, country, rankings_dob=rankings_dob,
     )
@@ -1668,13 +1680,14 @@ def northstar_generate(
     return scores
 
 
-def northstar_overall(scores: dict) -> float:
+def northstar_overall(scores: dict, *, position: str = "F") -> float:
     if "spi" in scores:
         return float(scores["spi"])
-    total = 0.0
-    for k, w in NORTHSTAR_WEIGHTS.items():
-        total += scores.get(k, 5.0) * w * 10
-    return round(min(99.9, max(0, total)), 2)
+    pos = scores.get("position") or position
+    conf = float(scores.get("evidence_confidence", 0.75))
+    agree = float(scores.get("source_agreement", 0.55))
+    dims = {k: scores.get(k, 5.0) for k in NORTHSTAR_WEIGHTS}
+    return truth_spi(dims, pos, confidence=conf, agreement=agree)
 
 
 # Alias compatibilité temporaire

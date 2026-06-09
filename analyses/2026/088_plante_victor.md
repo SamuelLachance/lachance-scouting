@@ -14,14 +14,14 @@
 | **Rang FINAL (NORTHSTAR)** | **#88** |
 | Rang NORTHSTAR (score pur) | #88 |
 | Rang consensus public | 51 |
-| **Star Probability Index** | **51.5/100** |
+| **Star Probability Index** | **48.32/100** |
 | Tier étoile estimé | Profondeur / tweener |
 
 ## Résumé exécutif
-Victor Plante (LW) — évaluation NORTHSTAR détaillée (confiance: partial). SPI: 51.5/100 (Profondeur / tweener).
+Victor Plante (LW) — évaluation NORTHSTAR détaillée (confiance: partial). SPI: 48.32/100 (Profondeur / tweener).
 
 ## Thèse star NORTHSTAR
-NORTHSTAR estime Victor Plante à 51.5/100 pour devenir une étoile NHL (Profondeur / tweener). Pilier dominant: plafond étoile 5.4/10.
+NORTHSTAR estime Victor Plante à 48.32/100 pour devenir une étoile NHL (Profondeur / tweener). Pilier dominant: plafond étoile 5.4/10.
 
 ## Grille NORTHSTAR (7 piliers — basée sur rapports scouting)
 
@@ -30,39 +30,39 @@ NORTHSTAR estime Victor Plante à 51.5/100 pour devenir une étoile NHL (Profond
 | Plafond étoile NHL ★ | 5.4 | 35% | 18.90 |
 | IQ / processing élite | 5.5 | 18% | 9.90 |
 | Moteur de patinage | 5.4 | 15% | 8.10 |
-| Pouvoir offensif star | 5.7 | 12% | 6.84 |
-| Preuve vs compétition | 5.7 | 10% | 5.70 |
+| Pouvoir offensif star | 5.6 | 12% | 6.72 |
+| Preuve vs compétition | 5.6 | 10% | 5.60 |
 | Compétitivité / caractère | 5.3 | 5% | 2.65 |
 | Arc de développement | 5.4 | 5% | 2.70 |
 
-**STAR PROBABILITY INDEX: 51.5/100**
+**STAR PROBABILITY INDEX: 48.32/100**
 
 ## Justification détaillée des notes
 
 ### Plafond étoile NHL ★ — 5.4/10
-**5.4/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (35%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (34%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
+**5.4/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (35%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (33%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
 
 ### IQ / processing élite — 5.5/10
-**5.5/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (18%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (34%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
+**5.5/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (18%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (33%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
 
 ### Moteur de patinage — 5.4/10
-**5.4/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (15%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (34%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
+**5.4/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (15%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (33%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
 
-### Pouvoir offensif star — 5.7/10
-**5.7/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (12%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (34%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
+### Pouvoir offensif star — 5.6/10
+**5.6/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (12%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (33%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
 
-### Preuve vs compétition — 5.7/10
-**5.7/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (10%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (34%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
+### Preuve vs compétition — 5.6/10
+**5.6/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (10%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (33%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
 
 ### Compétitivité / caractère — 5.3/10
-**5.3/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (34%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
+**5.3/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (33%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
 
 ### Arc de développement — 5.4/10
-**5.4/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (34%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
+**5.4/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (33%), Public consensus rankings (33%), Production / stats heuristic (33%). Confiance: couverture partielle.
 
 ## Forces (signaux star)
-- Pouvoir offensif star — 5.7/10 (très faible)
-- Preuve vs compétition — 5.7/10 (très faible)
+- Pouvoir offensif star — 5.6/10 (très faible)
+- Preuve vs compétition — 5.6/10 (très faible)
 - IQ / processing élite — 5.5/10 (très faible)
 
 ## Faiblesses / risques

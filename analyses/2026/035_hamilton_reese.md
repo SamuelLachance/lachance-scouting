@@ -14,62 +14,62 @@
 | **Rang FINAL (NORTHSTAR)** | **#35** |
 | Rang NORTHSTAR (score pur) | #35 |
 | Rang consensus public | 100 |
-| **Star Probability Index** | **56.15/100** |
-| Tier étoile estimé | NHL régulier |
+| **Star Probability Index** | **52.51/100** |
+| Tier étoile estimé | Profondeur / tweener |
 
 ## Résumé exécutif
 A middle-rounds center in the WHL with translatable NHL tools. Currently with Red Deer.
 
 ## Thèse star NORTHSTAR
-NORTHSTAR estime Reese Hamilton à 56.15/100 pour devenir une étoile NHL (NHL régulier). Pilier dominant: plafond étoile 5.6/10.
+NORTHSTAR estime Reese Hamilton à 52.51/100 pour devenir une étoile NHL (Profondeur / tweener). Pilier dominant: plafond étoile 5.5/10.
 
 ## Grille NORTHSTAR (7 piliers — basée sur rapports scouting)
 
 | Dimension | Note /10 | Poids | Score |
 |-----------|----------|-------|-------|
-| Plafond étoile NHL ★ | 5.6 | 35% | 19.60 |
+| Plafond étoile NHL ★ | 5.5 | 35% | 19.25 |
 | IQ / processing élite | 5.3 | 18% | 9.54 |
-| Moteur de patinage | 5.6 | 15% | 8.40 |
-| Pouvoir offensif star | 5.8 | 12% | 6.96 |
-| Preuve vs compétition | 6.2 | 10% | 6.20 |
+| Moteur de patinage | 5.5 | 15% | 8.25 |
+| Pouvoir offensif star | 5.6 | 12% | 6.72 |
+| Preuve vs compétition | 6.0 | 10% | 6.00 |
 | Compétitivité / caractère | 5.1 | 5% | 2.55 |
-| Arc de développement | 5.8 | 5% | 2.90 |
+| Arc de développement | 5.5 | 5% | 2.75 |
 
-**STAR PROBABILITY INDEX: 56.15/100**
+**STAR PROBABILITY INDEX: 52.51/100**
 
 ## Justification détaillée des notes
 
-### Plafond étoile NHL ★ — 5.6/10
-**5.6/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (35%). Signaux: «project». Sources pondérées: DPH grade & tags (17%), DPH scouting report body (16%), DPH listed strengths (15%), DPH NHL projection (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
+### Plafond étoile NHL ★ — 5.5/10
+**5.5/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (35%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (19%), Public consensus rankings (19%), Production / stats heuristic (19%), DPH grade & tags (11%), DPH scouting report body (11%). Confiance: multi-sources substantielles.
 
 ### IQ / processing élite — 5.3/10
-**5.3/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (18%). Signaux: inférence contextuelle. Sources pondérées: DPH grade & tags (17%), DPH scouting report body (16%), DPH listed strengths (15%), DPH NHL projection (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
+**5.3/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (18%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (19%), Public consensus rankings (19%), Production / stats heuristic (19%), DPH grade & tags (11%), DPH scouting report body (11%). Confiance: multi-sources substantielles.
 
-### Moteur de patinage — 5.6/10
-**5.6/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (15%). Signaux: inférence contextuelle. Sources pondérées: DPH grade & tags (17%), DPH scouting report body (16%), DPH listed strengths (15%), DPH NHL projection (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
+### Moteur de patinage — 5.5/10
+**5.5/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (15%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (19%), Public consensus rankings (19%), Production / stats heuristic (19%), DPH grade & tags (11%), DPH scouting report body (11%). Confiance: multi-sources substantielles.
 
-### Pouvoir offensif star — 5.8/10
-**5.8/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (12%). Signaux: inférence contextuelle. Sources pondérées: DPH grade & tags (17%), DPH scouting report body (16%), DPH listed strengths (15%), DPH NHL projection (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
+### Pouvoir offensif star — 5.6/10
+**5.6/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (12%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (19%), Public consensus rankings (19%), Production / stats heuristic (19%), DPH grade & tags (11%), DPH scouting report body (11%). Confiance: multi-sources substantielles.
 
-### Preuve vs compétition — 6.2/10
-**6.2/10 — Faible** (star path improbable). Pilier NORTHSTAR (10%). Signaux: «whl». Sources pondérées: DPH grade & tags (17%), DPH scouting report body (16%), DPH listed strengths (15%), DPH NHL projection (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
+### Preuve vs compétition — 6.0/10
+**6.0/10 — Faible** (star path improbable). Pilier NORTHSTAR (10%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (19%), Public consensus rankings (19%), Production / stats heuristic (19%), DPH grade & tags (11%), DPH scouting report body (11%). Confiance: multi-sources substantielles.
 
 ### Compétitivité / caractère — 5.1/10
-**5.1/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: DPH grade & tags (17%), DPH scouting report body (16%), DPH listed strengths (15%), DPH NHL projection (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
+**5.1/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (19%), Public consensus rankings (19%), Production / stats heuristic (19%), DPH grade & tags (11%), DPH scouting report body (11%). Confiance: multi-sources substantielles.
 
-### Arc de développement — 5.8/10
-**5.8/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: DPH grade & tags (17%), DPH scouting report body (16%), DPH listed strengths (15%), DPH NHL projection (15%), Rankings dimension profile (13%). Confiance: multi-sources substantielles.
+### Arc de développement — 5.5/10
+**5.5/10 — Très faible** (profil depth / bust). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: Rankings dimension profile (19%), Public consensus rankings (19%), Production / stats heuristic (19%), DPH grade & tags (11%), DPH scouting report body (11%). Confiance: multi-sources substantielles.
 
 ## Forces (signaux star)
 - Center-ice instincts
-- Preuve vs compétition — 6.2/10 (faible) : signaux «whl»
-- Pouvoir offensif star — 5.8/10 (très faible)
+- Preuve vs compétition — 6.0/10 (faible)
+- Pouvoir offensif star — 5.6/10 (très faible)
 
 ## Faiblesses / risques
 - Compétitivité / caractère (5.1/10) — pilier le moins élevé du profil; marge limitée vs l'élite NHL
 - IQ / processing élite (5.3/10) — pilier sous la moyenne du profil; traduction NHL à prouver
-- Plafond étoile NHL ★ (5.6/10) — pilier sous la moyenne du profil; traduction NHL à prouver
-- Moteur de patinage (5.6/10) — pilier sous la moyenne du profil; traduction NHL à prouver
+- Plafond étoile NHL ★ (5.5/10) — pilier sous la moyenne du profil; traduction NHL à prouver
+- Moteur de patinage (5.5/10) — pilier sous la moyenne du profil; traduction NHL à prouver
 
 ## Projection NHL
 Middle-six forward
