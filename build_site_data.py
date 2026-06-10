@@ -310,6 +310,11 @@ def discovery_confidence(row: dict) -> tuple[float, str]:
     return score, label
 
 
+def combined_rating(northstar_score: float, hidden_upside_score: float) -> float:
+    """Final site rating = average of pure NORTHSTAR SPI and hidden upside discovery score."""
+    return round((northstar_score + hidden_upside_score) / 2, 1)
+
+
 def build_discovery_signal(row: dict, northstar_rank: int) -> dict:
     """TRUTH Discovery — détecte l'upside sous-évalué avec bornes scientifiques."""
     skills = row.get("skills") or {}
@@ -420,7 +425,7 @@ def build_year(year: int) -> int:
         })
 
     # First pass: rank the pure talent model, then re-score everyone with
-    # NORTHSTAR Discovery Rating (NDR), which rewards star tools the market may miss.
+    # the average of NORTHSTAR SPI and hidden upside (discovery) rating.
     staged.sort(key=lambda x: (-x["baseNorthstarScore"], x["name"]))
     for base_rank, row in enumerate(staged, 1):
         row["baseNorthstarRank"] = base_rank
@@ -429,7 +434,7 @@ def build_year(year: int) -> int:
     for row in staged:
         discovery_signal = build_discovery_signal(row, row["baseNorthstarRank"])
         row["discoverySignal"] = discovery_signal
-        row["overall"] = discovery_signal["score"]
+        row["overall"] = combined_rating(row["baseNorthstarScore"], discovery_signal["score"])
     staged.sort(key=lambda x: (-x["overall"], -x["baseNorthstarScore"], x["name"]))
     for discovery_rank, row in enumerate(staged, 1):
         row["rank"] = discovery_rank
@@ -439,7 +444,7 @@ def build_year(year: int) -> int:
         cr = row["consensusRank"]
         delta_val = (cr - discovery_rank) if cr is not None else None
         discovery_signal = build_discovery_signal(row, row["baseNorthstarRank"])
-        row["overall"] = discovery_signal["score"]
+        row["overall"] = combined_rating(row["baseNorthstarScore"], discovery_signal["score"])
         ea_tier = ea_tier_for_player(row["overall"], row["position"], draft_rank=discovery_rank)
         projection_fr = ea_projection_for_player(
             row["overall"], row["position"], lang="fr", draft_rank=discovery_rank

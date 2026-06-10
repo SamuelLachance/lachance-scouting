@@ -372,8 +372,8 @@ function renderHome() {
     </div>` : '';
 
   return `${header('home')}<main class="fade-in">
-    <h2 class="page-title">Classement NORTHSTAR Discovery · ${draftYear}</h2>
-    <p class="page-sub">NORTHSTAR TRUTH — évaluation scientifique multi-sources avec détection d'upside sous-évalué (bornes SPI)</p>
+    <h2 class="page-title">Classement NORTHSTAR · ${draftYear}</h2>
+    <p class="page-sub">Rating final = moyenne NORTHSTAR + upside caché · détection d'étoiles avant le consensus public</p>
 
     <div class="stats-grid">
       <div class="glass stat-card"><div class="stat-label">Prospects</div><div class="stat-value" style="color:var(--ice-400)">${stats.total}</div></div>
@@ -411,16 +411,17 @@ function renderHome() {
         <thead><tr>
           <th>#</th><th>Joueur</th><th class="hidden-sm">Pos</th><th class="hidden-md">Taille</th>
           <th class="hidden-md">Pays</th><th class="hidden-sm">Projection</th>
-          <th class="hidden-md">Signal caché</th><th style="text-align:right">NDR</th>
+          <th class="hidden-md">NORTHSTAR</th><th class="hidden-md">Signal caché</th><th style="text-align:right">Score</th>
         </tr></thead>
         <tbody>${pageItems.map(p => `
           <tr onclick="location.hash='/${draftYear}/player/${p.id}'">
             <td><span class="${rankClass(p.rank)}">${p.rank}</span></td>
-            <td><strong>${esc(p.name)}</strong><div class="hidden-sm" style="font-size:11px;color:#64748b">${p.position} · ${p.height}</div></td>
+            <td><strong>${esc(p.name)}</strong><div class="hidden-sm" style="font-size:11px;color:#64748b">${p.position} · ${p.height} · Score ${p.overall.toFixed(1)}</div></td>
             <td class="hidden-sm"><span class="badge ${posBadge(p.position)}">${p.position}</span></td>
             <td class="hidden-md" style="font-family:var(--font-mono);font-size:12px;color:#94a3b8">${p.height} / ${p.weight}</td>
             <td class="hidden-md">${FLAGS[p.country]||'🏳️'} ${p.country}</td>
             <td class="hidden-sm"><span class="tier projection-cell ${tierClass(p.tier)}" title="${esc(p.eaTier || p.tier)}">${esc(p.projection || p.tier)}</span></td>
+            <td class="hidden-md" style="text-align:right;font-family:var(--font-mono)"><span class="${scoreClass(p.baseNorthstarScore || p.overall)}">${Number(p.baseNorthstarScore || p.overall).toFixed(1)}</span></td>
             <td class="hidden-md">${discoveryPill(discoverySignal(p))}</td>
             <td style="text-align:right"><span class="${scoreClass(p.overall)}">${p.overall.toFixed(1)}</span></td>
           </tr>`).join('')}
@@ -486,7 +487,7 @@ function renderPlayer(id) {
         <div>
           <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px">
             <span class="rank-gold" style="font-size:13px">#${p.rank} NORTHSTAR</span>
-            <span style="font-size:12px;color:#64748b;font-family:var(--font-mono)">NDR ${p.overall.toFixed(1)}${p.baseNorthstarScore ? ` · Talent ${Number(p.baseNorthstarScore).toFixed(1)}` : ''}${p.consensusRank ? ` · Cons. #${p.consensusRank}` : ''}</span>
+            <span style="font-size:12px;color:#64748b;font-family:var(--font-mono)">Rating ${p.overall.toFixed(1)}${p.baseNorthstarScore ? ` · NORTHSTAR ${Number(p.baseNorthstarScore).toFixed(1)} · Upside ${discoverySignal(p).score.toFixed(1)}` : ''}${p.consensusRank ? ` · Cons. #${p.consensusRank}` : ''}</span>
             ${p.isOverAge ? `<span style="font-size:11px;color:#fb7185;font-family:var(--font-mono);padding:2px 8px;border:1px solid rgba(251,113,133,.35);border-radius:6px" title="Éligible 2025, non repêché">Over-age · -${(p.overAgePenalty || 0).toFixed(0)} SPI</span>` : ''}
             <span class="tier ${tierClass(p.tier)}" title="${p.eaTier || p.tier}">${p.tier}</span>
             ${discoveryPill(d)}
@@ -528,7 +529,7 @@ function renderPlayer(id) {
       ${skillBars}
       <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.06)">
         <div style="display:flex;justify-content:space-between;align-items:center">
-          <span style="color:#64748b;font-size:14px">NORTHSTAR Discovery Rating</span>
+          <span style="color:#64748b;font-size:14px">Rating (NORTHSTAR + upside caché)</span>
           <span class="${scoreClass(p.overall)}" style="font-size:1.75rem">${p.overall.toFixed(1)}/100</span>
         </div>
         ${p.isOverAge ? `<p style="margin:10px 0 0;font-size:13px;color:#fb7185">Pénalité over-age : -${(p.overAgePenalty || 0).toFixed(1)} SPI${p.spiBeforePenalty != null ? ` (avant pénalité : ${Number(p.spiBeforePenalty).toFixed(1)})` : ''}</p>` : ''}
@@ -588,8 +589,9 @@ function renderCompare(aId, bId) {
           <tr><td style="color:#94a3b8">Tier EA</td><td><span class="tier ${tierClass(a.tier)}" title="${esc(a.eaTier || a.tier)}">${esc(a.tier)}</span></td><td><span class="tier ${tierClass(b.tier)}" title="${esc(b.eaTier || b.tier)}">${esc(b.tier)}</span></td><td></td></tr>
           <tr><td style="color:#94a3b8">Projection</td><td>${esc(a.projection || a.tier || '—')}</td><td>${esc(b.projection || b.tier || '—')}</td><td></td></tr>
           <tr><td style="color:#94a3b8">Consensus</td><td>${a.consensusRank?'#'+a.consensusRank:'—'}</td><td>${b.consensusRank?'#'+b.consensusRank:'—'}</td><td></td></tr>
-          <tr><td style="color:#94a3b8">NDR</td><td>${a.overall.toFixed(1)}</td><td>${b.overall.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.overall>b.overall?'#34d399':'#fb7185'}">${(a.overall-b.overall).toFixed(1)}</td></tr>
-          <tr><td style="color:#94a3b8">Discovery</td><td>${discoveryPill(da)}</td><td>${discoveryPill(db)}</td><td style="text-align:right;font-family:var(--font-mono);color:${da.score>db.score?'#34d399':'#fb7185'}">${(da.score-db.score).toFixed(1)}</td></tr>
+          <tr><td style="color:#94a3b8">Rating</td><td>${a.overall.toFixed(1)}</td><td>${b.overall.toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${a.overall>b.overall?'#34d399':'#fb7185'}">${(a.overall-b.overall).toFixed(1)}</td></tr>
+          <tr><td style="color:#94a3b8">NORTHSTAR</td><td>${(a.baseNorthstarScore || a.overall).toFixed(1)}</td><td>${(b.baseNorthstarScore || b.overall).toFixed(1)}</td><td style="text-align:right;font-family:var(--font-mono);color:${(a.baseNorthstarScore||a.overall)>(b.baseNorthstarScore||b.overall)?'#34d399':'#fb7185'}">${((a.baseNorthstarScore||a.overall)-(b.baseNorthstarScore||b.overall)).toFixed(1)}</td></tr>
+          <tr><td style="color:#94a3b8">Upside caché</td><td>${discoveryPill(da)}</td><td>${discoveryPill(db)}</td><td style="text-align:right;font-family:var(--font-mono);color:${da.score>db.score?'#34d399':'#fb7185'}">${(da.score-db.score).toFixed(1)}</td></tr>
           ${rows}
         </tbody></table>
       </div>`;
@@ -669,7 +671,7 @@ function renderSearchDropdown(matches, highlight) {
     '<span class="search-result-rank">#' + p.rank + '</span>' +
     '<span class="search-result-body">' +
     '<span class="search-result-name">' + esc(p.name) + '</span>' +
-    '<span class="search-result-meta">' + p.position + ' · ' + (FLAGS[p.country] || '') + ' ' + p.country + ' · NDR ' + p.overall.toFixed(1) + '</span>' +
+    '<span class="search-result-meta">' + p.position + ' · ' + (FLAGS[p.country] || '') + ' ' + p.country + ' · Rating ' + p.overall.toFixed(1) + '</span>' +
     '</span></button>'
   ).join('');
   dropdown.classList.add('open');

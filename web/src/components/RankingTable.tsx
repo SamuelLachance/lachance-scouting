@@ -21,8 +21,9 @@ export default function RankingTable({ players }: RankingTableProps) {
               <th className="px-4 py-3 font-medium hidden md:table-cell">Taille</th>
               <th className="px-4 py-3 font-medium hidden lg:table-cell">Pays</th>
               <th className="px-4 py-3 font-medium hidden md:table-cell">Tier</th>
+              <th className="px-4 py-3 font-medium hidden md:table-cell text-right">NORTHSTAR</th>
               <th className="px-4 py-3 font-medium hidden lg:table-cell">Signal caché</th>
-              <th className="px-4 py-3 font-medium text-right">NDR</th>
+              <th className="px-4 py-3 font-medium text-right">Score</th>
               <th className="w-10" />
             </tr>
           </thead>
@@ -52,7 +53,7 @@ export default function RankingTable({ players }: RankingTableProps) {
                           {p.name}
                         </p>
                         <p className="text-xs text-slate-500 sm:hidden">
-                          {p.position} · {p.height} · Discovery {discovery.score.toFixed(1)}
+                          {p.position} · {p.height} · Score {p.overall.toFixed(1)}
                         </p>
                       </div>
                     </Link>
@@ -73,6 +74,11 @@ export default function RankingTable({ players }: RankingTableProps) {
                   <td className="px-4 py-3 hidden md:table-cell">
                     <span className={`inline-flex px-2 py-0.5 rounded-full border text-[10px] font-medium bg-gradient-to-r ${tierColor(p.tier)}`}>
                       {p.tier}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 hidden md:table-cell text-right">
+                    <span className={`font-mono font-semibold ${scoreColor(p.baseNorthstarScore ?? p.overall)}`}>
+                      {(p.baseNorthstarScore ?? p.overall).toFixed(1)}
                     </span>
                   </td>
                   <td className="px-4 py-3 hidden lg:table-cell">

@@ -1,19 +1,19 @@
 {
   "player": "Alessandro Di Iorio",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:07:57.823971+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:53:54.716158+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:07:57.821951+00:00"
+    "fetched_at": "2026-06-09T23:52:21.763156+00:00"
   },
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:07:25.865534+00:00"
+    "fetched_at": "2026-06-09T23:53:54.714029+00:00"
   }
 }

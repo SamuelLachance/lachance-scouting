@@ -1,30 +1,19 @@
 {
   "player": "Ethan MacKenzie",
   "source_ids": [
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:14:16.356911+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:09:05.657945+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Ethan MacKenzie - Stats, Contract, Salary & More - Elite Prospects. MacKenzie never stops working and battling. He plays an ultra-aggressive defensive game, closing on opponents as they receive the puck, throwing crushing hits, beating down net-front attackers, and constantly scanning and moving. Ethan MacKenzie Hockey Stats and Profile at hockeydb.com. Statistics of Ethan MacKenzie, a hockey player from Peachland, BC born Sep 2 2006 who was active from 2022 to 2026.",
-        "url": "https://www.eliteprospects.com/player/618968/ethan-mackenzie",
-        "snippets": [
-          "Ethan MacKenzie - Stats, Contract, Salary & More - Elite Prospects. MacKenzie never stops working and battling. He plays an ultra-aggressive defensive game, closing on opponents as they receive the puck, throwing crushing hits, beating down net-front attackers, and constantly scanning and moving.",
-          "Ethan MacKenzie Hockey Stats and Profile at hockeydb.com. Statistics of Ethan MacKenzie, a hockey player from Peachland, BC born Sep 2 2006 who was active from 2022 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:11:13.433980+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:09:05.656633+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:14:16.355198+00:00"
+    "fetched_at": "2026-06-10T00:07:38.429273+00:00"
   }
 }

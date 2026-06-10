@@ -1,18 +1,18 @@
 {
   "player": "Nick Frasca",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:24:32.739070+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:34:56.247448+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:23:34.977783+00:00"
+    "fetched_at": "2026-06-10T00:34:56.245799+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:24:09.435010+00:00"
+    "fetched_at": "2026-06-10T00:33:30.085291+00:00"
   }
 }

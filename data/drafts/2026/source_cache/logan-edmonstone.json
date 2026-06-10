@@ -1,18 +1,18 @@
 {
   "player": "Logan Edmonstone",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:20:33.152356+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:26:07.526460+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:19:58.780422+00:00"
+    "fetched_at": "2026-06-10T00:26:07.523147+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:20:33.151956+00:00"
+    "fetched_at": "2026-06-10T00:24:44.189678+00:00"
   }
 }

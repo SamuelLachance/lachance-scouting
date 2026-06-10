@@ -1,29 +1,18 @@
 {
   "player": "Thomas Vandenberg",
   "source_ids": [
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:30:43.287057+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:47:33.607261+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Thomas Vandenberg - Stats, Contract, Salary & More. Vandenberg looks like a plus-level defensive forward at the professional level. He slips between opponents and the puck on the wall, knocks them off balance, and takes the puck to the net himself. Thomas Vandenberg Hockey Stats and Profile at hockeydb.com. Statistics of Thomas Vandenberg, a hockey player from Nepean, ONT born Sep 8 2008 who was active from 2024 to 2026.",
-        "url": "https://www.eliteprospects.com/player/876707/thomas-vandenberg",
-        "snippets": [
-          "Thomas Vandenberg - Stats, Contract, Salary & More. Vandenberg looks like a plus-level defensive forward at the professional level. He slips between opponents and the puck on the wall, knocks them off balance, and takes the puck to the net himself.",
-          "Thomas Vandenberg Hockey Stats and Profile at hockeydb.com. Statistics of Thomas Vandenberg, a hockey player from Nepean, ONT born Sep 8 2008 who was active from 2024 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:28:28.233446+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:47:33.605810+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:30:19.950201+00:00"
+    "fetched_at": "2026-06-10T00:46:15.762256+00:00"
   }
 }

@@ -56,6 +56,7 @@ from northstar_scoring import (
     weighted_merge_sources,
 )
 from truth_engine import compute_evidence_confidence, truth_spi
+from scouting_fetch import enrich_with_full_text, pick_best_result
 
 _paths = paths_for_year(DEFAULT_DRAFT_YEAR)
 OUT = _paths["player_evaluations"]
@@ -93,6 +94,8 @@ DOMAIN_SOURCE_MAP: dict[str, str] = {
     "thehockeywriters.com": "web_scouting",
     "dobberprospects.com": "mckeens",
     "neutralzone.com": "web_scouting",
+    "thehockeywriters.com": "web_scouting",
+    "dobberprospects.com": "mckeens",
     "ushl.com": "team_blog",
     "chl.ca": "team_blog",
 }
@@ -115,6 +118,9 @@ TARGETED_QUERIES: list[tuple[str, str]] = [
     ("twitter", 'site:twitter.com "{name}" NHL draft 2026'),
     ("youtube", 'site:youtube.com "{name}" scouting report 2026'),
     ("hockeydb", 'site:hockeydb.com "{name}"'),
+    ("thehockeywriters", 'site:thehockeywriters.com "{name}" 2026 draft'),
+    ("dobberprospects", 'site:dobberprospects.com "{name}" scouting'),
+    ("neutralzone", 'site:neutralzone.com "{name}" 2026'),
 ]
 
 UA = (
@@ -182,10 +188,10 @@ def load_checkpoint() -> dict:
 def save_checkpoint(data: dict) -> None:
     with _checkpoint_lock:
         data["meta"]["last_updated"] = datetime.now(timezone.utc).isoformat()
-        data["meta"]["version"] = 5
-        data["meta"]["weighting"] = "reliability_redistributed"
+        data["meta"]["version"] = 7
+        data["meta"]["weighting"] = "web_scouting_v7"
         data["meta"]["weight_formula"] = (
-            "reliability_effective × quality; missing catalog weight redistributed equally"
+            "Validated web scouting + DPH full-text; no circular rankings bootstrap"
         )
         data["meta"]["min_source_attempts"] = MIN_SOURCE_ATTEMPTS
         data["meta"]["done"] = sum(
@@ -506,7 +512,7 @@ def contribution_from_text(
         "evidence": ev,
         "quality": text_q,
         "text_quality": text_q,
-        "snippet": str(text)[:200],
+        "snippet": str(text)[:2000],
         "url": url,
     }
 
@@ -705,17 +711,12 @@ def _fetch_one_targeted(
     name: str,
 ) -> dict | None:
     results = search_web_results(
-        fetcher, query, name=name, max_results=2, use_ddg_fallback=False,
+        fetcher, query, name=name, max_results=6, use_ddg_fallback=True,
     )
-    snippets = [r["snippet"] for r in results if r.get("snippet")]
-    if not snippets:
+    hit = pick_best_result(results, source_id, name)
+    if not hit:
         return None
-    return {
-        "source_id": source_id,
-        "text": " ".join(snippets),
-        "url": results[0].get("url", ""),
-        "snippets": snippets,
-    }
+    return enrich_with_full_text(fetcher, hit, source_id=source_id, name=name)
 
 
 def gather_targeted_sources(
@@ -724,11 +725,12 @@ def gather_targeted_sources(
     *,
     cache: dict | None = None,
     skip_web: bool = False,
+    refresh_web: bool = False,
 ) -> list[dict]:
     """Run site-specific scouting queries in parallel — one contribution per hit."""
     cache = cache or {}
     cached = cache.get("targeted") or {}
-    if cached.get("results"):
+    if cached.get("results") and not refresh_web:
         return cached["results"]
     if skip_web:
         return []
@@ -762,11 +764,12 @@ def gather_general_scouting(
     draft_year: int = 2026,
     cache: dict | None = None,
     skip_web: bool = False,
+    refresh_web: bool = False,
 ) -> list[dict]:
     """Bing/DDG scouting search — split by domain into separate sources."""
     cache = cache or {}
     cached = cache.get("general_scouting")
-    if cached and cached.get("by_source"):
+    if cached and cached.get("by_source") and not refresh_web:
         return cached["by_source"]
     if skip_web:
         return []
@@ -854,6 +857,7 @@ def evaluate_player(
     skip_web: bool = False,
     skip_ep: bool = False,
     refresh_dph: bool = False,
+    refresh_web: bool = False,
 ) -> dict:
     contributions: list[dict[str, Any]] = []
     source_ids: list[str] = []
@@ -873,17 +877,6 @@ def evaluate_player(
             contributions.append(c)
             source_ids.append(sid)
 
-    # --- Local analysis ---
-    attempts += 1
-    if analysis_text.strip():
-        c = contribution_from_text(
-            "local_analysis", analysis_text,
-            player=player, report=merged_report,
-        )
-        if c:
-            contributions.append(c)
-            source_ids.append("local_analysis")
-
     ep_data: dict = {}
     wiki_text, wiki_url = "", ""
     targeted_raw: list[dict] = []
@@ -899,12 +892,12 @@ def evaluate_player(
             attempts += 1
             tasks["targeted"] = pool.submit(
                 gather_targeted_sources, fetcher, player.full_name,
-                cache=player_cache, skip_web=skip_web,
+                cache=player_cache, skip_web=skip_web, refresh_web=refresh_web,
             )
             attempts += len(TARGETED_QUERIES)
             tasks["general"] = pool.submit(
                 gather_general_scouting, fetcher, player.full_name,
-                cache=player_cache, skip_web=skip_web,
+                cache=player_cache, skip_web=skip_web, refresh_web=refresh_web,
             )
             attempts += 1
 
@@ -971,35 +964,30 @@ def evaluate_player(
             contributions.append(c)
             source_ids.append(sid)
 
-    # --- General scouting by domain ---
+    # --- General scouting by domain (validated attribution) ---
     for item in general_raw:
         sid = item["source_id"]
         if sid in source_ids:
             continue
+        enriched = enrich_with_full_text(
+            fetcher if not skip_web else None,
+            {"url": item.get("url", ""), "snippet": item.get("text", "")},
+            source_id=sid,
+            name=player.full_name,
+        )
+        if not enriched:
+            continue
         c = contribution_from_text(
-            sid, item["text"],
+            sid, enriched["text"],
             player=player, report=merged_report,
-            url=item.get("url", ""),
+            url=enriched.get("url", item.get("url", "")),
             fetched_at=player_cache.get("general_scouting", {}).get("fetched_at"),
         )
         if c:
             contributions.append(c)
             source_ids.append(sid)
 
-    # --- Rankings CSV dimension profile ---
-    attempts += 1
-    if rankings_row:
-        dims = pillars_from_rankings_row(rankings_row)
-        contributions.append({
-            "source_id": "rankings_csv",
-            "pillars": dims,
-            "evidence": {},
-            "quality": 0.82,
-            "snippet": f"rankings profile rank #{rankings_row.get('Rang_Final')}",
-        })
-        source_ids.append("rankings_csv")
-
-    # --- Consensus rank ---
+    # --- Consensus rank (external market anchor only) ---
     attempts += 1
     if consensus_rank is not None:
         dims = pillars_from_consensus_rank(consensus_rank, player.pos)
@@ -1007,7 +995,7 @@ def evaluate_player(
             "source_id": "consensus_rank",
             "pillars": dims,
             "evidence": {},
-            "quality": 0.85,
+            "quality": 0.55,
             "snippet": f"consensus rank #{consensus_rank}",
         })
         source_ids.append("consensus_rank")
@@ -1135,6 +1123,7 @@ def evaluate_one(
         skip_web=args.skip_web,
         skip_ep=args.skip_ep,
         refresh_dph=not args.no_refresh_dph,
+        refresh_web=args.force or args.refresh_web,
     )
     return player.key, ev
 
@@ -1147,6 +1136,7 @@ def main() -> None:
     parser.add_argument("--skip-web", action="store_true", help="Ignorer recherche web")
     parser.add_argument("--skip-ep", action="store_true", help="Ignorer Elite Prospects")
     parser.add_argument("--no-refresh-dph", action="store_true", help="Ne pas re-fetch DPH")
+    parser.add_argument("--refresh-web", action="store_true", help="Ignorer cache web et re-fetch")
     parser.add_argument("--player", type=str, default="", help="Un seul joueur (nom)")
     parser.add_argument("--batch-save", type=int, default=5, help="Sauvegarder tous les N joueurs")
     parser.add_argument("--workers", type=int, default=12, help="Workers parallèles")

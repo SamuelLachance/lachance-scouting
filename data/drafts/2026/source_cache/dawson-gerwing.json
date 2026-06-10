@@ -1,19 +1,19 @@
 {
   "player": "Dawson Gerwing",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:12:52.163351+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:05:03.063155+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:12:17.694900+00:00"
+    "fetched_at": "2026-06-10T00:05:03.060341+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:12:52.160309+00:00"
+    "fetched_at": "2026-06-10T00:03:43.056629+00:00"
   }
 }

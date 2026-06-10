@@ -1,18 +1,17 @@
 {
   "player": "Axel Brongel-Larsson",
   "source_ids": [
-    "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:09:20.353841+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:56:29.340982+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:09:20.353392+00:00"
+    "fetched_at": "2026-06-09T23:55:37.027742+00:00"
   },
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:08:46.059065+00:00"
+    "fetched_at": "2026-06-09T23:56:29.325886+00:00"
   }
 }

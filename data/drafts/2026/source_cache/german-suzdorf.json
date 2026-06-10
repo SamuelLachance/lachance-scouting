@@ -1,19 +1,18 @@
 {
   "player": "German Suzdorf",
   "source_ids": [
-    "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:14:56.854385+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:10:56.167942+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:14:22.370291+00:00"
+    "fetched_at": "2026-06-10T00:10:56.166386+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:14:56.853293+00:00"
+    "fetched_at": "2026-06-10T00:09:38.042507+00:00"
   }
 }

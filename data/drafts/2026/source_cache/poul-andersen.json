@@ -1,18 +1,18 @@
 {
   "player": "Poul Andersen",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:27:54.471837+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:41:49.521004+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:26:55.913861+00:00"
+    "fetched_at": "2026-06-10T00:41:49.519184+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:27:28.912378+00:00"
+    "fetched_at": "2026-06-10T00:40:23.868063+00:00"
   }
 }

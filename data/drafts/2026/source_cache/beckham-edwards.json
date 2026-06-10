@@ -1,30 +1,19 @@
 {
   "player": "Beckham Edwards",
   "source_ids": [
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:09:20.373376+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:56:28.296908+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:09:20.369718+00:00"
+    "fetched_at": "2026-06-09T23:55:37.031872+00:00"
   },
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Beckham Edwards - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Beckham Edwards, 2008-01-06 London, ON, CAN Canada. Most recently in the OHL with Sarnia Sting. Complete player biography and stats. Beckham Edwards Hockey Stats and Profile at hockeydb.com. Statistics of Beckham Edwards, a hockey player from Komoka, ONT born Jan 6 2008 who was active from 2024 to 2026.",
-        "url": "https://www.eliteprospects.com/player/628089/beckham-edwards",
-        "snippets": [
-          "Beckham Edwards - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Beckham Edwards, 2008-01-06 London, ON, CAN Canada. Most recently in the OHL with Sarnia Sting. Complete player biography and stats.",
-          "Beckham Edwards Hockey Stats and Profile at hockeydb.com. Statistics of Beckham Edwards, a hockey player from Komoka, ONT born Jan 6 2008 who was active from 2024 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:06:00.519150+00:00"
+    "results": [],
+    "fetched_at": "2026-06-09T23:56:28.294226+00:00"
   }
 }

@@ -1,19 +1,19 @@
 {
   "player": "Oscar Holmertz",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:26:46.643719+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:39:28.074912+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:25:49.468608+00:00"
+    "fetched_at": "2026-06-10T00:39:28.073483+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:26:23.049326+00:00"
+    "fetched_at": "2026-06-10T00:38:08.164982+00:00"
   }
 }

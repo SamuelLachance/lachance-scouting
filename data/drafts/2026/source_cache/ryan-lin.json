@@ -5,198 +5,26 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "espn",
-    "flohockey",
-    "sportsnet",
-    "nhl_com",
-    "puckpedia",
-    "tsn",
-    "smaht_scouting",
-    "the_athletic",
-    "daily_faceoff",
-    "mckeens",
-    "scott_wheeler",
-    "pronman",
-    "reddit",
-    "youtube",
-    "hfboards",
-    "twitter",
-    "hockeydb",
-    "web_scouting",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:29:28.825994+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:45:00.478081+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "espn",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "flohockey",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "sportsnet",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "nhl_com",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "puckpedia",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "tsn",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "smaht_scouting",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "the_athletic",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "daily_faceoff",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "mckeens",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "scott_wheeler",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "pronman",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "reddit",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "youtube",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "hfboards",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "twitter",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
-        "url": "https://www.ryanair.com/",
-        "snippets": [
-          "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
-          "Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid."
-        ]
-      },
-      {
-        "source_id": "hockeydb",
-        "text": "Ryan Lin - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Ryan Lin, 2008-04-18 Richmond, BC, CAN Canada. Most recently in the NCAA with Univ. of Denver. Complete player biography and stats. Ryan Lin Hockey Stats and Profile at hockeydb.com. Statistics of Ryan Lin, a hockey player from Richmond, BC born Apr 18 2008 who was active from 2023 to 2026.",
-        "url": "https://www.eliteprospects.com/player/628112/ryan-lin",
-        "snippets": [
-          "Ryan Lin - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Ryan Lin, 2008-04-18 Richmond, BC, CAN Canada. Most recently in the NCAA with Univ. of Denver. Complete player biography and stats.",
-          "Ryan Lin Hockey Stats and Profile at hockeydb.com. Statistics of Ryan Lin, a hockey player from Richmond, BC born Apr 18 2008 who was active from 2023 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:27:08.808002+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:44:58.457660+00:00"
   },
   "general_scouting": {
     "by_source": [
       {
         "source_id": "web_scouting",
-        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online. Ryan's World Shop - The Official Online Store. Shop at the Official Ryan's World Online Store featuring Ryan’s World Toys, Ryan Clothing and much more from the world's most popular kid.",
+        "text": "Official Ryanair website | Cheap flights in Europe | Ryanair. Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now available online.",
         "url": "https://www.ryanair.com/",
-        "count": 2
+        "count": 1
       }
     ],
-    "raw_count": 2,
-    "fetched_at": "2026-06-09T20:27:43.816956+00:00"
+    "raw_count": 1,
+    "fetched_at": "2026-06-10T00:43:25.821821+00:00"
   }
 }

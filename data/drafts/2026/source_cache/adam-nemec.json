@@ -1,30 +1,19 @@
 {
   "player": "Adam Nemec",
   "source_ids": [
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:07:15.849585+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:52:07.728038+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:07:15.834699+00:00"
+    "fetched_at": "2026-06-09T23:49:47.832185+00:00"
   },
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Adam Nemec - Stats, Contract, Salary & More - Elite Prospects. Most recently in the OHL with Sudbury Wolves. Complete player biography and stats. Adam Nemec (b.2007) Hockey Stats and Profile at hockeydb.com. Statistics of Adam Nemec, a hockey player from Liptovsky Mikulas, Slovakia born Oct 18 2007 who was active from 2023 to 2026.",
-        "url": "https://www.eliteprospects.com/player/752383/adam-nemec",
-        "snippets": [
-          "Adam Nemec - Stats, Contract, Salary & More - Elite Prospects. Most recently in the OHL with Sudbury Wolves. Complete player biography and stats.",
-          "Adam Nemec (b.2007) Hockey Stats and Profile at hockeydb.com. Statistics of Adam Nemec, a hockey player from Liptovsky Mikulas, Slovakia born Oct 18 2007 who was active from 2023 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:05:13.943750+00:00"
+    "results": [],
+    "fetched_at": "2026-06-09T23:52:07.726787+00:00"
   }
 }

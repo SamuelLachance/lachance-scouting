@@ -5,30 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:18:44.259711+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:21:53.957604+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Juho Piiparinen - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Juho Piiparinen, 2008-08-10 Lahti, FIN Finland. Most recently in the Liiga with Tappara. Complete player biography and stats. Juho Piiparinen Hockey Stats and Profile at hockeydb.com. Statistics of Juho Piiparinen, a hockey player from Lahti, Finland born Aug 10 2008 who was active from 2025 to 2026.",
-        "url": "https://www.eliteprospects.com/player/925157/juho-piiparinen",
-        "snippets": [
-          "Juho Piiparinen - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Juho Piiparinen, 2008-08-10 Lahti, FIN Finland. Most recently in the Liiga with Tappara. Complete player biography and stats.",
-          "Juho Piiparinen Hockey Stats and Profile at hockeydb.com. Statistics of Juho Piiparinen, a hockey player from Lahti, Finland born Aug 10 2008 who was active from 2025 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:18:09.782268+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:21:53.955632+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:18:44.258561+00:00"
+    "fetched_at": "2026-06-10T00:20:24.222993+00:00"
   }
 }

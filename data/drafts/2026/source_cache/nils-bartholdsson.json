@@ -1,19 +1,19 @@
 {
   "player": "Nils Bartholdsson",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:25:18.235918+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:36:15.097895+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:24:21.675002+00:00"
+    "fetched_at": "2026-06-10T00:36:15.096308+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:24:55.169158+00:00"
+    "fetched_at": "2026-06-10T00:34:56.753940+00:00"
   }
 }

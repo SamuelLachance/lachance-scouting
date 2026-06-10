@@ -5,30 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:14:11.003905+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:09:06.658402+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Elton Hermansson - Stats, Contract, Salary & More. Hermansson dominates the puck, consistently able to drive play and create quality chances for himself through his superior elusiveness and handling abilities. Elton Hermansson – 2026 NHL Draft Prospect Profile. Elton Hermansson is a Swedish forward eligible for the 2026 NHL draft. He currently plays for MoDo Hockey with Hockey Allsvenskan.",
-        "url": "https://www.eliteprospects.com/player/859984/elton-hermansson",
-        "snippets": [
-          "Elton Hermansson - Stats, Contract, Salary & More. Hermansson dominates the puck, consistently able to drive play and create quality chances for himself through his superior elusiveness and handling abilities.",
-          "Elton Hermansson – 2026 NHL Draft Prospect Profile. Elton Hermansson is a Swedish forward eligible for the 2026 NHL draft. He currently plays for MoDo Hockey with Hockey Allsvenskan."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:11:08.740863+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:09:06.656171+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:14:11.003314+00:00"
+    "fetched_at": "2026-06-10T00:07:32.914752+00:00"
   }
 }

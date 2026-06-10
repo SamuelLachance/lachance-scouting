@@ -1,19 +1,19 @@
 {
   "player": "Jonathan Brown",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:18:07.251234+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:20:08.694476+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:17:33.755511+00:00"
+    "fetched_at": "2026-06-10T00:20:08.691707+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:18:07.250517+00:00"
+    "fetched_at": "2026-06-10T00:18:53.608681+00:00"
   }
 }

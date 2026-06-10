@@ -76,6 +76,10 @@ LEX: dict[str, list[tuple[str, float]]] = {
         (r"depth", -1.5), (r"bottom.six", -2.0), (r"fourth line", -2.5),
         (r"role player", -1.8), (r"organizational", -2.0), (r"backup", -2.0),
         (r"project", -0.8), (r"ceiling limited", -1.5),
+        (r"magic", 2.0), (r"magician", 2.2), (r"can't miss", 2.5),
+        (r"can.t miss", 2.5), (r"blue.chip", 2.2), (r"marquee", 1.8),
+        (r"world.beater", 2.5), (r"elite ceiling", 2.2), (r"high.end", 1.5),
+        (r"top.of.the.board", 2.0), (r"can.t ignore", 2.0), (r"special talent", 2.2),
     ],
     "hockey_iq": [
         (r"hockey sense", 2.5), (r"hockey iq", 2.5), (r"processing", 2.0),
@@ -84,6 +88,9 @@ LEX: dict[str, list[tuple[str, float]]] = {
         (r"awareness", 1.5), (r"intelligent", 1.5), (r"sense", 1.0),
         (r"creates time", 1.8), (r"dictate", 1.8), (r"reads the play", 2.0),
         (r"panic", -1.5), (r"inconsistent effort", -1.2),
+        (r"elite hockey sense", 2.5), (r"offensive instincts", 2.0),
+        (r"sees the ice", 2.2), (r"smart with the puck", 2.0),
+        (r"creates time", 1.8), (r"dictates", 1.8), (r"vision", 2.0),
     ],
     "skating_engine": [
         (r"skating", 2.0), (r"skater", 1.5), (r"strong skater", 2.2),
@@ -93,6 +100,9 @@ LEX: dict[str, list[tuple[str, float]]] = {
         (r"shifty", 1.8), (r"evasive", 1.8), (r"mobile", 1.5),
         (r"stride", 1.5), (r"footwork", 1.5), (r"slow", -2.0),
         (r"plodding", -2.0), (r"heavy feet", -1.8),
+        (r"elite skater", 2.5), (r"separation speed", 2.2),
+        (r"north.south", 2.0), (r"first three steps", 2.0),
+        (r"powerful stride", 1.8), (r"four.way", 2.2), (r"dynamic skater", 2.0),
     ],
     "offensive_star_power": [
         (r"goal scorer", 2.0), (r"scoring", 1.5), (r"shot", 1.8),
@@ -101,12 +111,17 @@ LEX: dict[str, list[tuple[str, float]]] = {
         (r"production", 1.5), (r"points", 1.2), (r"pp threat", 1.8),
         (r"finishing", 1.8), (r"deke", 1.5), (r"dangle", 1.5),
         (r"limited offense", -1.8), (r"defensive specialist", -1.0),
+        (r"elite shot", 2.2), (r"scoring touch", 2.0), (r"creates chances", 2.0),
+        (r"soft touch", 1.8), (r"one.timer", 1.5), (r"power play weapon", 2.0),
+        (r"goal.scoring", 2.0), (r"pure scorer", 2.0), (r"lethal release", 2.0),
     ],
     "competition_proof": [
         (r"ncaa", 1.5), (r"shl", 1.8), (r"liiga", 1.5), (r"khl", 1.8),
         (r"ohl", 1.2), (r"whl", 1.2), (r"qmjhl", 1.2), (r"international", 1.5),
         (r"world junior", 1.8), (r"u18", 1.0), (r"men", 1.5), (r"older competition", 2.0),
         (r"dominat", 1.8), (r"proven", 1.5), (r"high level", 1.5),
+        (r"world juniors", 2.0), (r"memorial cup", 1.8), (r"frozen four", 1.8),
+        (r"led the league", 2.2), (r"against men", 2.0), (r"playoff performer", 1.8),
     ],
     "character_compete": [
         (r"compete", 2.0), (r"competitive", 2.0), (r"leadership", 1.8),
@@ -114,6 +129,8 @@ LEX: dict[str, list[tuple[str, float]]] = {
         (r"battle", 1.5), (r"physical", 1.2), (r"intensity", 1.5),
         (r"fearless", 1.8), (r"confident", 1.2), (r"lazy", -2.0),
         (r"effort concern", -1.8), (r"disappear", -1.5),
+        (r"elite compete", 2.2), (r"never gives up", 1.8), (r"grit", 1.5),
+        (r"toughness", 1.5), (r"resilient", 1.5), (r"coachable", 1.8),
     ],
     "development_arc": [
         (r"trajectory", 2.0), (r"rising", 2.0), (r"breakout", 2.0),
@@ -121,6 +138,8 @@ LEX: dict[str, list[tuple[str, float]]] = {
         (r"development", 1.0), (r"youngest", 1.5), (r"late bloomer", 1.0),
         (r"stagnant", -1.8), (r"regress", -2.0), (r"plateau", -1.5),
         (r"growth spurt", 2.0), (r"added muscle", 1.5), (r"riser", 2.0),
+        (r"year over year", 2.0), (r"stock rising", 2.2), (r"climbing rankings", 2.0),
+        (r"late bloomer", 1.5), (r"trending up", 2.0), (r"significant growth", 2.0),
     ],
 }
 
@@ -1453,18 +1472,18 @@ def _merge_scores(
     is_g = pos.upper() in ("G", "GK")
     is_d = "D" in pos.upper()
 
-    star = lex["star_ceiling"] * 0.50 + grade * 0.30 + dph_rank * 0.20
-    iq = lex["hockey_iq"] * 0.70 + grade * 0.30
-    skate = lex["skating_engine"] * 0.65 + grade * 0.20 + prod * 0.15
-    offense = lex["offensive_star_power"] * 0.55 + prod * 0.35 + lex["star_ceiling"] * 0.10
+    star = lex["star_ceiling"] * 0.62 + grade * 0.23 + dph_rank * 0.15
+    iq = lex["hockey_iq"] * 0.75 + grade * 0.25
+    skate = lex["skating_engine"] * 0.70 + grade * 0.15 + prod * 0.15
+    offense = lex["offensive_star_power"] * 0.60 + prod * 0.30 + lex["star_ceiling"] * 0.10
     if is_d:
         offense = lex["offensive_star_power"] * 0.40 + lex["hockey_iq"] * 0.30 + prod * 0.30
     if is_g:
         offense = grade * 0.50 + league * 0.30 + lex["competition_proof"] * 0.20
 
-    comp = lex["competition_proof"] * 0.40 + league * 0.35 + prod * 0.25
-    char = lex["character_compete"] * 0.75 + grade * 0.25
-    dev = lex["development_arc"] * 0.55 + dph_rank * 0.25 + prod * 0.20
+    comp = lex["competition_proof"] * 0.45 + league * 0.30 + prod * 0.25
+    char = lex["character_compete"] * 0.80 + grade * 0.20
+    dev = lex["development_arc"] * 0.60 + dph_rank * 0.20 + prod * 0.20
 
     return {
         "star_ceiling": round(min(10, max(1, star)), 1),

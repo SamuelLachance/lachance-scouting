@@ -5,40 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "mckeens",
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:26:05.553111+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:37:57.343164+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "mckeens",
-        "text": "Oliver Suvanto | Oliver Suvanto Profile | Oliver Suvanto Scouting .... Oliver Suvanto scouting report for NHL Draft. Profile contains Oliver Suvanto stats, videos and written bios. Oliver Suvanto — 2026 NHL Draft Profile - The Hockey Writers. Suvanto could be the first first-round pick out of Tappara Tampere since Patrik Laine in 2016. He’ll be one of three teammates (Juho Piiparinen, Vilho Vanhalato) vying for draft position in the...",
-        "url": "http://www.mynhldraft.com/2026-nhl-draft/player-profiles/Oliver-Suvanto",
-        "snippets": [
-          "Oliver Suvanto | Oliver Suvanto Profile | Oliver Suvanto Scouting .... Oliver Suvanto scouting report for NHL Draft. Profile contains Oliver Suvanto stats, videos and written bios.",
-          "Oliver Suvanto — 2026 NHL Draft Profile - The Hockey Writers. Suvanto could be the first first-round pick out of Tappara Tampere since Patrik Laine in 2016. He’ll be one of three teammates (Juho Piiparinen, Vilho Vanhalato) vying for draft position in the..."
-        ]
-      },
-      {
-        "source_id": "hockeydb",
-        "text": "Oliver Suvanto - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Oliver Suvanto, 2008-09-03 Turku, FIN Finland. Most recently in the Liiga with Tappara. Complete player biography and stats. Oliver Suvanto Hockey Stats and Profile at hockeydb.com. Statistics of Oliver Suvanto, a hockey player from Turku, Finland born Sep 3 2008 who was active from 2025 to 2026.",
-        "url": "https://www.eliteprospects.com/player/925061/oliver-suvanto",
-        "snippets": [
-          "Oliver Suvanto - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Oliver Suvanto, 2008-09-03 Turku, FIN Finland. Most recently in the Liiga with Tappara. Complete player biography and stats.",
-          "Oliver Suvanto Hockey Stats and Profile at hockeydb.com. Statistics of Oliver Suvanto, a hockey player from Turku, Finland born Sep 3 2008 who was active from 2025 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:24:21.129950+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:37:57.341650+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:25:39.250308+00:00"
+    "fetched_at": "2026-06-10T00:36:41.022830+00:00"
   }
 }

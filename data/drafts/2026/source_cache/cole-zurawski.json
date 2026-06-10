@@ -1,18 +1,18 @@
 {
   "player": "Cole Zurawski",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:12:04.876226+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:02:55.447687+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:11:31.020337+00:00"
+    "fetched_at": "2026-06-10T00:02:55.445299+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:12:04.875603+00:00"
+    "fetched_at": "2026-06-10T00:01:34.730570+00:00"
   }
 }

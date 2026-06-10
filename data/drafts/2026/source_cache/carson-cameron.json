@@ -2,29 +2,17 @@
   "player": "Carson Cameron",
   "source_ids": [
     "wikipedia",
-    "hockeydb",
-    "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:10:50.893352+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:59:32.015312+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Carson Cameron. Discover Carson Cameron, a talented musician, singer, and songwriter. Listen to his latest singles and see upcoming shows! Carson Cameron - Stats, Contract, Salary & More - Elite Prospects. Most recently in the OHL with Peterborough Petes. Complete player biography and stats.",
-        "url": "https://carsoncameron.ca/",
-        "snippets": [
-          "Carson Cameron. Discover Carson Cameron, a talented musician, singer, and songwriter. Listen to his latest singles and see upcoming shows!",
-          "Carson Cameron - Stats, Contract, Salary & More - Elite Prospects. Most recently in the OHL with Peterborough Petes. Complete player biography and stats."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:06:41.195412+00:00"
+    "results": [],
+    "fetched_at": "2026-06-09T23:59:32.014273+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:10:50.892676+00:00"
+    "fetched_at": "2026-06-09T23:58:10.729832+00:00"
   }
 }

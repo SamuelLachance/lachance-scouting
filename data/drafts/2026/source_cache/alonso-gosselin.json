@@ -1,19 +1,19 @@
 {
   "player": "Alonso Gosselin",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:08:39.562020+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:55:21.082562+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:08:39.552613+00:00"
+    "fetched_at": "2026-06-09T23:54:03.110629+00:00"
   },
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:08:05.067131+00:00"
+    "fetched_at": "2026-06-09T23:55:21.080027+00:00"
   }
 }

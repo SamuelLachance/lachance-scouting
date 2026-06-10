@@ -1,19 +1,19 @@
 {
   "player": "Hugo Hallin",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:15:44.236993+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:12:56.882676+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:15:19.305115+00:00"
+    "fetched_at": "2026-06-10T00:12:56.880813+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:15:44.236707+00:00"
+    "fetched_at": "2026-06-10T00:11:21.294510+00:00"
   }
 }

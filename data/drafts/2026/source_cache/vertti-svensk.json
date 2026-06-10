@@ -1,19 +1,19 @@
 {
   "player": "Vertti Svensk",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:32:05.376735+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:50:22.531816+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:31:08.054689+00:00"
+    "fetched_at": "2026-06-10T00:50:22.530127+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:31:42.553303+00:00"
+    "fetched_at": "2026-06-10T00:48:57.250424+00:00"
   }
 }

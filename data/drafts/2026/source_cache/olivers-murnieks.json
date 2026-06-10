@@ -1,19 +1,19 @@
 {
   "player": "Olivers Murnieks",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:26:19.105732+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:38:14.687599+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:25:20.251414+00:00"
+    "fetched_at": "2026-06-10T00:38:14.685407+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:25:53.066217+00:00"
+    "fetched_at": "2026-06-10T00:36:46.031531+00:00"
   }
 }

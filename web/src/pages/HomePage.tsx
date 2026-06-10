@@ -48,10 +48,10 @@ export default function HomePage() {
     <>
       <div className="mb-6">
         <h2 className="font-display font-bold text-2xl sm:text-3xl mb-1">
-          Classement NORTHSTAR Discovery
+          Classement NORTHSTAR
         </h2>
         <p className="text-slate-500 text-sm">
-          NORTHSTAR Discovery Rating — {players.length} prospects reclassés pour détecter les futures étoiles avant le consensus public
+          Rating final = moyenne NORTHSTAR + upside caché — {players.length} prospects reclassés pour détecter les futures étoiles avant le consensus public
         </p>
       </div>
 
