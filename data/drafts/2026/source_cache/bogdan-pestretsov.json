@@ -1,19 +1,18 @@
 {
   "player": "Bogdan Pestretsov",
   "source_ids": [
-    "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:10:06.429225+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:57:29.957199+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:10:06.428618+00:00"
+    "fetched_at": "2026-06-09T23:56:41.838714+00:00"
   },
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:09:45.709666+00:00"
+    "fetched_at": "2026-06-09T23:57:29.956871+00:00"
   }
 }

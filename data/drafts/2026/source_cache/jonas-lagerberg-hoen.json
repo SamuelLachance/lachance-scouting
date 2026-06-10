@@ -1,29 +1,17 @@
 {
   "player": "Jonas Lagerberg Hoen",
   "source_ids": [
-    "hockeydb",
-    "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:18:03.568220+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:20:03.162936+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Jonas Lagerberg Hoen - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Jonas Lagerberg Hoen, 2007-10-24 Mora, SWE Sweden. Most recently in the HockeyAllsvenskan with Leksands IF. Complete player biography and stats. Jonas Lagerberg Hoen – 2026 NHL Draft Prospect Profile. Leksands IF U20's Jonas Lagerberg Hoen has quickly risen up draft boards and could be a name that could genuinely surprise in June.",
-        "url": "https://www.eliteprospects.com/player/876082/jonas-lagerberg-hoen",
-        "snippets": [
-          "Jonas Lagerberg Hoen - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Jonas Lagerberg Hoen, 2007-10-24 Mora, SWE Sweden. Most recently in the HockeyAllsvenskan with Leksands IF. Complete player biography and stats.",
-          "Jonas Lagerberg Hoen – 2026 NHL Draft Prospect Profile. Leksands IF U20's Jonas Lagerberg Hoen has quickly risen up draft boards and could be a name that could genuinely surprise in June."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:16:06.580965+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:20:03.162332+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:18:03.566971+00:00"
+    "fetched_at": "2026-06-10T00:18:42.913771+00:00"
   }
 }

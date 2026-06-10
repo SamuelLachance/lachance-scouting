@@ -2,19 +2,18 @@
   "player": "Oliver Turner",
   "source_ids": [
     "wikipedia",
-    "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:26:13.582714+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:38:08.288063+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:25:15.052371+00:00"
+    "fetched_at": "2026-06-10T00:38:08.286851+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:25:48.553140+00:00"
+    "fetched_at": "2026-06-10T00:36:45.516670+00:00"
   }
 }

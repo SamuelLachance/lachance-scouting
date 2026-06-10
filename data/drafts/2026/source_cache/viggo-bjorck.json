@@ -5,19 +5,55 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "rankings_csv",
+    "wikipedia",
+    "thehockeywriters",
+    "neutralzone",
+    "dobberprospects",
+    "web_scouting",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:32:06.884138+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:50:37.901786+00:00",
   "targeted": {
-    "results": [],
-    "fetched_at": "2026-06-09T20:31:09.062209+00:00"
+    "results": [
+      {
+        "source_id": "thehockeywriters",
+        "text": "CHGO BLACKHAWKS DRAFT PROFILE: What Makes Viggo Björck One of the Top .... Jay Zawaski and Greg Boysen continue their NHL Draft prospect series with a closer look at Viggo Björck. The guys break down his strengths, projection, and what has made him one of the top prospects in the 2026 NHL Draft class. Could Björck hear his name called near the top of the draft next June?",
+        "url": "https://allchgo.com/chgo-blackhawks-draft-profile-what-makes-viggo-bjorck-one-of-the-top-prospects-in-the-2026-nhl-draft/",
+        "snippets": [
+          "CHGO BLACKHAWKS DRAFT PROFILE: What Makes Viggo Björck One of the Top .... Jay Zawaski and Greg Boysen continue their NHL Draft prospect series with a closer look at Viggo Björck. The guys break down his strengths, projection, and what has made him one of the top prospects in the 2026 NHL Draft class. Could Björck hear his name called near the top of the draft next June?"
+        ]
+      },
+      {
+        "source_id": "neutralzone",
+        "text": "CHGO BLACKHAWKS DRAFT PROFILE: What Makes Viggo Björck One of the Top .... Jay Zawaski and Greg Boysen continue their NHL Draft prospect series with a closer look at Viggo Björck. The guys break down his strengths, projection, and what has made him one of the top prospects in the 2026 NHL Draft class. Could Björck hear his name called near the top of the draft next June?",
+        "url": "https://allchgo.com/chgo-blackhawks-draft-profile-what-makes-viggo-bjorck-one-of-the-top-prospects-in-the-2026-nhl-draft/",
+        "snippets": [
+          "CHGO BLACKHAWKS DRAFT PROFILE: What Makes Viggo Björck One of the Top .... Jay Zawaski and Greg Boysen continue their NHL Draft prospect series with a closer look at Viggo Björck. The guys break down his strengths, projection, and what has made him one of the top prospects in the 2026 NHL Draft class. Could Björck hear his name called near the top of the draft next June?"
+        ]
+      },
+      {
+        "source_id": "dobberprospects",
+        "text": "CHGO BLACKHAWKS DRAFT PROFILE: What Makes Viggo Björck One of the Top .... Jay Zawaski and Greg Boysen continue their NHL Draft prospect series with a closer look at Viggo Björck. The guys break down his strengths, projection, and what has made him one of the top prospects in the 2026 NHL Draft class. Could Björck hear his name called near the top of the draft next June?",
+        "url": "https://allchgo.com/chgo-blackhawks-draft-profile-what-makes-viggo-bjorck-one-of-the-top-prospects-in-the-2026-nhl-draft/",
+        "snippets": [
+          "CHGO BLACKHAWKS DRAFT PROFILE: What Makes Viggo Björck One of the Top .... Jay Zawaski and Greg Boysen continue their NHL Draft prospect series with a closer look at Viggo Björck. The guys break down his strengths, projection, and what has made him one of the top prospects in the 2026 NHL Draft class. Could Björck hear his name called near the top of the draft next June?"
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-10T00:50:28.866658+00:00"
   },
   "general_scouting": {
-    "by_source": [],
-    "raw_count": 0,
-    "fetched_at": "2026-06-09T20:31:43.556633+00:00"
+    "by_source": [
+      {
+        "source_id": "web_scouting",
+        "text": "CHGO BLACKHAWKS DRAFT PROFILE: What Makes Viggo Björck One of the Top .... Jay Zawaski and Greg Boysen continue their NHL Draft prospect series with a closer look at Viggo Björck. The guys break down his strengths, projection, and what has made him one of the top prospects in the 2026 NHL Draft class. Could Björck hear his name called near the top of the draft next June?",
+        "url": "https://allchgo.com/chgo-blackhawks-draft-profile-what-makes-viggo-bjorck-one-of-the-top-prospects-in-the-2026-nhl-draft/",
+        "count": 1
+      }
+    ],
+    "raw_count": 1,
+    "fetched_at": "2026-06-10T00:49:08.261162+00:00"
   }
 }

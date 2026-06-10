@@ -1,19 +1,18 @@
 {
   "player": "Parker Von Richter",
   "source_ids": [
-    "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:27:25.338874+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:41:08.504725+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:26:35.675986+00:00"
+    "fetched_at": "2026-06-10T00:41:08.492905+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:27:01.651248+00:00"
+    "fetched_at": "2026-06-10T00:39:23.891390+00:00"
   }
 }

@@ -5,30 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:10:40.694955+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:59:16.910612+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Brooks Rogowski - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Brooks Rogowski, 2008-06-24 Brighton, MI, USA USA. Most recently in the OHL with Oshawa Generals. Complete player biography and stats. Brooks Rogowski Hockey Stats and Profile at hockeydb.com. Statistics of Brooks Rogowski, a hockey player from Brighton, MI born Jun 24 2008 who was active from 2024 to 2026.",
-        "url": "https://www.eliteprospects.com/player/915961/brooks-rogowski",
-        "snippets": [
-          "Brooks Rogowski - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Brooks Rogowski, 2008-06-24 Brighton, MI, USA USA. Most recently in the OHL with Oshawa Generals. Complete player biography and stats.",
-          "Brooks Rogowski Hockey Stats and Profile at hockeydb.com. Statistics of Brooks Rogowski, a hockey player from Brighton, MI born Jun 24 2008 who was active from 2024 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:06:27.515988+00:00"
+    "results": [],
+    "fetched_at": "2026-06-09T23:59:16.909224+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:10:40.694352+00:00"
+    "fetched_at": "2026-06-09T23:57:48.162566+00:00"
   }
 }

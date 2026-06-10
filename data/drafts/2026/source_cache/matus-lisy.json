@@ -1,19 +1,19 @@
 {
   "player": "Matus Lisy",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:22:35.793088+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:31:06.982279+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:21:38.268325+00:00"
+    "fetched_at": "2026-06-10T00:31:06.981139+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:22:12.229380+00:00"
+    "fetched_at": "2026-06-10T00:29:41.102642+00:00"
   }
 }

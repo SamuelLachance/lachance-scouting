@@ -5,19 +5,55 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "rankings_csv",
+    "wikipedia",
+    "thehockeywriters",
+    "dobberprospects",
+    "neutralzone",
+    "web_scouting",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:12:52.165289+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:05:29.475306+00:00",
   "targeted": {
-    "results": [],
-    "fetched_at": "2026-06-09T20:12:17.695089+00:00"
+    "results": [
+      {
+        "source_id": "thehockeywriters",
+        "text": "Daxon Rudolph Close To NCAA Commitment – Pro Hockey Rumors. According to Cam Robinson of Elite Prospects, a top prospect in the 2026 NHL Draft, Daxon Rudolph, might have narrowed down his choice of NCAA schools to three top-tier programs.",
+        "url": "https://www.prohockeyrumors.com/2026/05/daxon-rudolph-close-to-ncaa-commitment.html",
+        "snippets": [
+          "Daxon Rudolph Close To NCAA Commitment – Pro Hockey Rumors. According to Cam Robinson of Elite Prospects, a top prospect in the 2026 NHL Draft, Daxon Rudolph, might have narrowed down his choice of NCAA schools to three top-tier programs."
+        ]
+      },
+      {
+        "source_id": "dobberprospects",
+        "text": "Daxon Rudolph Close To NCAA Commitment – Pro Hockey Rumors. According to Cam Robinson of Elite Prospects, a top prospect in the 2026 NHL Draft, Daxon Rudolph, might have narrowed down his choice of NCAA schools to three top-tier programs.",
+        "url": "https://www.prohockeyrumors.com/2026/05/daxon-rudolph-close-to-ncaa-commitment.html",
+        "snippets": [
+          "Daxon Rudolph Close To NCAA Commitment – Pro Hockey Rumors. According to Cam Robinson of Elite Prospects, a top prospect in the 2026 NHL Draft, Daxon Rudolph, might have narrowed down his choice of NCAA schools to three top-tier programs."
+        ]
+      },
+      {
+        "source_id": "neutralzone",
+        "text": "Daxon Rudolph Close To NCAA Commitment – Pro Hockey Rumors. According to Cam Robinson of Elite Prospects, a top prospect in the 2026 NHL Draft, Daxon Rudolph, might have narrowed down his choice of NCAA schools to three top-tier programs.",
+        "url": "https://www.prohockeyrumors.com/2026/05/daxon-rudolph-close-to-ncaa-commitment.html",
+        "snippets": [
+          "Daxon Rudolph Close To NCAA Commitment – Pro Hockey Rumors. According to Cam Robinson of Elite Prospects, a top prospect in the 2026 NHL Draft, Daxon Rudolph, might have narrowed down his choice of NCAA schools to three top-tier programs."
+        ]
+      }
+    ],
+    "fetched_at": "2026-06-10T00:05:21.953995+00:00"
   },
   "general_scouting": {
-    "by_source": [],
-    "raw_count": 0,
-    "fetched_at": "2026-06-09T20:12:52.160445+00:00"
+    "by_source": [
+      {
+        "source_id": "web_scouting",
+        "text": "Daxon Rudolph Close To NCAA Commitment – Pro Hockey Rumors. According to Cam Robinson of Elite Prospects, a top prospect in the 2026 NHL Draft, Daxon Rudolph, might have narrowed down his choice of NCAA schools to three top-tier programs.",
+        "url": "https://www.prohockeyrumors.com/2026/05/daxon-rudolph-close-to-ncaa-commitment.html",
+        "count": 1
+      }
+    ],
+    "raw_count": 1,
+    "fetched_at": "2026-06-10T00:04:01.089605+00:00"
   }
 }

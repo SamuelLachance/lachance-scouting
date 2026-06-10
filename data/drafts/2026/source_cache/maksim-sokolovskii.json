@@ -5,29 +5,18 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "hockeydb",
-    "rankings_csv",
+    "elite_prospects",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:21:32.454339+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:28:33.698442+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Maksim Sokolovskii - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Maksim Sokolovskii, 2008-07-12 Petropavlovsk, KAZ Russia. Most recently in the OHL with London Knights. Complete player biography and stats. Maksim Sokolovskii Hockey Stats and Profile at hockeydb.com. Statistics of Maksim Sokolovskii, a hockey player from Petropavlovsk, Russia born Jul 12 2008 who was active from 2025 to 2026.",
-        "url": "https://www.eliteprospects.com/player/896007/maksim-sokolovskii",
-        "snippets": [
-          "Maksim Sokolovskii - Stats, Contract, Salary & More. Eliteprospects.com hockey player profile of Maksim Sokolovskii, 2008-07-12 Petropavlovsk, KAZ Russia. Most recently in the OHL with London Knights. Complete player biography and stats.",
-          "Maksim Sokolovskii Hockey Stats and Profile at hockeydb.com. Statistics of Maksim Sokolovskii, a hockey player from Petropavlovsk, Russia born Jul 12 2008 who was active from 2025 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:20:57.955510+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:28:33.697538+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:21:32.453384+00:00"
+    "fetched_at": "2026-06-10T00:27:16.158579+00:00"
   }
 }

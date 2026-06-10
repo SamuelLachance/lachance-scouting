@@ -2,18 +2,17 @@
   "player": "Topias Hynninen",
   "source_ids": [
     "wikipedia",
-    "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:31:18.980232+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:48:39.410716+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:30:21.560520+00:00"
+    "fetched_at": "2026-06-10T00:48:39.409217+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:30:54.914312+00:00"
+    "fetched_at": "2026-06-10T00:47:13.047265+00:00"
   }
 }

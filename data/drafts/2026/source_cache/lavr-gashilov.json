@@ -1,19 +1,18 @@
 {
   "player": "Lavr Gashilov",
   "source_ids": [
-    "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:19:57.719805+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:24:02.998062+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:19:25.100247+00:00"
+    "fetched_at": "2026-06-10T00:24:02.997541+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:19:57.719496+00:00"
+    "fetched_at": "2026-06-10T00:22:57.593990+00:00"
   }
 }

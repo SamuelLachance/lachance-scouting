@@ -1,18 +1,18 @@
 {
   "player": "Rider Carey",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:28:31.046546+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:43:10.224414+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:27:32.830576+00:00"
+    "fetched_at": "2026-06-10T00:43:10.222527+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:28:07.381613+00:00"
+    "fetched_at": "2026-06-10T00:41:51.528052+00:00"
   }
 }

@@ -5,18 +5,18 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:27:18.307658+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:40:59.451145+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:26:29.146409+00:00"
+    "fetched_at": "2026-06-10T00:40:59.449348+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:26:55.616503+00:00"
+    "fetched_at": "2026-06-10T00:39:17.204346+00:00"
   }
 }

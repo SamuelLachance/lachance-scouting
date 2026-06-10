@@ -1,19 +1,19 @@
 {
   "player": "Nikita Shcherbakov",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:24:59.887776+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:35:41.008827+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:24:02.762311+00:00"
+    "fetched_at": "2026-06-10T00:35:41.006613+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:24:36.522362+00:00"
+    "fetched_at": "2026-06-10T00:34:10.123253+00:00"
   }
 }

@@ -1,19 +1,19 @@
 {
   "player": "Owen Conrad",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:26:52.390129+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:39:53.438702+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:25:55.569292+00:00"
+    "fetched_at": "2026-06-10T00:39:53.437430+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:26:29.205147+00:00"
+    "fetched_at": "2026-06-10T00:38:30.200107+00:00"
   }
 }

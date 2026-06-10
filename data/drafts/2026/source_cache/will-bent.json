@@ -1,18 +1,18 @@
 {
   "player": "Will Bent",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:30:44.755914+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:52:30.219223+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:30:10.274417+00:00"
+    "fetched_at": "2026-06-10T00:52:30.217737+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:30:44.755610+00:00"
+    "fetched_at": "2026-06-10T00:51:23.571046+00:00"
   }
 }

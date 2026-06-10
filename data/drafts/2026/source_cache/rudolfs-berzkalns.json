@@ -1,19 +1,19 @@
 {
   "player": "Rudolfs Berzkalns",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:29:17.585705+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:44:52.256174+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:28:20.511412+00:00"
+    "fetched_at": "2026-06-10T00:44:52.254499+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:28:54.017849+00:00"
+    "fetched_at": "2026-06-10T00:43:11.709764+00:00"
   }
 }

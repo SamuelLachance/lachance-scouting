@@ -1,18 +1,18 @@
 {
   "player": "Blake Arrowsmith",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:09:55.844595+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:57:14.586591+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:09:55.843342+00:00"
+    "fetched_at": "2026-06-09T23:56:30.341990+00:00"
   },
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:09:21.869600+00:00"
+    "fetched_at": "2026-06-09T23:57:14.583927+00:00"
   }
 }

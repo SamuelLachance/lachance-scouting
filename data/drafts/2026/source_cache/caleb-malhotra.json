@@ -5,181 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "nhl_com",
-    "tsn",
-    "sportsnet",
-    "espn",
-    "puckpedia",
-    "flohockey",
-    "smaht_scouting",
-    "the_athletic",
-    "pronman",
-    "daily_faceoff",
-    "mckeens",
-    "scott_wheeler",
-    "hfboards",
-    "twitter",
-    "hockeydb",
-    "reddit",
-    "youtube",
-    "web_scouting",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:10:10.470909+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:59:08.414020+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "nhl_com",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "tsn",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "sportsnet",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "espn",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "puckpedia",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "flohockey",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "smaht_scouting",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "the_athletic",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "pronman",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "daily_faceoff",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "mckeens",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "scott_wheeler",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "hfboards",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "twitter",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "hockeydb",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "reddit",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      },
-      {
-        "source_id": "youtube",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "snippets": [
-          "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:06:29.037419+00:00"
+    "results": [],
+    "fetched_at": "2026-06-09T23:59:08.412590+00:00"
   },
   "general_scouting": {
-    "by_source": [
-      {
-        "source_id": "web_scouting",
-        "text": "Caleb Malhotra – 2026 NHL Draft Prospect Profile - The Hockey Writers. The son of former NHLer Manny and nephew to two-time NBA MVP Steve Nash, Caleb has elevated his played throughout the season while standing out in all major showcase events.",
-        "url": "https://thehockeywriters.com/caleb-malhotra-2026-nhl-draft-prospect-profile/",
-        "count": 1
-      }
-    ],
-    "raw_count": 1,
-    "fetched_at": "2026-06-09T20:06:59.952243+00:00"
+    "by_source": [],
+    "raw_count": 0,
+    "fetched_at": "2026-06-09T23:57:50.094051+00:00"
   }
 }

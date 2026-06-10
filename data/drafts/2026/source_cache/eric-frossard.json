@@ -5,29 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "hockeydb",
-    "rankings_csv",
+    "elite_prospects",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:14:16.358381+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:09:09.009431+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Eric Frossard - Stats, Contract, Salary & More - Elite Prospects. Most recently in the NCAA with Univ. of Notre Dame. Complete player biography and stats. Eric Frossard · Defense · 2026 NHL Draft Profile · Scouting Report .... Eric Frossard is a Defense playing for Guelph in the OHL. Currently ranked NA #151 on the consensus board for the 2026 NHL Draft. Eric is a prospect to watch for teams with strong development pipelines and patience for a longer NHL timeline.",
-        "url": "https://www.eliteprospects.com/player/897392/eric-frossard",
-        "snippets": [
-          "Eric Frossard - Stats, Contract, Salary & More - Elite Prospects. Most recently in the NCAA with Univ. of Notre Dame. Complete player biography and stats.",
-          "Eric Frossard · Defense · 2026 NHL Draft Profile · Scouting Report .... Eric Frossard is a Defense playing for Guelph in the OHL. Currently ranked NA #151 on the consensus board for the 2026 NHL Draft. Eric is a prospect to watch for teams with strong development pipelines and patience for a longer NHL timeline."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:11:12.249777+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:09:09.006729+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:14:16.355118+00:00"
+    "fetched_at": "2026-06-10T00:07:38.918660+00:00"
   }
 }

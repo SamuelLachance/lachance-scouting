@@ -1,18 +1,17 @@
 {
   "player": "Caelen Joudrey",
   "source_ids": [
-    "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:10:46.331272+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:59:19.405778+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:10:14.881856+00:00"
+    "fetched_at": "2026-06-09T23:59:19.405043+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:10:46.330913+00:00"
+    "fetched_at": "2026-06-09T23:57:50.608224+00:00"
   }
 }

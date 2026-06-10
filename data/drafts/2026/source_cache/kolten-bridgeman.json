@@ -1,19 +1,18 @@
 {
   "player": "Kolten Bridgeman",
   "source_ids": [
-    "rankings_csv",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:19:38.677336+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:23:58.938956+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:19:08.696794+00:00"
+    "fetched_at": "2026-06-10T00:23:58.938376+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:19:38.676328+00:00"
+    "fetched_at": "2026-06-10T00:22:51.535849+00:00"
   }
 }

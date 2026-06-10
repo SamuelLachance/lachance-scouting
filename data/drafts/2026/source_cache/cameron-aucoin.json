@@ -1,30 +1,19 @@
 {
   "player": "Cameron Aucoin",
   "source_ids": [
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:10:50.384050+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:59:21.421287+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Cameron Aucoin - Stats, Contract, Salary & More - Elite Prospects. A master of the small plays, Aucoin consistently keeps rushes to the outside with steady footwork, middle-protecting routes, and well-timed pokes after opponents enter his space. Cameron Aucoin (b.2007) Hockey Stats and Profile at hockeydb.com. Statistics of Cameron Aucoin, a hockey player from Hinsdale, IL born Mar 20 2007 who was active from 2023 to 2026.",
-        "url": "https://www.eliteprospects.com/player/577010/cameron-aucoin",
-        "snippets": [
-          "Cameron Aucoin - Stats, Contract, Salary & More - Elite Prospects. A master of the small plays, Aucoin consistently keeps rushes to the outside with steady footwork, middle-protecting routes, and well-timed pokes after opponents enter his space.",
-          "Cameron Aucoin (b.2007) Hockey Stats and Profile at hockeydb.com. Statistics of Cameron Aucoin, a hockey player from Hinsdale, IL born Mar 20 2007 who was active from 2023 to 2026."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:06:29.540080+00:00"
+    "results": [],
+    "fetched_at": "2026-06-09T23:59:21.419992+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:10:50.381993+00:00"
+    "fetched_at": "2026-06-09T23:58:00.162949+00:00"
   }
 }

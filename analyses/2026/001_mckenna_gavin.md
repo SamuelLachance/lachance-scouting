@@ -14,64 +14,64 @@
 | **Rang FINAL (NORTHSTAR)** | **#1** |
 | Rang NORTHSTAR (score pur) | #1 |
 | Rang consensus public | 1 |
-| **Star Probability Index** | **70.39/100** |
+| **Star Probability Index** | **68.44/100** |
 | Tier étoile estimé | Top-6 / top-pair |
 
 ## Résumé exécutif
 Consensus #1 overall. A tier-of-his-own talent whose hockey sense, quickness, and maturity dictate play at every level. Projects as a franchise cornerstone.
 
 ## Thèse star NORTHSTAR
-NORTHSTAR estime Gavin McKenna à 70.39/100 pour devenir une étoile NHL (Top-6 / top-pair). Pilier dominant: plafond étoile 7.7/10.
+NORTHSTAR estime Gavin McKenna à 68.44/100 pour devenir une étoile NHL (Top-6 / top-pair). Pilier dominant: plafond étoile 7.2/10.
 
 ## Grille NORTHSTAR (7 piliers — basée sur rapports scouting)
 
 | Dimension | Note /10 | Poids | Score |
 |-----------|----------|-------|-------|
-| Plafond étoile NHL ★ | 7.7 | 35% | 26.95 |
-| IQ / processing élite | 6.8 | 18% | 12.24 |
-| Moteur de patinage | 6.8 | 15% | 10.20 |
-| Pouvoir offensif star | 6.7 | 12% | 8.04 |
-| Preuve vs compétition | 8.1 | 10% | 8.10 |
+| Plafond étoile NHL ★ | 7.2 | 35% | 25.20 |
+| IQ / processing élite | 6.9 | 18% | 12.42 |
+| Moteur de patinage | 6.6 | 15% | 9.90 |
+| Pouvoir offensif star | 7.0 | 12% | 8.40 |
+| Preuve vs compétition | 7.7 | 10% | 7.70 |
 | Compétitivité / caractère | 6.2 | 5% | 3.10 |
-| Arc de développement | 6.9 | 5% | 3.45 |
+| Arc de développement | 6.6 | 5% | 3.30 |
 
-**STAR PROBABILITY INDEX: 70.39/100**
+**STAR PROBABILITY INDEX: 68.44/100**
 
 ## Justification détaillée des notes
 
-### Plafond étoile NHL ★ — 7.7/10
-**7.7/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (35%). Signaux: inférence contextuelle. Sources pondérées: Web scouting snippet (14%), Team / league blog (9%), Wikipedia (8%), TSN (5%), Corey Pronman (ESPN rankings) (5%). Confiance: multi-sources substantielles.
+### Plafond étoile NHL ★ — 7.2/10
+**7.2/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (35%). Signaux: «project», «franchise», «cornerstone», «#1 overall». Sources pondérées: Web scouting snippet (26%), Wikipedia (16%), Elite Prospects (14%), Production / stats heuristic (9%), Public consensus rankings (9%). Confiance: multi-sources substantielles.
 
-### IQ / processing élite — 6.8/10
-**6.8/10 — Faible** (star path improbable). Pilier NORTHSTAR (18%). Signaux: inférence contextuelle. Sources pondérées: Web scouting snippet (14%), Team / league blog (9%), Wikipedia (8%), TSN (5%), Corey Pronman (ESPN rankings) (5%). Confiance: multi-sources substantielles.
+### IQ / processing élite — 6.9/10
+**6.9/10 — Faible** (star path improbable). Pilier NORTHSTAR (18%). Signaux: «playmaker», «awareness», «hockey sense», «maturity». Sources pondérées: Web scouting snippet (26%), Wikipedia (16%), Elite Prospects (14%), Production / stats heuristic (9%), Public consensus rankings (9%). Confiance: multi-sources substantielles.
 
-### Moteur de patinage — 6.8/10
-**6.8/10 — Faible** (star path improbable). Pilier NORTHSTAR (15%). Signaux: inférence contextuelle. Sources pondérées: Web scouting snippet (14%), Team / league blog (9%), Wikipedia (8%), TSN (5%), Corey Pronman (ESPN rankings) (5%). Confiance: multi-sources substantielles.
+### Moteur de patinage — 6.6/10
+**6.6/10 — Faible** (star path improbable). Pilier NORTHSTAR (15%). Signaux: «transition», «quickness», «skating». Sources pondérées: Web scouting snippet (26%), Wikipedia (16%), Elite Prospects (14%), Production / stats heuristic (9%), Public consensus rankings (9%). Confiance: multi-sources substantielles.
 
-### Pouvoir offensif star — 6.7/10
-**6.7/10 — Faible** (star path improbable). Pilier NORTHSTAR (12%). Signaux: inférence contextuelle. Sources pondérées: Web scouting snippet (14%), Team / league blog (9%), Wikipedia (8%), TSN (5%), Corey Pronman (ESPN rankings) (5%). Confiance: multi-sources substantielles.
+### Pouvoir offensif star — 7.0/10
+**7.0/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (12%). Signaux: «scoring», «shot», «skill». Sources pondérées: Web scouting snippet (26%), Wikipedia (16%), Elite Prospects (14%), Production / stats heuristic (9%), Public consensus rankings (9%). Confiance: multi-sources substantielles.
 
-### Preuve vs compétition — 8.1/10
-**8.1/10 — Solide** (chemin star possible). Pilier NORTHSTAR (10%). Signaux: inférence contextuelle. Sources pondérées: Web scouting snippet (14%), Team / league blog (9%), Wikipedia (8%), TSN (5%), Corey Pronman (ESPN rankings) (5%). Confiance: multi-sources substantielles.
+### Preuve vs compétition — 7.7/10
+**7.7/10 — Modeste** (plus probablement joueur solide). Pilier NORTHSTAR (10%). Signaux: «ncaa», «whl», «world junior». Sources pondérées: Web scouting snippet (26%), Wikipedia (16%), Elite Prospects (14%), Production / stats heuristic (9%), Public consensus rankings (9%). Confiance: multi-sources substantielles.
 
 ### Compétitivité / caractère — 6.2/10
-**6.2/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: Web scouting snippet (14%), Team / league blog (9%), Wikipedia (8%), TSN (5%), Corey Pronman (ESPN rankings) (5%). Confiance: multi-sources substantielles.
+**6.2/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: «intensity». Sources pondérées: Web scouting snippet (26%), Wikipedia (16%), Elite Prospects (14%), Production / stats heuristic (9%), Public consensus rankings (9%). Confiance: multi-sources substantielles.
 
-### Arc de développement — 6.9/10
-**6.9/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: inférence contextuelle. Sources pondérées: Web scouting snippet (14%), Team / league blog (9%), Wikipedia (8%), TSN (5%), Corey Pronman (ESPN rankings) (5%). Confiance: multi-sources substantielles.
+### Arc de développement — 6.6/10
+**6.6/10 — Faible** (star path improbable). Pilier NORTHSTAR (5%). Signaux: «improved». Sources pondérées: Web scouting snippet (26%), Wikipedia (16%), Elite Prospects (14%), Production / stats heuristic (9%), Public consensus rankings (9%). Confiance: multi-sources substantielles.
 
 ## Forces (signaux star)
 - Elite skating
-- Preuve vs compétition — 8.1/10 (solide) : signaux «ncaa, men»
-- Plafond étoile NHL ★ — 7.7/10 (modeste) : signaux «franchise, cornerstone»
-- Preuve vs compétition — 8.1/10 (solide)
-- Plafond étoile NHL ★ — 7.7/10 (modeste)
+- Preuve vs compétition — 7.7/10 (modeste) : signaux «ncaa, men»
+- Plafond étoile NHL ★ — 7.2/10 (modeste) : signaux «franchise, cornerstone»
+- Preuve vs compétition — 7.7/10 (modeste) : signaux «ncaa, whl»
+- Plafond étoile NHL ★ — 7.2/10 (modeste) : signaux «project, franchise»
 
 ## Faiblesses / risques
 - Compétitivité / caractère (6.2/10) — pilier le moins élevé du profil; marge limitée vs l'élite NHL
-- Pouvoir offensif star (6.7/10) — pilier sous la moyenne du profil; traduction NHL à prouver
-- IQ / processing élite (6.8/10) — pilier sous la moyenne du profil; traduction NHL à prouver
-- Moteur de patinage (6.8/10) — pilier sous la moyenne du profil; traduction NHL à prouver
+- Moteur de patinage (6.6/10) — pilier sous la moyenne du profil; traduction NHL à prouver
+- Arc de développement (6.6/10) — pilier sous la moyenne du profil; traduction NHL à prouver
+- IQ / processing élite (6.9/10) — pilier sous la moyenne du profil; traduction NHL à prouver
 
 ## Projection NHL
 Top-line franchise winger

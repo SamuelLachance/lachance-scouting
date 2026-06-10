@@ -2,18 +2,17 @@
   "player": "Ivan Galiyanov",
   "source_ids": [
     "wikipedia",
-    "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:15:58.831857+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:14:25.191520+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:15:25.334700+00:00"
+    "fetched_at": "2026-06-10T00:14:25.189341+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:15:58.831043+00:00"
+    "fetched_at": "2026-06-10T00:12:56.878707+00:00"
   }
 }

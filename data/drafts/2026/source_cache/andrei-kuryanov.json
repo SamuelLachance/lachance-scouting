@@ -1,19 +1,19 @@
 {
   "player": "Andrei Kuryanov",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:08:39.559744+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:55:21.631044+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:08:39.551305+00:00"
+    "fetched_at": "2026-06-09T23:54:16.297038+00:00"
   },
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:08:05.088270+00:00"
+    "fetched_at": "2026-06-09T23:55:21.612811+00:00"
   }
 }

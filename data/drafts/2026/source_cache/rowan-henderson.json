@@ -7,18 +7,17 @@
     "dph_tags",
     "elite_prospects",
     "wikipedia",
-    "rankings_csv",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:28:46.600091+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:44:16.393141+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:28:11.922240+00:00"
+    "fetched_at": "2026-06-10T00:44:16.390730+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:28:46.599172+00:00"
+    "fetched_at": "2026-06-10T00:43:04.281200+00:00"
   }
 }

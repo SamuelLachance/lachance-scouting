@@ -1,19 +1,19 @@
 {
   "player": "Rio Kaiser",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:28:49.762855+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:43:25.237850+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:27:53.968672+00:00"
+    "fetched_at": "2026-06-10T00:43:25.236655+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:28:25.962251+00:00"
+    "fetched_at": "2026-06-10T00:42:27.531195+00:00"
   }
 }

@@ -5,29 +5,19 @@
     "dph_strengths",
     "dph_projection",
     "dph_tags",
-    "hockeydb",
-    "rankings_csv",
+    "elite_prospects",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:10:03.397723+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-09T23:57:40.726097+00:00",
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:10:03.397017+00:00"
+    "fetched_at": "2026-06-09T23:56:50.414859+00:00"
   },
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Brian McFadden - Wikipedia. Brian Nicholas McFadden (born 12 April 1980) is an Irish pop singer and television presenter. He rose to fame in 1998 as a member of the Irish boy band Westlife. Following his departure from the group in 2004, McFadden released his debut solo album, Irish Son. Brian McFadden facts: Age, Westlife career, relationship history and .... Here's everything you need to know about Brian from his age, where he's from and his height. We also look at his net worth, his relationship history and who his children are.",
-        "url": "https://en.wikipedia.org/wiki/Brian_McFadden",
-        "snippets": [
-          "Brian McFadden - Wikipedia. Brian Nicholas McFadden (born 12 April 1980) is an Irish pop singer and television presenter. He rose to fame in 1998 as a member of the Irish boy band Westlife. Following his departure from the group in 2004, McFadden released his debut solo album, Irish Son.",
-          "Brian McFadden facts: Age, Westlife career, relationship history and .... Here's everything you need to know about Brian from his age, where he's from and his height. We also look at his net worth, his relationship history and who his children are."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:06:17.878002+00:00"
+    "results": [],
+    "fetched_at": "2026-06-09T23:57:40.722142+00:00"
   }
 }

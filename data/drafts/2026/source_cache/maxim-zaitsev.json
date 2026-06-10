@@ -1,18 +1,18 @@
 {
   "player": "Maxim Zaitsev",
   "source_ids": [
-    "rankings_csv",
+    "wikipedia",
     "stats_heuristic"
   ],
-  "attempts": 25,
-  "cached_at": "2026-06-09T20:23:10.105597+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:31:43.966468+00:00",
   "targeted": {
     "results": [],
-    "fetched_at": "2026-06-09T20:22:14.913285+00:00"
+    "fetched_at": "2026-06-10T00:31:43.962644+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:22:45.900896+00:00"
+    "fetched_at": "2026-06-10T00:30:13.513456+00:00"
   }
 }

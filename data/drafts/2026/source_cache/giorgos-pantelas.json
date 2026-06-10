@@ -1,30 +1,19 @@
 {
   "player": "Giorgos Pantelas",
   "source_ids": [
-    "hockeydb",
-    "rankings_csv",
+    "wikipedia",
     "consensus_rank",
     "stats_heuristic"
   ],
-  "attempts": 24,
-  "cached_at": "2026-06-09T20:14:56.823391+00:00",
+  "attempts": 26,
+  "cached_at": "2026-06-10T00:11:07.848657+00:00",
   "targeted": {
-    "results": [
-      {
-        "source_id": "hockeydb",
-        "text": "Giorgos Pantelas - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Giorgos Pantelas, 2008-04-24 Laval, QC, CAN Canada. Most recently in the WHL with Brandon Wheat Kings. Complete player biography and stats. Giorgos Pantelas- 2026 NHL Draft Prospect Profile - The Hockey Writers. Giorgos Pantelas- NHL Draft Projection With the defensive game that Pantelas has, he should be a prospect that NHL teams will be taking a close look at early on in the second round.",
-        "url": "https://www.eliteprospects.com/player/619705/giorgos-pantelas",
-        "snippets": [
-          "Giorgos Pantelas - Stats, Contract, Salary & More - Elite Prospects. Eliteprospects.com hockey player profile of Giorgos Pantelas, 2008-04-24 Laval, QC, CAN Canada. Most recently in the WHL with Brandon Wheat Kings. Complete player biography and stats.",
-          "Giorgos Pantelas- 2026 NHL Draft Prospect Profile - The Hockey Writers. Giorgos Pantelas- NHL Draft Projection With the defensive game that Pantelas has, he should be a prospect that NHL teams will be taking a close look at early on in the second round."
-        ]
-      }
-    ],
-    "fetched_at": "2026-06-09T20:12:11.890717+00:00"
+    "results": [],
+    "fetched_at": "2026-06-10T00:11:07.846347+00:00"
   },
   "general_scouting": {
     "by_source": [],
     "raw_count": 0,
-    "fetched_at": "2026-06-09T20:14:56.822563+00:00"
+    "fetched_at": "2026-06-10T00:09:42.068162+00:00"
   }
 }
